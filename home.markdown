@@ -1,5 +1,5 @@
 ---
-title: Home
+title: index
 date: 2017-05-30 19:05:00 Z
 Brand Panel:
   Tagline: Innovative Solutions for Development
