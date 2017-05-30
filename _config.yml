@@ -1,0 +1,34 @@
+---
+title: DevTech Website
+timezone: UTC
+collections:
+  our-team:
+    title: Management Team
+    output: true
+  posts:
+    title: Posts
+    output: true
+  practice-areas:
+    title: Practice Areas
+    output: true
+    permalink: practice-areas
+    Headline: Headline would go here
+    Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+      urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
+      penatibus et.
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
