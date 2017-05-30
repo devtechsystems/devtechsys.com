@@ -25,3 +25,6 @@ Projects Panel:
   Button Label: View Projects
 ---
 
+<h1>{{page['Brand Panel']['Tagline']}}</h1>
+<h2>{{page['Brand Panel']['Short Mission Statement']}}</h2>
+<button>{{page['Brand Panel']['Button Label']}}</button>
