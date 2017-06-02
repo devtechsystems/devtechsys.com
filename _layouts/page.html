@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+  	{% if page.navigation_group == "About Us" %}
+	    <h1 class="post-title">{{ page.navigation_group | escape }}</h1>
+	    <h2 class="post-subtitle">{{ page.title | escape }}</h2>
+	    <ul>
+    	
+	      {% assign aboutNav_pages = site.html_pages | sort: 'navigation_order' | where:'navigation_group','About Us' %}
+	      {% for p in aboutNav_pages %}
+	        {% if p.navigation_order %}
+	          <li>
+	            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+	              {{ p.title }}
+	            </a>
+	          </li>
+	        {% endif %}
+	      {% endfor %}
+    	</ul>
+    {% else %}
+    	<h2 class="post-subtitle">{{ page.title | escape }}</h2>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

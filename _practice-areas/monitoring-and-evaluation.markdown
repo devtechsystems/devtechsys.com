@@ -1,6 +1,9 @@
 ---
 title: Monitoring and Evaluation
+layout: page
 date: 2017-05-30 18:47:00 Z
+navigation_group: Our Practices
+navigation_order: 1
 Dark Icon Image URL: 
 Light Icon Image URL: 
 List Image URL: 

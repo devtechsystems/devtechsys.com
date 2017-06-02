@@ -1,0 +1,28 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <p>&#169; {{site.time | date: '%Y' }} {{ site.title | escape }} All Rights Reserved.</p>
+      </div>
+      
+      <div class="footer-col footer-col-3">
+        <p>
+          {% assign footerNav_pages = site.html_pages | sort: 'footer_navigation_order' %}
+          {% for p in footerNav_pages %}
+            {% if p.footer_navigation_order %}
+              <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                {{ p.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

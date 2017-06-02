@@ -1,21 +1,22 @@
 ---
 title: Home
 date: 2017-05-30 19:05:00 Z
-Brand Panel:
+layout: home
+Hero Section:
   Tagline: Innovative Solutions for Development
   Short Mission Statement: We are dedicated to data-driven solutions that build capacity,
     strengthen partnerships, and address complex policy challenges.
   Button Label: What Makes Us Different
-Insights Panel:
+Insights Section:
   Button Label: Read Our Latest Insights
-Practice Areas Panel:
+Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
   Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
     urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque penatibus
     et.
   Button Label: Learn More
-Projects Panel:
+Projects Section:
   Title: Data-Driven Projects
   Subtitle: Our Work Around the World
   Brief Description: Marketing copy would go here to highlight the project data-base
@@ -24,7 +25,3 @@ Projects Panel:
     penatibus et.
   Button Label: View Projects
 ---
-
-<h1>{{page['Brand Panel']['Tagline']}}</h1>
-<h2>{{page['Brand Panel']['Short Mission Statement']}}</h2>
-<button>{{page['Brand Panel']['Button Label']}}</button>
