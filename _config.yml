@@ -1,14 +1,6 @@
 ---
-# Site settings
-title: "DevTech Systems, Inc."
-email: ""
+title: DevTech Systems, Inc.
 timezone: UTC
-description: > # this means to ignore newlines until "baseurl:"
-  We are dedicated to data-driven solutions that build capacity, 
-  strengthen partnerships, and address complex policy challenges.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
 collections:
   our-team:
     title: Management Team
@@ -19,7 +11,7 @@ collections:
   practice-areas:
     title: Practice Areas
     output: true
-    permalink: /:collection/:title
+    permalink: "/:collection/:title"
     Headline: Headline would go here
     Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
       urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
@@ -39,4 +31,11 @@ defaults:
     type: pages
   values:
     layout: page
+email: ''
+description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
+  partnerships, and address complex policy challenges.
+
+'
+baseurl: ''
+url: ''
 permalink: pretty
