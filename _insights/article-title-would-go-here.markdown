@@ -7,6 +7,8 @@ Introduction Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pell
   gravida commodo ligula, sagittis ultricies ligula sollicitudin sed. Orci varius
   natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis
   convallis lacus sed lorem porta, ut porta velit ornare.
+Author: John Smith
+layout: post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie facilisis eros, tristique ultrices nisl rutrum nec. Suspendisse non tellus vel risus faucibus consectetur. Ut elit ipsum, pretium ut eleifend sed, vulputate ac arcu. Duis ultrices dolor ut congue mollis. Aenean ut sem feugiat, vestibulum quam at, aliquam augue. Ut vulputate pulvinar porttitor. Mauris at erat nulla. Nulla ac est scelerisque, mollis erat a, semper ligula. Morbi sed velit eu dui facilisis tempus. Vestibulum viverra vitae est vitae fermentum. Morbi at pellentesque quam.
