@@ -2,11 +2,11 @@
 title: DevTech Systems, Inc.
 timezone: UTC
 collections:
+  insights:
+    title: Insights
+    output: true
   our-team:
     title: Management Team
-    output: true
-  insights:
-    title: Posts
     output: true
   posts:
     title: Posts
