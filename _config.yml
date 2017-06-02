@@ -2,6 +2,9 @@
 title: DevTech Systems, Inc.
 timezone: UTC
 collections:
+  authors:
+    title: Authors
+    output: true
   insights:
     title: Insights
     output: true
