@@ -5,6 +5,9 @@ collections:
   our-team:
     title: Management Team
     output: true
+  insights:
+    title: Posts
+    output: true
   posts:
     title: Posts
     output: true
