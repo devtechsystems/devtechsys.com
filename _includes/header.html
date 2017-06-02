@@ -53,7 +53,7 @@
         <div class="col">
           <h2>Our Insights</h2>
           <ul>
-          {% for post in site.posts limit:6 %}
+          {% for post in site.insights limit:6 %}
             <li>
               {% assign date_format = "%b %-d, %Y" %}
               <span class="post-meta">{{ post.date | date: date_format }}</span>
