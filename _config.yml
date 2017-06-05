@@ -33,7 +33,7 @@ defaults:
     layout: post
     permalink: '/posts/:title/'
 - scope:
-    path: 'Insights'
+    path: Insights
     type: posts
   values:
     layout: post
