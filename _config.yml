@@ -31,13 +31,13 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
+    permalink: '/posts/:title/'
 - scope:
     path: 'Insights'
     type: posts
   values:
     layout: post
-    permalink: "/:collection/:title/"
+    permalink: '/:collection/:title/'
     Intro Text: ''
     Banner Image: ''
     Practice Area<?>: ''
