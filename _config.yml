@@ -12,7 +12,6 @@ collections:
   insights:
     title: Insights
     output: true
-    permalink: "/:collection/:title/"
   our-team:
     title: Management Team
     output: true
@@ -46,6 +45,7 @@ defaults:
     Author: 
     layout: post
 - scope:
+    path: ''
     type: authors
   values:
     Author Image: 

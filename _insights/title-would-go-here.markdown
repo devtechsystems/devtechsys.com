@@ -1,16 +1,11 @@
 ---
-title: Article Title Would Go Here
-date: 2017-06-02 16:22:00 Z
+title: Title would go here
+date: 2017-06-05 17:27:00 Z
+Intro Text: 
+Banner Image: 
 Practice Area:
 - Monitoring and Evaluation
-- Public Financial Management and Fiscal Sustainability
-Banner Image: 
-Introduction Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-  gravida commodo ligula, sagittis ultricies ligula sollicitudin sed. Orci varius
-  natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis
-  convallis lacus sed lorem porta, ut porta velit ornare.
-Author: John Smith
-layout: post
+Author: 
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie facilisis eros, tristique ultrices nisl rutrum nec. Suspendisse non tellus vel risus faucibus consectetur. Ut elit ipsum, pretium ut eleifend sed, vulputate ac arcu. Duis ultrices dolor ut congue mollis. Aenean ut sem feugiat, vestibulum quam at, aliquam augue. Ut vulputate pulvinar porttitor. Mauris at erat nulla. Nulla ac est scelerisque, mollis erat a, semper ligula. Morbi sed velit eu dui facilisis tempus. Vestibulum viverra vitae est vitae fermentum. Morbi at pellentesque quam.
