@@ -9,10 +9,6 @@ collections:
     title: Contracting Vehicles
     output: true
     permalink: "/about/:collection/:path/"
-  insights:
-    title: Insights
-    output: true
-    permalink: "/:collection/:title/"
   our-team:
     title: Management Team
     output: true
