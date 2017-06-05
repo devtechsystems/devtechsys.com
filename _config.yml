@@ -4,7 +4,7 @@ timezone: UTC
 collections:
   authors:
     title: Authors
-    output: true
+    output: false
   insights:
     title: Insights
     output: true
@@ -33,7 +33,7 @@ defaults:
     layout: post
     permalink: "/posts/:title/"
 - scope:
-    path: 'insights'
+    path: 'Insights'
     type: posts
   values:
     layout: post
