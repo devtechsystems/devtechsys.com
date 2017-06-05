@@ -38,9 +38,9 @@ defaults:
   values:
     layout: post
     permalink: "/:collection/:title/"
-    Intro Text: ""
-    Banner Image: ""
-    Practice Area<?>: ""
+    Intro Text: ''
+    Banner Image: ''
+    Practice Area<?>: ''
     Is Active: false
 - scope:
     path: ''
