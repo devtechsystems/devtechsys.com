@@ -64,7 +64,9 @@ defaults:
     Location:
       City: 
       State: 
-    Type of Opportunity: ['Full time', 'Part time']
+    Type of Opportunity:
+    - Full time
+    - Part time
     layout: page
 - scope:
     path: ''
