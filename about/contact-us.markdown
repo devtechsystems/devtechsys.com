@@ -13,5 +13,6 @@ Contact Details:
   General Email: devtech@devtechsys.com
   Jobs Email: jobs@devtechsys.com
   Form Delivery Email: test@test.com
+Has Contact Form: true
 ---
 
