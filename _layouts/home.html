@@ -32,7 +32,8 @@ layout: default
       <p>{{page['Practice Areas Section']['Brief Description']}}</p>
       <a href="#">{{page['Practice Areas Section']['Button Label']}}</a>
       <ul>
-        {% for practices in site.practice-areas %}
+        {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
+        {% for practices in sorted_practices %}
           <li>
             <a href="{{ practices.url | relative_url }}">{{ practices.title | escape }}</a>
           </li>

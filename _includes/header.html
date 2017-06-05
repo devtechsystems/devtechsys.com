@@ -19,7 +19,7 @@
         <div class="col">
           <h2>About Us</h2>
           <ul>
-            {% assign aboutNav_pages = site.html_pages | sort: 'navigation_order' | where:'navigation_group','About Us' %}
+            {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
             {% for p in aboutNav_pages %}
               {% if p.navigation_order %}
                 <li>
@@ -34,15 +34,13 @@
         <div class="col">
           <h2>Our Practices</h2>
           <ul>
-            {% assign practicesNav_pages = site.practice-areas | sort: 'navigation_order'  %}
+            {% assign practicesNav_pages = site.practice-areas | sort: 'position'  %}
             {% for p in practicesNav_pages %}
-              {% if p.navigation_order %}
-                <li>
-                  <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-                    {{ p.title }}
-                  </a>
-                </li>
-              {% endif %}
+              <li>
+                <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                  {{ p.title }}
+                </a>
+              </li>
             {% endfor %}
           </ul>
         </div>
