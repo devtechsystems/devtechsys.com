@@ -38,7 +38,7 @@ defaults:
     type: pages
   values:
     Title: 
-    Highlight:
+    Highlight: 
     Banner Image: 
     layout: page
 - scope:
