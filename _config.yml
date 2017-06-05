@@ -74,6 +74,18 @@ defaults:
     Title: 
     Intro Text: 
     layout: page
+- scope:
+    path: ''
+    type: reports-and-publications
+  values:
+    Document Link Title: 
+    Document Region: 
+    Year Published: 
+    Mission Title: 
+    Document URL: 
+    Practice Area:
+    - 
+    layout: report
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
