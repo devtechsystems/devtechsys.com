@@ -1,6 +1,7 @@
 ---
 title: Home
 date: 2017-05-30 19:05:00 Z
+position: 0
 layout: home
 Hero Section:
   Tagline: Innovative Solutions for Development
