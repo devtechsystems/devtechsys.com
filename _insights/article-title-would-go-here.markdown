@@ -1,7 +1,9 @@
 ---
 title: Article Title Would Go Here
 date: 2017-06-02 16:22:00 Z
-Practice Area: Monitoring and Evaluation
+Practice Area:
+- Monitoring and Evaluation
+- Public Financial Management and Fiscal Sustainability
 Banner Image: 
 Introduction Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
   gravida commodo ligula, sagittis ultricies ligula sollicitudin sed. Orci varius
