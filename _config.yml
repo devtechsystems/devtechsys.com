@@ -5,9 +5,10 @@ collections:
   authors:
     title: Authors
     output: false
-  "-about-contracting-vehicles":
+  contracting-vehicles:
     title: Contracting Vehicles
     output: true
+    permalink: "/about/:path/"
   insights:
     title: Insights
     output: true
