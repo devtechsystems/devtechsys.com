@@ -11,7 +11,7 @@ collections:
   contracting-vehicles:
     title: Contracting Vehicles
     output: false
-    permalink: "/about/:collection/:path/"
+    permalink: "/:collection/:path/"
   insights:
     title: Insights
     output: true
