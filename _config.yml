@@ -32,8 +32,12 @@ collections:
     output: true
 defaults:
 - scope:
-    path: insights
-    type: posts
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    type: insights
   values:
     Practice Area:
     - 
@@ -44,14 +48,6 @@ defaults:
 - scope:
     type: authors
   values:
-    Author Image: 
-    Author Title: 
-    layout: page
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
     Author Image: 
     Author Title: 
     layout: page
