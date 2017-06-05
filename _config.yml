@@ -36,6 +36,7 @@ defaults:
   values:
     layout: page
 - scope:
+    path: ''
     type: insights
   values:
     Practice Area:
