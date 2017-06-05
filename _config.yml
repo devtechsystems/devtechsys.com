@@ -81,7 +81,10 @@ defaults:
     path: ''
     type: our-team
   values:
+    Title: 
+    Highlight: 
     Headshot Image: 
+    Job Title: 
     layout: page
 - scope:
     path: ''
