@@ -42,12 +42,19 @@ defaults:
     Author: 
     layout: post
 - scope:
+    type: authors
+  values:
+    Author Image: 
+    Author Title: 
+    layout: page
+- scope:
     path: ''
     type: pages
   values:
     layout: page
     Author Image: 
     Author Title: 
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
