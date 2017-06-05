@@ -18,9 +18,6 @@ collections:
   our-team:
     title: Management Team
     output: true
-  news-and-publications:
-    title: News & Publications
-    output: true
   posts:
     title: Posts
     output: true
@@ -32,6 +29,9 @@ collections:
     Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
       urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
       penatibus et.
+  reports-and-publications:
+    title: Reports & Publications
+    output: true
   uploads:
     title: Uploads
     output: true
