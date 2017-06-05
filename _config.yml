@@ -37,6 +37,9 @@ defaults:
     path: ''
     type: pages
   values:
+    Title: 
+    Highlight:
+    Banner Image: 
     layout: page
 - scope:
     path: ''
@@ -46,7 +49,7 @@ defaults:
     Practice Area:
     - 
     Banner Image: 
-    Introduction Text: 
+    Highlight: 
     Author: 
     layout: post
 - scope:
@@ -79,8 +82,6 @@ defaults:
     type: our-team
   values:
     Headshot Image: 
-    Title: 
-    Intro Text: 
     layout: page
 - scope:
     path: ''
