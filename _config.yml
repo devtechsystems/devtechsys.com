@@ -43,6 +43,13 @@ defaults:
     Practice Area<?>: ''
     Is Active: false
 - scope:
+    path: 'Authors'
+    type: pages
+  values:
+    layout: page
+    Author Title: ''
+    Author Image: ''
+- scope:
     path: ''
     type: pages
   values:
