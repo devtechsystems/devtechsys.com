@@ -52,6 +52,14 @@ defaults:
     Author Image: 
     Author Title: 
     layout: page
+- scope:
+    path: ''
+    type: contracting-vehicles
+  values:
+    Full Title: 
+    Agency: 
+    Prime Contract?: 
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
