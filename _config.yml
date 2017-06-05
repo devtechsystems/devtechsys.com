@@ -18,6 +18,9 @@ collections:
   our-team:
     title: Management Team
     output: true
+  news-and-publications:
+    title: News & Publications
+    output: true
   posts:
     title: Posts
     output: true
