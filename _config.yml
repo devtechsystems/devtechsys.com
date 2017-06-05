@@ -12,6 +12,7 @@ collections:
   insights:
     title: Insights
     output: true
+    permalink: "/:collection/:title/"
   our-team:
     title: Management Team
     output: true
@@ -31,28 +32,22 @@ collections:
     output: true
 defaults:
 - scope:
-    path: ''
+    path: insights
     type: posts
   values:
+    Practice Area:
+    - 
+    Banner Image: 
+    Introduction Text: 
+    Author: 
     layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: Insights
-    type: posts
-  values:
-    layout: post
-    permalink: "/:collection/:title/"
-    Intro Text: ''
-    Banner Image: ''
-    Practice Area<?>: ''
-    Is Active: false
 - scope:
     path: Authors
     type: pages
   values:
+    Author Image: 
+    Author Title: 
     layout: page
-    Author Title: ''
-    Author Image: ''
 - scope:
     path: ''
     type: pages
