@@ -2,32 +2,47 @@
 layout: default
 ---
 
-<article class="post">
+<article class="page">
 
-  <header class="post-header">
+  <header class="header">
   	{% if page.navigation_group == "About Us" %}
-	    <h1 class="post-title">{{ page.navigation_group | escape }}</h1>
-	    <h2 class="post-subtitle">{{ page.title | escape }}</h2>
-	    <ul>
-    	
-	      {% assign aboutNav_pages = site.html_pages | sort: 'navigation_order' | where:'navigation_group','About Us' %}
-	      {% for p in aboutNav_pages %}
-	        {% if p.navigation_order %}
-	          <li>
-	            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-	              {{ p.title }}
-	            </a>
-	          </li>
-	        {% endif %}
-	      {% endfor %}
-    	</ul>
+	    <h1 class="title">{{ page.navigation_group | escape }}</h1>
+	    <h2 class="subtitle">{{ page.title | escape }}</h2>
     {% else %}
-    	<h2 class="post-subtitle">{{ page.title | escape }}</h2>
+    	<h2 class="subtitle">{{ page.title | escape }}</h2>
     {% endif %}
   </header>
 
-  <div class="post-content">
+  {% if page.navigation_group == "About Us" %}
+	  <ul class="tabs">
+	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+	    {% for p in aboutNav_pages %}
+	      <li>
+	        <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+	          {{ p.title }}
+	        </a>
+	      </li>
+	    {% endfor %}
+		</ul>
+	{% endif %}
+
+  <div class="content">
     {{ content }}
+
+    {% if page['Has Team List'] == true %}
+    	<ul>
+    	{% for member in site.our-team %}
+          <li>
+            <a href="{{ member.url | relative_url }}">
+            	{{ member['Title'] | escape }}
+            	<img src="{{ member['Headshot Image'] | relative_url }}"/>
+            	{{ member['Job Title'] | escape }}
+           	</a>
+          </li>
+      {% endfor %}
+    	</ul>
+		{% endif %}    
   </div>
 
 </article>
+
