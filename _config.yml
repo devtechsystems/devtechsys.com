@@ -12,14 +12,11 @@ collections:
     title: Contracting Vehicles
     output: false
     permalink: "/:collection/:path/"
-  insights:
-    title: Insights
-    output: true
   our-team:
     title: Management Team
     output: true
   posts:
-    title: Posts
+    title: Insights
     output: true
   practice-areas:
     title: Practice Areas
@@ -43,7 +40,7 @@ defaults:
     layout: page
 - scope:
     path: ''
-    type: insights
+    type: posts
   values:
     permalink: "/insights/:title/"
     Practice Area:
