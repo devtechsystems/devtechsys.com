@@ -27,21 +27,32 @@ layout: default
 	{% endif %}
 
   <div class="content">
+		{% if page['Title'].size > 0 %}
+			<h1>{{ page['Title']}}</h1>
+		{% endif %}
+		{% if page['Banner Image'].size > 0 %}
+			<img src="{{ page['Banner Image'] }}"/>
+		{% endif %}
+		{% if page['Highlight'].size > 0 %}
+			<h2 class="highlight-text">{{ page['Highlight'] }}</h2>
+		{% endif %}
+
     {{ content }}
 
+
     {% if page['Has Team List'] == true %}
-    	<ul>
-    	{% for member in site.our-team %}
-          <li>
-            <a href="{{ member.url | relative_url }}">
-            	{{ member['Title'] | escape }}
-            	<img src="{{ member['Headshot Image'] | relative_url }}"/>
-            	{{ member['Job Title'] | escape }}
-           	</a>
-          </li>
-      {% endfor %}
-    	</ul>
-		{% endif %}    
+    	{% include team-list.html %}
+		{% endif %}
+
+
+		{% if page['Has Career List'] == true %}
+			{% include career-list.html %}
+		{% endif %}
+
+
+		{% if page['Has Contract List'] == true %}
+			{% include contract-list.html %}
+		{% endif %}
   </div>
 
 </article>

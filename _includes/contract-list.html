@@ -1,0 +1,5 @@
+<ul>
+{% for contracts in site.contracting-vehicles %}
+    <li>{{ contracts['Full Title'] | escape }}</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+<ul>
+{% for member in site.our-team %}
+    <li>
+      <a href="{{ member.url | relative_url }}">
+      	{{ member['Title'] | escape }}
+      	<img src="{{ member['Headshot Image'] | relative_url }}"/>
+      	{{ member['Job Title'] | escape }}
+     	</a>
+    </li>
+{% endfor %}
+</ul>
