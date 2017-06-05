@@ -7,7 +7,7 @@ collections:
     output: false
   contracting-vehicles:
     title: Contracting Vehicles
-    output: true
+    output: false
     permalink: "/about/:collection/:path/"
   insights:
     title: Insights
@@ -54,7 +54,7 @@ defaults:
     layout: page
 - scope:
     path: ''
-    type: management team
+    type: our-team
   values:
     Headshot Image: 
     Title: 
@@ -62,7 +62,7 @@ defaults:
     layout: page
 - scope:
     path: ''
-    type: contracting Vehicles
+    type: contracting-vehicles
     Full Title: 
     Agency: 
     Prime Contract?: 
