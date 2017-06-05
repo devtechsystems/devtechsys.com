@@ -33,6 +33,16 @@ defaults:
     layout: post
     permalink: "/posts/:title/"
 - scope:
+    path: 'insights'
+    type: posts
+  values:
+    layout: post
+    permalink: "/:collection/:title/"
+    Intro Text: ""
+    Banner Image: ""
+    Practice Area<?>: ""
+    Is Active: false
+- scope:
     path: ''
     type: pages
   values:
