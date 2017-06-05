@@ -7,7 +7,7 @@ Highlight: DevTech initially responded to development issues in Latin America an
   the Caribbean, and later expanded its geographic scope to implement long- and short-term
   projects in all regions of the world. DevTech's client base includes government
   agencies, multilateral development institutions, and private-sector entities.
-Banner Image: "/uploads/example-history-banner.png"
+Banner Image: "/uploads/history-banner.jpg"
 navigation_group: About Us
 navigation_order: 1
 ---
