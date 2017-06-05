@@ -26,6 +26,9 @@ collections:
     Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
       urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
       penatibus et.
+  projects:
+    title: Projects
+    output: true
   reports-and-publications:
     title: Reports & Publications
     output: false
