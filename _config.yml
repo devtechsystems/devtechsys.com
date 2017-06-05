@@ -63,9 +63,10 @@ defaults:
 - scope:
     path: ''
     type: contracting-vehicles
-    Full Title: 
-    Agency: 
-    Prime Contract?: 
+    values: 
+      Full Title: 
+      Agency: 
+      Prime Contract?: 
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
