@@ -9,6 +9,7 @@ Highlight: "Rafael Romeu is the President and CEO of  DevTech Systems, Inc., (De
   Park."
 Headshot Image: "/uploads/rafael-romeu.jpg"
 Job Title: Ph.D., President, CEO
+layout: page
 ---
 
 Dr. Romeu joined DevTech from the International Monetary Fund (IMF), where he worked since 2001. From 2010 on, he served in the IMF’s Fiscal Affairs Department, as the fiscal economist assigned to Spain.   In this capacity, he led discussions on structural fiscal policy issues arising during the European Financial Crisis, and developed IMF recommendations for tax measures, structural fiscal adjustment packages, entitlement and pension reforms, fiscal councils, tax policy reforms, expenditure reviews, and fiscal federalism reforms for Spain’s autonomous communities. He led policy discussions with regional finance ministers, the central government, the European Commission, Eurostat, and the European Central Bank on regional transparency, sustainability and financing, as well as IMF joint engagement with OECD and UK authorities to assess Spain’s independent fiscal council.
