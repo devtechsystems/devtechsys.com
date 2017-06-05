@@ -1,20 +1,21 @@
 ---
 title: History
 position: 2
-navigation_group: About Us
-navigation_order: 1
 Title: DevTech was founded by Jorge Sanguinetty, Ph.D. in 1984, and has consistently
   been an innovative, solutions-oriented firm.
-Banner Image: "/uploads/example-history-banner.png"
 Highlight: DevTech initially responded to development issues in Latin America and
   the Caribbean, and later expanded its geographic scope to implement long- and short-term
   projects in all regions of the world. DevTech's client base includes government
   agencies, multilateral development institutions, and private-sector entities.
+Banner Image: "/uploads/example-history-banner.png"
+navigation_group: About Us
+navigation_order: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum mi congue eros porttitor sagittis. Vestibulum sed consequat urna, tempus pharetra ex. Maecenas ac nunc eget velit luctus aliquam. Morbi quis fermentum mauris, vel maximus ligula. Suspendisse commodo mauris leo. Nullam commodo in nulla a vestibulum. Maecenas luctus malesuada turpis, ornare lacinia urna. Quisque dignissim pellentesque dapibus. Vivamus hendrerit semper augue at laoreet. Cras vel sem ullamcorper, ultricies mi nec, fringilla lectus. Vestibulum accumsan quam id magna mollis imperdiet.
 
 > DEVTECH WAS FOUNDED ON THE CONVICTION THAT COMPLEX DEVELOPMENT CHALLENGES HAVE TO BE ADDRESSED THROUGH INNOVATIVE AND PRACTICAL SOLUTIONS.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum mi congue eros porttitor sagittis. This is a link color, tempus pharetra ex. Maecenas ac nunc eget velit luctus aliquam. Morbi quis fermentum mauris, vel maximus ligula. Suspendisse commodo mauris leo. Nullam commodo in nulla a vestibulum. Maecenas luctus malesuada turpis, ornare lacinia urna. Quisque dignissim pellentesque dapibus. Vivamus hendrerit semper augue at laoreet. Cras vel sem ullamcorper, ultricies mi nec, fringilla lectus. Vestibulum accumsan quam id magna mollis imperdiet.
 
 Integer nibh sem, tincidunt ac elit quis, cursus fringilla tortor. Fusce tincidunt rutrum fermentum. Donec mattis ante in sodales iaculis. Integer eu euismod risus. Integer tempus molestie turpis at suscipit. In eleifend erat et nisl porta, in blandit leo consequat. Nunc sit amet fermentum turpis.
