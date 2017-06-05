@@ -28,7 +28,7 @@ collections:
       penatibus et.
   reports-and-publications:
     title: Reports & Publications
-    output: true
+    output: false
   uploads:
     title: Uploads
     output: true
@@ -58,6 +58,16 @@ defaults:
     layout: page
 - scope:
     path: ''
+    type: careers
+  values:
+    Organization: 
+    Location:
+      City: 
+      State: 
+    Type of Opportunity: ['Full time', 'Part time']
+    layout: page
+- scope:
+    path: ''
     type: contracting-vehicles
   values:
     Full Title: 
@@ -83,7 +93,7 @@ defaults:
     Document URL: 
     Practice Area:
     - 
-    layout: report
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
