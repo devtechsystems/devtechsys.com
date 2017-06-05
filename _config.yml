@@ -5,6 +5,9 @@ collections:
   authors:
     title: Authors
     output: false
+  careers:
+    title: Careers
+    output: true
   contracting-vehicles:
     title: Contracting Vehicles
     output: false
