@@ -18,9 +18,6 @@ collections:
   our-team:
     title: Management Team
     output: true
-  posts:
-    title: Posts
-    output: true
   practice-areas:
     title: Practice Areas
     output: true
