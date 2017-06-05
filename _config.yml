@@ -8,7 +8,7 @@ collections:
   contracting-vehicles:
     title: Contracting Vehicles
     output: true
-    permalink: "/about/:path/"
+    permalink: "/about/:collection/:path/"
   insights:
     title: Insights
     output: true
