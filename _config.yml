@@ -60,6 +60,14 @@ defaults:
     Agency: 
     Prime Contract?: 
     layout: page
+- scope:
+    path: ''
+    type: our-team
+  values:
+    Headshot Image: 
+    Title: 
+    Intro Text: 
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
