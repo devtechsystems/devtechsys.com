@@ -19,6 +19,6 @@ Integer nibh sem, tincidunt ac elit quis, cursus fringilla tortor. Fusce tincidu
 * Vestibulum neque sapien, pulvinar non velit in, feugiat sodales urna
 * Duis aliquet ornare blandit
 * Aenean tristique,
-  * ipsum id pellentesque venenatis, 
-  * tellus risus rutrum ligula, 
-  * sit amet ultrices dolor erat tempus quam
+  1. ipsum id pellentesque venenatis, 
+  2. tellus risus rutrum ligula, 
+  3. sit amet ultrices dolor erat tempus quam
