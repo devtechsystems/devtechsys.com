@@ -17,5 +17,6 @@ Location 2:
   City: Bluefields
   State: Bluefields
   Thumbnail Image: "/uploads/example-location-1.png"
+Has Office Locations: true
 ---
 
