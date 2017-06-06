@@ -66,6 +66,9 @@ defaults:
     path: ''
     type: careers
   values:
+    Title: 
+    Highlight: 
+    Banner Image: 
     Organization: 
     Location:
       City: 

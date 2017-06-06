@@ -8,8 +8,11 @@ layout: default
   	{% if page.url contains "/about/" %}
 	    <h1 class="title">About Us</h1>
 	    <h2 class="subtitle">{{ page.title | escape }}</h2>
+    {% else if page.url contains "/careers/" %}
+			<h1 class="title">About Us</h1>
+			<h2 class="subtitle">Careers</h2>
     {% else %}
-    	<h2 class="subtitle">{{ page.title | escape }}</h2>
+    	<h1 class="title">{{ page.title | escape }}</h2>
     {% endif %}
   </header>
 
