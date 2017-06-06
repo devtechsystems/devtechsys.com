@@ -91,6 +91,15 @@ defaults:
     layout: page
 - scope:
     path: ''
+    type: practice-areas
+  values:
+    Highlight: 
+    Detail Page Image: 
+    Light Icon Image: 
+    Dark Icon Image: 
+    layout: page
+- scope:
+    path: ''
     type: reports-and-publications
   values:
     Document Link Title: 
