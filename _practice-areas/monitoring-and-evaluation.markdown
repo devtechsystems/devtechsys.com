@@ -2,7 +2,7 @@
 title: Monitoring and Evaluation
 date: 2017-05-30 18:47:00 Z
 position: 0
-Highlight: Intro text appears at the top of the page in a larger font size.
+Highlight: Highlight text appears at the top of the page in a larger font size.
 Detail Page Image: 
 Light Icon Image: 
 Dark Icon Image: 
