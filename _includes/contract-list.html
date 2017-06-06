@@ -1,30 +1,25 @@
-<strong>Prime Contract Vehicle</strong>
-<ul>
-  {% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true %}
-  {% for contracts in primeContracts %}
+<h2>Prime Contract Vehicle</h2>
+{% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true | group_by: 'Agency' %}
+{% for agency in primeContracts %}
+  <h3>{{ agency.name }}</h3>
+  <ul>
+    {% for contracts in agency.items %}
     <li>
-      <span>{{ contracts['Is Prime Contract'] | escape }}</span><br/>
-      <span>{{ contracts['Agency'] | escape }}</span><br/>
       <strong>{{ contracts['Full Title'] | escape }}</strong>
     </li>
-  {% endfor %}
-</ul>
-
-
-{% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false %}
-{% if otherContracts.size > 0 %}
-  <strong>Other Contract Vehicle</strong>
-  <ul>
-    {% for contracts in otherContracts %}
-      <li>
-        <span>{{ contracts['Is Prime Contract'] | escape }}</span><br/>
-        <span>{{ contracts['Agency'] | escape }}</span><br/>
-        <strong>{{ contracts['Full Title'] | escape }}</strong>
-      </li>
     {% endfor %}
   </ul>
-{% endif%}
+{% endfor %}
 
-<!-- Need to figure out how to test for 
-<strong>Other Contract Vehicle</strong>
--->
+<h2>Other Contract Vehicle</h2>
+{% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false | group_by: 'Agency' %}
+{% for agency in otherContracts %}
+  <h3>{{ agency.name }}</h3>
+  <ul>
+    {% for contracts in agency.items %}
+    <li>
+      <strong>{{ contracts['Full Title'] | escape }}</strong>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

@@ -4,70 +4,69 @@ layout: default
 
 <article class="page">
 
-  <header class="header">
-  	{{page.navigation_group}}
+	{% case page.navigation_group %}
+	  {% when "About Us" %}
+			<header class="header">
+				<h1 class="title">About Us</h1>
+				<h2 class="subtitle">{{ page.title | escape }}</h2>
+			</header>
+			<ul class="tabs">
+		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+		    {% for p in aboutNav_pages %}
+		      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
+		        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>
+		          {{ p.title }}
+		        </a>
+		      </li>
+		    {% endfor %}
+			</ul>
 
-		{% case page.navigation_group %}
-		  {% when "About Us" %}
-		    <h1 class="title">About Us</h1>
-		    <h2 class="subtitle">{{ page.title | escape }}</h2>
-	    {% when "Our Team" %}
+    {% when "Our Team" %}
+			<header class="header">
 				<h1 class="title">About Us</h1>
 				<h2 class="subtitle">Our Team</h2>
-    	{% when "Careers" %}
+			</header>
+			<ul class="tabs">
+		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+		    {% for p in aboutNav_pages %}
+		      <li class="tabs-title {% if p.url == "/about/our-team/" %}is-active{% endif %}">
+		        <a href="{{ p.url }}" {% if p.url == "/about/our-team/" %}aria-selected="true"{% endif %}>
+		          {{ p.title }}
+		        </a>
+		      </li>
+		    {% endfor %}
+			</ul>
+			<a href="/about/our-team/">< Back</a>
+
+  	{% when "Careers" %}
+			<header class="header">
 				<h1 class="title">About Us</h1>
 				<h2 class="subtitle">Careers</h2>
-    	{% else %}
-    		<h1 class="title">{{ page.title | escape }}</h2>
-    {% endcase %}
-  </header>
+			</header>
 
-  {% if page.navigation_group == "About Us" %}
-	  <ul class="tabs">
-	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-	    {% for p in aboutNav_pages %}
-	      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
-	        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>
-	          {{ p.title }}
-	        </a>
-	      </li>
-	    {% endfor %}
-		</ul>
-	{% endif %}
+			<ul class="tabs">
+		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+		    {% for p in aboutNav_pages %}
+		      <li class="tabs-title {% if p.url == "/about/careers/" %}is-active{% endif %}">
+		        <a href="{{ p.url }}" {% if p.url == "/about/careers/" %}aria-selected="true"{% endif %}>
+		          {{ p.title }}
+		        </a>
+		      </li>
+		    {% endfor %}
+			</ul>
 
-	{% if page.navigation_group == "Our Team" %}
-		<ul class="tabs">
-	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-	    {% for p in aboutNav_pages %}
-	      <li class="tabs-title {% if p.url == "/about/our-team/" %}is-active{% endif %}">
-	        <a href="{{ p.url }}" {% if p.url == "/about/our-team/" %}aria-selected="true"{% endif %}>
-	          {{ p.title }}
-	        </a>
-	      </li>
-	    {% endfor %}
-		</ul>
+			<a href="/about/careers/">< Back</a>
 
-		<a href="/about/our-team/">< Back</a>
-	{% endif %}
+  	{% else %}
+    	<h1 class="title">{{ page.title | escape }}</h2>
 
-	{% if page.navigation_group == "Careers" %}
-		<ul class="tabs">
-	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-	    {% for p in aboutNav_pages %}
-	      <li class="tabs-title {% if p.url == "/about/careers/" %}is-active{% endif %}">
-	        <a href="{{ p.url }}" {% if p.url == "/about/careers/" %}aria-selected="true"{% endif %}>
-	          {{ p.title }}
-	        </a>
-	      </li>
-	    {% endfor %}
-		</ul>
-
-		<a href="/about/careers/">< Back</a>
-	{% endif %}
+   {% endcase %}
 
   <div class="content">
 		{% if page['Title'].size > 0 %}
 			<h1>{{ page['Title']}}</h1>
+		{% else %}
+			<h1>{{ page.title }}</h1>
 		{% endif %}
 		{% if page['Banner Image'].size > 0 %}
 			<img src="{{ page['Banner Image'] }}"/>
