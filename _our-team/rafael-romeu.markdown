@@ -9,7 +9,7 @@ Highlight: "Rafael Romeu is the President and CEO of  DevTech Systems, Inc., (De
   Park."
 Headshot Image: "/uploads/rafael-romeu.jpg"
 Job Title: Ph.D., President, CEO
-Navigation Group: Team Profile
+navigation_group: Our Team
 layout: page
 ---
 
