@@ -1,7 +1,6 @@
 ---
 title: Business Development Director
 date: 2017-06-05 17:52:00 Z
-Title: Business Development Director
 Organization: Corporate
 Location:
   City: Arlington
