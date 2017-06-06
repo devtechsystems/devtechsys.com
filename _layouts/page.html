@@ -5,15 +5,21 @@ layout: default
 <article class="page">
 
   <header class="header">
-  	{% if page.url contains "/about/" %}
-	    <h1 class="title">About Us</h1>
-	    <h2 class="subtitle">{{ page.title | escape }}</h2>
-    {% else if page.url contains "/careers/" %}
-			<h1 class="title">About Us</h1>
-			<h2 class="subtitle">Careers</h2>
-    {% else %}
-    	<h1 class="title">{{ page.title | escape }}</h2>
-    {% endif %}
+  	{{page.navigation_group}}
+
+		{% case page.navigation_group %}
+		  {% when "About Us" %}
+		    <h1 class="title">About Us</h1>
+		    <h2 class="subtitle">{{ page.title | escape }}</h2>
+	    {% when "Our Team" %}
+				<h1 class="title">About Us</h1>
+				<h2 class="subtitle">Our Team</h2>
+    	{% when "Careers" %}
+				<h1 class="title">About Us</h1>
+				<h2 class="subtitle">Careers</h2>
+    	{% else %}
+    		<h1 class="title">{{ page.title | escape }}</h2>
+    {% endcase %}
   </header>
 
   {% if page.navigation_group == "About Us" %}

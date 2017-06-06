@@ -82,7 +82,7 @@ defaults:
   values:
     Full Title: 
     Agency: 
-    Prime Contract?: 
+    Is Prime Contract: 
     layout: page
 - scope:
     path: ''

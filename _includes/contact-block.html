@@ -1,6 +1,19 @@
-<div>
-	<span>{{ page['Contact Details']['Phone Number']}}</span>
-	<span>{{ page['Contact Details']['General Email']}}</span>
-	<span>{{ page['Contact Details']['Jobs Email']}}</span>
-	<span>{{ page['Contact Details']['Form Delivery Email']}}</span>
+<div class="row">
+	<div class="medium-4 column">
+		<span class="fa fa-phone-square" aria-hidden="true"></span>
+		{{ page['Contact Details']['Phone Number']}}
+	</div>
+	<div class="medium-4 column">
+		<span class="fa fa-envelope-square" aria-hidden="true"></span>
+		{{ page['Contact Details']['General Email']}}
+	</div>
+	<div class="medium-4 column">
+		<span class="fa fa-users" aria-hidden="true"></span>
+		{{ page['Contact Details']['Jobs Email']}}
+	</div>
+</div>
+<div class="row column">
+	<div style="width:100%;height:500px;background-color:#eee;">
+		need to add form that will send emails to <strong>{{ page['Contact Details']['Form Delivery Email']}}</strong>
+	</div>
 </div>

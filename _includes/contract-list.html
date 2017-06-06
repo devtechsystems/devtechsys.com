@@ -1,5 +1,30 @@
+<strong>Prime Contract Vehicle</strong>
 <ul>
-{% for contracts in site.contracting-vehicles %}
-    <li>{{ contracts['Full Title'] | escape }}</li>
-{% endfor %}
+  {% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true %}
+  {% for contracts in primeContracts %}
+    <li>
+      <span>{{ contracts['Is Prime Contract'] | escape }}</span><br/>
+      <span>{{ contracts['Agency'] | escape }}</span><br/>
+      <strong>{{ contracts['Full Title'] | escape }}</strong>
+    </li>
+  {% endfor %}
 </ul>
+
+
+{% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false %}
+{% if otherContracts.size > 0 %}
+  <strong>Other Contract Vehicle</strong>
+  <ul>
+    {% for contracts in otherContracts %}
+      <li>
+        <span>{{ contracts['Is Prime Contract'] | escape }}</span><br/>
+        <span>{{ contracts['Agency'] | escape }}</span><br/>
+        <strong>{{ contracts['Full Title'] | escape }}</strong>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif%}
+
+<!-- Need to figure out how to test for 
+<strong>Other Contract Vehicle</strong>
+-->
