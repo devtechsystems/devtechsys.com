@@ -4,7 +4,7 @@
       <a href="{{ opening.url | relative_url }}">
         {{ opening.title | escape }}
       </a>
-      <span>{{ opening['Location']['City'] | escape }}</span>
+      <span>{{ opening.location.city | escape }}</span>
       <span>{{ opening['Location']['State'] | escape }}</span>
       <span>{{ opening['Organization'] | escape }}</span>
       <span>{{ opening['Type of Opportunity'] | escape }}</span>

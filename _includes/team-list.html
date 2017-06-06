@@ -1,10 +1,10 @@
-<ul>
+<ul class="row small-up-2 large-up-4">
 {% for member in site.our-team %}
-    <li>
+    <li class="column column-block team-list-block">
       <a href="{{ member.url | relative_url }}">
-      	{{ member['Title'] | escape }}
       	<img src="{{ member['Headshot Image'] | relative_url }}"/>
-      	{{ member['Job Title'] | escape }}
+      	<h2 class="tl-title">{{ member['Title'] | escape }}</h2>
+      	<h3 class="tl-subtitle">{{ member['Job Title'] | escape }}</h3>
      	</a>
     </li>
 {% endfor %}

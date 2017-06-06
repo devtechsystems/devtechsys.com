@@ -5,8 +5,8 @@ layout: default
 <article class="page">
 
   <header class="header">
-  	{% if page.navigation_group == "About Us" %}
-	    <h1 class="title">{{ page.navigation_group | escape }}</h1>
+  	{% if page.url contains "/about/" %}
+	    <h1 class="title">About Us</h1>
 	    <h2 class="subtitle">{{ page.title | escape }}</h2>
     {% else %}
     	<h2 class="subtitle">{{ page.title | escape }}</h2>
@@ -24,6 +24,36 @@ layout: default
 	      </li>
 	    {% endfor %}
 		</ul>
+	{% endif %}
+
+	{% if page.navigation_group == "Our Team" %}
+		<ul class="tabs">
+	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+	    {% for p in aboutNav_pages %}
+	      <li class="tabs-title {% if p.url == "/about/our-team/" %}is-active{% endif %}">
+	        <a href="{{ p.url }}" {% if p.url == "/about/our-team/" %}aria-selected="true"{% endif %}>
+	          {{ p.title }}
+	        </a>
+	      </li>
+	    {% endfor %}
+		</ul>
+
+		<a href="/about/our-team/">< Back</a>
+	{% endif %}
+
+	{% if page.navigation_group == "Careers" %}
+		<ul class="tabs">
+	    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+	    {% for p in aboutNav_pages %}
+	      <li class="tabs-title {% if p.url == "/about/careers/" %}is-active{% endif %}">
+	        <a href="{{ p.url }}" {% if p.url == "/about/careers/" %}aria-selected="true"{% endif %}>
+	          {{ p.title }}
+	        </a>
+	      </li>
+	    {% endfor %}
+		</ul>
+
+		<a href="/about/careers/">< Back</a>
 	{% endif %}
 
   <div class="content">
@@ -52,6 +82,14 @@ layout: default
 
 		{% if page['Has Contract List'] == true %}
 			{% include contract-list.html %}
+		{% endif %}
+
+		{% if page['Has Contact Form'] == true %}
+			{% include contact-block.html %}
+		{% endif %}
+
+		{% if page['Has Office Locations'] == true %}
+			{% include office-locations.html %}
 		{% endif %}
   </div>
 
