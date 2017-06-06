@@ -71,6 +71,7 @@ defaults:
       City: 
       State: 
     Type of Opportunity: Full time
+    navigation_group: Careers
     layout: page
 - scope:
     path: ''
@@ -88,6 +89,7 @@ defaults:
     Highlight: 
     Headshot Image: 
     Job Title: 
+    navigation_group: Our Team
     layout: page
 - scope:
     path: ''
