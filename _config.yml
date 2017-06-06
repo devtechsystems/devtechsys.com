@@ -102,7 +102,7 @@ defaults:
     Detail Page Image: 
     Light Icon Image: 
     Dark Icon Image: 
-    layout: page
+    layout: practice-areas
 - scope:
     path: ''
     type: reports-and-publications
