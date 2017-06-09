@@ -125,7 +125,7 @@ defaults:
     Highlight: 
     Banner Image: 
     Practice Area:
-    -
+    - 
     Is Active: 
     layout: page
 email: ''
