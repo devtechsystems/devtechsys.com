@@ -116,6 +116,18 @@ defaults:
     Practice Area:
     - 
     layout: page
+- scope:
+    path: ''
+    type: projects
+  values:
+    Title: 
+    Mission Title: 
+    Highlight: 
+    Banner Image: 
+    Practice Area:
+    -
+    Is Active: 
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
