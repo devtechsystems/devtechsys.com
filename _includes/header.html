@@ -51,16 +51,14 @@
         <div class="medium-3 column">
           <h2>Our Insights</h2>
           <ul>
-          {% for post in site.insights limit:6 %}
+          {% for post in site.posts limit:6 %}
             <li>
               {% assign date_format = "%b %-d, %Y" %}
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </li>
           {% endfor %}
-            <li>
-              <a class="post-link" href="/insights/">See all posts</a>
-            </li>
+            <li><a class="post-link" href="/insights/">See all posts</a></li>
           </ul>
         </div>
       </div>
