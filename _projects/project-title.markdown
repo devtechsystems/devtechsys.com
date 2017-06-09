@@ -5,6 +5,7 @@ Title: Title shown inside the content area and used for the list link text
 Practice Area:
 - Monitoring and Evaluation
 Is Active: true
+layout: page
 ---
 
-content goes here
+content goes
