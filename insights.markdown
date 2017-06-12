@@ -6,3 +6,4 @@ Insight:
 - 
 ---
 
+this page is still a work in progress, I imagine this will only be used to select two insights to highlight at the top of the page
