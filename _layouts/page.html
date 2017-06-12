@@ -2,104 +2,105 @@
 layout: default
 ---
 
-<article class="page">
+{% case page.navigation_group %}
+	{% when "About Us" %}
+		{% assign header_subtitle = page.title | escape %}
 
-	{% case page.navigation_group %}
-	  {% when "About Us" %}
-			<header class="header">
-				<h1 class="title">About Us</h1>
-				<h2 class="subtitle">{{ page.title | escape }}</h2>
-			</header>
-			<ul class="tabs">
-		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-		    {% for p in aboutNav_pages %}
-		      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
-		        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>
-		          {{ p.title }}
-		        </a>
-		      </li>
-		    {% endfor %}
-			</ul>
+		{% include header.html title='About Us' subtitle=header_subtitle %}
+			<main class="page-content" aria-label="Content">
+			  <div class="row column">
+					<article class="page">
+						<ul class="tabs">
+					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+					    {% for p in aboutNav_pages %}
+					      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
+					        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>
+					          {{ p.title }}
+					        </a>
+					      </li>
+					    {% endfor %}
+						</ul>
+	{% when "Our Team" %}
+		{% include header.html title='About Us' subtitle='Our Team' %}
+			<main class="page-content" aria-label="Content">
+			  <div class="row column">
+					<article class="page">
+						<ul class="tabs">
+					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+					    {% for p in aboutNav_pages %}
+					      <li class="tabs-title {% if p.url == "/about/our-team/" %}is-active{% endif %}">
+					        <a href="{{ p.url }}" {% if p.url == "/about/our-team/" %}aria-selected="true"{% endif %}>
+					          {{ p.title }}
+					        </a>
+					      </li>
+					    {% endfor %}
+						</ul>
+						<a href="/about/our-team/">< Back</a>
+	{% when "Careers" %}
+		{% include header.html title='About Us' subtitle='Careers' %}
+			<main class="page-content" aria-label="Content">
+			  <div class="row column">
+					<article class="page">
+					<ul class="tabs">
+				    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+				    {% for p in aboutNav_pages %}
+				      <li class="tabs-title {% if p.url == "/about/careers/" %}is-active{% endif %}">
+				        <a href="{{ p.url }}" {% if p.url == "/about/careers/" %}aria-selected="true"{% endif %}>
+				          {{ p.title }}
+				        </a>
+				      </li>
+				    {% endfor %}
+					</ul>
 
-    {% when "Our Team" %}
-			<header class="header">
-				<h1 class="title">About Us</h1>
-				<h2 class="subtitle">Our Team</h2>
-			</header>
-			<ul class="tabs">
-		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-		    {% for p in aboutNav_pages %}
-		      <li class="tabs-title {% if p.url == "/about/our-team/" %}is-active{% endif %}">
-		        <a href="{{ p.url }}" {% if p.url == "/about/our-team/" %}aria-selected="true"{% endif %}>
-		          {{ p.title }}
-		        </a>
-		      </li>
-		    {% endfor %}
-			</ul>
-			<a href="/about/our-team/">< Back</a>
+					<a href="/about/careers/">< Back</a>
 
-  	{% when "Careers" %}
-			<header class="header">
-				<h1 class="title">About Us</h1>
-				<h2 class="subtitle">Careers</h2>
-			</header>
+	{% else %}
+		{% include header.html title='Title' subtitle='SubTitle' %}
+			<main class="page-content" aria-label="Content">
+			  <div class="row column">
+					<article class="page">
 
-			<ul class="tabs">
-		    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-		    {% for p in aboutNav_pages %}
-		      <li class="tabs-title {% if p.url == "/about/careers/" %}is-active{% endif %}">
-		        <a href="{{ p.url }}" {% if p.url == "/about/careers/" %}aria-selected="true"{% endif %}>
-		          {{ p.title }}
-		        </a>
-		      </li>
-		    {% endfor %}
-			</ul>
+	{% endcase %}
 
-			<a href="/about/careers/">< Back</a>
+					  <div class="content">
+							{% if page['Title'].size > 0 %}
+								<h1>{{ page['Title']}}</h1>
+							{% else %}
+								<h1>{{ page.title }}</h1>
+							{% endif %}
+							{% if page['Banner Image'].size > 0 %}
+								<img src="{{ page['Banner Image'] }}"/>
+							{% endif %}
+							{% if page['Highlight'].size > 0 %}
+								<h2 class="highlight-text">{{ page['Highlight'] }}</h2>
+							{% endif %}
 
-  	{% else %}
-    	<h1 class="title">{{ page.title | escape }}</h2>
-
-   {% endcase %}
-
-  <div class="content">
-		{% if page['Title'].size > 0 %}
-			<h1>{{ page['Title']}}</h1>
-		{% else %}
-			<h1>{{ page.title }}</h1>
-		{% endif %}
-		{% if page['Banner Image'].size > 0 %}
-			<img src="{{ page['Banner Image'] }}"/>
-		{% endif %}
-		{% if page['Highlight'].size > 0 %}
-			<h2 class="highlight-text">{{ page['Highlight'] }}</h2>
-		{% endif %}
-
-    {{ content }}
-
-
-    {% if page['Has Team List'] == true %}
-    	{% include team-list.html %}
-		{% endif %}
+					    {{ content }}
 
 
-		{% if page['Has Career List'] == true %}
-			{% include career-list.html %}
-		{% endif %}
+					    {% if page['Has Team List'] == true %}
+					    	{% include team-list.html %}
+							{% endif %}
 
 
-		{% if page['Has Contract List'] == true %}
-			{% include contract-list.html %}
-		{% endif %}
+							{% if page['Has Career List'] == true %}
+								{% include career-list.html %}
+							{% endif %}
 
-		{% if page['Has Contact Form'] == true %}
-			{% include contact-block.html %}
-		{% endif %}
 
-		{% if page['Has Office Locations'] == true %}
-			{% include office-locations.html %}
-		{% endif %}
-  </div>
+							{% if page['Has Contract List'] == true %}
+								{% include contract-list.html %}
+							{% endif %}
 
-</article>
+							{% if page['Has Contact Form'] == true %}
+								{% include contact-block.html %}
+							{% endif %}
 
+							{% if page['Has Office Locations'] == true %}
+								{% include office-locations.html %}
+							{% endif %}
+					  </div>
+
+					</article>
+				</div>
+			</main>

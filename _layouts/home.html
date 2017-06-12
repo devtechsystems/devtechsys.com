@@ -2,51 +2,60 @@
 layout: default
 ---
 
-<div class="home">
-  <h1 class="sr-only">{{site.title}}</h1>
-  <div class="row hero">
-    <div class="column">
-      <h2>{{page['Hero Section']['Tagline']}}</h2>
-      <h3>{{page['Hero Section']['Short Mission Statement']}}</h3>
-      <a href="{{page['Hero Section']['Button Link']}}">{{page['Hero Section']['Button Label']}}</a>
+
+{% include header.html %}
+
+<main class="page-content" aria-label="Content">
+  <div class="row column">
+      
+    <div class="home">
+      <h1 class="sr-only">{{site.title}}</h1>
+      <div class="row hero">
+        <div class="column">
+          <h2>{{page['Hero Section']['Tagline']}}</h2>
+          <h3>{{page['Hero Section']['Short Mission Statement']}}</h3>
+          <a href="{{page['Hero Section']['Button Link']}}">{{page['Hero Section']['Button Label']}}</a>
+        </div>
+      </div>
+      <div class="row insights">
+        <div class="column">
+          <ul>
+            {% for post in site.insights limit:3 %}
+              <li>
+                {% assign date_format = "%b %-d, %Y" %}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <a href="/insights/">{{page['Insights Section']['Button Label']}}</a>
+        </div>
+      </div>
+      <div class="row practice-areas">
+        <div class="column">
+          <h2>{{page['Practice Areas Section']['Title']}}</h2>
+          <h3>{{page['Practice Areas Section']['Subtitle']}}</h3>
+          <p>{{page['Practice Areas Section']['Brief Description']}}</p>
+          <a href="#">{{page['Practice Areas Section']['Button Label']}}</a>
+          <ul>
+            {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
+            {% for practices in sorted_practices %}
+              <li>
+                <a href="{{ practices.url | relative_url }}">{{ practices.title | escape }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="row projects">
+        <div class="column">
+          <h2>{{page['Projects Section']['Title']}}</h2>
+          <h3>{{page['Projects Section']['Subtitle']}}</h3>
+          <p>{{page['Projects Section']['Brief Description']}}</p>
+          <a href="#">{{page['Projects Section']['Button Label']}}</a>
+        </div>
+      </div>
     </div>
+
   </div>
-  <div class="row insights">
-    <div class="column">
-      <ul>
-        {% for post in site.insights limit:3 %}
-          <li>
-            {% assign date_format = "%b %-d, %Y" %}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      <a href="/insights/">{{page['Insights Section']['Button Label']}}</a>
-    </div>
-  </div>
-  <div class="row practice-areas">
-    <div class="column">
-      <h2>{{page['Practice Areas Section']['Title']}}</h2>
-      <h3>{{page['Practice Areas Section']['Subtitle']}}</h3>
-      <p>{{page['Practice Areas Section']['Brief Description']}}</p>
-      <a href="#">{{page['Practice Areas Section']['Button Label']}}</a>
-      <ul>
-        {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
-        {% for practices in sorted_practices %}
-          <li>
-            <a href="{{ practices.url | relative_url }}">{{ practices.title | escape }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div class="row projects">
-    <div class="column">
-      <h2>{{page['Projects Section']['Title']}}</h2>
-      <h3>{{page['Projects Section']['Subtitle']}}</h3>
-      <p>{{page['Projects Section']['Brief Description']}}</p>
-      <a href="#">{{page['Projects Section']['Button Label']}}</a>
-    </div>
-  </div>
-</div>
+</main>

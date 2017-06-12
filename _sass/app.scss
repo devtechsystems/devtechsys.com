@@ -1,7 +1,17 @@
 //foundation included
 @import "font-awesome";
 
-.site-header > .row {position: relative;}
+
+.site-header {
+  background-color: #003045;
+  & > .row {position: relative;}
+  .site-title {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 28px;
+  }
+}
 .site-nav {
   position: absolute;
   top: 0;
@@ -19,6 +29,7 @@
     z-index: 2;
     position: relative;
     cursor: pointer;
+    margin-top: 38px;
   }
 
   .nav-menu-icon {
@@ -31,7 +42,7 @@
     text-align: center;
 
     > svg path {
-      fill: #111;
+      fill: #fff;
     }
   }
 
@@ -43,8 +54,33 @@
   input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
-    background-color:#f0f0f0;
+    background-color: #284460;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-top: 150px;
   }
+
+  .trigger {
+    h2 {color:#fff;}
+    ul {list-style-type:none;}
+    a {color:#7dcba7;text-decoration: none;}
+  }
+}
+.title-row-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7dcba7;
+  font-size:1.1rem;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+.title-row-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+  font-size:2rem;
+  margin-bottom: 2rem;
 }
 
 
