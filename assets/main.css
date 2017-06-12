@@ -2323,8 +2323,15 @@
   overflow: visible;
   clip: auto; }
 
-.site-header > .row {
-  position: relative; }
+.site-header {
+  background-color: #003045; }
+  .site-header > .row {
+    position: relative; }
+  .site-header .site-title {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 28px; }
 
 .site-nav {
   position: absolute;
@@ -2342,7 +2349,8 @@
     height: 36px;
     z-index: 2;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 38px; }
   .site-nav .nav-menu-icon {
     display: block;
     float: right;
@@ -2352,14 +2360,40 @@
     padding-top: 10px;
     text-align: center; }
     .site-nav .nav-menu-icon > svg path {
-      fill: #111; }
+      fill: #fff; }
   .site-nav input ~ .trigger {
     clear: both;
     display: none; }
   .site-nav input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
-    background-color: #f0f0f0; }
+    background-color: #284460;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-top: 150px; }
+  .site-nav .trigger h2 {
+    color: #fff; }
+  .site-nav .trigger ul {
+    list-style-type: none; }
+  .site-nav .trigger a {
+    color: #7dcba7;
+    text-decoration: none; }
+
+.title-row-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7dcba7;
+  font-size: 1.1rem;
+  margin-top: 6rem;
+  margin-bottom: 0; }
+
+.title-row-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
 
 .team-list-block {
   list-style-type: none; }
