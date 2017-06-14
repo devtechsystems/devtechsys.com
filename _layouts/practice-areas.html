@@ -10,10 +10,9 @@ layout: default
 {% include header.html title=header_title subtitle="Current Projects" %}
 
 <main class="page-content" aria-label="Content">
-  <div class="row column">
-  
-		<article class="page">
-			<ul class="tabs" data-tabs id="tabs-{{ page.position | strip }}"  data-deep-link="true" data-update-history="true">
+	<article class="page">
+		<div class="tabs-container">
+			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="tabs-{{ page.position | strip }}"  data-deep-link="true" data-update-history="true">
 		    <li class="tabs-title is-active">
 		      <a href="#current-projects" aria-selected="true">Current Project</a>
 		    </li>
@@ -27,16 +26,24 @@ layout: default
 		      <a href="#insights">Insights</a>
 		    </li>
 			</ul>
-
+		</div>
+		<div class="row-with-gutters">
 		  <div class="content">
 		  	{% assign current_practice_area = page.title %}
 		  	{% assign linked_projects = site.projects | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 		  	<div class="tabs-content" data-tabs-content="tabs-{{ page.position | strip }}">
 				  <div class="tabs-panel is-active" id="current-projects">
 				    {% if page['Title'] %}
-							<h1>{{ page['Title']}}</h1>
+							<h1 class="page-title">{{ page['Title']}}</h1>
 						{% else %}
-							<h1>{{ page.title }}</h1>
+							<h1 class="page-title">{{ page.title }}</h1>
+						{% endif %}
+
+						{% if page['Banner Image'].size > 0 %}
+							<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+						{% endif %}
+						{% if page['Highlight'].size > 0 %}
+							<h2  class="page-highlight">{{ page['Highlight'] }}</h2>
 						{% endif %}
 
 						{{ content }}
@@ -99,8 +106,7 @@ layout: default
 				  </div>
 				</div>
 		  </div>
-
-		</article>
-	</div>
+		</div>
+	</article>
 </main>
 

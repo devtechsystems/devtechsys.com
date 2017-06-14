@@ -1,7 +1,12 @@
 //foundation included
 @import "font-awesome";
 
-
+.row {max-width:78rem;}
+.row-with-gutters {
+  max-width:48.75rem;
+  margin-left:auto;
+  margin-right:auto;
+}
 .site-header {
   background-color: #003045;
   & > .row {position: relative;}
@@ -82,6 +87,54 @@
   font-size:2rem;
   margin-bottom: 2rem;
 }
+.site-footer {
+  background-color: #007cb7;
+  color:#fff;
+  margin-top:6rem;
+
+  .column {
+    padding-top:45px;
+    padding-bottom: 40px;
+
+    p {
+      color: #fff;
+      margin-bottom: 0;
+      & + p {margin-top: 1rem;}
+    }
+
+    ul.link-list {
+      float: right;
+      margin:0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        position: relative;
+
+        & + li {
+          padding-left: 12px;
+          margin-left: 12px;
+          &:before {
+            content: "";
+            width: 1px;
+            height: 13px;
+            background-color: #fff;
+            position: absolute;
+            left: -2px;
+            top: 6px;
+          }
+        }
+      }
+    }
+    a {
+      color:#fff;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 
 
@@ -92,6 +145,114 @@
 	.tl-title {font-size: 20px;}
 	.tl-subtitle {font-size: 16px;}
 
+}
+
+
+
+.page {
+  .tabs-container {
+    background-color: #e0eff6;
+    position: relative;
+    & > .tabs {
+      background-color: #e0eff6;
+      max-width: 78rem;
+      margin-left: auto;
+      margin-right: auto;
+      border: 0;
+
+      .tabs-title {
+        & > a {
+          color:#28445f;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: bold;
+          position: relative;
+          padding: 1.2rem 0.2rem;
+        }
+        & > a:focus,
+        & > a:hover {
+          background-color: #d6e9f4;
+          color:#28445f;
+          &:after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            background-color: rgba(125, 203, 167, 0.5);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+          }
+        }
+        & > a[aria-selected=true],
+        &.is-active a {
+          background-color: #c8e2ef;
+          color:#28445f;
+          &:after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            background-color: #7dcba7;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+          }
+        }
+      }
+      &.tabs-gutter {
+        max-width:48.75rem;
+      }
+      &.tabs-6-up {
+        .tabs-title {width: 16.6%;}
+      }
+      &.tabs-4-up {
+        .tabs-title {width: 25%;}
+      }
+    }
+  }
+  .tabs-content {
+    border: 0;
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  .page-title {
+    font-size: 2.3rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .page-highlight {
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  blockquote {
+    float: right;
+    width: 40%;
+    border-left: 0;
+    position: relative;
+    padding: 16px 16px 16px 0;
+    line-height: 1;
+    margin: 0 -218px 0 20px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 44%;
+      height: 8px;
+      background-color: #7dcba7;
+    }
+    p {
+      margin-bottom:0;
+      & + p {margin-top:1rem;}
+    }
+  }
 }
 
 

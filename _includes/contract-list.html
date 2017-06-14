@@ -1,25 +1,27 @@
-<h2>Prime Contract Vehicle</h2>
-{% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true | group_by: 'Agency' %}
-{% for agency in primeContracts %}
-  <h3>{{ agency.name }}</h3>
-  <ul>
-    {% for contracts in agency.items %}
-    <li>
-      <strong>{{ contracts['Full Title'] | escape }}</strong>
-    </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+<div class="row-with-gutters">
+  <h2>Prime Contract Vehicle</h2>
+  {% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true | group_by: 'Agency' %}
+  {% for agency in primeContracts %}
+    <h3>{{ agency.name }}</h3>
+    <ul>
+      {% for contracts in agency.items %}
+      <li>
+        <strong>{{ contracts['Full Title'] | escape }}</strong>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
 
-<h2>Other Contractual Mechanisms</h2>
-{% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false | group_by: 'Agency' %}
-{% for agency in otherContracts %}
-  <h3>{{ agency.name }}</h3>
-  <ul>
-    {% for contracts in agency.items %}
-    <li>
-      <strong>{{ contracts['Full Title'] | escape }}</strong>
-    </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+  <h2>Other Contractual Mechanisms</h2>
+  {% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false | group_by: 'Agency' %}
+  {% for agency in otherContracts %}
+    <h3>{{ agency.name }}</h3>
+    <ul>
+      {% for contracts in agency.items %}
+      <li>
+        <strong>{{ contracts['Full Title'] | escape }}</strong>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

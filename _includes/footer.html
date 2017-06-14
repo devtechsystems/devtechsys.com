@@ -7,16 +7,16 @@
     </div>
       
     <div class="small-12 medium-6 column">
-      <div class="float-right">
-        {% assign footerNav_pages = site.html_pages | sort: 'footer_navigation_order' %}
-        {% for p in footerNav_pages %}
-          {% if p.footer_navigation_order %}
-            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-              {{ p.title }}
-            </a>
-          {% endif %}
-        {% endfor %}
-      </div>
+      <ul class="link-list">
+      {% assign footerNav_pages = site.html_pages | sort: 'footer_navigation_order' %}
+      {% for p in footerNav_pages %}
+        {% if p.footer_navigation_order %}
+          <li><a href="{{ p.url }}" {% if p.url == page.url %}class="is-active"{% endif %}>
+            {{ p.title }}
+          </a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
     </div>
 
   </div>
