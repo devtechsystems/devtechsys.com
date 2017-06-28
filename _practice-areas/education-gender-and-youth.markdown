@@ -9,6 +9,8 @@ Highlight: 'DevTech promotes safe, inclusive, and effective learning environment
   training opportunities. We have designed, supported, and evaluated major education,
   gender, and youth projects around the world, most notably in Africa, the Middle
   East, and Latin America. '
+Light Icon Image: "/uploads/iconLight-education.png"
+Dark Icon Image: "/uploads/iconDark-education.png"
 ---
 
 We have experience implementing projects that improve job outcomes for youth, expand access to quality education for elementary and secondary school students, contribute to early childhood development and learning, build the capacity of individuals, organizations, and systems, and combat gender-based violence to ensure that all students feel safe. From the implementation of the Safe Schools Program that promotes gender-safe environments for all girls and boys in schools, to our efforts to improve early grade reading outcomes in Nicaragua, DevTech has varied expertise in providing educational services to children and youth. DevTech is also a leader in conducting gender analyses, integrating gender in virtually all sorts of development projects, and delivering short-term technical assistance and training on gender. 
