@@ -11,12 +11,12 @@ Arlington:
   Title: Headquarters
   City: Arlington
   State: Virginia
-  Thumbnail Image: "/uploads/example-location-1.png"
+  Thumbnail Image: "/uploads/location-washington-dc.jpg"
 District of Columbia:
-  Title: 
-  City: Bluefields
-  State: Bluefields
-  Thumbnail Image: "/uploads/example-location-1.png"
+  Title: Guatemala
+  City: 
+  State: 
+  Thumbnail Image: "/uploads/location-guatemala.jpg"
 Has Office Locations: true
 ---
 
