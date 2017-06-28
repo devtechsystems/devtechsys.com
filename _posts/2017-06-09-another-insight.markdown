@@ -1,5 +1,5 @@
 ---
-title: Another Insight
+title: Knowledge Management and Communication Requires Participation
 date: 2017-06-09 16:33:00 Z
 Practice Area:
 - Knowledge Management and Data Analytics
