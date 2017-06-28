@@ -7,8 +7,8 @@ layout: default
 		{% assign header_subtitle = page.title | escape %}
 
 		{% include header.html title='About Us' subtitle=header_subtitle %}
-			<main class="page-content" aria-label="Content">
-				<article class="page">
+			<div class="site-content" id="site_content" aria-label="Content">
+				<div class="page">
 					<div class="tabs-container">
 						<ul class="tabs tabs-6-up">
 					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
@@ -23,8 +23,8 @@ layout: default
 					</div>
 	{% when "Our Team" %}
 		{% include header.html title='About Us' subtitle='Our Team' %}
-			<main class="page-content" aria-label="Content">
-				<article class="page">
+			<div class="site-content" id="site_content" aria-label="Content">
+				<div class="page">
 					<div class="tabs-container">
 						<ul class="tabs tabs-6-up">
 					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
@@ -40,8 +40,8 @@ layout: default
 					<a href="/about/our-team/">< Back</a>
 	{% when "Careers" %}
 		{% include header.html title='About Us' subtitle='Careers' %}
-			<main class="page-content" aria-label="Content">
-				<article class="page">
+			<div class="site-content" id="site_content" aria-label="Content">
+				<div class="page">
 					<div class="tabs-container">
 						<ul class="tabs tabs-6-up">
 					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
@@ -65,8 +65,8 @@ layout: default
 			{% assign header_title = page.title %}
 		{% endif %}
 		{% include header.html title=header_title subtitle='SubTitle' %}
-			<main class="page-content" aria-label="Content">
-				<article class="page">
+			<div class="site-content" id="site_content" aria-label="Content">
+				<div class="page">
 
 	{% endcase %}
 
@@ -112,5 +112,5 @@ layout: default
 						{% endif %}
 				  </div>
 
-				</article>
-			</main>
+				</div>
+			</div>

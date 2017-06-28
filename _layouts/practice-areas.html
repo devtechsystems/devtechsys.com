@@ -9,8 +9,8 @@ layout: default
 {% endif %}
 {% include header.html title=header_title subtitle="Current Projects" %}
 
-<main class="page-content" aria-label="Content">
-	<article class="page">
+<div class="site-content" id="site_content" aria-label="Content">
+	<div class="page">
 		<div class="tabs-container">
 			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="tabs-{{ page.position | strip }}"  data-deep-link="true" data-update-history="true">
 		    <li class="tabs-title is-active">
@@ -107,6 +107,6 @@ layout: default
 				</div>
 		  </div>
 		</div>
-	</article>
-</main>
+	</div>
+</div>
 
