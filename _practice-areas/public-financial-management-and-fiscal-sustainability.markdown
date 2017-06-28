@@ -7,6 +7,8 @@ Highlight: DevTech strengthens the capacity of governments, businesses and citiz
   poverty. DevTech has helped local and national governments implement sound budget
   practices, carry out tax and financial reforms, decrease government corruption,
   support small businesses, and establish effective economic policies and regulations.
+Light Icon Image: "/uploads/iconLight-finance.png"
+Dark Icon Image: "/uploads/iconDark-finance.png"
 ---
 
 DevTech has modernized government systems around the world in order to create more transparent and efficient financial and fiscal policies. From decentralizing fiscal systems to establishing performance based budgeting and medium term expenditure frameworks, our projects have produced sound economic and fiscal policies around the world. Our assistance to local and national governments has included the creation of market intelligence and competitiveness units to foster small and medium enterprise (SME) participation in international markets, as well as supporting foreign ministries of finance to improve and modernize tax policy and administration.
