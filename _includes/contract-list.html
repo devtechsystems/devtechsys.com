@@ -1,4 +1,4 @@
-<div class="row-with-gutters">
+<div class="row row--gutters column">
   <h2>Prime Contract Vehicle</h2>
   {% assign primeContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', true | group_by: 'Agency' %}
   {% for agency in primeContracts %}

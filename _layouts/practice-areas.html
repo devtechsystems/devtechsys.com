@@ -27,12 +27,13 @@ layout: default
 		    </li>
 			</ul>
 		</div>
-		<div class="row-with-gutters">
-		  <div class="content">
-		  	{% assign current_practice_area = page.title %}
-		  	{% assign linked_projects = site.projects | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
-		  	<div class="tabs-content" data-tabs-content="tabs-{{ page.position | strip }}">
-				  <div class="tabs-panel is-active" id="current-projects">
+	  <div class="content">
+	  	{% assign current_practice_area = page.title %}
+	  	{% assign linked_projects = site.projects | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+	  	<div class="tabs-content" data-tabs-content="tabs-{{ page.position | strip }}">
+			  <div class="tabs-panel is-active" id="current-projects">
+			    <div class="row row--gutters column">
+
 				    {% if page['Title'] %}
 							<h1 class="page-title">{{ page['Title']}}</h1>
 						{% else %}
@@ -47,17 +48,24 @@ layout: default
 						{% endif %}
 
 						{{ content }}
+					</div>
 
-						<h3>Current Projects</h3>
-						<ul class="row small-up-1 medium-up-2">
-			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
-				    {% for p in linked_current_projects %}
-				      <li class="post">
-				    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
-				    	</li>
-				    {% endfor %}
+					<div class="background-lightblue">
+						<div class="row row--gutters column">
+							<h3>Current Projects</h3>
+							<ul class="row small-up-1 medium-up-2">
+				    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
+					    {% for p in linked_current_projects %}
+					      <li class="post">
+					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					    	</li>
+					    {% endfor %}
+					  	</ul>
+					  </div>
 				  </div>
-				  <div class="tabs-panel" id="past-projects">
+			  </div>
+			  <div class="tabs-panel" id="past-projects">
+			    <div class="row row--gutters column">
 				    <h3>Past Projects</h3>
 
 				    <ul class="row small-up-1 medium-up-2">
@@ -69,7 +77,9 @@ layout: default
 					    {% endfor %}
 				    </ul>
 				  </div>
-				  <div class="tabs-panel" id="reports-publications">
+			  </div>
+			  <div class="tabs-panel" id="reports-publications">
+			  	<div class="row row--gutters column">
 				    <ul class="posts">
 				    	{% assign linked_reports = site.reports-and-publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_reports %}
@@ -86,27 +96,26 @@ layout: default
 					    {% endfor %}
 				    </ul>
 				  </div>
-				  <div class="tabs-panel" id="insights">
+			  </div>
+			  <div class="tabs-panel" id="insights">
+			  	<div class="row row--gutters column">
 				    <ul class="posts">
 				    	{% assign linked_insights = site.posts | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_insights %}
 					      <li class="post">
 					    		<div class="post-category">Topic Area/Region/Category</div>
 					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
-
-					    		
 					    		<span class="post-details">
 					    			{% if p['Author'].size > 0 %}<div class="post-detail">By {{ p['Author'] }}</div>{% endif %}
 					    			<div class="post-detail">{{ p.date }}</div>
 					    		</span>
 					    	</li>
-
-					    {% endfor %}		    	
+					    {% endfor %}
 				    </ul>
 				  </div>
-				</div>
-		  </div>
-		</div>
+			  </div>
+			</div>
+	  </div>
 	</div>
 </div>
 
