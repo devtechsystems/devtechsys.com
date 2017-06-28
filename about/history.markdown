@@ -14,7 +14,7 @@ navigation_order: 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum mi congue eros porttitor sagittis. Vestibulum sed consequat urna, tempus pharetra ex. Maecenas ac nunc eget velit luctus aliquam. Morbi quis fermentum mauris, vel maximus ligula. Suspendisse commodo mauris leo. Nullam commodo in nulla a vestibulum. Maecenas luctus malesuada turpis, ornare lacinia urna. Quisque dignissim pellentesque dapibus. Vivamus hendrerit semper augue at laoreet. Cras vel sem ullamcorper, ultricies mi nec, fringilla lectus. Vestibulum accumsan quam id magna mollis imperdiet.
 
-> DEVTECH WAS FOUNDED ON THE CONVICTION THAT COMPLEX DEVELOPMENT CHALLENGES HAVE TO BE ADDRESSED THROUGH INNOVATIVE AND PRACTICAL SOLUTIONS.
+> DEVTECH WAS FOUNDED ON THE CONVICTION THAT COMPLEX DEVELOPMENT CHALLENGES HAVE TO BE ADDRESSED THROUGH INNOVATIVE AND PRACTICAL SOLUTIONS. - Dr. Jorge Sanguinetty
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum mi congue eros porttitor sagittis. This is a link color, tempus pharetra ex. Maecenas ac nunc eget velit luctus aliquam. Morbi quis fermentum mauris, vel maximus ligula. Suspendisse commodo mauris leo. Nullam commodo in nulla a vestibulum. Maecenas luctus malesuada turpis, ornare lacinia urna. Quisque dignissim pellentesque dapibus. Vivamus hendrerit semper augue at laoreet. Cras vel sem ullamcorper, ultricies mi nec, fringilla lectus. Vestibulum accumsan quam id magna mollis imperdiet.
 
