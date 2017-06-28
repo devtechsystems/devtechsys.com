@@ -10,6 +10,8 @@ Highlight: 'DevTech was founded on the premise that quality research can impact 
   experience conducting evaluations across sectors including gender, education, and
   democracy and governance. We perform monitoring and evaluation activities from the
   beginning to the end of the project lifecycle. '
+Light Icon Image: "/uploads/iconLight-monitor.png"
+Dark Icon Image: "/uploads/iconDark-monitor.png"
 layout: practice-areas
 ---
 
