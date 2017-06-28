@@ -2,18 +2,18 @@
 title: Office Locations
 position: 6
 Title: Where We Work
-Highlight: Here are a few places that we work,  lorem ipsum dolor sit amet, consectetur
-  adipiscing elit. Fusce condimentum mi congue eros porttitor sagittis. Morbi quis
-  fermentum mauris, vel maximus ligula.
+Highlight: DevTech's headquarters is located in Arlington, Virginia, but we have offices
+  around the world. Right now, we have offices in District of Columbia, Miami, Guatemala,
+  Nicaragua, Nigeria, and the Dominican Republic.
 navigation_group: About Us
 navigation_order: 5
-Location 1:
+Arlington:
   Title: Headquarters
   City: Arlington
   State: Virginia
   Thumbnail Image: "/uploads/example-location-1.png"
-Location 2:
-  Title: Location 2
+District of Columbia:
+  Title: 
   City: Bluefields
   State: Bluefields
   Thumbnail Image: "/uploads/example-location-1.png"
