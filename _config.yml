@@ -135,7 +135,7 @@ defaults:
     path: ''
     type: office-locations
   values:
-    Address Text: |-
+    Address Text: ''
     Location Image: 
     Phone Number: 
     layout: page
