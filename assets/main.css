@@ -2348,23 +2348,17 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 .site-content {
   flex: 1 0 auto;
   /* 2 */
-  padding: var(--space) var(--space) 0;
+  padding: 0;
   width: 100%; }
 
 .site-content::after {
   content: '\00a0';
   /* &nbsp; */
   display: block;
-  margin-top: var(--space);
+  margin-top: 0;
   height: 0px;
   visibility: hidden; }
 
-@media (--break-lg) {
-  .site-content {
-    padding-top: var(--space-lg); }
-
-  .site-content::after {
-    margin-top: var(--space-lg); } }
 .site-content--full {
   padding: 0; }
 
@@ -2372,12 +2366,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   content: none; }
 
 .row {
-  max-width: 78rem; }
+  /*max-width:78rem;*/ }
 
-.row-with-gutters {
-  max-width: 48.75rem;
-  margin-left: auto;
-  margin-right: auto; }
+.row--gutters {
+  max-width: 48.75rem; }
 
 .site-header {
   background-color: #003045; }
@@ -2496,6 +2488,15 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-size: 20px; }
   .team-list-block .tl-subtitle {
     font-size: 16px; }
+
+.row--office-locations {
+  margin-top: 4rem; }
+  .row--office-locations p.location-address {
+    white-space: pre; }
+  .row--office-locations p.location-phone {
+    margin-right: 100px; }
+    .row--office-locations p.location-phone .fa {
+      margin-right: 5px; }
 
 .page .tabs-container {
   background-color: #e0eff6;
