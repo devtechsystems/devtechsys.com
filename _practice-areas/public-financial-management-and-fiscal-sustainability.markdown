@@ -7,6 +7,7 @@ Highlight: DevTech strengthens the capacity of governments, businesses and citiz
   poverty. DevTech has helped local and national governments implement sound budget
   practices, carry out tax and financial reforms, decrease government corruption,
   support small businesses, and establish effective economic policies and regulations.
+Detail Page Image: "/uploads/banner-monitor.jpg"
 Light Icon Image: "/uploads/iconLight-finance.png"
 Dark Icon Image: "/uploads/iconDark-finance.png"
 ---
