@@ -1,12 +1,10 @@
-<div class="row row--gutters">
-	<div class="medium-8 column">
-		<img src="{{ page['Location 1']['Thumbnail Image']}}"/>
-		<h2>{{ page['Location 1']['Title']}}</h2>
-		<p>{{ page['Location 1']['City']}} / {{ page['Location 1']['State']}}</p>
+<div class="row row--office-locations">
+	{% for location in site.office-locations %}
+	<div class="small-16 medium-8 column clearfix">
+		<img src="{{ location['Location Image']}}"/>
+		<h2>{{ location.title }}</h2>
+		<p class="float-left location-address">{{ location['Address Text'] }}</p>
+		<p class="float-right location-phone"><span class="fa fa-phone-square"></span>{{ location['Phone Number'] }}</p>
 	</div>
-	<div class="medium-8 column">
-		<img src="{{ page['Location 2']['Thumbnail Image']}}"/>
-		<h2>{{ page['Location 2']['Title']}}</h2>
-		<p>{{ page['Location 2']['City']}} / {{ page['Location 2']['State']}}</p>
-	</div>
+	{% endfor %}
 </div>

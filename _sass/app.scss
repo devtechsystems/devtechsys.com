@@ -195,7 +195,14 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 	.tl-subtitle {font-size: 16px;}
 
 }
-
+.row--office-locations {
+  margin-top: 4rem;
+  p.location-address {white-space: pre;}
+  p.location-phone {
+    margin-right: 100px;
+    .fa {margin-right: 5px;}
+  }
+}
 
 
 .page {
