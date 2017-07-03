@@ -131,6 +131,14 @@ defaults:
     - 
     Is Active: 
     layout: page
+- scope:
+    path: ''
+    type: office-locations
+  values:
+    Address Text: |-
+    Location Image: 
+    Phone Number: 
+    layout: page
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
