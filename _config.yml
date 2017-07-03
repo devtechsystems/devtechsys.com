@@ -20,7 +20,7 @@ collections:
     output: true
   office-locations:
     title: Office Locations
-    output: true
+    output: false
   practice-areas:
     title: Practice Areas
     output: true
