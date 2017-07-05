@@ -2428,6 +2428,39 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     color: #7dcba7;
     text-decoration: none; }
 
+.home.site-header {
+  min-height: 650px;
+  background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
+  background-size: cover; }
+.home .hero {
+  color: #fff;
+  text-align: center;
+  padding: 200px 220px 0; }
+  .home .hero .allcaps {
+    font-size: 50px;
+    text-transform: uppercase; }
+  .home .hero p {
+    font-size: 21px; }
+.home .insights {
+  min-height: 400px; }
+.home .practice-areas {
+  background-color: #007cb7; }
+  .home .practice-areas .PA--icon-list {
+    list-style-type: none;
+    margin: 0; }
+    .home .practice-areas .PA--icon-list li {
+      margin: 0; }
+    .home .practice-areas .PA--icon-list a {
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+      line-height: 1.2;
+      margin-top: 60px; }
+      .home .practice-areas .PA--icon-list a img {
+        display: block;
+        margin: 0 auto 10px; }
+
 .title-row-title {
   text-align: center;
   text-transform: uppercase;
@@ -2444,10 +2477,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   padding-bottom: 2rem;
   margin-bottom: 0; }
 
-.site-content {
-  padding-bottom: 6rem; }
-
 .site-footer {
+  margin-top: 6rem;
   background-color: #007cb7;
   color: #fff; }
   .site-footer .column {
@@ -2482,22 +2513,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       .site-footer .column a:hover, .site-footer .column a:focus {
         text-decoration: underline; }
 
-.team-list-block {
-  list-style-type: none; }
-  .team-list-block .tl-title {
-    font-size: 20px; }
-  .team-list-block .tl-subtitle {
-    font-size: 16px; }
-
-.row--office-locations {
-  margin-top: 4rem; }
-  .row--office-locations p.location-address {
-    white-space: pre; }
-  .row--office-locations p.location-phone {
-    margin-right: 100px; }
-    .row--office-locations p.location-phone .fa {
-      margin-right: 5px; }
-
+.page.site-header {
+  min-height: 350px;
+  background: #003045 url(/assets/images/background-network.jpg) no-repeat bottom center;
+  background-size: cover; }
 .page .tabs-container {
   background-color: #e0eff6;
   position: relative; }
@@ -2557,6 +2576,14 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   font-size: 1.25rem;
   margin-top: 3rem;
   margin-bottom: 2.5rem; }
+.page .page-banner {
+  margin-bottom: 2.5rem; }
+.page .back-link {
+  display: inline-block;
+  font-style: italic;
+  margin-top: 4rem; }
+  .page .back-link + .page-title {
+    margin-top: 1rem; }
 .page blockquote {
   float: right;
   width: 40%;
@@ -2578,68 +2605,53 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     .page blockquote p + p {
       margin-top: 1rem; }
 
-/*  EXAMPLE for site-nav checkbox 
-.site-nav {
-  float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+.site .button {
+  border: 2px solid #7dcba7;
+  padding: 16px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 0; }
+  .site .button:focus, .site .button:hover {
+    background-color: transparent; }
 
-  .nav-trigger {
-      display: none;
-  }
+.team-list-block {
+  list-style-type: none; }
+  .team-list-block .tl-title {
+    font-size: 20px; }
+  .team-list-block .tl-subtitle {
+    font-size: 16px; }
 
-  .menu-icon {
-    display: none;
-  }
+.row--office-locations {
+  margin-top: 4rem; }
+  .row--office-locations p.location-address {
+    white-space: pre; }
+  .row--office-locations p.location-phone {
+    margin-right: 100px; }
+    .row--office-locations p.location-phone .fa {
+      margin-right: 5px; }
 
-  //@include media-query($on-palm) {
-  //added mobile all the time
-  position: absolute;
-  top: 9px;
-  right: $spacing-unit / 2;
-  background-color: $background-color;
-  border: 1px solid $grey-color-light;
-  border-radius: 5px;
-  text-align: right;
+.link-list {
+  list-style-type: none; }
 
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
+.page-banner.practice-area {
+  position: relative; }
+  .page-banner.practice-area .icon-wDarkEllipse {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    margin-top: -50px;
     text-align: center;
+    line-height: 100px; }
 
-    > svg path {
-      fill: $grey-color-dark;
-    }
-  }
-
-  input ~ .trigger {
-    clear: both;
-    display: none;
-  }
-
-  input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-    display: block;
-    padding: 5px 10px;
-  }
-  //}
-}
-*/
+@media screen and (min-width: 89em) {
+  .page.site-header {
+    background-repeat: repeat-x;
+    background-size: contain; } }
