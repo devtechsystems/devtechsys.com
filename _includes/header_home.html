@@ -1,0 +1,11 @@
+<div class="site-header home" id="site_header" role="banner">
+
+  {% include header_navigation.html %}
+  
+  <h1 class="sr-only">{{site.title}}</h1>
+  <div class="row column hero">
+      <h2 class="allcaps">{{page['Hero Section']['Tagline']}}</h2>
+      <p>{{page['Hero Section']['Short Mission Statement']}}</p>
+      <a href="{{page['Hero Section']['Button Link']}}" class="button">{{page['Hero Section']['Button Label']}}</a>
+  </div>
+</div>

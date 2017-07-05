@@ -21,6 +21,22 @@ layout: default
 					    {% endfor %}
 						</ul>
 					</div>
+					<div class="content">
+				  	<div class="row row--gutters">
+				  		<div class="column">
+								{% if page['Title'].size > 0 %}
+									<h1 class="page-title">{{ page['Title']}}</h1>
+								{% endif %}
+								{% if page['Banner Image'].size > 0 %}
+									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+								{% endif %}
+								{% if page['Highlight'].size > 0 %}
+									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+								{% endif %}
+
+						    {{ content }}
+					  	</div>
+					  </div>
 	{% when "Our Team" %}
 		{% include header.html title='About Us' subtitle='Our Team' %}
 			<div class="site-content" id="site_content" aria-label="Content">
@@ -37,7 +53,23 @@ layout: default
 					    {% endfor %}
 						</ul>
 					</div>
-					<a href="/about/our-team/">< Back</a>
+					<div class="content">
+				  	<div class="row row--gutters">
+				  		<div class="column">
+				  			<a href="/about/our-team/" class="back-link">< Back</a>
+								{% if page['Title'].size > 0 %}
+									<h1 class="page-title">{{ page['Title']}}</h1>
+								{% endif %}
+								{% if page['Banner Image'].size > 0 %}
+									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+								{% endif %}
+								{% if page['Highlight'].size > 0 %}
+									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+								{% endif %}
+
+						    {{ content }}
+					  	</div>
+					  </div>
 	{% when "Careers" %}
 		{% include header.html title='About Us' subtitle='Careers' %}
 			<div class="site-content" id="site_content" aria-label="Content">
@@ -54,8 +86,23 @@ layout: default
 					    {% endfor %}
 						</ul>
 					</div>
+					<div class="content">
+				  	<div class="row row--gutters">
+				  		<div class="column">
+				  			<a href="/about/careers/" class="back-link">< Back</a>
+								{% if page['Title'].size > 0 %}
+									<h1 class="page-title">{{ page['Title']}}</h1>
+								{% endif %}
+								{% if page['Banner Image'].size > 0 %}
+									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+								{% endif %}
+								{% if page['Highlight'].size > 0 %}
+									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+								{% endif %}
 
-					<a href="/about/careers/">< Back</a>
+						    {{ content }}
+					  	</div>
+					  </div>
 
 	{% else %}
 	
@@ -67,17 +114,14 @@ layout: default
 		{% include header.html title=header_title subtitle='SubTitle' %}
 			<div class="site-content" id="site_content" aria-label="Content">
 				<div class="page">
-
-	{% endcase %}
-
-				  <div class="content">
+					<div class="content">
 				  	<div class="row row--gutters">
 				  		<div class="column">
 								{% if page['Title'].size > 0 %}
 									<h1 class="page-title">{{ page['Title']}}</h1>
 								{% endif %}
 								{% if page['Banner Image'].size > 0 %}
-									<img class="banner-image" src="{{ page['Banner Image'] }}"/>
+									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
 								{% endif %}
 								{% if page['Highlight'].size > 0 %}
 									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
@@ -87,6 +131,7 @@ layout: default
 					  	</div>
 					  </div>
 
+	{% endcase %}
 
 				    {% if page['Has Team List'] == true %}
 				    	{% include team-list.html %}

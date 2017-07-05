@@ -40,11 +40,17 @@ layout: default
 							<h1 class="page-title">{{ page.title }}</h1>
 						{% endif %}
 
-						{% if page['Banner Image'].size > 0 %}
-							<img class="page-banner" src="{{ page['Banner Image'] }}"/>
-						{% endif %}
 						{% if page['Highlight'].size > 0 %}
 							<h2  class="page-highlight">{{ page['Highlight'] }}</h2>
+						{% endif %}
+
+						{% if page['Detail Page Image'].size > 0 %}
+							<div class="page-banner practice-area">
+								<div class="icon-wDarkEllipse">
+									<img class="icon" src="{{ page['Light Icon Image'] }}"/>	
+								</div>
+								<img src="{{ page['Detail Page Image'] }}"/>
+							</div>
 						{% endif %}
 
 						{{ content }}
@@ -53,11 +59,11 @@ layout: default
 					<div class="background-lightblue">
 						<div class="row row--gutters column">
 							<h3>Current Projects</h3>
-							<ul class="row small-up-1 medium-up-2">
+							<ul class="row link-list small-up-1 medium-up-2">
 				    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
 					    {% for p in linked_current_projects %}
-					      <li class="post">
-					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					      <li class="column column-block">
+					    		<a href="{{ p.url | relative_url }}">{{ p['Title'] }}</a>
 					    	</li>
 					    {% endfor %}
 					  	</ul>
@@ -68,11 +74,11 @@ layout: default
 			    <div class="row row--gutters column">
 				    <h3>Past Projects</h3>
 
-				    <ul class="row small-up-1 medium-up-2">
+				    <ul class="row link-list small-up-1 medium-up-2">
 				    	{% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Active'] == false" %}
 					    {% for p in linked_past_projects %}
-					      <li class="post">
-					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					      <li class="column column-block">
+					    		<a href="{{ p.url | relative_url }}">{{ p['Title'] }}</a>
 					    	</li>
 					    {% endfor %}
 				    </ul>

@@ -118,6 +118,46 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     a {color:#7dcba7;text-decoration: none;}
   }
 }
+.home {
+  &.site-header {
+    min-height: 650px;
+    background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
+    background-size: cover;
+  }
+  .hero {
+    color: #fff;
+    text-align: center;
+    padding:200px 220px 0;
+    .allcaps {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size:21px;
+    }
+  }
+  .insights {min-height:400px;}//temporary fix to fill space until blog posts have images and such
+  .practice-areas {
+    background-color: #007cb7;
+    .PA--icon-list {
+      list-style-type: none;
+      margin: 0;
+      li {margin:0;}
+      a {
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        display: block;
+        line-height: 1.2;
+        margin-top: 60px;
+        img {
+          display: block;
+          margin:0 auto 10px;
+        }
+      }
+    }
+  }
+}
 .title-row-title {
   text-align: center;
   text-transform: uppercase;
@@ -134,10 +174,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   padding-bottom: 2rem;
   margin-bottom:0;
 }
-.site-content {
-  padding-bottom:6rem;
-}
 .site-footer {
+  margin-top:6rem;
   background-color: #007cb7;
   color: #fff;
 
@@ -185,27 +223,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
-
-
-
-.team-list-block {
-	list-style-type: none; 
-	//a {}
-	.tl-title {font-size: 20px;}
-	.tl-subtitle {font-size: 16px;}
-
-}
-.row--office-locations {
-  margin-top: 4rem;
-  p.location-address {white-space: pre;}
-  p.location-phone {
-    margin-right: 100px;
-    .fa {margin-right: 5px;}
-  }
-}
-
-
 .page {
+  &.site-header {
+    min-height: 350px;
+    background: #003045 url(/assets/images/background-network.jpg) no-repeat bottom center;
+    background-size: cover;
+  }
   .tabs-container {
     background-color: #e0eff6;
     position: relative;
@@ -270,8 +293,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     background-color: #fff;
     color: #000;
   }
-
-
   .page-title {
     font-size: 2.3rem;
     line-height: 1;
@@ -284,6 +305,13 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-size: 1.25rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
+  }
+  .page-banner {margin-bottom:2.5rem;}
+  .back-link {
+    display: inline-block;
+    font-style: italic;
+    margin-top:4rem;
+    & + .page-title {margin-top: 1rem;}
   }
 
   blockquote {
@@ -311,70 +339,69 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
-
-
-/*  EXAMPLE for site-nav checkbox 
-.site-nav {
-  float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
-
-  .nav-trigger {
-      display: none;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-
-  //@include media-query($on-palm) {
-  //added mobile all the time
-  position: absolute;
-  top: 9px;
-  right: $spacing-unit / 2;
-  background-color: $background-color;
-  border: 1px solid $grey-color-light;
-  border-radius: 5px;
-  text-align: right;
-
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
+.site {
+  .button {
+    border:2px solid #7dcba7;
+    padding:16px 30px;
     text-align: center;
-
-    > svg path {
-      fill: $grey-color-dark;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius:0;
+    &:focus,
+    &:hover {
+      background-color: transparent;
     }
   }
-
-  input ~ .trigger {
-    clear: both;
-    display: none;
-  }
-
-  input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-    display: block;
-    padding: 5px 10px;
-  }
-  //}
 }
-*/
+
+
+//team list
+.team-list-block {
+  list-style-type: none; 
+  .tl-title {font-size: 20px;}
+  .tl-subtitle {font-size: 16px;}
+
+}
+
+//office locations
+.row--office-locations {
+  margin-top: 4rem;
+  p.location-address {white-space: pre;}
+  p.location-phone {
+    margin-right: 100px;
+    .fa {margin-right: 5px;}
+  }
+}
+
+//practice areas
+.link-list {
+  list-style-type: none;
+}
+.page-banner.practice-area {
+  position: relative;
+  .icon-wDarkEllipse {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    margin-top: -50px;
+    text-align: center;
+    line-height: 100px;
+  }
+}
+
+
+@media screen and (min-width: 89em) {
+  .page {
+    &.site-header {
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+}

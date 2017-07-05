@@ -1,19 +1,9 @@
 ---
 layout: default
 ---
+  {% include header_home.html %}
 
-{% include header.html %}
-
-<div class="site-content" id="site_content" aria-label="Content">
-  <div class="home">
-    <h1 class="sr-only">{{site.title}}</h1>
-    <div class="row hero">
-      <div class="column">
-        <h2>{{page['Hero Section']['Tagline']}}</h2>
-        <h3>{{page['Hero Section']['Short Mission Statement']}}</h3>
-        <a href="{{page['Hero Section']['Button Link']}}">{{page['Hero Section']['Button Label']}}</a>
-      </div>
-    </div>
+  <div class="site-content home" id="site_content" aria-label="Content">
     <div class="row insights">
       <div class="column">
         <ul>
@@ -28,20 +18,24 @@ layout: default
         <a href="/insights/">{{page['Insights Section']['Button Label']}}</a>
       </div>
     </div>
-    <div class="row practice-areas">
-      <div class="column">
-        <h2>{{page['Practice Areas Section']['Title']}}</h2>
-        <h3>{{page['Practice Areas Section']['Subtitle']}}</h3>
-        <p>{{page['Practice Areas Section']['Brief Description']}}</p>
-        <a href="#">{{page['Practice Areas Section']['Button Label']}}</a>
-        <ul>
-          {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
-          {% for practices in sorted_practices %}
-            <li>
-              <a href="{{ practices.url | relative_url }}">{{ practices.title | escape }}</a>
-            </li>
-          {% endfor %}
-        </ul>
+    <div class="practice-areas">
+      <div class="row">
+        <div class="column small-16 medium-6 large-4">
+          <h2>{{page['Practice Areas Section']['Title']}}</h2>
+          <h3>{{page['Practice Areas Section']['Subtitle']}}</h3>
+          <p>{{page['Practice Areas Section']['Brief Description']}}</p>
+          <a href="/practice-areas" class="button">{{page['Practice Areas Section']['Button Label']}}</a>
+        </div>
+        <div class="column small-16 medium-10 large-12">
+          <ul class="row small-up-2 medium-up-3 PA--icon-list">
+            {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
+            {% for practices in sorted_practices %}
+              <li class="column">
+                <a href="{{ practices.url | relative_url }}"><img src="{{ practices['Dark Icon Image'] | relative_url }}"/>{{ practices.title | escape }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row projects">
@@ -53,4 +47,3 @@ layout: default
       </div>
     </div>
   </div>
-</div>

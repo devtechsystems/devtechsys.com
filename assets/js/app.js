@@ -1,4 +1,4 @@
 $(document).ready(function() {
   $(document).foundation();
-  console.log('helloworld)');
+  //console.log('helloworld)');
 });
