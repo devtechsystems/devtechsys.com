@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+
+
+{% include header.html title="Insights" %}
+<div class="site-content" id="site_content" aria-label="Content">
+	<div class="page">
+		<div class="tabs-container">
+			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="tabs-{{ page.position | strip }}"  data-deep-link="true" data-update-history="true">
+		    <li class="tabs-title is-active">
+		      <a href="#latest-insights" aria-selected="true">Latest</a>
+		    </li>
+		    <li class="tabs-title">
+		      <a href="#news">News</a>
+		    </li>
+			</ul>
+		</div>
+	  <div class="content">
+	  	<div class="tabs-content" data-tabs-content="tabs-{{ page.position | strip }}">
+			  <div class="tabs-panel is-active" id="latest-insights">
+			  	<div class="row row--gutters column">
+				    <ul class="posts">
+				    	{% assign linked_insights = site.insights %}
+					    {% for post in site.posts limit:6 %}
+					      <li class="post">
+					    		<div class="post-category">{{ post['Topic Area'] }}</div>
+					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ post.title }}</a>
+					    		<div class="post-details">
+					    			{% if post['Author'].size > 0 %}
+					    				<div class="post-detail">By {{ post['Author'] }}</div>
+					    			{% endif %}
+					    			<div class="post-detail">{{ post.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+					    {% endfor %}
+				    </ul>
+				  </div>
+			  </div>
+			  <div class="tabs-panel is-active" id="news">
+
+			  </div>
+			</div>
+	  </div>
+	</div>
+</div>

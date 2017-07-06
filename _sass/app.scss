@@ -293,6 +293,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     background-color: #fff;
     color: #000;
   }
+  .tabs-panel {
+    padding:80px 1rem;
+    .page-title {
+      margin-top: 0;
+    }
+  }
   .page-title {
     font-size: 2.3rem;
     line-height: 1;
@@ -379,6 +385,46 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 //practice areas
 .link-list {
   list-style-type: none;
+}
+ul.posts {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+li.post {
+  list-style-type: none;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c8e2ef;
+  padding-bottom: 30px;
+  .post-category {
+    color:#000;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+  }
+  .post-title {
+    color: #007cb7;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .post-details {
+    color: #28445f;
+    font-weight: bold;
+    .post-detail {
+      display: inline-block;
+      &:before {
+        content:"";
+        border-left:1px solid #53697f;
+        height:1em;
+        width: 1px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+      }
+      &:first-child:before {display: none;margin:0;}
+    }
+  }
 }
 .page-banner.practice-area {
   position: relative;
