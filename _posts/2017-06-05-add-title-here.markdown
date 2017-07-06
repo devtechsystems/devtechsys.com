@@ -13,9 +13,9 @@ Field name:
 
 Nutrition during the first years of life is an essential component for human development. Malnutrition can be caused by a lack or excess of food. Malnutrition due to lack of food can be classified in 3 types:
 
-**Acute: **Underweight and stunted growth
-**Chronic: **Stunted growth
-**Global: **Underweight
+* Acute: Underweight and stunted growth
+* Chronic: Stunted growth
+* Global: Underweight
 
 ![malnutrition1-b07c7b.png](/uploads/malnutrition1-b07c7b.png)
 
