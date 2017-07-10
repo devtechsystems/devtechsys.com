@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include header.html title="Insights" %}
+{% include header.html subtitle="Our Insights" %}
 <div class="site-content" id="site_content" aria-label="Content">
 	<div class="page">
 		<div class="tabs-container">
@@ -20,11 +20,12 @@ layout: default
 			  <div class="tabs-panel is-active" id="latest-insights">
 			  	<div class="row row--gutters column">
 				    <ul class="posts">
-				    	{% assign linked_insights = site.insights %}
 					    {% for post in site.posts limit:6 %}
 					      <li class="post">
-					    		<div class="post-category">{{ post['Topic Area'] }}</div>
-					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ post.title }}</a>
+					    		{% if post['Category'].size > 0 %}
+					    			<div class="post-category">{{ post['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
 					    		<div class="post-details">
 					    			{% if post['Author'].size > 0 %}
 					    				<div class="post-detail">By {{ post['Author'] }}</div>

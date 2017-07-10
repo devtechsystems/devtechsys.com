@@ -109,7 +109,9 @@ layout: default
 				    	{% assign linked_insights = site.posts | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_insights %}
 					      <li class="post">
-					    		<div class="post-category">{{ p['Topic Area'] }}</div>
+					      	{% if post['Category'].size > 0 %}
+					    			<div class="post-category">{{ post['Category'] }}</div>
+					    		{% endif %}
 					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
 					    		<div class="post-details">
 					    			{% if p['Author'].size > 0 %}<div class="post-detail">By {{ p['Author'] }}</div>{% endif %}

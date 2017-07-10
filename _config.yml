@@ -56,7 +56,7 @@ defaults:
     - 
     Banner Image: 
     Highlight: 
-    Topic Area: 
+    Category: 
     Author: 
     layout: post
 - scope:
