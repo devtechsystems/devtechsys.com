@@ -9,6 +9,7 @@ Highlight: 'DevTech promotes safe, inclusive, and effective learning environment
   training opportunities. We have designed, supported, and evaluated major education,
   gender, and youth projects around the world, most notably in Africa, the Middle
   East, and Latin America. '
+Preview/Teaser Image: "/uploads/preview-education.jpg"
 Light Icon Image: "/uploads/iconLight-education.png"
 Dark Icon Image: "/uploads/iconDark-education.png"
 ---
