@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Our Projects
 date: 2017-06-12 18:11:00 Z
 ---
 
