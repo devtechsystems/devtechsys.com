@@ -15,16 +15,16 @@ layout: default
             </li>
           {% endfor %}
         </ul>
-        <a href="/insights/">{{page['Insights Section']['Button Label']}}</a>
+        <a href="/insights/" class="button">{{page['Insights Section']['Button Label']}}</a>
       </div>
     </div>
     <div class="practice-areas">
       <div class="row">
-        <div class="column small-16 medium-6 large-4">
-          <h2>{{page['Practice Areas Section']['Title']}}</h2>
-          <h3>{{page['Practice Areas Section']['Subtitle']}}</h3>
+        <div class="column small-16 medium-6 large-4 PA--content">
+          <h2 class="PA--title">{{page['Practice Areas Section']['Title']}}</h2>
+          <h3 class="PA--subtitle">{{page['Practice Areas Section']['Subtitle']}}</h3>
           <p>{{page['Practice Areas Section']['Brief Description']}}</p>
-          <a href="/practice-areas" class="button">{{page['Practice Areas Section']['Button Label']}}</a>
+          <a href="/practice-areas/" class="button button-inverse">{{page['Practice Areas Section']['Button Label']}}</a>
         </div>
         <div class="column small-16 medium-10 large-12">
           <ul class="row small-up-2 medium-up-3 PA--icon-list">
@@ -39,11 +39,11 @@ layout: default
       </div>
     </div>
     <div class="row projects">
-      <div class="column">
+      <div class="column small-16 medium-10 large-8">
         <h2>{{page['Projects Section']['Title']}}</h2>
         <h3>{{page['Projects Section']['Subtitle']}}</h3>
         <p>{{page['Projects Section']['Brief Description']}}</p>
-        <a href="#">{{page['Projects Section']['Button Label']}}</a>
+        <a href="/projects/" class="button">{{page['Projects Section']['Button Label']}}</a>
       </div>
     </div>
   </div>

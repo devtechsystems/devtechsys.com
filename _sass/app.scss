@@ -136,12 +136,31 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       font-size:21px;
     }
   }
-  .insights {min-height:400px;}//temporary fix to fill space until blog posts have images and such
+  .insights {
+    min-height:320px; //temporary fix to fill space until blog posts have images and such
+    padding-top:80px;
+    padding-bottom:80px;
+  }
   .practice-areas {
     background-color: #007cb7;
+    .PA--content {
+      padding-top:80px;
+      padding-bottom:80px;
+      color:#fff;
+    }
+    .PA--title {
+      font-size:24px;
+      color:#bbe0ff;
+    }
+    .PA--subtitle {
+      font-size:36px;
+      text-transform: uppercase;
+      margin:5px 0 10px;
+    }
+
     .PA--icon-list {
       list-style-type: none;
-      margin: 0;
+      margin: 70px 0 0;
       li {margin:0;}
       a {
         text-align: center;
@@ -149,13 +168,21 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         font-weight: bold;
         display: block;
         line-height: 1.2;
-        margin-top: 60px;
+        margin-bottom: 40px;
+        min-height: 150px;
+        padding-top: 20px;
         img {
           display: block;
           margin:0 auto 10px;
         }
       }
     }
+  }
+  .projects {
+    background: transparent url(/assets/images/background-projects.png) no-repeat 100px top;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
   }
 }
 .title-row-title {
@@ -175,7 +202,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   margin-bottom:0;
 }
 .site-footer {
-  margin-top:6rem;
   background-color: #007cb7;
   color: #fff;
 
@@ -347,18 +373,30 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
 .site {
   .button {
-    border:2px solid #7dcba7;
+    border:2px solid #007cb7;
     padding:16px 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #28445f;
     text-decoration: none;
     font-size: 15px;
-    background-color: transparent;
+    background-color: #fff;
     border-radius:0;
+    min-width: 300px;
     &:focus,
     &:hover {
+      background-color: #fff;
+    }
+
+    &.button-inverse {
+      border-color:#7dcba7;
+      color: #fff;
       background-color: transparent;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
     }
   }
 }
@@ -385,6 +423,9 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 //practice areas
 .link-list {
   list-style-type: none;
+}
+article.post {
+  padding:80px 0;
 }
 ul.posts {
   margin-left: 0;

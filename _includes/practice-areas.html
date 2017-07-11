@@ -1,0 +1,10 @@
+<div class="row row--practice-areas">
+	{% for item in site.practice-areas %}
+	<div class="small-16 medium-8 column clearfix">
+		<a href="{{item.url | relative }}">
+			<img src="{{ item['Location Image']}}"/>
+			<h2>{{ item.title }}</h2>
+		</a>
+	</div>
+	{% endfor %}
+</div>

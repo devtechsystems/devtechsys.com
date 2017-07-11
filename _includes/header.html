@@ -3,7 +3,9 @@
   {% include header_navigation.html %}
 
   <div class="row column">
+    {% if include.title.size > 0 %}
     <h1 class="title-row-title">{{include.title}}</h1>
+    {% endif %}
     <h2 class="title-row-subtitle">{{include.subtitle}}</h2>
   </div>
 </div>
