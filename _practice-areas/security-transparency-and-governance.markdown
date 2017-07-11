@@ -8,6 +8,7 @@ Highlight: 'Devtech improves the security, transparency, and the capacity of urb
   build stronger democratic societies in which citizens are safe, informed, and free.
   Our projects exist in a variety of permissible and non-permissible places from conflict
   zones to middle and high income countries. '
+Preview/Teaser Image: "/uploads/preview-security.jpg"
 Light Icon Image: "/uploads/iconLight-security.png"
 Dark Icon Image: "/uploads/iconDark-security.png"
 ---
