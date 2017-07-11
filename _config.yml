@@ -103,6 +103,7 @@ defaults:
     type: practice-areas
   values:
     Highlight: 
+    Preview/Teaser Image: 
     Detail Page Image: 
     Light Icon Image: 
     Dark Icon Image: 
