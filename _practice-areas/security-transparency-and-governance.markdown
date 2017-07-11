@@ -1,7 +1,7 @@
 ---
 title: Security, Transparency, and Governance
 date: 2017-05-30 18:51:00 Z
-position: 2
+position: 5
 Highlight: 'Devtech improves the security, transparency, and the capacity of urban
   and local governments in countries around the world. From helping a developing country
   establish autonomy and accountability to broadening rule of law, our goal is to

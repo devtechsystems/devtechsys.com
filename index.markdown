@@ -2,12 +2,12 @@
 title: Home
 date: 2017-05-30 19:05:00 Z
 position: 0
-layout: home
 Hero Section:
   Tagline: Innovative Solutions for Development
   Short Mission Statement: We are dedicated to data-driven solutions that build capacity,
     strengthen partnerships, and address complex policy challenges.
   Button Label: What Makes Us Different
+  Button Link: "/about/history/"
 Insights Section:
   Button Label: Read Our Latest Insights
 Practice Areas Section:
@@ -25,5 +25,6 @@ Projects Section:
     Donec urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
     penatibus et.
   Button Label: View Projects
+layout: home
 ---
 
