@@ -27,7 +27,7 @@ layout: default
 		    </li>
 			</ul>
 		</div>
-	  <div class="content">
+	  <div class="content content-noBottomPadding">
 	  	{% assign current_practice_area = page.title %}
 	  	{% assign linked_projects = site.projects | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 	  	<div class="tabs-content" data-tabs-content="tabs-{{ page.position | strip }}">
@@ -56,8 +56,8 @@ layout: default
 						{{ content }}
 					</div>
 
-					<div class="background-lightblue">
-						<div class="row row--gutters column">
+					<div class="background-lightBlue">
+						<div class="row row--gutters column current-projects-list clearfix">
 							<h3>Current Projects</h3>
 							<ul class="row link-list small-up-1 medium-up-2">
 				    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
@@ -70,7 +70,7 @@ layout: default
 					  </div>
 				  </div>
 			  </div>
-			  <div class="tabs-panel" id="past-projects">
+			  <div class="tabs-panel content-bottomPadding" id="past-projects">
 			    <div class="row row--gutters column">
 				    <h3>Past Projects</h3>
 
@@ -84,7 +84,7 @@ layout: default
 				    </ul>
 				  </div>
 			  </div>
-			  <div class="tabs-panel" id="reports-publications">
+			  <div class="tabs-panel content-bottomPadding" id="reports-publications">
 			  	<div class="row row--gutters column">
 				    <ul class="posts">
 				    	{% assign linked_reports = site.reports-and-publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
