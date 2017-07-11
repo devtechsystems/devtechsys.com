@@ -1,5 +1,5 @@
 ---
-title: Insights
+title: Our Insights
 date: 2017-06-12 18:08:00 Z
 Insights:
 - Knowledge Management and Communication Requires Participation
