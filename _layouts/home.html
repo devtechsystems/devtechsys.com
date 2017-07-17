@@ -31,7 +31,7 @@ layout: default
             {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
             {% for practices in sorted_practices %}
               <li class="column">
-                <a href="{{ practices.url | relative_url }}"><img src="{{ practices['Dark Icon Image'] | relative_url }}"/>{{ practices.title | escape }}</a>
+                <a href="{{ practices.url | relative_url }}"><img src="{{ practices['Dark Icon Image'] | relative_url }}"/><span class="PA--icon-title">{{ practices.title | escape }}</span></a>
               </li>
             {% endfor %}
           </ul>
@@ -40,8 +40,8 @@ layout: default
     </div>
     <div class="row projects">
       <div class="column small-16 medium-10 large-8">
-        <h2>{{page['Projects Section']['Title']}}</h2>
-        <h3>{{page['Projects Section']['Subtitle']}}</h3>
+        <h2 class="projects--title">{{page['Projects Section']['Title']}}</h2>
+        <h3 class="projects--title-allcaps">{{page['Projects Section']['Subtitle']}}</h3>
         <p>{{page['Projects Section']['Brief Description']}}</p>
         <a href="/projects/" class="button">{{page['Projects Section']['Button Label']}}</a>
       </div>

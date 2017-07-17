@@ -1,12 +1,39 @@
 //foundation included
 @import "font-awesome";
 
-html, body {height:100%;}
 
+/*
+.font-brandon {
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight:300; //light
+  font-weight:400; //regular
+  font-weight:700; //bold
+}
 
+.font-vista-slab-book {
+  font-family: "vista-slab", sans-serif;
+  font-weight: 300;
+}
+*/
+$font-brandon: "brandon-grotesque", sans-serif;
+$font-vista: "vista-slab", sans-serif;
 
-
-
+html, body {
+  height:100%;
+  font-family: $font-brandon;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-brandon;
+  line-height: 1.3;
+}
+.font-brandon {font-family: $font-brandon;}
+.site-content p,
+.font-vista {
+  font-family: $font-vista;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+}
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
@@ -51,7 +78,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
 
 
-.row {/*max-width:78rem;*/}
+.row {/*max-width:78rem; foundation adds this */}
 .row--gutters {max-width:48.75rem;}
 .site-header {
   background-color: #003045;
@@ -62,149 +89,33 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     display: inline-block;
     margin-top: 28px;
   }
-}
-.site-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
 
-  .nav-trigger {display: none;}
-  .menu-icon {display: none;}
-
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    position: relative;
-    cursor: pointer;
-    margin-top: 38px;
-  }
-
-  .nav-menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
+  .banner-section-title {
     text-align: center;
-
-    > svg path {
-      fill: #fff;
-    }
+    text-transform: uppercase;
+    color: #7dcba7;
+    font-size:21px;
+    letter-spacing:.1em;
+    font-weight: 700;
+    margin-top: 88px;
+    margin-bottom: 0;
   }
-
-  input ~ .trigger {
-    clear: both;
-    display: none;
-  }
-
-  input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-    background-color: #284460;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    padding-top: 150px;
-  }
-
-  .trigger {
-    h2 {color:#fff;}
-    ul {list-style-type:none;}
-    a {color:#7dcba7;text-decoration: none;}
-  }
-}
-.home {
-  &.site-header {
-    min-height: 650px;
-    background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
-    background-size: cover;
-  }
-  .hero {
-    color: #fff;
+  .banner-page-title {
     text-align: center;
-    padding:200px 220px 0;
-    .allcaps {
-      font-size: 50px;
-      text-transform: uppercase;
-    }
-    p {
-      font-size:21px;
-    }
+    text-transform: uppercase;
+    color:#fff;
+    font-size:41px;
+    letter-spacing:.18em;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    margin-bottom:0;
+    margin-top: -6px;
+    &.no-section-title {margin-top:120px;}
   }
-  .insights {
-    min-height:320px; //temporary fix to fill space until blog posts have images and such
-    padding-top:80px;
-    padding-bottom:80px;
-  }
-  .practice-areas {
-    background-color: #007cb7;
-    .PA--content {
-      padding-top:80px;
-      padding-bottom:80px;
-      color:#fff;
-    }
-    .PA--title {
-      font-size:24px;
-      color:#bbe0ff;
-    }
-    .PA--subtitle {
-      font-size:36px;
-      text-transform: uppercase;
-      margin:5px 0 10px;
-    }
-
-    .PA--icon-list {
-      list-style-type: none;
-      margin: 70px 0 0;
-      li {margin:0;}
-      a {
-        text-align: center;
-        color: #fff;
-        font-weight: bold;
-        display: block;
-        line-height: 1.2;
-        margin-bottom: 40px;
-        min-height: 150px;
-        padding-top: 20px;
-        img {
-          display: block;
-          margin:0 auto 10px;
-        }
-      }
-    }
-  }
-  .projects {
-    background: transparent url(/assets/images/background-projects.png) no-repeat 100px top;
-    margin-top: 80px;
-    padding-bottom: 80px;
-    background-size: cover;
-  }
-}
-.title-row-title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #7dcba7;
-  font-size:1.1rem;
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-.title-row-subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  color:#fff;
-  font-size:2rem;
-  padding-bottom: 2rem;
-  margin-bottom:0;
 }
 .site-footer {
   background-color: #007cb7;
   color: #fff;
-
   .column {
     padding-top:45px;
     padding-bottom: 40px;
@@ -248,7 +159,171 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
 }
+.site {
+  .button {
+    border:2px solid #007cb7;
+    padding:16px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #28445f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius:0;
+    min-width: 300px;
+    letter-spacing: .1em;
+    &:focus,
+    &:hover {
+      background-color: #fff;
+    }
 
+    &.button-inverse {
+      border-color:#7dcba7;
+      color: #fff;
+      background-color: transparent;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  .icon-wBlueEllipse {
+    background-color: rgba(102, 176, 211, 0.7);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+  .background-lightBlue {
+    background-color:#e0eff6;
+  }
+}
+
+
+//home page styles
+.home {
+  &.site-header {
+    min-height: 650px;
+    background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
+    background-size: cover;
+  }
+  .trigger {min-height: 648px;}
+  .hero {
+    color: #fff;
+    text-align: center;
+    .hero--content {
+      max-width: 890px;
+      display: inline-block;
+      padding-top:172px;
+    }
+    .hero--button {
+      display: block;
+    }
+    .allcaps {
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .2em;
+      margin-bottom:32px;
+    }
+    p {
+      font-size:21px;
+      margin-bottom: 18px;
+      display: inline-block;
+      max-width: 790px;
+      @extend .font-vista;
+    }
+  }
+  .insights {
+    min-height:320px; //temporary fix to fill space until blog posts have images and such
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+  .practice-areas {
+    background-color: #007cb7;
+    .PA--content {
+      padding:80px 0;
+      color:#fff;
+
+      p {
+        @extend .font-vista;
+        font-size: 17px;
+      }
+    }
+    .PA--title {
+      font-size:26px;
+      font-weight: 700;
+      color:#bbe0ff;
+    }
+    .PA--subtitle {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      margin: 9px 0 19px;
+      line-height: 1;
+    }
+
+    .PA--icon-list {
+      list-style-type: none;
+      margin: 70px 0 0;
+      li {margin:0;}
+      a {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        display: block;
+        line-height: 1.2;
+        margin-bottom: 40px;
+        min-height: 150px;
+        padding-top: 20px;
+        img {
+          display: block;
+          margin:0 auto 10px;
+        }
+        .PA--icon-title {
+          display: inline-block;
+          max-width: 210px;
+        }
+      }
+      .column:nth-child(3),
+      .column:nth-child(6) {
+        .PA--icon-title {max-width:180px;}
+      }
+    }
+  }
+  .projects {
+    background: transparent url(/assets/images/background-projects.png) no-repeat 100px top;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+
+    .projects--title {
+      font-weight: 700;
+      font-size:26px;
+      color: #284460;
+    }
+    .projects--title-allcaps {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+    p {
+      @extend .font-vista;
+      font-size: 17px;
+    }
+  }
+}
+
+
+
+//page styles
 .page {
   &.site-header {
     min-height: 350px;
@@ -269,10 +344,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         & > a {
           color:#28445f;
           text-align: center;
-          font-size: 1rem;
-          font-weight: bold;
           position: relative;
-          padding: 1.2rem 0.2rem;
+          font-size: 20px;
+          font-weight: 700;
+          padding: 30px 3px;
         }
         & > a:focus,
         & > a:hover {
@@ -333,19 +408,22 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
   .page-title {
-    font-size: 2.3rem;
+    font-size: 38px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing:.025em;
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 36px;
   }
   .page-highlight {
+    color:#28445f;
     line-height: 1.2;
-    font-size: 1.25rem;
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
+    font-size: 24px;
+    margin-top: -6px;
+    margin-bottom: 40px;
+    font-weight: 400;
   }
-  .page-banner {margin-bottom:2.5rem;}
+  .page-banner + .page-highlight {margin-top:60px;}
   .back-link {
     display: inline-block;
     font-style: italic;
@@ -355,12 +433,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
   blockquote {
     float: right;
-    width: 40%;
+    width: 50%;
     border-left: 0;
     position: relative;
-    padding: 16px 16px 16px 0;
-    line-height: 1;
-    margin: 0 -218px 0 20px;
+    padding: 16px 0;
+    line-height: 1.2;
+    margin: 0 0 0 20px;
 
     &:before {
       content: " ";
@@ -372,60 +450,219 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       background-color: #7dcba7;
     }
     p {
-      margin-bottom:0;
+      @extend .font-brandon;
+      margin-bottom: 0;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 1.2;
       & + p {margin-top:1rem;}
     }
   }
 }
 
-.site {
-  .button {
-    border:2px solid #007cb7;
-    padding:16px 30px;
+
+//#########
+//navigation styles
+.site-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+
+  .nav-trigger {display: none;}
+  .menu-icon {display: none;}
+
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    margin-top: 38px;
+    outline: 0;
+    .sr-only {top: 5px;left: 5px;}
+  }
+
+  .nav-menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
     text-align: center;
-    text-transform: uppercase;
-    color: #28445f;
-    text-decoration: none;
-    font-size: 15px;
-    background-color: #fff;
-    border-radius:0;
-    min-width: 300px;
-    &:focus,
-    &:hover {
-      background-color: #fff;
+
+    > svg path {
+      fill: #fff;
+    }
+    .fa {color: #fff;font-size: 28px;}
+    .nav-menu-close {display: none;}
+  }
+
+  @keyframes slideOutUp {
+    from {
+      transform: translate3d(0, 0, 0);
     }
 
-    &.button-inverse {
-      border-color:#7dcba7;
-      color: #fff;
-      background-color: transparent;
+    to {
+      visibility: hidden;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
 
-      &:focus,
-      &:hover {
-        background-color: transparent;
+  @keyframes slideInDown {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  input ~ .trigger {
+    display: block;
+    padding-bottom: 20px;
+    background-color: #284460;
+    box-shadow: 1200px 0px 0px 0px #284460, -1200px 0px 0px 0px #284460;
+    position: relative;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 130px;
+    animation-duration: 0;
+    animation-fill-mode: both;
+    animation-name: slideOutUp;
+  }
+
+  input:checked ~ .trigger {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-name: slideInDown;
+  }
+  input:not(:checked) {
+    &:focus ~ .trigger,
+    &:hover ~ .trigger {
+      animation-duration: .4s;
+    }
+  }
+
+  input:checked ~ label {
+    .fa {display: none;}
+    .nav-menu-close {display: inline-block;}
+  }
+  input:not(:checked) ~ label {
+    .fa {display: inline-block;}
+    .nav-menu-close {display: none;}
+  }
+
+  .trigger {
+    .row {margin-left:0;margin-right:0;}
+    h2 {
+      color:#fff;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+    ul {
+      list-style-type:none;
+      margin-left:0;
+    }
+    li {margin-bottom:10px;}
+    a {
+      color:#7dcba7;
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing:.01em;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+    a.post-button {
+      border: 2px solid #7dcba7;
+      color: #fff;
+      padding: 8px 20px;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .post-details {
+      color: #fff;
+      font-weight: 400;
+      font-size:15px;
+      display: block;
+      .post-detail {
+        display: inline-block;
+        &:before {
+          content:"";
+          border-left:1px solid #bdd2e6;
+          height:1em;
+          width: 1px;
+          display: inline-block;
+          margin-right: 10px;
+          margin-left: 5px;
+          position: relative;
+          top: 3px;
+        }
+        &:first-child:before {display: none;margin:0;}
       }
     }
-  }
-  .icon-wBlueEllipse {
-    background-color: rgba(102, 176, 211, 0.7);
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-  }
-  .background-lightBlue {
-    background-color:#e0eff6;
   }
 }
 
 
+//#########
+//page specific styles
+
+//contract list
+.contract-list {
+  .CL--title {
+    font-size: 30px;
+    color: #28445f;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .CL--agency {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .CL--subtitle {
+    font-size: 17px;
+    color: #555;
+    font-style: italic;
+    font-weight: 700;
+    border-top:2px solid #c8e2ef;
+    padding-top:24px;
+    margin-top: 26px;
+  }
+  ul {
+    margin-left:0;
+    margin-bottom:3px;
+    list-style-type: none;
+  }
+  li {
+    margin-bottom: 8px;
+    color:#555;
+  }
+  ul + .CL--agency {
+    border-top:2px solid #c8e2ef;
+    padding-top:24px;
+  }
+}
+
 //team list
 .team-list-block {
-  list-style-type: none; 
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
   .tl-title {font-size: 20px;}
   .tl-subtitle {font-size: 16px;}
-
 }
 
 //office locations
@@ -552,7 +789,14 @@ li.post {
     line-height: 100px;
   }
 }
-
+@media screen and (min-width: 76em) {
+  .page {
+    blockquote {
+      margin-right: -230px;
+      padding-right: 16px;
+    }
+  }
+}
 
 @media screen and (min-width: 89em) {
   .page {
