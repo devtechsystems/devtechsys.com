@@ -1,6 +1,10 @@
 ---
-title: Markdown Styles Example
+title: Markdown
 date: 2017-07-18 23:32:00 Z
+Title: Markdown Styling Example Title.  A Title Should be used to change the Title
+  in the page.
+Highlight: Highlight text appears at the top of the page.  This content should be
+  included on most pages to help highlight  the main focus for the article/page.
 ---
 
 An h1 header
