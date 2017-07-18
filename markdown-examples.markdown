@@ -1,5 +1,5 @@
 ---
-title: Markdown
+title: Markdown Banner Title
 date: 2017-07-18 23:32:00 Z
 Title: Markdown Styling Example Title.  A Title Should be used to change the Title
   in the page.
