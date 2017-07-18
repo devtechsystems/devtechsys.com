@@ -13,7 +13,7 @@
 
       <div class="trigger">
         <div class="row">
-          <div class="medium-3 column">
+          <div class="small-16 medium-3 column">
             <h2>About Us</h2>
             <ul>
               {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
@@ -28,7 +28,7 @@
               {% endfor %}
             </ul>
           </div>
-          <div class="medium-4 column">
+          <div class="small-16 medium-4 column">
             <h2>Our Practices</h2>
             <ul>
               {% assign practicesNav_pages = site.practice-areas | sort: 'position'  %}
@@ -41,11 +41,11 @@
               {% endfor %}
             </ul>
           </div>
-          <div class="medium-4 column">
+          <div class="small-16 medium-4 column">
             <h2>Our Projects</h2>
             <!--ADD PROJECTS-->
           </div>
-          <div class="medium-5 column">
+          <div class="small-16 medium-5 column">
             <h2>Our Insights</h2>
             <ul>
             {% for post in site.posts limit:3 %}

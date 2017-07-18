@@ -1,10 +1,6 @@
 <div class="site-footer" id="site_footer">
   <div class="row">
-    <div class="small-16 medium-8 column">
-      <p>&#169; {{site.time | date: '%Y' }} {{ site.title | escape }} All Rights Reserved.</p>
-    </div>
-      
-    <div class="small-16 medium-8 column">
+    <div class="small-16 column">
       <ul class="link-list">
       {% assign footerNav_pages = site.html_pages | sort: 'footer_navigation_order' %}
       {% for p in footerNav_pages %}
@@ -15,6 +11,7 @@
         {% endif %}
       {% endfor %}
       </ul>
+      <p>&#169; {{site.time | date: '%Y' }} {{ site.title | escape }} All Rights Reserved.</p>
     </div>
   </div>
 </div>

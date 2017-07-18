@@ -114,21 +114,23 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 .site-footer {
+  text-align: center;
   background-color: #007cb7;
   color: #fff;
   .column {
-    padding-top:45px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 25px;
 
     p {
       color: #fff;
+      font-size: 15px;
       margin-bottom: 0;
       & + p {margin-top: 1rem;}
     }
 
     ul.link-list {
-      float: right;
-      margin:0;
+      float: none;
+      margin:0 0 15px;
       list-style-type: none;
       li {
         display: inline-block;
@@ -151,6 +153,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
     a {
       color:#fff;
+      font-size: 15px;
+      font-weight: 700;
       text-decoration: none;
       &:hover,
       &:focus {
@@ -171,7 +175,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-weight: 700;
     background-color: #fff;
     border-radius:0;
-    min-width: 300px;
+    min-width: 100%;
     letter-spacing: .1em;
     &:focus,
     &:hover {
@@ -217,20 +221,20 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     .hero--content {
       max-width: 890px;
       display: inline-block;
-      padding-top:172px;
+      padding-top:62px;
     }
     .hero--button {
       display: block;
     }
     .allcaps {
-      font-size: 50px;
+      font-size: 30px;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: .2em;
       margin-bottom:32px;
     }
     p {
-      font-size:21px;
+      font-size:20px;
       margin-bottom: 18px;
       display: inline-block;
       max-width: 790px;
@@ -245,12 +249,17 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .practice-areas {
     background-color: #007cb7;
     .PA--content {
-      padding:80px 0;
+      padding-top:80px;
+      padding-bottom:0;
       color:#fff;
 
       p {
         @extend .font-vista;
         font-size: 17px;
+      }
+      .button {
+        min-width: 100%;
+        max-width:300px;
       }
     }
     .PA--title {
@@ -269,7 +278,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
     .PA--icon-list {
       list-style-type: none;
-      margin: 70px 0 0;
+      margin: 10px 0 20px;
       li {margin:0;}
       a {
         text-align: center;
@@ -424,11 +433,14 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-weight: 400;
   }
   .page-banner + .page-highlight {margin-top:60px;}
+  .page-highlight + .page-banner {margin-bottom:60px;}
   .back-link {
     display: inline-block;
     font-style: italic;
     margin-top:4rem;
-    & + .page-title {margin-top: 1rem;}
+    font-size: 17px;
+    font-weight: 700;
+    & + .page-title {margin-top: 19px;}
   }
 
   blockquote {
@@ -446,7 +458,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       top: 0;
       left: 0;
       width: 44%;
-      height: 8px;
+      height: 6px;
       background-color: #7dcba7;
     }
     p {
@@ -491,7 +503,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     width: 36px;
     height: 26px;
     line-height: 0;
-    padding-top: 10px;
+    padding-top: 7px;
     text-align: center;
 
     > svg path {
@@ -623,9 +635,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .CL--title {
     font-size: 30px;
     color: #28445f;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 5px;
     margin-top: 10px;
+    letter-spacing: .025em;
   }
   .CL--agency {
     font-size: 22px;
@@ -657,21 +670,75 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 }
 
 //team list
+.headshot-thumbnail {
+  float:right;
+  margin:0 0 10px 20px;
+}
 .team-list-block {
   list-style-type: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  .tl-title {font-size: 20px;}
-  .tl-subtitle {font-size: 16px;}
+  padding-left: 30px;
+  padding-right: 30px;
+  .tl-title {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: #28445f;
+    font-weight: 400;
+  }
+  .tl-subtitle {
+    font-size: 15px;
+    color: #6c7c8c;
+    font-weight: 700;
+  }
 }
 
 //office locations
 .row--office-locations {
   margin-top: 4rem;
-  p.location-address {white-space: pre;}
-  p.location-phone {
+  .OL--title-block {
+    position: relative;
+    margin-bottom:24px;
+    .OL--title {
+      position: absolute;
+      bottom:50px;
+      left: 0;
+      width:100%;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        width: 80px;
+        height: 4px;
+        background-color: #7dcba7;
+        margin-left: -40px;
+      }
+    }
+  }
+  p.OL--address {
+    white-space: pre;
+    @extend .font-brandon;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  p.OL--phone {
     margin-right: 100px;
-    .fa {margin-right: 5px;}
+    @extend .font-brandon;
+    font-size: 18px;
+    font-weight: 400;
+    color:#555;
+
+    .fa {
+      margin-right: 5px;
+      font-size: 16px;
+      color:#66b0d3;
+    }
   }
 }
 
@@ -722,10 +789,36 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
+//projects list
 .current-projects-list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 24px;
+  padding-bottom: 90px;
   margin-top: 80px;
+
+  .CPL--title {
+    font-size: 28px;
+    margin-bottom:26px;
+    color: #28445f;
+    font-weight: 700;
+  }
+  .CPL--project {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #007cb7;
+  }
+}
+.past-projects-list {
+  .PPL--title {
+    font-size: 28px;
+    margin-bottom:26px;
+    color: #28445f;
+    font-weight: 700;
+  }
+  .PPL--project {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #007cb7;
+  }
 }
 
 .link-list {
@@ -745,18 +838,23 @@ li.post {
   padding-bottom: 30px;
   .post-category {
     color:#000;
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
-    font-size: 15px;
+    font-size: 16px;
   }
   .post-title {
     color: #007cb7;
-    font-size: 21px;
-    line-height: 1.4;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 4px;
   }
   .post-details {
     color: #28445f;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 16px;
     .post-detail {
       display: inline-block;
       &:before {
@@ -772,6 +870,11 @@ li.post {
       }
       &:first-child:before {display: none;margin:0;}
     }
+  }
+  .post-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 18px;
   }
 }
 .page-banner.practice-area {
@@ -789,11 +892,63 @@ li.post {
     line-height: 100px;
   }
 }
+
+
+@media screen and (min-width: 40em) {
+  .site-footer {
+    text-align: left;
+    .column {
+      padding-top:45px;
+      padding-bottom: 40px;
+      ul.link-list {float: right;margin-bottom:0;}
+    }
+  }
+  .home {
+    .hero {
+      .hero--content {padding-top:172px;}
+      .allcaps {font-size: 50px;}
+      p {font-size:21px;}
+    }
+    .practice-areas {
+      .PA--content {
+        padding-bottom:80px;
+      }
+      .PA--icon-list {
+        margin-top:70px;
+        margin-bottom:0;
+      }
+    }
+  }
+  .site {
+    .button {min-width: 300px;}
+  }
+
+
+
+
+  .team-list-block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
 @media screen and (min-width: 76em) {
   .page {
     blockquote {
       margin-right: -230px;
       padding-right: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .home {
+    .practice-areas {
+      .PA--content {
+        padding-left:0;
+        padding-right:0;
+      }
     }
   }
 }

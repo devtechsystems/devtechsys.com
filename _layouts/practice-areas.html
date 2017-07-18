@@ -58,12 +58,12 @@ layout: default
 
 					<div class="background-lightBlue">
 						<div class="row row--gutters column current-projects-list clearfix">
-							<h3>Current Projects</h3>
+							<h3 class="CPL--title">Current Projects</h3>
 							<ul class="row link-list small-up-1 medium-up-2">
 				    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
 					    {% for p in linked_current_projects %}
 					      <li class="column column-block">
-					    		<a href="{{ p.url | relative_url }}">{{ p['Title'] }}</a>
+					    		<a href="{{ p.url | relative_url }}" class="CPL--project">{{ p['Title'] }}</a>
 					    	</li>
 					    {% endfor %}
 					  	</ul>
@@ -71,14 +71,14 @@ layout: default
 				  </div>
 			  </div>
 			  <div class="tabs-panel content-bottomPadding" id="past-projects">
-			    <div class="row row--gutters column">
-				    <h3>Past Projects</h3>
+			    <div class="row row--gutters column past-projects-list">
+				    <h3 class="PPL--title">Past Projects</h3>
 
 				    <ul class="row link-list small-up-1 medium-up-2">
 				    	{% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Active'] == false" %}
 					    {% for p in linked_past_projects %}
 					      <li class="column column-block">
-					    		<a href="{{ p.url | relative_url }}">{{ p['Title'] }}</a>
+					    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Title'] }}</a>
 					    	</li>
 					    {% endfor %}
 				    </ul>

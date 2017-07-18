@@ -56,7 +56,7 @@ layout: default
 					<div class="content">
 				  	<div class="row row--gutters">
 				  		<div class="column">
-				  			<a href="/about/our-team/" class="back-link">< Back</a>
+				  			<a href="/about/our-team/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to all Management Team</a>
 								{% if page['Title'].size > 0 %}
 									<h1 class="page-title">{{ page['Title']}}</h1>
 								{% endif %}
@@ -65,6 +65,10 @@ layout: default
 								{% endif %}
 								{% if page['Highlight'].size > 0 %}
 									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+								{% endif %}
+
+								{% if page['Headshot Image'].size > 0 %}
+									<img src="{{ page['Headshot Image'] | relative_url }}" alt="{{ page['Title'] }}" class="headshot-thumbnail" />
 								{% endif %}
 
 						    {{ content }}
@@ -89,12 +93,12 @@ layout: default
 					<div class="content">
 				  	<div class="row row--gutters">
 				  		<div class="column">
-				  			<a href="/about/careers/" class="back-link">< Back</a>
+				  			<a href="/about/careers/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to all Current Openings</a>
 								{% if page['Title'].size > 0 %}
 									<h1 class="page-title">{{ page['Title']}}</h1>
 								{% endif %}
 								{% if page['Banner Image'].size > 0 %}
-									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+									<img class="page-banner" src="{{ page['Banner Image'] }}" alt="Banner"/>
 								{% endif %}
 								{% if page['Highlight'].size > 0 %}
 									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
@@ -121,7 +125,7 @@ layout: default
 									<h1 class="page-title">{{ page['Title']}}</h1>
 								{% endif %}
 								{% if page['Banner Image'].size > 0 %}
-									<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+									<img class="page-banner" src="{{ page['Banner Image'] }}" alt="Banner"/>
 								{% endif %}
 								{% if page['Highlight'].size > 0 %}
 									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>

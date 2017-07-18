@@ -27,7 +27,7 @@ layout: default
           <a href="/our-practices/" class="button button-inverse">{{page['Practice Areas Section']['Button Label']}}</a>
         </div>
         <div class="column small-16 medium-10 large-12">
-          <ul class="row small-up-2 medium-up-3 PA--icon-list">
+          <ul class="row small-up-2 large-up-3 PA--icon-list">
             {% assign sorted_practices = site.practice-areas | sort: 'position'  %}
             {% for practices in sorted_practices %}
               <li class="column">
