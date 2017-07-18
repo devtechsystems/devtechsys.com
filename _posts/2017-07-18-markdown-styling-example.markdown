@@ -77,11 +77,11 @@ tomatoes
 
 Again, text is indented 4 spaces.
 
-Here's a "line block":
+Here's a table:
 
-| Line one | Two | 
-| Line too ||
-| Line tree ||
+| Column one | Column Two | 
+| Second row | |
+| Third row | The second row has a blank cell |
 
 and images can be specified like so:
 
