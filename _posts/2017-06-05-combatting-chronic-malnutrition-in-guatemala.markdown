@@ -23,7 +23,7 @@ Acute malnutrition must be treated immediately and children diagnosed with this 
 
 Chronic malnutrition is relatively silent; children with this disease generally don’t receive a diagnosis. Guatemala is the country with the highest risk of chronic malnutrition in Latin America and the 5th in the world. This makes chronic malnutrition the biggest nutrition issue among Guatemalan children. 
 
-### According to the Maternal-Infant nutrition glossary
+According to the Maternal-Infant nutrition glossary:
 
 Chronic Malnutrition is also called “stunting.” It is the result of a bad nutrition for long periods of time or episodes of infection.  It’s a deficiency developed in the long run, which manifests as not growing up properly (short height) and can cause irreversible damages to the brain.
 
