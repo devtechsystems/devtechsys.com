@@ -79,9 +79,9 @@ Again, text is indented 4 spaces.
 
 Here's a "line block":
 
-| Line one
-|   Line too
-| Line tree
+| Line one | Two | 
+| Line too ||
+| Line tree ||
 
 and images can be specified like so:
 
