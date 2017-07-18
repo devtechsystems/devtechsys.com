@@ -4,25 +4,32 @@ layout: default
 
 {% include header.html subtitle="Our Insights" %}
 
-<div class="site-content" id="site_content" aria-label="Content">
+<div class="site-content page" id="site_content" aria-label="Content">
   <div class="row row--gutters column">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
       <header class="post-header">
         <span class="post-practiceArea">{{ page['Practice Area'] | first }}</span>
-        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <h1 class="post-title page-title" itemprop="name headline">{{ page.title | escape }}</h1>
         <div class="post-details">
+          {% if page['Author'] %}
+            <span class="post-detail">By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page['Author'] }}</span></span></span>
+          {% endif %}
           <span class="post-detail"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             {{ page.date | date: date_format }}
           </time></span>
-          {% if page['Author'] %}
-            <span class="post-detail" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page['Author'] }}</span></span>
-          {% endif %}
         </div>
       </header>
 
       <div class="post-content" itemprop="articleBody">
+        {% if page['Banner Image'].size > 0 %}
+          <img class="page-banner" src="{{ page['Banner Image'] }}"/>
+        {% endif %}
+        {% if page['Highlight'].size > 0 %}
+          <h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+        {% endif %}
+
         {{ content }}
       </div>
 

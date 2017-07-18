@@ -427,7 +427,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .page-highlight {
     color:#28445f;
     line-height: 1.2;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: -6px;
     margin-bottom: 40px;
     font-weight: 400;
@@ -824,6 +824,41 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 .link-list {
   list-style-type: none;
 }
+.post-header {
+  margin-bottom:60px;
+  .post-practiceArea {
+    color:#555;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .post-title {
+    margin: 0 0 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #c8e2ef;
+  }
+  .post-details {
+    color: #28445f;
+    font-weight: 700;
+    font-size: 16px;
+    .post-detail {
+      display: inline-block;
+      &:before {
+        content:"";
+        border-left:1px solid #53697f;
+        height:1em;
+        width: 1px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+      }
+      &:first-child:before {display: none;margin:0;}
+    }
+  }
+}
+
 article.post {
   padding:80px 0;
 }
