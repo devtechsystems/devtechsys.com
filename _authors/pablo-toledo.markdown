@@ -1,6 +1,7 @@
 ---
 title: Pablo Toledo
 date: 2017-07-18 21:23:00 Z
+Author Image: "/uploads/author-thumbnail.jpg"
 Author Title: Author Title
 ---
 
