@@ -77,11 +77,13 @@ tomatoes
 
 Again, text is indented 4 spaces.
 
-Here's a table:
+Here's a table, colons can be used to align columns.
 
-| Column one | Column Two | 
-| Second row | |
-| Third row | The second row has a blank cell |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 and images can be specified like so:
 
