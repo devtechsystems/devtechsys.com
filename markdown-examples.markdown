@@ -5,6 +5,7 @@ Title: Markdown Styling Example Title.  A Title Should be used to change the Tit
   in the page.
 Highlight: Highlight text appears at the top of the page.  This content should be
   included on most pages to help highlight  the main focus for the article/page.
+Banner Image: "/uploads/banner-monitor.jpg"
 ---
 
 An h1 header
