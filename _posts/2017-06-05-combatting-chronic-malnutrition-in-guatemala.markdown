@@ -6,9 +6,7 @@ Practice Area:
 Banner Image: "/uploads/malnutrition3.jpg"
 Highlight: In Guatemala in particular, among children under the age of five, 46.5%
   of are stunted, 4.7% are overweight, and 1% are wasted.
-Topic Area: Topic Area
 Author: Pablo Toledo
-Field name: 
 ---
 
 Nutrition during the first years of life is an essential component for human development. Malnutrition can be caused by a lack or excess of food. Malnutrition due to lack of food can be classified in 3 types:
