@@ -27,13 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 .font-brandon {font-family: $font-brandon;}
-.site-content p,
-.font-vista {
-  font-family: $font-vista;
-  font-size: 17px;
-  line-height: 1.5;
-  font-weight: 300;
-}
+.font-vista {font-family: $font-vista;}
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
@@ -416,31 +410,70 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       .content-bottomPadding {padding-bottom:80px;}
     }
   }
-  .page-title {
-    font-size: 38px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing:.025em;
-    margin-top: 4rem;
-    margin-bottom: 36px;
+  
+  //generic styles
+  h1 {
+    font-size: 32px;
+    margin-top: 28px;
+    font-weight: 300;
   }
-  .page-highlight {
-    color:#28445f;
-    line-height: 1.2;
+  h2 {
     font-size: 26px;
-    margin-top: -6px;
-    margin-bottom: 40px;
-    font-weight: 400;
-  }
-  .page-banner + .page-highlight {margin-top:60px;}
-  .page-highlight + .page-banner {margin-bottom:60px;}
-  .back-link {
-    display: inline-block;
-    font-style: italic;
-    margin-top:4rem;
-    font-size: 17px;
+    margin-top: 28px;
     font-weight: 700;
-    & + .page-title {margin-top: 19px;}
+    color: #555;
+  }
+  h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color:#7dcba7;
+  }
+  p {
+    @extend .font-vista;
+    font-size: 17px;
+    margin-bottom:23px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  ul {
+    margin:0 0 1rem;
+    list-style-type: none;
+    li {
+      padding:0;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom:14px;
+      @extend .font-vista;
+      &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f111";
+        margin-right: 10px;
+        color: #7dcba7;
+        font-size: 9px;
+        line-height: 25px;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+  ol {
+    margin:0 0 1rem;
+    li {
+      padding:0;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom:14px;
+      @extend .font-vista;
+      color: #7dcba7;
+      span {
+        color:#555;
+      }
+    }
   }
 
   blockquote {
@@ -469,6 +502,33 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       line-height: 1.2;
       & + p {margin-top:1rem;}
     }
+  }
+
+  .page-title {
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing:.025em;
+    margin-top: 4rem;
+    margin-bottom: 36px;
+  }
+  .page-highlight {
+    color:#28445f;
+    line-height: 1.2;
+    font-size: 26px;
+    margin-top: -6px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  .page-banner + .page-highlight {margin-top:60px;}
+  .page-highlight + .page-banner {margin-bottom:60px;}
+  .back-link {
+    display: inline-block;
+    font-style: italic;
+    margin-top:4rem;
+    font-size: 17px;
+    font-weight: 700;
+    & + .page-title {margin-top: 19px;}
   }
 }
 
