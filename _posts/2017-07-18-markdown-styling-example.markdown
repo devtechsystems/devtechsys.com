@@ -54,18 +54,6 @@ for i in 1 .. 10 { do-something(i) }
 
 ### An h3 header ###
 
-Now a nested list:
-
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and stir
-
 Here's a link to [a website](http://google.com), to a [local
 doc](local-doc.html), and to a [section heading in the current
 doc](#an-h2-header). Here's a footnote [^1].
