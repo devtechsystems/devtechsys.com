@@ -90,5 +90,9 @@ and images can be specified like so:
 
 ![example image](/uploads/author-thumbnail.jpg "An exemplary image")
 
+or you can specify images with HTML so you can use float classes (pull-left, pull-right), like so:
+
+<img src="/uploads/author-thumbnail.jpg" alt="example image" title="An exemplary image" class="pull-right"/>
+
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
