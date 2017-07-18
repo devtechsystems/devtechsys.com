@@ -7,8 +7,8 @@ Highlight: 'In order for Learning & Knowledge Management to be an effective acti
   it is crucial that everyone who participated to some extent in the project’s execution
   is subsequently involved in communicating the outcomes, success stories, achievements,
   and improvement opportunities to the different audiences. '
-Topic Area: Topic Area
 Author: Luis Rolando Sánchez Valverth
+Topic Area: Topic Area
 ---
 
 In recent years, the concept of Learning & Knowledge Management has become very popular in organizations, especially within the international development field. However, this trend extends beyond learning about project outcomes and it encompasses more than the process of one person reporting and analyzing the results of a project. 
