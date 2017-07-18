@@ -21,7 +21,7 @@
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
@@ -38,24 +38,24 @@
   font-size: 5em; }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center; }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none; }
   .fa-ul > li {
     position: relative; }
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center; }
   .fa-li.fa-lg {
-    left: -1.85714em; }
+    left: -1.8571428571em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -2323,8 +2323,39 @@
   overflow: visible;
   clip: auto; }
 
+/*
+.font-brandon {
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight:300; //light
+  font-weight:400; //regular
+  font-weight:700; //bold
+}
+
+.font-vista-slab-book {
+  font-family: "vista-slab", sans-serif;
+  font-weight: 300;
+}
+*/
 html, body {
-  height: 100%; }
+  height: 100%;
+  font-family: "brandon-grotesque", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "brandon-grotesque", sans-serif;
+  line-height: 1.3; }
+
+.font-brandon, .page blockquote p, .row--office-locations p.OL--address, .row--office-locations p.OL--phone {
+  font-family: "brandon-grotesque", sans-serif; }
+
+.site-content p,
+.font-vista,
+.home .hero p,
+.home .practice-areas .PA--content p,
+.home .projects p {
+  font-family: "vista-slab", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300; }
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
@@ -2366,7 +2397,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   content: none; }
 
 .row {
-  /*max-width:78rem;*/ }
+  /*max-width:78rem; foundation adds this */ }
 
 .row--gutters {
   max-width: 48.75rem; }
@@ -2380,137 +2411,44 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     z-index: 2;
     display: inline-block;
     margin-top: 28px; }
-
-.site-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%; }
-  .site-nav .nav-trigger {
-    display: none; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    position: relative;
-    cursor: pointer;
-    margin-top: 38px; }
-  .site-nav .nav-menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center; }
-    .site-nav .nav-menu-icon > svg path {
-      fill: #fff; }
-  .site-nav input ~ .trigger {
-    clear: both;
-    display: none; }
-  .site-nav input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-    background-color: #284460;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    padding-top: 150px; }
-  .site-nav .trigger h2 {
-    color: #fff; }
-  .site-nav .trigger ul {
-    list-style-type: none; }
-  .site-nav .trigger a {
-    color: #7dcba7;
-    text-decoration: none; }
-
-.home.site-header {
-  min-height: 650px;
-  background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
-  background-size: cover; }
-.home .hero {
-  color: #fff;
-  text-align: center;
-  padding: 200px 220px 0; }
-  .home .hero .allcaps {
-    font-size: 50px;
-    text-transform: uppercase; }
-  .home .hero p {
-    font-size: 21px; }
-.home .insights {
-  min-height: 320px;
-  padding-top: 80px;
-  padding-bottom: 80px; }
-.home .practice-areas {
-  background-color: #007cb7; }
-  .home .practice-areas .PA--content {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    color: #fff; }
-  .home .practice-areas .PA--title {
-    font-size: 24px;
-    color: #bbe0ff; }
-  .home .practice-areas .PA--subtitle {
-    font-size: 36px;
+  .site-header .banner-section-title {
+    text-align: center;
     text-transform: uppercase;
-    margin: 5px 0 10px; }
-  .home .practice-areas .PA--icon-list {
-    list-style-type: none;
-    margin: 70px 0 0; }
-    .home .practice-areas .PA--icon-list li {
-      margin: 0; }
-    .home .practice-areas .PA--icon-list a {
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      display: block;
-      line-height: 1.2;
-      margin-bottom: 40px;
-      min-height: 150px;
-      padding-top: 20px; }
-      .home .practice-areas .PA--icon-list a img {
-        display: block;
-        margin: 0 auto 10px; }
-.home .projects {
-  background: transparent url(/assets/images/background-projects.png) no-repeat 100px top;
-  margin-top: 80px;
-  padding-bottom: 80px;
-  background-size: cover; }
-
-.title-row-title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #7dcba7;
-  font-size: 1.1rem;
-  margin-top: 6rem;
-  margin-bottom: 0; }
-
-.title-row-subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 0; }
+    color: #7dcba7;
+    font-size: 21px;
+    letter-spacing: .1em;
+    font-weight: 700;
+    margin-top: 88px;
+    margin-bottom: 0; }
+  .site-header .banner-page-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 41px;
+    letter-spacing: .18em;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    margin-top: -6px; }
+    .site-header .banner-page-title.no-section-title {
+      margin-top: 120px; }
 
 .site-footer {
+  text-align: center;
   background-color: #007cb7;
   color: #fff; }
   .site-footer .column {
-    padding-top: 45px;
-    padding-bottom: 40px; }
+    padding-top: 35px;
+    padding-bottom: 25px; }
     .site-footer .column p {
       color: #fff;
+      font-size: 15px;
       margin-bottom: 0; }
       .site-footer .column p + p {
         margin-top: 1rem; }
     .site-footer .column ul.link-list {
-      float: right;
-      margin: 0;
+      float: none;
+      margin: 0 0 15px;
       list-style-type: none; }
       .site-footer .column ul.link-list li {
         display: inline-block;
@@ -2528,9 +2466,136 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
             top: 6px; }
     .site-footer .column a {
       color: #fff;
+      font-size: 15px;
+      font-weight: 700;
       text-decoration: none; }
       .site-footer .column a:hover, .site-footer .column a:focus {
         text-decoration: underline; }
+
+.site .button {
+  border: 2px solid #007cb7;
+  padding: 16px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #28445f;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 0;
+  min-width: 100%;
+  letter-spacing: .1em; }
+  .site .button:focus, .site .button:hover {
+    background-color: #fff; }
+  .site .button.button-inverse {
+    border-color: #7dcba7;
+    color: #fff;
+    background-color: transparent; }
+    .site .button.button-inverse:focus, .site .button.button-inverse:hover {
+      background-color: transparent; }
+.site .icon-wBlueEllipse {
+  background-color: rgba(102, 176, 211, 0.7);
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center; }
+.site .background-lightBlue {
+  background-color: #e0eff6; }
+
+.home.site-header {
+  min-height: 650px;
+  background: #003045 url(/assets/images/background-homepage.jpg) no-repeat bottom center;
+  background-size: cover; }
+.home .trigger {
+  min-height: 648px; }
+.home .hero {
+  color: #fff;
+  text-align: center; }
+  .home .hero .hero--content {
+    max-width: 890px;
+    display: inline-block;
+    padding-top: 62px; }
+  .home .hero .hero--button {
+    display: block; }
+  .home .hero .allcaps {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2em;
+    margin-bottom: 32px; }
+  .home .hero p {
+    font-size: 20px;
+    margin-bottom: 18px;
+    display: inline-block;
+    max-width: 790px; }
+.home .insights {
+  min-height: 320px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+.home .practice-areas {
+  background-color: #007cb7; }
+  .home .practice-areas .PA--content {
+    padding-top: 80px;
+    padding-bottom: 0;
+    color: #fff; }
+    .home .practice-areas .PA--content p {
+      font-size: 17px; }
+    .home .practice-areas .PA--content .button {
+      min-width: 100%;
+      max-width: 300px; }
+  .home .practice-areas .PA--title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #bbe0ff; }
+  .home .practice-areas .PA--subtitle {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    margin: 9px 0 19px;
+    line-height: 1; }
+  .home .practice-areas .PA--icon-list {
+    list-style-type: none;
+    margin: 10px 0 20px; }
+    .home .practice-areas .PA--icon-list li {
+      margin: 0; }
+    .home .practice-areas .PA--icon-list a {
+      text-align: center;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      min-height: 150px;
+      padding-top: 20px; }
+      .home .practice-areas .PA--icon-list a img {
+        display: block;
+        margin: 0 auto 10px; }
+      .home .practice-areas .PA--icon-list a .PA--icon-title {
+        display: inline-block;
+        max-width: 210px; }
+    .home .practice-areas .PA--icon-list .column:nth-child(3) .PA--icon-title,
+    .home .practice-areas .PA--icon-list .column:nth-child(6) .PA--icon-title {
+      max-width: 180px; }
+.home .projects {
+  background: transparent url(/assets/images/background-projects.png) no-repeat 100px top;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  background-size: cover; }
+  .home .projects .projects--title {
+    font-weight: 700;
+    font-size: 26px;
+    color: #284460; }
+  .home .projects .projects--title-allcaps {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+  .home .projects p {
+    font-size: 17px; }
 
 .page.site-header {
   min-height: 350px;
@@ -2548,10 +2613,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     .page .tabs-container > .tabs .tabs-title > a {
       color: #28445f;
       text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
       position: relative;
-      padding: 1.2rem 0.2rem; }
+      font-size: 20px;
+      font-weight: 700;
+      padding: 30px 3px; }
     .page .tabs-container > .tabs .tabs-title > a:focus, .page .tabs-container > .tabs .tabs-title > a:hover {
       background-color: #d6e9f4;
       color: #28445f; }
@@ -2595,89 +2660,267 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     .page .content.content-noBottomPadding .content-bottomPadding {
       padding-bottom: 80px; }
 .page .page-title {
-  font-size: 2.3rem;
+  font-size: 38px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: .025em;
   margin-top: 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 36px; }
 .page .page-highlight {
+  color: #28445f;
   line-height: 1.2;
-  font-size: 1.25rem;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem; }
-.page .page-banner {
-  margin-bottom: 2.5rem; }
+  font-size: 24px;
+  margin-top: -6px;
+  margin-bottom: 40px;
+  font-weight: 400; }
+.page .page-banner + .page-highlight {
+  margin-top: 60px; }
+.page .page-highlight + .page-banner {
+  margin-bottom: 60px; }
 .page .back-link {
   display: inline-block;
   font-style: italic;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  font-size: 17px;
+  font-weight: 700; }
   .page .back-link + .page-title {
-    margin-top: 1rem; }
+    margin-top: 19px; }
 .page blockquote {
   float: right;
-  width: 40%;
+  width: 50%;
   border-left: 0;
   position: relative;
-  padding: 16px 16px 16px 0;
-  line-height: 1;
-  margin: 0 -218px 0 20px; }
+  padding: 16px 0;
+  line-height: 1.2;
+  margin: 0 0 0 20px; }
   .page blockquote:before {
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
     width: 44%;
-    height: 8px;
+    height: 6px;
     background-color: #7dcba7; }
   .page blockquote p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.2; }
     .page blockquote p + p {
       margin-top: 1rem; }
 
-.site .button {
-  border: 2px solid #007cb7;
-  padding: 16px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #28445f;
-  text-decoration: none;
-  font-size: 15px;
-  background-color: #fff;
-  border-radius: 0;
-  min-width: 300px; }
-  .site .button:focus, .site .button:hover {
-    background-color: #fff; }
-  .site .button.button-inverse {
-    border-color: #7dcba7;
+.site-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; }
+  .site-nav .nav-trigger {
+    display: none; }
+  .site-nav .menu-icon {
+    display: none; }
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    margin-top: 38px;
+    outline: 0; }
+    .site-nav label[for="nav-trigger"] .sr-only {
+      top: 5px;
+      left: 5px; }
+  .site-nav .nav-menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 7px;
+    text-align: center; }
+    .site-nav .nav-menu-icon > svg path {
+      fill: #fff; }
+    .site-nav .nav-menu-icon .fa {
+      color: #fff;
+      font-size: 28px; }
+    .site-nav .nav-menu-icon .nav-menu-close {
+      display: none; }
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0); } }
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+  .site-nav input ~ .trigger {
+    display: block;
+    padding-bottom: 20px;
+    background-color: #284460;
+    box-shadow: 1200px 0px 0px 0px #284460, -1200px 0px 0px 0px #284460;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 130px;
+    animation-duration: 0;
+    animation-fill-mode: both;
+    animation-name: slideOutUp; }
+  .site-nav input:checked ~ .trigger {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-name: slideInDown; }
+  .site-nav input:not(:checked):focus ~ .trigger, .site-nav input:not(:checked):hover ~ .trigger {
+    animation-duration: .4s; }
+  .site-nav input:checked ~ label .fa {
+    display: none; }
+  .site-nav input:checked ~ label .nav-menu-close {
+    display: inline-block; }
+  .site-nav input:not(:checked) ~ label .fa {
+    display: inline-block; }
+  .site-nav input:not(:checked) ~ label .nav-menu-close {
+    display: none; }
+  .site-nav .trigger .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .site-nav .trigger h2 {
     color: #fff;
-    background-color: transparent; }
-    .site .button.button-inverse:focus, .site .button.button-inverse:hover {
-      background-color: transparent; }
-.site .icon-wBlueEllipse {
-  background-color: rgba(102, 176, 211, 0.7);
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center; }
-.site .background-lightBlue {
-  background-color: #e0eff6; }
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 6px; }
+  .site-nav .trigger ul {
+    list-style-type: none;
+    margin-left: 0; }
+  .site-nav .trigger li {
+    margin-bottom: 10px; }
+  .site-nav .trigger a {
+    color: #7dcba7;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: .01em;
+    line-height: 1.3;
+    font-weight: 700; }
+  .site-nav .trigger a.post-button {
+    border: 2px solid #7dcba7;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    display: inline-block; }
+  .site-nav .trigger .post-details {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    display: block; }
+    .site-nav .trigger .post-details .post-detail {
+      display: inline-block; }
+      .site-nav .trigger .post-details .post-detail:before {
+        content: "";
+        border-left: 1px solid #bdd2e6;
+        height: 1em;
+        width: 1px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 5px;
+        position: relative;
+        top: 3px; }
+      .site-nav .trigger .post-details .post-detail:first-child:before {
+        display: none;
+        margin: 0; }
+
+.contract-list .CL--title {
+  font-size: 30px;
+  color: #28445f;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  letter-spacing: .025em; }
+.contract-list .CL--agency {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px; }
+.contract-list .CL--subtitle {
+  font-size: 17px;
+  color: #555;
+  font-style: italic;
+  font-weight: 700;
+  border-top: 2px solid #c8e2ef;
+  padding-top: 24px;
+  margin-top: 26px; }
+.contract-list ul {
+  margin-left: 0;
+  margin-bottom: 3px;
+  list-style-type: none; }
+.contract-list li {
+  margin-bottom: 8px;
+  color: #555; }
+.contract-list ul + .CL--agency {
+  border-top: 2px solid #c8e2ef;
+  padding-top: 24px; }
+
+.headshot-thumbnail {
+  float: right;
+  margin: 0 0 10px 20px; }
 
 .team-list-block {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 30px;
+  padding-right: 30px; }
   .team-list-block .tl-title {
-    font-size: 20px; }
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: #28445f;
+    font-weight: 400; }
   .team-list-block .tl-subtitle {
-    font-size: 16px; }
+    font-size: 15px;
+    color: #6c7c8c;
+    font-weight: 700; }
 
 .row--office-locations {
   margin-top: 4rem; }
-  .row--office-locations p.location-address {
-    white-space: pre; }
-  .row--office-locations p.location-phone {
-    margin-right: 100px; }
-    .row--office-locations p.location-phone .fa {
-      margin-right: 5px; }
+  .row--office-locations .OL--title-block {
+    position: relative;
+    margin-bottom: 24px; }
+    .row--office-locations .OL--title-block .OL--title {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center; }
+      .row--office-locations .OL--title-block .OL--title:after {
+        content: " ";
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        width: 80px;
+        height: 4px;
+        background-color: #7dcba7;
+        margin-left: -40px; }
+  .row--office-locations p.OL--address {
+    white-space: pre;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3; }
+  .row--office-locations p.OL--phone {
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555; }
+    .row--office-locations p.OL--phone .fa {
+      margin-right: 5px;
+      font-size: 16px;
+      color: #66b0d3; }
 
 .row--our-practices-list {
   padding: 80px 0 0; }
@@ -2721,9 +2964,28 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       background-color: #7dcba7; }
 
 .current-projects-list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 24px;
+  padding-bottom: 90px;
   margin-top: 80px; }
+  .current-projects-list .CPL--title {
+    font-size: 28px;
+    margin-bottom: 26px;
+    color: #28445f;
+    font-weight: 700; }
+  .current-projects-list .CPL--project {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #007cb7; }
+
+.past-projects-list .PPL--title {
+  font-size: 28px;
+  margin-bottom: 26px;
+  color: #28445f;
+  font-weight: 700; }
+.past-projects-list .PPL--project {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #007cb7; }
 
 .link-list {
   list-style-type: none; }
@@ -2742,16 +3004,21 @@ li.post {
   padding-bottom: 30px; }
   li.post .post-category {
     color: #000;
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
-    font-size: 15px; }
+    font-size: 16px; }
   li.post .post-title {
     color: #007cb7;
-    font-size: 21px;
-    line-height: 1.4; }
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 4px; }
   li.post .post-details {
     color: #28445f;
-    font-weight: bold; }
+    font-weight: 700;
+    font-size: 16px; }
     li.post .post-details .post-detail {
       display: inline-block; }
       li.post .post-details .post-detail:before {
@@ -2767,6 +3034,10 @@ li.post {
       li.post .post-details .post-detail:first-child:before {
         display: none;
         margin: 0; }
+  li.post .post-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 18px; }
 
 .page-banner.practice-area {
   position: relative; }
@@ -2782,6 +3053,42 @@ li.post {
     text-align: center;
     line-height: 100px; }
 
+@media screen and (min-width: 40em) {
+  .site-footer {
+    text-align: left; }
+    .site-footer .column {
+      padding-top: 45px;
+      padding-bottom: 40px; }
+      .site-footer .column ul.link-list {
+        float: right;
+        margin-bottom: 0; }
+
+  .home .hero .hero--content {
+    padding-top: 172px; }
+  .home .hero .allcaps {
+    font-size: 50px; }
+  .home .hero p {
+    font-size: 21px; }
+  .home .practice-areas .PA--content {
+    padding-bottom: 80px; }
+  .home .practice-areas .PA--icon-list {
+    margin-top: 70px;
+    margin-bottom: 0; }
+
+  .site .button {
+    min-width: 300px; }
+
+  .team-list-block {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (min-width: 76em) {
+  .page blockquote {
+    margin-right: -230px;
+    padding-right: 16px; } }
+@media screen and (min-width: 80em) {
+  .home .practice-areas .PA--content {
+    padding-left: 0;
+    padding-right: 0; } }
 @media screen and (min-width: 89em) {
   .page.site-header {
     background-repeat: repeat-x;

@@ -9,6 +9,9 @@
   <title>Our Insights</title>
   <meta name="description" content="We are dedicated to data-driven solutions that build capacity, strengthen partnerships, and address complex policy challenges.">
 
+  <script src="https://use.typekit.net/uom1nog.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <link rel="stylesheet" href="/assets/css/foundation.min.css">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="/insights/">
@@ -26,20 +29,18 @@
     <a class="site-title" href="/"><img src="/assets/images/logo-devtech.png" alt="DevTech Systems, Inc."/></a>
 
     <div class="site-nav">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" tabindex="-1"/>
+      <label for="nav-trigger" tabindex="0">
+        <span class="sr-only">Site Menu Toggle</span>
         <span class="nav-menu-icon">
-          <svg viewBox="0 0 18 15" width="18px" height="15px">
-            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-          </svg>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+          <span class="fa fa-times nav-menu-close" aria-hidden="true"></span>
         </span>
       </label>
 
       <div class="trigger">
         <div class="row">
-          <div class="medium-4 column">
+          <div class="small-16 medium-3 column">
             <h2>About Us</h2>
             <ul>
               
@@ -94,7 +95,7 @@
               
             </ul>
           </div>
-          <div class="medium-4 column">
+          <div class="small-16 medium-4 column">
             <h2>Our Practices</h2>
             <ul>
               
@@ -137,27 +138,39 @@
               
             </ul>
           </div>
-          <div class="medium-4 column">
+          <div class="small-16 medium-4 column">
             <h2>Our Projects</h2>
             <!--ADD PROJECTS-->
           </div>
-          <div class="medium-4 column">
+          <div class="small-16 medium-5 column">
             <h2>Our Insights</h2>
             <ul>
             
               <li>
-                
-                <span class="post-meta">Jun 9, 2017</span>
-                <a class="post-link" href="/insights/2017/06/09/another-insight/">Knowledge Management and Communication Requires Participation</a>
+                <a class="post-link" href="/insights/2017/06/09/another-insight/">
+                  Knowledge Management and Communication Requires Participation
+                </a>
+                <span class="post-details">
+                  
+                    <span class="post-detail">By Luis Rolando Sánchez Valverth</span>
+                  
+                  <span class="post-detail">June 09, 2017</span>
+                </span>
               </li>
             
               <li>
-                
-                <span class="post-meta">Jun 5, 2017</span>
-                <a class="post-link" href="/insights/2017/06/05/add-title-here/">Combatting Chronic Malnutrition in Guatemala</a>
+                <a class="post-link" href="/insights/2017/06/05/add-title-here/">
+                  Combatting Chronic Malnutrition in Guatemala
+                </a>
+                <span class="post-details">
+                  
+                    <span class="post-detail">By Pablo Toledo</span>
+                  
+                  <span class="post-detail">June 05, 2017</span>
+                </span>
               </li>
             
-              <li><a class="post-link" href="/insights/">See all posts</a></li>
+              <li><a class="post-button" href="/insights/">See all posts</a></li>
             </ul>
           </div>
         </div>
@@ -168,7 +181,8 @@
 
   <div class="row column">
     
-    <h2 class="title-row-subtitle">Our Insights</h2>
+    	<h2 class="banner-page-title no-section-title">Our Insights</h2>
+    
   </div>
 </div>
 
@@ -226,11 +240,7 @@
 
       <div class="site-footer" id="site_footer">
   <div class="row">
-    <div class="small-16 medium-8 column">
-      <p>&#169; 2017 DevTech Systems, Inc. All Rights Reserved.</p>
-    </div>
-      
-    <div class="small-16 medium-8 column">
+    <div class="small-16 column">
       <ul class="link-list">
       
       
@@ -265,6 +275,7 @@
         
       
       </ul>
+      <p>&#169; 2017 DevTech Systems, Inc. All Rights Reserved.</p>
     </div>
   </div>
 </div>
