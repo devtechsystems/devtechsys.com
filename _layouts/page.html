@@ -90,21 +90,61 @@ layout: default
 					    {% endfor %}
 						</ul>
 					</div>
-					<div class="content">
+					<div class="content content-noBottomPadding">
 				  	<div class="row row--gutters">
 				  		<div class="column">
-				  			<a href="/about/careers/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to all Current Openings</a>
-								{% if page['Title'].size > 0 %}
-									<h1 class="page-title">{{ page['Title']}}</h1>
-								{% endif %}
-								{% if page['Banner Image'].size > 0 %}
-									<img class="page-banner" src="{{ page['Banner Image'] }}" alt="Banner"/>
-								{% endif %}
-								{% if page['Highlight'].size > 0 %}
-									<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
-								{% endif %}
+				  			<div class="career-heading">
+				  				<a href="/about/careers/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to all Current Openings</a>
+				  				{% if page['Title'].size > 0 %}
+										<h1 class="page-title">{{ page['Title']}}</h1>
+									{% endif %}
+
+									<div class="row career-icons">
+										<div class="column small-16 medium-7">
+											<div>
+								      	<span class="fa fa-map-marker" title="Location" aria-hidden="true"></span>
+								      	<span class="sr-only">Location:</span>
+								      	{{ page['Location'] }}
+								      </div>
+
+								      <div>
+								      	<span class="fa fa-clock-o" title="Type" aria-hidden="true"></span>
+								      	<span class="sr-only">Type:</span>
+								      	{{ page['Type'] }}
+								      </div>
+										</div>
+										<div class="column small-16 medium-9">
+											<div>
+								      	<span class="fa fa-graduation-cap" title="Experience" aria-hidden="true"></span>
+								      	<span class="sr-only">Experience:</span>
+								      	{{ page['Experience'] }}
+								      </div>
+											<div>
+								      	<span class="fa fa-sitemap" title="Department" aria-hidden="true"></span>
+								      	<span class="sr-only">Department:</span>
+								      	{{ page['Department'] }}
+								      </div>
+										</div>
+									</div>
+
+
+
+									{% if page['Highlight'].size > 0 %}
+										<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+									{% endif %}
+				  			</div>
 
 						    {{ content }}
+
+						    <a href="{{ page['Application Link'] }}" class="button career-link">Apply Today<span class="button-subtext">*redirects to applytojob.com</span></a>
+					  	</div>
+					  </div>
+					  <div class="background-lightBlue content-bottomPadding">
+					  	<div class="row row--gutters column">
+					  		<h3 class="BLB--title">Disclaimer</h3>
+					  		<p>This position description should not be construed to imply that the requirements are the exclusive standards of the position nor will it be the sole basis for any subsequent employee evaluations. Incumbents will follow any other instructions and perform any other related duties as may be required by their supervisor.</p>
+
+					  		<p>All qualified applicants will receive consideration for employment and will not be discriminated against on the basis of race, color, religion, sex, national origin, disability, sexual orientation, protected veteran status or other status protected by applicable law.</p>
 					  	</div>
 					  </div>
 
