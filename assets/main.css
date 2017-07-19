@@ -2344,18 +2344,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "brandon-grotesque", sans-serif;
   line-height: 1.3; }
 
-.font-brandon, .page blockquote p, .row--office-locations p.OL--address, .row--office-locations p.OL--phone {
+.font-brandon, .content blockquote p, .content dl dt, .row--office-locations p.OL--address, .row--office-locations p.OL--phone {
   font-family: "brandon-grotesque", sans-serif; }
 
-.site-content p,
-.font-vista,
-.home .hero p,
-.home .practice-areas .PA--content p,
-.home .projects p {
-  font-family: "vista-slab", sans-serif;
-  font-size: 17px;
-  line-height: 1.5;
-  font-weight: 300; }
+.font-vista, .content p, .content ul li, .content ol > li, .content dl dd, .content table td, .home .hero p, .home .practice-areas .PA--content p, .home .projects p {
+  font-family: "vista-slab", sans-serif; }
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
@@ -2472,6 +2465,11 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       .site-footer .column a:hover, .site-footer .column a:focus {
         text-decoration: underline; }
 
+.site .link-list {
+  list-style-type: none;
+  margin: 0; }
+  .site .link-list li:before {
+    display: none; }
 .site .button {
   border: 2px solid #007cb7;
   padding: 16px 30px;
@@ -2502,6 +2500,162 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   text-align: center; }
 .site .background-lightBlue {
   background-color: #e0eff6; }
+
+.content h1 {
+  font-size: 32px;
+  margin-top: 28px;
+  font-weight: 300; }
+.content h2 {
+  font-size: 26px;
+  margin-top: 28px;
+  font-weight: 700;
+  color: #555; }
+.content h3 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #7dcba7; }
+.content p {
+  font-size: 17px;
+  margin-bottom: 23px;
+  line-height: 1.5;
+  font-weight: 300; }
+.content ul {
+  margin: 0 0 1rem;
+  list-style-type: none; }
+  .content ul li {
+    padding: 0;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 14px; }
+    .content ul li:before {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f111";
+      margin-right: 10px;
+      color: #7dcba7;
+      font-size: 9px;
+      line-height: 25px;
+      position: relative;
+      top: -2px; }
+.content ol {
+  counter-reset: item;
+  margin: 0 0 1rem; }
+  .content ol > li {
+    display: block;
+    padding: 0;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 14px; }
+    .content ol > li:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: #7dcba7;
+      font-weight: 700;
+      margin-right: 1px; }
+.content blockquote {
+  float: right;
+  width: 50%;
+  border-left: 0;
+  position: relative;
+  padding: 16px 0;
+  line-height: 1.2;
+  margin: 0 0 0 20px; }
+  .content blockquote:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44%;
+    height: 6px;
+    background-color: #7dcba7; }
+  .content blockquote p {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.2; }
+    .content blockquote p + p {
+      margin-top: 1rem; }
+.content code {
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 24px;
+  background-color: #eaeaea;
+  border-color: #e2e2e2; }
+.content p > code {
+  display: inline;
+  margin-bottom: 0; }
+.content hr {
+  border-bottom-color: #7dcba7;
+  border-bottom-width: 6px; }
+.content dl {
+  margin: 0 0 23px; }
+  .content dl dt {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .content dl dd:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f101";
+    color: #7dcba7;
+    font-size: 18px;
+    margin-right: 5px; }
+  .content dl dd + dt {
+    margin-top: 10px; }
+.content table {
+  margin-bottom: 23px;
+  border-radius: 0; }
+  .content table tbody, .content table tfoot, .content table thead {
+    border: 0;
+    background-color: transparent; }
+  .content table thead {
+    background-color: #284460; }
+  .content table th {
+    font-size: 20px;
+    color: #fff; }
+  .content table td {
+    font-size: 16px; }
+  .content table tbody tr:nth-child(even) {
+    background-color: #f6f7f8;
+    border-top: 1px solid #edf0f3;
+    box-shadow: 0 1px 0 0 #edf0f3; }
+.content img.pull-right {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px; }
+.content img.pull-left {
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+.content .footnotes {
+  background-color: #e0eff6;
+  padding: 20px;
+  margin-top: 60px; }
+  .content .footnotes ol > li {
+    position: relative;
+    padding-left: 20px; }
+    .content .footnotes ol > li:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #7dcba7;
+      font-size: 22px;
+      margin-top: -2px;
+      font-weight: 700; }
+  .content .footnotes:before {
+    font-size: 28px;
+    margin-bottom: 26px;
+    color: #28445f;
+    font-weight: 700;
+    content: "Footnotes"; }
 
 .home.site-header {
   min-height: 650px;
@@ -2669,7 +2823,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 .page .page-highlight {
   color: #28445f;
   line-height: 1.2;
-  font-size: 24px;
+  font-size: 26px;
   margin-top: -6px;
   margin-bottom: 40px;
   font-weight: 400; }
@@ -2685,29 +2839,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   font-weight: 700; }
   .page .back-link + .page-title {
     margin-top: 19px; }
-.page blockquote {
-  float: right;
-  width: 50%;
-  border-left: 0;
-  position: relative;
-  padding: 16px 0;
-  line-height: 1.2;
-  margin: 0 0 0 20px; }
-  .page blockquote:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 44%;
-    height: 6px;
-    background-color: #7dcba7; }
-  .page blockquote p {
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 1.2; }
-    .page blockquote p + p {
-      margin-top: 1rem; }
 
 .site-nav {
   position: absolute;
@@ -2987,11 +3118,62 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   line-height: 1.2;
   color: #007cb7; }
 
-.link-list {
-  list-style-type: none; }
+.author-details {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 130px; }
+  .author-details .AD--thumbnail {
+    border-radius: 50px;
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  .author-details .AD--name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #007cb7;
+    margin: 0 0 7px; }
+  .author-details .AD--title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #28445f;
+    margin: 0 0 20px; }
+  .author-details p {
+    font-family: "brandon-grotesque", sans-serif !important;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.3; }
 
-article.post {
-  padding: 80px 0; }
+.post-header {
+  margin-top: 80px;
+  margin-bottom: 60px; }
+  .post-header .post-practiceArea {
+    color: #555;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic; }
+  .post-header .post-title {
+    margin: 0 0 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #c8e2ef; }
+  .post-header .post-details {
+    color: #28445f;
+    font-weight: 700;
+    font-size: 16px; }
+    .post-header .post-details .post-detail {
+      display: inline-block; }
+      .post-header .post-details .post-detail:before {
+        content: "";
+        border-left: 1px solid #53697f;
+        height: 1em;
+        width: 1px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 5px;
+        position: relative;
+        top: 3px; }
+      .post-header .post-details .post-detail:first-child:before {
+        display: none;
+        margin: 0; }
 
 ul.posts {
   margin-left: 0;
