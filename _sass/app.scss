@@ -161,7 +161,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .link-list {
     list-style-type: none;
     margin:0;
-    li:before {display: none;}
+    li {
+      padding-left:0;
+      &:before {display: none;}
+    }
   }
   .button {
     border:2px solid #007cb7;
@@ -1169,6 +1172,7 @@ li.post {
   margin-bottom: 30px !important;
   border-bottom: 2px solid #c8e2ef;
   padding-bottom: 30px !important;
+  padding-left:0 !important;
   &:before {display: none !important;}
   .post-category {
     color:#000;
