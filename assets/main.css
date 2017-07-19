@@ -2500,6 +2500,13 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   text-align: center; }
 .site .background-lightBlue {
   background-color: #e0eff6; }
+  .site .background-lightBlue .BLB--title {
+    font-size: 28px;
+    padding-top: 24px;
+    margin-bottom: 26px;
+    color: #28445f;
+    font-weight: 700;
+    margin-top: 6rem; }
 
 .content h1 {
   font-size: 32px;
@@ -2523,10 +2530,13 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   margin: 0 0 1rem;
   list-style-type: none; }
   .content ul li {
-    padding: 0;
+    padding: 0 0 0 17px;
     font-size: 17px;
     line-height: 25px;
-    margin-bottom: 14px; }
+    margin-bottom: 14px;
+    position: relative; }
+    .content ul li p {
+      display: inline; }
     .content ul li:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -2539,25 +2549,32 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       color: #7dcba7;
       font-size: 9px;
       line-height: 25px;
-      position: relative;
-      top: -2px; }
+      position: absolute;
+      top: 0;
+      left: 0; }
 .content ol {
   counter-reset: item;
   margin: 0 0 1rem; }
   .content ol > li {
     display: block;
-    padding: 0;
+    position: relative;
+    padding: 0 0 0 25px;
     font-size: 17px;
     line-height: 25px;
     margin-bottom: 14px; }
+    .content ol > li p {
+      display: inline; }
     .content ol > li:before {
       content: counter(item) ". ";
       counter-increment: item;
       color: #7dcba7;
       font-weight: 700;
-      margin-right: 6px;
+      margin-right: 0;
       font-size: 16px;
-      top: 0; }
+      top: -1px;
+      position: absolute;
+      width: 25px;
+      left: 0; }
 .content ul > li > ol {
   margin-left: 16px;
   margin-top: 4px; }
@@ -2592,6 +2609,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   border-color: #e2e2e2; }
 .content p > code {
   display: inline;
+  padding: 4px 8px;
   margin-bottom: 0; }
 .content hr {
   border-bottom-color: #7dcba7;
@@ -3061,6 +3079,62 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       margin-right: 5px;
       font-size: 16px;
       color: #66b0d3; }
+
+.career-heading h1.page-title {
+  margin-bottom: 5px;
+  border-bottom: 2px solid #c8e2ef;
+  padding-bottom: 8px; }
+.career-heading .career-icons {
+  margin-bottom: 36px;
+  color: #0a0a0a;
+  font-size: 16px;
+  font-weight: 400; }
+  .career-heading .career-icons .fa {
+    color: #7dcba7; }
+
+.button.career-link {
+  margin-top: 40px;
+  padding: 20px 30px;
+  font-size: 17px;
+  position: relative; }
+  .button.career-link .button-subtext {
+    position: absolute;
+    left: 0;
+    color: #0a0a0a;
+    font-size: 13px;
+    text-transform: none;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    width: 100%;
+    bottom: -17px; }
+
+div.career-list .row {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 2px solid #c8e2ef; }
+  div.career-list .row:first-child {
+    border-top: 2px solid #c8e2ef; }
+div.career-list .column {
+  font-family: "brandon-grotesque", sans-serif !important;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  div.career-list .column:before {
+    display: none; }
+  div.career-list .column.column-no-left-padding {
+    padding-left: 0; }
+div.career-list .career-list-link {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: -2px;
+  display: inline-block; }
+div.career-list .career-list-details {
+  color: #0a0a0a;
+  float: right;
+  font-size: 16px;
+  font-weight: 400; }
+div.career-list .fa {
+  color: #7dcba7; }
 
 .row--our-practices-list {
   padding: 80px 0 0; }
