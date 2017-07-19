@@ -110,12 +110,7 @@ layout: default
 
 	{% else %}
 	
-		{% if page['Title'].size > 0 %}
-			{% assign header_title = page['Title'] %}
-		{% else %}
-			{% assign header_title = page.title %}
-		{% endif %}
-		{% include header.html subtitle=header_title %}
+		{% include header.html subtitle=page.title %}
 			<div class="site-content" id="site_content" aria-label="Content">
 				<div class="page">
 					<div class="content">

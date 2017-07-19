@@ -158,6 +158,11 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 .site {
+  .link-list {
+    list-style-type: none;
+    margin:0;
+    li:before {display: none;}
+  }
   .button {
     border:2px solid #007cb7;
     padding:16px 30px;
@@ -197,6 +202,208 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
   .background-lightBlue {
     background-color:#e0eff6;
+  }
+}
+
+.content { //generic styles
+  h1 {
+    font-size: 32px;
+    margin-top: 28px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 26px;
+    margin-top: 28px;
+    font-weight: 700;
+    color: #555;
+  }
+  h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color:#7dcba7;
+  }
+  p {
+    @extend .font-vista;
+    font-size: 17px;
+    margin-bottom:23px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  ul {
+    margin:0 0 1rem;
+    list-style-type: none;
+    li {
+      padding:0;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom:14px;
+      @extend .font-vista;
+      &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f111";
+        margin-right: 10px;
+        color: #7dcba7;
+        font-size: 9px;
+        line-height: 25px;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: item;
+    margin:0 0 1rem;
+    & > li {
+      display: block;
+      padding:0;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom:14px;
+      @extend .font-vista;
+
+      &:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: #7dcba7;
+        font-weight: 700;
+        margin-right:1px;
+      }
+    }
+  }
+
+  blockquote {
+    float: right;
+    width: 50%;
+    border-left: 0;
+    position: relative;
+    padding: 16px 0;
+    line-height: 1.2;
+    margin: 0 0 0 20px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 44%;
+      height: 6px;
+      background-color: #7dcba7;
+    }
+    p {
+      @extend .font-brandon;
+      margin-bottom: 0;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 1.2;
+      & + p {margin-top:1rem;}
+    }
+  }
+  code {
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 24px;
+    background-color: #eaeaea;
+    border-color: #e2e2e2;
+  }
+  p > code {
+    display: inline;
+    margin-bottom:0;
+  }
+  hr {
+    border-bottom-color: #7dcba7;
+    border-bottom-width: 6px;
+  }
+
+  dl {
+    margin:0 0 23px;
+    dt {
+      @extend .font-brandon;
+      font-size: 18px;
+      font-weight:700;
+      margin-bottom: 0;
+    }
+    dd {
+      @extend .font-vista;
+      &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content:"\f101";
+        color:#7dcba7;
+        font-size: 18px;
+        margin-right:5px;
+      }
+      & + dt {margin-top:10px;}
+    }
+  }
+  table {
+    margin-bottom:23px;
+    border-radius: 0;
+    tbody, tfoot, thead {
+      border:0;
+      background-color:transparent;
+    }
+    thead {
+      background-color:#284460;
+    }
+    th {
+      font-size: 20px;
+      color:#fff;
+    }
+    td {
+      @extend .font-vista;
+      font-size: 16px;
+    }
+    tbody tr {
+      &:nth-child(even) {
+        background-color: #f6f7f8;
+        border-top:1px solid #edf0f3;
+        box-shadow: 0 1px 0 0 #edf0f3;
+      }
+    }
+  }
+  img.pull-right {
+    margin-top:5px;
+    margin-left:20px;
+    margin-bottom:10px;
+  }
+  img.pull-left {
+    margin-top:5px;
+    margin-right:20px;
+    margin-bottom:10px;
+  }
+  .footnotes {
+    background-color: #e0eff6;
+    padding:20px;
+    ol > li {
+      position: relative;
+      padding-left:20px;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #7dcba7;
+        font-size: 22px;
+        margin-top: -2px;
+        font-weight: 700;
+      }
+    }
+    &:before {
+      font-size: 28px;
+      margin-bottom: 26px;
+      color: #28445f;
+      font-weight: 700;
+      content:"Footnotes"
+    }
   }
 }
 
@@ -411,99 +618,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
   
-  //generic styles
-  h1 {
-    font-size: 32px;
-    margin-top: 28px;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 26px;
-    margin-top: 28px;
-    font-weight: 700;
-    color: #555;
-  }
-  h3 {
-    font-size: 23px;
-    font-weight: 700;
-    color:#7dcba7;
-  }
-  p {
-    @extend .font-vista;
-    font-size: 17px;
-    margin-bottom:23px;
-    line-height: 1.5;
-    font-weight: 300;
-  }
-  ul {
-    margin:0 0 1rem;
-    list-style-type: none;
-    li {
-      padding:0;
-      font-size: 17px;
-      line-height: 25px;
-      margin-bottom:14px;
-      @extend .font-vista;
-      &:before {
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        content: "\f111";
-        margin-right: 10px;
-        color: #7dcba7;
-        font-size: 9px;
-        line-height: 25px;
-        position: relative;
-        top: -2px;
-      }
-    }
-  }
-  ol {
-    margin:0 0 1rem;
-    li {
-      padding:0;
-      font-size: 17px;
-      line-height: 25px;
-      margin-bottom:14px;
-      @extend .font-vista;
-      color: #7dcba7;
-      span {
-        color:#555;
-      }
-    }
-  }
-
-  blockquote {
-    float: right;
-    width: 50%;
-    border-left: 0;
-    position: relative;
-    padding: 16px 0;
-    line-height: 1.2;
-    margin: 0 0 0 20px;
-
-    &:before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 44%;
-      height: 6px;
-      background-color: #7dcba7;
-    }
-    p {
-      @extend .font-brandon;
-      margin-bottom: 0;
-      font-weight: 300;
-      font-size: 26px;
-      line-height: 1.2;
-      & + p {margin-top:1rem;}
-    }
-  }
-
   .page-title {
     font-size: 38px;
     line-height: 1;
@@ -531,7 +645,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     & + .page-title {margin-top: 19px;}
   }
 }
-
 
 //#########
 //navigation styles
@@ -881,9 +994,6 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
-.link-list {
-  list-style-type: none;
-}
 .post-header {
   margin-bottom:60px;
   .post-practiceArea {
