@@ -72,12 +72,11 @@ defaults:
   values:
     Title: 
     Highlight: 
-    Banner Image: 
-    Organization: 
     Location:
-      City: 
-      State: 
-    Type of Opportunity: Full time
+    Type: Full time
+    Department: 
+    Experience: 
+    Application Link: 
     navigation_group: Careers
     layout: page
 - scope:
