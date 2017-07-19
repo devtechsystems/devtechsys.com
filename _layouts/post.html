@@ -5,10 +5,10 @@ layout: default
 {% include header.html subtitle="Our Insights" %}
 
 <div class="site-content page" id="site_content" aria-label="Content">
-  <div class="row row--gutters column">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-      <header class="post-header">
+    <header class="post-header">
+      <div class="row row--gutters column">
         <span class="post-practiceArea">{{ page['Practice Area'] | first }}</span>
         <h1 class="post-title page-title" itemprop="name headline">{{ page.title | escape }}</h1>
         <div class="post-details">
@@ -20,22 +20,59 @@ layout: default
             {{ page.date | date: date_format }}
           </time></span>
         </div>
-      </header>
-
-      <div class="post-content content" itemprop="articleBody">
-        {% if page['Banner Image'].size > 0 %}
-          <img class="page-banner" src="{{ page['Banner Image'] }}"/>
-        {% endif %}
-        {% if page['Highlight'].size > 0 %}
-          <h2 class="page-highlight">{{ page['Highlight'] }}</h2>
-        {% endif %}
-
-        {{ content }}
       </div>
+    </header>
 
-      {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
-      {% endif %}
-    </article>
-  </div>
+    {% if page['Author'] %}
+      <div class="post-content content content-noBottomPadding" itemprop="articleBody">
+        <div class="row row--gutters column">
+          {% if page['Banner Image'].size > 0 %}
+            <img class="page-banner" src="{{ page['Banner Image'] }}"/>
+          {% endif %}
+          {% if page['Highlight'].size > 0 %}
+            <h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+          {% endif %}
+
+          {{ content }}
+        </div>
+        <div class="background-lightBlue content-bottomPadding">
+          <div class="row row--gutters column author-details">
+          {% assign current_author = page['Author'] %}
+          {% assign selected_author = site.authors | where_exp: "item", "item.title contains current_author" %}
+
+          {% for a in selected_author %}
+            {% if a['Author Image'].size > 0 %}
+              <img class="AD--thumbnail" src="{{ a['Author Image'] }}"/>
+            {% endif %}
+
+            <h2 class="AD--name">{{ a.title }}</h2>
+            {% if a['Author Title'].size > 0 %}
+              <h3 class="AD--title">{{ a['Author Title'] }}</h3>
+            {% endif %}
+            
+            <p>{{ a.content }}</p>
+
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="post-content content" itemprop="articleBody">
+        <div class="row row--gutters column">
+          {% if page['Banner Image'].size > 0 %}
+            <img class="page-banner" src="{{ page['Banner Image'] }}"/>
+          {% endif %}
+          {% if page['Highlight'].size > 0 %}
+            <h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+          {% endif %}
+
+          {{ content }}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if site.disqus.shortname %}
+      {% include disqus_comments.html %}
+    {% endif %}
+  </article>
 </div>
