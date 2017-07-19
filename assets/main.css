@@ -2468,8 +2468,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 .site .link-list {
   list-style-type: none;
   margin: 0; }
-  .site .link-list li:before {
-    display: none; }
+  .site .link-list li {
+    padding-left: 0; }
+    .site .link-list li:before {
+      display: none; }
 .site .button {
   border: 2px solid #007cb7;
   padding: 16px 30px;
@@ -3267,7 +3269,8 @@ li.post {
   list-style-type: none;
   margin-bottom: 30px !important;
   border-bottom: 2px solid #c8e2ef;
-  padding-bottom: 30px !important; }
+  padding-bottom: 30px !important;
+  padding-left: 0 !important; }
   li.post:before {
     display: none !important; }
   li.post .post-category {
