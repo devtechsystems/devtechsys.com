@@ -9,9 +9,27 @@ layout: default
 		{% include header.html title='About Us' subtitle=header_subtitle %}
 			<div class="site-content" id="site_content" aria-label="Content">
 				<div class="page">
-					<div class="tabs-container">
-						<ul class="tabs tabs-6-up">
-					    {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+					{% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+					<div class="dropdown-container show-for-small-only">
+						<div class="row row--gutters column">
+		          <button class="button button-dropdown" type="button" data-toggle="about-dropdown">
+		          	<span class="text">{{ page.title }}</span>
+		          	<span class="fa fa-chevron-down" aria-hidden="true"></span>
+		          </button>
+		          <div class="dropdown-pane sync-with-tabs" id="about-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="about-tabs">
+		            <ul>
+		            	{% for p in aboutNav_pages %}
+		              <li class="{% if p.url == page.url %}is-active{% endif %}">
+		              	<a href="{{ p.url }}">{{ p.title }}</a>
+		             	</li>
+		              {% endfor %}
+		            </ul>
+		          </div>
+		        </div>
+	        </div>
+
+					<div class="tabs-container show-for-medium">
+						<ul class="tabs tabs-6-up" id="about-tabs">
 					    {% for p in aboutNav_pages %}
 					      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
 					        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>

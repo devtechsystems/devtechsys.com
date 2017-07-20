@@ -1,12 +1,12 @@
 <div class="row row--gutters column career-list">
 	{% for opening in site.careers %}
 	<div class="row">
-		<div class="column align-self-middle column-no-left-padding">
+		<div class="column small-16 medium-expand align-self-middle column-no-left-padding">
 	    <a href="{{ opening.url | relative_url }}" class="career-list-link">
 	      {{ opening.title | escape }}
 	    </a>
 	  </div>
-	  <div class="column shrink align-self-top career-list-details">
+	  <div class="column show-for-medium shrink align-self-top career-list-details">
     	<div>
     		<span class="fa fa-graduation-cap" title="Experience" aria-hidden="true"></span>
       	<span class="sr-only">Experience:</span>
@@ -18,7 +18,7 @@
       	{{ opening['Department'] }}
       </div>
     </div>
-    <div class="column shrink align-self-top career-list-details">
+    <div class="column show-for-large shrink align-self-top career-list-details">
     	<div>
     		<span class="fa fa-map-marker" title="Location" aria-hidden="true"></span>
       	<span class="sr-only">Location:</span>
