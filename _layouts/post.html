@@ -35,7 +35,7 @@ layout: default
 
           {{ content }}
         </div>
-        <div class="background-lightBlue content-bottomPadding">
+        <div class="background-lightBlue BLB--top-margin content-bottomPadding">
           <div class="row row--gutters column author-details">
           {% assign current_author = page['Author'] %}
           {% assign selected_author = site.authors | where_exp: "item", "item.title contains current_author" %}

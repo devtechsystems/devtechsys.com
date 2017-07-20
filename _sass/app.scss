@@ -206,13 +206,16 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .background-lightBlue {
     background-color:#e0eff6;
 
+    &.BLB--top-margin {
+      margin-top:6rem;
+    }
+
     .BLB--title {
       font-size: 28px;
       padding-top: 24px;
       margin-bottom: 26px;
       color: #28445f;
       font-weight: 700;
-      margin-top: 6rem;
     }
   }
 }
@@ -656,7 +659,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .tabs-container {
     background-color: #e0eff6;
     position: relative;
-    & > .tabs {
+    .tabs {
       background-color: #e0eff6;
       max-width: 78rem;
       margin-left: auto;
@@ -670,7 +673,9 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
           position: relative;
           font-size: 20px;
           font-weight: 700;
-          padding: 30px 3px;
+          padding: 0px 3px;
+          display: block;
+          min-height: 80px;
         }
         & > a:focus,
         & > a:hover {
@@ -699,6 +704,17 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
             bottom: -5px;
             left: 0;
           }
+        }
+        .tabs-title-text {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          margin-top: 0;
+          width: 100%;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
       &.tabs-gutter {
@@ -1154,9 +1170,7 @@ div.career-list {
 
 //projects list
 .current-projects-list {
-  padding-top: 24px;
   padding-bottom: 90px;
-  margin-top: 80px;
 
   .CPL--title {
     font-size: 28px;
