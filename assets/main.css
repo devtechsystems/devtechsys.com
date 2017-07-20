@@ -2502,13 +2502,14 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   text-align: center; }
 .site .background-lightBlue {
   background-color: #e0eff6; }
+  .site .background-lightBlue.BLB--top-margin {
+    margin-top: 6rem; }
   .site .background-lightBlue .BLB--title {
     font-size: 28px;
     padding-top: 24px;
     margin-bottom: 26px;
     color: #28445f;
-    font-weight: 700;
-    margin-top: 6rem; }
+    font-weight: 700; }
 
 .content h1 {
   font-size: 32px;
@@ -2780,26 +2781,92 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   min-height: 350px;
   background: #003045 url(/assets/images/background-network.jpg) no-repeat bottom center;
   background-size: cover; }
+.page .dropdown-container {
+  background-color: #e0eff6; }
+  .page .dropdown-container .button-dropdown {
+    position: relative;
+    margin: 0;
+    border: 0;
+    display: block;
+    text-align: left;
+    width: auto;
+    padding: 28px 20px;
+    background-color: #c8e2ef;
+    text-transform: none;
+    font-size: 22px;
+    letter-spacing: 0; }
+    .page .dropdown-container .button-dropdown .fa {
+      margin-left: 20px;
+      font-size: 16px; }
+  .page .dropdown-container .dropdown-pane {
+    border: 0;
+    border-radius: 0;
+    background-color: #284460;
+    padding: 0; }
+    .page .dropdown-container .dropdown-pane a {
+      color: #7dcba7;
+      display: block;
+      padding: 10px 21px;
+      font-size: 18px;
+      position: relative; }
+      .page .dropdown-container .dropdown-pane a:hover:before, .page .dropdown-container .dropdown-pane a:focus:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f054";
+        color: #94a2b0;
+        position: absolute;
+        left: 8px;
+        top: 19px;
+        font-size: 10px; }
+    .page .dropdown-container .dropdown-pane ul {
+      list-style-type: none;
+      margin: 10px 0; }
+    .page .dropdown-container .dropdown-pane li {
+      font-weight: 700;
+      font-size: 14px; }
+      .page .dropdown-container .dropdown-pane li.is-active {
+        font-weight: 400; }
+        .page .dropdown-container .dropdown-pane li.is-active a {
+          color: #fff; }
+          .page .dropdown-container .dropdown-pane li.is-active a:before {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\f054";
+            color: #fff;
+            position: absolute;
+            left: 8px;
+            top: 19px;
+            font-size: 10px; }
 .page .tabs-container {
   background-color: #e0eff6;
   position: relative; }
-  .page .tabs-container > .tabs {
+  .page .tabs-container .tabs {
     background-color: #e0eff6;
     max-width: 78rem;
     margin-left: auto;
     margin-right: auto;
     border: 0; }
-    .page .tabs-container > .tabs .tabs-title > a {
+    .page .tabs-container .tabs .tabs-title > a {
       color: #28445f;
       text-align: center;
       position: relative;
       font-size: 20px;
       font-weight: 700;
-      padding: 30px 3px; }
-    .page .tabs-container > .tabs .tabs-title > a:focus, .page .tabs-container > .tabs .tabs-title > a:hover {
+      padding: 0px 3px;
+      display: block;
+      min-height: 80px; }
+    .page .tabs-container .tabs .tabs-title > a:focus, .page .tabs-container .tabs .tabs-title > a:hover {
       background-color: #d6e9f4;
       color: #28445f; }
-      .page .tabs-container > .tabs .tabs-title > a:focus:after, .page .tabs-container > .tabs .tabs-title > a:hover:after {
+      .page .tabs-container .tabs .tabs-title > a:focus:after, .page .tabs-container .tabs .tabs-title > a:hover:after {
         content: "";
         width: 100%;
         height: 5px;
@@ -2807,10 +2874,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         position: absolute;
         bottom: -5px;
         left: 0; }
-    .page .tabs-container > .tabs .tabs-title > a[aria-selected=true], .page .tabs-container > .tabs .tabs-title.is-active a {
+    .page .tabs-container .tabs .tabs-title > a[aria-selected=true], .page .tabs-container .tabs .tabs-title.is-active a {
       background-color: #c8e2ef;
       color: #28445f; }
-      .page .tabs-container > .tabs .tabs-title > a[aria-selected=true]:after, .page .tabs-container > .tabs .tabs-title.is-active a:after {
+      .page .tabs-container .tabs .tabs-title > a[aria-selected=true]:after, .page .tabs-container .tabs .tabs-title.is-active a:after {
         content: "";
         width: 100%;
         height: 5px;
@@ -2818,11 +2885,21 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         position: absolute;
         bottom: -5px;
         left: 0; }
-    .page .tabs-container > .tabs.tabs-gutter {
+    .page .tabs-container .tabs .tabs-title .tabs-title-text {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      margin-top: 0;
+      width: 100%;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .page .tabs-container .tabs.tabs-gutter {
       max-width: 48.75rem; }
-    .page .tabs-container > .tabs.tabs-6-up .tabs-title {
+    .page .tabs-container .tabs.tabs-6-up .tabs-title {
       width: 16.6%; }
-    .page .tabs-container > .tabs.tabs-4-up .tabs-title {
+    .page .tabs-container .tabs.tabs-4-up .tabs-title {
       width: 25%; }
 .page .tabs-content {
   border: 0;
@@ -3018,6 +3095,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .contract-list ul li {
     font-family: "brandon-grotesque", sans-serif !important;
     margin-bottom: 8px;
+    padding-left: 0;
     color: #555; }
     .contract-list ul li:before {
       display: none; }
@@ -3154,21 +3232,28 @@ div.career-list .fa {
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       position: absolute;
+      z-index: 1;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 225px;
       content: ""; }
+    .row--our-practices-list .PA--block-link img {
+      position: relative;
+      z-index: 0; }
   .row--our-practices-list .icon-wBlueEllipse {
     position: absolute;
+    z-index: 2;
     top: -110px;
     left: 50%;
     margin-left: -45px; }
   .row--our-practices-list .PA--block-link-title {
     position: absolute;
+    z-index: 2;
     top: 64%;
     width: 100%;
     text-align: center;
+    color: #fff;
     font-size: 26px;
     font-weight: bold;
     padding-left: 100px;
@@ -3180,9 +3265,7 @@ div.career-list .fa {
       background-color: #7dcba7; }
 
 .current-projects-list {
-  padding-top: 24px;
-  padding-bottom: 90px;
-  margin-top: 80px; }
+  padding-bottom: 90px; }
   .current-projects-list .CPL--title {
     font-size: 28px;
     margin-bottom: 26px;

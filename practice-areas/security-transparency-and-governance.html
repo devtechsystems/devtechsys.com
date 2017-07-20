@@ -194,8 +194,8 @@
 
   <div class="row column">
     
-    	<h1 class="banner-section-title">Security, Transparency, and Governance</h1>
-    	<h2 class="banner-page-title">Current Projects</h2>
+    	<h1 class="banner-section-title">Our Practices</h1>
+    	<h2 class="banner-page-title">Security, Transparency, and Governance</h2>
     
   </div>
 </div>
@@ -203,27 +203,46 @@
 
 <div class="site-content" id="site_content" aria-label="Content">
 	<div class="page">
-		<div class="tabs-container">
-			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="tabs-5"  data-deep-link="true" data-update-history="true">
+
+		<div class="dropdown-container show-for-small-only">
+			<div class="row row--gutters column">
+        <button class="button button-dropdown" type="button" data-toggle="practices-dropdown">
+        	<span class="text">Overview</span>
+        	<span class="fa fa-chevron-down" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown-pane sync-with-tabs" id="practices-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="practices-tabs">
+          <ul>
+          	<li class="is-active"><a href="#overview">Overview</a></li>
+          	<li><a href="#projects">Projects</a></li>
+          	<li><a href="#reports-publications">Reports &amp; Publications</a></li>
+          	<li><a href="#insights">Insights</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+		<div class="tabs-container show-for-medium">
+			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="practices-tabs"  data-deep-link="true" data-update-history="true">
 		    <li class="tabs-title is-active">
-		      <a href="#current-projects" aria-selected="true">Current Project</a>
+		      <a href="#overview" aria-selected="true"><span class="tabs-title-text">Overview</span></a>
 		    </li>
 		    <li class="tabs-title">
-		      <a href="#past-projects">Past Project</a>
+		      <a href="#projects"><span class="tabs-title-text">Projects</span></a>
 		    </li>
 		    <li class="tabs-title">
-		      <a href="#reports-publications">Reports &amp; Publications</a>
+		      <a href="#reports-publications"><span class="tabs-title-text">Reports &amp; Publications</span></a>
 		    </li>
 		    <li class="tabs-title">
-		      <a href="#insights">Insights</a>
+		      <a href="#insights"><span class="tabs-title-text">Insights</span></a>
 		    </li>
 			</ul>
 		</div>
 	  <div class="content content-noBottomPadding">
 	  	
 	  	
-	  	<div class="tabs-content" data-tabs-content="tabs-5">
-			  <div class="tabs-panel is-active" id="current-projects">
+	  	<div class="tabs-content" data-tabs-content="practices-tabs">
+			  <div class="tabs-panel content-bottomPadding is-active" id="overview">
 			    <div class="row row--gutters column">
 
 				    
@@ -241,25 +260,24 @@
 <p>DevTech’s core practice area of monitoring and evaluation also intersects with our security, transparency, and governance sector. We have designed, implemented, and managed large-scale evaluations in governance, rule of law, criminal justice, and anti-terrorism programs in an effort to improve governance, community resiliency and local confidence in government institutions.</p>
 
 					</div>
-
-					<div class="background-lightBlue">
-						<div class="row row--gutters column current-projects-list clearfix">
-							<h3 class="CPL--title">Current Projects</h3>
-							<ul class="row link-list small-up-1 medium-up-2">
-				    	
-					    
-					  	</ul>
-					  </div>
-				  </div>
 			  </div>
-			  <div class="tabs-panel content-bottomPadding" id="past-projects">
-			    <div class="row row--gutters column past-projects-list">
-				    <h3 class="PPL--title">Past Projects</h3>
+			  <div class="tabs-panel" id="projects">
+			    <div class="row row--gutters column current-projects-list">
+				    <h3 class="CPL--title">Current Projects</h3>
+						<ul class="row link-list small-up-1 medium-up-2">
+			    	
+				    
+				  	</ul>
+				  </div>
 
-				    <ul class="row link-list small-up-1 medium-up-2">
-				    	
-					    
-				    </ul>
+			  	<div class="background-lightBlue content-bottomPadding">
+						<div class="row row--gutters column past-projects-list clearfix">
+							<h3 class="BLB--title">Past Projects</h3>
+							<ul class="row link-list small-up-1 medium-up-2">
+					    	
+						    
+					    </ul>
+					  </div>
 				  </div>
 			  </div>
 			  <div class="tabs-panel content-bottomPadding" id="reports-publications">
@@ -333,7 +351,7 @@
     
     <script src="/assets/js/vendor/jquery.js"></script>
     <script src="/assets/js/vendor/what-input.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js" integrity="sha256-ssuvZ7clQBE8C6fdKygrQfRqIx5bFb/F/Abeqq1dr/w=" crossorigin="anonymous"></script>
     <!--TO FIX, something is messed up with this version, try redownloading
     script src="/assets/js/foundation.min.js"></script-->
     <script src="/assets/js/app.js"></script>
