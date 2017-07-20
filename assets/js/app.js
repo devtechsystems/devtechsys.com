@@ -1,5 +1,4 @@
 function dropdownWithTabs(){
-	console.log('helloworld)');
 	$('.sync-with-tabs').each(function(){
 		var _this = $(this).attr('id');
 		var selected_dropdown = $('#'+_this).prev();
@@ -9,7 +8,7 @@ function dropdownWithTabs(){
 		$('#'+_this+ ' li').click(function(){
 			var selected_text = $(this).text();
 			$(selected_dropdown_text).text(selected_text);
-			
+
 			var selected_index = $(this).index();
 			$('#'+targeted_tabs+' li').eq(selected_index).find('a').click();
 			$('#'+_this).foundation('close');
