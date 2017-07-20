@@ -54,6 +54,7 @@ defaults:
     permalink: "/insights/:year/:month/:day/:title/"
     Practice Area:
     - 
+    Teaser Image: 
     Banner Image: 
     Highlight: 
     Category: 
