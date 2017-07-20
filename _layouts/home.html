@@ -6,12 +6,18 @@ layout: default
 
   <div class="site-content home" id="site_content" aria-label="Content">
     <div class="row insights">
-      <div class="column">
-        <ul>
+      <div class="column small-16">
+        <ul class="clearfix">
           {% for post in site.posts limit:3 %}
             <li>
-              <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+              <span class="post-label">{{ post['Practice Area'] | first }}</span>
+              {% if post['Teaser Image'].size > 0 %}
+                <img src="{{ post['Teaser Image'] | relative_url }}" alt="Teaser Image" />
+              {% else %}
+                <span class="post-missing-teaser"></span>
+              {% endif %}
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <span class="post-meta">{{ post['Author'] }}</span>
             </li>
           {% endfor %}
         </ul>

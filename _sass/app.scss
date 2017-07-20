@@ -477,9 +477,61 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
   .insights {
-    min-height:320px; //temporary fix to fill space until blog posts have images and such
     padding-top:80px;
     padding-bottom:80px;
+
+    .column {text-align: center;}
+
+    ul {
+      list-style-type: none;
+      li {
+        text-align: left;
+        display: block;
+        padding: 0 20px;
+        position: relative;
+        margin-bottom: 80px;
+      }
+
+      .post-label {
+        background-color: #007cb7;
+        display: inline-block;
+        padding: 4px 10px;
+        color: #fff;
+        font-weight: 700;
+        font-style: italic;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        margin-right:20px;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      .post-link {
+        font-size: 22px;
+        font-weight: 700;
+        color: #28445f;
+        line-height: 1.2;
+        display: block;
+        margin-top: 16px;
+      }
+      .post-meta {
+        display: block;
+        color: #6c7c8c;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 7px;
+      }
+      .post-missing-teaser {
+        width: 100%;
+        height: 50px;
+        background-color: #ececec;
+        display: block;
+      }
+
+      & + .button {
+        margin:0 auto;
+      }
+    }
   }
   .practice-areas {
     background-color: #007cb7;
@@ -1345,6 +1397,16 @@ li.post {
     }
   }
   .home {
+    .insights {
+      ul li {
+        float:left;
+        width:50%;
+
+        &:nth-child(odd) {clear:left;}
+        &:first-child {clear:none;}
+      }
+    }
+
     .hero {
       .hero--content {padding-top:172px;}
       .allcaps {font-size: 50px;}
@@ -1379,6 +1441,15 @@ li.post {
     blockquote {
       margin-right: -230px;
       padding-right: 16px;
+    }
+  }
+  .home .insights {
+    ul li {
+      float:left;
+      width:33%;
+
+      &:nth-child(odd) {clear:none;}
+      &:first-child {margin-left:1%;}
     }
   }
 }
