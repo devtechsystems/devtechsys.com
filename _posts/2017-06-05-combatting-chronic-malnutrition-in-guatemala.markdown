@@ -3,6 +3,7 @@ title: Combatting Chronic Malnutrition in Guatemala
 date: 2017-06-05 18:44:00 Z
 Practice Area:
 - Education, Gender and Youth
+Teaser Image: "/uploads/teaser-guatemala-education.jpg"
 Banner Image: "/uploads/malnutrition3.jpg"
 Highlight: In Guatemala in particular, among children under the age of five, 46.5%
   of are stunted, 4.7% are overweight, and 1% are wasted.
