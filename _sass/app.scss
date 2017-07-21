@@ -898,7 +898,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
     &:hover,
     &:focus {
-      &:before {display: none;}
+      &:before {display: none !important;}
     }
   }
   a.post-button {
