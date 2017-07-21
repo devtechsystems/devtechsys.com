@@ -1,17 +1,51 @@
   <div class="row column">
     <a class="site-title" href="{{ "/" | relative_url }}"><img src="/assets/images/logo-devtech.png" alt="{{ site.title | escape }}"/></a>
 
-    <div class="site-nav">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" tabindex="-1"/>
-      <label for="nav-trigger" tabindex="0">
-        <span class="sr-only">Site Menu Toggle</span>
-        <span class="nav-menu-icon">
-          <span class="fa fa-bars" aria-hidden="true"></span>
-          <span class="fa fa-times nav-menu-close" aria-hidden="true"></span>
-        </span>
-      </label>
+    <div class="button-container">
+      <button class="search-button" type="button" data-toggle="search-dropdown">
+        <span class="sr-only">Toggle Search</span>
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
 
-      <div class="trigger">
+      <button class="menu-button" type="button" data-toggle="menu-dropdown">
+        <span class="sr-only">Toggle Menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="dropdown-container site-header-dropdown">
+    <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true">
+      <div class="background-darkBlue">
+        <div class="row">
+          <div class="small-16 column">
+            <form>
+              <label class="SD--label">
+                <span class="sr-only">Search</span>
+                <span class="fa fa-search" aria-hidden="true"></span>
+                <input type="text" placeholder="Begin typing to search" />
+              </label>
+            </form>
+
+            <h2 class="SD--title">Frequently Searched</h2>
+            <ul class="SD--list">
+              <li><a href="#">Should these search terms auto populate, if possible?</a></li>
+              <li><a href="#">Nigeria Monitoring, Evaluation, and Learning</a></li>
+              <li><a href="#">Monitoring and Evaluation</a></li>
+              <li><a href="#">Economic Analysis and Data Services</a></li>
+              <li><a href="#">Nicaragua Community Action for Reading and Security</a></li>
+              <li><a href="#">Jorge Sanguinetty</a></li>
+              <li><a href="#">Rafael Romeu</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown-container site-header-dropdown">
+    <div class="dropdown-pane" id="menu-dropdown" data-dropdown>
+      <div class="background-darkBlue">
         <div class="row">
           <div class="small-16 medium-3 column">
             <h2>About Us</h2>
@@ -68,3 +102,4 @@
       </div>
     </div>
   </div>
+  
