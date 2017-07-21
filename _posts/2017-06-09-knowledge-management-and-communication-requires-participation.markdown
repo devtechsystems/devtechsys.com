@@ -3,6 +3,7 @@ title: Knowledge Management and Communication Requires Participation
 date: 2017-06-09 16:33:00 Z
 Practice Area:
 - Knowledge Management and Data Analytics
+Teaser Image: "/uploads/teaser-monitor.jpg"
 Highlight: 'In order for Learning & Knowledge Management to be an effective activity,
   it is crucial that everyone who participated to some extent in the project’s execution
   is subsequently involved in communicating the outcomes, success stories, achievements,
