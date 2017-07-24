@@ -2347,7 +2347,7 @@ h1, h2, h3, h4, h5, h6 {
 .font-brandon, .content blockquote p, .content dl dt, .row--office-locations p.OL--address, .row--office-locations p.OL--phone {
   font-family: "brandon-grotesque", sans-serif; }
 
-.font-vista, .content p, .content ul li, .content ol > li, .content dl dd, .content table td, .home .hero p, .home .practice-areas .PA--content p, .home .projects p, .site-header .site-header-dropdown .SD--title {
+.font-vista, .content p, .content ul li, .content ol > li, .content dl dd, .content table td, .home .hero p, .home .practice-areas .PA--content p, .home .projects p, .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content h4 {
   font-family: "vista-slab", sans-serif; }
 
 /**
@@ -3107,18 +3107,18 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         font-weight: 300; }
       .site-header .site-header-dropdown .SD--label input:focus {
         box-shadow: 0 0 3px 1px #60e2a8; }
-  .site-header .site-header-dropdown .SD--title {
+  .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content h4 {
     color: #66b0d3;
     font-size: 19px;
     font-weight: bold;
     font-style: italic;
     margin-top: 60px;
     margin-bottom: 30px; }
-  .site-header .site-header-dropdown .SD--list li {
-    margin-bottom: 9px; }
-  .site-header .site-header-dropdown .SD--list a {
+  .site-header .site-header-dropdown .SD--content a {
     font-weight: 400;
-    color: #7dcba7; }
+    color: #7dcba7;
+    display: block;
+    margin-bottom: 9px; }
 
 .contract-list .CL--title {
   font-size: 30px;
