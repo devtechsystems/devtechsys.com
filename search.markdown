@@ -6,7 +6,7 @@ layout: search
 
 ## Frequently Searched
 
-[Monitoring and Evaluation](/practice-areas/monitoring-and-evaluation/)
-[Jorge Sanguinetty](/our-team/jorge-sanguinetty/)
-[Rafael Romeu](/search/?q=rafael-romeu/)
-[Economic Analysis and Data Services](/our-team/jorge-sanguinetty/)
+[Monitoring and Evaluation](/search/?q=Monitoring%20and%20Evaluation/)
+[Jorge Sanguinetty](/search/?q=Jorge%20Sanguinetty/)
+[Rafael Romeu](/search/?q=Rafael%20Romeu/)
+[Economic Analysis and Data Services](/search/?q=Economic Analysis%20and%20Data Services/)
