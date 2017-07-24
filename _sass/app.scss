@@ -1454,6 +1454,82 @@ ul.featured-insights {
   }
 }
 
+.site {
+  #site_search {
+    min-height: 80px;
+    padding-top: 10px;
+    label {position: relative;}
+    label .fa {
+      position: absolute;
+      top: 18px;
+      left: 17px;
+      color: #6fc59c;
+      font-size: 22px;
+    }
+    input {
+      margin-bottom: 0;
+      height: 60px;
+      border-color: #c0deed;
+      border-width: 2px;
+      background-color: #eef5f7;
+      box-shadow: none;
+      color: #4b4b4b;
+      text-indent: 40px;
+      font-size: 18px;
+      border-radius:2px;
+    }
+  }
+  #search_results {
+    margin-top:80px;
+    li {
+      font-family: "brandon-grotesque", sans-serif !important;
+      padding-left: 0;
+      margin-bottom: 30px !important;
+      border-bottom: 2px solid #c8e2ef;
+      padding-bottom: 30px !important;
+      &:before {display: none;}
+      .search-topic {
+        color: #000;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+        display: block;
+      }
+      .search-post-author {
+        color: #28445f;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .search-post-date {
+        color: #28445f;
+        font-weight: 700;
+        font-size: 16px;
+        &:before {
+          content: "";
+          border-left: 1px solid #53697f;
+          height: 1em;
+          width: 1px;
+          display: inline-block;
+          margin-right: 10px;
+          margin-left: 5px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+    a {
+      color: #007cb7;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 4px;
+      span {display: inline-block;}
+    }
+  }
+}
+
 @media screen and (min-width: 40em) {
   .site-footer {
     text-align: left;

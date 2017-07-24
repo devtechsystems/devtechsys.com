@@ -1,0 +1,83 @@
+---
+layout: null
+---
+{
+  {% for post in site.posts %}
+
+    "{{ post.url | slugify }}": {
+      "title": "{{ post.title | xml_escape }}",
+      "type": "Insight Posting",
+      "content"	 : "{{post.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\"}}",
+      "url": " {{ post.url | xml_escape }}",
+      "author": "{{ post['Author'] | xml_escape }}",
+      "date": "{{ post.date | date: "%B %d, %Y" }}",
+      "categories": "{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+
+  {% for page in site.pages %}
+    {% if page.url == '/about/history/' 
+       or page.url == '/privacy-policy/' %}
+      ,
+      "{{ page.url | slugify }}": {
+        "title": "{{ page.title | xml_escape }}",
+        "type": "About Us",
+        "content"  : "{{page.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ page.url | xml_escape }}"
+      }
+    {% endif %}
+  {% endfor %}
+
+  {% for career in site.careers %}
+      ,
+      "{{ career.url | slugify }}": {
+        "title": "{{ career.title | xml_escape }}",
+        "type": "Career Opportunity",
+        "content"  : "{{career.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ career.url | xml_escape }}"
+      }
+  {% endfor %}
+
+
+  {% for members in site.our-team %}
+      ,
+      "{{ members.url | slugify }}": {
+        "title": "{{ members.title | xml_escape }}",
+        "type": "Our Team",
+        "content"  : "{{members.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ members.url | xml_escape }}"
+      }
+  {% endfor %}
+
+  {% for area in site.practice-areas %}
+      ,
+      "{{ area.url | slugify }}": {
+        "title": "{{ area.title | xml_escape }}",
+        "type": "Practice Area",
+        "content"  : "{{area.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ area.url | xml_escape }}"
+      }
+  {% endfor %}
+
+  {% for location in site.office-locations %}
+      ,
+      "{{ location.url | slugify }}": {
+        "title": "{{ location.title | xml_escape }}",
+        "type": "Office Location",
+        "content"  : "{{location.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ location.url | xml_escape }}"
+      }
+  {% endfor %}
+
+
+  {% for contract in site.contracting-vehicles %}
+      ,
+      "{{ contract.url | slugify }}": {
+        "title": "{{ contract.title | xml_escape }}",
+        "type": "Contracting Vehicles",
+        "content"  : "{{contract.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ '/about/contracting-vehicles/' | relative_url }}"
+      }
+  {% endfor %}
+}

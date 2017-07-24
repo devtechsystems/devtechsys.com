@@ -1,0 +1,28 @@
+---
+layout: default-wSearch
+---	
+{% include header.html subtitle=page.title %}
+<div class="site-content" id="site_content" aria-label="Content">
+	<div class="page">
+		<div class="content">
+			<div class="background-lightBlue">
+				<div class="row row--gutters column">
+					<form action="/search" method="get" id="site_search">
+					  <label>
+					  	<span class="fa fa-search" aria-hidden="true"></span>
+					  	<span class="sr-only">Search:</span>
+					  	<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+					  </label>
+					</form>
+				</div>
+			</div>
+
+	  	<div class="row row--gutters column">
+				<ul id="search_results">
+					<li>Enter a search term above to begin searching.</li>
+				</ul>
+		  </div>
+	  </div>
+
+	</div>
+</div>
