@@ -36,8 +36,24 @@ layout: default
 	  	<div class="tabs-content" data-tabs-content="insights-tabs">
 			  <div class="tabs-panel is-active" id="latest-insights">
 			  	<div class="row row--gutters column">
-				    <ul class="posts">
-					    {% for post in site.posts limit:6 %}
+			  		<ul class="featured-insights clearfix">
+		          {% for post in site.posts limit:2 %}
+		            <li>
+		              <span class="post-label">{{ post['Practice Area'] | first }}</span>
+		              {% if post['Teaser Image'].size > 0 %}
+		                <img src="{{ post['Teaser Image'] | relative_url }}" alt="Teaser Image" />
+		              {% else %}
+		                <span class="post-missing-teaser"></span>
+		              {% endif %}
+		              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+		              <span class="post-meta">{{ post['Author'] }}</span>
+		            </li>
+			        {% endfor %}
+		        </ul>
+
+
+				    <ul class="posts posts-border-top">
+					    {% for post in site.posts limit:6 offset:2 %}
 					      <li class="post">
 					    		{% if post['Category'].size > 0 %}
 					    			<div class="post-category">{{ post['Category'] }}</div>
