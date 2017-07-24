@@ -3212,6 +3212,49 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       font-size: 16px;
       color: #66b0d3; }
 
+.contact-details {
+  border-top: 2px solid #c8e2ef;
+  border-bottom: 2px solid #c8e2ef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  font-size: 18px; }
+  .contact-details .column:first-child {
+    text-align: center; }
+  .contact-details .fa {
+    color: #66b0d3;
+    font-size: 16px; }
+  .contact-details .fa-phone-square {
+    position: relative;
+    top: -1px; }
+
+.contact-form {
+  margin-bottom: 80px; }
+  .contact-form .fa-asterisk {
+    font-size: 10px;
+    position: relative;
+    top: -2px; }
+  .contact-form label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .contact-form input,
+  .contact-form textarea {
+    border-color: #c8e2ef;
+    border-width: 2px;
+    background-color: #f0f6f8;
+    box-shadow: none;
+    color: #111;
+    font-size: 18px;
+    border-radius: 2px;
+    min-height: 54px;
+    margin-bottom: 23px; }
+  .contact-form .button {
+    margin-top: 37px; }
+
 .career-heading h1.page-title {
   margin-bottom: 5px;
   border-bottom: 2px solid #c8e2ef;

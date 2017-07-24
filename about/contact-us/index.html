@@ -348,7 +348,7 @@
 
 						
 							<div class="row row--gutters column">
-	<div class="row">
+	<div class="row contact-details">
 		<div class="medium-5 column">
 			<span class="fa fa-phone-square" aria-hidden="true"></span>
 			703.312.6038
@@ -362,11 +362,55 @@
 			jobs@devtechsys.com
 		</div>
 	</div>
-	<div class="row" style="background-color:#eee;margin-top:20px;">
-		<div class="column" style="height:500px;">
-			need to add form that will send emails to <strong>test@test.com</strong>
+	<form class="contact-form">
+		<div class="row">
+			<div class="column small-16 medium-8">
+				<label>
+					First Name
+					<span class="fa fa-asterisk" aria-hidden="true"></span>
+					<span class="sr-only">Required</span>
+					<input type="text" name="first" />
+				</label>
+			</div>
+			<div class="column small-16 medium-8">
+				<label>
+					Last Name
+					<span class="fa fa-asterisk" aria-hidden="true"></span>
+					<span class="sr-only">Required</span>
+					<input type="text" name="last" />
+				</label>
+			</div>
 		</div>
-	</div>
+		<div class="row">
+			<div class="column small-16 medium-8">
+				<label>
+					Email Address
+					<span class="fa fa-asterisk" aria-hidden="true"></span>
+					<span class="sr-only">Required</span>
+					<input type="text" name="email" />
+				</label>
+			</div>
+			<div class="column small-16 medium-8">
+				<label>
+					Phone
+					<input type="text" name="phone" />
+				</label>
+			</div>
+		</div>
+		<div class="row column">
+			<label>
+				Message
+				<span class="fa fa-asterisk" aria-hidden="true"></span>
+				<span class="sr-only">Required</span>
+				<textarea name="message" rows="6"></textarea>
+			</label>
+		</div>
+		<div class="row column">
+			<button type="submit" class="button pull-right">SEND</button>
+		</div>
+	</form>
+
+	NOTE: this is not functional, still need to find appropriate<br/>solution to send emails to <strong>test@test.com</strong>
 </div>
 						
 
