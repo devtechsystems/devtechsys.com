@@ -977,22 +977,23 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       }
     }
   }
-  .SD--title {
-    @extend .font-vista;
-    color:#66b0d3;
-    font-size:19px;
-    font-weight:bold;
-    font-style:italic;
-    margin-top:60px;
-    margin-bottom:30px;
-  }
-  .SD--list {
-    li {margin-bottom:9px;}
+  .SD--content {
+    h2, h3, h4 {
+      @extend .font-vista;
+      color:#66b0d3;
+      font-size:19px;
+      font-weight:bold;
+      font-style:italic;
+      margin-top:60px;
+      margin-bottom:30px;
+    }
+    
     a {
       font-weight: 400;
       color:#7dcba7;
+      display: block;
+      margin-bottom: 9px;
     }
-
   }
 }
 

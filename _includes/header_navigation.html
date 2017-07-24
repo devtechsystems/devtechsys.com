@@ -19,24 +19,21 @@
       <div class="background-darkBlue">
         <div class="row">
           <div class="small-16 column">
-            <form>
+            <form action="/search" method="get" id="global_site_search">
               <label class="SD--label">
                 <span class="sr-only">Search</span>
                 <span class="fa fa-search" aria-hidden="true"></span>
-                <input type="text" placeholder="Begin typing to search" />
+                <input type="text" name="q" placeholder="Begin typing to search" autocomplete="off" />
               </label>
             </form>
 
-            <h2 class="SD--title">Frequently Searched</h2>
-            <ul class="SD--list">
-              <li><a href="#">Should these search terms auto populate, if possible?</a></li>
-              <li><a href="#">Nigeria Monitoring, Evaluation, and Learning</a></li>
-              <li><a href="#">Monitoring and Evaluation</a></li>
-              <li><a href="#">Economic Analysis and Data Services</a></li>
-              <li><a href="#">Nicaragua Community Action for Reading and Security</a></li>
-              <li><a href="#">Jorge Sanguinetty</a></li>
-              <li><a href="#">Rafael Romeu</a></li>
-            </ul>
+            {% assign search_page = site.pages | where_exp: "item", "item.title contains 'Search'" %}
+
+            <div class="SD--content">
+              {% for p in search_page %}
+                {{ p.content }}
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
