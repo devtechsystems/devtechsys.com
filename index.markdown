@@ -13,17 +13,15 @@ Insights Section:
 Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
-  Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-    urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque penatibus
-    et.
+  Brief Description: Since 1984, DevTech has found innovative solutions to policy
+    and development challenges. We have excelled in these key practice areas.
   Button Label: Learn More
 Projects Section:
   Title: Data-Driven Projects
   Subtitle: Our Work Around the World
-  Brief Description: Marketing copy would go here to highlight the project data-base
-    section of the site. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Donec urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
-    penatibus et.
+  Brief Description: DevTech has worked in over 80 countries and our projects span
+    nearly every region of the world. Click below to explore our comprehensive database
+    and see where our work has taken us.
   Button Label: View Projects
 layout: home
 ---
