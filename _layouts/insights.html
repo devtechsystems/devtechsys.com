@@ -70,8 +70,22 @@ layout: default
 				    </ul>
 				  </div>
 			  </div>
-			  <div class="tabs-panel is-active" id="news">
-
+			  <div class="tabs-panel" id="news">
+			  	<div class="row row--gutters column">
+				  	<ul class="posts">
+					    {% for news in site.news %}
+					      <li class="post">
+					    		{% if news['Category'].size > 0 %}
+					    			<div class="post-category">{{ news['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ news.url | relative_url }}" class="post-title">{{ news.title }}</a>
+					    		<div class="post-details">
+					    			<div class="post-detail">{{ news.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+					    {% endfor %}
+				    </ul>
+				  </div>
 			  </div>
 			</div>
 	  </div>

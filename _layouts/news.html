@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include header.html subtitle="Our Insights" %}
+
+<div class="site-content page" id="site_content" aria-label="Content">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header no-margin-top">
+      <div class="row row--gutters column">
+        <a href="/insights/#news" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to all News</a>
+
+        {% if page['Category'].size > 0 %}
+          <span class="post-category">{{ page['Category']}}</span>
+        {% endif %}
+        <h1 class="post-title page-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <div class="post-details">
+          <span class="post-detail"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ page.date | date: date_format }}
+          </time></span>
+        </div>
+      </div>
+    </header>
+    <div class="post-content content" itemprop="articleBody">
+      <div class="row row--gutters column">
+        {% if page['Banner Image'].size > 0 %}
+          <img class="page-banner" src="{{ page['Banner Image'] }}"/>
+        {% endif %}
+        {% if page['Highlight'].size > 0 %}
+          <h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+        {% endif %}
+
+        {{ content }}
+      </div>
+    </div>
+  </article>
+</div>

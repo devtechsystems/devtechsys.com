@@ -65,6 +65,15 @@ defaults:
     layout: post
 - scope:
     path: ''
+    type: news
+  values:
+    permalink: "/news/:year/:month/:day/:title/"
+    Banner Image: 
+    Highlight: 
+    Category: 
+    layout: news
+- scope:
+    path: ''
     type: authors
   values:
     Author Image: 

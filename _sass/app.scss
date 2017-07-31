@@ -856,6 +856,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-size: 17px;
     font-weight: 700;
     & + .page-title {margin-top: 19px;}
+    & + .post-category {margin-top: 19px;}
   }
 }
 
@@ -1350,7 +1351,9 @@ div.career-list {
 .post-header {
   margin-top:80px;
   margin-bottom:60px;
-  .post-practiceArea {
+  &.no-margin-top {margin-top:0;}
+  .post-practiceArea,
+  .post-category {
     color:#555;
     font-size: 21px;
     font-weight: 700;
