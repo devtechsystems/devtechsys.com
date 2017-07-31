@@ -15,7 +15,7 @@ layout: default
         </button>
         <div class="dropdown-pane sync-with-tabs" id="insights-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="insights-tabs">
           <ul>
-          	<li class="is-active"><a href="#latest-insights">Latest</a></li>
+          	<li class="is-active"><a href="#latest">Latest</a></li>
           	<li><a href="#news">News</a></li>
           </ul>
         </div>
@@ -25,7 +25,7 @@ layout: default
 		<div class="tabs-container show-for-medium">
 			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="insights-tabs"  data-deep-link="true" data-update-history="true">
 		    <li class="tabs-title is-active">
-		      <a href="#latest-insights" aria-selected="true"><span class="tabs-title-text">Latest</span></a>
+		      <a href="#latest" aria-selected="true"><span class="tabs-title-text">Latest</span></a>
 		    </li>
 		    <li class="tabs-title">
 		      <a href="#news"><span class="tabs-title-text">News</span></a>
@@ -34,7 +34,7 @@ layout: default
 		</div>
 	  <div class="content">
 	  	<div class="tabs-content" data-tabs-content="insights-tabs">
-			  <div class="tabs-panel is-active" id="latest-insights">
+			  <div class="tabs-panel is-active" id="latest">
 			  	<div class="row row--gutters column">
 			  		<ul class="featured-insights clearfix">
 		          {% for post in site.posts limit:2 %}

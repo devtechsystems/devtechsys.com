@@ -850,12 +850,13 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .page-banner + .page-highlight {margin-top:60px;}
   .page-highlight + .page-banner {margin-bottom:60px;}
   .back-link {
-    display: inline-block;
+    display: block;
     font-style: italic;
     margin-top:4rem;
     font-size: 17px;
     font-weight: 700;
-    & + .page-title {margin-top: 19px;}
+    & + .page-title,
+    & + .post-practiceArea,
     & + .post-category {margin-top: 19px;}
   }
 }
@@ -1358,6 +1359,7 @@ div.career-list {
     font-size: 21px;
     font-weight: 700;
     font-style: italic;
+    display: block;
   }
   .post-title {
     margin: 0 0 15px;
