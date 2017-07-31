@@ -127,7 +127,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     text-align: center;
     text-transform: uppercase;
     color:#fff;
-    font-size:41px;
+    font-size:30px;
+    line-height: 1.2;
     letter-spacing:.18em;
     font-weight: 700;
     padding-bottom: 2rem;
@@ -1587,6 +1588,7 @@ ul.featured-insights {
 }
 
 @media screen and (min-width: 40em) {
+  .site-header .banner-page-title {font-size: 41px;}
   .site-footer {
     text-align: left;
     .column {
