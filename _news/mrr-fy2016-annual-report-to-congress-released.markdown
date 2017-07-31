@@ -1,6 +1,6 @@
 ---
-title: Microenterprise Results Reporting (MRR) FY2016 annual report to released to
-  Congress
+title: DevTech is proud to announce the release of its Microenterprise Results Reporting
+  (MRR) FY2016 annual report to Congress
 date: 2017-07-31 18:41:00 Z
 Banner Image: 
 Highlight: 
