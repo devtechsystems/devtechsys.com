@@ -31,7 +31,7 @@
 
             <div class="SD--content">
               {% for p in search_page %}
-                {{ p.content }}
+                {{ p.content | markdownify }}
               {% endfor %}
             </div>
           </div>
