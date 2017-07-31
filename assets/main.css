@@ -2441,7 +2441,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    font-size: 41px;
+    font-size: 30px;
+    line-height: 1.2;
     letter-spacing: .18em;
     font-weight: 700;
     padding-bottom: 2rem;
@@ -3002,12 +3003,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 .page .page-highlight + .page-banner {
   margin-bottom: 60px; }
 .page .back-link {
-  display: inline-block;
+  display: block;
   font-style: italic;
   margin-top: 4rem;
   font-size: 17px;
   font-weight: 700; }
-  .page .back-link + .page-title {
+  .page .back-link + .page-title, .page .back-link + .post-practiceArea, .page .back-link + .post-category {
     margin-top: 19px; }
 
 .site-header .site-header-dropdown {
@@ -3409,11 +3410,15 @@ div.career-list .fa {
 .post-header {
   margin-top: 80px;
   margin-bottom: 60px; }
-  .post-header .post-practiceArea {
+  .post-header.no-margin-top {
+    margin-top: 0; }
+  .post-header .post-practiceArea,
+  .post-header .post-category {
     color: #555;
     font-size: 21px;
     font-weight: 700;
-    font-style: italic; }
+    font-style: italic;
+    display: block; }
   .post-header .post-title {
     margin: 0 0 15px;
     padding-bottom: 25px;
@@ -3616,6 +3621,9 @@ ul.featured-insights {
       display: inline-block; }
 
 @media screen and (min-width: 40em) {
+  .site-header .banner-page-title {
+    font-size: 41px; }
+
   .site-footer {
     text-align: left; }
     .site-footer .column {
