@@ -67,7 +67,7 @@ defaults:
     path: ''
     type: news
   values:
-    permalink: "/news/:year/:month/:day/:title/"
+    permalink: "/insights/:year/:month/:day/:title/"
     Banner Image: 
     Highlight: 
     Category: 
