@@ -11,4 +11,4 @@ DevTech is proud to announce the release of its Microenterprise Results Reportin
 
 The FY2016 report details all foreign assistance data for microenterprise and microfinance projects funded by USAID. The data are collected annually by DevTech’s EADS project through two separate data calls to USAID missions and USAID partners and the report is compiled by the Office of Private Capital and Microenterprise (PCM) in the Bureau for Economic Growth, Education and Environment (E3). The report responds to the annual reporting requirements of the Microenterprise Results and Accountability Act of 2004 (MRAA).  To limit the report's length and reduce costs, all data is available via an interactive, online platform at [mrr.usaid.gov](https://mrr.usaid.gov). The website enables users to explore the data, access previous reports and compare information across years.
 
-If you have any questions, feel free to contact the EADS team at [eads@usaid.gov](eads@usaid.gov).
+If you have any questions, feel free to contact the EADS team at <eads@usaid.gov>.
