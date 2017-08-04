@@ -24,9 +24,13 @@ layout: default
 						{% endif %}
 
 				    {{ content }}
+						<div id="row-chart-practice-area"></div>
 			  	</div>
 			  </div>
 		  </div>
 
 		</div>
 	</div>
+<script src="{{ "/assets/brunch-compiled/node-modules.js" | relative_url }}"></script>
+<script src="{{ "/assets/brunch-compiled/projects-bundle.js" | relative_url }}"></script>
+<script>require('assets/js/projects/entry.js')</script>
