@@ -216,22 +216,22 @@ var RadRow = function (_Component) {
   }, {
     key: 'availableWidthForName',
     value: function availableWidthForName() {
-      return this.props.chartWidth - 53 - this.spaceForCircle();
+      return this.props.chartWidth - 53 - this.widthForCircle();
     }
   }, {
-    key: 'spaceForCircle',
-    value: function spaceForCircle() {
+    key: 'widthForCircle',
+    value: function widthForCircle() {
       return this.getCircleRadius() * 2 + this.props.circlePaddingRight;
     }
   }, {
-    key: 'getFontSize',
-    value: function getFontSize() {
+    key: 'heightForText',
+    value: function heightForText() {
       return this.props.rowHeight / 3;
     }
   }, {
     key: 'getCircleRadius',
     value: function getCircleRadius() {
-      return this.getFontSize() / 2;
+      return this.heightForText() / 2;
     }
   }, {
     key: 'render',
@@ -254,9 +254,8 @@ var RadRow = function (_Component) {
         barWidth = xScale(datum.value);
       }
       var barHeight = rowHeight / 6;
-      var fontSize = this.getFontSize();
+      var fontSize = this.heightForText();
       var circleRadius = this.getCircleRadius();
-      var circleTopAdjustment = 1; // Move the circle slightly down to be flush with text
       var barY = y + rowHeight / 3 + rowHeight / 6;
       var ellipsesXAdjustment = 2; // Move ellipsis slightly right so it has padding
       var ellipses = this.state.showEllipses ? _react2.default.createElement(
@@ -281,7 +280,7 @@ var RadRow = function (_Component) {
         { className: 'rad-row' },
         _react2.default.createElement('circle', {
           cx: 0 + circleRadius,
-          cy: y + circleRadius + circleTopAdjustment,
+          cy: y + circleRadius,
           r: circleRadius,
           fill: this.props.color
         }),
@@ -292,7 +291,7 @@ var RadRow = function (_Component) {
               _this2.nameTextElement = textElement;
             },
             className: 'rad-row-name-text',
-            x: this.spaceForCircle(),
+            x: this.widthForCircle(),
             y: y,
             fontSize: fontSize,
             alignmentBaseline: 'hanging'
@@ -537,16 +536,43 @@ exports.default = function (_ref) {
       groupTitle = _ref.groupTitle;
 
   var colorScale = new _ColorScale2.default(groupedData, colorPalette.colors, colorPalette.noDataColor);
+  var totalValue = groupedData.reduce(function (accumulated, next) {
+    return accumulated += next.value;
+  }, 0);
 
-  return _react2.default.createElement(_RowChart2.default, {
-    rowHeight: 40,
-    width: 300,
-    height: 400,
-    data: groupedData,
-    colorMapper: function colorMapper(value) {
-      return colorScale.getColorFor(value);
-    }
-  });
+  return _react2.default.createElement(
+    'div',
+    { className: 'breakdown-panel row' },
+    _react2.default.createElement(
+      'div',
+      { className: 'left-column column small-4' },
+      _react2.default.createElement(_reactCountup2.default, { className: 'number-countup', start: 0, end: totalValue, duration: 3 }),
+      _react2.default.createElement(
+        'div',
+        { className: 'breakdown-title' },
+        title
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'right-column column small-8' },
+      _react2.default.createElement(
+        'div',
+        { className: 'breakdown-group-title' },
+        'By ',
+        groupTitle
+      ),
+      _react2.default.createElement(_RowChart2.default, {
+        rowHeight: 40,
+        width: 300,
+        height: 400,
+        data: groupedData,
+        colorMapper: function colorMapper(value) {
+          return colorScale.getColorFor(value);
+        }
+      })
+    )
+  );
 };
 
 var _react = require('react');
@@ -560,6 +586,10 @@ var _RowChart2 = _interopRequireDefault(_RowChart);
 var _ColorScale = require('../../util/ColorScale.js');
 
 var _ColorScale2 = _interopRequireDefault(_ColorScale);
+
+var _reactCountup = require('react-countup');
+
+var _reactCountup2 = _interopRequireDefault(_reactCountup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -594,8 +624,9 @@ var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
   title: 'Projects',
   groupTitle: 'Practice Area'
 });
+
 document.addEventListener('DOMContentLoaded', function () {
-  _reactDom2.default.render(pbpaPanel, document.getElementById('row-chart-practice-area'));
+  _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
 });
 
 });

@@ -203,6 +203,13 @@ require.register("classnames/index.js", function(exports, require, module) {
   })();
 });
 
+require.register("countup.js/dist/countUp.min.js", function(exports, require, module) {
+  require = __makeRelativeRequire(require, {}, "countup.js");
+  (function() {
+    !function(a,t){"function"==typeof define&&define.amd?define(t):"object"==typeof exports?module.exports=t(require,exports,module):a.CountUp=t()}(this,function(a,t,e){var n=function(a,t,e,n,i,r){function o(a){a=a.toFixed(c.decimals),a+="";var t,e,n,i;if(t=a.split("."),e=t[0],n=t.length>1?c.options.decimal+t[1]:"",i=/(\d+)(\d{3})/,c.options.useGrouping)for(;i.test(e);)e=e.replace(i,"$1"+c.options.separator+"$2");return c.options.prefix+e+n+c.options.suffix}function l(a,t,e,n){return e*(-Math.pow(2,-10*a/n)+1)*1024/1023+t}function s(a){return"number"==typeof a&&!isNaN(a)}for(var u=0,m=["webkit","moz","ms","o"],d=0;d<m.length&&!window.requestAnimationFrame;++d)window.requestAnimationFrame=window[m[d]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[m[d]+"CancelAnimationFrame"]||window[m[d]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,t){var e=(new Date).getTime(),n=Math.max(0,16-(e-u)),i=window.setTimeout(function(){a(e+n)},n);return u=e+n,i}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var c=this;if(c.version=function(){return"1.8.5"},c.options={useEasing:!0,useGrouping:!0,separator:",",decimal:".",easingFn:l,formattingFn:o,prefix:"",suffix:""},r&&"object"==typeof r)for(var f in c.options)r.hasOwnProperty(f)&&null!==r[f]&&(c.options[f]=r[f]);""===c.options.separator&&(c.options.useGrouping=!1),c.initialize=function(){return!!c.initialized||(c.d="string"==typeof a?document.getElementById(a):a,c.d?(c.startVal=Number(t),c.endVal=Number(e),s(c.startVal)&&s(c.endVal)?(c.decimals=Math.max(0,n||0),c.dec=Math.pow(10,c.decimals),c.duration=1e3*Number(i)||2e3,c.countDown=c.startVal>c.endVal,c.frameVal=c.startVal,c.initialized=!0,!0):(console.error("[CountUp] startVal or endVal is not a number",c.startVal,c.endVal),!1)):(console.error("[CountUp] target is null or undefined",c.d),!1))},c.printValue=function(a){var t=c.options.formattingFn(a);"INPUT"===c.d.tagName?this.d.value=t:"text"===c.d.tagName||"tspan"===c.d.tagName?this.d.textContent=t:this.d.innerHTML=t},c.count=function(a){c.startTime||(c.startTime=a),c.timestamp=a;var t=a-c.startTime;c.remaining=c.duration-t,c.options.useEasing?c.countDown?c.frameVal=c.startVal-c.options.easingFn(t,0,c.startVal-c.endVal,c.duration):c.frameVal=c.options.easingFn(t,c.startVal,c.endVal-c.startVal,c.duration):c.countDown?c.frameVal=c.startVal-(c.startVal-c.endVal)*(t/c.duration):c.frameVal=c.startVal+(c.endVal-c.startVal)*(t/c.duration),c.countDown?c.frameVal=c.frameVal<c.endVal?c.endVal:c.frameVal:c.frameVal=c.frameVal>c.endVal?c.endVal:c.frameVal,c.frameVal=Math.round(c.frameVal*c.dec)/c.dec,c.printValue(c.frameVal),t<c.duration?c.rAF=requestAnimationFrame(c.count):c.callback&&c.callback()},c.start=function(a){c.initialize()&&(c.callback=a,c.rAF=requestAnimationFrame(c.count))},c.pauseResume=function(){c.paused?(c.paused=!1,delete c.startTime,c.duration=c.remaining,c.startVal=c.frameVal,requestAnimationFrame(c.count)):(c.paused=!0,cancelAnimationFrame(c.rAF))},c.reset=function(){c.paused=!1,delete c.startTime,c.initialized=!1,c.initialize()&&(cancelAnimationFrame(c.rAF),c.printValue(c.startVal))},c.update=function(a){c.initialize()&&a!==c.frameVal&&(cancelAnimationFrame(c.rAF),c.paused=!1,delete c.startTime,c.startVal=c.frameVal,c.endVal=Number(a),s(c.endVal)?(c.countDown=c.startVal>c.endVal,c.rAF=requestAnimationFrame(c.count)):console.error("[CountUp] update() - new endVal is not a number",a))},c.initialize()&&c.printValue(c.startVal)};return n});
+  })();
+});
+
 require.register("create-react-class/factory.js", function(exports, require, module) {
   require = __makeRelativeRequire(require, {"transform":["loose-envify"]}, "create-react-class");
   (function() {
@@ -12865,6 +12872,157 @@ require.register("prop-types/lib/ReactPropTypesSecret.js", function(exports, req
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
+  })();
+});
+
+require.register("react-countup/build/index.js", function(exports, require, module) {
+  require = __makeRelativeRequire(require, {}, "react-countup");
+  (function() {
+    'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.startAnimation = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _countup = require('countup.js');
+
+var _countup2 = _interopRequireDefault(_countup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var startAnimation = exports.startAnimation = function startAnimation(component) {
+  if (component && component.spanElement) {
+    var _component$props = component.props,
+        _decimal = _component$props.decimal,
+        _decimals = _component$props.decimals,
+        _duration = _component$props.duration,
+        _easingFn = _component$props.easingFn,
+        _end = _component$props.end,
+        _formattingFn = _component$props.formattingFn,
+        _onComplete = _component$props.onComplete,
+        _onStart = _component$props.onStart,
+        _prefix = _component$props.prefix,
+        _separator = _component$props.separator,
+        _start = _component$props.start,
+        _suffix = _component$props.suffix,
+        _useEasing = _component$props.useEasing,
+        _useGrouping = _component$props.useGrouping;
+
+
+    var countupInstance = new _countup2.default(component.spanElement, _start, _end, _decimals, _duration, {
+      decimal: _decimal,
+      easingFn: _easingFn,
+      formattingFn: _formattingFn,
+      separator: _separator,
+      prefix: _prefix,
+      suffix: _suffix,
+      useEasing: _useEasing,
+      useGrouping: _useGrouping
+    });
+
+    if (typeof _onStart === 'function') {
+      _onStart();
+    }
+
+    countupInstance.start(_onComplete);
+  } else {
+    throw new Error('You need to pass the CountUp component as an argument!\neg. this.myCountUp.startAnimation(this.myCountUp);');
+  }
+};
+
+/**
+ * Component
+ */
+
+var CountUp = function (_Component) {
+  _inherits(CountUp, _Component);
+
+  function CountUp() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, CountUp);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CountUp.__proto__ || Object.getPrototypeOf(CountUp)).call.apply(_ref, [this].concat(args))), _this), _this.spanElement = null, _this.refSpan = function (span) {
+      _this.spanElement = span;
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(CountUp, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      startAnimation(this);
+    }
+  }, {
+    key: 'shouldComponentUpdate',
+    value: function shouldComponentUpdate(nextProps) {
+      var hasCertainPropsChanged = this.props.duration !== nextProps.duration || this.props.end !== nextProps.end || this.props.start !== nextProps.start;
+
+      return nextProps.redraw || hasCertainPropsChanged;
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      startAnimation(this);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          className = _props.className,
+          start = _props.start,
+          style = _props.style;
+
+
+      return _react2.default.createElement(
+        'span',
+        { className: className, style: style, ref: this.refSpan },
+        start
+      );
+    }
+  }]);
+
+  return CountUp;
+}(_react.Component);
+
+CountUp.defaultProps = {
+  className: undefined,
+  decimal: '.',
+  decimals: 0,
+  duration: 3,
+  easingFn: null,
+  end: 100,
+  formattingFn: null,
+  onComplete: undefined,
+  onStart: undefined,
+  prefix: '',
+  separator: ',',
+  start: 0,
+  suffix: '',
+  redraw: false,
+  style: undefined,
+  useEasing: true,
+  useGrouping: false
+};
+exports.default = CountUp;
   })();
 });
 
@@ -32082,9 +32240,11 @@ require.register("react/react.js", function(exports, require, module) {
 module.exports = require('./lib/React');
   })();
 });
+require.alias("countup.js/dist/countUp.min.js", "countup.js");
 require.alias("d3/d3.js", "d3");
 require.alias("process/browser.js", "process");
-require.alias("react/react.js", "react");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("react/react.js", "react");
+require.alias("react-countup/build/index.js", "react-countup");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
 

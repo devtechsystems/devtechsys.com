@@ -28,19 +28,19 @@ export default class RadRow extends Component {
   }
 
   availableWidthForName() {
-    return (this.props.chartWidth - 53) - this.spaceForCircle()
+    return (this.props.chartWidth - 53) - this.widthForCircle()
   }
 
-  spaceForCircle() {
+  widthForCircle() {
     return (this.getCircleRadius() * 2) + this.props.circlePaddingRight
   }
 
-  getFontSize() {
+  heightForText() {
     return this.props.rowHeight / 3
   }
 
   getCircleRadius() {
-    return this.getFontSize() / 2
+    return this.heightForText() / 2
   }
 
   render() {
@@ -53,9 +53,8 @@ export default class RadRow extends Component {
       barWidth = xScale(datum.value)
     }
     const barHeight = rowHeight / 6
-    const fontSize = this.getFontSize()
+    const fontSize = this.heightForText()
     const circleRadius = this.getCircleRadius()
-    const circleTopAdjustment = 1 // Move the circle slightly down to be flush with text
     const barY = y + (rowHeight / 3) + (rowHeight / 6)
     const ellipsesXAdjustment = 2 // Move ellipsis slightly right so it has padding
     const ellipses = (this.state.showEllipses) ?
@@ -77,14 +76,14 @@ export default class RadRow extends Component {
       <g className="rad-row">
         <circle
           cx={0 + circleRadius}
-          cy={y + circleRadius + circleTopAdjustment}
+          cy={y + circleRadius}
           r={circleRadius}
           fill={this.props.color}
         />
         <text
           ref={(textElement) => { this.nameTextElement = textElement }}
           className="rad-row-name-text"
-          x={this.spaceForCircle()}
+          x={this.widthForCircle()}
           y={y}
           fontSize={fontSize}
           alignmentBaseline="hanging"

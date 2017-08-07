@@ -36,6 +36,7 @@
     "prop-types": "^15.5.10",
     "qd-formatters": "git+https://github.com/QuickDash/qd-formatters.git",
     "react": "^15.6.1",
+    "react-countup": "^2.1.1",
     "react-dom": "^15.6.1"
   }
 }

@@ -20,9 +20,10 @@ const pbpaPanel = (
     groupTitle='Practice Area'
   />
 )
+
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     pbpaPanel,
-    document.getElementById('row-chart-practice-area')
+    document.getElementById('projects-by-practice-area')
   )
 })

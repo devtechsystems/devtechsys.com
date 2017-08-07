@@ -13,7 +13,8 @@
     }
 
     text {
-      font-size:14px;
+      font-size: .75em;
+      font-weight: 600;
       &.rad-row-name-text {
         fill:#2b2b2b;
         &:hover {
@@ -27,6 +28,33 @@
           fill: #BD102B;
         }
       }
+    }
+  }
+}
+
+// Breakdown panel that includes the Countup number, pie, and row charts
+.breakdown-panel {
+  .left-column {
+    .number-countup {
+      font-size: 3.5em;
+      font-weight: 600;
+      color: #008fc2;
+      line-height: .75;
+    }
+
+    .breakdown-title {
+      color: #0c94c5;
+      font-size: .8em;
+      font-weight: 600;
+      margin-top: -6px;
+    }
+  }
+
+  .right-column {
+    .breakdown-group-title {
+      font-size: .7em;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
   }
 }
