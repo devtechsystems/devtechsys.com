@@ -148,7 +148,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("assets/js/projects/components/DefaultRow.js", function(exports, require, module) {
+require.register("assets/js/projects/components/BreakdownPanel/RowChart/DefaultRow.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -370,7 +370,7 @@ RadRow.defaultProps = {
 
 });
 
-require.register("assets/js/projects/components/RowChart.js", function(exports, require, module) {
+require.register("assets/js/projects/components/BreakdownPanel/RowChart/RowChart.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -503,7 +503,69 @@ RowChart.defaultProps = {
 
 });
 
-require.register("assets/js/projects/entry.js", function(exports, require, module) {
+require.register("assets/js/projects/components/BreakdownPanel/RowChart/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _RowChart = require('./RowChart');
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_RowChart).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
+;require.register("assets/js/projects/components/BreakdownPanel/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var groupedData = _ref.groupedData,
+      colorPalette = _ref.colorPalette,
+      title = _ref.title,
+      groupTitle = _ref.groupTitle;
+
+  var colorScale = new _ColorScale2.default(groupedData, colorPalette.colors, colorPalette.noDataColor);
+
+  return _react2.default.createElement(_RowChart2.default, {
+    rowHeight: 40,
+    width: 300,
+    height: 400,
+    data: groupedData,
+    colorMapper: function colorMapper(value) {
+      return colorScale.getColorFor(value);
+    }
+  });
+};
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _RowChart = require('./RowChart');
+
+var _RowChart2 = _interopRequireDefault(_RowChart);
+
+var _ColorScale = require('../../util/ColorScale.js');
+
+var _ColorScale2 = _interopRequireDefault(_ColorScale);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
+;require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
 var _react = require('react');
@@ -514,33 +576,40 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _RowChart = require('./components/RowChart.js');
+var _BreakdownPanel = require('./components/BreakdownPanel');
 
-var _RowChart2 = _interopRequireDefault(_RowChart);
+var _BreakdownPanel2 = _interopRequireDefault(_BreakdownPanel);
 
-var _ColorScale = require('./util/ColorScale.js');
+var _ColorPalette = require('./util/ColorPalette');
 
-var _ColorScale2 = _interopRequireDefault(_ColorScale);
+var _ColorPalette2 = _interopRequireDefault(_ColorPalette);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var colorPallete = ['#62AFD1', '#3D98C3', '#297DA6', '#1F5D7B', '#173F53', '#0E242F'];
-var noDataColor = '#87C6DD';
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
-var pbpaColorScale = new _ColorScale2.default(projectsByPracticeArea, colorPallete, noDataColor);
 
-var pbpaRowChart = _react2.default.createElement(_RowChart2.default, {
-  rowHeight: 40,
-  width: 300,
-  height: 400,
-  data: projectsByPracticeArea,
-  colorMapper: function colorMapper(value) {
-    return pbpaColorScale.getColorFor(value);
-  }
+var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+  groupedData: projectsByPracticeArea,
+  colorPalette: _ColorPalette2.default,
+  title: 'Projects',
+  groupTitle: 'Practice Area'
 });
 document.addEventListener('DOMContentLoaded', function () {
-  _reactDom2.default.render(pbpaRowChart, document.getElementById('row-chart-practice-area'));
+  _reactDom2.default.render(pbpaPanel, document.getElementById('row-chart-practice-area'));
 });
+
+});
+
+require.register("assets/js/projects/util/ColorPalette.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  colors: ['#62AFD1', '#3D98C3', '#297DA6', '#1F5D7B', '#173F53', '#0E242F'],
+  noDataColor: '#87C6DD'
+};
 
 });
 
