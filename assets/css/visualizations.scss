@@ -1,17 +1,6 @@
 ---
 ---
 
-// Default row
-g.basic-row {
-  rect {
-    fill: #006BBB;
-  }
-
-  text {
-    color: white;
-  }
-}
-
 // Rad row
 .row-chart {
   g.rad-row {
@@ -23,10 +12,6 @@ g.basic-row {
       fill: white;
     }
 
-    rect.rad-row-bar {
-      fill: #0067b9;
-    }
-
     text {
       font-size:14px;
       &.rad-row-name-text {
@@ -36,7 +21,7 @@ g.basic-row {
         }
       }
       &.rad-row-value-text {
-        fill: #0067b9;
+        fill: #848484;
 
         &.rad-row-negative {
           fill: #BD102B;

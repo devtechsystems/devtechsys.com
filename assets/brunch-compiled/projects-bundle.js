@@ -282,7 +282,8 @@ var RadRow = function (_Component) {
         _react2.default.createElement('circle', {
           cx: 0 + circleRadius,
           cy: y + circleRadius + circleTopAdjustment,
-          r: circleRadius
+          r: circleRadius,
+          fill: this.props.color
         }),
         _react2.default.createElement(
           'text',
@@ -333,7 +334,8 @@ var RadRow = function (_Component) {
           className: 'rad-row-bar',
           y: barY,
           width: barWidth,
-          height: barHeight
+          height: barHeight,
+          fill: this.props.color
         })
       );
     }
@@ -357,7 +359,8 @@ RadRow.propTypes = {
     name: _propTypes2.default.string,
     value: _propTypes2.default.number
   })),
-  xScale: _propTypes2.default.func
+  xScale: _propTypes2.default.func,
+  color: _propTypes2.default.string
 };
 
 RadRow.defaultProps = {
@@ -453,7 +456,8 @@ var RowChart = function (_Component) {
           chartWidth: _this2.svgWidth(),
           datum: d,
           data: _this2.props.data,
-          xScale: _this2.xScale()
+          xScale: _this2.xScale(),
+          color: _this2.props.colorMapper(d.value)
         });
       });
 
@@ -489,7 +493,8 @@ RowChart.propTypes = {
     value: _propTypes2.default.number
   })),
   row: _propTypes2.default.func,
-  rowHeight: _propTypes2.default.number
+  rowHeight: _propTypes2.default.number,
+  colorMapper: _propTypes2.default.func
 };
 
 RowChart.defaultProps = {
@@ -513,18 +518,115 @@ var _RowChart = require('./components/RowChart.js');
 
 var _RowChart2 = _interopRequireDefault(_RowChart);
 
+var _ColorScale = require('./util/ColorScale.js');
+
+var _ColorScale2 = _interopRequireDefault(_ColorScale);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var colorPallete = ['rgb(112, 189, 219)', 'rgb(78, 166, 199)', 'rgb(46, 143, 180)', 'rgb(33, 111, 141)', 'rgb(28, 81, 103)', 'rgb(15, 45, 61)'];
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
+var pbpaColorScale = new _ColorScale2.default(projectsByPracticeArea, colorPallete);
+
 var pbpaRowChart = _react2.default.createElement(_RowChart2.default, {
   rowHeight: 40,
   width: 300,
   height: 400,
-  data: projectsByPracticeArea
+  data: projectsByPracticeArea,
+  colorMapper: function colorMapper(value) {
+    return pbpaColorScale.getColorFor(value);
+  }
 });
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(pbpaRowChart, document.getElementById('row-chart-practice-area'));
 });
+
+});
+
+require.register("assets/js/projects/util/ColorScale.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d = require('d3');
+
+var _d2 = _interopRequireDefault(_d);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ColorScale = function () {
+  function ColorScale(data, colors) {
+    var noDataColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "#ddd";
+    var valueAccessorFunc = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function (d) {
+      return d.value;
+    };
+    var scaleType = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 'quantize';
+    var customDomain = arguments[5];
+
+    _classCallCheck(this, ColorScale);
+
+    this.data = data;
+    this.colors = colors;
+    this.noDataColor = noDataColor;
+    this.valueAccessorFunc = valueAccessorFunc;
+    this.scaleType = scaleType;
+    this.customDomain = customDomain;
+
+    // Setup the scale based on scale type
+    if (scaleType === 'quantize') {
+      // Calculate the colors based on a linear quantize domain
+      this.scale = _d2.default.scale.quantize();
+    } else if (scaleType === "quantile") {
+      // Calculate the colors by n domain sections(similar to quartiles but of n sections)
+      this.scale = _d2.default.scale.quantile();
+    }
+    this.scale.domain(this.calculateDomain()).range(colors);
+  }
+
+  _createClass(ColorScale, [{
+    key: 'calculateDomain',
+    value: function calculateDomain() {
+      if (this.customDomain) {
+        return this.customDomain;
+      } else if (this.scaleType === 'quantize') {
+        // Standard min/max domain for linear quantize scale
+        return [_d2.default.min(this.data, this.valueAccessorFunc), _d2.default.max(this.data, this.valueAccessorFunc)];
+      } else if (this.scaleType === 'quantile') {
+        // If the user didn't specify a list of quantiles using the customDomain
+        // then use the data itself as the quantiles
+        return this.data.map(this.valueAccessorFunc);
+      }
+    }
+  }, {
+    key: 'setDomain',
+    value: function setDomain() {
+      this.scale.domain(this.calculateDomain());
+    }
+  }, {
+    key: 'setData',
+    value: function setData(data) {
+      this.data = data;
+    }
+  }, {
+    key: 'getColorFor',
+    value: function getColorFor(value) {
+      if (value === undefined) {
+        return this.noDataColor;
+      }
+      return this.scale(value);
+    }
+  }]);
+
+  return ColorScale;
+}();
+
+exports.default = ColorScale;
 
 });
 

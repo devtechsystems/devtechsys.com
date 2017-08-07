@@ -79,6 +79,7 @@ export default class RadRow extends Component {
           cx={0 + circleRadius}
           cy={y + circleRadius + circleTopAdjustment}
           r={circleRadius}
+          fill={this.props.color}
         />
         <text
           ref={(textElement) => { this.nameTextElement = textElement }}
@@ -120,6 +121,7 @@ export default class RadRow extends Component {
           y={barY}
           width={barWidth}
           height={barHeight}
+          fill={this.props.color}
         />
       </g>
     )
@@ -138,7 +140,8 @@ RadRow.propTypes = {
     name: PropTypes.string,
     value: PropTypes.number
   })),
-  xScale: PropTypes.func
+  xScale: PropTypes.func,
+  color: PropTypes.string
 }
 
 RadRow.defaultProps = {
