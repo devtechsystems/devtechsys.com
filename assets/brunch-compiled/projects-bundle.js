@@ -524,9 +524,10 @@ var _ColorScale2 = _interopRequireDefault(_ColorScale);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var colorPallete = ['rgb(112, 189, 219)', 'rgb(78, 166, 199)', 'rgb(46, 143, 180)', 'rgb(33, 111, 141)', 'rgb(28, 81, 103)', 'rgb(15, 45, 61)'];
+var colorPallete = ['#62AFD1', '#3D98C3', '#297DA6', '#1F5D7B', '#173F53', '#0E242F'];
+var noDataColor = '#87C6DD';
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
-var pbpaColorScale = new _ColorScale2.default(projectsByPracticeArea, colorPallete);
+var pbpaColorScale = new _ColorScale2.default(projectsByPracticeArea, colorPallete, noDataColor);
 
 var pbpaRowChart = _react2.default.createElement(_RowChart2.default, {
   rowHeight: 40,
