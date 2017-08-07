@@ -583,8 +583,8 @@ exports.default = function (_ref) {
       ),
       _react2.default.createElement(_RowChart2.default, {
         rowHeight: 40,
-        width: 300,
-        height: 400,
+        width: 200,
+        height: 300,
         data: groupedData,
         colorMapper: function colorMapper(value) {
           return colorScale.getColorFor(value);
@@ -646,8 +646,18 @@ var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
   groupTitle: 'Practice Area'
 });
 
+var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
+var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+  groupedData: projectsByRegion,
+  colorPalette: _ColorPalette2.default,
+  title: 'Countries',
+  groupTitle: 'Region'
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
+
+  _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
 });
 
 });

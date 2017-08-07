@@ -21,9 +21,33 @@ const pbpaPanel = (
   />
 )
 
+
+
+const projectsByRegion = [
+  { name: 'East Asia & Oceania', value: 184 },
+  { name: 'Middle East & North Africa', value: 123 },
+  { name: 'South & Central Asia', value: 85 },
+  { name: 'Sub-Saharan Africa', value: 37 },
+  { name: 'Western Hemisphere', value: 12 },
+  { name: 'World', value: 9 }
+]
+const pbrPanel = (
+  <BreakDownPanel
+    groupedData={projectsByRegion}
+    colorPalette={ColorPalette}
+    title='Countries'
+    groupTitle='Region'
+  />
+)
+
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     pbpaPanel,
     document.getElementById('projects-by-practice-area')
+  )
+
+  ReactDOM.render(
+    pbrPanel,
+    document.getElementById('projects-by-region')
   )
 })

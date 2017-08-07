@@ -31,8 +31,8 @@ export default function({ groupedData, colorPalette, title, groupTitle }) {
         <div className='breakdown-group-title'>By {groupTitle}</div>
         <RowChart
           rowHeight={40}
-          width={300}
-          height={400}
+          width={200}
+          height={300}
           data={groupedData}
           colorMapper={(value) => colorScale.getColorFor(value)}
         />
