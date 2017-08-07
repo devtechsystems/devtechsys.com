@@ -551,6 +551,25 @@ exports.default = function (_ref) {
         'div',
         { className: 'breakdown-title' },
         title
+      ),
+      _react2.default.createElement(
+        _recharts.PieChart,
+        { width: 100, height: 100 },
+        _react2.default.createElement(
+          _recharts.Pie,
+          {
+            data: groupedData,
+            innerRadius: 20,
+            outerRadius: 50,
+            cx: '50%',
+            cy: '50%',
+            startAngle: 90,
+            endAngle: -270
+          },
+          groupedData.map(function (element, index) {
+            return _react2.default.createElement(_recharts.Cell, { key: element.name, fill: colorScale.getColorFor(groupedData[index].value) });
+          })
+        )
       )
     ),
     _react2.default.createElement(
@@ -590,6 +609,8 @@ var _ColorScale2 = _interopRequireDefault(_ColorScale);
 var _reactCountup = require('react-countup');
 
 var _reactCountup2 = _interopRequireDefault(_reactCountup);
+
+var _recharts = require('recharts');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -731,6 +752,8 @@ exports.default = ColorScale;
 
 });
 
+require.alias("buffer/index.js", "buffer");
+require.alias("events/events.js", "events");
 require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
