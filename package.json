@@ -31,6 +31,10 @@
     "uglify-js-brunch": "^2.10.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
+    "d3": "^3.5.17",
+    "prop-types": "^15.5.10",
+    "qd-formatters": "git+https://github.com/QuickDash/qd-formatters.git",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }

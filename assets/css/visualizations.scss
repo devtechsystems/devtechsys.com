@@ -1,0 +1,47 @@
+---
+---
+
+// Default row
+g.basic-row {
+  rect {
+    fill: #006BBB;
+  }
+
+  text {
+    color: white;
+  }
+}
+
+// Rad row
+.row-chart {
+  g.rad-row {
+    rect.rad-row-background {
+      fill: #edeeee;
+    }
+
+    rect.rad-row-value-background {
+      fill: white;
+    }
+
+    rect.rad-row-bar {
+      fill: #0067b9;
+    }
+
+    text {
+      font-size:14px;
+      &.rad-row-name-text {
+        fill:#2b2b2b;
+        &:hover {
+          fill: #0067b9;
+        }
+      }
+      &.rad-row-value-text {
+        fill: #0067b9;
+
+        &.rad-row-negative {
+          fill: #BD102B;
+        }
+      }
+    }
+  }
+}

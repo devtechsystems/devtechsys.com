@@ -148,6 +148,333 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
+require.register("assets/js/projects/components/DefaultRow.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d = require('d3');
+
+var _d2 = _interopRequireDefault(_d);
+
+var _qdFormatters = require('qd-formatters');
+
+var _qdFormatters2 = _interopRequireDefault(_qdFormatters);
+
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var formatters = (0, _qdFormatters2.default)(_d2.default);
+
+var RadRow = function (_Component) {
+  _inherits(RadRow, _Component);
+
+  function RadRow(props) {
+    _classCallCheck(this, RadRow);
+
+    var _this = _possibleConstructorReturn(this, (RadRow.__proto__ || Object.getPrototypeOf(RadRow)).call(this, props));
+
+    _this.state = {
+      showEllipses: false
+    };
+    return _this;
+  }
+
+  _createClass(RadRow, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var textWidth = this.nameTextElement.getBoundingClientRect().width;
+      if (textWidth > this.availableWidthForName() && !this.state.showEllipses) {
+        this.setState({ showEllipses: true });
+      }
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      var textWidth = this.nameTextElement.getBoundingClientRect().width;
+      if (textWidth > this.availableWidthForName() && !this.state.showEllipses) {
+        this.setState({ showEllipses: true });
+      } else if (textWidth < this.availableWidthForName() && this.state.showEllipses) {
+        this.setState({ showEllipses: false });
+      }
+    }
+  }, {
+    key: 'availableWidthForName',
+    value: function availableWidthForName() {
+      return this.props.chartWidth - 53;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          y = _props.y,
+          rowHeight = _props.rowHeight,
+          chartWidth = _props.chartWidth,
+          datum = _props.datum,
+          data = _props.data,
+          xScale = _props.xScale;
+
+      var barWidth = void 0;
+      var textValueClassNames = (0, _classnames2.default)('rad-row-value-text', { 'rad-row-negative': datum.value < 0 });
+      if (datum.value < 0) {
+        barWidth = 0;
+      } else {
+        barWidth = xScale(datum.value);
+      }
+      var barHeight = rowHeight * 0.35;
+      var fontSize = barHeight * 0.9;
+      var textY = y + fontSize;
+      var barY = y + barHeight;
+      var availableWidthForName = chartWidth - 53;
+      var ellipses = this.state.showEllipses ? _react2.default.createElement(
+        'text',
+        {
+          className: 'rad-row-name-ellipses',
+          x: availableWidthForName,
+          y: textY,
+          fontSize: fontSize
+        },
+        _react2.default.createElement(
+          'title',
+          null,
+          datum.name
+        ),
+        '...'
+      ) : '';
+
+      return _react2.default.createElement(
+        'g',
+        { className: 'rad-row' },
+        _react2.default.createElement(
+          'text',
+          {
+            ref: function ref(textElement) {
+              _this2.nameTextElement = textElement;
+            },
+            className: 'rad-row-name-text',
+            y: textY,
+            fontSize: fontSize
+          },
+          _react2.default.createElement(
+            'title',
+            null,
+            datum.name
+          ),
+          datum.name
+        ),
+        _react2.default.createElement('rect', {
+          className: 'rad-row-value-background',
+          x: chartWidth - 54,
+          y: y,
+          width: 54,
+          height: rowHeight - barHeight
+        }),
+        ellipses,
+        _react2.default.createElement(
+          'text',
+          {
+            className: textValueClassNames,
+            x: chartWidth,
+            y: textY,
+            fontSize: fontSize,
+            textAnchor: 'end'
+          },
+          '$',
+          formatters.bigNumberFormat(datum.value)
+        ),
+        _react2.default.createElement('rect', {
+          className: 'rad-row-background',
+          y: barY,
+          width: chartWidth,
+          height: barHeight
+        }),
+        _react2.default.createElement('rect', {
+          className: 'rad-row-bar',
+          y: barY,
+          width: barWidth,
+          height: barHeight
+        })
+      );
+    }
+  }]);
+
+  return RadRow;
+}(_react.Component);
+
+exports.default = RadRow;
+
+
+RadRow.propTypes = {
+  y: _propTypes2.default.number,
+  chartWidth: _propTypes2.default.number,
+  rowHeight: _propTypes2.default.number,
+  datum: _propTypes2.default.shape({
+    name: _propTypes2.default.string,
+    value: _propTypes2.default.number
+  }),
+  data: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+    name: _propTypes2.default.string,
+    value: _propTypes2.default.number
+  })),
+  xScale: _propTypes2.default.func
+};
+
+});
+
+require.register("assets/js/projects/components/RowChart.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d = require('d3');
+
+var _d2 = _interopRequireDefault(_d);
+
+var _DefaultRow = require('./DefaultRow.js');
+
+var _DefaultRow2 = _interopRequireDefault(_DefaultRow);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RowChart = function (_Component) {
+  _inherits(RowChart, _Component);
+
+  function RowChart() {
+    _classCallCheck(this, RowChart);
+
+    return _possibleConstructorReturn(this, (RowChart.__proto__ || Object.getPrototypeOf(RowChart)).apply(this, arguments));
+  }
+
+  _createClass(RowChart, [{
+    key: 'rowHeight',
+    value: function rowHeight() {
+      if (this.props.rowHeight) return this.props.rowHeight;
+
+      return this.props.height / this.props.data.length;
+    }
+  }, {
+    key: 'svgHeight',
+    value: function svgHeight() {
+      return this.rowHeight() * this.props.data.length;
+    }
+  }, {
+    key: 'svgWidth',
+    value: function svgWidth() {
+      var scrollbarWidth = 18;
+      if (this.svgHeight() >= this.props.height) return this.props.width - scrollbarWidth;
+
+      return this.props.width;
+    }
+  }, {
+    key: 'xScale',
+    value: function xScale() {
+      var maxValue = _d2.default.max(this.props.data, function (d) {
+        return d.value;
+      });
+      return _d2.default.scale.linear().domain([0, maxValue]).range([0, this.props.width]);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var rowHeight = this.rowHeight();
+      var rows = this.props.data.map(function (d, i) {
+        var y = rowHeight * i;
+        var Row = _this2.props.row;
+        return _react2.default.createElement(Row, {
+          key: d.name,
+          y: y,
+          rowHeight: rowHeight,
+          chartWidth: _this2.svgWidth(),
+          datum: d,
+          data: _this2.props.data,
+          xScale: _this2.xScale()
+        });
+      });
+
+      var containerStyles = {
+        width: this.props.width,
+        height: this.props.height,
+        overflow: 'auto'
+      };
+      return _react2.default.createElement(
+        'div',
+        { className: 'row-chart ' + (this.props.className || ''), style: containerStyles },
+        _react2.default.createElement(
+          'svg',
+          { width: this.svgWidth(), height: this.svgHeight() },
+          rows
+        )
+      );
+    }
+  }]);
+
+  return RowChart;
+}(_react.Component);
+
+exports.default = RowChart;
+
+
+RowChart.propTypes = {
+  className: _propTypes2.default.string,
+  width: _propTypes2.default.number,
+  height: _propTypes2.default.number,
+  data: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+    name: _propTypes2.default.string,
+    value: _propTypes2.default.number
+  })),
+  row: _propTypes2.default.func,
+  rowHeight: _propTypes2.default.number
+};
+
+RowChart.defaultProps = {
+  row: _DefaultRow2.default
+};
+
+});
+
 require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
@@ -159,16 +486,21 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _RowChart = require('./components/RowChart.js');
+
+var _RowChart2 = _interopRequireDefault(_RowChart);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
+var pbpaRowChart = _react2.default.createElement(_RowChart2.default, {
+  rowHeight: 40,
+  width: 300,
+  height: 400,
+  data: projectsByPracticeArea
+});
 document.addEventListener('DOMContentLoaded', function () {
-  _reactDom2.default.render(_react2.default.createElement(
-    'div',
-    null,
-    'asdd'
-  ), document.getElementById('row-chart-practice-area'));
-
-  console.log("HIHII");
+  _reactDom2.default.render(pbpaRowChart, document.getElementById('row-chart-practice-area'));
 });
 
 });

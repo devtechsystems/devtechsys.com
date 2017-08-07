@@ -13,13 +13,13 @@ exports.paths = {
 exports.files = {
   javascripts: {
     joinTo: {
-      'projects-bundle.js': 'assets/js/projects/*.js',
+      'projects-bundle.js': 'assets/js/projects/**/*.js',
       'node-modules.js': /node_modules/
     }
   },
   stylesheets: {
     joinTo: {
-      'visualizations.css': 'assets/js/projects/*.css'
+      'visualizations.css': 'assets/js/projects/*.scss'
     }
   }
 };
