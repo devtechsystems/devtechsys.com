@@ -616,6 +616,31 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 });
 
+;require.register("assets/js/projects/components/StackedBarChart.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  return _react2.default.createElement(
+    'div',
+    null,
+    'stacked chart here'
+  );
+};
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _recharts = require('recharts');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
 ;require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
@@ -630,6 +655,10 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 var _BreakdownPanel = require('./components/BreakdownPanel');
 
 var _BreakdownPanel2 = _interopRequireDefault(_BreakdownPanel);
+
+var _StackedBarChart = require('./components/StackedBarChart');
+
+var _StackedBarChart2 = _interopRequireDefault(_StackedBarChart);
 
 var _ColorPalette = require('./util/ColorPalette');
 
@@ -654,10 +683,19 @@ var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
   groupTitle: 'Region'
 });
 
+var contractValue = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
+
+var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
+  data: contractValue,
+  colorPalette: _ColorPalette2.default
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
 
   _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
+
+  _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 });
 
 });
