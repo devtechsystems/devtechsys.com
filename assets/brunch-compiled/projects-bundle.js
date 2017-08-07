@@ -169,10 +169,6 @@ var _d = require('d3');
 
 var _d2 = _interopRequireDefault(_d);
 
-var _qdFormatters = require('qd-formatters');
-
-var _qdFormatters2 = _interopRequireDefault(_qdFormatters);
-
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -184,8 +180,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var formatters = (0, _qdFormatters2.default)(_d2.default);
 
 var RadRow = function (_Component) {
   _inherits(RadRow, _Component);
@@ -222,7 +216,22 @@ var RadRow = function (_Component) {
   }, {
     key: 'availableWidthForName',
     value: function availableWidthForName() {
-      return this.props.chartWidth - 53;
+      return this.props.chartWidth - 53 - this.spaceForCircle();
+    }
+  }, {
+    key: 'spaceForCircle',
+    value: function spaceForCircle() {
+      return this.getCircleRadius() * 2 + this.props.circlePaddingRight;
+    }
+  }, {
+    key: 'getFontSize',
+    value: function getFontSize() {
+      return this.props.rowHeight / 3;
+    }
+  }, {
+    key: 'getCircleRadius',
+    value: function getCircleRadius() {
+      return this.getFontSize() / 2;
     }
   }, {
     key: 'render',
@@ -244,18 +253,20 @@ var RadRow = function (_Component) {
       } else {
         barWidth = xScale(datum.value);
       }
-      var barHeight = rowHeight * 0.35;
-      var fontSize = barHeight * 0.9;
-      var textY = y + fontSize;
-      var barY = y + barHeight;
-      var availableWidthForName = chartWidth - 53;
+      var barHeight = rowHeight / 6;
+      var fontSize = this.getFontSize();
+      var circleRadius = this.getCircleRadius();
+      var circleTopAdjustment = 1; // Move the circle slightly down to be flush with text
+      var barY = y + rowHeight / 3 + rowHeight / 6;
+      var ellipsesXAdjustment = 2; // Move ellipsis slightly right so it has padding
       var ellipses = this.state.showEllipses ? _react2.default.createElement(
         'text',
         {
           className: 'rad-row-name-ellipses',
-          x: availableWidthForName,
-          y: textY,
-          fontSize: fontSize
+          x: chartWidth - this.props.spaceForValueText + ellipsesXAdjustment,
+          y: y,
+          fontSize: fontSize,
+          alignmentBaseline: 'hanging'
         },
         _react2.default.createElement(
           'title',
@@ -268,6 +279,11 @@ var RadRow = function (_Component) {
       return _react2.default.createElement(
         'g',
         { className: 'rad-row' },
+        _react2.default.createElement('circle', {
+          cx: 0 + circleRadius,
+          cy: y + circleRadius + circleTopAdjustment,
+          r: circleRadius
+        }),
         _react2.default.createElement(
           'text',
           {
@@ -275,8 +291,10 @@ var RadRow = function (_Component) {
               _this2.nameTextElement = textElement;
             },
             className: 'rad-row-name-text',
-            y: textY,
-            fontSize: fontSize
+            x: this.spaceForCircle(),
+            y: y,
+            fontSize: fontSize,
+            alignmentBaseline: 'hanging'
           },
           _react2.default.createElement(
             'title',
@@ -287,9 +305,9 @@ var RadRow = function (_Component) {
         ),
         _react2.default.createElement('rect', {
           className: 'rad-row-value-background',
-          x: chartWidth - 54,
+          x: chartWidth - this.props.spaceForValueText,
           y: y,
-          width: 54,
+          width: this.props.spaceForValueText,
           height: rowHeight - barHeight
         }),
         ellipses,
@@ -298,12 +316,12 @@ var RadRow = function (_Component) {
           {
             className: textValueClassNames,
             x: chartWidth,
-            y: textY,
+            y: y,
             fontSize: fontSize,
-            textAnchor: 'end'
+            textAnchor: 'end',
+            alignmentBaseline: 'hanging'
           },
-          '$',
-          formatters.bigNumberFormat(datum.value)
+          datum.value
         ),
         _react2.default.createElement('rect', {
           className: 'rad-row-background',
@@ -340,6 +358,11 @@ RadRow.propTypes = {
     value: _propTypes2.default.number
   })),
   xScale: _propTypes2.default.func
+};
+
+RadRow.defaultProps = {
+  circlePaddingRight: 8,
+  spaceForValueText: 54
 };
 
 });

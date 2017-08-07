@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import d3 from 'd3'
-import qdformatters from 'qd-formatters'
 import classNames from 'classnames'
-
-const formatters = qdformatters(d3)
 
 export default class RadRow extends Component {
   constructor(props) {
@@ -31,7 +28,19 @@ export default class RadRow extends Component {
   }
 
   availableWidthForName() {
-    return this.props.chartWidth - 53
+    return (this.props.chartWidth - 53) - this.spaceForCircle()
+  }
+
+  spaceForCircle() {
+    return (this.getCircleRadius() * 2) + this.props.circlePaddingRight
+  }
+
+  getFontSize() {
+    return this.props.rowHeight / 3
+  }
+
+  getCircleRadius() {
+    return this.getFontSize() / 2
   }
 
   render() {
@@ -43,18 +52,20 @@ export default class RadRow extends Component {
     } else {
       barWidth = xScale(datum.value)
     }
-    const barHeight = rowHeight * 0.35
-    const fontSize = barHeight * 0.9
-    const textY = y + fontSize
-    const barY = y + barHeight
-    const availableWidthForName = chartWidth - 53
+    const barHeight = rowHeight / 6
+    const fontSize = this.getFontSize()
+    const circleRadius = this.getCircleRadius()
+    const circleTopAdjustment = 1 // Move the circle slightly down to be flush with text
+    const barY = y + (rowHeight / 3) + (rowHeight / 6)
+    const ellipsesXAdjustment = 2 // Move ellipsis slightly right so it has padding
     const ellipses = (this.state.showEllipses) ?
       (
         <text
           className={'rad-row-name-ellipses'}
-          x={availableWidthForName}
-          y={textY}
+          x={chartWidth - this.props.spaceForValueText + ellipsesXAdjustment}
+          y={y}
           fontSize={fontSize}
+          alignmentBaseline="hanging"
         >
           <title>{datum.name}</title>
           ...
@@ -64,31 +75,39 @@ export default class RadRow extends Component {
 
     return (
       <g className="rad-row">
+        <circle
+          cx={0 + circleRadius}
+          cy={y + circleRadius + circleTopAdjustment}
+          r={circleRadius}
+        />
         <text
           ref={(textElement) => { this.nameTextElement = textElement }}
           className="rad-row-name-text"
-          y={textY}
+          x={this.spaceForCircle()}
+          y={y}
           fontSize={fontSize}
+          alignmentBaseline="hanging"
         >
           <title>{datum.name}</title>
           {datum.name}
         </text>
         <rect
           className="rad-row-value-background"
-          x={chartWidth - 54}
+          x={chartWidth - this.props.spaceForValueText}
           y={y}
-          width={54}
+          width={this.props.spaceForValueText}
           height={rowHeight - barHeight}
         />
         {ellipses}
         <text
           className={textValueClassNames}
           x={chartWidth}
-          y={textY}
+          y={y}
           fontSize={fontSize}
           textAnchor="end"
+          alignmentBaseline="hanging"
         >
-          ${formatters.bigNumberFormat(datum.value)}
+          {datum.value}
         </text>
         <rect
           className="rad-row-background"
@@ -120,4 +139,9 @@ RadRow.propTypes = {
     value: PropTypes.number
   })),
   xScale: PropTypes.func
+}
+
+RadRow.defaultProps = {
+  circlePaddingRight: 8,
+  spaceForValueText: 54
 }
