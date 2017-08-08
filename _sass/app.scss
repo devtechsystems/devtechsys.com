@@ -15,19 +15,38 @@
   font-weight: 300;
 }
 */
-$font-brandon: "brandon-grotesque", sans-serif;
-$font-vista: "vista-slab", sans-serif;
+$font-brandon: "brandon-grotesque", Arial, sans-serif;
+$font-vista: "vista-slab", Arial, sans-serif;
 
-html, body {
+html {height:100%;}
+body {
   height:100%;
   font-family: $font-brandon;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-brandon;
   line-height: 1.3;
 }
 .font-brandon {font-family: $font-brandon;}
 .font-vista {font-family: $font-vista;}
+
+//loading state to hide text until loaded
+.wf-loading .font-brandon,
+.wf-loading .font-vista,
+.wf-loading body {
+  visibility: hidden;
+}
+//once actived fonts are visible
+.wf-active .font-brandon,
+.wf-active .font-vista,
+.wf-active body {
+  visibility: visible;
+}
+//fallback when fonts cants be loaded
+.wf-inactive .font-brandon,
+.wf-inactive .font-vista,
+.wf-inactive body {
+  visibility: visible;
+}
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
