@@ -11,35 +11,156 @@ layout: default
 	<div class="site-content" id="site_content" aria-label="Content">
 		<div class="page">
 			<div class="content">
-		  	<div class="row row--gutters">
-		  		<div class="column">
-						{% if page['Title'].size > 0 %}
-							<h1 class="page-title">{{ page['Title']}}</h1>
-						{% endif %}
-						{% if page['Banner Image'].size > 0 %}
-							<img class="page-banner" src="{{ page['Banner Image'] }}"/>
-						{% endif %}
-						{% if page['Highlight'].size > 0 %}
-							<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
-						{% endif %}
-
-				    {{ content }}
-						<div class="breakdown-panels row">
-							<div id="projects-by-practice-area" class="column small-6"></div>
-							<div id="projects-by-region" class="column small-6"></div>
-						</div>
-						<div class="partners-section">We've worked with over 193 partners. ICONS GO HERE</div>
-						<div class="contracts-section">
-							<h3 class="contracts-title">Since <span class="extra-text-above">1984</span>, <span class="blue-highlight">DevTech</span> contracts have made over <span class="blue-highlight">$507m</span></h3>
-							<div class="contracts-blurb">From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.
+		  	<div class="row row--gutters column">
+					<h1 class="page-title"><span class="highlight-blue">DevTech</span> has a <span class="highlight-blue">broad portfolio</span> of work that creates a <span class="highlight-blue">worldwide impact</span>.</h1>
+					<p>With hundreds of projects around the world, DevTech’s portfolio spans across continents. Explore the map to see where our work has taken us.</p>
+				</div>
+				<div class="background-lightGray">
+					<div class="row column projects-map">
+						<div class="projects-chart">
+							<div id="ADD_MAP_HERE" style="background-color:rgba(0,0,0,.2);min-height:300px;">
+								<!--you can keep the min-height in the styles 
+								    but id remove the background color once implemented
+								-->
 							</div>
-							<h6 class="contract-chart-title">Contract Value by Region &amp; Practice Area</h6>
-							<div id="contract-value"></div>
 						</div>
-			  	</div>
-			  </div>
-		  </div>
+					</div>
+				</div>
+				<div class="row column projects-solutions-countries">
+					<h2 class="projects-section-title"><span class="highlight-blue">DevTech</span> has created <span class="highlight-blue">482</span> solutions in <span class="highlight-blue">222</span> countries worldwide.</h2>
+					<p class="slightly-smaller">With a breadth of experience across six practice areas and nearly every region of the world, DevTech produces innovative results and addresses complex global challenges.</p>
+					<div class="row">
+						<div class="column small-16 medium-8">
+							<div class="projects-chart">
+								<div id="projects-by-practice-area" style="min-height:250px;max-height:330px;">
+									<!-- added max-height to remove overflow with fixed chart height -->
+								</div>
+							</div>
+						</div>
+						<div class="column small-16 medium-8">
+							<div class="projects-chart">
+								<div id="projects-by-region" style="min-height:250px;max-height:330px;">
+									<!-- added max-height to remove overflow with fixed chart height -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="background-lightGray">
+					<div class="row column projects-partners">
+						<h2 class="projects-section-title">We've worked with over <span class="highlight-blue">193</span> partners.</h2>
+						<div class="row">
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="" alt="logo: USAID" title="USAID"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row column projects-contracts">
+					<h2 class="projects-section-title">Since 1984, <span class="highlight-blue">DevTech</span> contracts have made over <span class="highlight-blue">$507m</span></h2>
+					<p class="slightly-smaller">From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.</p>
 
+					<h6 class="project-chart-title">Contract Value by Region &amp; Practice Area</h6>
+					<div class="projects-chart">
+						<div id="ADD_BAR_CHART_HERE" style="background-color:rgba(0,0,0,.2);min-height:300px;">
+							<!--you can keep the min-height in the styles 
+							    but id remove the background color once implemented
+							-->
+						</div>
+					</div>
+				</div>
+				<div class="background-darkBlue">
+					<div class="row row--gutters column projects-contact-us">
+						<h2>Thirty Years of Solutions</h2>
+						<h3>Partner With Us.</h3>
+
+						<div class="row">
+							<div class="column small-16 medium-11">
+								<p>We work with agencies, organizations, and businesses to achieve data-driven solutions that build capacity, strengthen partnerships, and address complex policy challenges. We'd love to work with you, too.</p>
+							</div>
+							<div class="column small-16 medium-5">
+								<a href="/about/contact-us/" class="button button-inverse">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="background-lighterBlue">
+					<div class="row row--gutters column projects-search">
+						<h2>Search our project database</h2>
+						<label>
+							<span class="sr-only">Search Projects</span>
+							<span class="fa fa-search" aria-hidden="true"></span>
+							<input type="text" placeholder="Search Projects" />
+						</label>
+					</div>
+				</div>
+				<div class="row row--gutters column projects-list">
+					<div class="overflow-container">
+						<ul>
+							<li>
+								<span class="project-country pull-right">Country</span>
+								<span class="project-category">Practice Area/Category</span>
+								<a href="#" class="project-title">Project Title</a>
+							</li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+							<li><span class="project-country pull-right">Country</span><span class="project-category">Practice Area/Category</span><a href="#" class="project-title">Project Title</a></li>
+						</ul>
+					</div>
+				</div>
+		  </div>
 		</div>
 	</div>
 <link rel="stylesheet" href="{{ "/assets/css/visualizations.css" | relative_url }}">

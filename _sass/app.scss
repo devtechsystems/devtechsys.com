@@ -24,6 +24,7 @@ body {
   font-family: $font-brandon;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-brandon;
   line-height: 1.3;
 }
 .font-brandon {font-family: $font-brandon;}
@@ -490,6 +491,9 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       font-weight: 700;
       content:"Footnotes"
     }
+  }
+  .highlight-blue {
+    color:#008fc2 !important;
   }
 }
 
@@ -1366,6 +1370,128 @@ div.career-list {
     color:#555;
     font-weight: 400;
     line-height: 1.3;
+  }
+}
+
+//projects page
+.content {
+  .background-lightGray {background-color:#eaeaea;}
+  .background-lighterBlue {background-color: #dfeff5;}
+  .background-darkBlue {background-color: #284460;}
+  .projects-map {
+    margin-top:50px;
+  }
+  .projects-section-title {
+    font-size: 23px;  
+    margin-top: 65px;
+  }
+  .projects-chart {
+    position: relative;
+    margin-top:20px;
+  }
+  .projects-partners {
+    padding-top:60px;
+    padding-bottom:60px;
+    .projects-section-title {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+  .projects-contact-us {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    h2 {
+      color: #bbe0ff;
+      font-size: 19px;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-top: 60px; 
+    }
+    h3 {
+      color:#fff;
+      font-size: 26px;
+      text-transform: uppercase;  
+    }
+    p {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .button {
+      min-width: 200px !important;
+      width: 100%;
+    }
+  }
+  .projects-search {
+    padding-bottom:30px;
+    h2 {
+      margin-top: 0;
+      padding-top:50px;
+      color:#26445f;
+    }
+    label {position: relative;}
+    label .fa {
+      position: absolute;
+      top: 13px;
+      left: 17px;
+      color: #6fc59c;
+      font-size: 22px;
+    }
+    input {
+      margin-bottom: 0;
+      height: 50px;
+      line-height: 1;
+      border-color: #c0deed;
+      border-width: 2px;
+      background-color: #eef5f7;
+      box-shadow: none;
+      color: #4b4b4b;
+      text-indent: 40px;
+      font-size: 18px;
+      border-radius:2px;
+    }
+  }
+  .projects-list {
+    margin-top:40px;
+    ul {
+      border-top: 2px solid #c8e2ef;
+      list-style-type: none;
+      padding-top: 15px;
+    }
+    li {
+      font-family:"brandon-grotesque", sans-serif !important;
+      list-style-type: none;
+      margin-bottom: 15px !important;
+      border-bottom: 2px solid #c8e2ef;
+      padding-bottom: 15px !important;
+      padding-left:0 !important;
+      &:before {display: none !important;}
+      .project-category {
+        color:#000;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+      }
+      .project-country {
+        color:#000;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .project-title {
+        color: #007cb7;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.2;
+        display: block;
+        margin-top: 2px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  p.slightly-smaller {
+    font-size: 15px;
+    margin-right: 360px;
+    color: #5a5a5a;
   }
 }
 
