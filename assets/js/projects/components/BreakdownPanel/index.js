@@ -15,6 +15,7 @@ export default function({ groupedData, colorPalette, title, groupTitle }) {
         <div className='breakdown-title'>{title}</div>
         <PieChart width={100} height={100}>
           <Pie
+            dataKey='value'
             data={groupedData}
             innerRadius={20}
             outerRadius={50}

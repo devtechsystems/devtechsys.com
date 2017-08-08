@@ -558,6 +558,7 @@ exports.default = function (_ref) {
         _react2.default.createElement(
           _recharts.Pie,
           {
+            dataKey: 'value',
             data: groupedData,
             innerRadius: 20,
             outerRadius: 50,
