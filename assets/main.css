@@ -2336,19 +2336,102 @@
   font-weight: 300;
 }
 */
-html, body {
+html {
+  height: 100%; }
+
+body {
   height: 100%;
-  font-family: "brandon-grotesque", sans-serif; }
+  font-family: "brandon-grotesque", Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon-grotesque", sans-serif;
   line-height: 1.3; }
 
 .font-brandon, .content blockquote p, .content dl dt, .row--office-locations p.OL--address, .row--office-locations p.OL--phone {
-  font-family: "brandon-grotesque", sans-serif; }
+  font-family: "brandon-grotesque", Arial, sans-serif; }
 
 .font-vista, .content p, .content ul li, .content ol > li, .content dl dd, .content table td, .home .hero p, .home .practice-areas .PA--content p, .home .projects p, .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content h4 {
-  font-family: "vista-slab", sans-serif; }
+  font-family: "vista-slab", Arial, sans-serif; }
+
+.wf-loading .font-brandon, .wf-loading .content blockquote p, .content blockquote .wf-loading p, .wf-loading .content dl dt, .content dl .wf-loading dt, .wf-loading .row--office-locations p.OL--address, .row--office-locations .wf-loading p.OL--address, .wf-loading .row--office-locations p.OL--phone, .row--office-locations .wf-loading p.OL--phone,
+.wf-loading .font-vista,
+.wf-loading .content p,
+.content .wf-loading p,
+.wf-loading .content ul li,
+.content ul .wf-loading li,
+.wf-loading .content ol > li,
+.content .wf-loading ol > li,
+.wf-loading .content dl dd,
+.content dl .wf-loading dd,
+.wf-loading .content table td,
+.content table .wf-loading td,
+.wf-loading .home .hero p,
+.home .hero .wf-loading p,
+.wf-loading .home .practice-areas .PA--content p,
+.home .practice-areas .PA--content .wf-loading p,
+.wf-loading .home .projects p,
+.home .projects .wf-loading p,
+.wf-loading .site-header .site-header-dropdown .SD--content h2,
+.site-header .site-header-dropdown .SD--content .wf-loading h2,
+.wf-loading .site-header .site-header-dropdown .SD--content h3,
+.site-header .site-header-dropdown .SD--content .wf-loading h3,
+.wf-loading .site-header .site-header-dropdown .SD--content h4,
+.site-header .site-header-dropdown .SD--content .wf-loading h4,
+.wf-loading body {
+  visibility: hidden; }
+
+.wf-active .font-brandon, .wf-active .content blockquote p, .content blockquote .wf-active p, .wf-active .content dl dt, .content dl .wf-active dt, .wf-active .row--office-locations p.OL--address, .row--office-locations .wf-active p.OL--address, .wf-active .row--office-locations p.OL--phone, .row--office-locations .wf-active p.OL--phone,
+.wf-active .font-vista,
+.wf-active .content p,
+.content .wf-active p,
+.wf-active .content ul li,
+.content ul .wf-active li,
+.wf-active .content ol > li,
+.content .wf-active ol > li,
+.wf-active .content dl dd,
+.content dl .wf-active dd,
+.wf-active .content table td,
+.content table .wf-active td,
+.wf-active .home .hero p,
+.home .hero .wf-active p,
+.wf-active .home .practice-areas .PA--content p,
+.home .practice-areas .PA--content .wf-active p,
+.wf-active .home .projects p,
+.home .projects .wf-active p,
+.wf-active .site-header .site-header-dropdown .SD--content h2,
+.site-header .site-header-dropdown .SD--content .wf-active h2,
+.wf-active .site-header .site-header-dropdown .SD--content h3,
+.site-header .site-header-dropdown .SD--content .wf-active h3,
+.wf-active .site-header .site-header-dropdown .SD--content h4,
+.site-header .site-header-dropdown .SD--content .wf-active h4,
+.wf-active body {
+  visibility: visible; }
+
+.wf-inactive .font-brandon, .wf-inactive .content blockquote p, .content blockquote .wf-inactive p, .wf-inactive .content dl dt, .content dl .wf-inactive dt, .wf-inactive .row--office-locations p.OL--address, .row--office-locations .wf-inactive p.OL--address, .wf-inactive .row--office-locations p.OL--phone, .row--office-locations .wf-inactive p.OL--phone,
+.wf-inactive .font-vista,
+.wf-inactive .content p,
+.content .wf-inactive p,
+.wf-inactive .content ul li,
+.content ul .wf-inactive li,
+.wf-inactive .content ol > li,
+.content .wf-inactive ol > li,
+.wf-inactive .content dl dd,
+.content dl .wf-inactive dd,
+.wf-inactive .content table td,
+.content table .wf-inactive td,
+.wf-inactive .home .hero p,
+.home .hero .wf-inactive p,
+.wf-inactive .home .practice-areas .PA--content p,
+.home .practice-areas .PA--content .wf-inactive p,
+.wf-inactive .home .projects p,
+.home .projects .wf-inactive p,
+.wf-inactive .site-header .site-header-dropdown .SD--content h2,
+.site-header .site-header-dropdown .SD--content .wf-inactive h2,
+.wf-inactive .site-header .site-header-dropdown .SD--content h3,
+.site-header .site-header-dropdown .SD--content .wf-inactive h3,
+.wf-inactive .site-header .site-header-dropdown .SD--content h4,
+.site-header .site-header-dropdown .SD--content .wf-inactive h4,
+.wf-inactive body {
+  visibility: visible; }
 
 /**
 https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
