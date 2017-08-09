@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
+import d3 from 'd3'
 
 const projectsByPracticeArea = [
   { name: 'Monitoring and Evaluation', value: 184 },
@@ -98,6 +99,9 @@ const stackedBarChart = (
 )
 
 document.addEventListener('DOMContentLoaded', () => {
+  d3.tsv('/assets/data/projects.tsv', function(data) {
+    console.log('data loaded')
+  })
   ReactDOM.render(
     pbpaPanel,
     document.getElementById('projects-by-practice-area')

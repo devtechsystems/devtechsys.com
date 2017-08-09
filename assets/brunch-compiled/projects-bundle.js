@@ -624,11 +624,20 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function () {
+exports.default = function (_ref) {
+  var data = _ref.data,
+      colorPalette = _ref.colorPalette;
+
   return _react2.default.createElement(
-    'div',
-    null,
-    'stacked chart here'
+    _recharts.BarChart,
+    { width: 400, height: 200, data: data },
+    _react2.default.createElement(_recharts.XAxis, { dataKey: 'region' }),
+    _react2.default.createElement(_recharts.YAxis, { dataKey: 'value' }),
+    _react2.default.createElement(_recharts.Legend, null),
+    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
+    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
+    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
+    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' })
   );
 };
 
@@ -665,6 +674,10 @@ var _ColorPalette = require('./util/ColorPalette');
 
 var _ColorPalette2 = _interopRequireDefault(_ColorPalette);
 
+var _d = require('d3');
+
+var _d2 = _interopRequireDefault(_d);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
@@ -692,6 +705,9 @@ var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  _d2.default.tsv('/assets/data/projects.tsv', function (data) {
+    console.log('data loaded');
+  });
   _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
 
   _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
