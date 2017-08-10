@@ -4,9 +4,9 @@ import ColorScale from '../../util/ColorScale.js'
 import CountUp from 'react-countup'
 import { PieChart, Pie, Cell } from 'recharts'
 
-export default function({ groupedData, colorPalette, title, groupTitle }) {
-  const colorScale = new ColorScale(groupedData, colorPalette.colors, colorPalette.noDataColor)
-  const totalValue = groupedData.reduce((accumulated, next) => accumulated += next.value, 0)
+export default function({ data, colorPalette, title, groupTitle }) {
+  const colorScale = new ColorScale(data, colorPalette.colors, colorPalette.noDataColor)
+  const totalValue = data.reduce((accumulated, next) => accumulated += next.value, 0)
 
   return (
     <div className='breakdown-panel row'>
@@ -16,7 +16,7 @@ export default function({ groupedData, colorPalette, title, groupTitle }) {
         <PieChart width={100} height={100}>
           <Pie
             dataKey='value'
-            data={groupedData}
+            data={data}
             innerRadius={20}
             outerRadius={50}
             cx='50%'
@@ -24,7 +24,7 @@ export default function({ groupedData, colorPalette, title, groupTitle }) {
             startAngle={90}
             endAngle={-270}
           >
-            {groupedData.map((element, index) => <Cell key={element.name} fill={colorScale.getColorFor(groupedData[index].value)} />)}
+            {data.map((element, index) => <Cell key={element.name} fill={colorScale.getColorFor(data[index].value)} />)}
           </Pie>
         </PieChart>
       </div>
@@ -34,7 +34,7 @@ export default function({ groupedData, colorPalette, title, groupTitle }) {
           rowHeight={40}
           width={200}
           height={300}
-          data={groupedData}
+          data={data}
           colorMapper={(value) => colorScale.getColorFor(value)}
         />
       </div>
