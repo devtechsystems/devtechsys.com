@@ -14,3 +14,4 @@ Light Icon Image: "/uploads/iconLight-knowledge.png"
 Dark Icon Image: "/uploads/iconDark-knowledge.png"
 ---
 
+DevTech’s commitment to accurate and comprehensive data spans across all of its projects and informs policy for government agencies. From projects that establish full-time data management services to the US Government to short-term knowledge generation and dissemination, we specialize in making data easy to understand and access.  
