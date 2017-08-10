@@ -148,6 +148,23 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
+require.register("assets/js/projects/ColumnNames.js", function(exports, require, module) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var PRACTICE_AREAS = {
+  ECONOMIC_ANALYSIS: "Economic Analysis and M&E Practice Area",
+  EDUCATION_AND_YOUTH_DEVELOPMENT: "Education and Youth Development Practice Area",
+  GENDER_AND_INCLUSIVE_DEVELOPMENT: "Gender and Inclusive Development Practice Area",
+  PFM_AND_INSTITUTION_BUILDING: "PFM and Institution Building Practice Area"
+};
+
+exports.PRACTICE_AREAS = PRACTICE_AREAS;
+
+});
+
 require.register("assets/js/projects/components/BreakdownPanel/RowChart/DefaultRow.js", function(exports, require, module) {
 'use strict';
 
@@ -654,6 +671,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 ;require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -674,45 +693,79 @@ var _ColorPalette = require('./util/ColorPalette');
 
 var _ColorPalette2 = _interopRequireDefault(_ColorPalette);
 
-var _d = require('d3');
+var _d2 = require('d3');
 
-var _d2 = _interopRequireDefault(_d);
+var _d3 = _interopRequireDefault(_d2);
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _ColumnNames = require('./ColumnNames');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
 
-var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-  groupedData: projectsByPracticeArea,
-  colorPalette: _ColorPalette2.default,
-  title: 'Projects',
-  groupTitle: 'Practice Area'
-});
-
 var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
-var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-  groupedData: projectsByRegion,
-  colorPalette: _ColorPalette2.default,
-  title: 'Countries',
-  groupTitle: 'Region'
-});
 
 var contractValue = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
 
-var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
-  data: contractValue,
-  colorPalette: _ColorPalette2.default
-});
+// Make sure each record only has one practice area
+// We need this in order to group by practice area because the original data can have multiple practice areas per record
+var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
+  var denormalizedData = [];
+  Object.entries(_ColumnNames.PRACTICE_AREAS).forEach(function (_ref) {
+    var _ref2 = _slicedToArray(_ref, 2),
+        key = _ref2[0],
+        practiceArea = _ref2[1];
+
+    var dataFilteredByPracticeArea = data.filter(function (d) {
+      return d[practiceArea] == 'x';
+    });
+    var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
+      return Object.assign(d, { denormalizedPracticeArea: practiceArea });
+    });
+    denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
+  });
+
+  return denormalizedData;
+};
 
 document.addEventListener('DOMContentLoaded', function () {
-  _d2.default.tsv('/assets/data/projects.tsv', function (data) {
+  _d3.default.tsv('/assets/data/projects.tsv', function (data) {
+
+    var projectsGroupedByRegion = _lodash2.default.groupBy(data, function (project) {
+      return project['Region'];
+    });
+    var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), function (project) {
+      return project.denormalizedPracticeArea;
+    });
+
+    var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+      groupedData: projectsByPracticeArea,
+      colorPalette: _ColorPalette2.default,
+      title: 'Projects',
+      groupTitle: 'Practice Area'
+    });
+    var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+      groupedData: projectsByRegion,
+      colorPalette: _ColorPalette2.default,
+      title: 'Countries',
+      groupTitle: 'Region'
+    });
+    var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
+      data: contractValue,
+      colorPalette: _ColorPalette2.default
+    });
     console.log('data loaded');
+
+    _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
+
+    _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
+
+    _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
   });
-  _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
-
-  _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
-
-  _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 });
 
 });

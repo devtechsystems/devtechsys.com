@@ -4,6 +4,8 @@ import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
 import d3 from 'd3'
+import lodash from 'lodash'
+import { PRACTICE_AREAS } from './ColumnNames'
 
 const projectsByPracticeArea = [
   { name: 'Monitoring and Evaluation', value: 184 },
@@ -14,14 +16,7 @@ const projectsByPracticeArea = [
   { name: 'Security, Transparency, and Governence', value: 4 }
 ]
 
-const pbpaPanel = (
-  <BreakDownPanel
-    groupedData={projectsByPracticeArea}
-    colorPalette={ColorPalette}
-    title='Projects'
-    groupTitle='Practice Area'
-  />
-)
+
 
 const projectsByRegion = [
   { name: 'East Asia & Oceania', value: 184 },
@@ -31,14 +26,6 @@ const projectsByRegion = [
   { name: 'Western Hemisphere', value: 12 },
   { name: 'World', value: 9 }
 ]
-const pbrPanel = (
-  <BreakDownPanel
-    groupedData={projectsByRegion}
-    colorPalette={ColorPalette}
-    title='Countries'
-    groupTitle='Region'
-  />
-)
 
 const contractValue = [
   { region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 550 },
@@ -91,29 +78,63 @@ const contractValue = [
   { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 },
 ]
 
-const stackedBarChart = (
-  <StackedBarChart
-    data={contractValue}
-    colorPalette={ColorPalette}
-  />
-)
+// Make sure each record only has one practice area
+// We need this in order to group by practice area because the original data can have multiple practice areas per record
+const denormalizePracticeAreas = (data) => {
+  let denormalizedData = []
+  Object.entries(PRACTICE_AREAS).forEach(([key, practiceArea]) => {
+    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea] == 'x')
+    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea}))
+    denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
+  })
+
+  return denormalizedData
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   d3.tsv('/assets/data/projects.tsv', function(data) {
+    
+    const projectsGroupedByRegion = lodash.groupBy(data, (project) => project['Region'])
+    const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), (project) => project.denormalizedPracticeArea)
+
+    const pbpaPanel = (
+      <BreakDownPanel
+        groupedData={projectsByPracticeArea}
+        colorPalette={ColorPalette}
+        title='Projects'
+        groupTitle='Practice Area'
+      />
+    )
+    const pbrPanel = (
+      <BreakDownPanel
+        groupedData={projectsByRegion}
+        colorPalette={ColorPalette}
+        title='Countries'
+        groupTitle='Region'
+      />
+    )
+    const stackedBarChart = (
+      <StackedBarChart
+        data={contractValue}
+        colorPalette={ColorPalette}
+      />
+    )
     console.log('data loaded')
+
+    ReactDOM.render(
+      pbpaPanel,
+      document.getElementById('projects-by-practice-area')
+    )
+
+    ReactDOM.render(
+      pbrPanel,
+      document.getElementById('projects-by-region')
+    )
+
+    ReactDOM.render(
+      stackedBarChart,
+      document.getElementById('contract-value')
+    )
   })
-  ReactDOM.render(
-    pbpaPanel,
-    document.getElementById('projects-by-practice-area')
-  )
 
-  ReactDOM.render(
-    pbrPanel,
-    document.getElementById('projects-by-region')
-  )
-
-  ReactDOM.render(
-    stackedBarChart,
-    document.getElementById('contract-value')
-  )
 })
