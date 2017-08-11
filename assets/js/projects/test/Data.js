@@ -18,20 +18,29 @@ const projectsByRegion = [
   { name: 'World', value: 9 }
 ]
 
-const contractValue = [
-  { region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 550 },
-  { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 },
-  { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 350 },
+const practiceAreas = [
+  'Monitoring and Evaluation', 
+  'Public Financial Management and Fiscal Sustainability', 
+  'Knowledge Management and Data Analytics',
+  'Education, Gender and Youth',
+  'Energy and Environment',
+  'Security, Transparency, and Governance'
+]
+
+const regionAndPracAreas = [
+  { region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 100 },
+  { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 300 },
+  { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 80 },
   { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 },
-  { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 100 },
+  { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 80 },
   { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 },
 
-  { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 550 },
-  { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 },
-  { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 },
-  { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 250 },
-  { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 100 },
-  { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 },
+  { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 500 },
+  { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value:440 },
+  { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 400 },
+  { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 230 },
+  { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 200 },
+  { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 80 },
 
   { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 },
   { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 },
@@ -68,3 +77,5 @@ const contractValue = [
   { region: 'Others', practiceArea: 'Energy and Environment', value: 100 },
   { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 },
 ]
+
+export { regionAndPracAreas, practiceAreas }

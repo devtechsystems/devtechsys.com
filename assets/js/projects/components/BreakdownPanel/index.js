@@ -2,7 +2,7 @@ import React from 'react'
 import RowChart from './RowChart'
 import ColorScale from '../../util/ColorScale.js'
 import CountUp from 'react-countup'
-import { PieChart, Pie, Cell } from 'recharts'
+import { PieChart, Pie, Cell, Tooltip } from 'recharts'
 
 export default function({ data, colorPalette, title, groupTitle }) {
   const colorScale = new ColorScale(data, colorPalette.colors, colorPalette.noDataColor)
@@ -26,6 +26,7 @@ export default function({ data, colorPalette, title, groupTitle }) {
           >
             {data.map((element, index) => <Cell key={element.name} fill={colorScale.getColorFor(data[index].value)} />)}
           </Pie>
+          <Tooltip />
         </PieChart>
       </div>
       <div className='right-column column small-8'>

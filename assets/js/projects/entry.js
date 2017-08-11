@@ -30,14 +30,17 @@ const chartDataFormat = (object) => {
   return Object.entries(object).map(([name, value]) => ({ name, value }))
 }
 
+import { regionAndPracAreas, practiceAreas } from './test/Data'
+
 document.addEventListener('DOMContentLoaded', () => {
   d3.tsv('/assets/data/projects.tsv', function(data) {
     const projectsGroupedByRegion = lodash.groupBy(data, (project) => project['Region'])
     const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), (project) => project.denormalizedPracticeArea)
-    const practiceAreaSumsForRegions = lodash.mapValues(projectsGroupedByRegion, (projGroup) => {
-      const denormalized = denormalizePracticeAreas(projGroup)
-      const groupedByPracticeAreas = lodash.groupBy(denormalized, (project) => project.denormalizedPracticeArea)
-      const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'Contract Value USD')
+    const testGroupRegions = lodash.groupBy(regionAndPracAreas, (p) => p.region)
+    const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
+      // const denormalized = denormalizePracticeAreas(projGroup)
+      const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
+      const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'value')
 
       return contractValuesForGroupedPracticeAreas
     })
@@ -61,8 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     const stackedBarChart = (
       <StackedBarChart
-        data={flattenedPracticeAreaSums}
+        data={regionAndPracAreas}
+        xAxisDataKey={'region'}
+        stackDataKey={'practiceArea'}
         colorPalette={ColorPalette}
+        valueKey={'value'}
       />
     )
     console.log('data loaded')

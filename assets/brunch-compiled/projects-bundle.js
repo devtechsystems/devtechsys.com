@@ -587,7 +587,8 @@ exports.default = function (_ref) {
           data.map(function (element, index) {
             return _react2.default.createElement(_recharts.Cell, { key: element.name, fill: colorScale.getColorFor(data[index].value) });
           })
-        )
+        ),
+        _react2.default.createElement(_recharts.Tooltip, null)
       )
     ),
     _react2.default.createElement(
@@ -641,20 +642,64 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 exports.default = function (_ref) {
   var data = _ref.data,
-      colorPalette = _ref.colorPalette;
+      xAxisDataKey = _ref.xAxisDataKey,
+      stackDataKey = _ref.stackDataKey,
+      colorPalette = _ref.colorPalette,
+      _ref$valueKey = _ref.valueKey,
+      valueKey = _ref$valueKey === undefined ? 'value' : _ref$valueKey;
 
+  var colorsLightToDark = colorPalette.colors;
+  var colorsDarkToLight = colorsLightToDark.slice(0).reverse(); // Clone then reverse
+  var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
+  var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
+    var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
+    var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
+    return stackGroupingWithSums;
+  });
+  var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref2) {
+    var _ref3 = _slicedToArray(_ref2, 2),
+        xName = _ref3[0],
+        stackGrouping = _ref3[1];
+
+    return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
+  });
+  var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
+    return d[stackDataKey];
+  }).sort(function (a, b) {
+    var stackNameA = a.toLowerCase();
+    var stackNameB = b.toLowerCase();
+    if (stackNameA < stackNameB) return -1;
+    if (stackNameA > stackNameB) return 1;
+    return 0;
+  });
+  var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
+  var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
+    return _react2.default.createElement(
+      _recharts.Bar,
+      { key: 'bar-' + name, dataKey: name, stackId: 'samestack' },
+      flattenedGroupings.map(function (element, index) {
+        return _react2.default.createElement(_recharts.Cell, {
+          key: 'stacked-bar-' + element.region + '-' + index,
+          fill: colorsLightToDark[stackIndex]
+        });
+      })
+    );
+  });
+  var legendData = stackDataNamesAsc.map(function (name, index) {
+    return { id: name, value: name, color: colorsDarkToLight[index] };
+  });
   return _react2.default.createElement(
     _recharts.BarChart,
-    { width: 400, height: 200, data: data },
-    _react2.default.createElement(_recharts.XAxis, { dataKey: 'region' }),
-    _react2.default.createElement(_recharts.YAxis, { dataKey: 'value' }),
-    _react2.default.createElement(_recharts.Legend, null),
-    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
-    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
-    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' }),
-    _react2.default.createElement(_recharts.Bar, { dataKey: '', stackId: 'stacked' })
+    { width: 800, height: 400, data: flattenedGroupings },
+    _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
+    _react2.default.createElement(_recharts.YAxis, null),
+    _react2.default.createElement(_recharts.Tooltip, null),
+    _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
+    stackedBar
   );
 };
 
@@ -664,7 +709,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _recharts = require('recharts');
 
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _Reduce = require('../util/Reduce');
+
+var _ColumnNames = require('../ColumnNames');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 });
 
@@ -704,6 +759,8 @@ var _lodash2 = _interopRequireDefault(_lodash);
 var _ColumnNames = require('./ColumnNames');
 
 var _Reduce = require('./util/Reduce');
+
+var _Data = require('./test/Data');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -750,12 +807,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), function (project) {
       return project.denormalizedPracticeArea;
     });
-    var practiceAreaSumsForRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projGroup) {
-      var denormalized = denormalizePracticeAreas(projGroup);
-      var groupedByPracticeAreas = _lodash2.default.groupBy(denormalized, function (project) {
-        return project.denormalizedPracticeArea;
+    var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, function (p) {
+      return p.region;
+    });
+    var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
+      // const denormalized = denormalizePracticeAreas(projGroup)
+      var groupedByPracticeAreas = _lodash2.default.groupBy(projGroup, function (project) {
+        return project.practiceArea;
       });
-      var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'Contract Value USD');
+      var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'value');
 
       return contractValuesForGroupedPracticeAreas;
     });
@@ -780,8 +840,11 @@ document.addEventListener('DOMContentLoaded', function () {
       groupTitle: 'Region'
     });
     var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
-      data: flattenedPracticeAreaSums,
-      colorPalette: _ColorPalette2.default
+      data: _Data.regionAndPracAreas,
+      xAxisDataKey: 'region',
+      stackDataKey: 'practiceArea',
+      colorPalette: _ColorPalette2.default,
+      valueKey: 'value'
     });
     console.log('data loaded');
 
@@ -798,13 +861,21 @@ document.addEventListener('DOMContentLoaded', function () {
 require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 // Dummy data
 
 var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
 
 var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
 
-var contractValue = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
+var practiceAreas = ['Monitoring and Evaluation', 'Public Financial Management and Fiscal Sustainability', 'Knowledge Management and Data Analytics', 'Education, Gender and Youth', 'Energy and Environment', 'Security, Transparency, and Governance'];
+
+var regionAndPracAreas = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 300 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 440 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 400 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 230 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 200 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 80 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
+
+exports.regionAndPracAreas = regionAndPracAreas;
+exports.practiceAreas = practiceAreas;
 
 });
 
@@ -925,7 +996,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var reduceSum = function reduceSum(grouping, valueKey) {
   return _lodash2.default.mapValues(grouping, function (recordsInGroup) {
     return recordsInGroup.reduce(function (accumulator, next) {
-      return accumulator += next[valueKey];
+      return accumulator += Number(next[valueKey]);
     }, 0);
   });
 };
