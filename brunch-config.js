@@ -1,16 +1,16 @@
 // See http://brunch.io for documentation.
-var exports = {}
+var brunchConfig = {}
 
-exports.conventions = {
+brunchConfig.conventions = {
   assets: /ignore_me/
 }
 
-exports.paths = {
+brunchConfig.paths = {
   public: 'assets/brunch-compiled',
   watched: ['assets/js/projects']
 }
 
-exports.files = {
+brunchConfig.files = {
   javascripts: {
     joinTo: {
       'projects-bundle.js': 'assets/js/projects/**/*.js',
@@ -24,8 +24,12 @@ exports.files = {
   }
 };
 
-exports.plugins = {
+brunchConfig.plugins = {
   babel: {presets: ['latest', 'react']}
 };
 
-module.exports = exports
+brunchConfig.npm = {
+  globals: { d3: 'd3' }
+}
+
+module.exports = brunchConfig

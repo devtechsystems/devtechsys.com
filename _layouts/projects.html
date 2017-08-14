@@ -165,5 +165,8 @@ layout: default
 	</div>
 <link rel="stylesheet" href="{{ "/assets/css/visualizations.css" | relative_url }}">
 <script src="{{ "/assets/brunch-compiled/node-modules.js" | relative_url }}"></script>
+<!--Load d3 plus after the brunch bundle has provided d3 as a global variable-->
+<script src="//d3plus.org/js/d3plus.js"></script>
 <script src="{{ "/assets/brunch-compiled/projects-bundle.js" | relative_url }}"></script>
+
 <script>require('assets/js/projects/entry.js')</script>

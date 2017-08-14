@@ -1016,6 +1016,11 @@ require.alias("buffer/index.js", "buffer");
 require.alias("events/events.js", "events");
 require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
+
+// Auto-loaded modules from config.npm.globals.
+window.d3 = require("d3");
+
+
 });})();require('___globals___');
 
 'use strict';
