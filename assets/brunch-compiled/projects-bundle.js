@@ -663,6 +663,9 @@ exports.default = function (parentSelector) {
   var _valueAccessor = function _valueAccessor(datum) {
     return datum !== undefined ? datum.value : undefined;
   };
+  var _tooltipContent = function _tooltipContent(datum) {
+    return datum.name + "<br/>" + datum.value;
+  };
 
   var tooltip = d3.select("#projects-choropleth").append("div").attr("class", "tooltip hidden");
 
@@ -699,10 +702,19 @@ exports.default = function (parentSelector) {
     return chart;
   };
 
-  function getDataValue(key) {
-    return _valueAccessor(_data.find(function (d) {
+  chart.tooltipContent = function (_) {
+    _tooltipContent = _;
+    return chart;
+  };
+
+  function getDatum(key) {
+    return _data.find(function (d) {
       return d.name === key;
-    }));
+    });
+  }
+
+  function getDataValue(key) {
+    return _valueAccessor(getDatum(key));
   }
 
   chart.draw = function () {
@@ -715,6 +727,7 @@ exports.default = function (parentSelector) {
     }).style("fill", function (d, i) {
       return _colorMapper(getDataValue(d.properties.name));
     });
+    d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
     //offsets for tooltips
     var offsetL = document.getElementById('projects-choropleth').offsetLeft + 20;
@@ -727,7 +740,7 @@ exports.default = function (parentSelector) {
         return parseInt(d);
       });
 
-      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(d.properties.name);
+      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(_tooltipContent(getDatum(d.properties.name)));
     }).on("mouseout", function (d, i) {
       tooltip.classed("hidden", true);
     });
@@ -757,7 +770,7 @@ exports.default = function (parentSelector) {
 
     g.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")");
     //adjust the country hover stroke width based on zoom level
-    d3.selectAll(".country").style("stroke-width", 1.5 / s);
+    d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
   }
 
   var throttleTimer;
@@ -974,6 +987,10 @@ var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
+var _topojson = require('topojson');
+
+var topojson = _interopRequireWildcard(_topojson);
+
 var _ColumnNames = require('./ColumnNames');
 
 var _Reduce = require('./util/Reduce');
@@ -983,6 +1000,8 @@ var _D3Choropleth = require('./components/D3Choropleth');
 var _D3Choropleth2 = _interopRequireDefault(_D3Choropleth);
 
 var _Data = require('./test/Data');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1053,7 +1072,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var countriesTopo = topojson.feature(world, world.objects.countries).features;
 
-      var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).draw();
+      var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
+        return datum.name + '<br/>' + datum.value + ' projects';
+      }).draw();
     });
 
     var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {

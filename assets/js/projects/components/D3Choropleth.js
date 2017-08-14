@@ -19,6 +19,7 @@ export default function(parentSelector) {
   let _topojson, _data, _colorPalette
   let _colorMapper = (value) => '#ccc'
   let _valueAccessor = (datum) => (datum !== undefined) ? datum.value : undefined
+  let _tooltipContent = (datum) => `${datum.name}<br/>${datum.value}`
 
   var tooltip = d3.select("#projects-choropleth").append("div").attr("class", "tooltip hidden");
 
@@ -61,8 +62,17 @@ export default function(parentSelector) {
     return chart
   }
 
+  chart.tooltipContent = function(_) {
+    _tooltipContent = _
+    return chart
+  }
+
+  function getDatum(key) {
+    return _data.find((d) => d.name === key)
+  }
+
   function getDataValue(key) {
-    return _valueAccessor(_data.find((d) => d.name === key))
+    return _valueAccessor(getDatum(key))
   }
 
   chart.draw = function () {
@@ -74,6 +84,7 @@ export default function(parentSelector) {
         .attr("id", function(d,i) { return d.id; })
         .attr("title", function(d,i) { return d.properties.name; })
         .style("fill", function(d, i) { return _colorMapper(getDataValue(d.properties.name)); });
+    d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
     //offsets for tooltips
     var offsetL = document.getElementById('projects-choropleth').offsetLeft+20;
@@ -87,7 +98,7 @@ export default function(parentSelector) {
 
         tooltip.classed("hidden", false)
               .attr("style", "left:"+(mouse[0]+offsetL)+"px;top:"+(mouse[1]+offsetT)+"px")
-              .html(d.properties.name);
+              .html(_tooltipContent(getDatum(d.properties.name)));
 
         })
         .on("mouseout",  function(d,i) {
@@ -127,7 +138,7 @@ export default function(parentSelector) {
     
     g.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")");
     //adjust the country hover stroke width based on zoom level
-    d3.selectAll(".country").style("stroke-width", 1.5 / s);
+    d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
   }
 

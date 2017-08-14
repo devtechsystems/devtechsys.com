@@ -6,6 +6,7 @@ import ColorPalette from './util/ColorPalette'
 import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
+import * as topojson from 'topojson'
 import { PRACTICE_AREAS } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .topojson(countriesTopo)
         .data(choroplethData)
         .colorPalette(ColorPalette)
+        .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
         .draw()
     });
 
