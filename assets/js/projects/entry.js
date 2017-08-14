@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom'
 import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
+import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import { PRACTICE_AREAS } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
+import D3Choropleth from './components/D3Choropleth'
+
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -34,9 +37,10 @@ import { regionAndPracAreas, practiceAreas } from './test/Data'
 
 document.addEventListener('DOMContentLoaded', () => {
   d3.tsv('/assets/data/projects.tsv', function(data) {
-    const projectsGroupedByRegion = lodash.groupBy(data, (project) => project['Region'])
-    const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), (project) => project.denormalizedPracticeArea)
-    const testGroupRegions = lodash.groupBy(regionAndPracAreas, (p) => p.region)
+    const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
+    const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
+    const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
+    const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
     const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
       // const denormalized = denormalizePracticeAreas(projGroup)
       const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
@@ -45,6 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
       return contractValuesForGroupedPracticeAreas
     })
     const flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(([regionName, groupedPracticeAreaSums]) => Object.assign({ region: regionName }, groupedPracticeAreaSums))
+
+    const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
+    const getCountryColor = (datum) => {
+      return ChoroplethColorScale.getColorFor(datum.value)
+    }
+    const ChoroplethColorScale = new ColorScale(choroplethData, ColorPalette.colors, ColorPalette.noDataColor)
+    d3.json("/assets/data/countries.topo.json", function(error, world) {
+
+      const countriesTopo = topojson.feature(world, world.objects.countries).features;
+
+      const projectsChoropleth = D3Choropleth('projects-choropleth')
+        .topojson(countriesTopo)
+        .data(choroplethData)
+        .colorPalette(ColorPalette)
+        .draw()
+    });
 
     const pbpaPanel = (
       <BreakDownPanel
@@ -62,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         groupTitle='Region'
       />
     )
+
     const stackedBarChart = (
       <StackedBarChart
         data={regionAndPracAreas}

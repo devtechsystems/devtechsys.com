@@ -16,9 +16,16 @@ layout: default
 					<p>With hundreds of projects around the world, DevTech’s portfolio spans across continents. Explore the map to see where our work has taken us.</p>
 				</div>
 				<div class="background-lightGray">
-					<div class="row column projects-map">
+					<div class="column projects-map">
 						<div class="projects-chart">
-							<div id="ADD_MAP_HERE" style="background-color:rgba(0,0,0,.2);min-height:300px;">
+							<div id="projects-choropleth" style="min-height:300px;">
+								<div class="zoom-controls-container">
+									<div class="reset-button">reset</div>
+									<div class="zoom-buttons">
+										<div id="zoom-in" class="zoom-button">+</div>
+										<div id="zoom-out" class="zoom-button">-</div>
+									</div>
+								</div>
 								<!--you can keep the min-height in the styles 
 								    but id remove the background color once implemented
 								-->
@@ -165,8 +172,10 @@ layout: default
 	</div>
 <link rel="stylesheet" href="{{ "/assets/css/visualizations.css" | relative_url }}">
 <script src="{{ "/assets/brunch-compiled/node-modules.js" | relative_url }}"></script>
+<!-- load topojson library for d3plus -->
+<script src="//d3plus.org/js/topojson.js"></script>
 <!--Load d3 plus after the brunch bundle has provided d3 as a global variable-->
-<script src="//d3plus.org/js/d3plus.js"></script>
+<script src="/assets/js/vendor/d3plus.js"></script>
 <script src="{{ "/assets/brunch-compiled/projects-bundle.js" | relative_url }}"></script>
 
 <script>require('assets/js/projects/entry.js')</script>
