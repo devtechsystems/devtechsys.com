@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import qdFormatters from 'qd-formatters'
 import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
@@ -11,6 +12,7 @@ import { PRACTICE_AREAS } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 
+const formatter = qdFormatters(d3).numberFormat
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -65,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .data(choroplethData)
         .colorPalette(ColorPalette)
         .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
+        .numberFormatter(formatter)
         .draw()
     });
 

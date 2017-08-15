@@ -656,7 +656,8 @@ exports.default = function (parentSelector) {
   var projection, path, svg, g;
   var _topojson = void 0,
       _data = void 0,
-      _colorPalette = void 0;
+      _colorScale = void 0;
+  var _colorPalette = { colors: ['green', 'red', 'blue'], noDataColor: '#bbb' };
   var _colorMapper = function _colorMapper(value) {
     return '#ccc';
   };
@@ -665,6 +666,9 @@ exports.default = function (parentSelector) {
   };
   var _tooltipContent = function _tooltipContent(datum) {
     return datum.name + "<br/>" + datum.value;
+  };
+  var _numberFormatter = function _numberFormatter(value) {
+    return Math.round(value);
   };
 
   var tooltip = d3.select("#projects-choropleth").append("div").attr("class", "tooltip hidden");
@@ -683,12 +687,50 @@ exports.default = function (parentSelector) {
     g = svg.append("g").on("click", click);
   }
 
+  function setupColorMapper() {
+    _colorScale = new _ColorScale2.default(_data, _colorPalette.colors, _colorPalette.noDataColor);
+    _colorMapper = function _colorMapper(value) {
+      return _colorScale.getColorFor(value);
+    };
+  }
+
+  function addLegend() {
+    var legend = svg.append('g').classed('legend', true).attr('transform', "translate(" + 30 + ", " + (height - 420) + ")");
+    legend.append('rect').classed('background', true).attr('width', 170).attr('height', 180).attr('fill', 'white');
+
+    legend.append('text').classed('legend-title', true).text('Legend').attr('alignment-baseline', 'hanging').attr('y', 10).attr('x', 10);
+
+    var keyContainer = legend.append('g').classed('key-container', true).attr('transform', "translate(" + 10 + ", 35)");
+
+    var legendColors = _colorScale.scale.range().slice(0).reverse();
+    legendColors.push(_colorScale.noDataColor);
+    var keyRow = keyContainer.selectAll('g').data(legendColors).enter().append('g').attr('transform', function (d, i) {
+      return "translate(" + 0 + ", " + i * 20 + ")";
+    });
+
+    keyRow.append('rect').attr('x', 0).attr('y', 0).attr('height', 15).attr('width', 15).attr('fill', function (color) {
+      return color;
+    });
+
+    keyRow.append('text').text(function (color) {
+      return getLegendValueRange(color);
+    }).classed('key-text', true).attr('alignment-baseline', 'hanging').attr('x', 25).attr('y', 0);
+  }
+
+  function getLegendValueRange(color) {
+    var colorValueRange = _colorScale.scale.invertExtent;
+    if (!colorValueRange(color)[0]) return '0 Projects';
+    return _numberFormatter(colorValueRange(color)[0]) + " to " + _numberFormatter(colorValueRange(color)[1]) + " Projects";
+  }
+
+  chart.numberFormatter = function (_) {
+    _numberFormatter = _;
+    return chart;
+  };
+
   chart.colorPalette = function (_) {
     _colorPalette = _;
-    var colorScale = new _ColorScale2.default(_data, _colorPalette.colors, _colorPalette.noDataColor);
-    _colorMapper = function _colorMapper(value) {
-      return colorScale.getColorFor(value);
-    };
+    if (_data !== undefined) setupColorMapper();
     return chart;
   };
 
@@ -710,7 +752,7 @@ exports.default = function (parentSelector) {
   function getDatum(key) {
     return _data.find(function (d) {
       return d.name === key;
-    });
+    }) || { name: undefined, value: undefined };
   }
 
   function getDataValue(key) {
@@ -718,6 +760,8 @@ exports.default = function (parentSelector) {
   }
 
   chart.draw = function () {
+    setupColorMapper();
+    addLegend();
     var country = g.selectAll(".country").data(_topojson);
 
     country.enter().insert("path").attr("class", "country").attr("d", path).attr("id", function (d, i) {
@@ -963,6 +1007,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _qdFormatters = require('qd-formatters');
+
+var _qdFormatters2 = _interopRequireDefault(_qdFormatters);
+
 var _BreakdownPanel = require('./components/BreakdownPanel');
 
 var _BreakdownPanel2 = _interopRequireDefault(_BreakdownPanel);
@@ -1004,6 +1052,8 @@ var _Data = require('./test/Data');
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var formatter = (0, _qdFormatters2.default)(_d3.default).numberFormat;
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -1074,7 +1124,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
         return datum.name + '<br/>' + datum.value + ' projects';
-      }).draw();
+      }).numberFormatter(formatter).draw();
     });
 
     var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {

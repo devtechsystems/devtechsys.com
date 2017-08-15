@@ -118,6 +118,19 @@
       }
     }
   }
+
+  // Legend
+  .legend {
+    .legend-title {
+      font-size: .8em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .key-text {
+      font-size: .8em;
+    }
+  }
 }
 .hidden { 
   display: none; 

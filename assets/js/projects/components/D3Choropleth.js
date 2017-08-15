@@ -16,10 +16,12 @@ export default function(parentSelector) {
   let center = [width/2, height / 2]
 
   var projection,path,svg,g;
-  let _topojson, _data, _colorPalette
+  let _topojson, _data, _colorScale
+  let _colorPalette = { colors: ['green', 'red', 'blue'], noDataColor: '#bbb' }
   let _colorMapper = (value) => '#ccc'
   let _valueAccessor = (datum) => (datum !== undefined) ? datum.value : undefined
   let _tooltipContent = (datum) => `${datum.name}<br/>${datum.value}`
+  let _numberFormatter = (value) => Math.round(value)
 
   var tooltip = d3.select("#projects-choropleth").append("div").attr("class", "tooltip hidden");
 
@@ -42,13 +44,71 @@ export default function(parentSelector) {
 
     g = svg.append("g")
           .on("click", click);
+  }
 
+  function setupColorMapper() {
+    _colorScale = new ColorScale(_data, _colorPalette.colors, _colorPalette.noDataColor)
+    _colorMapper = (value) => _colorScale.getColorFor(value)
+  }
+
+  function addLegend() {
+    const legend = svg.append('g')
+      .classed('legend', true)
+      .attr('transform', `translate(${30}, ${height - 420})`)
+    legend.append('rect')
+      .classed('background', true)
+      .attr('width', 170)
+      .attr('height', 180)
+      .attr('fill', 'white')
+    
+    legend.append('text')
+      .classed('legend-title', true)
+      .text('Legend')
+      .attr('alignment-baseline', 'hanging')
+      .attr('y', 10)
+      .attr('x', 10)
+    
+    const keyContainer = legend.append('g')
+      .classed('key-container', true)
+      .attr('transform', `translate(${10}, 35)`)
+    
+    const legendColors = _colorScale.scale.range().slice(0).reverse()
+    legendColors.push(_colorScale.noDataColor)
+    const keyRow = keyContainer.selectAll('g')
+      .data(legendColors)
+      .enter()
+      .append('g')
+      .attr('transform', (d, i) => `translate(${0}, ${i * 20})`)
+
+    keyRow.append('rect')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('height', 15)
+      .attr('width', 15)
+      .attr('fill', (color) => color)
+    
+    keyRow.append('text')
+      .text((color) => getLegendValueRange(color))
+      .classed('key-text', true)
+      .attr('alignment-baseline', 'hanging')
+      .attr('x', 25)
+      .attr('y', 0)
+  }
+
+  function getLegendValueRange(color) {
+    const colorValueRange = _colorScale.scale.invertExtent
+    if(!colorValueRange(color)[0]) return '0 Projects'
+    return `${_numberFormatter(colorValueRange(color)[0])} to ${_numberFormatter(colorValueRange(color)[1])} Projects`
+  }
+
+  chart.numberFormatter = function (_) {
+    _numberFormatter = _
+    return chart
   }
 
   chart.colorPalette = function(_) {
     _colorPalette = _
-    const colorScale = new ColorScale(_data, _colorPalette.colors, _colorPalette.noDataColor)
-    _colorMapper = (value) => colorScale.getColorFor(value)
+    if(_data !== undefined) setupColorMapper()
     return chart
   }
 
@@ -68,7 +128,7 @@ export default function(parentSelector) {
   }
 
   function getDatum(key) {
-    return _data.find((d) => d.name === key)
+    return _data.find((d) => d.name === key) || { name: undefined, value: undefined }
   }
 
   function getDataValue(key) {
@@ -76,6 +136,8 @@ export default function(parentSelector) {
   }
 
   chart.draw = function () {
+    setupColorMapper()
+    addLegend()
     var country = g.selectAll(".country").data(_topojson);
 
     country.enter().insert("path")
