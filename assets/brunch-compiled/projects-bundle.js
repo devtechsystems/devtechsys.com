@@ -546,11 +546,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (_ref) {
-  var data = _ref.data,
-      colorPalette = _ref.colorPalette,
-      title = _ref.title,
-      groupTitle = _ref.groupTitle;
+exports.default = function (_ref2) {
+  var data = _ref2.data,
+      colorPalette = _ref2.colorPalette,
+      title = _ref2.title,
+      groupTitle = _ref2.groupTitle;
 
   var colorScale = new _ColorScale2.default(data, colorPalette.colors, colorPalette.noDataColor);
   var totalValue = data.reduce(function (accumulated, next) {
@@ -572,6 +572,7 @@ exports.default = function (_ref) {
       _react2.default.createElement(
         _recharts.PieChart,
         { width: 100, height: 100 },
+        _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, null) }),
         _react2.default.createElement(
           _recharts.Pie,
           {
@@ -587,8 +588,7 @@ exports.default = function (_ref) {
           data.map(function (element, index) {
             return _react2.default.createElement(_recharts.Cell, { key: element.name, fill: colorScale.getColorFor(data[index].value) });
           })
-        ),
-        _react2.default.createElement(_recharts.Tooltip, null)
+        )
       )
     ),
     _react2.default.createElement(
@@ -633,9 +633,29 @@ var _recharts = require('recharts');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var TooltipContent = function TooltipContent(_ref) {
+  var active = _ref.active,
+      type = _ref.type,
+      payload = _ref.payload,
+      label = _ref.label;
+
+  if (!active) return null;
+  var hoverData = payload[0].payload;
+  return _react2.default.createElement(
+    'div',
+    { className: 'tt-content', style: { width: 200, height: 'auto' } },
+    _react2.default.createElement(
+      'div',
+      { className: 'tt-label' },
+      hoverData.name
+    ),
+    hoverData.value
+  );
+};
+
 });
 
-;require.register("assets/js/projects/components/D3Choropleth.js", function(exports, require, module) {
+require.register("assets/js/projects/components/D3Choropleth.js", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -915,37 +935,34 @@ Object.defineProperty(exports, "__esModule", {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-exports.default = function (_ref) {
-  var data = _ref.data,
-      xAxisDataKey = _ref.xAxisDataKey,
-      stackDataKey = _ref.stackDataKey,
-      colorPalette = _ref.colorPalette,
-      _ref$valueKey = _ref.valueKey,
-      valueKey = _ref$valueKey === undefined ? 'value' : _ref$valueKey;
+exports.default = function (_ref2) {
+  var data = _ref2.data,
+      xAxisDataKey = _ref2.xAxisDataKey,
+      stackDataKey = _ref2.stackDataKey,
+      colorPalette = _ref2.colorPalette,
+      _ref2$valueKey = _ref2.valueKey,
+      valueKey = _ref2$valueKey === undefined ? 'value' : _ref2$valueKey;
 
-  var colorsLightToDark = colorPalette.colors;
-  var colorsDarkToLight = colorsLightToDark.slice(0).reverse(); // Clone then reverse
+  var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
   var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
   var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
     var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
     var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
     return stackGroupingWithSums;
   });
-  var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref2) {
-    var _ref3 = _slicedToArray(_ref2, 2),
-        xName = _ref3[0],
-        stackGrouping = _ref3[1];
+  var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref3) {
+    var _ref4 = _slicedToArray(_ref3, 2),
+        xName = _ref4[0],
+        stackGrouping = _ref4[1];
 
     return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
   });
   var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
     return d[stackDataKey];
-  }).sort(function (a, b) {
-    var stackNameA = a.toLowerCase();
-    var stackNameB = b.toLowerCase();
-    if (stackNameA < stackNameB) return -1;
-    if (stackNameA > stackNameB) return 1;
-    return 0;
+  }).sort(sortStringsAsc);
+  var colorMapper = {};
+  stackDataNamesAsc.forEach(function (name, index) {
+    return colorMapper[name] = colorsDarkToLight[index];
   });
   var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
   var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
@@ -955,20 +972,21 @@ exports.default = function (_ref) {
       flattenedGroupings.map(function (element, index) {
         return _react2.default.createElement(_recharts.Cell, {
           key: 'stacked-bar-' + element.region + '-' + index,
-          fill: colorsLightToDark[stackIndex]
+          fill: colorMapper[name]
         });
       })
     );
   });
   var legendData = stackDataNamesAsc.map(function (name, index) {
-    return { id: name, value: name, color: colorsDarkToLight[index] };
+    return { id: name, value: name, color: colorMapper[name] };
   });
+
   return _react2.default.createElement(
     _recharts.BarChart,
     { width: 800, height: 400, data: flattenedGroupings },
     _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
     _react2.default.createElement(_recharts.YAxis, null),
-    _react2.default.createElement(_recharts.Tooltip, null),
+    _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
     _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
     stackedBar
   );
@@ -992,9 +1010,76 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var sortStringsAsc = function sortStringsAsc(a, b) {
+  var aLower = a.toLowerCase();
+  var bLower = b.toLowerCase();
+  if (aLower < bLower) return -1;
+  if (aLower > bLower) return 1;
+  return 0;
+};
+
+var TooltipContent = function TooltipContent(_ref) {
+  var active = _ref.active,
+      type = _ref.type,
+      payload = _ref.payload,
+      label = _ref.label,
+      xAxisDataKey = _ref.xAxisDataKey,
+      colorMapper = _ref.colorMapper;
+
+  if (!active) return null;
+  var hoverData = payload[0].payload;
+  var xAxisValue = hoverData[xAxisDataKey];
+  var stackData = Object.keys(hoverData).sort(sortStringsAsc).filter(function (key) {
+    return key !== xAxisDataKey;
+  }).map(function (stackDataName) {
+    return {
+      name: stackDataName,
+      value: hoverData[stackDataName],
+      color: colorMapper[stackDataName]
+    };
+  });
+  var stackContent = stackData.map(function (slice) {
+    return _react2.default.createElement(
+      'div',
+      { className: 'stack-slice-content' },
+      _react2.default.createElement(
+        'svg',
+        { width: 20, height: 20 },
+        _react2.default.createElement('circle', { cx: 10, cy: 10, r: 10, fill: slice.color })
+      ),
+      _react2.default.createElement(
+        'span',
+        { className: 'stack-slice-name' },
+        slice.name
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'stack-slice-value' },
+        slice.value
+      )
+    );
+  });
+
+  return _react2.default.createElement(
+    'div',
+    { className: 'tt-content', style: { width: 350, height: 'auto' } },
+    _react2.default.createElement(
+      'div',
+      { className: 'tt-title' },
+      xAxisValue
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'tt-label' },
+      hoverData.name
+    ),
+    stackContent
+  );
+};
+
 });
 
-;require.register("assets/js/projects/entry.js", function(exports, require, module) {
+require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -1080,14 +1165,15 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   return denormalizedData.concat(nonePracticeAreas);
 };
 
-var chartDataFormat = function chartDataFormat(object) {
-  return Object.entries(object).map(function (_ref) {
+var chartDataFormat = function chartDataFormat(groupedValues) {
+  var nameValueArray = Object.entries(groupedValues).map(function (_ref) {
     var _ref2 = _slicedToArray(_ref, 2),
         name = _ref2[0],
         value = _ref2[1];
 
     return { name: name, value: value };
   });
+  return _lodash2.default.sortBy(nameValueArray, ['value']).slice(0).reverse();
 };
 
 document.addEventListener('DOMContentLoaded', function () {

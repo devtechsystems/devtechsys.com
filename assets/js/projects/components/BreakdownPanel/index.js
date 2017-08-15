@@ -4,6 +4,17 @@ import ColorScale from '../../util/ColorScale.js'
 import CountUp from 'react-countup'
 import { PieChart, Pie, Cell, Tooltip } from 'recharts'
 
+const TooltipContent = function({ active, type, payload, label }) {
+  if(!active) return null
+  const hoverData = payload[0].payload
+  return (
+    <div className='tt-content' style={{ width: 200, height: 'auto' }}>
+      <div className='tt-label'>{hoverData.name}</div>
+      {hoverData.value}
+    </div>
+  )
+}
+
 export default function({ data, colorPalette, title, groupTitle }) {
   const colorScale = new ColorScale(data, colorPalette.colors, colorPalette.noDataColor)
   const totalValue = data.reduce((accumulated, next) => accumulated += next.value, 0)
@@ -14,6 +25,7 @@ export default function({ data, colorPalette, title, groupTitle }) {
         <CountUp className='number-countup' start={0} end={totalValue} duration={3} />
         <div className='breakdown-title'>{title}</div>
         <PieChart width={100} height={100}>
+          <Tooltip content={<TooltipContent />} />
           <Pie
             dataKey='value'
             data={data}
@@ -26,7 +38,6 @@ export default function({ data, colorPalette, title, groupTitle }) {
           >
             {data.map((element, index) => <Cell key={element.name} fill={colorScale.getColorFor(data[index].value)} />)}
           </Pie>
-          <Tooltip />
         </PieChart>
       </div>
       <div className='right-column column small-8'>

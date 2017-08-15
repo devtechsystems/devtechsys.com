@@ -32,8 +32,9 @@ const denormalizePracticeAreas = (data) => {
   return denormalizedData.concat(nonePracticeAreas)
 }
 
-const chartDataFormat = (object) => {
-  return Object.entries(object).map(([name, value]) => ({ name, value }))
+const chartDataFormat = (groupedValues) => {
+  const nameValueArray = Object.entries(groupedValues).map(([name, value]) => ({ name, value }))
+  return lodash.sortBy(nameValueArray, ['value']).slice(0).reverse()
 }
 
 import { regionAndPracAreas, practiceAreas } from './test/Data'

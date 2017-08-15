@@ -145,3 +145,39 @@ div.tooltip {
   opacity: 0.9; 
   position: absolute;
 }
+
+// Tooltips
+.tt-content {
+  color: #222;
+  background: #fff;
+  padding: .5em;
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  opacity: 0.95; 
+
+  .tt-title {
+    font-weight: 600;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .stack-slice-content {
+    border-top: 1px solid #ccc;
+    padding: 5px 5px 0px 5px;
+
+    .stack-slice-name {
+      position: relative;
+      top: 3px;
+      margin-left: 10px;
+    }
+
+    .stack-slice-value {
+      font-size: 1.4em;
+      line-height: 1.4em;
+    }
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+}
