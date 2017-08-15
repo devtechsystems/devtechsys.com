@@ -7,5 +7,5 @@ export default {
     '#173F53',
     '#0E242F'
   ],
-  noDataColor: '#87C6DD'
+  noDataColor: '#cae0ea'
 }

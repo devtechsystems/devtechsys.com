@@ -155,10 +155,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var PRACTICE_AREAS = {
-  ECONOMIC_ANALYSIS: "Economic Analysis and M&E Practice Area",
+  ECONOMIC_ANALYSIS: "M&E Practice Area",
   EDUCATION_AND_YOUTH_DEVELOPMENT: "Education and Youth Development Practice Area",
   GENDER_AND_INCLUSIVE_DEVELOPMENT: "Gender and Inclusive Development Practice Area",
-  PFM_AND_INSTITUTION_BUILDING: "PFM and Institution Building Practice Area"
+  PFM_AND_INSTITUTION_BUILDING: "Public Financial and Fiscal Sustainability Practice Area"
 };
 
 exports.PRACTICE_AREAS = PRACTICE_AREAS;
@@ -1188,7 +1188,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   colors: ['#62AFD1', '#3D98C3', '#297DA6', '#1F5D7B', '#173F53', '#0E242F'],
-  noDataColor: '#87C6DD'
+  noDataColor: '#cae0ea'
 };
 
 });
