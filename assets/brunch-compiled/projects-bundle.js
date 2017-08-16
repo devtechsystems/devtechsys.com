@@ -1483,7 +1483,7 @@ exports.default = function (_ref2) {
     { width: 1100, height: 400, data: flattenedGroupings },
     _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
     _react2.default.createElement(_recharts.YAxis, null),
-    _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
+    _react2.default.createElement(_recharts.Tooltip, { cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'white' }, content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
     _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
     stackedBar
   );
@@ -1677,6 +1677,18 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
   return _lodash2.default.sortBy(nameValueArray, ['value']).slice(0).reverse();
 };
 
+var addWhiteTopBorders = function addWhiteTopBorders() {
+  _d3.default.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function (d) {
+    var node = _d3.default.select(this);
+    var width = node.attr('width');
+    var height = node.attr('height');
+    var topBorder = width;
+    var emptyBorder = width + 2 * height;
+    var dashArray = width + ',' + emptyBorder;
+    return dashArray;
+  }).attr('stroke', 'white').attr('stroke-width', '4px');
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   _d3.default.tsv('/assets/data/projects.tsv', function (data) {
     var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
@@ -1742,7 +1754,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 
-    _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, null), document.getElementById('project-search'));
+    _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, null), document.getElementById('project-search'), addWhiteTopBorders);
   });
 });
 

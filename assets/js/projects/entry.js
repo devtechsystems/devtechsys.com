@@ -38,6 +38,20 @@ const chartDataFormat = (groupedValues) => {
   return lodash.sortBy(nameValueArray, ['value']).slice(0).reverse()
 }
 
+const addWhiteTopBorders = () => {
+  d3.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function(d) { 
+    var node = d3.select(this); 
+    var width = node.attr('width');
+    var height = node.attr('height');
+    var topBorder = width;
+    var emptyBorder = width + (2 * height);
+    var dashArray = width + ',' + emptyBorder;
+    return dashArray
+  })
+  .attr('stroke', 'white')
+  .attr('stroke-width', '4px')
+}
+
 import { regionAndPracAreas, practiceAreas } from './test/Data'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,7 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ReactDOM.render(
       <ProjectSearch />,
-      document.getElementById('project-search')
+      document.getElementById('project-search'),
+      addWhiteTopBorders
     )
   })
 

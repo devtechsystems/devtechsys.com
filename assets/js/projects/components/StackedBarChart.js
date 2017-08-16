@@ -79,7 +79,7 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
     <BarChart width={1100} height={400} data={flattenedGroupings}>
       <XAxis dataKey={xAxisDataKey} />
       <YAxis />
-      <Tooltip content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
+      <Tooltip cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'white' }} content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
       <Legend iconType='circle' payload={legendData} />
      {stackedBar}
     </BarChart>
