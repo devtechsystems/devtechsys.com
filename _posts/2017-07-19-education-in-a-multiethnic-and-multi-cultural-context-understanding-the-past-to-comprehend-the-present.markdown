@@ -4,6 +4,7 @@ title: 'Education in a Multiethnic and Multi-Cultural Context: Understanding the
 date: 2017-07-19 15:38:00 Z
 Practice Area:
 - Education, Gender and Youth
+Teaser Image: "/uploads/CARS%2011.JPG"
 Author: George Henriquez Cayasso
 ---
 
