@@ -1473,7 +1473,6 @@ div.career-list {
       margin-bottom: 15px !important;
       border-bottom: 2px solid #c8e2ef;
       padding-bottom: 15px !important;
-      padding-left:0 !important;
       &:before {display: none !important;}
       .project-category {
         color:#ababab;
@@ -1485,10 +1484,10 @@ div.career-list {
         color:#ababab;
         font-weight: 700;
         font-size: 16px;
+        padding-right: 17px;
       }
       .project-title {
         color: #007cb7;
-        font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
         display: block;

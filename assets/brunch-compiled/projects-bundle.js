@@ -170,6 +170,7 @@ exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
 exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
 exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
+exports.BRIEF_DESCRIPTION_COLUMN_NAME = BRIEF_DESCRIPTION_COLUMN_NAME;
 
 });
 
@@ -934,7 +935,55 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 });
 
-;require.register("assets/js/projects/components/ProjectSearch.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/ProjectSearch/PageSelector.js", function(exports, require, module) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var currentPage = _ref.currentPage,
+      totalPages = _ref.totalPages,
+      onPrevious = _ref.onPrevious,
+      onNext = _ref.onNext;
+
+  return _react2.default.createElement(
+    "div",
+    { className: "page-selector column small-8 medium-6 large-6" },
+    _react2.default.createElement(
+      "div",
+      { className: "row" },
+      _react2.default.createElement(
+        "div",
+        { className: "page-prev-button column small-4", onClick: onPrevious },
+        _react2.default.createElement("span", { className: "fa fa-angle-left" })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "current-page column small-8" },
+        currentPage,
+        " of ",
+        totalPages
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "page-next-button column small-4", onClick: onNext },
+        _react2.default.createElement("span", { className: "fa fa-angle-right" })
+      )
+    )
+  );
+};
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
+;require.register("assets/js/projects/components/ProjectSearch/ProjectSearch.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -955,11 +1004,15 @@ var _lunr = require('lunr');
 
 var _lunr2 = _interopRequireDefault(_lunr);
 
-var _Humanify = require('../util/Humanify');
+var _PageSelector = require('./PageSelector');
+
+var _PageSelector2 = _interopRequireDefault(_PageSelector);
+
+var _Humanify = require('../../util/Humanify');
 
 var _SearchFields = require('./SearchFields');
 
-var _ColumnNames = require('../ColumnNames');
+var _ColumnNames = require('../../ColumnNames');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -979,8 +1032,10 @@ var ProjectSearch = function (_Component) {
 
     _this.state = {
       searchInput: '',
-      projects: props.projects,
-      results: props.projects
+      totalResults: [],
+      pagedResults: [],
+      currentPage: 1,
+      totalNumberOfPages: 0
     };
 
     _this.searchIndex = (0, _lunr2.default)(function () {
@@ -1001,11 +1056,27 @@ var ProjectSearch = function (_Component) {
 
     // Give 'this' scope to functions
     _this.handleChange = _this.handleChange.bind(_this);
-    _this.getResults = _this.getResults.bind(_this);
+    _this.getTotalResults = _this.getTotalResults.bind(_this);
+    _this.getPagedData = _this.getPagedData.bind(_this);
+    _this.goToNextPage = _this.goToNextPage.bind(_this);
+    _this.goToPreviousPage = _this.goToPreviousPage.bind(_this);
+    _this.getTotalNumberOfPages = _this.getTotalNumberOfPages.bind(_this);
     return _this;
   }
 
   _createClass(ProjectSearch, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var totalResults = this.getTotalResults(this.state.searchInput);
+      var pagedResults = this.getPagedData(totalResults, this.state.currentPage);
+      // Set the initial results set
+      this.setState({
+        totalResults: totalResults,
+        pagedResults: pagedResults,
+        totalNumberOfPages: this.getTotalNumberOfPages(totalResults, this.props.showCount)
+      });
+    }
+  }, {
     key: 'getPracticeAreasMarkup',
     value: function getPracticeAreasMarkup(record) {
       var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).filter(function (paColumnName) {
@@ -1029,8 +1100,20 @@ var ProjectSearch = function (_Component) {
       return markup;
     }
   }, {
-    key: 'getResults',
-    value: function getResults(searchInput) {
+    key: 'getPagedData',
+    value: function getPagedData(data, pageNumber) {
+      if (data.length <= this.props.showCount) {
+        return data;
+      }
+
+      var zeroedPageIndex = pageNumber - 1;
+      var startIndex = this.props.showCount * zeroedPageIndex;
+      var endIndex = startIndex + this.props.showCount;
+      return data.slice(startIndex, endIndex);
+    }
+  }, {
+    key: 'getTotalResults',
+    value: function getTotalResults(searchInput) {
       var _this3 = this;
 
       var resultsRefs = this.searchIndex.search('*' + searchInput + '*').map(function (result) {
@@ -1041,6 +1124,13 @@ var ProjectSearch = function (_Component) {
           return project[_this3.props.searchReferenceField] === ref;
         });
       });
+      return resultsRecords;
+    }
+  }, {
+    key: 'resultsMarkup',
+    value: function resultsMarkup(resultsRecords) {
+      var _this4 = this;
+
       var resultsMarkup = resultsRecords.map(function (record) {
         return _react2.default.createElement(
           'li',
@@ -1053,7 +1143,7 @@ var ProjectSearch = function (_Component) {
           _react2.default.createElement(
             'span',
             { className: 'project-category' },
-            _this3.getPracticeAreasMarkup(record)
+            _this4.getPracticeAreasMarkup(record)
           ),
           _react2.default.createElement(
             'a',
@@ -1067,13 +1157,58 @@ var ProjectSearch = function (_Component) {
   }, {
     key: 'handleChange',
     value: function handleChange(event) {
-      this.setState({ searchInput: event.target.value });
+      var searchInput = event.target.value;
+      var totalResults = this.getTotalResults(searchInput);
+      var currentPage = this.state.currentPage;
+      var totalNumberOfPages = this.getTotalNumberOfPages(totalResults, this.props.showCount);
+      // If the user is searching, then make sure that the current page number does not go over the new totalNumberOfPages for this new totalResults set
+      if (currentPage > totalNumberOfPages) currentPage = totalNumberOfPages;
+      var pagedResults = this.getPagedData(totalResults, currentPage);
+
+      this.setState({
+        searchInput: searchInput,
+        totalResults: totalResults,
+        pagedResults: pagedResults,
+        totalNumberOfPages: totalNumberOfPages,
+        currentPage: currentPage
+      });
+    }
+  }, {
+    key: 'goToPreviousPage',
+    value: function goToPreviousPage() {
+      var prevPageExists = this.state.currentPage > 1;
+      if (prevPageExists) {
+        var updatedCurrentPage = this.state.currentPage - 1;
+        var pagedResults = this.getPagedData(this.state.totalResults, updatedCurrentPage);
+        this.setState({
+          currentPage: updatedCurrentPage,
+          pagedResults: pagedResults
+        });
+      }
+    }
+  }, {
+    key: 'getTotalNumberOfPages',
+    value: function getTotalNumberOfPages(data, pageCapacity) {
+      return Math.ceil(data.length / pageCapacity);
+    }
+  }, {
+    key: 'goToNextPage',
+    value: function goToNextPage() {
+      var nextPageExists = this.state.currentPage < this.getTotalNumberOfPages(this.state.totalResults, this.props.showCount);
+      if (nextPageExists) {
+        var updatedCurrentPage = this.state.currentPage + 1;
+        var pagedResults = this.getPagedData(this.state.totalResults, updatedCurrentPage);
+        this.setState({
+          currentPage: updatedCurrentPage,
+          pagedResults: pagedResults
+        });
+      }
     }
   }, {
     key: 'render',
     value: function render() {
-      var searchResults = this.getResults(this.state.searchInput);
-      if (searchResults.length === 0) searchResults = _react2.default.createElement(
+      var searchResultsMarkup = this.resultsMarkup(this.state.pagedResults);
+      if (searchResultsMarkup.length === 0) searchResultsMarkup = _react2.default.createElement(
         'span',
         null,
         'No Projects found'
@@ -1115,8 +1250,13 @@ var ProjectSearch = function (_Component) {
             _react2.default.createElement(
               'ul',
               null,
-              searchResults
+              searchResultsMarkup
             )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(_PageSelector2.default, { currentPage: this.state.currentPage, totalPages: this.getTotalNumberOfPages(this.state.totalResults, this.props.showCount), onPrevious: this.goToPreviousPage, onNext: this.goToNextPage })
           )
         )
       );
@@ -1131,17 +1271,19 @@ exports.default = ProjectSearch;
 
 ProjectSearch.propTypes = {
   projects: _propTypes2.default.arrayOf(_propTypes2.default.object),
-  searchReferenceField: _propTypes2.default.string
+  searchReferenceField: _propTypes2.default.string,
+  showCount: _propTypes2.default.number
 };
 
 ProjectSearch.defaultProps = {
   searchReferenceField: _ColumnNames.ID_COLUMN_NAME,
-  searchFields: _SearchFields.SEARCH_FIELDS
+  searchFields: _SearchFields.SEARCH_FIELDS,
+  showCount: 10
 };
 
 });
 
-require.register("assets/js/projects/components/SearchFields.js", function(exports, require, module) {
+require.register("assets/js/projects/components/ProjectSearch/SearchFields.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1149,7 +1291,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SEARCH_FIELDS = undefined;
 
-var _ColumnNames = require('../ColumnNames');
+var _ColumnNames = require('../../ColumnNames');
 
 var SEARCH_FIELDS = {
   PROJECT_TITLE: { name: _ColumnNames.PROJECT_TITLE_COLUMN_NAME, weight: 100 },
@@ -1161,7 +1303,27 @@ exports.SEARCH_FIELDS = SEARCH_FIELDS;
 
 });
 
-require.register("assets/js/projects/components/StackedBarChart.js", function(exports, require, module) {
+require.register("assets/js/projects/components/ProjectSearch/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ProjectSearch = require('./ProjectSearch');
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ProjectSearch).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
+;require.register("assets/js/projects/components/StackedBarChart.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
