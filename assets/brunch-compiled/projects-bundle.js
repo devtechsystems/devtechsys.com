@@ -154,14 +154,22 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var PRACTICE_AREAS = {
+var PRACTICE_AREA_COLUMN_NAMES = {
   ECONOMIC_ANALYSIS: "M&E Practice Area",
   EDUCATION_AND_YOUTH_DEVELOPMENT: "Education and Youth Development Practice Area",
   GENDER_AND_INCLUSIVE_DEVELOPMENT: "Gender and Inclusive Development Practice Area",
   PFM_AND_INSTITUTION_BUILDING: "Public Financial and Fiscal Sustainability Practice Area"
 };
 
-exports.PRACTICE_AREAS = PRACTICE_AREAS;
+var COUNTRY_COLUMN_NAME = "Country";
+var PROJECT_TITLE_COLUMN_NAME = "Project Title";
+var ID_COLUMN_NAME = "id";
+var BRIEF_DESCRIPTION_COLUMN_NAME = "Brief Description";
+
+exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
+exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
+exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
+exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
 
 });
 
@@ -939,6 +947,20 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _lunr = require('lunr');
+
+var _lunr2 = _interopRequireDefault(_lunr);
+
+var _Humanify = require('../util/Humanify');
+
+var _SearchFields = require('./SearchFields');
+
+var _ColumnNames = require('../ColumnNames');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -960,12 +982,88 @@ var ProjectSearch = function (_Component) {
       projects: props.projects,
       results: props.projects
     };
+
+    _this.searchIndex = (0, _lunr2.default)(function () {
+      var _this2 = this;
+
+      this.ref(props.searchReferenceField);
+      Object.values(props.searchFields).forEach(function (searchField) {
+        var fieldName = searchField.name;
+        var fieldWeight = searchField.weight;
+        _this2.field(fieldName, fieldWeight);
+      });
+      this.pipeline.remove(_lunr2.default.stemmer);
+
+      props.projects.forEach(function (project) {
+        _this2.add(project);
+      });
+    });
+
+    // Give 'this' scope to functions
+    _this.handleChange = _this.handleChange.bind(_this);
+    _this.getResults = _this.getResults.bind(_this);
     return _this;
   }
 
   _createClass(ProjectSearch, [{
+    key: 'getPracticeAreasMarkup',
+    value: function getPracticeAreasMarkup(record) {
+      var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).filter(function (paColumnName) {
+        return record[paColumnName] === 'x';
+      });
+      var markup = practiceAreas.map(function (practiceArea, i) {
+        var separator = i + 1 < practiceAreas.length ? ' / ' : '';
+
+        return _react2.default.createElement(
+          'span',
+          { key: practiceArea, className: 'subtitle' },
+          '' + (0, _Humanify.PracticeAreaTitle)(practiceArea) + separator
+        );
+      });
+
+      if (markup.length === 0) return _react2.default.createElement(
+        'span',
+        null,
+        'Practice Area Unavailable'
+      );
+      return markup;
+    }
+  }, {
     key: 'getResults',
-    value: function getResults() {}
+    value: function getResults(searchInput) {
+      var _this3 = this;
+
+      var resultsRefs = this.searchIndex.search('*' + searchInput + '*').map(function (result) {
+        return result.ref;
+      });
+      var resultsRecords = resultsRefs.map(function (ref) {
+        return _this3.props.projects.find(function (project) {
+          return project[_this3.props.searchReferenceField] === ref;
+        });
+      });
+      var resultsMarkup = resultsRecords.map(function (record) {
+        return _react2.default.createElement(
+          'li',
+          { key: record[_ColumnNames.ID_COLUMN_NAME] },
+          _react2.default.createElement(
+            'span',
+            { className: 'project-country pull-right' },
+            record[_ColumnNames.COUNTRY_COLUMN_NAME]
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'project-category' },
+            _this3.getPracticeAreasMarkup(record)
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: '#', className: 'project-title' },
+            record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME]
+          )
+        );
+      });
+      return resultsMarkup;
+    }
   }, {
     key: 'handleChange',
     value: function handleChange(event) {
@@ -974,6 +1072,13 @@ var ProjectSearch = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      var searchResults = this.getResults(this.state.searchInput);
+      if (searchResults.length === 0) searchResults = _react2.default.createElement(
+        'span',
+        null,
+        'No Projects found'
+      );
+
       return _react2.default.createElement(
         'div',
         null,
@@ -997,7 +1102,7 @@ var ProjectSearch = function (_Component) {
                 'Search Projects'
               ),
               _react2.default.createElement('span', { className: 'fa fa-search', 'aria-hidden': 'true' }),
-              _react2.default.createElement('input', { type: 'text', placeholder: 'Search Projects', value: this.state.value })
+              _react2.default.createElement('input', { type: 'text', placeholder: 'Search Projects', value: this.state.value, onChange: this.handleChange })
             )
           )
         ),
@@ -1010,405 +1115,7 @@ var ProjectSearch = function (_Component) {
             _react2.default.createElement(
               'ul',
               null,
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-country pull-right' },
-                  'Country'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'project-category' },
-                  'Practice Area/Category'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'project-title' },
-                  'Project Title'
-                )
-              )
+              searchResults
             )
           )
         )
@@ -1420,6 +1127,37 @@ var ProjectSearch = function (_Component) {
 }(_react.Component);
 
 exports.default = ProjectSearch;
+
+
+ProjectSearch.propTypes = {
+  projects: _propTypes2.default.arrayOf(_propTypes2.default.object),
+  searchReferenceField: _propTypes2.default.string
+};
+
+ProjectSearch.defaultProps = {
+  searchReferenceField: _ColumnNames.ID_COLUMN_NAME,
+  searchFields: _SearchFields.SEARCH_FIELDS
+};
+
+});
+
+require.register("assets/js/projects/components/SearchFields.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SEARCH_FIELDS = undefined;
+
+var _ColumnNames = require('../ColumnNames');
+
+var SEARCH_FIELDS = {
+  PROJECT_TITLE: { name: _ColumnNames.PROJECT_TITLE_COLUMN_NAME, weight: 100 },
+  COUNTRY: { name: _ColumnNames.COUNTRY_COLUMN_NAME, weight: 50 },
+  BRIEF_DESCRIPTION: { name: _ColumnNames.BRIEF_DESCRIPTION_COLUMN_NAME, weight: 10 }
+};
+
+exports.SEARCH_FIELDS = SEARCH_FIELDS;
 
 });
 
@@ -1645,7 +1383,7 @@ var formatter = (0, _qdFormatters2.default)(_d3.default).numberFormat;
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   var denormalizedData = [];
-  Object.values(_ColumnNames.PRACTICE_AREAS).forEach(function (practiceArea) {
+  Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).forEach(function (practiceArea) {
     var dataFilteredByPracticeArea = data.filter(function (d) {
       return d[practiceArea] === 'x';
     });
@@ -1655,7 +1393,7 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
   });
   var nonePracticeAreas = data.filter(function (d) {
-    var foundSomePracticeArea = Object.values(_ColumnNames.PRACTICE_AREAS).some(function (practiceArea) {
+    var foundSomePracticeArea = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).some(function (practiceArea) {
       return d[practiceArea] === 'x';
     });
     return !foundSomePracticeArea;
@@ -1691,6 +1429,9 @@ var addWhiteTopBorders = function addWhiteTopBorders() {
 
 document.addEventListener('DOMContentLoaded', function () {
   _d3.default.tsv('/assets/data/projects.tsv', function (data) {
+    data = data.map(function (d, i) {
+      return Object.assign(d, { id: String(i) });
+    });
     var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
     var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
     var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
@@ -1754,7 +1495,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 
-    _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, null), document.getElementById('project-search'), addWhiteTopBorders);
+    _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'), addWhiteTopBorders);
   });
 });
 
@@ -1878,6 +1619,22 @@ var ColorScale = function () {
 }();
 
 exports.default = ColorScale;
+
+});
+
+require.register("assets/js/projects/util/Humanify.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Make practice area names nicer looking to read
+
+var PracticeAreaTitle = function PracticeAreaTitle(practiceArea) {
+  return practiceArea.replace('Practice Area', '');
+};
+
+exports.PracticeAreaTitle = PracticeAreaTitle;
 
 });
 

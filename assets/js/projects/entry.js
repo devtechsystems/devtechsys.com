@@ -8,7 +8,7 @@ import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
-import { PRACTICE_AREAS } from './ColumnNames'
+import { PRACTICE_AREA_COLUMN_NAMES } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
@@ -19,13 +19,13 @@ const formatter = qdFormatters(d3).numberFormat
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 const denormalizePracticeAreas = (data) => {
   let denormalizedData = []
-  Object.values(PRACTICE_AREAS).forEach((practiceArea) => {
+  Object.values(PRACTICE_AREA_COLUMN_NAMES).forEach((practiceArea) => {
     const dataFilteredByPracticeArea = data.filter(d => d[practiceArea] === 'x')
     const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })
   let nonePracticeAreas = data.filter(d => {
-    var foundSomePracticeArea = Object.values(PRACTICE_AREAS).some((practiceArea) => d[practiceArea] === 'x')
+    var foundSomePracticeArea = Object.values(PRACTICE_AREA_COLUMN_NAMES).some((practiceArea) => d[practiceArea] === 'x')
     return !foundSomePracticeArea
   })
   .map(d => Object.assign(d, { denormalizedPracticeArea: 'None' }))
@@ -56,6 +56,7 @@ import { regionAndPracAreas, practiceAreas } from './test/Data'
 
 document.addEventListener('DOMContentLoaded', () => {
   d3.tsv('/assets/data/projects.tsv', function(data) {
+    data = data.map((d, i) => Object.assign(d, { id: String(i) }))
     const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
     const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
     const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
@@ -131,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     )
 
     ReactDOM.render(
-      <ProjectSearch />,
+      <ProjectSearch projects={data} />,
       document.getElementById('project-search'),
       addWhiteTopBorders
     )
