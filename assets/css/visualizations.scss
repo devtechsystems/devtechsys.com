@@ -146,6 +146,21 @@ div.tooltip {
   position: absolute;
 }
 
+// Stacked bar chart
+.recharts-text.recharts-cartesian-axis-tick-value {
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.recharts-legend-item-text {
+  font-size: .7em;
+  font-weight: 600;
+}
+
+li.recharts-legend-item:before {
+  content: '' !important;
+}
+
 // Tooltips
 .tt-content {
   color: #222;

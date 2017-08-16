@@ -11,6 +11,7 @@ import * as topojson from 'topojson'
 import { PRACTICE_AREAS } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
+import ProjectSearch from './components/ProjectSearch'
 
 const formatter = qdFormatters(d3).numberFormat
 
@@ -113,6 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
       stackedBarChart,
       document.getElementById('contract-value')
+    )
+
+    ReactDOM.render(
+      <ProjectSearch />,
+      document.getElementById('project-search')
     )
   })
 

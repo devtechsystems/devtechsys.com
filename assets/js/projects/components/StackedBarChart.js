@@ -27,7 +27,7 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
     })
   const stackContent = stackData.map((slice) => {
     return (
-      <div className='stack-slice-content'>
+      <div key={`${xAxisValue}-${slice.name}`} className='stack-slice-content'>
         <svg width={20} height={20}><circle cx={10} cy={10} r={10} fill={slice.color} /></svg>
         <span className='stack-slice-name'>{slice.name}</span>
         <div className='stack-slice-value'>{slice.value}</div>
@@ -76,7 +76,7 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
   const legendData = stackDataNamesAsc.map((name, index) => ({ id: name, value: name, color: colorMapper[name] }))
 
   return (
-    <BarChart width={800} height={400} data={flattenedGroupings}>
+    <BarChart width={1100} height={400} data={flattenedGroupings}>
       <XAxis dataKey={xAxisDataKey} />
       <YAxis />
       <Tooltip content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
