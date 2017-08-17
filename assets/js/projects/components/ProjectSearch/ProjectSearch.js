@@ -137,6 +137,9 @@ export default class ProjectSearch extends Component {
     const totalNumberOfPages = this.getTotalNumberOfPages(totalResults, this.props.showCount)
     // If the user is searching, then make sure that the current page number does not go over the new totalNumberOfPages for this new totalResults set
     if(currentPage > totalNumberOfPages) currentPage = totalNumberOfPages
+    // If the current page was 0, but now there are results again and totalNumberOfPages is not zero anymore
+    // Then move the user to the first page
+    if(currentPage === 0 && totalNumberOfPages > 0) currentPage = 1
     const pagedResults = this.getPagedData(totalResults, currentPage)
 
     this.setState({ 
