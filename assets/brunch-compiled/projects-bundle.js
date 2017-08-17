@@ -1036,7 +1036,8 @@ var ProjectSearch = function (_Component) {
       totalResults: [],
       pagedResults: [],
       currentPage: 1,
-      totalNumberOfPages: 0
+      totalNumberOfPages: 0,
+      sortBy: { columnName: 'Project Title', order: 'asc' }
     };
 
     _this.searchIndex = (0, _lunr2.default)(function () {
@@ -1062,13 +1063,14 @@ var ProjectSearch = function (_Component) {
     _this.goToNextPage = _this.goToNextPage.bind(_this);
     _this.goToPreviousPage = _this.goToPreviousPage.bind(_this);
     _this.getTotalNumberOfPages = _this.getTotalNumberOfPages.bind(_this);
+    _this.setSort = _this.setSort.bind(_this);
     return _this;
   }
 
   _createClass(ProjectSearch, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var totalResults = this.getTotalResults(this.state.searchInput);
+      var totalResults = this.getTotalResults(this.state.searchInput, this.state.sortBy);
       var pagedResults = this.getPagedData(totalResults, this.state.currentPage);
       // Set the initial results set
       this.setState({
@@ -1112,9 +1114,25 @@ var ProjectSearch = function (_Component) {
       var endIndex = startIndex + this.props.showCount;
       return data.slice(startIndex, endIndex);
     }
+
+    // Note this function is for sorting strings
+
+  }, {
+    key: 'generateSortFunc',
+    value: function generateSortFunc(sortColumn, sortOrder) {
+      if (sortOrder == 'asc') {
+        return function (a, b) {
+          return a[sortColumn].localeCompare(b[sortColumn]);
+        };
+      } else {
+        return function (a, b) {
+          return b[sortColumn].localeCompare(a[sortColumn]);
+        };
+      }
+    }
   }, {
     key: 'getTotalResults',
-    value: function getTotalResults(searchInput) {
+    value: function getTotalResults(searchInput, sortBy) {
       var _this3 = this;
 
       var resultsRefs = this.searchIndex.search('*' + searchInput + '*').map(function (result) {
@@ -1124,7 +1142,7 @@ var ProjectSearch = function (_Component) {
         return _this3.props.projects.find(function (project) {
           return project[_this3.props.searchReferenceField] === ref;
         });
-      });
+      }).sort(this.generateSortFunc(sortBy.columnName, sortBy.order));
       return resultsRecords;
     }
   }, {
@@ -1182,7 +1200,7 @@ var ProjectSearch = function (_Component) {
     key: 'handleChange',
     value: function handleChange(event) {
       var searchInput = event.target.value;
-      var totalResults = this.getTotalResults(searchInput);
+      var totalResults = this.getTotalResults(searchInput, this.state.sortBy);
       var currentPage = this.state.currentPage;
       var totalNumberOfPages = this.getTotalNumberOfPages(totalResults, this.props.showCount);
       // If the user is searching, then make sure that the current page number does not go over the new totalNumberOfPages for this new totalResults set
@@ -1229,8 +1247,47 @@ var ProjectSearch = function (_Component) {
       }
     }
   }, {
+    key: 'setSort',
+    value: function setSort(sortColumn) {
+      if (this.state.sortBy.order === 'asc') {
+        var sortBy = { columnName: sortColumn, order: 'desc' };
+        var totalResults = this.getTotalResults(this.state.searchInput, sortBy);
+        var pagedResults = this.getPagedData(totalResults, this.state.currentPage);
+        this.setState({
+          sortBy: sortBy,
+          totalResults: totalResults,
+          pagedResults: pagedResults
+        });
+      } else if (this.state.sortBy.order === 'desc') {
+        var _sortBy = { columnName: sortColumn, order: 'asc' };
+        var _totalResults = this.getTotalResults(this.state.searchInput, _sortBy);
+        var _pagedResults = this.getPagedData(_totalResults, this.state.currentPage);
+        this.setState({
+          sortBy: _sortBy,
+          totalResults: _totalResults,
+          pagedResults: _pagedResults
+        });
+      }
+    }
+  }, {
+    key: 'getSortArrow',
+    value: function getSortArrow(columnName) {
+      var sortBy = this.state.sortBy;
+      if (sortBy.columnName !== columnName) {
+        return '';
+      } else {
+        if (sortBy.order === 'asc') {
+          return _react2.default.createElement('span', { className: 'sort-caret fa fa-caret-up' });
+        } else if (sortBy.order === 'desc') {
+          return _react2.default.createElement('span', { className: 'sort-caret fa fa-caret-down' });
+        }
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this5 = this;
+
       var searchResultsMarkup = this.resultsMarkup(this.state.pagedResults);
       if (searchResultsMarkup.length === 0) searchResultsMarkup = _react2.default.createElement(
         'span',
@@ -1277,12 +1334,26 @@ var ProjectSearch = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'column small-8 medium-10' },
-                'Project'
+                _react2.default.createElement(
+                  'a',
+                  { onClick: function onClick() {
+                      return _this5.setSort('Project Title');
+                    } },
+                  'Project',
+                  this.getSortArrow('Project Title')
+                )
               ),
               _react2.default.createElement(
                 'div',
                 { className: 'column small-8 medium-6' },
-                'Country'
+                _react2.default.createElement(
+                  'a',
+                  { onClick: function onClick() {
+                      return _this5.setSort('Country');
+                    } },
+                  'Country',
+                  this.getSortArrow('Country')
+                )
               )
             )
           ),

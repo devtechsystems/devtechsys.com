@@ -15,7 +15,8 @@ export default class ProjectSearch extends Component {
       totalResults: [],
       pagedResults: [],
       currentPage: 1,
-      totalNumberOfPages: 0
+      totalNumberOfPages: 0,
+      sortBy: { columnName: 'Project Title', order: 'asc' }
     }
 
     this.searchIndex = Lunr(function() {
@@ -39,10 +40,11 @@ export default class ProjectSearch extends Component {
     this.goToNextPage = this.goToNextPage.bind(this)
     this.goToPreviousPage = this.goToPreviousPage.bind(this)
     this.getTotalNumberOfPages = this.getTotalNumberOfPages.bind(this)
+    this.setSort = this.setSort.bind(this)
   }
 
   componentWillMount() {
-    const totalResults = this.getTotalResults(this.state.searchInput)
+    const totalResults = this.getTotalResults(this.state.searchInput, this.state.sortBy)
     const pagedResults = this.getPagedData(totalResults, this.state.currentPage)
     // Set the initial results set
     this.setState({ 
@@ -78,11 +80,25 @@ export default class ProjectSearch extends Component {
     return data.slice(startIndex, endIndex)
   }
 
-  getTotalResults(searchInput) {
+  // Note this function is for sorting strings
+  generateSortFunc(sortColumn, sortOrder) {
+    if(sortOrder == 'asc') {
+      return function(a, b) {
+        return a[sortColumn].localeCompare(b[sortColumn])
+      }
+    } else {
+      return function(a, b) {
+        return b[sortColumn].localeCompare(a[sortColumn])
+      }
+    }
+  }
+
+  getTotalResults(searchInput, sortBy) {
     const resultsRefs = this.searchIndex.search(`*${searchInput}*`).map((result) => result.ref)
     const resultsRecords = resultsRefs.map((ref) => {
       return this.props.projects.find((project) => project[this.props.searchReferenceField] === ref)
     })
+    .sort(this.generateSortFunc(sortBy.columnName, sortBy.order))
     return resultsRecords
   }
 
@@ -116,7 +132,7 @@ export default class ProjectSearch extends Component {
 
   handleChange(event) {
     const searchInput = event.target.value
-    const totalResults = this.getTotalResults(searchInput)
+    const totalResults = this.getTotalResults(searchInput, this.state.sortBy)
     let currentPage = this.state.currentPage
     const totalNumberOfPages = this.getTotalNumberOfPages(totalResults, this.props.showCount)
     // If the user is searching, then make sure that the current page number does not go over the new totalNumberOfPages for this new totalResults set
@@ -160,6 +176,41 @@ export default class ProjectSearch extends Component {
     }
   }
 
+  setSort(sortColumn) {
+    if(this.state.sortBy.order === 'asc') {
+      const sortBy = { columnName: sortColumn, order: 'desc' }
+      const totalResults = this.getTotalResults(this.state.searchInput, sortBy)
+      const pagedResults = this.getPagedData(totalResults, this.state.currentPage)
+      this.setState({
+        sortBy,
+        totalResults,
+        pagedResults
+      })
+    } else if(this.state.sortBy.order === 'desc') {
+      const sortBy = { columnName: sortColumn, order: 'asc' }
+      const totalResults = this.getTotalResults(this.state.searchInput, sortBy)
+      const pagedResults = this.getPagedData(totalResults, this.state.currentPage)
+      this.setState({
+        sortBy,
+        totalResults,
+        pagedResults
+      })
+    }
+  }
+
+  getSortArrow(columnName) {
+    const sortBy = this.state.sortBy
+    if(sortBy.columnName !== columnName) {
+      return ''
+    } else {
+      if(sortBy.order === 'asc') {
+        return <span className="sort-caret fa fa-caret-up"></span>
+      } else if(sortBy.order === 'desc') {
+        return <span className="sort-caret fa fa-caret-down"></span>
+      }
+    }
+  }
+
   render() {
     let searchResultsMarkup = this.resultsMarkup(this.state.pagedResults)
     if(searchResultsMarkup.length === 0) searchResultsMarkup = <span>No Projects found</span>
@@ -179,8 +230,8 @@ export default class ProjectSearch extends Component {
         <div className="row row--gutters column projects-list">
           <div className="column background-lighterBlue project-results-header">
             <div className="row">
-              <div className="column small-8 medium-10">Project</div>
-              <div className="column small-8 medium-6">Country</div>
+              <div className="column small-8 medium-10"><a onClick={() => this.setSort('Project Title')}>Project{this.getSortArrow('Project Title')}</a></div>
+              <div className="column small-8 medium-6"><a onClick={() => this.setSort('Country')}>Country{this.getSortArrow('Country')}</a></div>
             </div>
           </div>
           <div className="overflow-container">

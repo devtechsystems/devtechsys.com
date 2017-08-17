@@ -1480,6 +1480,10 @@ div.career-list {
       text-transform: uppercase;
       font-size: .85em;
       color: #26425f;
+
+      .sort-caret {
+        margin-left: 10px;
+      }
     }
 
     ul {
