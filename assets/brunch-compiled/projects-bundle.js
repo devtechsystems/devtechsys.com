@@ -579,7 +579,7 @@ exports.default = function (_ref2) {
       _react2.default.createElement(
         _recharts.PieChart,
         { width: 120, height: 120, className: 'breakdown-pie' },
-        _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, null) }),
+        _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, { valueName: title }) }),
         _react2.default.createElement(
           _recharts.Pie,
           {
@@ -644,7 +644,8 @@ var TooltipContent = function TooltipContent(_ref) {
   var active = _ref.active,
       type = _ref.type,
       payload = _ref.payload,
-      label = _ref.label;
+      label = _ref.label,
+      valueName = _ref.valueName;
 
   if (!active) return null;
   var hoverData = payload[0].payload;
@@ -656,7 +657,9 @@ var TooltipContent = function TooltipContent(_ref) {
       { className: 'tt-label' },
       hoverData.name
     ),
-    hoverData.value
+    hoverData.value,
+    ' ',
+    valueName
   );
 };
 
@@ -1377,7 +1380,9 @@ exports.default = function (_ref2) {
       stackDataKey = _ref2.stackDataKey,
       colorPalette = _ref2.colorPalette,
       _ref2$valueKey = _ref2.valueKey,
-      valueKey = _ref2$valueKey === undefined ? 'value' : _ref2$valueKey;
+      valueKey = _ref2$valueKey === undefined ? 'value' : _ref2$valueKey,
+      tickFormatter = _ref2.tickFormatter,
+      tooltipValueFormatter = _ref2.tooltipValueFormatter;
 
   var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
   var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
@@ -1419,11 +1424,14 @@ exports.default = function (_ref2) {
 
   return _react2.default.createElement(
     _recharts.BarChart,
-    { width: 1100, height: 400, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
+    { width: 1000, height: 400, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
     _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
-    _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
-    _react2.default.createElement(_recharts.YAxis, null),
-    _react2.default.createElement(_recharts.Tooltip, { cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' }, content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
+    _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
+    _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
+    _react2.default.createElement(_recharts.Tooltip, {
+      cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
+      content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
+    }),
     _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
     stackedBar
   );
@@ -1461,7 +1469,8 @@ var TooltipContent = function TooltipContent(_ref) {
       payload = _ref.payload,
       label = _ref.label,
       xAxisDataKey = _ref.xAxisDataKey,
-      colorMapper = _ref.colorMapper;
+      colorMapper = _ref.colorMapper,
+      tooltipValueFormatter = _ref.tooltipValueFormatter;
 
   if (!active) return null;
   var hoverData = payload[0].payload;
@@ -1492,7 +1501,7 @@ var TooltipContent = function TooltipContent(_ref) {
       _react2.default.createElement(
         'div',
         { className: 'stack-slice-value' },
-        slice.value
+        tooltipValueFormatter(slice.value)
       )
     );
   });
@@ -1704,7 +1713,9 @@ document.addEventListener('DOMContentLoaded', function () {
       xAxisDataKey: 'region',
       stackDataKey: 'practiceArea',
       colorPalette: _ColorPalette2.default,
-      valueKey: 'value'
+      valueKey: 'value',
+      tickFormatter: formatters.bigCurrencyFormat,
+      tooltipValueFormatter: formatters.currencyFormat
     });
 
     _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));

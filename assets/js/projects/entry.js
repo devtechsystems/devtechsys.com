@@ -125,6 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         stackDataKey={'practiceArea'}
         colorPalette={ColorPalette}
         valueKey={'value'}
+        tickFormatter={formatters.bigCurrencyFormat}
+        tooltipValueFormatter={formatters.currencyFormat}
       />
     )
 

@@ -12,7 +12,7 @@ const sortStringsAsc = (a, b) => {
   return 0
 }
 
-const TooltipContent = function({ active, type, payload, label, xAxisDataKey, colorMapper }) {
+const TooltipContent = function({ active, type, payload, label, xAxisDataKey, colorMapper, tooltipValueFormatter }) {
   if(!active) return null
   const hoverData = payload[0].payload
   const xAxisValue = hoverData[xAxisDataKey]
@@ -30,7 +30,7 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
       <div key={`${xAxisValue}-${slice.name}`} className='stack-slice-content'>
         <svg width={20} height={20}><circle cx={10} cy={10} r={10} fill={slice.color} /></svg>
         <span className='stack-slice-name'>{slice.name}</span>
-        <div className='stack-slice-value'>{slice.value}</div>
+        <div className='stack-slice-value'>{tooltipValueFormatter(slice.value)}</div>
       </div>
     )
   })
@@ -44,7 +44,7 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
   )
 }
 
-export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value' }) {
+export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value', tickFormatter, tooltipValueFormatter }) {
   const colorsDarkToLight = colorPalette.colors.slice(0).reverse() // Clone then reverse
   const xGrouping = lodash.groupBy(data, xAxisDataKey)
   const xGroupingWithSums = lodash.mapValues(xGrouping, (collectionForXGroup) => {
@@ -76,11 +76,14 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
   const legendData = stackDataNamesAsc.map((name, index) => ({ id: name, value: name, color: colorMapper[name] }))
 
   return (
-    <BarChart width={1100} height={400} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
+    <BarChart width={1000} height={400} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
       <CartesianGrid vertical={false} strokeDasharray="1 1" strokeWidth={2} />
-      <XAxis dataKey={xAxisDataKey} />
-      <YAxis />
-      <Tooltip cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'none' }} content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
+      <XAxis dataKey={xAxisDataKey} interval={0} />
+      <YAxis tickFormatter={tickFormatter} />
+      <Tooltip 
+        cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'none' }} 
+        content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} tooltipValueFormatter={tooltipValueFormatter} />} 
+      />
       <Legend iconType='circle' payload={legendData} />
      {stackedBar}
     </BarChart>
