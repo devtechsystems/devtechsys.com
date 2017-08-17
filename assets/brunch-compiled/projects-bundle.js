@@ -571,7 +571,7 @@ exports.default = function (_ref2) {
     { className: 'breakdown-panel row' },
     _react2.default.createElement(
       'div',
-      { className: 'left-column column small-4' },
+      { className: 'left-column column medium-5' },
       _react2.default.createElement(_reactCountup2.default, { className: 'number-countup', start: 0, end: totalValue, duration: 3 }),
       _react2.default.createElement(
         'div',
@@ -580,15 +580,15 @@ exports.default = function (_ref2) {
       ),
       _react2.default.createElement(
         _recharts.PieChart,
-        { width: 100, height: 100 },
+        { width: 120, height: 120, className: 'breakdown-pie' },
         _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, null) }),
         _react2.default.createElement(
           _recharts.Pie,
           {
             dataKey: 'value',
             data: data,
-            innerRadius: 20,
-            outerRadius: 50,
+            innerRadius: 25,
+            outerRadius: 60,
             cx: '50%',
             cy: '50%',
             startAngle: 90,
@@ -602,7 +602,7 @@ exports.default = function (_ref2) {
     ),
     _react2.default.createElement(
       'div',
-      { className: 'right-column column small-8' },
+      { className: 'right-column column medium-10' },
       _react2.default.createElement(
         'div',
         { className: 'breakdown-group-title' },
@@ -611,8 +611,8 @@ exports.default = function (_ref2) {
       ),
       _react2.default.createElement(_RowChart2.default, {
         rowHeight: 40,
-        width: 200,
-        height: 300,
+        width: 250,
+        height: 250,
         data: data,
         colorMapper: function colorMapper(value) {
           return colorScale.getColorFor(value);
@@ -1380,7 +1380,8 @@ exports.default = function (_ref2) {
 
   return _react2.default.createElement(
     _recharts.BarChart,
-    { width: 1100, height: 400, data: flattenedGroupings },
+    { width: 1100, height: 400, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
+    _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
     _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
     _react2.default.createElement(_recharts.YAxis, null),
     _react2.default.createElement(_recharts.Tooltip, { cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'white' }, content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),

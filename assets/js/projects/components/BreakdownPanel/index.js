@@ -21,16 +21,16 @@ export default function({ data, colorPalette, title, groupTitle }) {
 
   return (
     <div className='breakdown-panel row'>
-      <div className='left-column column small-4'>
+      <div className='left-column column medium-5'>
         <CountUp className='number-countup' start={0} end={totalValue} duration={3} />
         <div className='breakdown-title'>{title}</div>
-        <PieChart width={100} height={100}>
+        <PieChart width={120} height={120} className='breakdown-pie'>
           <Tooltip content={<TooltipContent />} />
           <Pie
             dataKey='value'
             data={data}
-            innerRadius={20}
-            outerRadius={50}
+            innerRadius={25}
+            outerRadius={60}
             cx='50%'
             cy='50%'
             startAngle={90}
@@ -40,12 +40,12 @@ export default function({ data, colorPalette, title, groupTitle }) {
           </Pie>
         </PieChart>
       </div>
-      <div className='right-column column small-8'>
+      <div className='right-column column medium-10'>
         <div className='breakdown-group-title'>By {groupTitle}</div>
         <RowChart
           rowHeight={40}
-          width={200}
-          height={300}
+          width={250}
+          height={250}
           data={data}
           colorMapper={(value) => colorScale.getColorFor(value)}
         />

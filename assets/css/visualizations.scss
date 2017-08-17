@@ -36,7 +36,7 @@
 .breakdown-panel {
   .left-column {
     .number-countup {
-      font-size: 3.5em;
+      font-size: 4em;
       font-weight: 600;
       color: #008fc2;
       line-height: .75;
@@ -56,6 +56,10 @@
       font-weight: 600;
       margin-bottom: 10px;
     }
+  }
+
+  .breakdown-pie {
+    margin-top: 15px;
   }
 }
 
@@ -147,6 +151,16 @@ div.tooltip {
 }
 
 // Stacked bar chart
+.yAxis .recharts-cartesian-axis-line {
+  stroke: none;
+}
+.xAxis .recharts-cartesian-axis-line {
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+.recharts-cartesian-axis-tick-line {
+  stroke: none;
+}
 .recharts-text.recharts-cartesian-axis-tick-value {
   font-size: .8em;
   font-weight: 600;

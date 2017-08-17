@@ -76,7 +76,8 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
   const legendData = stackDataNamesAsc.map((name, index) => ({ id: name, value: name, color: colorMapper[name] }))
 
   return (
-    <BarChart width={1100} height={400} data={flattenedGroupings}>
+    <BarChart width={1100} height={400} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
+      <CartesianGrid vertical={false} strokeDasharray="1 1" strokeWidth={2} />
       <XAxis dataKey={xAxisDataKey} />
       <YAxis />
       <Tooltip cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'white' }} content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />

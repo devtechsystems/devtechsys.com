@@ -1379,6 +1379,9 @@ div.career-list {
   .background-lighterGray {background-color:#f5f5f5;}
   .background-lighterBlue {background-color: #dfeff5;}
   .background-darkBlue {background-color: #284460;}
+  .projects-solutions-countries {
+    padding-bottom: 80px;
+  }
   .projects-map {
     margin-top:50px;
   }
@@ -1386,9 +1389,16 @@ div.career-list {
     font-size: 23px;  
     margin-top: 65px;
   }
-  .projects-chart {
+  .projects-chart, .regions-chart, .contracts-section {
     position: relative;
     margin-top:20px;
+  }
+  .projects-chart {
+    border-right: 1px solid #9d9d9d;
+  }
+  .contracts-chart-title {
+    font-weight: 600;
+    font-size: .95em;
   }
   .projects-partners {
     padding-top:60px;
@@ -1498,7 +1508,7 @@ div.career-list {
   }
   p.slightly-smaller {
     font-size: 15px;
-    margin-right: 360px;
+    margin-right: 5%;
     color: #5a5a5a;
   }
 }
