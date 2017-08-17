@@ -5,8 +5,14 @@
 			<img src="{{ location['Location Image']}}"/>
 			<h2 class="OL--title">{{ location.title }}</h2>
 		</div>
-		<p class="float-left OL--address">{{ location['Address Text'] }}</p>
-		<p class="float-right OL--phone"><span class="fa fa-phone-square"></span>{{ location['Phone Number'] }}</p>
+		<div class="OL--details-block clearfix">
+			{% if location['Address Text'].size > 0 %}
+				<p class="OL--address">{{ location['Address Text'] }}</p>
+			{% endif %}
+			{% if location['Phone Number'].size > 0 %}
+				<p class="OL--phone"><span class="fa fa-phone-square"></span>{{ location['Phone Number'] }}</p>
+			{% endif %}
+		</div>
 	</div>
 	{% endfor %}
 </div>

@@ -24,7 +24,7 @@ layout: default
     </header>
 
     {% if page['Author'] %}
-      <div class="post-content content content-noBottomPadding" itemprop="articleBody">
+      <div class="post-content content" itemprop="articleBody">
         <div class="row row--gutters column">
           {% if page['Banner Image'].size > 0 %}
             <img class="page-banner" src="{{ page['Banner Image'] }}"/>
@@ -35,26 +35,30 @@ layout: default
 
           {{ content }}
         </div>
-        <div class="background-lightBlue BLB--top-margin content-bottomPadding">
-          <div class="row row--gutters column author-details">
-          {% assign current_author = page['Author'] %}
-          {% assign selected_author = site.authors | where_exp: "item", "item.title contains current_author" %}
+        
+        {% assign current_author = page['Author'] %}
+        {% assign selected_author = site.authors | where_exp: "item", "item.title contains current_author" %}
 
-          {% for a in selected_author %}
-            {% if a['Author Image'].size > 0 %}
-              <img class="AD--thumbnail" src="{{ a['Author Image'] }}"/>
-            {% endif %}
-
-            <h2 class="AD--name">{{ a.title }}</h2>
-            {% if a['Author Title'].size > 0 %}
-              <h3 class="AD--title">{{ a['Author Title'] }}</h3>
-            {% endif %}
+        {% for a in selected_author %}
+        {% if a.content.size > 0 %}
+          <div class="background-lightBlue BLB--top-margin content-removeBottomPadding">
+            <div class="row row--gutters column author-details">
             
-            <p>{{ a.content }}</p>
+              {% if a['Author Image'].size > 0 %}
+                <img class="AD--thumbnail" src="{{ a['Author Image'] }}"/>
+              {% endif %}
 
-          {% endfor %}
+              <h2 class="AD--name">{{ a.title }}</h2>
+              {% if a['Author Title'].size > 0 %}
+                <h3 class="AD--title">{{ a['Author Title'] }}</h3>
+              {% endif %}
+              
+              <p>{{ a.content }}</p>
+
+            </div>
           </div>
-        </div>
+        {% endif %}
+        {% endfor %}
       </div>
     {% else %}
       <div class="post-content content" itemprop="articleBody">
