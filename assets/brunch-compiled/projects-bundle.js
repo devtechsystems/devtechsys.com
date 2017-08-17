@@ -1132,23 +1132,46 @@ var ProjectSearch = function (_Component) {
       var _this4 = this;
 
       var resultsMarkup = resultsRecords.map(function (record) {
+        // return (
+        //   <li key={record[ID_COLUMN_NAME]}><span className="project-country pull-right">{record[COUNTRY_COLUMN_NAME]}</span><span className="project-category">{this.getPracticeAreasMarkup(record)}</span><a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a></li>
+        // )
         return _react2.default.createElement(
           'li',
           { key: record[_ColumnNames.ID_COLUMN_NAME] },
           _react2.default.createElement(
-            'span',
-            { className: 'project-country pull-right' },
-            record[_ColumnNames.COUNTRY_COLUMN_NAME]
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'project-category' },
-            _this4.getPracticeAreasMarkup(record)
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: '#', className: 'project-title' },
-            record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME]
+            'div',
+            { className: 'column small-16' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'column' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'project-category' },
+                  _this4.getPracticeAreasMarkup(record)
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'column small-8 medium-10' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'project-title' },
+                  record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME]
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'column small-8 medium-6' },
+                record[_ColumnNames.COUNTRY_COLUMN_NAME]
+              )
+            )
           )
         );
       });
@@ -1244,6 +1267,24 @@ var ProjectSearch = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: 'row row--gutters column projects-list' },
+          _react2.default.createElement(
+            'div',
+            { className: 'column background-lighterBlue project-results-header' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'column small-8 medium-10' },
+                'Project'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'column small-8 medium-6' },
+                'Country'
+              )
+            )
+          ),
           _react2.default.createElement(
             'div',
             { className: 'overflow-container' },

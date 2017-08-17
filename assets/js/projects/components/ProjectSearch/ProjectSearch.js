@@ -88,8 +88,27 @@ export default class ProjectSearch extends Component {
 
   resultsMarkup(resultsRecords) {
     const resultsMarkup = resultsRecords.map((record) => {
+      // return (
+      //   <li key={record[ID_COLUMN_NAME]}><span className="project-country pull-right">{record[COUNTRY_COLUMN_NAME]}</span><span className="project-category">{this.getPracticeAreasMarkup(record)}</span><a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a></li>
+      // )
       return (
-        <li key={record[ID_COLUMN_NAME]}><span className="project-country pull-right">{record[COUNTRY_COLUMN_NAME]}</span><span className="project-category">{this.getPracticeAreasMarkup(record)}</span><a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a></li>
+        <li key={record[ID_COLUMN_NAME]}>
+          <div className="column small-16">
+            <div className="row">
+              <div className="column">
+                <div className="project-category">{this.getPracticeAreasMarkup(record)}</div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="column small-8 medium-10">
+                <a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a>
+              </div>
+              <div className="column small-8 medium-6">
+                {record[COUNTRY_COLUMN_NAME]}
+              </div>
+            </div>
+          </div>
+        </li>
       )
     })
     return resultsMarkup
@@ -158,6 +177,12 @@ export default class ProjectSearch extends Component {
           </div>
         </div>
         <div className="row row--gutters column projects-list">
+          <div className="column background-lighterBlue project-results-header">
+            <div className="row">
+              <div className="column small-8 medium-10">Project</div>
+              <div className="column small-8 medium-6">Country</div>
+            </div>
+          </div>
           <div className="overflow-container">
             <ul>
               {searchResultsMarkup}

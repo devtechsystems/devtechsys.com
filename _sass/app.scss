@@ -1472,6 +1472,16 @@ div.career-list {
   }
   .projects-list {
     margin-top:40px;
+
+    .project-results-header {
+      padding-top: 12px;
+      padding-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: .85em;
+      color: #26425f;
+    }
+
     ul {
       border-top: 2px solid #c8e2ef;
       list-style-type: none;
@@ -1483,12 +1493,13 @@ div.career-list {
       margin-bottom: 15px !important;
       border-bottom: 2px solid #c8e2ef;
       padding-bottom: 15px !important;
+      padding-left: 0px;
       &:before {display: none !important;}
       .project-category {
         color:#ababab;
         font-weight: 700;
         font-style: italic;
-        font-size: 16px;
+        font-size: .9em;
       }
       .project-country {
         color:#ababab;
