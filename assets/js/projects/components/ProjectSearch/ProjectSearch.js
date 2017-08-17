@@ -117,10 +117,10 @@ export default class ProjectSearch extends Component {
             </div>
             <div className="row">
               <div className="column small-8 medium-10">
-                <a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a>
+                <a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"}</a>
               </div>
               <div className="column small-8 medium-6">
-                {record[COUNTRY_COLUMN_NAME]}
+                {record[COUNTRY_COLUMN_NAME] || "Country Unavailable"}
               </div>
             </div>
           </div>

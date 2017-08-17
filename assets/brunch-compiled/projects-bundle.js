@@ -1184,13 +1184,13 @@ var ProjectSearch = function (_Component) {
                 _react2.default.createElement(
                   'a',
                   { href: '#', className: 'project-title' },
-                  record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME]
+                  record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"
                 )
               ),
               _react2.default.createElement(
                 'div',
                 { className: 'column small-8 medium-6' },
-                record[_ColumnNames.COUNTRY_COLUMN_NAME]
+                record[_ColumnNames.COUNTRY_COLUMN_NAME] || "Country Unavailable"
               )
             )
           )
