@@ -557,14 +557,12 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (_ref2) {
   var data = _ref2.data,
+      bigNumber = _ref2.bigNumber,
       colorPalette = _ref2.colorPalette,
       title = _ref2.title,
       groupTitle = _ref2.groupTitle;
 
   var colorScale = new _ColorScale2.default(data, colorPalette.colors, colorPalette.noDataColor);
-  var totalValue = data.reduce(function (accumulated, next) {
-    return accumulated += next.value;
-  }, 0);
 
   return _react2.default.createElement(
     'div',
@@ -572,7 +570,7 @@ exports.default = function (_ref2) {
     _react2.default.createElement(
       'div',
       { className: 'left-column column medium-5' },
-      _react2.default.createElement(_reactCountup2.default, { className: 'number-countup', start: 0, end: totalValue, duration: 3 }),
+      _react2.default.createElement(_reactCountup2.default, { className: 'number-countup', start: 0, end: bigNumber, duration: 3 }),
       _react2.default.createElement(
         'div',
         { className: 'breakdown-title' },
@@ -1535,6 +1533,10 @@ var _qdFormatters = require('qd-formatters');
 
 var _qdFormatters2 = _interopRequireDefault(_qdFormatters);
 
+var _reactCountup = require('react-countup');
+
+var _reactCountup2 = _interopRequireDefault(_reactCountup);
+
 var _BreakdownPanel = require('./components/BreakdownPanel');
 
 var _BreakdownPanel2 = _interopRequireDefault(_BreakdownPanel);
@@ -1581,7 +1583,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var formatter = (0, _qdFormatters2.default)(_d3.default).numberFormat;
+var formatters = (0, _qdFormatters2.default)(_d3.default);
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -1636,8 +1638,17 @@ document.addEventListener('DOMContentLoaded', function () {
     data = data.map(function (d, i) {
       return Object.assign(d, { id: String(i) });
     });
+    var totalProjects = data.length;
+    var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
+    var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
+      return acc + Number(next['Contract Value USD']);
+    }, 0));
     var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
+    var totalCountries = Object.keys(projectsGroupedByCountry).length;
     var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
+    var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
+      return _lodash2.default.uniqBy(projects, 'Country').length;
+    });
     var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
     var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, 'region');
     var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
@@ -1668,17 +1679,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
         return datum.name + '<br/>' + datum.value + ' projects';
-      }).numberFormatter(formatter).draw();
+      }).numberFormatter(formatters.numberFormat).draw();
     });
 
     var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
       data: chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByPracticeArea)),
+      bigNumber: totalProjects,
       colorPalette: _ColorPalette2.default,
       title: 'Projects',
       groupTitle: 'Practice Area'
     });
     var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-      data: chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByRegion)),
+      data: chartDataFormat(countriesInRegions),
+      bigNumber: totalCountries,
       colorPalette: _ColorPalette2.default,
       title: 'Countries',
       groupTitle: 'Region'
@@ -1691,7 +1704,20 @@ document.addEventListener('DOMContentLoaded', function () {
       colorPalette: _ColorPalette2.default,
       valueKey: 'value'
     });
-    console.log('data loaded');
+
+    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));
+
+    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
+
+    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalPartners, duration: 3 }), document.getElementById('partners-count'));
+
+    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
+
+    _reactDom2.default.render(_react2.default.createElement(
+      'span',
+      null,
+      totalMoney
+    ), document.getElementById('total-money'));
 
     _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
 

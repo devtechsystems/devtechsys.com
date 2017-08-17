@@ -15,14 +15,13 @@ const TooltipContent = function({ active, type, payload, label }) {
   )
 }
 
-export default function({ data, colorPalette, title, groupTitle }) {
+export default function({ data, bigNumber, colorPalette, title, groupTitle }) {
   const colorScale = new ColorScale(data, colorPalette.colors, colorPalette.noDataColor)
-  const totalValue = data.reduce((accumulated, next) => accumulated += next.value, 0)
 
   return (
     <div className='breakdown-panel row'>
       <div className='left-column column medium-5'>
-        <CountUp className='number-countup' start={0} end={totalValue} duration={3} />
+        <CountUp className='number-countup' start={0} end={bigNumber} duration={3} />
         <div className='breakdown-title'>{title}</div>
         <PieChart width={120} height={120} className='breakdown-pie'>
           <Tooltip content={<TooltipContent />} />

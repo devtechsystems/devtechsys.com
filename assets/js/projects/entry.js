@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import qdFormatters from 'qd-formatters'
+import CountUp from 'react-countup'
 import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
@@ -13,7 +14,8 @@ import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 
-const formatter = qdFormatters(d3).numberFormat
+const formatters = qdFormatters(d3)
+
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -57,8 +59,15 @@ import { regionAndPracAreas, practiceAreas } from './test/Data'
 document.addEventListener('DOMContentLoaded', () => {
   d3.tsv('/assets/data/projects.tsv', function(data) {
     data = data.map((d, i) => Object.assign(d, { id: String(i) }))
+    const totalProjects = data.length
+    const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
+    const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
+      return acc + Number(next['Contract Value USD'])
+    }, 0))
     const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
+    const totalCountries = Object.keys(projectsGroupedByCountry).length
     const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
+    const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, 'Country').length)
     const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
     const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
     const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
@@ -84,13 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
         .data(choroplethData)
         .colorPalette(ColorPalette)
         .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
-        .numberFormatter(formatter)
+        .numberFormatter(formatters.numberFormat)
         .draw()
     });
 
     const pbpaPanel = (
       <BreakDownPanel
         data={chartDataFormat(reduceCount(projectsGroupedByPracticeArea))}
+        bigNumber={totalProjects}
         colorPalette={ColorPalette}
         title='Projects'
         groupTitle='Practice Area'
@@ -98,7 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     const pbrPanel = (
       <BreakDownPanel
-        data={chartDataFormat(reduceCount(projectsGroupedByRegion))}
+        data={chartDataFormat(countriesInRegions)}
+        bigNumber={totalCountries}
         colorPalette={ColorPalette}
         title='Countries'
         groupTitle='Region'
@@ -114,7 +125,31 @@ document.addEventListener('DOMContentLoaded', () => {
         valueKey={'value'}
       />
     )
-    console.log('data loaded')
+
+    ReactDOM.render(
+      <CountUp start={0} end={totalProjects} duration={3} />,
+      document.getElementById('projects-count')
+    )
+
+    ReactDOM.render(
+      <CountUp start={0} end={totalCountries} duration={3} />,
+      document.getElementById('countries-count')
+    )
+
+    ReactDOM.render(
+      <CountUp start={0} end={totalPartners} duration={3} />,
+      document.getElementById('partners-count')
+    )
+
+    ReactDOM.render(
+      <CountUp start={0} end={totalCountries} duration={3} />,
+      document.getElementById('countries-count')
+    )
+
+    ReactDOM.render(
+      <span>{totalMoney}</span>,
+      document.getElementById('total-money')
+    )
 
     ReactDOM.render(
       pbpaPanel,
