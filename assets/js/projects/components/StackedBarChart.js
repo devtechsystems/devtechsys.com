@@ -80,7 +80,7 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
       <CartesianGrid vertical={false} strokeDasharray="1 1" strokeWidth={2} />
       <XAxis dataKey={xAxisDataKey} />
       <YAxis />
-      <Tooltip cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'white' }} content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
+      <Tooltip cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'none' }} content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} />} active={true} />
       <Legend iconType='circle' payload={legendData} />
      {stackedBar}
     </BarChart>

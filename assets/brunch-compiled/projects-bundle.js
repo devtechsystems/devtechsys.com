@@ -1425,7 +1425,7 @@ exports.default = function (_ref2) {
     _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
     _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey }),
     _react2.default.createElement(_recharts.YAxis, null),
-    _react2.default.createElement(_recharts.Tooltip, { cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'white' }, content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
+    _react2.default.createElement(_recharts.Tooltip, { cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' }, content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey }), active: true }),
     _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
     stackedBar
   );
