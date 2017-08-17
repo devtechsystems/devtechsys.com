@@ -3474,7 +3474,9 @@ div.career-list .fa {
     border-radius: 50px;
     position: absolute;
     top: 40px;
-    left: 0; }
+    left: 0;
+    max-width: 100px;
+    max-height: 100px; }
   .author-details .AD--name {
     font-size: 22px;
     font-weight: 700;
