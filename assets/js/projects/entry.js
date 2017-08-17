@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalProjects = data.length
     const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
     const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
+      const contractValue = Number(next['Contract Value USD'])
+      if(isNaN(contractValue)) return acc
       return acc + Number(next['Contract Value USD'])
     }, 0))
     const projectsGroupedByCountry = lodash.groupBy(data, 'Country')

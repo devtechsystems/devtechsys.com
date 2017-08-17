@@ -1641,6 +1641,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var totalProjects = data.length;
     var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
     var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
+      var contractValue = Number(next['Contract Value USD']);
+      if (isNaN(contractValue)) return acc;
       return acc + Number(next['Contract Value USD']);
     }, 0));
     var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
