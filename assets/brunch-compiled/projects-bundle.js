@@ -680,6 +680,7 @@ exports.default = function (parentSelector) {
   var zoom = d3.behavior.zoom().scaleExtent([1, 9]).on("zoom", zoomAndPan);
 
   var width = document.getElementById('projects-choropleth').offsetWidth;
+  var parentHeight = document.getElementById('projects-choropleth').offsetHeight;
   var height = width / 2;
   var center = [width / 2, height / 2];
 
@@ -725,7 +726,8 @@ exports.default = function (parentSelector) {
   }
 
   function addLegend() {
-    var legend = svg.append('g').classed('legend', true).attr('transform', "translate(" + 30 + ", " + (height - 420) + ")");
+    var legendBottomOffset = height - parentHeight > 0 ? parentHeight - 200 : height - 200;
+    var legend = svg.append('g').classed('legend', true).attr('transform', "translate(" + 20 + ", " + legendBottomOffset + ")");
     legend.append('rect').classed('background', true).attr('width', 170).attr('height', 180).attr('fill', 'white');
 
     legend.append('text').classed('legend-title', true).text('Legend').attr('alignment-baseline', 'hanging').attr('y', 10).attr('x', 10);
@@ -1411,8 +1413,7 @@ var _ColumnNames = require('../../ColumnNames');
 
 var SEARCH_FIELDS = {
   PROJECT_TITLE: { name: _ColumnNames.PROJECT_TITLE_COLUMN_NAME, weight: 100 },
-  COUNTRY: { name: _ColumnNames.COUNTRY_COLUMN_NAME, weight: 50 },
-  BRIEF_DESCRIPTION: { name: _ColumnNames.BRIEF_DESCRIPTION_COLUMN_NAME, weight: 10 }
+  COUNTRY: { name: _ColumnNames.COUNTRY_COLUMN_NAME, weight: 50 }
 };
 
 exports.SEARCH_FIELDS = SEARCH_FIELDS;

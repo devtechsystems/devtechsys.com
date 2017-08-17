@@ -12,6 +12,7 @@ export default function(parentSelector) {
       .on("zoom", zoomAndPan);
 
   var width = document.getElementById('projects-choropleth').offsetWidth;
+  var parentHeight = document.getElementById('projects-choropleth').offsetHeight
   var height = width / 2;
   let center = [width/2, height / 2]
 
@@ -52,9 +53,10 @@ export default function(parentSelector) {
   }
 
   function addLegend() {
+    const legendBottomOffset = (height - parentHeight > 0) ? parentHeight - 200: height - 200
     const legend = svg.append('g')
       .classed('legend', true)
-      .attr('transform', `translate(${30}, ${height - 420})`)
+      .attr('transform', `translate(${20}, ${legendBottomOffset})`)
     legend.append('rect')
       .classed('background', true)
       .attr('width', 170)
