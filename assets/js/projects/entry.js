@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     )
 
     const stackedBarChart = (
-      <Sizebox>
+      <Sizebox className="stacked-bar-chart-sizebox">
         <StackedBarChart
           data={regionAndPracAreas}
           xAxisDataKey={'region'}

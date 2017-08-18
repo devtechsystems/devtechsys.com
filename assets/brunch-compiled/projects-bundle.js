@@ -174,6 +174,78 @@ exports.BRIEF_DESCRIPTION_COLUMN_NAME = BRIEF_DESCRIPTION_COLUMN_NAME;
 
 });
 
+require.register("assets/js/projects/components/BreakdownPanel/PieChart.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (_ref2) {
+  var width = _ref2.width,
+      height = _ref2.height,
+      data = _ref2.data,
+      title = _ref2.title,
+      colorScale = _ref2.colorScale;
+
+  var outerRadius = width > height ? height / 2 : width / 2;
+  var innerRadius = outerRadius * .4;
+  return _react2.default.createElement(
+    _recharts.PieChart,
+    { width: width, height: height, className: 'breakdown-pie' },
+    _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, { valueName: title }) }),
+    _react2.default.createElement(
+      _recharts.Pie,
+      {
+        dataKey: 'value',
+        data: data,
+        innerRadius: innerRadius,
+        outerRadius: outerRadius,
+        cx: '50%',
+        cy: '50%',
+        startAngle: 90,
+        endAngle: -270
+      },
+      data.map(function (element, index) {
+        return _react2.default.createElement(_recharts.Cell, { key: element.name, fill: colorScale.getColorFor(data[index].value) });
+      })
+    )
+  );
+};
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _recharts = require('recharts');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TooltipContent = function TooltipContent(_ref) {
+  var active = _ref.active,
+      type = _ref.type,
+      payload = _ref.payload,
+      label = _ref.label,
+      valueName = _ref.valueName;
+
+  if (!active) return null;
+  var hoverData = payload[0].payload;
+  return _react2.default.createElement(
+    'div',
+    { className: 'tt-content', style: { width: 200, height: 'auto' } },
+    _react2.default.createElement(
+      'div',
+      { className: 'tt-label' },
+      hoverData.name
+    ),
+    hoverData.value,
+    ' ',
+    valueName
+  );
+};
+
+});
+
 require.register("assets/js/projects/components/BreakdownPanel/RowChart/DefaultRow.js", function(exports, require, module) {
 'use strict';
 
@@ -555,12 +627,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (_ref2) {
-  var data = _ref2.data,
-      bigNumber = _ref2.bigNumber,
-      colorPalette = _ref2.colorPalette,
-      title = _ref2.title,
-      groupTitle = _ref2.groupTitle;
+exports.default = function (_ref) {
+  var data = _ref.data,
+      bigNumber = _ref.bigNumber,
+      colorPalette = _ref.colorPalette,
+      title = _ref.title,
+      groupTitle = _ref.groupTitle;
 
   var colorScale = new _ColorScale2.default(data, colorPalette.colors, colorPalette.noDataColor);
 
@@ -577,25 +649,9 @@ exports.default = function (_ref2) {
         title
       ),
       _react2.default.createElement(
-        _recharts.PieChart,
-        { width: 120, height: 120, className: 'breakdown-pie' },
-        _react2.default.createElement(_recharts.Tooltip, { content: _react2.default.createElement(TooltipContent, { valueName: title }) }),
-        _react2.default.createElement(
-          _recharts.Pie,
-          {
-            dataKey: 'value',
-            data: data,
-            innerRadius: 25,
-            outerRadius: 60,
-            cx: '50%',
-            cy: '50%',
-            startAngle: 90,
-            endAngle: -270
-          },
-          data.map(function (element, index) {
-            return _react2.default.createElement(_recharts.Cell, { key: element.name, fill: colorScale.getColorFor(data[index].value) });
-          })
-        )
+        _reactSizebox2.default,
+        { className: 'pie-sizebox' },
+        _react2.default.createElement(_PieChart2.default, { data: data, title: title, colorScale: colorScale })
       )
     ),
     _react2.default.createElement(
@@ -607,15 +663,17 @@ exports.default = function (_ref2) {
         'By ',
         groupTitle
       ),
-      _react2.default.createElement(_RowChart2.default, {
-        rowHeight: 40,
-        width: 250,
-        height: 250,
-        data: data,
-        colorMapper: function colorMapper(value) {
-          return colorScale.getColorFor(value);
-        }
-      })
+      _react2.default.createElement(
+        _reactSizebox2.default,
+        { className: 'row-chart-sizebox' },
+        _react2.default.createElement(_RowChart2.default, {
+          rowHeight: 40,
+          data: data,
+          colorMapper: function colorMapper(value) {
+            return colorScale.getColorFor(value);
+          }
+        })
+      )
     )
   );
 };
@@ -636,36 +694,19 @@ var _reactCountup = require('react-countup');
 
 var _reactCountup2 = _interopRequireDefault(_reactCountup);
 
-var _recharts = require('recharts');
+var _reactSizebox = require('react-sizebox');
+
+var _reactSizebox2 = _interopRequireDefault(_reactSizebox);
+
+var _PieChart = require('./PieChart');
+
+var _PieChart2 = _interopRequireDefault(_PieChart);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TooltipContent = function TooltipContent(_ref) {
-  var active = _ref.active,
-      type = _ref.type,
-      payload = _ref.payload,
-      label = _ref.label,
-      valueName = _ref.valueName;
-
-  if (!active) return null;
-  var hoverData = payload[0].payload;
-  return _react2.default.createElement(
-    'div',
-    { className: 'tt-content', style: { width: 200, height: 'auto' } },
-    _react2.default.createElement(
-      'div',
-      { className: 'tt-label' },
-      hoverData.name
-    ),
-    hoverData.value,
-    ' ',
-    valueName
-  );
-};
-
 });
 
-require.register("assets/js/projects/components/D3Choropleth.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/D3Choropleth.js", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1791,7 +1832,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var stackedBarChart = _react2.default.createElement(
       _reactSizebox2.default,
-      null,
+      { className: 'stacked-bar-chart-sizebox' },
       _react2.default.createElement(_StackedBarChart2.default, {
         data: _Data.regionAndPracAreas,
         xAxisDataKey: 'region',

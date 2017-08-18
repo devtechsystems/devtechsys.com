@@ -59,7 +59,7 @@
   }
 
   .breakdown-pie {
-    margin-top: 15px;
+    margin-top: 5px;
   }
 }
 
@@ -238,7 +238,18 @@ li.recharts-legend-item:before {
     }
 }
 
-.react-sizebox {
+// Sizebox dimensions
+.pie-sizebox {
+  width: 100%;
+  height: 40%;
+}
+
+.row-chart-sizebox {
+  width: 100%;
+  min-height: 250px;
+}
+
+.stacked-bar-chart-sizebox {
   width: 100%;
   min-height: 350px;
 }
