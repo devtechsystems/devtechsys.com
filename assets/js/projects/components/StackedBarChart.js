@@ -44,7 +44,7 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
   )
 }
 
-export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value', tickFormatter, tooltipValueFormatter }) {
+export default function({ width, height, data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value', tickFormatter, tooltipValueFormatter }) {
   const colorsDarkToLight = colorPalette.colors.slice(0).reverse() // Clone then reverse
   const xGrouping = lodash.groupBy(data, xAxisDataKey)
   const xGroupingWithSums = lodash.mapValues(xGrouping, (collectionForXGroup) => {
@@ -76,7 +76,7 @@ export default function({ data, xAxisDataKey, stackDataKey, colorPalette, valueK
   const legendData = stackDataNamesAsc.map((name, index) => ({ id: name, value: name, color: colorMapper[name] }))
 
   return (
-    <BarChart width={1000} height={400} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
+    <BarChart width={width} height={height} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
       <CartesianGrid vertical={false} strokeDasharray="1 1" strokeWidth={2} />
       <XAxis dataKey={xAxisDataKey} interval={0} />
       <YAxis tickFormatter={tickFormatter} />

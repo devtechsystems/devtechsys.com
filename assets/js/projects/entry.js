@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import qdFormatters from 'qd-formatters'
 import CountUp from 'react-countup'
+import Sizebox from 'react-sizebox'
 import BreakDownPanel from './components/BreakdownPanel'
 import StackedBarChart from './components/StackedBarChart'
 import ColorPalette from './util/ColorPalette'
@@ -119,15 +120,17 @@ document.addEventListener('DOMContentLoaded', () => {
     )
 
     const stackedBarChart = (
-      <StackedBarChart
-        data={regionAndPracAreas}
-        xAxisDataKey={'region'}
-        stackDataKey={'practiceArea'}
-        colorPalette={ColorPalette}
-        valueKey={'value'}
-        tickFormatter={formatters.bigCurrencyFormat}
-        tooltipValueFormatter={formatters.currencyFormat}
-      />
+      <Sizebox>
+        <StackedBarChart
+          data={regionAndPracAreas}
+          xAxisDataKey={'region'}
+          stackDataKey={'practiceArea'}
+          colorPalette={ColorPalette}
+          valueKey={'value'}
+          tickFormatter={formatters.bigCurrencyFormat}
+          tooltipValueFormatter={formatters.currencyFormat}
+        />
+      </Sizebox>
     )
 
     ReactDOM.render(

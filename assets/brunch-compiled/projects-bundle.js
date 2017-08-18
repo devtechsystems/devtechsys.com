@@ -1450,7 +1450,9 @@ Object.defineProperty(exports, "__esModule", {
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 exports.default = function (_ref2) {
-  var data = _ref2.data,
+  var width = _ref2.width,
+      height = _ref2.height,
+      data = _ref2.data,
       xAxisDataKey = _ref2.xAxisDataKey,
       stackDataKey = _ref2.stackDataKey,
       colorPalette = _ref2.colorPalette,
@@ -1499,7 +1501,7 @@ exports.default = function (_ref2) {
 
   return _react2.default.createElement(
     _recharts.BarChart,
-    { width: 1000, height: 400, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
+    { width: width, height: height, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
     _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
     _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
     _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
@@ -1620,6 +1622,10 @@ var _qdFormatters2 = _interopRequireDefault(_qdFormatters);
 var _reactCountup = require('react-countup');
 
 var _reactCountup2 = _interopRequireDefault(_reactCountup);
+
+var _reactSizebox = require('react-sizebox');
+
+var _reactSizebox2 = _interopRequireDefault(_reactSizebox);
 
 var _BreakdownPanel = require('./components/BreakdownPanel');
 
@@ -1783,15 +1789,19 @@ document.addEventListener('DOMContentLoaded', function () {
       groupTitle: 'Region'
     });
 
-    var stackedBarChart = _react2.default.createElement(_StackedBarChart2.default, {
-      data: _Data.regionAndPracAreas,
-      xAxisDataKey: 'region',
-      stackDataKey: 'practiceArea',
-      colorPalette: _ColorPalette2.default,
-      valueKey: 'value',
-      tickFormatter: formatters.bigCurrencyFormat,
-      tooltipValueFormatter: formatters.currencyFormat
-    });
+    var stackedBarChart = _react2.default.createElement(
+      _reactSizebox2.default,
+      null,
+      _react2.default.createElement(_StackedBarChart2.default, {
+        data: _Data.regionAndPracAreas,
+        xAxisDataKey: 'region',
+        stackDataKey: 'practiceArea',
+        colorPalette: _ColorPalette2.default,
+        valueKey: 'value',
+        tickFormatter: formatters.bigCurrencyFormat,
+        tooltipValueFormatter: formatters.currencyFormat
+      })
+    );
 
     _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));
 
