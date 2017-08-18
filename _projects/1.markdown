@@ -6,7 +6,7 @@ Practice Area:
 - Monitoring and Evaluation
 Region: Dominican Republic
 Is Active: true
-layout: page
+layout: project
 ---
 
 DevTech led a team of evaluation and civil society specialists with extensive knowledge of the Dominican Republic to conduct a comprehensive assessment of the impact of USAID's Strengthening Civil Society Project, which included the Democratic Initiative Project (PID), providing substantial resources to Participación Ciudadana (PC), and supporting Rule of Law activities related to civil society through Fundación Institucionalidad y Justicia (FINJUS).

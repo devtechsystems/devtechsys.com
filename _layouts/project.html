@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% if page['Practice Area'].size > 0 %}
+	{% assign header_title = page['Practice Area'] | first %}
+{% endif %}
+{% if page['Is Active'] == true %}
+	{% assign subheader_title = 'Current Project' %}
+{% else %}
+	{% assign subheader_title = 'Past Project' %}
+{% endif %}
+{% include header.html title=header_title subtitle=subheader_title %}
+	<div class="site-content" id="site_content" aria-label="Content">
+		<div class="page">
+			<div class="content">
+		  	<div class="row row--gutters">
+		  		<div class="column">
+		  			<div class="post-header">
+		  				{% if page['Practice Area'].size > 0 %}
+		  					<span class="post-practiceCategory">{{ page['Practice Area'] | first }}</span>
+		  				{% endif %}
+							{% if page['Title'].size > 0 %}
+								<h1 class="post-title page-title">{{ page['Title']}}</h1>
+							{% else %}
+								<h1 class="post-title page-title">{{ page.title }}</h1>
+							{% endif %}
+							<div class="post-details">
+								
+								{% if page['Region'].size > 0 %}
+			  					<span class="post-detail">{{ page['Region'] }}</span>
+			  				{% endif %}
+							</div>
+						</div>
+						{% if page['Banner Image'].size > 0 %}
+							<img class="page-banner" src="{{ page['Banner Image'] }}"/>
+						{% endif %}
+						{% if page['Highlight'].size > 0 %}
+							<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
+						{% endif %}
+
+				    {{ content }}
+			  	</div>
+			  </div>
+		  </div>
+
+		</div>
+	</div>
