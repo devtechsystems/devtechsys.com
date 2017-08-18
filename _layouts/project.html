@@ -17,8 +17,9 @@ layout: default
 		  	<div class="row row--gutters">
 		  		<div class="column">
 		  			<div class="post-header">
+		  				<a href="#" onclick="window.history.back();" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to the Previous Page</a>
 		  				{% if page['Practice Area'].size > 0 %}
-		  					<span class="post-practiceCategory">{{ page['Practice Area'] | first }}</span>
+		  					<span class="post-category">{{ page['Practice Area'] | first }}</span>
 		  				{% endif %}
 							{% if page['Title'].size > 0 %}
 								<h1 class="post-title page-title">{{ page['Title']}}</h1>
