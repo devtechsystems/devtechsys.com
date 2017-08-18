@@ -2,17 +2,13 @@
 title: Assessment of USAID Civil Society Program in the Dominican Republic (example)
 date: 2017-06-05 23:33:00 Z
 Title: Assessment of USAID Civil Society Program in the Dominican Republic
-Highlight: DevTech led a team of evaluation and civil society specialists with extensive
-  knowledge of the Dominican Republic to conduct a comprehensive assessment of the
-  impact of USAID's Strengthening Civil Society Project, which included the Democratic
-  Initiative Project (PID), providing substantial resources to Participación Ciudadana
-  (PC), and supporting Rule of Law activities related to civil society through Fundación
-  Institucionalidad y Justicia (FINJUS).
 Practice Area:
 - Monitoring and Evaluation
 Region: Dominican Republic
 Is Active: true
 layout: page
 ---
+
+DevTech led a team of evaluation and civil society specialists with extensive knowledge of the Dominican Republic to conduct a comprehensive assessment of the impact of USAID's Strengthening Civil Society Project, which included the Democratic Initiative Project (PID), providing substantial resources to Participación Ciudadana (PC), and supporting Rule of Law activities related to civil society through Fundación Institucionalidad y Justicia (FINJUS).
 
 The objectives of the assessment were to provide a rigorous review of the impact of USAID's investment in civil society; share input to help the Mission shape its next five-year strategy (2002—2007); and draw key lessons learned and best practices from USAID/DR's activities to promote the development of a politically active civil society in support of democracy.
