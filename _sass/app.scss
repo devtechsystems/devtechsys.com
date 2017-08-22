@@ -259,6 +259,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     &.BLB--top-margin {
       margin-top:6rem;
     }
+    &.content-removeBottomPadding {
+      margin-bottom:-80px;
+      padding-bottom:80px;
+    }
 
     .BLB--title {
       font-size: 28px;
@@ -1120,19 +1124,26 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       }
     }
   }
+  .OL--details-block {
+    margin-bottom:40px;
+  }
   p.OL--address {
     white-space: pre;
     @extend .font-brandon;
+    display: inline-block;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.3;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
   p.OL--phone {
-    margin-right: 100px;
     @extend .font-brandon;
     font-size: 18px;
     font-weight: 400;
-    color:#555;
+    color: #555;
+    margin-bottom: 0;
+    min-width: 190px;
 
     .fa {
       margin-right: 5px;
@@ -1821,6 +1832,11 @@ ul.featured-insights {
   .team-list-block {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .row--office-locations p.OL--phone {
+    float:right;
   }
 }
 

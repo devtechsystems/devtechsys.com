@@ -85,6 +85,9 @@ layout: default
 				    		<a href="{{ p.url | relative_url }}" class="CPL--project">{{ p['Title'] }}</a>
 				    	</li>
 				    {% endfor %}
+				    {% if linked_current_projects.size == 0 %}
+			    		<li>No current projects found.</li>
+			    	{% endif %}
 				  	</ul>
 				  </div>
 
@@ -98,6 +101,9 @@ layout: default
 						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Title'] }}</a>
 						    	</li>
 						    {% endfor %}
+						    {% if linked_past_projects.size == 0 %}
+					    		<li>No current projects found.</li>
+					    	{% endif %}
 					    </ul>
 					  </div>
 				  </div>

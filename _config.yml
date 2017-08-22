@@ -137,13 +137,13 @@ defaults:
     type: projects
   values:
     Title: 
-    Mission Title: 
     Highlight: 
     Banner Image: 
     Practice Area:
     - 
+    Region: 
     Is Active: 
-    layout: page
+    layout: project
 - scope:
     path: ''
     type: office-locations
