@@ -2,8 +2,15 @@
 layout: default
 ---
 
-{% if page['Practice Area'].size > 0 %}
-	{% assign header_title = page['Practice Area'] | first %}
+{% assign foundPracticeAreas = site.foundPracticeAreas %}
+{% for practiceArea in site.data.practice_areas %}
+	{% if page[practiceArea] == 'x' %}
+		{% assign foundPracticeAreas = foundPracticeAreas | push: practiceArea %}
+	{% endif %}
+{% endfor %}
+{% assign practiceAreas = foundPracticeAreas %}
+{% if practiceAreas.size > 0 %}
+	{% assign header_title = practiceAreas | first %}
 {% endif %}
 {% if page['Is Active'] == true %}
 	{% assign subheader_title = 'Current Project' %}
@@ -18,11 +25,13 @@ layout: default
 		  		<div class="column">
 		  			<div class="post-header">
 		  				<a href="#" onclick="window.history.back();" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to the Previous Page</a>
-		  				{% if page['Practice Area'].size > 0 %}
-		  					<span class="post-category">{{ page['Practice Area'] | first }}</span>
+		  				{% if foundPracticeAreas.size > 0 %}
+								{% for practiceArea in foundPracticeAreas %}
+		  						<span class="post-category">{{ practiceArea }}</span>
+								{% endfor %}
 		  				{% endif %}
-							{% if page['Title'].size > 0 %}
-								<h1 class="post-title page-title">{{ page['Title']}}</h1>
+							{% if page['Project Title'].size > 0 %}
+								<h1 class="post-title page-title">{{ page['Project Title']}}</h1>
 							{% else %}
 								<h1 class="post-title page-title">{{ page.title }}</h1>
 							{% endif %}
