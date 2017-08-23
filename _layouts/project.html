@@ -33,12 +33,24 @@ layout: default
 							{% if page['Project Title'].size > 0 %}
 								<h1 class="post-title page-title">{{ page['Project Title']}}</h1>
 							{% else %}
-								<h1 class="post-title page-title">{{ page.title }}</h1>
+								<h1 class="post-title page-title">No Project Title found</h1>
 							{% endif %}
 							<div class="post-details">
 								
 								{% if page['Region'].size > 0 %}
 			  					<span class="post-detail">{{ page['Region'] }}</span>
+			  				{% endif %}
+			  				
+			  				{% if page['Client/Donor'].size > 0 %}
+			  					<span class="post-detail">{{ page['Client/Donor'] }}</span>
+			  				{% endif %}
+
+			  				{% if page['Start Year'].size > 0 %}
+			  					<span class="post-detail">{{ page['Start Year'] }}</span>
+			  				{% endif %}
+			  				
+			  				{% if page['End Year'].size > 0 %}
+			  					<span class="post-detail">{{ page['End Year'] }}</span>
 			  				{% endif %}
 							</div>
 						</div>
@@ -50,6 +62,16 @@ layout: default
 						{% endif %}
 
 				    {{ content }}
+
+				    {% if page['Link to the document file'].size > 0 %}
+				    	<h3>Related Publications:</h3>
+				    	<ul>
+				    	{% assign links = page['Link to the document file'] %}
+				    	{% for link in links %}
+		  					<li><a href="{{ link }}">{{ link }}</a></li>
+		  				{% endfor %}
+		  				</ul>
+		  			{% endif %}
 			  	</div>
 			  </div>
 		  </div>
