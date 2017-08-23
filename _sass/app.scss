@@ -908,6 +908,11 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-weight: 400;
     margin-bottom: 6px;
     margin-top:40px;
+    a {
+      color: #fff !important;
+      font-size: 30px !important;
+      font-weight: 400;
+    }
   }
   ul {
     list-style-type:none;
