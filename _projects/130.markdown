@@ -1,0 +1,28 @@
+---
+data_id: '130'
+Project Title: 'Design of an Evaluation and Performance Measurement System '
+Subcontract Number: ''
+Contract Number: TOS-95-81
+Start Year: '1995'
+End Year: ''
+Region: ''
+Country: ''
+Client/Donor: U.S. Department of Treasury
+Prime: ''
+Sub: ''
+Contract Value USD: '88996'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech responded to a request from the BudgetPolicy and Management Group of
+  the Department of Treasury, Office of Technical Assistance (IET) to design and
+  implement a system to evaluate and measure the performance of individuals and
+  projects, and the overall progress of the program. 
+Link to the document file: ''
+'Point of contact ': Rosa Perry
+Email: ''
+Phone: 202-622-0797
+Publications Link: ''
+---

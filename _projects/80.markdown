@@ -1,0 +1,24 @@
+---
+data_id: '80'
+Project Title: Marketing Short-Term Government Securities
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1991'
+End Year: '1992'
+Region: Europe and Eurasia
+Country: Hungary
+Client/Donor: U.S. Department of Treasury
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

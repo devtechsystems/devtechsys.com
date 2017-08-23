@@ -1,0 +1,24 @@
+---
+data_id: '153'
+Project Title: Evaluation��_of Bolivia's Catholic University's Master's Programs
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1997'
+End Year: '1997'
+Region: 'Latin America and the Caribbean '
+Country: Bolivia
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

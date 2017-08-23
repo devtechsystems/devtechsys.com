@@ -1,0 +1,24 @@
+---
+data_id: '11'
+Project Title: Latin America and the Caribbeann Institute of Business Administration (INCAE)
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1985'
+End Year: ''
+Region: "Latin America and\r\n the Caribbean"
+Country: Costa Rica
+Client/Donor: USAID/ROCAP
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech evaluated the curriculum and course content of a master's degree program in business economics to be offered in \r\nSeptember 1986 to Latin America and the Caribbeann students. DevTech performed a two-pronged demand analysis of the program to determine \r\nthe level of interest in neighboring countries and their students, as well as the potential demand for graduates of the program."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

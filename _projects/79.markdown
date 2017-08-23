@@ -1,0 +1,24 @@
+---
+data_id: '79'
+Project Title: Improving Public Sector Financial Accounts
+Subcontract Number: ''
+Contract Number: 522-0325-C-00-1088-00
+Start Year: '1991'
+End Year: ''
+Region: "Latin America and\r\n the Caribbean"
+Country: Honduras
+Client/Donor: USAID/Honduras
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech assisted the government of Honduras in a project designed to link accounting systems and procedures to the \r\nrequirements of macroeconomic classification models and reporting."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,24 @@
+---
+data_id: '29'
+Project Title: Financial Management Reform
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1987'
+End Year: '1988'
+Region: "Latin America and the \r\nCarribbean"
+Country: Jamaica
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech provided expert services to the government of Jamaica through the auspices of the Administrative Reform \r\nProgramme to assist in the improvement and automation of accounting and financial management systems throughout \r\ngovernment operations."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

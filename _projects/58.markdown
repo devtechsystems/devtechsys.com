@@ -1,0 +1,31 @@
+---
+data_id: '58'
+Project Title: Macroeconomic Simulation Model
+Subcontract Number: ''
+Contract Number: 519-0177-C-00-0314-00
+Start Year: '1990'
+End Year: '1990'
+Region: "Latin America and the \r\nCaribbean"
+Country: 'El Salvador '
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '10313'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  Within the context of a government-wide program of structural reforms, DevTech
+  evaluated the feasibility of developing and installing a dynamic macroeconomic
+  simulation model of the Salvadoran economy. The model was designed to
+  strengthen USAID/El Salvador's ability to evaluate the distributional
+  implications of economic policy alternatives and make recommendations in
+  support of economic stabilization and preparation for medium-term growth and
+  development.
+Link to the document file: ''
+'Point of contact ': 'Judd Harriott / Mileydi Guilarte '
+Email: mguilarte@usaid.gov
+Phone: '  011 (503) 2501-2999 / (503) 2 98-1666'
+Publications Link: 'Safe Schools Program: Final Report'
+---

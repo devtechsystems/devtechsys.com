@@ -1,0 +1,24 @@
+---
+data_id: '70'
+Project Title: Public-Sector Investment Planning
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1990'
+End Year: ''
+Region: "Latian America and \r\nCaribbean "
+Country: Venezuela
+Client/Donor: Inter-American Development Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

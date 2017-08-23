@@ -1,0 +1,24 @@
+---
+data_id: '145'
+Project Title: Mid-Term Evaluation of Basic Education Project (BASE)
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1996'
+End Year: ''
+Region: "Latin America and\r\nthe Carribbean"
+Country: Nicaragua
+Client/Donor: USAID/Washington
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech preformed a Mid-term evaluation of the Nicaragua Basic Education Project (BASE). The three-person team evaluated \r\nthe design, management, and implementation of the project under three major components: institutional strengthening, \r\nteacher training, and curriculum and instructional materials design."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

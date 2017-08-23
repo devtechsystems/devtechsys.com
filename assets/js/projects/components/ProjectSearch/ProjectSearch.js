@@ -104,9 +104,6 @@ export default class ProjectSearch extends Component {
 
   resultsMarkup(resultsRecords) {
     const resultsMarkup = resultsRecords.map((record) => {
-      // return (
-      //   <li key={record[ID_COLUMN_NAME]}><span className="project-country pull-right">{record[COUNTRY_COLUMN_NAME]}</span><span className="project-category">{this.getPracticeAreasMarkup(record)}</span><a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a></li>
-      // )
       return (
         <li key={record[ID_COLUMN_NAME]}>
           <div className="column small-16">
@@ -117,7 +114,7 @@ export default class ProjectSearch extends Component {
             </div>
             <div className="row">
               <div className="column small-8 medium-10">
-                <a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"}</a>
+                <a href={`${record['url']}`} className="project-title">{record[PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"}</a>
               </div>
               <div className="column small-8 medium-6">
                 {record[COUNTRY_COLUMN_NAME] || "Country Unavailable"}

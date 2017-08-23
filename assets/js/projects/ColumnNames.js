@@ -1,19 +1,14 @@
-const PRACTICE_AREA_COLUMN_NAMES= {
-  ECONOMIC_ANALYSIS: "M&E Practice Area",
-  EDUCATION_AND_YOUTH_DEVELOPMENT: "Education and Youth Development Practice Area",
-  GENDER_AND_INCLUSIVE_DEVELOPMENT: "Gender and Inclusive Development Practice Area",
-  PFM_AND_INSTITUTION_BUILDING: "Public Financial and Fiscal Sustainability Practice Area"
-}
+import lodash from 'lodash'
 
-const COUNTRY_COLUMN_NAME = "Country"
-const PROJECT_TITLE_COLUMN_NAME = "Project Title"
-const ID_COLUMN_NAME = "id"
-const BRIEF_DESCRIPTION_COLUMN_NAME = "Brief Description"
-
+const ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames
+const practiceAreas = JEKYLL_DATA.practiceAreas
+const PRACTICE_AREA_COLUMN_NAMES = lodash.pickBy(ENUMERATED_COLUMN_NAMES,((enumName, columnName) => practiceAreas.indexOf(columnName !== -1)))
+const COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY']
+const PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE']
+const ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID']
 export { 
   PRACTICE_AREA_COLUMN_NAMES,
   COUNTRY_COLUMN_NAME,
   PROJECT_TITLE_COLUMN_NAME,
-  ID_COLUMN_NAME,
-  BRIEF_DESCRIPTION_COLUMN_NAME
+  ID_COLUMN_NAME
 }

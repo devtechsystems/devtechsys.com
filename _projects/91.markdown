@@ -1,0 +1,24 @@
+---
+data_id: '91'
+Project Title: 'Integrated Orientation, Follow-on, & Eval. Program for Participant Training'
+Subcontract Number: ''
+Contract Number: 263-0102-C-00-2218-00
+Start Year: '1992'
+End Year: ''
+Region: Middle East
+Country: Egypt
+Client/Donor: USAID/Egypt
+Prime: ''
+Sub: ''
+Contract Value USD: '43820'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

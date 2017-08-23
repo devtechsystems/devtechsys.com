@@ -1,0 +1,26 @@
+---
+data_id: '135'
+Project Title: >-
+  Privatization and Economic Restructuring: Program for Europe and the Newly
+  Independent States: Privatization Public Education Services (Omnibus II IQC)
+Subcontract Number: ''
+Contract Number: EPE-0005-I-00-5034-00
+Start Year: '1995'
+End Year: '2000'
+Region: 'Europe and Eurasia '
+Country: Russia
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '12225420'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: x
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': Orion Yeandel
+Email: oyeandel@usaid.gov
+Phone: ' (70-95) 956-4484'
+Publications Link: ''
+---

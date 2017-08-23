@@ -1,0 +1,24 @@
+---
+data_id: '10'
+Project Title: Latin America and the Caribbeann Institute for Industrial Research Technology
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1985'
+End Year: ''
+Region: "Latin America and\r\n the Caribbean"
+Country: Guatemala
+Client/Donor: Guatemala
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech conducted an analysis of the internal financial and personnel management systems of ICAITI and made \r\nrecommendations to improve their effectiveness"
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

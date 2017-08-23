@@ -1,0 +1,37 @@
+---
+data_id: '107'
+Project Title: Environmental and Natural Resources Information System (ENRIS)
+Subcontract Number: ''
+Contract Number: EUR-0249-C-4050-00
+Start Year: '1994'
+End Year: '1997'
+Region: "Europe and Eurasia\r\n"
+Country: "Europe and Eurasia\r\n"
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '427109'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  In response to the USAID Environment and Natural Resources Division's need for
+  coordination of project information, DevTech provided an Environmental
+  Information Specialist to collect and distribute information about
+  environmental projects and activities in Central and Eastern Europe and the
+  Newly Independent States. Services provided included researching, writing, and
+  distributing a monthly newsletter on current and future projects in the
+  region; generating reports and policy papers; and providing public information
+  and outreach support. DevTech was responsible for establishing and maintaining
+  computer information management systems appropriate to the project and USAID
+  Bureaus and Missions in other countries. Technical support included data
+  collection, distribution, and networking.
+Link to the document file: N/A
+'Point of contact ': 'Melody Bacha '
+Email: mbacha@usaid.gov
+Phone: '(202) 712-4673 '
+Publications Link: >-
+  Evaluation of USAID Basic Education Program in Kyrgyzstan, Tajikistan, and
+  Uzbekistan
+---

@@ -1,0 +1,35 @@
+---
+data_id: '143'
+Project Title: Global Technology Network
+Subcontract Number: ''
+Contract Number: PCE-C-00-97-00002-00
+Start Year: '1996'
+End Year: '2000'
+Region: 'Global '
+Country: Global
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '3498238'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: x
+Brief Description: >-
+  The Global Technology Network (GTN) contract expanded on DevTech's experience
+  in developing and managing the environmental technology network for
+  USAID/US-AEP. The primary objective of the GTN was to identify, disseminate
+  information about, and match overseas business opportunities for, U.S.
+  businesses interested in emerging markets. The GTN assisted lesser-developed
+  countries (LDCs) countries graduating from USAID development assistance, and
+  U.S. small and medium-size businesses to effectively respond to economic
+  policy reforms and ensure sustainable economic growth through trade. DevTech's
+  GTN staff provided assistance to companies operating in such industries as
+  health, agri-business, financial services, telecommunications, and information
+  technology. 
+Link to the document file: 'Trade lead submission, matching, and follow-up instructions��_'
+'Point of contact ': Joe Duncan
+Email: jduncan@usaid.gov
+Phone: ' (202) 712-0474 '
+Publications Link: ''
+---

@@ -1,0 +1,37 @@
+---
+- column:
+    enumName: COUNTRY
+    displayName: Country
+    key: Country
+- column:
+    enumName: PROJECT_TITLE
+    displayName: Project Title
+    key: Project Title
+- column: 
+    enumName: DATA_ID
+    displayName: data_id
+    key: data_id
+- column: 
+    enumName: REGION
+    displayName: Region
+    key: Region
+- column:
+    enumName: CONTRACT_VALUE
+    displayName: Contract Value USD
+    key: Contract Value USD
+- column:
+    enumName: M_E_PRACTIC_AREA
+    displayName: M&E Practice Area
+    key: M&E Practice Area
+- column:
+    enumName: EDUCATION_AND_YOUTH_PRACTICE_AREA
+    displayName: Education and Youth Development Practice Area
+    key: Education and Youth Development Practice Area
+- column: 
+    enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
+    displayName: Gender and Inclusive Development Practice Area
+    key: Gender and Inclusive Development Practice Area
+- column:
+    enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
+    displayName: Public Financial and Fiscal Sustainability Practice Area
+    key: Public Financial and Fiscal Sustainability Practice Area

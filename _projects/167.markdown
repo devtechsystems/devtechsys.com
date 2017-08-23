@@ -1,0 +1,36 @@
+---
+data_id: '167'
+Project Title: Environmental Information Systems and Networking (EISN)
+Subcontract Number: ''
+Contract Number: EE-C-00-98-00001-00
+Start Year: '1997'
+End Year: '2002'
+Region: Europe
+Country: Kazakhstan
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: '3293581'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  The serious environmental problems in the countries in Central and Eastern
+  Europe and the Newly Independent States are threatening not only that region
+  but the global community as well. DevTech assists USAID in ensuring that
+  lessons are shared throughout the area and within USAID and the United States
+  by developing a system for managing and disseminating environmental
+  information. In fulfilling this mission, DevTech staff transfer information
+  among USAID Missions in the relevant countries; develop presentations and
+  training materials for briefings and cross-border workshops; provide technical
+  assistance to regional environmental organizations on information transfer
+  technology; inform other parts of USAID and the general public about
+  environmental issues and successes in the ENI region; and work to strengthen
+  regional networks of environmental professionals.
+Link to the document file: ''
+'Point of contact ': Kimberly Atsalinos
+Email: katsalinos@usaid.gov
+Phone: (202) 712-5279
+Publications Link: ''
+---

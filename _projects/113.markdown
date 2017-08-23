@@ -1,0 +1,24 @@
+---
+data_id: '113'
+Project Title: Environmental Technology Network for Asia (ETNA)
+Subcontract Number: ''
+Contract Number: PDC-0085-Q-00-1142-0
+Start Year: '1994'
+End Year: '1999'
+Region: Asia
+Country: ''
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

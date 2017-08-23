@@ -1,0 +1,26 @@
+---
+data_id: '44'
+Project Title: Basic Education - El Salvador
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1989'
+End Year: ''
+Region: "Latin America and the\r\nCaribbean"
+Country: El Salvador
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech carried out an evaluation of the cost and financing of basic education in El Salvador and its implications for long-term \r\neducational development strategies and policies."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: >-
+  Proyecto de Educaci��_n Inicial de Ni��_as Menores de 7 a��_os a trav��_s de
+  sus Familias��_EDIFAM
+---

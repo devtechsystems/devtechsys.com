@@ -1,0 +1,24 @@
+---
+data_id: '65'
+Project Title: Immediate Recovery Project
+Subcontract Number: ''
+Contract Number: 1-525-92-06-N
+Start Year: '1990'
+End Year: '1991'
+Region: "Latin America and\r\nCarribbean"
+Country: Panama
+Client/Donor: USAID/Panama
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

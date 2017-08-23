@@ -1,0 +1,30 @@
+---
+data_id: '5'
+Project Title: Latin America and the Caribbeann Institute for Industrial Research Technology
+Subcontract Number: ''
+Contract Number: 596-0089-O-00-5206-00
+Start Year: '1985'
+End Year: '1985'
+Region: "Latin America and \r\nthe Caribbean"
+Country: Guatemala
+Client/Donor: USAID
+Prime: x
+Sub: ROCAP
+Contract Value USD: '8500'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech conducted an analysis of the internal financial and personnel
+  management systems of ICAITI and made recommendations to improve their
+  effectiveness. The institutional review included the historical, current, and
+  projected balance sheet and cash flow statements to determine the long-term
+  viability of the institution; the management structure, personnel policies,
+  and employee benefits package; and internal financial practices.
+Link to the document file: ''
+'Point of contact ': Office Information/ Reynold Bloom
+Email: eads@usaid.gov
+Phone: (202) 712-4810
+Publications Link: 'Cyprus: FAA 119 Biodiversity Analysis'
+---

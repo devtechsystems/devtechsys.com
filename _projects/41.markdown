@@ -1,0 +1,24 @@
+---
+data_id: '41'
+Project Title: Agricultural Credit
+Subcontract Number: ''
+Contract Number: LOAN 1891-ME
+Start Year: '1989'
+End Year: ''
+Region: "Latin America and the\r\nCarribbean"
+Country: Mexico
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "��_DevTech's role was to assess the financial viability of the Mexican Agricultural Trust Funds by making a thorough review of the \r\ninstitution's structure, operations, and financial situation. Additionally, DevTech prepared the Project Completion Report for the \r\nEighth and Interim Agricultural Credit Projects on behalf of the World Bank."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

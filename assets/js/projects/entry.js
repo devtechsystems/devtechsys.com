@@ -58,126 +58,124 @@ const addWhiteTopBorders = () => {
 import { regionAndPracAreas, practiceAreas } from './test/Data'
 
 document.addEventListener('DOMContentLoaded', () => {
-  d3.tsv('/assets/data/projects.tsv', function(data) {
-    data = data.map((d, i) => Object.assign(d, { id: String(i) }))
-    const totalProjects = data.length
-    const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
-    const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
-      const contractValue = Number(next['Contract Value USD'])
-      if(isNaN(contractValue)) return acc
-      return acc + Number(next['Contract Value USD'])
-    }, 0))
-    const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
-    const totalCountries = Object.keys(projectsGroupedByCountry).length
-    const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
-    const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, 'Country').length)
-    const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
-    const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
-    const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
-      // const denormalized = denormalizePracticeAreas(projGroup)
-      const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
-      const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'value')
+  const data = JEKYLL_DATA.projectsData
+  const totalProjects = data.length
+  const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
+  const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
+    const contractValue = Number(next['Contract Value USD'])
+    if(isNaN(contractValue)) return acc
+    return acc + Number(next['Contract Value USD'])
+  }, 0))
+  const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
+  const totalCountries = Object.keys(projectsGroupedByCountry).length
+  const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
+  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, 'Country').length)
+  const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
+  const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
+  const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
+    // const denormalized = denormalizePracticeAreas(projGroup)
+    const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
+    const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'value')
 
-      return contractValuesForGroupedPracticeAreas
-    })
-    const flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(([regionName, groupedPracticeAreaSums]) => Object.assign({ region: regionName }, groupedPracticeAreaSums))
-
-    const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
-    const getCountryColor = (datum) => {
-      return ChoroplethColorScale.getColorFor(datum.value)
-    }
-    const ChoroplethColorScale = new ColorScale(choroplethData, ColorPalette.colors, ColorPalette.noDataColor)
-    d3.json("/assets/data/countries.topo.json", function(error, world) {
-
-      const countriesTopo = topojson.feature(world, world.objects.countries).features;
-
-      const projectsChoropleth = D3Choropleth('projects-choropleth')
-        .topojson(countriesTopo)
-        .data(choroplethData)
-        .colorPalette(ColorPalette)
-        .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
-        .numberFormatter(formatters.numberFormat)
-        .draw()
-    });
-
-    const pbpaPanel = (
-      <BreakDownPanel
-        data={chartDataFormat(reduceCount(projectsGroupedByPracticeArea))}
-        bigNumber={totalProjects}
-        colorPalette={ColorPalette}
-        title='Projects'
-        groupTitle='Practice Area'
-      />
-    )
-    const pbrPanel = (
-      <BreakDownPanel
-        data={chartDataFormat(countriesInRegions)}
-        bigNumber={totalCountries}
-        colorPalette={ColorPalette}
-        title='Countries'
-        groupTitle='Region'
-      />
-    )
-
-    const stackedBarChart = (
-      <Sizebox className="stacked-bar-chart-sizebox">
-        <StackedBarChart
-          data={regionAndPracAreas}
-          xAxisDataKey={'region'}
-          stackDataKey={'practiceArea'}
-          colorPalette={ColorPalette}
-          valueKey={'value'}
-          tickFormatter={formatters.bigCurrencyFormat}
-          tooltipValueFormatter={formatters.currencyFormat}
-        />
-      </Sizebox>
-    )
-
-    ReactDOM.render(
-      <CountUp start={0} end={totalProjects} duration={3} />,
-      document.getElementById('projects-count')
-    )
-
-    ReactDOM.render(
-      <CountUp start={0} end={totalCountries} duration={3} />,
-      document.getElementById('countries-count')
-    )
-
-    ReactDOM.render(
-      <CountUp start={0} end={totalPartners} duration={3} />,
-      document.getElementById('partners-count')
-    )
-
-    ReactDOM.render(
-      <CountUp start={0} end={totalCountries} duration={3} />,
-      document.getElementById('countries-count')
-    )
-
-    ReactDOM.render(
-      <span>{totalMoney}</span>,
-      document.getElementById('total-money')
-    )
-
-    ReactDOM.render(
-      pbpaPanel,
-      document.getElementById('projects-by-practice-area')
-    )
-
-    ReactDOM.render(
-      pbrPanel,
-      document.getElementById('projects-by-region')
-    )
-
-    ReactDOM.render(
-      stackedBarChart,
-      document.getElementById('contract-value')
-    )
-
-    ReactDOM.render(
-      <ProjectSearch projects={data} />,
-      document.getElementById('project-search'),
-      addWhiteTopBorders
-    )
+    return contractValuesForGroupedPracticeAreas
   })
+  const flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(([regionName, groupedPracticeAreaSums]) => Object.assign({ region: regionName }, groupedPracticeAreaSums))
+
+  const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
+  const getCountryColor = (datum) => {
+    return ChoroplethColorScale.getColorFor(datum.value)
+  }
+  const ChoroplethColorScale = new ColorScale(choroplethData, ColorPalette.colors, ColorPalette.noDataColor)
+  d3.json("/assets/data/countries.topo.json", function(error, world) {
+
+    const countriesTopo = topojson.feature(world, world.objects.countries).features;
+
+    const projectsChoropleth = D3Choropleth('projects-choropleth')
+      .topojson(countriesTopo)
+      .data(choroplethData)
+      .colorPalette(ColorPalette)
+      .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
+      .numberFormatter(formatters.numberFormat)
+      .draw()
+  });
+
+  const pbpaPanel = (
+    <BreakDownPanel
+      data={chartDataFormat(reduceCount(projectsGroupedByPracticeArea))}
+      bigNumber={totalProjects}
+      colorPalette={ColorPalette}
+      title='Projects'
+      groupTitle='Practice Area'
+    />
+  )
+  const pbrPanel = (
+    <BreakDownPanel
+      data={chartDataFormat(countriesInRegions)}
+      bigNumber={totalCountries}
+      colorPalette={ColorPalette}
+      title='Countries'
+      groupTitle='Region'
+    />
+  )
+
+  const stackedBarChart = (
+    <Sizebox className="stacked-bar-chart-sizebox">
+      <StackedBarChart
+        data={regionAndPracAreas}
+        xAxisDataKey={'region'}
+        stackDataKey={'practiceArea'}
+        colorPalette={ColorPalette}
+        valueKey={'value'}
+        tickFormatter={formatters.bigCurrencyFormat}
+        tooltipValueFormatter={formatters.currencyFormat}
+      />
+    </Sizebox>
+  )
+
+  ReactDOM.render(
+    <CountUp start={0} end={totalProjects} duration={3} />,
+    document.getElementById('projects-count')
+  )
+
+  ReactDOM.render(
+    <CountUp start={0} end={totalCountries} duration={3} />,
+    document.getElementById('countries-count')
+  )
+
+  ReactDOM.render(
+    <CountUp start={0} end={totalPartners} duration={3} />,
+    document.getElementById('partners-count')
+  )
+
+  ReactDOM.render(
+    <CountUp start={0} end={totalCountries} duration={3} />,
+    document.getElementById('countries-count')
+  )
+
+  ReactDOM.render(
+    <span>{totalMoney}</span>,
+    document.getElementById('total-money')
+  )
+
+  ReactDOM.render(
+    pbpaPanel,
+    document.getElementById('projects-by-practice-area')
+  )
+
+  ReactDOM.render(
+    pbrPanel,
+    document.getElementById('projects-by-region')
+  )
+
+  ReactDOM.render(
+    stackedBarChart,
+    document.getElementById('contract-value')
+  )
+
+  ReactDOM.render(
+    <ProjectSearch projects={data} />,
+    document.getElementById('project-search'),
+    addWhiteTopBorders
+  )
 
 })

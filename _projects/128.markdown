@@ -1,0 +1,24 @@
+---
+data_id: '128'
+Project Title: Tertiary Education Linkages Project
+Subcontract Number: ''
+Contract Number: 674-0315-C-00-5143-00
+Start Year: '1995'
+End Year: '2000'
+Region: 'Africa '
+Country: South Africa
+Client/Donor: USAID
+Prime: 'IRG and ICF International '
+Sub: x
+Contract Value USD: '3724373'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: Project TELP (tertiary education linkages project) completion report��_
+'Point of contact ': Jaroslaw Kryschtal
+Email: rusric@erols.com
+Phone: (27-12) 323-8869
+Publications Link: ''
+---

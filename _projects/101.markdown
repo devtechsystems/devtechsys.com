@@ -1,0 +1,26 @@
+---
+data_id: '101'
+Project Title: Economic and Social Data Services (ESDS)
+Subcontract Number: ''
+Contract Number: "AEP-0232-C-00-3010-00\r\nAEP-0001-C-00-5033-00"
+Start Year: '1993'
+End Year: '1998'
+Region: 'Global '
+Country: Global
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: "$2,430,485 (first)\r\n$3,094,135 (successor)"
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: x
+Brief Description: "The USAID Center for Development Information and Evaluation (CDIE) Economic and Social Data Service project provided a wide range of analytic and technical support services to maintain the Economic and Social Data Base (ESDB) and to sustain ESDS and its corollary work with USAID central and regional Bureaus, and field Missions.\r\nDevTech ESDS economists utilized the latest computer software applications and statistical research techniques to access, exchange, and manipulate large international databases."
+Link to the document file: >-
+  Economic and social data service annual performance report, October
+  1999-September 2000 : AEP-C-00-95-00033-00��_
+'Point of contact ': 'Lee White '
+Email: ' lwhite@usaid.gov'
+Phone: (202) 712-4696
+Publications Link: ''
+---

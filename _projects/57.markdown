@@ -1,0 +1,35 @@
+---
+data_id: '57'
+Project Title: Immediate Recovery Project
+Subcontract Number: ''
+Contract Number: 525-0302-C-00-0539-00
+Start Year: '1990'
+End Year: '1991'
+Region: "Latin America and the \r\nCaribbean "
+Country: Panama
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '1081656'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech provided technical assistance to the government of Panama under its
+  Immediate Recovery Project to initiate the restructuring of public
+  institutions to promote the confidence, security, and continuity necessary for
+  democratic processes and economic reactivation. DevTech's role was to assist
+  the Panamanian government in developing and beginning implementation of the
+  economic and financial policy reforms that would allow for a new, sustainable
+  growth strategy. DevTech fielded two resident core advisors, in addition to a
+  wide variety of short-term technical assistance experts, to provide strategic
+  advice in such fields as privatization, social security, debt restructuring,
+  housing, fuel production and consumption, investment and export strategies,
+  health, and agriculture.
+Link to the document file: ''
+'Point of contact ': 'Mileydi Guilarte / Mary Ott '
+Email: ' mguilarte@usaid.gov'
+Phone: ' 011 (503) 2501-2999 / (503) 2-98-1666'
+Publications Link: ''
+---

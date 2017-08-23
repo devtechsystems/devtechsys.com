@@ -1,0 +1,24 @@
+---
+data_id: '192'
+Project Title: Egypt Trade Development Center's ExpoLink
+Subcontract Number: ''
+Contract Number: GS-10F-0185K
+Start Year: '1998'
+End Year: '1999'
+Region: Middle East
+Country: Egypt
+Client/Donor: 'Directions Data, Inc./USAID/Cairo'
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "As a subcontractor to Directions Data, Inc., DecTech collaborated with Egyptian Exporters Association /Trade Development\r\nCenter's exporting arm to increase the efficiency of Egyptian exports and to provide market information. "
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

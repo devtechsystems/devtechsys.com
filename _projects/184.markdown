@@ -1,0 +1,24 @@
+---
+data_id: '184'
+Project Title: Honduras��_Workforce Development Conference
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1998'
+End Year: '1999'
+Region: 'Latin America and the Caribbean '
+Country: Honduras
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech prepared and delivered four separate presentations at a national education conference in Honduras and met with education leaders in both the public and private sectors.\r\nThe conference focused on the Alternative Basic Education Delivery System (EDUCATODOS). EDUCATODOS aimed to encourage students in the 7th and 9th grades to continue their education to higher levels and to equip them with skills needed to join the workforce.\r\nThe conference and meetings focused on workforce development, curriculum reform, educational technology, and the development of a new national education policy for the 21st century."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

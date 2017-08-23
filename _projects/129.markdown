@@ -1,0 +1,24 @@
+---
+data_id: '129'
+Project Title: ''
+Subcontract Number: ''
+Contract Number: ''
+Start Year: ''
+End Year: ''
+Region: ''
+Country: ''
+Client/Donor: ''
+Prime: ''
+Sub: ''
+Contract Value USD: '88996'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': Prentiss deJesus - President
+Email: vandijk@thecommunitiesgroup.com
+Phone: 202-216-2907
+Publications Link: ''
+---

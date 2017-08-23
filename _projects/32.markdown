@@ -1,0 +1,24 @@
+---
+data_id: '32'
+Project Title: 'Primary and Secondary Education '
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1987'
+End Year: '1988'
+Region: "Latin America and\r\n the Caribbean"
+Country: Costa Rica
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "Under a World Bank Technical Assistance Loan for structural adjustment, DevTech conducted a comprehensive study (in Spanish) \r\nof Costa Rica's general education system. DevTech's multi-disciplinary team included experts in economics, educational \r\nadministration, anthropology, financial management, and distance education. "
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

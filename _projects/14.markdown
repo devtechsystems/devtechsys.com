@@ -1,0 +1,24 @@
+---
+data_id: '14'
+Project Title: Radio Education
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1985'
+End Year: ''
+Region: Latin America and the Caribbean
+Country: Dominican Republic
+Client/Donor: USAID/Washington
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech conducted a cost simulation study of the replication and expansion of a USAID/Dominican Republic-sponsored primary \r\neducation project. The analysis involved collection of field data on current operations and formulation of a quantitative model \r\nto project recurrent costs under several assumed scenarios."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,24 @@
+---
+data_id: '191'
+Project Title: EcoLinks Environmental Partnership Program Management Support
+Subcontract Number: ''
+Contract Number: "GS-10F-0048L\r\nLAG-I-OO-99-00010-00"
+Start Year: '1998'
+End Year: '2003'
+Region: Europe
+Country: "Europe and Eurasia\r\n"
+Client/Donor: 'USAID/Bureau for Economic Growth, Agriculture, and Trade'
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

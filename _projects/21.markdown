@@ -1,0 +1,24 @@
+---
+data_id: '21'
+Project Title: Impact of Technical Assistance on Small Business Development
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1986'
+End Year: ''
+Region: "Latin America and \r\n the Caribbean"
+Country: 'Ecuador '
+Client/Donor: USAID/Ecuador
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "As part of an evaluation of the Small Business Development Project in Ecuador, DevTech conducted a study that consisted of \r\ngathering evidence of the impact of international technical assistance interventions on the economic development and \r\nemployment generation role of small industrial enterprises."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

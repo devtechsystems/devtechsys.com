@@ -1,0 +1,24 @@
+---
+data_id: '30'
+Project Title: Health Care and Social Security
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1987'
+End Year: '1988'
+Region: Latin America and the Caribbean
+Country: Costa Rica
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "As part of a World Bank Technical Assistance Loan for structural adjustment, DevTech assessed various aspects of the public health \r\ncare system and the pension regimes of Costa Rica. DevTech evaluated the internal efficiency of the health care system, its \r\nlong-term economic and financial viability, alternatives for improving outpatient services, and the integration of preventive and \r\ncurative services. "
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

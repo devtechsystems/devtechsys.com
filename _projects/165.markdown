@@ -1,0 +1,24 @@
+---
+data_id: '165'
+Project Title: El Salvador Economic Reform and Civil Society
+Subcontract Number: ''
+Contract Number: 519-C-00-97-00153-00
+Start Year: '1997'
+End Year: '2002'
+Region: "Latin America and\r\nCarribbean"
+Country: El Salvador
+Client/Donor: USAID/El Salvador
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: x
+Brief Description: "DevTech worked closely with USAID to assist the Salvadorian public and private sectors to design, discuss, and analyze economic \r\npolicyreform proposals in Decentralization and Local Governance, Public Financial Management, and Trade and Competitiveness."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

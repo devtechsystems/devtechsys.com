@@ -1,0 +1,26 @@
+---
+data_id: '177'
+Project Title: "Assistance to Environmental Management in Enterprises in the NIS\r\n"
+Subcontract Number: ''
+Contract Number: EE-A-00-98-00020-00
+Start Year: '1998'
+End Year: '2001'
+Region: Europe and Eurasia
+Country: "Europe and Eurasia\r\n"
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "Input to the EAP Task Force Progress Report for the Environment for Europe\r\nMinisterial Conference"
+Link to the document file: >-
+  Assistance to environmental management in enterprises in the NIS : USAID
+  activities in the NIS -- time period 1998-2001��_
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,31 @@
+---
+data_id: '34'
+Project Title: Investment Planning
+Subcontract Number: ''
+Contract Number: C88127
+Start Year: '1988'
+End Year: '1989'
+Region: 'Latin America and the Caribbean '
+Country: Costa Rica
+Client/Donor: 'World Bank '
+Prime: x
+Sub: ''
+Contract Value USD: '85202'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  Under a World Bank Technical Assistance Loan, DevTech conducted a technical
+  assistance project to strengthen the investment planning and project appraisal
+  capabilities of the Costa Rican public sector. The project included a critical
+  review of current investment planning practices and formulation of an
+  improvement strategy, a series of lectures and workshops to train government
+  personnel in project preparation and cost-benefit analysis, and the
+  development of computer applications for investment planning.
+Link to the document file: ''
+'Point of contact ': Gilberto Flores / Freddy Justiniano Coordinador del Programa
+Email: freddy.justiniano@undp.org
+Phone: ' (212) 906-5404'
+Publications Link: ''
+---

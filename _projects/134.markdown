@@ -1,0 +1,24 @@
+---
+data_id: '134'
+Project Title: Private Voluntary Organizations (PVOs) Cofinancing Project
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1995'
+End Year: ''
+Region: "Latin America and the \r\nCarribbean"
+Country: Nicaragua
+Client/Donor: USAID/Nicaragua
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech evaluators met with USAID, PVO, and project management unit officials; interviewed a sample of target beneficiaries; \r\nreviewed technical assistance interventions; assessed the effects of project implementation; examined priorities and needs of \r\nparticipating PVOs; and recommended ways in which project goals could be realized."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

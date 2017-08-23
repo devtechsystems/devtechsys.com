@@ -1,0 +1,24 @@
+---
+data_id: '175'
+Project Title: Romanian Competition Office and Competition Council
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1997'
+End Year: '1998'
+Region: Europe
+Country: Romania
+Client/Donor: U.S. Department of Justice
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

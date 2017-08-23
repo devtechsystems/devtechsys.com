@@ -1,0 +1,24 @@
+---
+data_id: '146'
+Project Title: RUTA Social
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1996'
+End Year: ''
+Region: "Latin America and\r\nthe Caribbean"
+Country: ''
+Client/Donor: "World Bank/Inter-American Development Bank/United Nations \r\nDevelopment Programme/Pan American Health Organization "
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "RUTA Social is a technical assistance program for the design and execution of social sector projects in the Latin America and the Caribbeann \r\ncountries. The project was started in the second half of 1993 to assist the governments of the region in finding effective ways \r\nto address chronic social sector problems. "
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

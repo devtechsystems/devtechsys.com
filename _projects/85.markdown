@@ -1,0 +1,34 @@
+---
+data_id: '85'
+Project Title: Office of Technological Hazards
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1992'
+End Year: '1996'
+Region: 'North America '
+Country: USA
+Client/Donor: Federal Emergency Management Agency
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech provided support to a variety of programs, including the Chemical
+  Stockpile Emergency Preparedness Program, the Radiological Emergency
+  Preparedness Program, and the Hazardous Materials Program. Support included
+  management of national conferences, working meetings (such as 27-agency
+  collaboration on revision of the Federal Response Plan), and meetings of the
+  state directors of numerous federal and state programs. DevTech scheduled and
+  monitored group activities and follow-up requirements, produced working
+  documents and reports, captured and prepared meeting proceedings for
+  publication, arranged for travel and security, and completed other
+  administrative tasks.
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

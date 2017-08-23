@@ -1,14 +1,29 @@
 ---
-title: Assessment of USAID Civil Society Program in the Dominican Republic (example)
-date: 2017-06-05 23:33:00 Z
-Title: Assessment of USAID Civil Society Program in the Dominican Republic
-Practice Area:
-- Monitoring and Evaluation
-Region: Dominican Republic
-Is Active: true
-layout: project
+data_id: '1'
+Project Title: Integrated Rural Development Program
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1984'
+End Year: '1984'
+Region: "Latin America and\r\nCaribbean"
+Country: Mexico
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  As part of a mission to assess project progress, DevTech identified major
+  constraints and formulated recommendations to improve project performance.
+  DevTech assessed the institutional aspects of the project with emphasis on
+  program, budget, and investment activities, and their coordination with
+  Mexican federal and state agencies.
+Link to the document file: ''
+'Point of contact ': 'World Bank office '
+Email: 'speakersbureau@worldbank.org '
+Phone: (202) 473-1000
+Publications Link: ''
 ---
-
-DevTech led a team of evaluation and civil society specialists with extensive knowledge of the Dominican Republic to conduct a comprehensive assessment of the impact of USAID's Strengthening Civil Society Project, which included the Democratic Initiative Project (PID), providing substantial resources to Participación Ciudadana (PC), and supporting Rule of Law activities related to civil society through Fundación Institucionalidad y Justicia (FINJUS).
-
-The objectives of the assessment were to provide a rigorous review of the impact of USAID's investment in civil society; share input to help the Mission shape its next five-year strategy (2002—2007); and draw key lessons learned and best practices from USAID/DR's activities to promote the development of a politically active civil society in support of democracy.

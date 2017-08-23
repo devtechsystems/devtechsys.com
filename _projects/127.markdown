@@ -1,0 +1,29 @@
+---
+data_id: '127'
+Project Title: 'Support for Ugandan primary education reform : a formative evaluation '
+Subcontract Number: ''
+Contract Number: HNE-5832-I-00-3069-00
+Start Year: '1995'
+End Year: '1995'
+Region: 'Africa '
+Country: Uganda
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech evaluation team highlights its findings based on the formative
+  evaluation - of the Support for Ugandan Primary Education Reform (SUPER),
+  conducted in the spring of 1995. The report includes the team's most important
+  concerns and conclusions, the progress SUPER has made in achieving its
+  purposes and end-of-project status and recommendations.
+Link to the document file: 'http://pdf.usaid.gov/pdf_docs/PDABP618.pdf'
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,24 @@
+---
+data_id: '171'
+Project Title: Girls' and Women's Education
+Subcontract Number: ''
+Contract Number: LAG-98-C-00-0029-00
+Start Year: '1997'
+End Year: '2003'
+Region: "Latin America and\r\nthe Caribbean"
+Country: Peru
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,24 @@
+---
+data_id: '131'
+Project Title: TradeNet
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1995'
+End Year: '1996'
+Region: Africa
+Country: ''
+Client/Donor: USAID/REDSO/ESA
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

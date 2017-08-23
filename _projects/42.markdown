@@ -1,0 +1,29 @@
+---
+data_id: '42'
+Project Title: Economic Aspects of Legislative Processes
+Subcontract Number: ''
+Contract Number: R44082
+Start Year: '1989'
+End Year: '1989'
+Region: 'Latin America and the Caribbean '
+Country: 'Latin America and the Caribbean '
+Client/Donor: State University of New York
+Prime: x
+Sub: ''
+Contract Value USD: '7000'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech prepared the economic analysis of a project paper under preparation by
+  USAID's Office of Democratic Initiative. The study addressed the legislative
+  activities that have important economic aspects such as taxation, government
+  budgets, regulatory law, social security, labor codes, and international
+  agreements.
+Link to the document file: ''
+'Point of contact ': "Office Information/ James Heaphey\r\n"
+Email: ugadmissions@albany.edu
+Phone: (518) 442-5435
+Publications Link: ''
+---

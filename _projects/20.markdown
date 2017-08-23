@@ -1,0 +1,33 @@
+---
+data_id: '20'
+Project Title: National Development Foundation
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1986'
+End Year: '1986'
+Region: 'Latin America and the Caribbean '
+Country: Jamaica
+Client/Donor: Government of Jamaica
+Prime: x
+Sub: ''
+Contract Value USD: '10400'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech carried out a study to analyze the direct lending operations of the
+  National Development Foundation/Jamaica. The project involved an assessment of
+  the functions and operations of the Board of Directors, a study of the
+  feasibility of using guarantee scheme programs for microenterprise lending in
+  Jamaica, a management audit of the foundation, and an assessment of the
+  long-term viability of the institution. It also required specific appraisals
+  of counseling and training programs, lending operations, management
+  information systems, and the overall impact of social and economic factors on
+  the effectiveness of the institution's operations.
+Link to the document file: ''
+'Point of contact ': ' NDFJ Office'
+Email: ndfjinfo@ndfj.org.jm
+Phone: '(876) 929-4100 '
+Publications Link: ''
+---

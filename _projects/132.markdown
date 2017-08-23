@@ -1,0 +1,24 @@
+---
+data_id: '132'
+Project Title: Evaluation and Performance Measurement System
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1995'
+End Year: ''
+Region: Europe and Eurasia
+Country: "Europe and Eurasia\r\n"
+Client/Donor: U.S. Department of Treasury
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

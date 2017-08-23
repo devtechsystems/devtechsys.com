@@ -1,0 +1,33 @@
+---
+data_id: '157'
+Project Title: Girls' and Women's Education
+Subcontract Number: ''
+Contract Number: LAG-C-00-97-00017-00
+Start Year: '1997'
+End Year: '2003'
+Region: 'Africa '
+Country: Morocco
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: 'part of global program budget '
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: x
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  DevTech provided technical and administrative support services to the USAID
+  Bureau of Economic Growth, Agriculture, and Trade, Office of Women in
+  Development (EGAT/WID) in support of Girls' and Women's Education (GWE)
+  Activity Objectives. DevTech assisted EGAT/WID in monitoring the Girls' and
+  Women's Education Initiative; developing effective communications among
+  relevant stakeholders; and documenting programs and products developed
+  concerning the initiative.
+Link to the document file: >-
+  Girls' and women's education [GWE] project : quarterly & final report, January
+  1, 2003 to March 31, 2003��_
+'Point of contact ': 'Susie Clay '
+Email: sclay@usaid.gov
+Phone: (202) 712-0954
+Publications Link: ''
+---

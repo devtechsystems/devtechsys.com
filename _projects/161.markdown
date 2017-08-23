@@ -1,0 +1,24 @@
+---
+data_id: '161'
+Project Title: "Sub-Saharan Africa:\r\nA Resource Guide"
+Subcontract Number: ''
+Contract Number: "AEP-0232-C-00-4035-00\r\nAEP-C-00-94-00035-00"
+Start Year: '1997'
+End Year: '1997'
+Region: 'North America '
+Country: USA
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "CTIS, through the Global Technology Network (GTN), facilitates the transfer of U.S. technology to USAID assisted countries and regions. As USAID missions and local public and private sector partners identify development problems, GTN, through its extensive databases, is able to match the developing country's needs with specific U.S. companies having the appropriate technologies, expertise, and products to address these problems.\r\nGTN focuses on identifying international business opportunities in environment and energy, agribusiness, health and population, and communication and information technologies."
+Link to the document file: 'Sub-Saharan Africa : a resource guide��_'
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

@@ -1,0 +1,24 @@
+---
+data_id: '4'
+Project Title: Integrated Rural Development Program
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1984'
+End Year: ''
+Region: "Latin America and\r\nCarribbean"
+Country: Mexico
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "��_DevTech identified major constraints and formulated recommendations to improve project performance. DevTech assessed the\r\n institutional aspects of the project with emphasis on program, budget, and investment activities, and their coordination with \r\nMexican federal and state agencies."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

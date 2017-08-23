@@ -1,0 +1,24 @@
+---
+data_id: '172'
+Project Title: Girls' and Women's Education
+Subcontract Number: ''
+Contract Number: LAG-98-C-00-0029-00
+Start Year: '1997'
+End Year: '2003'
+Region: "Latin America and\r\nLatin America and the Caribbean"
+Country: Guatemala
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: x
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech provided technical and administrative support services to the USAID Bureau of Economic Growth, Agriculture, and \r\nTrade, Office of Women in Development (EGAT/WID) in support of Girls' and Women's Education (GWE) Activity Objectives. \r\nDevTech assisted EGAT/WID in monitoring the Girls' and Women's Education Initiative; developing effective communications \r\namong relevant stakeholders; and documenting programs and products developed concerning the initiative."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

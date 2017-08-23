@@ -1,0 +1,35 @@
+---
+data_id: '125'
+Project Title: PVO Co-Financing Evaluation
+Subcontract Number: ''
+Contract Number: 524-0313-C-00-5058-00
+Start Year: '1995'
+End Year: '1995'
+Region: "Latin America and the \r\nCaribbean "
+Country: Nicaragua
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '37920'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: >-
+  USAID's Private Voluntary Organizations Cofinancing Project in Nicaragua was
+  designed to increase adoption of preventive health and family practices,
+  expand employment opportunities for low-income families, and promote
+  sustainable natural resource management among farmers. DevTech evaluators met
+  with USAID, PVO, and project management unit officials; interviewed a sample
+  of target beneficiaries; reviewed technical assistance interventions; assessed
+  the effects of project implementation; examined priorities and needs of
+  participating PVOs; and recommended ways in which project goals could be
+  realized.
+Link to the document file: >-
+  Final report : mid-term evaluation of the PVO co-financing project
+  USAID/Nicaragua -- contract no. 524-0313-C-00-5058-00��_
+'Point of contact ': 'Frank Valva '
+Email: ' fvalva@usaid.gov'
+Phone: (505-2) 67-0502
+Publications Link: ''
+---

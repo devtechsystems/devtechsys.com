@@ -1,0 +1,24 @@
+---
+data_id: '73'
+Project Title: Economic Policy Development Support
+Subcontract Number: ''
+Contract Number: 525-0313-C-00-1342-00
+Start Year: '1991'
+End Year: '1995'
+Region: "Latin America and the \r\nCaribbean"
+Country: Panama
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '2294158'
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "As a follow-up to the Immediate Recovery Project in Panama (USAID 1990-1991), DevTech provided long-term support to the Ministry of Planning and Economic Policy (MIPPE). This assistance was divided into two components.\r\n\r\nThe first component involved provision of a long-term, resident senior macroeconomic advisor to MIPPE for policy reform and implementation. This macroeconomist advised on liberalization policies, assisted the government with restoring access to assistance from international financial institutions, and reviewed macroeconomic projections and general economic and business conditions in light of targets of the economic program.\r\n\r\nThe second component of the project called for short-term technical assistance in specific areas to facilitate the implementation of the economic program. Illustrative short-term technical assistance tasks included:\r\n\r\nFinancial equilibrium in social security pension plans;\r\nBudget policy and administration;\r\nReduction and eventual elimination of barriers to free trade;\r\nPrivatization;\r\nElimination of price controls;\r\nCost analysis of health care services delivered by the government; and\r\nPublic-sector investment planning.\r\nThis project also continued the public education program to raise the level of economic understanding in support of policy reform initiated during the Immediate Recovery Project.\r\n\r\nTask #01: External Debt Assistance\r\nTask #02: Price Survey\r\nTask #03: Support to the Implementation of the Economic Program, Agriculture Sector\r\nTask #04: Health Study��_Separation of Costs\r\nTask #05: Actuarial Protection of Old Age and Handicapped\r\nTask #06: Discussion at the World Bank in Washington, D.C.\r\nTask #07: Price Regulation\r\nTask #08: Banco Hipotecario Nacional (BHN) Study\r\nTask #09: Implementation of the Technical Assistance Program\r\nTask #10: Terms of Reference for a Study on Task #11: Study of the Competitiveness of the Panamanian Dairy Industry\r\nTask #12: Study of the Competitiveness of the Panamanian Sugar Industry\r\nTask #13: Study of the Competitiveness of the Panamanian Tomato Industry\r\nTask #14: Public Sector Pensions\r\nTask #15: Consumer Protection\r\nTask #16: Terms of Reference: Irrigation Study\r\nTask #17: Effective Protection\r\nTask #18: Terms of Reference: BHN ��_ Banco de Desarrollo Agropecuario (BDA)\r\nTask #19: Economic Integration Study (2nd Part)\r\nTask #20: Study of the Agribusiness Industry\r\nTask #21: Support to the Department of Labor and Social Welfare: Study of Labor Codes\r\nTask #22: World Bank Mission\r\nTask #23: Investment Planning Design\r\nTask #24: BDA\r\nTask #25: Preparation of the Public Investments Task\r\nTask #26: Preparation of the BDA Task\r\nTask #27: Preparation of the BHN Task"
+Link to the document file: ''
+'Point of contact ': 'Nilka de Varela '
+Email: eads@usaid.gov
+Phone: 507-2-636-011 (202) 537-0753
+Publications Link: ''
+---

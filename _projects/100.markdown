@@ -1,0 +1,26 @@
+---
+data_id: '100'
+Project Title: 'Women in Development: Strategies and Resources (WIDSR)'
+Subcontract Number: ''
+Contract Number: FAO-0100-C-00-3052-00
+Start Year: '1993'
+End Year: '1998'
+Region: 'Global '
+Country: Global
+Client/Donor: USAID
+Prime: x
+Sub: ''
+Contract Value USD: '2983735'
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: x
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech supported the Office of Women in Development (WID) in integrating gender concerns throughout the Agency with an interest in developing countries. DevTech assisted the WID office with the following:\r\nTraining program design and implementation;\r\nInformation dissemination;\r\nTechnical support to the Agency's central and regional Bureaus and overseas Missions; and\r\nResponse to data collection and analysis requests as needed for Agency WID strategy and policy papers and statistical data."
+Link to the document file: >-
+  Asia/Near East : gender highlighted summary of strategic objectives,
+  indicators, intermediate results��_
+'Point of contact ': 'Virginia Lambert '
+Email: cate@usaid.gov
+Phone: (202) 712-1524
+Publications Link: ''
+---

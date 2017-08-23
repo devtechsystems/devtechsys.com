@@ -1,0 +1,24 @@
+---
+data_id: '31'
+Project Title: 'Organizational Development, Ministry of Commerce & Industry'
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1987'
+End Year: ''
+Region: "Latin America and the \r\nCarribbean"
+Country: Panama
+Client/Donor: USAID/Panama
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: x
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech provided technical assistance in economic analysis and organizational development. The analysis included a wide range \r\nof sectoral activities of the ministry, including capital markets, financial enterprises, the insurance industry, fisheries, \r\nmineral resources, domestic and international trade, patent and brand registration, and the definition of industry standards."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

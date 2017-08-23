@@ -1,0 +1,24 @@
+---
+data_id: '71'
+Project Title: Radio Education
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1990'
+End Year: ''
+Region: "Latin America and the \r\nCaribbean"
+Country: Honduras
+Client/Donor: USAID
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "DevTech evaluated development and recurrent costs for the Radio Mathematics Learning Project \"La Familia de los N��_meros\"\r\n in Honduras"
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

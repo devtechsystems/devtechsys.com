@@ -1,0 +1,24 @@
+---
+data_id: '115'
+Project Title: Mid-Term Evaluation of Primary Education Project (PIPE)
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1994'
+End Year: ''
+Region: "Latin America and the \r\nCaribbean"
+Country: Dominican Republic
+Client/Donor: USAID/Washington
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: "A two-person DevTech team was tasked with conducting a formative midterm evaluation of the Primary Education Project in the \r\nDominican Republic to determine the effectiveness of the overall project design and EDUCA's (Action for Basic Education) \r\ncapabilities and to assist the Mission in making further decisions regarding the project."
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---

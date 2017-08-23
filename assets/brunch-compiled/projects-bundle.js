@@ -149,28 +149,31 @@ var __makeRelativeRequire = function(require, mappings, pref) {
   }
 };
 require.register("assets/js/projects/ColumnNames.js", function(exports, require, module) {
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var PRACTICE_AREA_COLUMN_NAMES = {
-  ECONOMIC_ANALYSIS: "M&E Practice Area",
-  EDUCATION_AND_YOUTH_DEVELOPMENT: "Education and Youth Development Practice Area",
-  GENDER_AND_INCLUSIVE_DEVELOPMENT: "Gender and Inclusive Development Practice Area",
-  PFM_AND_INSTITUTION_BUILDING: "Public Financial and Fiscal Sustainability Practice Area"
-};
+exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
 
-var COUNTRY_COLUMN_NAME = "Country";
-var PROJECT_TITLE_COLUMN_NAME = "Project Title";
-var ID_COLUMN_NAME = "id";
-var BRIEF_DESCRIPTION_COLUMN_NAME = "Brief Description";
+var _lodash = require('lodash');
 
+var _lodash2 = _interopRequireDefault(_lodash);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames;
+var practiceAreas = JEKYLL_DATA.practiceAreas;
+var PRACTICE_AREA_COLUMN_NAMES = _lodash2.default.pickBy(ENUMERATED_COLUMN_NAMES, function (enumName, columnName) {
+  return practiceAreas.indexOf(columnName !== -1);
+});
+var COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY'];
+var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
+var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
 exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
 exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
-exports.BRIEF_DESCRIPTION_COLUMN_NAME = BRIEF_DESCRIPTION_COLUMN_NAME;
 
 });
 
@@ -1194,9 +1197,6 @@ var ProjectSearch = function (_Component) {
       var _this4 = this;
 
       var resultsMarkup = resultsRecords.map(function (record) {
-        // return (
-        //   <li key={record[ID_COLUMN_NAME]}><span className="project-country pull-right">{record[COUNTRY_COLUMN_NAME]}</span><span className="project-category">{this.getPracticeAreasMarkup(record)}</span><a href="#" className="project-title">{record[PROJECT_TITLE_COLUMN_NAME]}</a></li>
-        // )
         return _react2.default.createElement(
           'li',
           { key: record[_ColumnNames.ID_COLUMN_NAME] },
@@ -1224,7 +1224,7 @@ var ProjectSearch = function (_Component) {
                 { className: 'column small-8 medium-10' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', className: 'project-title' },
+                  { href: '' + record['url'], className: 'project-title' },
                   record[_ColumnNames.PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"
                 )
               ),
@@ -1765,107 +1765,103 @@ var addWhiteTopBorders = function addWhiteTopBorders() {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  _d3.default.tsv('/assets/data/projects.tsv', function (data) {
-    data = data.map(function (d, i) {
-      return Object.assign(d, { id: String(i) });
-    });
-    var totalProjects = data.length;
-    var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
-    var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
-      var contractValue = Number(next['Contract Value USD']);
-      if (isNaN(contractValue)) return acc;
-      return acc + Number(next['Contract Value USD']);
-    }, 0));
-    var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
-    var totalCountries = Object.keys(projectsGroupedByCountry).length;
-    var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
-    var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
-      return _lodash2.default.uniqBy(projects, 'Country').length;
-    });
-    var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
-    var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, 'region');
-    var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
-      // const denormalized = denormalizePracticeAreas(projGroup)
-      var groupedByPracticeAreas = _lodash2.default.groupBy(projGroup, function (project) {
-        return project.practiceArea;
-      });
-      var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'value');
-
-      return contractValuesForGroupedPracticeAreas;
-    });
-    var flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(function (_ref3) {
-      var _ref4 = _slicedToArray(_ref3, 2),
-          regionName = _ref4[0],
-          groupedPracticeAreaSums = _ref4[1];
-
-      return Object.assign({ region: regionName }, groupedPracticeAreaSums);
-    });
-
-    var choroplethData = chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByCountry));
-    var getCountryColor = function getCountryColor(datum) {
-      return ChoroplethColorScale.getColorFor(datum.value);
-    };
-    var ChoroplethColorScale = new _ColorScale2.default(choroplethData, _ColorPalette2.default.colors, _ColorPalette2.default.noDataColor);
-    _d3.default.json("/assets/data/countries.topo.json", function (error, world) {
-
-      var countriesTopo = topojson.feature(world, world.objects.countries).features;
-
-      var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
-        return datum.name + '<br/>' + datum.value + ' projects';
-      }).numberFormatter(formatters.numberFormat).draw();
-    });
-
-    var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-      data: chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByPracticeArea)),
-      bigNumber: totalProjects,
-      colorPalette: _ColorPalette2.default,
-      title: 'Projects',
-      groupTitle: 'Practice Area'
-    });
-    var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-      data: chartDataFormat(countriesInRegions),
-      bigNumber: totalCountries,
-      colorPalette: _ColorPalette2.default,
-      title: 'Countries',
-      groupTitle: 'Region'
-    });
-
-    var stackedBarChart = _react2.default.createElement(
-      _reactSizebox2.default,
-      { className: 'stacked-bar-chart-sizebox' },
-      _react2.default.createElement(_StackedBarChart2.default, {
-        data: _Data.regionAndPracAreas,
-        xAxisDataKey: 'region',
-        stackDataKey: 'practiceArea',
-        colorPalette: _ColorPalette2.default,
-        valueKey: 'value',
-        tickFormatter: formatters.bigCurrencyFormat,
-        tooltipValueFormatter: formatters.currencyFormat
-      })
-    );
-
-    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));
-
-    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
-
-    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalPartners, duration: 3 }), document.getElementById('partners-count'));
-
-    _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
-
-    _reactDom2.default.render(_react2.default.createElement(
-      'span',
-      null,
-      totalMoney
-    ), document.getElementById('total-money'));
-
-    _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
-
-    _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
-
-    _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
-
-    _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'), addWhiteTopBorders);
+  var data = JEKYLL_DATA.projectsData;
+  var totalProjects = data.length;
+  var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
+  var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
+    var contractValue = Number(next['Contract Value USD']);
+    if (isNaN(contractValue)) return acc;
+    return acc + Number(next['Contract Value USD']);
+  }, 0));
+  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
+  var totalCountries = Object.keys(projectsGroupedByCountry).length;
+  var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
+  var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
+    return _lodash2.default.uniqBy(projects, 'Country').length;
   });
+  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
+  var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, 'region');
+  var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
+    // const denormalized = denormalizePracticeAreas(projGroup)
+    var groupedByPracticeAreas = _lodash2.default.groupBy(projGroup, function (project) {
+      return project.practiceArea;
+    });
+    var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'value');
+
+    return contractValuesForGroupedPracticeAreas;
+  });
+  var flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(function (_ref3) {
+    var _ref4 = _slicedToArray(_ref3, 2),
+        regionName = _ref4[0],
+        groupedPracticeAreaSums = _ref4[1];
+
+    return Object.assign({ region: regionName }, groupedPracticeAreaSums);
+  });
+
+  var choroplethData = chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByCountry));
+  var getCountryColor = function getCountryColor(datum) {
+    return ChoroplethColorScale.getColorFor(datum.value);
+  };
+  var ChoroplethColorScale = new _ColorScale2.default(choroplethData, _ColorPalette2.default.colors, _ColorPalette2.default.noDataColor);
+  _d3.default.json("/assets/data/countries.topo.json", function (error, world) {
+
+    var countriesTopo = topojson.feature(world, world.objects.countries).features;
+
+    var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
+      return datum.name + '<br/>' + datum.value + ' projects';
+    }).numberFormatter(formatters.numberFormat).draw();
+  });
+
+  var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+    data: chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByPracticeArea)),
+    bigNumber: totalProjects,
+    colorPalette: _ColorPalette2.default,
+    title: 'Projects',
+    groupTitle: 'Practice Area'
+  });
+  var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
+    data: chartDataFormat(countriesInRegions),
+    bigNumber: totalCountries,
+    colorPalette: _ColorPalette2.default,
+    title: 'Countries',
+    groupTitle: 'Region'
+  });
+
+  var stackedBarChart = _react2.default.createElement(
+    _reactSizebox2.default,
+    { className: 'stacked-bar-chart-sizebox' },
+    _react2.default.createElement(_StackedBarChart2.default, {
+      data: _Data.regionAndPracAreas,
+      xAxisDataKey: 'region',
+      stackDataKey: 'practiceArea',
+      colorPalette: _ColorPalette2.default,
+      valueKey: 'value',
+      tickFormatter: formatters.bigCurrencyFormat,
+      tooltipValueFormatter: formatters.currencyFormat
+    })
+  );
+
+  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));
+
+  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
+
+  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalPartners, duration: 3 }), document.getElementById('partners-count'));
+
+  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
+
+  _reactDom2.default.render(_react2.default.createElement(
+    'span',
+    null,
+    totalMoney
+  ), document.getElementById('total-money'));
+
+  _reactDom2.default.render(pbpaPanel, document.getElementById('projects-by-practice-area'));
+
+  _reactDom2.default.render(pbrPanel, document.getElementById('projects-by-region'));
+
+  _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
+
+  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'), addWhiteTopBorders);
 });
 
 });

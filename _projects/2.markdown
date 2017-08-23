@@ -1,0 +1,24 @@
+---
+data_id: '2'
+Project Title: Government Income Policies
+Subcontract Number: ''
+Contract Number: ''
+Start Year: '1984'
+End Year: '1985'
+Region: Middle East
+Country: Jordan
+Client/Donor: World Bank
+Prime: ''
+Sub: ''
+Contract Value USD: ''
+M&E Practice Area: ''
+Education and Youth Development Practice Area: ''
+Gender and Inclusive Development Practice Area: ''
+Public Financial and Fiscal Sustainability Practice Area: ''
+Brief Description: ''
+Link to the document file: ''
+'Point of contact ': ''
+Email: ''
+Phone: ''
+Publications Link: ''
+---
