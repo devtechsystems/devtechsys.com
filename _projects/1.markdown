@@ -5,6 +5,9 @@ Title: Assessment of USAID Civil Society Program in the Dominican Republic
 Practice Area:
 - Monitoring and Evaluation
 Region: Dominican Republic
+Year Started: 1990
+Year Ended: 
+Client: USAID
 Is Active: true
 layout: project
 ---
