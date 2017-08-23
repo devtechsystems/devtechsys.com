@@ -2602,6 +2602,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     background-color: transparent; }
     .site .button.button-inverse:focus, .site .button.button-inverse:hover {
       background-color: transparent; }
+.site .marginB-medium {
+  margin-bottom: 60px; }
+.site .marginB-large {
+  margin-bottom: 80px; }
 .site .icon-wBlueEllipse {
   background-color: rgba(102, 176, 211, 0.7);
   border-radius: 50px;
@@ -3115,6 +3119,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-weight: 400;
     margin-bottom: 6px;
     margin-top: 40px; }
+    .site-header .site-header-dropdown h2 a {
+      color: #fff !important;
+      font-size: 30px !important;
+      font-weight: 400; }
   .site-header .site-header-dropdown ul {
     list-style-type: none;
     margin: 0 !important; }
