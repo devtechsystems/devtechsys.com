@@ -73,6 +73,8 @@ layout: default
 						{% endif %}
 
 						{{ content }}
+
+						<a href="/our-practices/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>See all of Our Practices</a>
 					</div>
 			  </div>
 			  <div class="tabs-panel" id="projects">
@@ -129,12 +131,13 @@ layout: default
 			  </div>
 			  <div class="tabs-panel content-bottomPadding" id="insights">
 			  	<div class="row row--gutters column">
+				    {% assign linked_insights = site.posts | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+				    {% if linked_insights.size > 0 %}
 				    <ul class="posts">
-				    	{% assign linked_insights = site.posts | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_insights %}
 					      <li class="post">
-					      	{% if post['Category'].size > 0 %}
-					    			<div class="post-category">{{ post['Category'] }}</div>
+					      	{% if p['Category'].size > 0 %}
+					    			<div class="post-category">{{ p['Category'] }}</div>
 					    		{% endif %}
 					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
 					    		<div class="post-details">
@@ -144,6 +147,24 @@ layout: default
 					    	</li>
 					    {% endfor %}
 				    </ul>
+				    {% else %}
+				    	<p class="marginB-medium">No insight posts have been tagged with {{ current_practice_area }}, below are the most recent insight posts.</p>
+				    	<ul class="posts">
+				    	{% assign recent_insights = site.posts limit:3 %}
+					    {% for p in recent_insights %}
+					      <li class="post">
+					      	{% if p['Category'].size > 0 %}
+					    			<div class="post-category">{{ p['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					    		<div class="post-details">
+					    			{% if p['Author'].size > 0 %}<div class="post-detail">By {{ p['Author'] }}</div>{% endif %}
+					    			<div class="post-detail">{{ p.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+						  {% endfor %}
+					    </ul>
+				    {% endif %}
 				  </div>
 			  </div>
 			</div>
