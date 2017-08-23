@@ -31,6 +31,18 @@ layout: default
 								{% if page['Region'].size > 0 %}
 			  					<span class="post-detail">{{ page['Region'] }}</span>
 			  				{% endif %}
+			  				
+			  				{% if page['Client'].size > 0 %}
+			  					<span class="post-detail">{{ page['Client'] }}</span>
+			  				{% endif %}
+
+			  				{% if page['Year Started'].size > 0 %}
+			  					<span class="post-detail">{{ page['Year Started'] }}</span>
+			  				{% endif %}
+			  				
+			  				{% if page['Year Ended'].size > 0 %}
+			  					<span class="post-detail">{{ page['Year Ended'] }}</span>
+			  				{% endif %}
 							</div>
 						</div>
 						{% if page['Banner Image'].size > 0 %}
@@ -41,6 +53,17 @@ layout: default
 						{% endif %}
 
 				    {{ content }}
+
+
+				    {% if page['Related Document Links'].size > 0 %}
+				    	<h3>Related Documents:</h3>
+				    	<ul>
+				    	{% assign links = page['Related Document Links'] %}
+				    	{% for link in links %}
+		  					<li><a href="{{ link }}">{{ link }}</a></li>
+		  				{% endfor %}
+		  				</ul>
+		  			{% endif %}
 			  	</div>
 			  </div>
 		  </div>
