@@ -163,10 +163,7 @@ var _lodash2 = _interopRequireDefault(_lodash);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames;
-var practiceAreas = JEKYLL_DATA.practiceAreas;
-var PRACTICE_AREA_COLUMN_NAMES = _lodash2.default.pickBy(ENUMERATED_COLUMN_NAMES, function (enumName, columnName) {
-  return practiceAreas.indexOf(columnName !== -1);
-});
+var PRACTICE_AREA_COLUMN_NAMES = JEKYLL_DATA.enumeratedPracticeAreas;
 var COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY'];
 var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
@@ -1055,8 +1052,6 @@ var _PageSelector = require('./PageSelector');
 
 var _PageSelector2 = _interopRequireDefault(_PageSelector);
 
-var _Humanify = require('../../util/Humanify');
-
 var _SearchFields = require('./SearchFields');
 
 var _ColumnNames = require('../../ColumnNames');
@@ -1128,16 +1123,19 @@ var ProjectSearch = function (_Component) {
   }, {
     key: 'getPracticeAreasMarkup',
     value: function getPracticeAreasMarkup(record) {
-      var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).filter(function (paColumnName) {
-        return record[paColumnName] === 'x';
+      var practiceAreaObjects = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).map(function (pa) {
+        return pa;
       });
-      var markup = practiceAreas.map(function (practiceArea, i) {
-        var separator = i + 1 < practiceAreas.length ? ' / ' : '';
+      var practiceAreasForProject = practiceAreaObjects.filter(function (pa) {
+        return record[pa['key']] === 'x';
+      });
+      var markup = practiceAreasForProject.map(function (practiceArea, i) {
+        var separator = i + 1 < practiceAreasForProject.length ? ' / ' : '';
 
         return _react2.default.createElement(
           'span',
-          { key: practiceArea, className: 'subtitle' },
-          '' + (0, _Humanify.PracticeAreaTitle)(practiceArea) + separator
+          { key: practiceArea['key'], className: 'subtitle' },
+          '' + practiceArea['displayName'] + separator
         );
       });
 
@@ -1610,6 +1608,11 @@ var StackedBarChart = function (_Component) {
   }
 
   _createClass(StackedBarChart, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      addWhiteTopBorders();
+    }
+  }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
       addWhiteTopBorders();
@@ -1767,18 +1770,19 @@ var formatters = (0, _qdFormatters2.default)(_d3.default);
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   var denormalizedData = [];
-  Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).forEach(function (practiceArea) {
+  var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES);
+  practiceAreas.forEach(function (practiceArea) {
     var dataFilteredByPracticeArea = data.filter(function (d) {
-      return d[practiceArea] === 'x';
+      return d[practiceArea['key']] === 'x';
     });
     var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
-      return Object.assign(d, { denormalizedPracticeArea: practiceArea });
+      return Object.assign(d, { denormalizedPracticeArea: practiceArea['displayName'] });
     });
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
   });
   var nonePracticeAreas = data.filter(function (d) {
-    var foundSomePracticeArea = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).some(function (practiceArea) {
-      return d[practiceArea] === 'x';
+    var foundSomePracticeArea = practiceAreas.some(function (practiceArea) {
+      return d[practiceArea['key']] === 'x';
     });
     return !foundSomePracticeArea;
   }).map(function (d) {

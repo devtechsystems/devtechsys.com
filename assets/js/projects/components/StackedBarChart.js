@@ -64,6 +64,10 @@ export default class StackedBarChart extends Component {
     super(props)
   }
 
+  componentDidMount() {
+    addWhiteTopBorders()
+  }
+
   componentDidUpdate() {
     addWhiteTopBorders()
   }

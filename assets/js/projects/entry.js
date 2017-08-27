@@ -22,13 +22,14 @@ const formatters = qdFormatters(d3)
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 const denormalizePracticeAreas = (data) => {
   let denormalizedData = []
-  Object.values(PRACTICE_AREA_COLUMN_NAMES).forEach((practiceArea) => {
-    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea] === 'x')
-    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea}))
+  const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES)
+  practiceAreas.forEach((practiceArea) => {
+    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea['key']] === 'x')
+    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea['displayName']}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })
   let nonePracticeAreas = data.filter(d => {
-    var foundSomePracticeArea = Object.values(PRACTICE_AREA_COLUMN_NAMES).some((practiceArea) => d[practiceArea] === 'x')
+    var foundSomePracticeArea = practiceAreas.some((practiceArea) => d[practiceArea['key']] === 'x')
     return !foundSomePracticeArea
   })
   .map(d => Object.assign(d, { denormalizedPracticeArea: 'None' }))

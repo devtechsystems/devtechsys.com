@@ -142,7 +142,7 @@ var PROJECTS_DATA = []
 		url: "{{project['id']}}"
 	}
 	{% for column in site.data.project_column_names %}
-		{% assign columnKey = column['column']['key'] %}
+		{% assign columnKey = column['key'] %}
 		dataObject["{{columnKey}}"] = "{{project[columnKey] | strip_newlines}}"
 	{% endfor %}
 	PROJECTS_DATA.push(dataObject)
@@ -151,15 +151,19 @@ var PROJECTS_DATA = []
 var PROJECT_COLUMN_NAMES = {{site.data.project_column_names | jsonify}}
 var ENUMERATED_COLUMN_NAMES = {}
 PROJECT_COLUMN_NAMES.forEach(function(column) {
-	var columnData = column['column']
-	ENUMERATED_COLUMN_NAMES[columnData['enumName']] = columnData['key']
+	ENUMERATED_COLUMN_NAMES[column['enumName']] = column['key']
 })
-var PRACTICE_AREAS = {{site.data.practice_areas | jsonify}}
+{% assign practiceAreas = site.data.project_column_names | where:"type","practice_area" %}
+var PRACTICE_AREAS = {{ practiceAreas | jsonify }}
+var ENUMERATED_PRACTICE_AREAS = {}
+PRACTICE_AREAS.forEach(function(column) {
+	ENUMERATED_PRACTICE_AREAS[column['enumName']] = column
+})
 JEKYLL_DATA = {
 	projectsData: PROJECTS_DATA,
 	projectColumnNames: PROJECT_COLUMN_NAMES,
 	enumeratedColumnNames: ENUMERATED_COLUMN_NAMES,
-	practiceAreas: PRACTICE_AREAS
+	enumeratedPracticeAreas: ENUMERATED_PRACTICE_AREAS
 }
 </script>
 

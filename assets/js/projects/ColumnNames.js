@@ -1,8 +1,7 @@
 import lodash from 'lodash'
 
 const ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames
-const practiceAreas = JEKYLL_DATA.practiceAreas
-const PRACTICE_AREA_COLUMN_NAMES = lodash.pickBy(ENUMERATED_COLUMN_NAMES,((enumName, columnName) => practiceAreas.indexOf(columnName !== -1)))
+const PRACTICE_AREA_COLUMN_NAMES = JEKYLL_DATA.enumeratedPracticeAreas
 const COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY']
 const PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE']
 const ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID']
