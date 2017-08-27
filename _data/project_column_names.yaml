@@ -20,18 +20,30 @@
     displayName: Contract Value USD
     key: Contract Value USD
 - column:
-    enumName: M_E_PRACTIC_AREA
-    displayName: M&E Practice Area
+    enumName: M_E_PRACTICE_AREA
+    displayName: Monitoring and Evaluation
     key: M&E Practice Area
 - column:
     enumName: EDUCATION_AND_YOUTH_PRACTICE_AREA
-    displayName: Education and Youth Development Practice Area
-    key: Education and Youth Development Practice Area
+    displayName: 'Education, Gender, and Youth'
+    key: 'Education, Gender, and Youth Development Practice Area'
 - column: 
     enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
     displayName: Gender and Inclusive Development Practice Area
     key: Gender and Inclusive Development Practice Area
 - column:
     enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
-    displayName: Public Financial and Fiscal Sustainability Practice Area
-    key: Public Financial and Fiscal Sustainability Practice Area
+    displayName: Public Financial Management and Fiscal Sustainability Practice Area
+    key: Public Financial Management and Fiscal Sustainability Practice Area
+- column:
+    enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
+    displayName: Public Financial Management and Fiscal Sustainability Practice Area
+    key: Public Financial Management and Fiscal Sustainability Practice Area
+- column:
+    enumName: KWLDGE_MNGEMENT_PRACTICE_AREA
+    displayName: Knowledge Management and Data Analytics
+    key: Knowledge Management and Data Analytics Practice Area
+- column:
+    enumName: SECURITY_TRSNP_GOVERNANCE
+    displayName: 'Security, Transparency, and Governance'
+    key: 'Security, Transparency, and Governance'

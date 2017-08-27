@@ -1490,70 +1490,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-exports.default = function (_ref2) {
-  var width = _ref2.width,
-      height = _ref2.height,
-      data = _ref2.data,
-      xAxisDataKey = _ref2.xAxisDataKey,
-      stackDataKey = _ref2.stackDataKey,
-      colorPalette = _ref2.colorPalette,
-      _ref2$valueKey = _ref2.valueKey,
-      valueKey = _ref2$valueKey === undefined ? 'value' : _ref2$valueKey,
-      tickFormatter = _ref2.tickFormatter,
-      tooltipValueFormatter = _ref2.tooltipValueFormatter;
-
-  var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
-  var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
-  var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
-    var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
-    var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
-    return stackGroupingWithSums;
-  });
-  var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref3) {
-    var _ref4 = _slicedToArray(_ref3, 2),
-        xName = _ref4[0],
-        stackGrouping = _ref4[1];
-
-    return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
-  });
-  var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
-    return d[stackDataKey];
-  }).sort(sortStringsAsc);
-  var colorMapper = {};
-  stackDataNamesAsc.forEach(function (name, index) {
-    return colorMapper[name] = colorsDarkToLight[index];
-  });
-  var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
-  var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
-    return _react2.default.createElement(
-      _recharts.Bar,
-      { key: 'bar-' + name, dataKey: name, stackId: 'samestack' },
-      flattenedGroupings.map(function (element, index) {
-        return _react2.default.createElement(_recharts.Cell, {
-          key: 'stacked-bar-' + element.region + '-' + index,
-          fill: colorMapper[name]
-        });
-      })
-    );
-  });
-  var legendData = stackDataNamesAsc.map(function (name, index) {
-    return { id: name, value: name, color: colorMapper[name] };
-  });
-
-  return _react2.default.createElement(
-    _recharts.BarChart,
-    { width: width, height: height, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
-    _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
-    _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
-    _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
-    _react2.default.createElement(_recharts.Tooltip, {
-      cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
-      content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
-    }),
-    _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
-    stackedBar
-  );
-};
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
 
@@ -1569,9 +1506,19 @@ var _Reduce = require('../util/Reduce');
 
 var _ColumnNames = require('../ColumnNames');
 
+var _d2 = require('d3');
+
+var _d3 = _interopRequireDefault(_d2);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var sortStringsAsc = function sortStringsAsc(a, b) {
   var aLower = a.toLowerCase();
@@ -1579,6 +1526,18 @@ var sortStringsAsc = function sortStringsAsc(a, b) {
   if (aLower < bLower) return -1;
   if (aLower > bLower) return 1;
   return 0;
+};
+
+var addWhiteTopBorders = function addWhiteTopBorders() {
+  _d3.default.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function (d) {
+    var node = _d3.default.select(this);
+    var width = node.attr('width');
+    var height = node.attr('height');
+    var topBorder = width;
+    var emptyBorder = width + 2 * height;
+    var dashArray = width + ',' + emptyBorder;
+    return dashArray;
+  }).attr('stroke', 'white').attr('stroke-width', '4px');
 };
 
 var TooltipContent = function TooltipContent(_ref) {
@@ -1640,6 +1599,94 @@ var TooltipContent = function TooltipContent(_ref) {
     stackContent
   );
 };
+
+var StackedBarChart = function (_Component) {
+  _inherits(StackedBarChart, _Component);
+
+  function StackedBarChart(props) {
+    _classCallCheck(this, StackedBarChart);
+
+    return _possibleConstructorReturn(this, (StackedBarChart.__proto__ || Object.getPrototypeOf(StackedBarChart)).call(this, props));
+  }
+
+  _createClass(StackedBarChart, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      addWhiteTopBorders();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          width = _props.width,
+          height = _props.height,
+          data = _props.data,
+          xAxisDataKey = _props.xAxisDataKey,
+          stackDataKey = _props.stackDataKey,
+          colorPalette = _props.colorPalette,
+          _props$valueKey = _props.valueKey,
+          valueKey = _props$valueKey === undefined ? 'value' : _props$valueKey,
+          tickFormatter = _props.tickFormatter,
+          tooltipValueFormatter = _props.tooltipValueFormatter;
+
+      var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
+      var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
+      var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
+        var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
+        var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
+        return stackGroupingWithSums;
+      });
+      var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref2) {
+        var _ref3 = _slicedToArray(_ref2, 2),
+            xName = _ref3[0],
+            stackGrouping = _ref3[1];
+
+        return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
+      });
+      var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
+        return d[stackDataKey];
+      }).sort(sortStringsAsc);
+      var colorMapper = {};
+      stackDataNamesAsc.forEach(function (name, index) {
+        return colorMapper[name] = colorsDarkToLight[index];
+      });
+      var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
+      var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
+        return _react2.default.createElement(
+          _recharts.Bar,
+          { key: 'bar-' + name, dataKey: name, stackId: 'samestack', isAnimationActive: false },
+          flattenedGroupings.map(function (element, index) {
+            return _react2.default.createElement(_recharts.Cell, {
+              key: 'stacked-bar-' + element.region + '-' + index,
+              fill: colorMapper[name]
+            });
+          })
+        );
+      });
+      var legendData = stackDataNamesAsc.map(function (name, index) {
+        return { id: name, value: name, color: colorMapper[name] };
+      });
+
+      return _react2.default.createElement(
+        _recharts.BarChart,
+        { width: width, height: height, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
+        _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
+        _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
+        _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
+        _react2.default.createElement(_recharts.Tooltip, {
+          cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
+          content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
+        }),
+        _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
+        stackedBar
+      );
+    }
+  }]);
+
+  return StackedBarChart;
+}(_react.Component);
+
+exports.default = StackedBarChart;
 
 });
 
@@ -1752,18 +1799,6 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
   return _lodash2.default.sortBy(nameValueArray, ['value']).slice(0).reverse();
 };
 
-var addWhiteTopBorders = function addWhiteTopBorders() {
-  _d3.default.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function (d) {
-    var node = _d3.default.select(this);
-    var width = node.attr('width');
-    var height = node.attr('height');
-    var topBorder = width;
-    var emptyBorder = width + 2 * height;
-    var dashArray = width + ',' + emptyBorder;
-    return dashArray;
-  }).attr('stroke', 'white').attr('stroke-width', '4px');
-};
-
 document.addEventListener('DOMContentLoaded', function () {
   var data = JEKYLL_DATA.projectsData;
   var totalProjects = data.length;
@@ -1861,7 +1896,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 
-  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'), addWhiteTopBorders);
+  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'));
 });
 
 });
