@@ -65,7 +65,9 @@
 
 // Choropleth
 .projects-map {
-  padding: 0px;
+  padding:0;
+  overflow-x:auto;
+  .projects-chart {margin-top:0;}
 }
 
 .text{
@@ -73,7 +75,9 @@
   text-transform:capitalize;
 }
 #projects-choropleth {
-  height: 500px;
+  min-height:300px;
+  height: 300px;
+  min-width:600px;
   background: #F0F8FF;
   overflow: hidden;
 
@@ -118,7 +122,7 @@
       }
 
       #zoom-out {
-        border-top: 1px solid #ccc
+        border-top: 1px solid #ccc;
       }
     }
   }
@@ -136,6 +140,13 @@
     }
   }
 }
+@media screen and (min-width: 50em) {
+  #projects-choropleth {height:460px;}
+}
+@media screen and (min-width: 60em) {
+  #projects-choropleth {height:545px;}
+}
+
 .hidden { 
   display: none; 
 }
@@ -252,4 +263,9 @@ li.recharts-legend-item:before {
 .stacked-bar-chart-sizebox {
   width: 100%;
   min-height: 350px;
+}
+
+
+@media screen and (max-width: 46em) {
+  //#projects-choropleth .legend {visibility:hidden;}
 }
