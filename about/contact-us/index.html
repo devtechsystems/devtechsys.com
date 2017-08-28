@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="/about/contact-us/">
   <link rel="alternate" type="application/rss+xml" title="DevTech Systems, Inc." href="/feed.xml">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
   
 </head>
@@ -363,14 +364,14 @@
 			jobs@devtechsys.com
 		</div>
 	</div>
-	<form class="contact-form">
+	<form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!" data-abide>
 		<div class="row">
 			<div class="column small-16 medium-8">
 				<label>
 					First Name
 					<span class="fa fa-asterisk" aria-hidden="true"></span>
 					<span class="sr-only">Required</span>
-					<input type="text" name="first" />
+					<input type="text" id="first" name="first" required/>
 				</label>
 			</div>
 			<div class="column small-16 medium-8">
@@ -378,7 +379,7 @@
 					Last Name
 					<span class="fa fa-asterisk" aria-hidden="true"></span>
 					<span class="sr-only">Required</span>
-					<input type="text" name="last" />
+					<input type="text" id="last" name="last" required/>
 				</label>
 			</div>
 		</div>
@@ -388,13 +389,13 @@
 					Email Address
 					<span class="fa fa-asterisk" aria-hidden="true"></span>
 					<span class="sr-only">Required</span>
-					<input type="text" name="email" />
+					<input type="email" name="email" id="email" required/>
 				</label>
 			</div>
 			<div class="column small-16 medium-8">
 				<label>
 					Phone
-					<input type="text" name="phone" />
+					<input type="text" name="phone" id="phone" />
 				</label>
 			</div>
 		</div>
@@ -403,16 +404,69 @@
 				Message
 				<span class="fa fa-asterisk" aria-hidden="true"></span>
 				<span class="sr-only">Required</span>
-				<textarea name="message" rows="6"></textarea>
+				<textarea name="message" id="message" rows="6" required></textarea>
 			</label>
 		</div>
-		<div class="row column">
+		<div class="row column clearfix">
+			<div class="pull-left" style="margin-top:15px;">
+				<div class="g-recaptcha" data-sitekey="6Ld-Hi4UAAAAALoDilqrTtIamYMrJbMGcUJH8Q5H"></div>
+				<div id="notice" class="notice" data-captcha-failed="Please Click on the Captcha" data-error="There was an error sending the message, please try again."></div>
+			</div>
 			<button type="submit" class="button pull-right">SEND</button>
 		</div>
 	</form>
-
-	NOTE: this is not functional, still need to find appropriate<br/>solution to send emails to <strong>test@test.com</strong>
 </div>
+<script>
+// function showRecaptcha(element) {
+//   Recaptcha.create('6Le_8i0UAAAAAExowyaDGcRORI6DiBRSr-c39BhH', element, {
+//     theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+//     custom_theme_widget: 'recaptcha_widget'
+//   });
+// }
+document.addEventListener('DOMContentLoaded', function() {
+
+	var contactFormHost = 'https://devtechsys-contact-form.herokuapp.com',
+			form = $('#contact-form'),
+			notice = form.find('#notice');
+
+	// if (form.length) {
+		// showRecaptcha('recaptcha_widget');
+
+		form.submit(function(ev){
+			ev.preventDefault();
+
+			$.ajax({
+				type: 'POST',
+				url: contactFormHost + '/send_email',
+				data: form.serialize(),
+				dataType: 'json',
+				success: function(response) {
+					switch (response.message) {
+						case 'success':
+							form.fadeOut(function() {
+								form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+							});
+							break;
+
+						case 'failure_captcha':
+							// showRecaptcha('recaptcha_widget');
+							notice.text(notice.data('captcha-failed')).fadeIn();
+							break;
+
+						case 'failure_email':
+							notice.text(notice.data('error')).fadeIn();
+					}
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+					notice.text(notice.data('error')).fadeIn();
+				}
+			});
+		});
+	// }
+})
+
+</script>
+
 						
 
 						
@@ -455,12 +509,6 @@
         
           <li><a href="/about/contact-us/" class="is-active">
             Contact Us
-          </a></li>
-        
-      
-        
-          <li><a href="/privacy-policy/" >
-            Privacy Policy
           </a></li>
         
       
