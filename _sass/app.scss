@@ -1283,6 +1283,9 @@ div.career-list {
     position: relative;
     color:#fff;
     text-decoration: none;
+  }
+  .PA--block-image {//.image-with-shadow
+    position: relative;
 
     &:before {
       background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
@@ -1293,7 +1296,7 @@ div.career-list {
       bottom:0;
       left: 0;
       width: 100%;
-      height: 225px;
+      height: 50%;
       content: "";
     }
 
@@ -1305,27 +1308,80 @@ div.career-list {
     top: -110px;
     left:50%;
     margin-left: -45px;
+
+    img {
+      max-width: 64px;
+      position: absolute;
+      top: 50%;
+      margin-top: -32px;
+      left: 0;
+      margin-left: 18px;
+    }
   }
   .PA--block-link-title {
     position: absolute;
     z-index: 2;
-    top: 64%;
+    top: 50%;
     width: 100%;
     text-align: center;
     color:#fff;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     &:after {
       width:60px;
       height:4px;
       content:"";
       background-color: #7dcba7;
     }
-
   }
 }
+
+
+@media print, screen and (min-width: 64em) {
+  .row--our-practices-list {
+    .PA--block-link-title {
+      font-size:26px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+}
+@media print, screen and (min-width: 76em) {
+  //at large screen
+  .row--our-practices-list {
+    .PA--block-link-title {
+      top:64%;
+      padding-left:100px;
+      padding-right:100px;
+    }
+  }
+}
+@media print, screen and (max-width: 45em) {
+  .row--our-practices-list {
+    .medium-8 {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    .PA--block-link-title {
+      font-size: 26px;
+    }
+  }
+}
+@media print, screen and (max-width: 28em) {
+  .row--our-practices-list {
+    .PA--block-link-title {
+      font-size: 22px;
+    }
+  }
+}
+
+
+
+
 
 //projects list
 .current-projects-list {
