@@ -5,7 +5,10 @@
   "main": "",
   "scripts": {
     "clean-projects": "node DataCleaner.js",
-    "projects-to-markdown": "to-jekyll-collection cleanProjects.tsv -o _projects/ --slug data_id",
+    "projects-to-markdown": "to-jekyll-collection projects.tsv -o _projects/ --slug data_id",
+    "publications-to-markdown": "to-jekyll-collection publications.tsv -o _publications/ --slug data_id",
+    "data-to-markdown": "npm run projects-to-markdown && npm run publications-to-markdown",
+    "transform-frontmatter": "node TransformFrontmatter.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "npm install -g brunch && npm install --save-dev babel-brunch auto-reload-brunch babel-preset-latest babel-preset-react clean-css-brunch uglify-js-brunch && npm install --save react react-dom",
     "start": "brunch watch --server",
