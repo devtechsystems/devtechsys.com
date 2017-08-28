@@ -154,7 +154,7 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
+exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
 
 var _lodash = require('lodash');
 
@@ -163,17 +163,20 @@ var _lodash2 = _interopRequireDefault(_lodash);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames;
-var practiceAreas = JEKYLL_DATA.practiceAreas;
-var PRACTICE_AREA_COLUMN_NAMES = _lodash2.default.pickBy(ENUMERATED_COLUMN_NAMES, function (enumName, columnName) {
-  return practiceAreas.indexOf(columnName !== -1);
-});
+var PRACTICE_AREA_COLUMN_NAMES = JEKYLL_DATA.enumeratedPracticeAreas;
 var COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY'];
+var REGION_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['REGION'];
+var PARTNER_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PARTNER'];
 var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
+var CONTRACT_VALUE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['CONTRACT_VALUE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
 exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
 exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
+exports.REGION_COLUMN_NAME = REGION_COLUMN_NAME;
+exports.PARTNER_COLUMN_NAME = PARTNER_COLUMN_NAME;
+exports.CONTRACT_VALUE_COLUMN_NAME = CONTRACT_VALUE_COLUMN_NAME;
 
 });
 
@@ -826,9 +829,19 @@ exports.default = function (parentSelector) {
   };
 
   function getDatum(key) {
-    return _data.find(function (d) {
+    var datum = _data.find(function (d) {
       return d.name === key;
-    }) || { name: undefined, value: undefined };
+    });
+    if (!datum) {
+      var geoDatum = _topojson.find(function (d) {
+        return d.id === key;
+      });
+      if (!geoDatum) {
+        return { noDataFound: true, noGeoDataFound: true, name: key };
+      }
+      return Object.assign({ noDataFound: true }, geoDatum);
+    }
+    return datum;
   }
 
   function getDataValue(key) {
@@ -845,7 +858,7 @@ exports.default = function (parentSelector) {
     }).attr("title", function (d, i) {
       return d.properties.name;
     }).style("fill", function (d, i) {
-      return _colorMapper(getDataValue(d.properties.name));
+      return _colorMapper(getDataValue(d.id));
     });
     d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
@@ -860,7 +873,7 @@ exports.default = function (parentSelector) {
         return parseInt(d);
       });
 
-      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(_tooltipContent(getDatum(d.properties.name)));
+      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(_tooltipContent(getDatum(d.id)));
     }).on("mouseout", function (d, i) {
       tooltip.classed("hidden", true);
     });
@@ -1055,8 +1068,6 @@ var _PageSelector = require('./PageSelector');
 
 var _PageSelector2 = _interopRequireDefault(_PageSelector);
 
-var _Humanify = require('../../util/Humanify');
-
 var _SearchFields = require('./SearchFields');
 
 var _ColumnNames = require('../../ColumnNames');
@@ -1128,16 +1139,19 @@ var ProjectSearch = function (_Component) {
   }, {
     key: 'getPracticeAreasMarkup',
     value: function getPracticeAreasMarkup(record) {
-      var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).filter(function (paColumnName) {
-        return record[paColumnName] === 'x';
+      var practiceAreaObjects = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).map(function (pa) {
+        return pa;
       });
-      var markup = practiceAreas.map(function (practiceArea, i) {
-        var separator = i + 1 < practiceAreas.length ? ' / ' : '';
+      var practiceAreasForProject = practiceAreaObjects.filter(function (pa) {
+        return record[pa['key']] === 'x';
+      });
+      var markup = practiceAreasForProject.map(function (practiceArea, i) {
+        var separator = i + 1 < practiceAreasForProject.length ? ' / ' : '';
 
         return _react2.default.createElement(
           'span',
-          { key: practiceArea, className: 'subtitle' },
-          '' + (0, _Humanify.PracticeAreaTitle)(practiceArea) + separator
+          { key: practiceArea['key'], className: 'subtitle' },
+          '' + practiceArea['displayName'] + separator
         );
       });
 
@@ -1490,70 +1504,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-exports.default = function (_ref2) {
-  var width = _ref2.width,
-      height = _ref2.height,
-      data = _ref2.data,
-      xAxisDataKey = _ref2.xAxisDataKey,
-      stackDataKey = _ref2.stackDataKey,
-      colorPalette = _ref2.colorPalette,
-      _ref2$valueKey = _ref2.valueKey,
-      valueKey = _ref2$valueKey === undefined ? 'value' : _ref2$valueKey,
-      tickFormatter = _ref2.tickFormatter,
-      tooltipValueFormatter = _ref2.tooltipValueFormatter;
-
-  var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
-  var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
-  var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
-    var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
-    var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
-    return stackGroupingWithSums;
-  });
-  var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref3) {
-    var _ref4 = _slicedToArray(_ref3, 2),
-        xName = _ref4[0],
-        stackGrouping = _ref4[1];
-
-    return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
-  });
-  var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
-    return d[stackDataKey];
-  }).sort(sortStringsAsc);
-  var colorMapper = {};
-  stackDataNamesAsc.forEach(function (name, index) {
-    return colorMapper[name] = colorsDarkToLight[index];
-  });
-  var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
-  var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
-    return _react2.default.createElement(
-      _recharts.Bar,
-      { key: 'bar-' + name, dataKey: name, stackId: 'samestack' },
-      flattenedGroupings.map(function (element, index) {
-        return _react2.default.createElement(_recharts.Cell, {
-          key: 'stacked-bar-' + element.region + '-' + index,
-          fill: colorMapper[name]
-        });
-      })
-    );
-  });
-  var legendData = stackDataNamesAsc.map(function (name, index) {
-    return { id: name, value: name, color: colorMapper[name] };
-  });
-
-  return _react2.default.createElement(
-    _recharts.BarChart,
-    { width: width, height: height, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
-    _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
-    _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
-    _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
-    _react2.default.createElement(_recharts.Tooltip, {
-      cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
-      content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
-    }),
-    _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
-    stackedBar
-  );
-};
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
 
@@ -1569,9 +1520,19 @@ var _Reduce = require('../util/Reduce');
 
 var _ColumnNames = require('../ColumnNames');
 
+var _d2 = require('d3');
+
+var _d3 = _interopRequireDefault(_d2);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var sortStringsAsc = function sortStringsAsc(a, b) {
   var aLower = a.toLowerCase();
@@ -1579,6 +1540,18 @@ var sortStringsAsc = function sortStringsAsc(a, b) {
   if (aLower < bLower) return -1;
   if (aLower > bLower) return 1;
   return 0;
+};
+
+var addWhiteTopBorders = function addWhiteTopBorders() {
+  _d3.default.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function (d) {
+    var node = _d3.default.select(this);
+    var width = node.attr('width');
+    var height = node.attr('height');
+    var topBorder = width;
+    var emptyBorder = width + 2 * height;
+    var dashArray = width + ',' + emptyBorder;
+    return dashArray;
+  }).attr('stroke', 'white').attr('stroke-width', '4px');
 };
 
 var TooltipContent = function TooltipContent(_ref) {
@@ -1640,6 +1613,99 @@ var TooltipContent = function TooltipContent(_ref) {
     stackContent
   );
 };
+
+var StackedBarChart = function (_Component) {
+  _inherits(StackedBarChart, _Component);
+
+  function StackedBarChart(props) {
+    _classCallCheck(this, StackedBarChart);
+
+    return _possibleConstructorReturn(this, (StackedBarChart.__proto__ || Object.getPrototypeOf(StackedBarChart)).call(this, props));
+  }
+
+  _createClass(StackedBarChart, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      addWhiteTopBorders();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      addWhiteTopBorders();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          width = _props.width,
+          height = _props.height,
+          data = _props.data,
+          xAxisDataKey = _props.xAxisDataKey,
+          stackDataKey = _props.stackDataKey,
+          colorPalette = _props.colorPalette,
+          _props$valueKey = _props.valueKey,
+          valueKey = _props$valueKey === undefined ? 'value' : _props$valueKey,
+          tickFormatter = _props.tickFormatter,
+          tooltipValueFormatter = _props.tooltipValueFormatter;
+
+      var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
+      var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
+      var xGroupingWithSums = _lodash2.default.mapValues(xGrouping, function (collectionForXGroup) {
+        var stackGrouping = _lodash2.default.groupBy(collectionForXGroup, stackDataKey);
+        var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
+        return stackGroupingWithSums;
+      });
+      var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref2) {
+        var _ref3 = _slicedToArray(_ref2, 2),
+            xName = _ref3[0],
+            stackGrouping = _ref3[1];
+
+        return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
+      });
+      var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
+        return d[stackDataKey];
+      }).sort(sortStringsAsc);
+      var colorMapper = {};
+      stackDataNamesAsc.forEach(function (name, index) {
+        return colorMapper[name] = colorsDarkToLight[index];
+      });
+      var stackDataNamesDesc = stackDataNamesAsc.slice(0).reverse(); // Clone and then reverse
+      var stackedBar = stackDataNamesDesc.map(function (name, stackIndex) {
+        return _react2.default.createElement(
+          _recharts.Bar,
+          { key: 'bar-' + name, dataKey: name, stackId: 'samestack', isAnimationActive: false },
+          flattenedGroupings.map(function (element, index) {
+            return _react2.default.createElement(_recharts.Cell, {
+              key: 'stacked-bar-' + element.region + '-' + index,
+              fill: colorMapper[name]
+            });
+          })
+        );
+      });
+      var legendData = stackDataNamesAsc.map(function (name, index) {
+        return { id: name, value: name, color: colorMapper[name] };
+      });
+
+      return _react2.default.createElement(
+        _recharts.BarChart,
+        { width: width, height: height, data: flattenedGroupings, margin: { top: 20, right: 0, bottom: 0, left: -20 } },
+        _react2.default.createElement(_recharts.CartesianGrid, { vertical: false, strokeDasharray: '1 1', strokeWidth: 2 }),
+        _react2.default.createElement(_recharts.XAxis, { dataKey: xAxisDataKey, interval: 0 }),
+        _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
+        _react2.default.createElement(_recharts.Tooltip, {
+          cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
+          content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
+        }),
+        _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
+        stackedBar
+      );
+    }
+  }]);
+
+  return StackedBarChart;
+}(_react.Component);
+
+exports.default = StackedBarChart;
 
 });
 
@@ -1708,8 +1774,6 @@ var _ProjectSearch = require('./components/ProjectSearch');
 
 var _ProjectSearch2 = _interopRequireDefault(_ProjectSearch);
 
-var _Data = require('./test/Data');
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1720,22 +1784,23 @@ var formatters = (0, _qdFormatters2.default)(_d3.default);
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   var denormalizedData = [];
-  Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).forEach(function (practiceArea) {
+  var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES);
+  practiceAreas.forEach(function (practiceArea) {
     var dataFilteredByPracticeArea = data.filter(function (d) {
-      return d[practiceArea] === 'x';
+      return d[practiceArea['key']] === 'x';
     });
     var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
-      return Object.assign(d, { denormalizedPracticeArea: practiceArea });
+      return Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName'] });
     });
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
   });
   var nonePracticeAreas = data.filter(function (d) {
-    var foundSomePracticeArea = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES).some(function (practiceArea) {
-      return d[practiceArea] === 'x';
+    var foundSomePracticeArea = practiceAreas.some(function (practiceArea) {
+      return d[practiceArea['key']] === 'x';
     });
     return !foundSomePracticeArea;
   }).map(function (d) {
-    return Object.assign(d, { denormalizedPracticeArea: 'None' });
+    return Object.assign({}, d, { denormalizedPracticeArea: 'None' });
   });
 
   return denormalizedData.concat(nonePracticeAreas);
@@ -1751,54 +1816,47 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
   });
   return _lodash2.default.sortBy(nameValueArray, ['value']).slice(0).reverse();
 };
-
-var addWhiteTopBorders = function addWhiteTopBorders() {
-  _d3.default.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function (d) {
-    var node = _d3.default.select(this);
-    var width = node.attr('width');
-    var height = node.attr('height');
-    var topBorder = width;
-    var emptyBorder = width + 2 * height;
-    var dashArray = width + ',' + emptyBorder;
-    return dashArray;
-  }).attr('stroke', 'white').attr('stroke-width', '4px');
+var choroplethDataFormat = function choroplethDataFormat(groupedValues) {
+  var flattenedArray = [];
+  Object.keys(groupedValues).forEach(function (iso3Code) {
+    var country = { name: iso3Code, value: groupedValues[iso3Code].count, countryName: groupedValues[iso3Code].countryName };
+    flattenedArray.push(country);
+  });
+  return flattenedArray;
+};
+var choroplethTooltipFunc = function choroplethTooltipFunc(datum) {
+  if (datum.noDataFound) {
+    if (datum.noGeoDataFound) {
+      return 'No data found for ' + datum.name;
+    }
+    return datum.properties.name + '<br/>0 projects';
+  }
+  return datum.countryName + '<br/>' + datum.value + ' projects';
 };
 
 document.addEventListener('DOMContentLoaded', function () {
   var data = JEKYLL_DATA.projectsData;
   var totalProjects = data.length;
-  var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
+  var totalPartners = Object.keys(_lodash2.default.groupBy(data, _ColumnNames.PARTNER_COLUMN_NAME)).length;
   var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
-    var contractValue = Number(next['Contract Value USD']);
+    var contractValue = Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
     if (isNaN(contractValue)) return acc;
-    return acc + Number(next['Contract Value USD']);
+    return acc + Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
   }, 0));
-  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
-  var totalCountries = Object.keys(projectsGroupedByCountry).length;
-  var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
+  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'ISO3 Code');
+  var totalCountries = Object.keys(projectsGroupedByCountry).filter(function (d) {
+    return d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO";
+  }).length; // Don't include Global as a country
+  var projectsGroupedByRegion = _lodash2.default.groupBy(data, _ColumnNames.REGION_COLUMN_NAME);
   var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
-    return _lodash2.default.uniqBy(projects, 'Country').length;
+    return _lodash2.default.uniqBy(projects, _ColumnNames.COUNTRY_COLUMN_NAME).length;
   });
-  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
-  var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, 'region');
-  var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
-    // const denormalized = denormalizePracticeAreas(projGroup)
-    var groupedByPracticeAreas = _lodash2.default.groupBy(projGroup, function (project) {
-      return project.practiceArea;
-    });
-    var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'value');
-
-    return contractValuesForGroupedPracticeAreas;
+  var dataDenormalizedByPracticeArea = denormalizePracticeAreas(data);
+  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea');
+  var projectCountsForCountries = (0, _Reduce.reduceCountIncludeExtraData)(projectsGroupedByCountry, function (recordGroup) {
+    return { countryName: recordGroup[0][_ColumnNames.COUNTRY_COLUMN_NAME] };
   });
-  var flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(function (_ref3) {
-    var _ref4 = _slicedToArray(_ref3, 2),
-        regionName = _ref4[0],
-        groupedPracticeAreaSums = _ref4[1];
-
-    return Object.assign({ region: regionName }, groupedPracticeAreaSums);
-  });
-
-  var choroplethData = chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByCountry));
+  var choroplethData = choroplethDataFormat(projectCountsForCountries);
   var getCountryColor = function getCountryColor(datum) {
     return ChoroplethColorScale.getColorFor(datum.value);
   };
@@ -1807,9 +1865,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var countriesTopo = topojson.feature(world, world.objects.countries).features;
 
-    var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
-      return datum.name + '<br/>' + datum.value + ' projects';
-    }).numberFormatter(formatters.numberFormat).draw();
+    var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(choroplethTooltipFunc).numberFormatter(formatters.numberFormat).draw();
   });
 
   var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
@@ -1831,11 +1887,11 @@ document.addEventListener('DOMContentLoaded', function () {
     _reactSizebox2.default,
     { className: 'stacked-bar-chart-sizebox' },
     _react2.default.createElement(_StackedBarChart2.default, {
-      data: _Data.regionAndPracAreas,
-      xAxisDataKey: 'region',
-      stackDataKey: 'practiceArea',
+      data: dataDenormalizedByPracticeArea,
+      xAxisDataKey: _ColumnNames.REGION_COLUMN_NAME,
+      stackDataKey: 'denormalizedPracticeArea',
       colorPalette: _ColorPalette2.default,
-      valueKey: 'value',
+      valueKey: _ColumnNames.CONTRACT_VALUE_COLUMN_NAME,
       tickFormatter: formatters.bigCurrencyFormat,
       tooltipValueFormatter: formatters.currencyFormat
     })
@@ -1861,29 +1917,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 
-  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'), addWhiteTopBorders);
+  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'));
 });
-
-});
-
-require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-// Dummy data
-
-var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
-
-var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
-
-var practiceAreas = ['Monitoring and Evaluation', 'Public Financial Management and Fiscal Sustainability', 'Knowledge Management and Data Analytics', 'Education, Gender and Youth', 'Energy and Environment', 'Security, Transparency, and Governance'];
-
-var regionAndPracAreas = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 300 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 440 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 400 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 230 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 200 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 80 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
-
-exports.regionAndPracAreas = regionAndPracAreas;
-exports.practiceAreas = practiceAreas;
 
 });
 
@@ -2009,7 +2044,7 @@ require.register("assets/js/projects/util/Reduce.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.reduceCount = exports.reduceSum = undefined;
+exports.reduceCountIncludeExtraData = exports.reduceCount = exports.reduceSum = undefined;
 
 var _lodash = require('lodash');
 
@@ -2020,6 +2055,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var reduceSum = function reduceSum(grouping, valueKey) {
   return _lodash2.default.mapValues(grouping, function (recordsInGroup) {
     return recordsInGroup.reduce(function (accumulator, next) {
+      var nextValue = Number(next[valueKey]);
+      if (isNaN(nextValue)) {
+        console.warn('Tried to reduce with a non numeric value: ' + next[valueKey]);
+        console.warn('Using zero as the value instead');
+        return accumulator += 0;
+      }
       return accumulator += Number(next[valueKey]);
     }, 0);
   });
@@ -2031,14 +2072,22 @@ var reduceCount = function reduceCount(grouping) {
   });
 };
 
+var reduceCountIncludeExtraData = function reduceCountIncludeExtraData(grouping, generateExtraData) {
+  return _lodash2.default.mapValues(grouping, function (recordsInGroup) {
+    var extraData = generateExtraData(recordsInGroup);
+    var countWithExtra = Object.assign({ count: recordsInGroup.length }, extraData);
+    return countWithExtra;
+  });
+};
 exports.reduceSum = reduceSum;
 exports.reduceCount = reduceCount;
+exports.reduceCountIncludeExtraData = reduceCountIncludeExtraData;
 
 });
 
-require.alias("buffer/index.js", "buffer");
-require.alias("events/events.js", "events");
-require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("brunch/node_modules/buffer/index.js", "buffer");
+require.alias("brunch/node_modules/events/events.js", "events");
+require.alias("brunch/node_modules/process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 
 // Auto-loaded modules from config.npm.globals.

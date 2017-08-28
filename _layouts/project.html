@@ -2,10 +2,11 @@
 layout: default
 ---
 
-{% assign foundPracticeAreas = site.foundPracticeAreas %}
-{% for practiceArea in site.data.practice_areas %}
-	{% if page[practiceArea] == 'x' %}
-		{% assign foundPracticeAreas = foundPracticeAreas | push: practiceArea %}
+{% assign foundPracticeAreas = site.newEmptyArray %}
+{% assign practiceAreaObjects = site.data.project_column_names | where:"type","practice_area" %}
+{% for practiceArea in practiceAreaObjects %}
+	{% if page[practiceArea['key']] == 'x' %}
+		{% assign foundPracticeAreas = foundPracticeAreas | push: practiceArea['displayName'] %}
 	{% endif %}
 {% endfor %}
 {% assign practiceAreas = foundPracticeAreas %}

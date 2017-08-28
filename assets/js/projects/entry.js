@@ -10,28 +10,28 @@ import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
-import { PRACTICE_AREA_COLUMN_NAMES } from './ColumnNames'
-import { reduceSum, reduceCount } from './util/Reduce'
+import { PRACTICE_AREA_COLUMN_NAMES, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
+import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 
 const formatters = qdFormatters(d3)
 
-
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
 const denormalizePracticeAreas = (data) => {
   let denormalizedData = []
-  Object.values(PRACTICE_AREA_COLUMN_NAMES).forEach((practiceArea) => {
-    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea] === 'x')
-    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea}))
+  const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES)
+  practiceAreas.forEach((practiceArea) => {
+    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea['key']] === 'x')
+    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName']}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })
   let nonePracticeAreas = data.filter(d => {
-    var foundSomePracticeArea = Object.values(PRACTICE_AREA_COLUMN_NAMES).some((practiceArea) => d[practiceArea] === 'x')
+    var foundSomePracticeArea = practiceAreas.some((practiceArea) => d[practiceArea['key']] === 'x')
     return !foundSomePracticeArea
   })
-  .map(d => Object.assign(d, { denormalizedPracticeArea: 'None' }))
+  .map(d => Object.assign({}, d, { denormalizedPracticeArea: 'None' }))
 
   return denormalizedData.concat(nonePracticeAreas)
 }
@@ -40,48 +40,41 @@ const chartDataFormat = (groupedValues) => {
   const nameValueArray = Object.entries(groupedValues).map(([name, value]) => ({ name, value }))
   return lodash.sortBy(nameValueArray, ['value']).slice(0).reverse()
 }
-
-const addWhiteTopBorders = () => {
-  d3.selectAll('.recharts-bar-rectangle path').attr('stroke-dasharray', function(d) { 
-    var node = d3.select(this); 
-    var width = node.attr('width');
-    var height = node.attr('height');
-    var topBorder = width;
-    var emptyBorder = width + (2 * height);
-    var dashArray = width + ',' + emptyBorder;
-    return dashArray
+const choroplethDataFormat = (groupedValues) => {
+  const flattenedArray = []
+  Object.keys(groupedValues).forEach((iso3Code) => {
+    const country = { name: iso3Code, value: groupedValues[iso3Code].count, countryName: groupedValues[iso3Code].countryName}
+    flattenedArray.push(country)
   })
-  .attr('stroke', 'white')
-  .attr('stroke-width', '4px')
+  return flattenedArray
 }
-
-import { regionAndPracAreas, practiceAreas } from './test/Data'
+const choroplethTooltipFunc = (datum) => {
+  if(datum.noDataFound) {
+    if(datum.noGeoDataFound) {
+      return `No data found for ${datum.name}`
+    }
+    return `${datum.properties.name}<br/>0 projects`
+  }
+  return`${datum.countryName}<br/>${datum.value} projects`
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const data = JEKYLL_DATA.projectsData
   const totalProjects = data.length
-  const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
+  const totalPartners = Object.keys(lodash.groupBy(data, PARTNER_COLUMN_NAME)).length
   const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
-    const contractValue = Number(next['Contract Value USD'])
+    const contractValue = Number(next[CONTRACT_VALUE_COLUMN_NAME])
     if(isNaN(contractValue)) return acc
-    return acc + Number(next['Contract Value USD'])
+    return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])
   }, 0))
-  const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
-  const totalCountries = Object.keys(projectsGroupedByCountry).length
-  const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
-  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, 'Country').length)
-  const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
-  const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
-  const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
-    // const denormalized = denormalizePracticeAreas(projGroup)
-    const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
-    const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'value')
-
-    return contractValuesForGroupedPracticeAreas
-  })
-  const flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(([regionName, groupedPracticeAreaSums]) => Object.assign({ region: regionName }, groupedPracticeAreaSums))
-
-  const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
+  const projectsGroupedByCountry = lodash.groupBy(data, 'ISO3 Code')
+  const totalCountries = Object.keys(projectsGroupedByCountry).filter(d => d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO").length // Don't include Global as a country
+  const projectsGroupedByRegion = lodash.groupBy(data, REGION_COLUMN_NAME)
+  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, COUNTRY_COLUMN_NAME).length)
+  const dataDenormalizedByPracticeArea = denormalizePracticeAreas(data)
+  const projectsGroupedByPracticeArea = lodash.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea')
+  const projectCountsForCountries = reduceCountIncludeExtraData(projectsGroupedByCountry, (recordGroup) => ({ countryName: recordGroup[0][COUNTRY_COLUMN_NAME] }))
+  const choroplethData = choroplethDataFormat(projectCountsForCountries)
   const getCountryColor = (datum) => {
     return ChoroplethColorScale.getColorFor(datum.value)
   }
@@ -94,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .topojson(countriesTopo)
       .data(choroplethData)
       .colorPalette(ColorPalette)
-      .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
+      .tooltipContent(choroplethTooltipFunc)
       .numberFormatter(formatters.numberFormat)
       .draw()
   });
@@ -121,11 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const stackedBarChart = (
     <Sizebox className="stacked-bar-chart-sizebox">
       <StackedBarChart
-        data={regionAndPracAreas}
-        xAxisDataKey={'region'}
-        stackDataKey={'practiceArea'}
+        data={dataDenormalizedByPracticeArea}
+        xAxisDataKey={REGION_COLUMN_NAME}
+        stackDataKey={'denormalizedPracticeArea'}
         colorPalette={ColorPalette}
-        valueKey={'value'}
+        valueKey={CONTRACT_VALUE_COLUMN_NAME}
         tickFormatter={formatters.bigCurrencyFormat}
         tooltipValueFormatter={formatters.currencyFormat}
       />
@@ -174,8 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ReactDOM.render(
     <ProjectSearch projects={data} />,
-    document.getElementById('project-search'),
-    addWhiteTopBorders
+    document.getElementById('project-search')
   )
 
 })

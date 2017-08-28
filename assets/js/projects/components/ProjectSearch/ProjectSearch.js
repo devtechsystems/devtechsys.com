@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Lunr from 'lunr'
 import PageSelector from './PageSelector'
-import { PracticeAreaTitle } from '../../util/Humanify'
 import { SEARCH_FIELDS } from './SearchFields'
 import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PROJECT_TITLE_COLUMN_NAME, ID_COLUMN_NAME } from '../../ColumnNames'
 
@@ -55,13 +54,14 @@ export default class ProjectSearch extends Component {
   }
 
   getPracticeAreasMarkup(record) {
-    const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES).filter((paColumnName) => record[paColumnName] === 'x')
-    let markup = practiceAreas
+    const practiceAreaObjects = Object.values(PRACTICE_AREA_COLUMN_NAMES).map((pa) => pa)
+    const practiceAreasForProject = practiceAreaObjects.filter((pa) => record[pa['key']] === 'x')
+    let markup = practiceAreasForProject
       .map((practiceArea, i) => {
-        const separator = (i + 1 < practiceAreas.length) ? ' / ' : ''
+        const separator = (i + 1 < practiceAreasForProject.length) ? ' / ' : ''
 
         return (
-          <span key={practiceArea} className='subtitle'>{`${PracticeAreaTitle(practiceArea)}${separator}`}</span>
+          <span key={practiceArea['key']} className='subtitle'>{`${practiceArea['displayName']}${separator}`}</span>
         )
       })
 

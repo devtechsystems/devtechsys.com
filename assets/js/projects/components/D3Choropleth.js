@@ -130,7 +130,15 @@ export default function(parentSelector) {
   }
 
   function getDatum(key) {
-    return _data.find((d) => d.name === key) || { name: undefined, value: undefined }
+    const datum = _data.find((d) => d.name === key)
+    if(!datum) {
+      const geoDatum = _topojson.find((d) => d.id === key)
+      if(!geoDatum) {
+        return{ noDataFound: true, noGeoDataFound: true, name: key }
+      }
+      return Object.assign({ noDataFound: true }, geoDatum)
+    }
+    return datum
   }
 
   function getDataValue(key) {
@@ -147,7 +155,7 @@ export default function(parentSelector) {
         .attr("d", path)
         .attr("id", function(d,i) { return d.id; })
         .attr("title", function(d,i) { return d.properties.name; })
-        .style("fill", function(d, i) { return _colorMapper(getDataValue(d.properties.name)); });
+        .style("fill", function(d, i) { return _colorMapper(getDataValue(d.id)); });
     d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
     //offsets for tooltips
@@ -162,7 +170,7 @@ export default function(parentSelector) {
 
         tooltip.classed("hidden", false)
               .attr("style", "left:"+(mouse[0]+offsetL)+"px;top:"+(mouse[1]+offsetT)+"px")
-              .html(_tooltipContent(getDatum(d.properties.name)));
+              .html(_tooltipContent(getDatum(d.id)));
 
         })
         .on("mouseout",  function(d,i) {

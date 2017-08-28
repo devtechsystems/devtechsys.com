@@ -4,10 +4,13 @@
   "description": "Devtech Corporate Website",
   "main": "",
   "scripts": {
+    "clean-projects": "node DataCleaner.js",
+    "projects-to-markdown": "to-jekyll-collection cleanProjects.tsv -o _projects/ --slug data_id",
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "npm install -g brunch && npm install --save-dev babel-brunch auto-reload-brunch babel-preset-latest babel-preset-react clean-css-brunch uglify-js-brunch && npm install --save react react-dom",
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "brunch build --production",
+    "dev": "bundle exec jekyll serve --incremental npm run start"
   },
   "repository": {
     "type": "git",
@@ -28,7 +31,8 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "clean-css-brunch": "^2.10.0",
-    "uglify-js-brunch": "^2.10.0"
+    "uglify-js-brunch": "^2.10.0",
+    "xlsx": "^0.11.3"
   },
   "dependencies": {
     "classnames": "^2.2.5",
