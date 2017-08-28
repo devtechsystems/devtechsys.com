@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(isNaN(contractValue)) return acc
     return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])
   }, 0))
-  const projectsGroupedByCountry = lodash.groupBy(data, 'ISO3 Code')
-  const totalCountries = Object.keys(projectsGroupedByCountry).filter(d => d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO").length // Don't include Global as a country
+  const projectsGroupedByCountry = lodash.pickBy(lodash.groupBy(data, 'ISO3 Code'), (projects, iso3) => iso3 !== "" && iso3 !== "GBL" && iso3 !== "GLB" && iso3 !== "GLO")
+  const totalCountries = Object.keys(projectsGroupedByCountry).length // Don't include Global as a country
   const projectsGroupedByRegion = lodash.groupBy(data, REGION_COLUMN_NAME)
   const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, COUNTRY_COLUMN_NAME).length)
   const dataDenormalizedByPracticeArea = denormalizePracticeAreas(data)

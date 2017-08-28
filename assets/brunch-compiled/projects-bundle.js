@@ -1853,10 +1853,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isNaN(contractValue)) return acc;
     return acc + Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
   }, 0));
-  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'ISO3 Code');
-  var totalCountries = Object.keys(projectsGroupedByCountry).filter(function (d) {
-    return d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO";
-  }).length; // Don't include Global as a country
+  var projectsGroupedByCountry = _lodash2.default.pickBy(_lodash2.default.groupBy(data, 'ISO3 Code'), function (projects, iso3) {
+    return iso3 !== "" && iso3 !== "GBL" && iso3 !== "GLB" && iso3 !== "GLO";
+  });
+  var totalCountries = Object.keys(projectsGroupedByCountry).length; // Don't include Global as a country
   var projectsGroupedByRegion = _lodash2.default.groupBy(data, _ColumnNames.REGION_COLUMN_NAME);
   var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
     return _lodash2.default.uniqBy(projects, _ColumnNames.COUNTRY_COLUMN_NAME).length;
