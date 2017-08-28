@@ -11,7 +11,7 @@ import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
 import { PRACTICE_AREA_COLUMN_NAMES, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
-import { reduceSum, reduceCount } from './util/Reduce'
+import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 
@@ -40,8 +40,23 @@ const chartDataFormat = (groupedValues) => {
   const nameValueArray = Object.entries(groupedValues).map(([name, value]) => ({ name, value }))
   return lodash.sortBy(nameValueArray, ['value']).slice(0).reverse()
 }
-
-import { regionAndPracAreas, practiceAreas } from './test/Data'
+const choroplethDataFormat = (groupedValues) => {
+  const flattenedArray = []
+  Object.keys(groupedValues).forEach((iso3Code) => {
+    const country = { name: iso3Code, value: groupedValues[iso3Code].count, countryName: groupedValues[iso3Code].countryName}
+    flattenedArray.push(country)
+  })
+  return flattenedArray
+}
+const choroplethTooltipFunc = (datum) => {
+  if(datum.noDataFound) {
+    if(datum.noGeoDataFound) {
+      return `No data found for ${datum.name}`
+    }
+    return `${datum.properties.name}<br/>0 projects`
+  }
+  return`${datum.countryName}<br/>${datum.value} projects`
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const data = JEKYLL_DATA.projectsData
@@ -52,14 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if(isNaN(contractValue)) return acc
     return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])
   }, 0))
-  const projectsGroupedByCountry = lodash.groupBy(data, COUNTRY_COLUMN_NAME)
-  const totalCountries = Object.keys(projectsGroupedByCountry).length
+  const projectsGroupedByCountry = lodash.groupBy(data, 'ISO3 Code')
+  const totalCountries = Object.keys(projectsGroupedByCountry).filter(d => d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO").length // Don't include Global as a country
   const projectsGroupedByRegion = lodash.groupBy(data, REGION_COLUMN_NAME)
   const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, COUNTRY_COLUMN_NAME).length)
   const dataDenormalizedByPracticeArea = denormalizePracticeAreas(data)
   const projectsGroupedByPracticeArea = lodash.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea')
-
-  const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
+  const projectCountsForCountries = reduceCountIncludeExtraData(projectsGroupedByCountry, (recordGroup) => ({ countryName: recordGroup[0][COUNTRY_COLUMN_NAME] }))
+  const choroplethData = choroplethDataFormat(projectCountsForCountries)
   const getCountryColor = (datum) => {
     return ChoroplethColorScale.getColorFor(datum.value)
   }
@@ -72,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .topojson(countriesTopo)
       .data(choroplethData)
       .colorPalette(ColorPalette)
-      .tooltipContent((datum) => `${datum.name}<br/>${datum.value} projects`)
+      .tooltipContent(choroplethTooltipFunc)
       .numberFormatter(formatters.numberFormat)
       .draw()
   });

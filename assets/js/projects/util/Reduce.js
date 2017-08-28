@@ -18,4 +18,11 @@ const reduceCount = (grouping) => {
   return lodash.mapValues(grouping, (recordsInGroup) => recordsInGroup.length)
 }
 
-export { reduceSum, reduceCount }
+const reduceCountIncludeExtraData = (grouping, generateExtraData) => {
+  return lodash.mapValues(grouping, (recordsInGroup) => {
+    const extraData = generateExtraData(recordsInGroup)
+    const countWithExtra = Object.assign({ count: recordsInGroup.length }, extraData)
+    return countWithExtra
+  })
+}
+export { reduceSum, reduceCount, reduceCountIncludeExtraData }

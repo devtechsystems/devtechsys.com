@@ -829,9 +829,19 @@ exports.default = function (parentSelector) {
   };
 
   function getDatum(key) {
-    return _data.find(function (d) {
+    var datum = _data.find(function (d) {
       return d.name === key;
-    }) || { name: undefined, value: undefined };
+    });
+    if (!datum) {
+      var geoDatum = _topojson.find(function (d) {
+        return d.id === key;
+      });
+      if (!geoDatum) {
+        return { noDataFound: true, noGeoDataFound: true, name: key };
+      }
+      return Object.assign({ noDataFound: true }, geoDatum);
+    }
+    return datum;
   }
 
   function getDataValue(key) {
@@ -848,7 +858,7 @@ exports.default = function (parentSelector) {
     }).attr("title", function (d, i) {
       return d.properties.name;
     }).style("fill", function (d, i) {
-      return _colorMapper(getDataValue(d.properties.name));
+      return _colorMapper(getDataValue(d.id));
     });
     d3.selectAll(".country").style("stroke-width", .5 / zoom.scale());
 
@@ -863,7 +873,7 @@ exports.default = function (parentSelector) {
         return parseInt(d);
       });
 
-      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(_tooltipContent(getDatum(d.properties.name)));
+      tooltip.classed("hidden", false).attr("style", "left:" + (mouse[0] + offsetL) + "px;top:" + (mouse[1] + offsetT) + "px").html(_tooltipContent(getDatum(d.id)));
     }).on("mouseout", function (d, i) {
       tooltip.classed("hidden", true);
     });
@@ -1764,8 +1774,6 @@ var _ProjectSearch = require('./components/ProjectSearch');
 
 var _ProjectSearch2 = _interopRequireDefault(_ProjectSearch);
 
-var _Data = require('./test/Data');
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1808,6 +1816,23 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
   });
   return _lodash2.default.sortBy(nameValueArray, ['value']).slice(0).reverse();
 };
+var choroplethDataFormat = function choroplethDataFormat(groupedValues) {
+  var flattenedArray = [];
+  Object.keys(groupedValues).forEach(function (iso3Code) {
+    var country = { name: iso3Code, value: groupedValues[iso3Code].count, countryName: groupedValues[iso3Code].countryName };
+    flattenedArray.push(country);
+  });
+  return flattenedArray;
+};
+var choroplethTooltipFunc = function choroplethTooltipFunc(datum) {
+  if (datum.noDataFound) {
+    if (datum.noGeoDataFound) {
+      return 'No data found for ' + datum.name;
+    }
+    return datum.properties.name + '<br/>0 projects';
+  }
+  return datum.countryName + '<br/>' + datum.value + ' projects';
+};
 
 document.addEventListener('DOMContentLoaded', function () {
   var data = JEKYLL_DATA.projectsData;
@@ -1818,16 +1843,20 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isNaN(contractValue)) return acc;
     return acc + Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
   }, 0));
-  var projectsGroupedByCountry = _lodash2.default.groupBy(data, _ColumnNames.COUNTRY_COLUMN_NAME);
-  var totalCountries = Object.keys(projectsGroupedByCountry).length;
+  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'ISO3 Code');
+  var totalCountries = Object.keys(projectsGroupedByCountry).filter(function (d) {
+    return d !== "" && d !== "GBL" && d !== "GLB" && d !== "GLO";
+  }).length; // Don't include Global as a country
   var projectsGroupedByRegion = _lodash2.default.groupBy(data, _ColumnNames.REGION_COLUMN_NAME);
   var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
     return _lodash2.default.uniqBy(projects, _ColumnNames.COUNTRY_COLUMN_NAME).length;
   });
   var dataDenormalizedByPracticeArea = denormalizePracticeAreas(data);
   var projectsGroupedByPracticeArea = _lodash2.default.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea');
-
-  var choroplethData = chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByCountry));
+  var projectCountsForCountries = (0, _Reduce.reduceCountIncludeExtraData)(projectsGroupedByCountry, function (recordGroup) {
+    return { countryName: recordGroup[0][_ColumnNames.COUNTRY_COLUMN_NAME] };
+  });
+  var choroplethData = choroplethDataFormat(projectCountsForCountries);
   var getCountryColor = function getCountryColor(datum) {
     return ChoroplethColorScale.getColorFor(datum.value);
   };
@@ -1836,9 +1865,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var countriesTopo = topojson.feature(world, world.objects.countries).features;
 
-    var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(function (datum) {
-      return datum.name + '<br/>' + datum.value + ' projects';
-    }).numberFormatter(formatters.numberFormat).draw();
+    var projectsChoropleth = (0, _D3Choropleth2.default)('projects-choropleth').topojson(countriesTopo).data(choroplethData).colorPalette(_ColorPalette2.default).tooltipContent(choroplethTooltipFunc).numberFormatter(formatters.numberFormat).draw();
   });
 
   var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
@@ -1892,27 +1919,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'));
 });
-
-});
-
-require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-// Dummy data
-
-var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
-
-var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
-
-var practiceAreas = ['Monitoring and Evaluation', 'Public Financial Management and Fiscal Sustainability', 'Knowledge Management and Data Analytics', 'Education, Gender and Youth', 'Energy and Environment', 'Security, Transparency, and Governance'];
-
-var regionAndPracAreas = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 300 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 440 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 400 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 230 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 200 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 80 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
-
-exports.regionAndPracAreas = regionAndPracAreas;
-exports.practiceAreas = practiceAreas;
 
 });
 
@@ -2038,7 +2044,7 @@ require.register("assets/js/projects/util/Reduce.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.reduceCount = exports.reduceSum = undefined;
+exports.reduceCountIncludeExtraData = exports.reduceCount = exports.reduceSum = undefined;
 
 var _lodash = require('lodash');
 
@@ -2066,14 +2072,22 @@ var reduceCount = function reduceCount(grouping) {
   });
 };
 
+var reduceCountIncludeExtraData = function reduceCountIncludeExtraData(grouping, generateExtraData) {
+  return _lodash2.default.mapValues(grouping, function (recordsInGroup) {
+    var extraData = generateExtraData(recordsInGroup);
+    var countWithExtra = Object.assign({ count: recordsInGroup.length }, extraData);
+    return countWithExtra;
+  });
+};
 exports.reduceSum = reduceSum;
 exports.reduceCount = reduceCount;
+exports.reduceCountIncludeExtraData = reduceCountIncludeExtraData;
 
 });
 
-require.alias("buffer/index.js", "buffer");
-require.alias("events/events.js", "events");
-require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("brunch/node_modules/buffer/index.js", "buffer");
+require.alias("brunch/node_modules/events/events.js", "events");
+require.alias("brunch/node_modules/process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 
 // Auto-loaded modules from config.npm.globals.

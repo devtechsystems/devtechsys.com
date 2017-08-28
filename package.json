@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "npm install -g brunch && npm install --save-dev babel-brunch auto-reload-brunch babel-preset-latest babel-preset-react clean-css-brunch uglify-js-brunch && npm install --save react react-dom",
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "brunch build --production",
+    "dev": "bundle exec jekyll serve --incremental npm run start"
   },
   "repository": {
     "type": "git",

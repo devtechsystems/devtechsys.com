@@ -3,6 +3,10 @@
   displayName: Country
   key: Country
   type: country
+- enumName: ISO3_CODE
+  displayName: ISO 3
+  key: ISO3 Code
+  type: id
 - enumName: PROJECT_TITLE
   displayName: Project Title
   key: Project Title
