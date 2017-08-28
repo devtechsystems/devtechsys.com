@@ -31,6 +31,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "clean-css-brunch": "^2.10.0",
+    "js-yaml": "^3.9.1",
     "uglify-js-brunch": "^2.10.0",
     "xlsx": "^0.11.3"
   },
