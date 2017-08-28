@@ -10,13 +10,12 @@ import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
-import { PRACTICE_AREA_COLUMN_NAMES } from './ColumnNames'
+import { PRACTICE_AREA_COLUMN_NAMES, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
 import { reduceSum, reduceCount } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 
 const formatters = qdFormatters(d3)
-
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -25,14 +24,14 @@ const denormalizePracticeAreas = (data) => {
   const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES)
   practiceAreas.forEach((practiceArea) => {
     const dataFilteredByPracticeArea = data.filter(d => d[practiceArea['key']] === 'x')
-    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign(d, { denormalizedPracticeArea: practiceArea['displayName']}))
+    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName']}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })
   let nonePracticeAreas = data.filter(d => {
     var foundSomePracticeArea = practiceAreas.some((practiceArea) => d[practiceArea['key']] === 'x')
     return !foundSomePracticeArea
   })
-  .map(d => Object.assign(d, { denormalizedPracticeArea: 'None' }))
+  .map(d => Object.assign({}, d, { denormalizedPracticeArea: 'None' }))
 
   return denormalizedData.concat(nonePracticeAreas)
 }
@@ -47,26 +46,18 @@ import { regionAndPracAreas, practiceAreas } from './test/Data'
 document.addEventListener('DOMContentLoaded', () => {
   const data = JEKYLL_DATA.projectsData
   const totalProjects = data.length
-  const totalPartners = Object.keys(lodash.groupBy(data, 'Client/Donor')).length
+  const totalPartners = Object.keys(lodash.groupBy(data, PARTNER_COLUMN_NAME)).length
   const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
-    const contractValue = Number(next['Contract Value USD'])
+    const contractValue = Number(next[CONTRACT_VALUE_COLUMN_NAME])
     if(isNaN(contractValue)) return acc
-    return acc + Number(next['Contract Value USD'])
+    return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])
   }, 0))
-  const projectsGroupedByCountry = lodash.groupBy(data, 'Country')
+  const projectsGroupedByCountry = lodash.groupBy(data, COUNTRY_COLUMN_NAME)
   const totalCountries = Object.keys(projectsGroupedByCountry).length
-  const projectsGroupedByRegion = lodash.groupBy(data, 'Region')
-  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, 'Country').length)
-  const projectsGroupedByPracticeArea = lodash.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea')
-  const testGroupRegions = lodash.groupBy(regionAndPracAreas, 'region')
-  const practiceAreaSumsForRegions = lodash.mapValues(testGroupRegions, (projGroup) => {
-    // const denormalized = denormalizePracticeAreas(projGroup)
-    const groupedByPracticeAreas = lodash.groupBy(projGroup, (project) => project.practiceArea)
-    const contractValuesForGroupedPracticeAreas = reduceSum(groupedByPracticeAreas, 'value')
-
-    return contractValuesForGroupedPracticeAreas
-  })
-  const flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(([regionName, groupedPracticeAreaSums]) => Object.assign({ region: regionName }, groupedPracticeAreaSums))
+  const projectsGroupedByRegion = lodash.groupBy(data, REGION_COLUMN_NAME)
+  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (projects) => lodash.uniqBy(projects, COUNTRY_COLUMN_NAME).length)
+  const dataDenormalizedByPracticeArea = denormalizePracticeAreas(data)
+  const projectsGroupedByPracticeArea = lodash.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea')
 
   const choroplethData = chartDataFormat(reduceCount(projectsGroupedByCountry))
   const getCountryColor = (datum) => {
@@ -108,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const stackedBarChart = (
     <Sizebox className="stacked-bar-chart-sizebox">
       <StackedBarChart
-        data={regionAndPracAreas}
-        xAxisDataKey={'region'}
-        stackDataKey={'practiceArea'}
+        data={dataDenormalizedByPracticeArea}
+        xAxisDataKey={REGION_COLUMN_NAME}
+        stackDataKey={'denormalizedPracticeArea'}
         colorPalette={ColorPalette}
-        valueKey={'value'}
+        valueKey={CONTRACT_VALUE_COLUMN_NAME}
         tickFormatter={formatters.bigCurrencyFormat}
         tooltipValueFormatter={formatters.currencyFormat}
       />

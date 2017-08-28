@@ -19,6 +19,10 @@
   displayName: Contract Value USD
   key: Contract Value USD
   type: number
+- enumName: PARTNER
+  displayName: Partner
+  key: Client/ Donor
+  type: partner
 - enumName: M_E_PRACTICE_AREA
   displayName: Monitoring and Evaluation
   key: M&E Practice Area
@@ -28,11 +32,11 @@
   key: 'Education, Gender, and Youth Development Practice Area'
   type: practice_area
 - enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
-  displayName: Gender and Inclusive Development Practice Area
+  displayName: Gender and Inclusive Development
   key: Gender and Inclusive Development Practice Area
   type: practice_area
 - enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
-  displayName: Public Financial Management and Fiscal Sustainability Practice Area
+  displayName: Public Financial Management and Fiscal Sustainability
   key: Public Financial Management and Fiscal Sustainability Practice Area
   type: practice_area
 - enumName: KWLDGE_MNGEMENT_PRACTICE_AREA

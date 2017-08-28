@@ -154,7 +154,7 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
+exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
 
 var _lodash = require('lodash');
 
@@ -165,12 +165,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ENUMERATED_COLUMN_NAMES = JEKYLL_DATA.enumeratedColumnNames;
 var PRACTICE_AREA_COLUMN_NAMES = JEKYLL_DATA.enumeratedPracticeAreas;
 var COUNTRY_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['COUNTRY'];
+var REGION_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['REGION'];
+var PARTNER_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PARTNER'];
 var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
+var CONTRACT_VALUE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['CONTRACT_VALUE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
 exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
 exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
+exports.REGION_COLUMN_NAME = REGION_COLUMN_NAME;
+exports.PARTNER_COLUMN_NAME = PARTNER_COLUMN_NAME;
+exports.CONTRACT_VALUE_COLUMN_NAME = CONTRACT_VALUE_COLUMN_NAME;
 
 });
 
@@ -1776,7 +1782,7 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
       return d[practiceArea['key']] === 'x';
     });
     var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
-      return Object.assign(d, { denormalizedPracticeArea: practiceArea['displayName'] });
+      return Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName'] });
     });
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
   });
@@ -1786,7 +1792,7 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
     });
     return !foundSomePracticeArea;
   }).map(function (d) {
-    return Object.assign(d, { denormalizedPracticeArea: 'None' });
+    return Object.assign({}, d, { denormalizedPracticeArea: 'None' });
   });
 
   return denormalizedData.concat(nonePracticeAreas);
@@ -1806,36 +1812,20 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
 document.addEventListener('DOMContentLoaded', function () {
   var data = JEKYLL_DATA.projectsData;
   var totalProjects = data.length;
-  var totalPartners = Object.keys(_lodash2.default.groupBy(data, 'Client/Donor')).length;
+  var totalPartners = Object.keys(_lodash2.default.groupBy(data, _ColumnNames.PARTNER_COLUMN_NAME)).length;
   var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
-    var contractValue = Number(next['Contract Value USD']);
+    var contractValue = Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
     if (isNaN(contractValue)) return acc;
-    return acc + Number(next['Contract Value USD']);
+    return acc + Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
   }, 0));
-  var projectsGroupedByCountry = _lodash2.default.groupBy(data, 'Country');
+  var projectsGroupedByCountry = _lodash2.default.groupBy(data, _ColumnNames.COUNTRY_COLUMN_NAME);
   var totalCountries = Object.keys(projectsGroupedByCountry).length;
-  var projectsGroupedByRegion = _lodash2.default.groupBy(data, 'Region');
+  var projectsGroupedByRegion = _lodash2.default.groupBy(data, _ColumnNames.REGION_COLUMN_NAME);
   var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
-    return _lodash2.default.uniqBy(projects, 'Country').length;
+    return _lodash2.default.uniqBy(projects, _ColumnNames.COUNTRY_COLUMN_NAME).length;
   });
-  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(denormalizePracticeAreas(data), 'denormalizedPracticeArea');
-  var testGroupRegions = _lodash2.default.groupBy(_Data.regionAndPracAreas, 'region');
-  var practiceAreaSumsForRegions = _lodash2.default.mapValues(testGroupRegions, function (projGroup) {
-    // const denormalized = denormalizePracticeAreas(projGroup)
-    var groupedByPracticeAreas = _lodash2.default.groupBy(projGroup, function (project) {
-      return project.practiceArea;
-    });
-    var contractValuesForGroupedPracticeAreas = (0, _Reduce.reduceSum)(groupedByPracticeAreas, 'value');
-
-    return contractValuesForGroupedPracticeAreas;
-  });
-  var flattenedPracticeAreaSums = Object.entries(practiceAreaSumsForRegions).map(function (_ref3) {
-    var _ref4 = _slicedToArray(_ref3, 2),
-        regionName = _ref4[0],
-        groupedPracticeAreaSums = _ref4[1];
-
-    return Object.assign({ region: regionName }, groupedPracticeAreaSums);
-  });
+  var dataDenormalizedByPracticeArea = denormalizePracticeAreas(data);
+  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea');
 
   var choroplethData = chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByCountry));
   var getCountryColor = function getCountryColor(datum) {
@@ -1870,11 +1860,11 @@ document.addEventListener('DOMContentLoaded', function () {
     _reactSizebox2.default,
     { className: 'stacked-bar-chart-sizebox' },
     _react2.default.createElement(_StackedBarChart2.default, {
-      data: _Data.regionAndPracAreas,
-      xAxisDataKey: 'region',
-      stackDataKey: 'practiceArea',
+      data: dataDenormalizedByPracticeArea,
+      xAxisDataKey: _ColumnNames.REGION_COLUMN_NAME,
+      stackDataKey: 'denormalizedPracticeArea',
       colorPalette: _ColorPalette2.default,
-      valueKey: 'value',
+      valueKey: _ColumnNames.CONTRACT_VALUE_COLUMN_NAME,
       tickFormatter: formatters.bigCurrencyFormat,
       tooltipValueFormatter: formatters.currencyFormat
     })
@@ -2059,6 +2049,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var reduceSum = function reduceSum(grouping, valueKey) {
   return _lodash2.default.mapValues(grouping, function (recordsInGroup) {
     return recordsInGroup.reduce(function (accumulator, next) {
+      var nextValue = Number(next[valueKey]);
+      if (isNaN(nextValue)) {
+        console.warn('Tried to reduce with a non numeric value: ' + next[valueKey]);
+        console.warn('Using zero as the value instead');
+        return accumulator += 0;
+      }
       return accumulator += Number(next[valueKey]);
     }, 0);
   });
