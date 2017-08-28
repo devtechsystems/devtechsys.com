@@ -39,7 +39,7 @@ layout: default
 		      <a href="#projects"><span class="tabs-title-text">Projects</span></a>
 		    </li>
 		    <li class="tabs-title">
-		      <a href="#reports-publications"><span class="tabs-title-text">Reports &amp; Publications</span></a>
+		      <a href="#publications"><span class="tabs-title-text">Publications</span></a>
 		    </li>
 		    <li class="tabs-title">
 		      <a href="#insights"><span class="tabs-title-text">Insights</span></a>
@@ -110,14 +110,14 @@ layout: default
 					  </div>
 				  </div>
 			  </div>
-			  <div class="tabs-panel content-bottomPadding" id="reports-publications">
+			  <div class="tabs-panel content-bottomPadding" id="publications">
 			  	<div class="row row--gutters column">
 				    <ul class="posts">
-				    	{% assign linked_reports = site.reports-and-publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+				    	{% assign linked_reports = site.publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_reports %}
 					      <li class="post">
 					      	<div class="post-category">Region</div>
-					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					    		<a href="{{ p['Document URL'] | escape }}" class="post-title">{{ p.title }}</a>
 					    		<div class="post-details">
 					    			<span class="post-detail">{{ p['Year Published'] }}</span>
 					    			<span class="post-detail">{{ p['Mission Title'] }}</span>
