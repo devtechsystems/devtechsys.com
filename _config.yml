@@ -25,10 +25,10 @@ collections:
   office-locations:
     title: Office Locations
     output: false
-  practice-areas:
+  our-practices:
     title: Practice Areas
     output: true
-    permalink: "/:collection/:title"
+    permalink: "/our-practices/:title"
     Headline: Headline would go here
     Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
       urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
@@ -36,8 +36,8 @@ collections:
   projects:
     title: Projects
     output: true
-  reports-and-publications:
-    title: Reports & Publications
+  publications:
+    title: Publications
     output: false
   uploads:
     title: Uploads

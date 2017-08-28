@@ -51,7 +51,7 @@ layout:
       }
   {% endfor %}
 
-  {% for area in site.practice-areas %}
+  {% for area in site.our-practices %}
       ,
       "{{ area.url | slugify }}": {
         "title": "{{ area.title | xml_escape }}",
