@@ -56,9 +56,11 @@
 				<textarea name="message" id="message" rows="6" required></textarea>
 			</label>
 		</div>
-		<div class="row column">
-			<div class="g-recaptcha" data-sitekey="6Ld-Hi4UAAAAALoDilqrTtIamYMrJbMGcUJH8Q5H"></div>
-			<div id="notice" class="notice" data-captcha-failed="Please Click on the Captcha" data-error="There was an error sending the message, please try again."></div>
+		<div class="row column clearfix">
+			<div class="pull-left" style="margin-top:15px;">
+				<div class="g-recaptcha" data-sitekey="6Ld-Hi4UAAAAALoDilqrTtIamYMrJbMGcUJH8Q5H"></div>
+				<div id="notice" class="notice" data-captcha-failed="Please Click on the Captcha" data-error="There was an error sending the message, please try again."></div>
+			</div>
 			<button type="submit" class="button pull-right">SEND</button>
 		</div>
 	</form>
