@@ -14,6 +14,7 @@ import { PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, COUNTRY_COLUMN_N
 import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
+import PracticeAreaExists from './util/PracticeAreaExists'
 
 const formatters = qdFormatters(d3)
 
@@ -23,20 +24,19 @@ const denormalizePracticeAreas = (data) => {
   let denormalizedData = []
   const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES)
   practiceAreas.forEach((practiceArea) => {
-    const dataFilteredByPracticeArea = data.filter(d => {
-      const practiceAreasForProject = d[PRACTICE_AREA_COLUMN_NAME]
-      // Project collection uses displayName in the data, 
-      // so check if the practice area display name exists in the project's list of practice areas
-      return practiceAreasForProject.indexOf(practiceArea['displayName']) !== -1
+    const dataFilteredByPracticeArea = data.filter(project => {
+      return PracticeAreaExists(practiceArea, project)
     })
-    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName']}))
+    const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(project => Object.assign({}, project, { denormalizedPracticeArea: practiceArea['displayName']}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })
-  let nonePracticeAreas = data.filter(d => {
-    var foundSomePracticeArea = practiceAreas.some((practiceArea) => d[practiceArea['key']] === 'x')
+  let nonePracticeAreas = data.filter(project => {
+    var foundSomePracticeArea = practiceAreas.some((practiceArea) => {
+      return PracticeAreaExists(practiceArea, project)
+    })
     return !foundSomePracticeArea
   })
-  .map(d => Object.assign({}, d, { denormalizedPracticeArea: 'None' }))
+  .map(project => Object.assign({}, project, { denormalizedPracticeArea: 'None' }))
 
   return denormalizedData.concat(nonePracticeAreas)
 }

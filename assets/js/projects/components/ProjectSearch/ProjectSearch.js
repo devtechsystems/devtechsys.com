@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Lunr from 'lunr'
 import PageSelector from './PageSelector'
 import { SEARCH_FIELDS } from './SearchFields'
-import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PROJECT_TITLE_COLUMN_NAME, ID_COLUMN_NAME } from '../../ColumnNames'
+import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, PROJECT_TITLE_COLUMN_NAME, ID_COLUMN_NAME } from '../../ColumnNames'
+import PracticeAreaExists from '../../util/PracticeAreaExists'
 
 export default class ProjectSearch extends Component {
   constructor(props) {
@@ -55,7 +56,9 @@ export default class ProjectSearch extends Component {
 
   getPracticeAreasMarkup(record) {
     const practiceAreaObjects = Object.values(PRACTICE_AREA_COLUMN_NAMES).map((pa) => pa)
-    const practiceAreasForProject = practiceAreaObjects.filter((pa) => record[pa['key']] === 'x')
+    const practiceAreasForProject = practiceAreaObjects.filter((pa) => {
+      return PracticeAreaExists(pa, record)
+    })
     let markup = practiceAreasForProject
       .map((practiceArea, i) => {
         const separator = (i + 1 < practiceAreasForProject.length) ? ' / ' : ''

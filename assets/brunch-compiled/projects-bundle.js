@@ -1074,6 +1074,10 @@ var _SearchFields = require('./SearchFields');
 
 var _ColumnNames = require('../../ColumnNames');
 
+var _PracticeAreaExists = require('../../util/PracticeAreaExists');
+
+var _PracticeAreaExists2 = _interopRequireDefault(_PracticeAreaExists);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1145,7 +1149,7 @@ var ProjectSearch = function (_Component) {
         return pa;
       });
       var practiceAreasForProject = practiceAreaObjects.filter(function (pa) {
-        return record[pa['key']] === 'x';
+        return (0, _PracticeAreaExists2.default)(pa, record);
       });
       var markup = practiceAreasForProject.map(function (practiceArea, i) {
         var separator = i + 1 < practiceAreasForProject.length ? ' / ' : '';
@@ -1776,6 +1780,10 @@ var _ProjectSearch = require('./components/ProjectSearch');
 
 var _ProjectSearch2 = _interopRequireDefault(_ProjectSearch);
 
+var _PracticeAreaExists = require('./util/PracticeAreaExists');
+
+var _PracticeAreaExists2 = _interopRequireDefault(_PracticeAreaExists);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1788,24 +1796,21 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   var denormalizedData = [];
   var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES);
   practiceAreas.forEach(function (practiceArea) {
-    var dataFilteredByPracticeArea = data.filter(function (d) {
-      var practiceAreasForProject = d[_ColumnNames.PRACTICE_AREA_COLUMN_NAME];
-      // Project collection uses displayName in the data, 
-      // so check if the practice area display name exists in the project's list of practice areas
-      return practiceAreasForProject.indexOf(practiceArea['displayName']) !== -1;
+    var dataFilteredByPracticeArea = data.filter(function (project) {
+      return (0, _PracticeAreaExists2.default)(practiceArea, project);
     });
-    var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
-      return Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName'] });
+    var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (project) {
+      return Object.assign({}, project, { denormalizedPracticeArea: practiceArea['displayName'] });
     });
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea);
   });
-  var nonePracticeAreas = data.filter(function (d) {
+  var nonePracticeAreas = data.filter(function (project) {
     var foundSomePracticeArea = practiceAreas.some(function (practiceArea) {
-      return d[practiceArea['key']] === 'x';
+      return (0, _PracticeAreaExists2.default)(practiceArea, project);
     });
     return !foundSomePracticeArea;
-  }).map(function (d) {
-    return Object.assign({}, d, { denormalizedPracticeArea: 'None' });
+  }).map(function (project) {
+    return Object.assign({}, project, { denormalizedPracticeArea: 'None' });
   });
 
   return denormalizedData.concat(nonePracticeAreas);
@@ -2061,6 +2066,24 @@ var PracticeAreaTitle = function PracticeAreaTitle(practiceArea) {
 };
 
 exports.PracticeAreaTitle = PracticeAreaTitle;
+
+});
+
+require.register("assets/js/projects/util/PracticeAreaExists.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ColumnNames = require('../ColumnNames');
+
+var PracticeAreaExists = function PracticeAreaExists(practiceArea, project) {
+  var practiceAreasForProject = project[_ColumnNames.PRACTICE_AREA_COLUMN_NAME];
+  return practiceAreasForProject.indexOf(practiceArea['displayName']) !== -1;
+};
+
+exports.default = PracticeAreaExists;
 
 });
 
