@@ -154,7 +154,7 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = undefined;
+exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = exports.PRACTICE_AREA_COLUMN_NAME = undefined;
 
 var _lodash = require('lodash');
 
@@ -170,6 +170,8 @@ var PARTNER_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PARTNER'];
 var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
 var CONTRACT_VALUE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['CONTRACT_VALUE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
+var PRACTICE_AREA_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PRACTICE_AREA'];
+exports.PRACTICE_AREA_COLUMN_NAME = PRACTICE_AREA_COLUMN_NAME;
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
 exports.PROJECT_TITLE_COLUMN_NAME = PROJECT_TITLE_COLUMN_NAME;
@@ -1787,7 +1789,10 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
   var practiceAreas = Object.values(_ColumnNames.PRACTICE_AREA_COLUMN_NAMES);
   practiceAreas.forEach(function (practiceArea) {
     var dataFilteredByPracticeArea = data.filter(function (d) {
-      return d[practiceArea['key']] === 'x';
+      var practiceAreasForProject = d[_ColumnNames.PRACTICE_AREA_COLUMN_NAME];
+      // Project collection uses displayName in the data, 
+      // so check if the practice area display name exists in the project's list of practice areas
+      return practiceAreasForProject.indexOf(practiceArea['displayName']) !== -1;
     });
     var dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(function (d) {
       return Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName'] });
@@ -1919,6 +1924,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'));
 });
+
+});
+
+require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Dummy data
+
+var projectsByPracticeArea = [{ name: 'Monitoring and Evaluation', value: 184 }, { name: 'Public Financial Management and Fiscal Sustainability', value: 123 }, { name: 'Knowledge Management and Data Analytics', value: 85 }, { name: 'Education, Gender and Youth', value: 37 }, { name: 'Energy and Environment', value: 12 }, { name: 'Security, Transparency, and Governence', value: 4 }];
+
+var projectsByRegion = [{ name: 'East Asia & Oceania', value: 184 }, { name: 'Middle East & North Africa', value: 123 }, { name: 'South & Central Asia', value: 85 }, { name: 'Sub-Saharan Africa', value: 37 }, { name: 'Western Hemisphere', value: 12 }, { name: 'World', value: 9 }];
+
+var practiceAreas = ['Monitoring and Evaluation', 'Public Financial Management and Fiscal Sustainability', 'Knowledge Management and Data Analytics', 'Education, Gender and Youth', 'Energy and Environment', 'Security, Transparency, and Governance'];
+
+var regionAndPracAreas = [{ region: 'East Asia & Oceania', practiceArea: 'Monitoring and Evaluation', value: 100 }, { region: 'East Asia & Oceania', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 300 }, { region: 'East Asia & Oceania', practiceArea: 'Knowledge Management and Data Analytics', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'East Asia & Oceania', practiceArea: 'Energy and Environment', value: 80 }, { region: 'East Asia & Oceania', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Middle East & North Africa', practiceArea: 'Monitoring and Evaluation', value: 500 }, { region: 'Middle East & North Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 440 }, { region: 'Middle East & North Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 400 }, { region: 'Middle East & North Africa', practiceArea: 'Education, Gender and Youth', value: 230 }, { region: 'Middle East & North Africa', practiceArea: 'Energy and Environment', value: 200 }, { region: 'Middle East & North Africa', practiceArea: 'Security, Transparency, and Governance', value: 80 }, { region: 'South & Central Asia', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'South & Central Asia', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'South & Central Asia', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'South & Central Asia', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'South & Central Asia', practiceArea: 'Energy and Environment', value: 100 }, { region: 'South & Central Asia', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Sub-Saharan Africa', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Sub-Saharan Africa', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Sub-Saharan Africa', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Sub-Saharan Africa', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Sub-Saharan Africa', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Sub-Saharan Africa', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Western Hemisphere', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Western Hemisphere', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Western Hemisphere', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Western Hemisphere', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Western Hemisphere', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Western Hemisphere', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'World', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'World', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'World', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'World', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'World', practiceArea: 'Energy and Environment', value: 100 }, { region: 'World', practiceArea: 'Security, Transparency, and Governance', value: 50 }, { region: 'Others', practiceArea: 'Monitoring and Evaluation', value: 550 }, { region: 'Others', practiceArea: 'Public Financial Management and Fiscal Sustainability', value: 500 }, { region: 'Others', practiceArea: 'Knowledge Management and Data Analytics', value: 350 }, { region: 'Others', practiceArea: 'Education, Gender and Youth', value: 250 }, { region: 'Others', practiceArea: 'Energy and Environment', value: 100 }, { region: 'Others', practiceArea: 'Security, Transparency, and Governance', value: 50 }];
+
+exports.regionAndPracAreas = regionAndPracAreas;
+exports.practiceAreas = practiceAreas;
 
 });
 

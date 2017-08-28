@@ -69,7 +69,7 @@ function combinePracticeAreaColumns(record) {
   let foundPracticeAreas = []
   practiceAreaColumns.forEach((practiceArea) => {
     const paKey = practiceArea['key']
-    const paDisplayName = practiceArea['displayName']
+    const paDisplayName = practiceArea['displayName'] // Yay for display names
     if(record[paKey] === 'x') {
       foundPracticeAreas.push(paDisplayName)
     }

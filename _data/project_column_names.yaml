@@ -27,6 +27,10 @@
   displayName: Partner
   key: Client/ Donor
   type: partner
+- enumName: PRACTICE_AREA
+  displayName: Practice Areas
+  key: Practice Area
+  type: practice_area_list
 - enumName: M_E_PRACTICE_AREA
   displayName: Monitoring and Evaluation
   key: M&E Practice Area

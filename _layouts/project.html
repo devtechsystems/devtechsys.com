@@ -5,7 +5,7 @@ layout: default
 {% assign foundPracticeAreas = site.newEmptyArray %}
 {% assign practiceAreaObjects = site.data.project_column_names | where:"type","practice_area" %}
 {% for practiceArea in practiceAreaObjects %}
-	{% if page[practiceArea['key']] == 'x' %}
+	{% if page['Practice Area'] contains practiceArea['displayName'] %}
 		{% assign foundPracticeAreas = foundPracticeAreas | push: practiceArea['displayName'] %}
 	{% endif %}
 {% endfor %}

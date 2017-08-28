@@ -10,7 +10,7 @@ import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
-import { PRACTICE_AREA_COLUMN_NAMES, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
+import { PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
 import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
@@ -23,7 +23,12 @@ const denormalizePracticeAreas = (data) => {
   let denormalizedData = []
   const practiceAreas = Object.values(PRACTICE_AREA_COLUMN_NAMES)
   practiceAreas.forEach((practiceArea) => {
-    const dataFilteredByPracticeArea = data.filter(d => d[practiceArea['key']] === 'x')
+    const dataFilteredByPracticeArea = data.filter(d => {
+      const practiceAreasForProject = d[PRACTICE_AREA_COLUMN_NAME]
+      // Project collection uses displayName in the data, 
+      // so check if the practice area display name exists in the project's list of practice areas
+      return practiceAreasForProject.indexOf(practiceArea['displayName']) !== -1
+    })
     const dataWithSinglePracticeArea = dataFilteredByPracticeArea.map(d => Object.assign({}, d, { denormalizedPracticeArea: practiceArea['displayName']}))
     denormalizedData = denormalizedData.concat(dataWithSinglePracticeArea)
   })

@@ -140,7 +140,7 @@ var PROJECTS_DATA = []
 	}
 	{% for column in site.data.project_column_names %}
 		{% assign columnKey = column['key'] %}
-		dataObject["{{columnKey}}"] = "{{project[columnKey] | strip_newlines}}"
+		dataObject["{{columnKey}}"] = {{project[columnKey] | jsonify}}
 	{% endfor %}
 	PROJECTS_DATA.push(dataObject)
 {% endfor %}
