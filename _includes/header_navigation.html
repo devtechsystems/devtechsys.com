@@ -62,7 +62,7 @@
           <div class="small-16 medium-4 column">
             <h2><a href="/our-practices/">Our Practices</a></h2>
             <ul>
-              {% assign practicesNav_pages = site.practice-areas | sort: 'position'  %}
+              {% assign practicesNav_pages = site.our-practices | sort: 'position'  %}
               {% for p in practicesNav_pages %}
                 <li>
                   <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
