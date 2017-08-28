@@ -1425,6 +1425,13 @@ div.career-list {
     left: 0;
     max-width: 100px;
     max-height: 100px;
+
+    &.fa {
+      font-size: 50px;
+      left: 50px;
+      top: 42px;
+      color: #aed4e6;
+    }
   }
   .AD--name {
     font-size: 22px;
