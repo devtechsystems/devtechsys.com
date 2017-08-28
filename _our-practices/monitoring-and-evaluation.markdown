@@ -14,7 +14,7 @@ Preview/Teaser Image: "/uploads/preview-monitor.jpg"
 Detail Page Image: "/uploads/banner-monitor.jpg"
 Light Icon Image: "/uploads/iconLight-monitor.png"
 Dark Icon Image: "/uploads/iconDark-monitor.png"
-layout: practice-areas
+layout: our-practices
 ---
 
 DevTech has successfully managed more than 150 monitoring and evaluation activities in more than 100 countries across complicated socioeconomic contexts and non-permissive environments, including conflict and post-conflict areas. Our breadth of experience includes conducting multi-country and multi-sector evaluations (including baseline, mid-term, and final evaluation data collection), performance evaluations, results frameworks, evaluation technical assistance, and training. All of our work is grounded in sound quantitative and qualitative research methods.
