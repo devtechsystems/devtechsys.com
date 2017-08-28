@@ -18,8 +18,7 @@ layout:
   {% endfor %}
 
   {% for page in site.pages %}
-    {% if page.url == '/about/history/' 
-       or page.url == '/privacy-policy/' %}
+    {% if page.url == '/about/history/' %}
       ,
       "{{ page.url | slugify }}": {
         "title": "{{ page.title | xml_escape }}",
@@ -28,6 +27,35 @@ layout:
         "url": " {{ page.url | xml_escape }}"
       }
     {% endif %}
+  {% endfor %}
+
+  {% for news in site.news %}
+      ,
+      "{{ news.url | slugify }}": {
+        "title": "{{ news.title | xml_escape }}",
+        "type": "News",
+        "content"  : "{{news.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ news.url | xml_escape }}"
+      }
+  {% endfor %}
+
+  {% for project in site.projects %}
+      ,
+      "{{ project.url | slugify }}": {
+        "title": "{{ project.title | xml_escape }}",
+        "type": "Project",
+        "content"  : "{{project.content | strip_html | strip_newlines | escape | remove: "\"}}",
+        "url": " {{ project.url | xml_escape }}"
+      }
+  {% endfor %}
+
+  {% for publications in site.publications %}
+      ,
+      "{{ publications.url | slugify }}": {
+        "title": "{{ publications.title | xml_escape }}",
+        "type": "Publication",
+        "url": " {{ publications.url | xml_escape }}"
+      }
   {% endfor %}
 
   {% for career in site.careers %}

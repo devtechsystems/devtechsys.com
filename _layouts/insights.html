@@ -15,8 +15,8 @@ layout: default
         </button>
         <div class="dropdown-pane sync-with-tabs" id="insights-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="insights-tabs">
           <ul>
-          	<li><a href="#latest">Latest</a></li>
-          	<li><a href="#news">News</a></li>
+          	<li><a href="/insights/">Latest</a></li>
+          	<li><a href="/news/">News</a></li>
           </ul>
         </div>
       </div>
@@ -25,10 +25,10 @@ layout: default
 		<div class="tabs-container show-for-medium">
 			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="insights-tabs"  data-deep-link="true" data-update-history="true">
 		    <li class="tabs-title is-active">
-		      <a href="#latest" aria-selected="true"><span class="tabs-title-text">Latest</span></a>
+		      <a href="/insights/" aria-selected="true"><span class="tabs-title-text">Latest</span></a>
 		    </li>
 		    <li class="tabs-title">
-		      <a href="#news"><span class="tabs-title-text">News</span></a>
+		      <a href="/news/"><span class="tabs-title-text">News</span></a>
 		    </li>
 			</ul>
 		</div>
@@ -53,7 +53,7 @@ layout: default
 
 
 				    <ul class="posts posts-border-top">
-					    {% for post in site.posts limit:6 offset:2 %}
+					    {% for post in site.posts offset:2 %}
 					      <li class="post">
 					    		{% if post['Category'].size > 0 %}
 					    			<div class="post-category">{{ post['Category'] }}</div>
@@ -64,23 +64,6 @@ layout: default
 					    				<div class="post-detail">By {{ post['Author'] }}</div>
 					    			{% endif %}
 					    			<div class="post-detail">{{ post.date | date: "%B %d, %Y" }}</div>
-					    		</div>
-					    	</li>
-					    {% endfor %}
-				    </ul>
-				  </div>
-			  </div>
-			  <div class="tabs-panel" id="news">
-			  	<div class="row row--gutters column">
-				  	<ul class="posts">
-					    {% for news in site.news %}
-					      <li class="post">
-					    		{% if news['Category'].size > 0 %}
-					    			<div class="post-category">{{ news['Category'] }}</div>
-					    		{% endif %}
-					    		<a href="{{ news.url | relative_url }}" class="post-title">{{ news.title }}</a>
-					    		<div class="post-details">
-					    			<div class="post-detail">{{ news.date | date: "%B %d, %Y" }}</div>
 					    		</div>
 					    	</li>
 					    {% endfor %}
