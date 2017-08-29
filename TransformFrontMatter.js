@@ -18,9 +18,10 @@ fs.readdirSync(projectsPath).forEach((fileName) => {
   const projectDescription = transformedData['description'] // Description will later be appended to the document
 
   // remove fields
+  const practiceAreaColumns = yaml.safeLoad(fs.readFileSync('_data/project_column_names.yaml', 'utf8')).filter((column) => column.type === 'practice_area').map((column) => column['key'])
   const fieldsToDelete = [
     'description' // will be included in content so it's not needed
-  ]
+  ].concat(practiceAreaColumns)
   fieldsToDelete.forEach((fieldName) => {
     delete transformedData[fieldName]
   })
