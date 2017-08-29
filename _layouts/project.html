@@ -51,7 +51,7 @@ layout: default
 			  				{% endif %}
 			  				
 			  				{% if page['End Year'].size > 0 %}
-			  					<span class="post-detail">{{ page['End Year'] }}</span>
+			  					<span class="post-detail post-detail-dashed">{{ page['End Year'] }}</span>
 			  				{% endif %}
 							</div>
 						</div>
@@ -65,7 +65,7 @@ layout: default
 				    {{ content }}
 
 				    {% if page['Link to the document file'].size > 0 %}
-				    	<h3>Related Publications:</h3>
+				    	<h3 class="marginT-medium">Related Publications:</h3>
 				    	<ul>
 				    	{% assign links = page['Link to the document file'] %}
 				    	{% for link in links %}
