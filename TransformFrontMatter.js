@@ -14,13 +14,23 @@ fs.readdirSync(projectsPath).forEach((fileName) => {
   const projectYaml = yaml.safeLoadAll(fs.readFileSync(projectsPath + fileName, 'utf8'))
   const projectData = projectYaml[0]
   console.log(`transforming practice areas for: ${projectsPath}${fileName}`)
-  const transformedData = transformPracticeAreas(projectData)
+  const transformedData = transformYesNoToBoolean(transformPracticeAreas(projectData), 'Is Current Project? (true/false)')
   const projectDescription = transformedData['description'] // Description will later be appended to the document
 
   // remove fields
   const practiceAreaColumns = yaml.safeLoad(fs.readFileSync('_data/project_column_names.yaml', 'utf8')).filter((column) => column.type === 'practice_area').map((column) => column['key'])
   const fieldsToDelete = [
-    'description' // will be included in content so it's not needed
+    'description', // will be included in content so it's not needed
+    'Point of contact',
+    'Email',
+    'Phone',
+    'Prime',
+    'Contract Number',
+    'Sub',
+    'Link',
+    'Link to the document file',
+    'Document Title',
+    'Subcontract Number/Order Number/Grant Number'
   ].concat(practiceAreaColumns)
   fieldsToDelete.forEach((fieldName) => {
     delete transformedData[fieldName]
@@ -55,4 +65,14 @@ function transformPracticeAreas(project) {
   const practiceAreasAsString = project['Practice Area'] || ''
   const practiceAreasAsArray = practiceAreasAsString.split(delimiter)
   return Object.assign({}, project, { 'Practice Area': practiceAreasAsArray })
+}
+
+function transformYesNoToBoolean(project, columnName) {
+  const transformedProject = Object.assign({}, project)
+  if(project[columnName].toLowerCase() == 'no') {
+    transformedProject[columnName] = false
+  } else if (project[columnName].toLowerCase() === 'yes') {
+    transformedProject[columnName] = true
+  }
+  return transformedProject
 }
