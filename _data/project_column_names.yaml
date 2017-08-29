@@ -36,8 +36,8 @@
   key: M&E Practice Area
   type: practice_area
 - enumName: EDUCATION_AND_YOUTH_PRACTICE_AREA
-  displayName: 'Education, Gender, and Youth'
-  key: 'Education, Gender, and Youth Development Practice Area'
+  displayName: Education, Gender and Youth
+  key: Education, Gender, and Youth Development Practice Area
   type: practice_area
 - enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
   displayName: Gender and Inclusive Development
@@ -52,6 +52,6 @@
   key: Knowledge Management and Data Analytics Practice Area
   type: practice_area
 - enumName: SECURITY_TRSNP_GOVERNANCE
-  displayName: 'Security, Transparency, and Governance'
-  key: 'Security, Transparency, and Governance'
+  displayName: Security, Transparency, and Governance
+  key: Security, Transparency, and Governance
   type: practice_area
