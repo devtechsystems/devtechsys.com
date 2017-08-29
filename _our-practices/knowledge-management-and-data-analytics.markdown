@@ -12,6 +12,7 @@ Highlight: As a data-driven firm, DevTech specializes in the management, analysi
 Preview/Teaser Image: "/uploads/preview-knowledge.jpg"
 Light Icon Image: "/uploads/iconLight-knowledge.png"
 Dark Icon Image: "/uploads/iconDark-knowledge.png"
+layout: our-practices
 ---
 
 DevTech is a data-driven organization committed to promoting knowledge sharing, engagement, and dissemination through a variety of venues such as webinars, training, and reporting. DevTech has built query-driven databases and compelling data visualizations that are used to monitor and evaluate trends in socioeconomic development for planning and design purposes. 

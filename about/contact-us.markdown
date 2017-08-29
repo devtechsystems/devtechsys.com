@@ -2,9 +2,9 @@
 title: Contact Us
 position: 7
 Title: Say Hello
-Highlight: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum
-  mi congue eros porttitor sagittis. Vestibulum sed consequat urna, tempus pharetra
-  ex.
+Highlight: For all general inquiries, you can reach us at the below phone number and
+  email addresses. You can also fill out the below form and someone from our team
+  will contact you.
 navigation_group: About Us
 navigation_order: 6
 footer_navigation_order: 1

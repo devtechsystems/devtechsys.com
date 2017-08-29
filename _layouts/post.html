@@ -46,6 +46,8 @@ layout: default
             
               {% if a['Author Image'].size > 0 %}
                 <img class="AD--thumbnail" src="{{ a['Author Image'] }}"/>
+              {% else %}
+                <span class="AD--thumbnail fa fa-user-circle" aria-hidden="true"></span> 
               {% endif %}
 
               <h2 class="AD--name">{{ a.title }}</h2>

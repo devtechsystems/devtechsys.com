@@ -11,6 +11,7 @@ Highlight: 'Devtech improves the security, transparency, and the capacity of urb
 Preview/Teaser Image: "/uploads/preview-security.jpg"
 Light Icon Image: "/uploads/iconLight-security.png"
 Dark Icon Image: "/uploads/iconDark-security.png"
+layout: our-practices
 ---
 
 We have experience implementing projects that counter violent extremism, improve fiscal transparency, improve rule of law and criminal justice systems, strengthen civil society, and more. DevTech brings significant expertise in developing and implementing intergovernmental relationships by providing local governments with the authority and the capacity to fulfill their new responsibilities and amplify the voices of their citizens. This includes restructuring legal and regulatory frameworks to promote the role of civil society, strengthening citizen participation and oversight, promoting youth development, and ensuring that these younger generations will have the abilities and resources available to assume key civic roles in the democratic process. 

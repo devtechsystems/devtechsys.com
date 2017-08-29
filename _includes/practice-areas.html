@@ -1,8 +1,10 @@
 <div class="row row--our-practices-list">
 	{% for item in site.our-practices %}
 	<div class="small-16 medium-8 column clearfix">
-		<a  class="PA--block-link" href="{{item.url | relative }}">
-			<img src="{{ item['Preview/Teaser Image']}}"/>
+		<a class="PA--block-link" href="{{item.url | relative }}">
+			<div class="PA--block-image image-with-shadow">
+				<img src="{{ item['Preview/Teaser Image']}}"/>
+			</div>
 			<h2 class="PA--block-link-title">
 				{{ item.title }}
 				<div class="icon-wBlueEllipse">
