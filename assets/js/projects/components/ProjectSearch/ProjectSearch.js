@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Lunr from 'lunr'
 import PageSelector from './PageSelector'
 import { SEARCH_FIELDS } from './SearchFields'
-import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, PROJECT_TITLE_COLUMN_NAME, ID_COLUMN_NAME } from '../../ColumnNames'
+import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, PROJECT_TITLE_COLUMN_NAME, SEARCH_REFERENCE_ID_COLUMN_NAME } from '../../ColumnNames'
 import PracticeAreaExists from '../../util/PracticeAreaExists'
 
 export default class ProjectSearch extends Component {
@@ -99,7 +99,7 @@ export default class ProjectSearch extends Component {
   getTotalResults(searchInput, sortBy) {
     const resultsRefs = this.searchIndex.search(`*${searchInput}*`).map((result) => result.ref)
     const resultsRecords = resultsRefs.map((ref) => {
-      return this.props.projects.find((project) => project[this.props.searchReferenceField] === ref)
+      return this.props.projects.find((project) => project[this.props.searchReferenceField] === Number(ref))
     })
     .sort(this.generateSortFunc(sortBy.columnName, sortBy.order))
     return resultsRecords
@@ -108,7 +108,7 @@ export default class ProjectSearch extends Component {
   resultsMarkup(resultsRecords) {
     const resultsMarkup = resultsRecords.map((record) => {
       return (
-        <li key={record[ID_COLUMN_NAME]}>
+        <li key={record[SEARCH_REFERENCE_ID_COLUMN_NAME]}>
           <div className="column small-16">
             <div className="row">
               <div className="column">
@@ -258,7 +258,7 @@ ProjectSearch.propTypes = {
 }
 
 ProjectSearch.defaultProps = {
-  searchReferenceField: ID_COLUMN_NAME,
+  searchReferenceField: SEARCH_REFERENCE_ID_COLUMN_NAME,
   searchFields: SEARCH_FIELDS,
   showCount: 10
 }
