@@ -1,7 +1,6 @@
 ---
 title: DevTech Systems, Inc.
 timezone: UTC
-newEmptyArray: []
 collections:
   authors:
     title: Authors
@@ -153,6 +152,7 @@ defaults:
     Location Image: 
     Phone Number: 
     layout: page
+newEmptyArray: []
 email: ''
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
