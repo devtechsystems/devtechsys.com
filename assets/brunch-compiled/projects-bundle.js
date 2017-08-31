@@ -154,7 +154,7 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = exports.PRACTICE_AREA_COLUMN_NAME = undefined;
+exports.SEARCH_REFERENCE_ID_COLUMN_NAME = exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = exports.PRACTICE_AREA_COLUMN_NAME = undefined;
 
 var _lodash = require('lodash');
 
@@ -171,6 +171,8 @@ var PROJECT_TITLE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PROJECT_TITLE'];
 var CONTRACT_VALUE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['CONTRACT_VALUE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
 var PRACTICE_AREA_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PRACTICE_AREA'];
+var SEARCH_REFERENCE_ID_COLUMN_NAME = 'search_ref_id';
+
 exports.PRACTICE_AREA_COLUMN_NAME = PRACTICE_AREA_COLUMN_NAME;
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
 exports.COUNTRY_COLUMN_NAME = COUNTRY_COLUMN_NAME;
@@ -179,6 +181,7 @@ exports.ID_COLUMN_NAME = ID_COLUMN_NAME;
 exports.REGION_COLUMN_NAME = REGION_COLUMN_NAME;
 exports.PARTNER_COLUMN_NAME = PARTNER_COLUMN_NAME;
 exports.CONTRACT_VALUE_COLUMN_NAME = CONTRACT_VALUE_COLUMN_NAME;
+exports.SEARCH_REFERENCE_ID_COLUMN_NAME = SEARCH_REFERENCE_ID_COLUMN_NAME;
 
 });
 
@@ -1206,7 +1209,7 @@ var ProjectSearch = function (_Component) {
       });
       var resultsRecords = resultsRefs.map(function (ref) {
         return _this3.props.projects.find(function (project) {
-          return project[_this3.props.searchReferenceField] === ref;
+          return project[_this3.props.searchReferenceField] === Number(ref);
         });
       }).sort(this.generateSortFunc(sortBy.columnName, sortBy.order));
       return resultsRecords;
@@ -1219,7 +1222,7 @@ var ProjectSearch = function (_Component) {
       var resultsMarkup = resultsRecords.map(function (record) {
         return _react2.default.createElement(
           'li',
-          { key: record[_ColumnNames.ID_COLUMN_NAME] },
+          { key: record[_ColumnNames.SEARCH_REFERENCE_ID_COLUMN_NAME] },
           _react2.default.createElement(
             'div',
             { className: 'column small-16' },
@@ -1455,7 +1458,7 @@ ProjectSearch.propTypes = {
 };
 
 ProjectSearch.defaultProps = {
-  searchReferenceField: _ColumnNames.ID_COLUMN_NAME,
+  searchReferenceField: _ColumnNames.SEARCH_REFERENCE_ID_COLUMN_NAME,
   searchFields: _SearchFields.SEARCH_FIELDS,
   showCount: 10
 };
@@ -1788,6 +1791,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var formatters = (0, _qdFormatters2.default)(_d3.default);
 
 // Make sure each record only has one practice area
@@ -1845,7 +1850,9 @@ var choroplethTooltipFunc = function choroplethTooltipFunc(datum) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  var data = JEKYLL_DATA.projectsData;
+  var data = JEKYLL_DATA.projectsData.map(function (d, i) {
+    return Object.assign({}, d, _defineProperty({}, _ColumnNames.SEARCH_REFERENCE_ID_COLUMN_NAME, i));
+  });
   var totalProjects = data.length;
   var totalPartners = Object.keys(_lodash2.default.groupBy(data, _ColumnNames.PARTNER_COLUMN_NAME)).length;
   var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {

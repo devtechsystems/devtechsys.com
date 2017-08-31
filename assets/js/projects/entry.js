@@ -10,7 +10,7 @@ import ColorScale from './util/ColorScale'
 import d3 from 'd3'
 import lodash from 'lodash'
 import * as topojson from 'topojson'
-import { PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME } from './ColumnNames'
+import { PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, COUNTRY_COLUMN_NAME, REGION_COLUMN_NAME, PARTNER_COLUMN_NAME, CONTRACT_VALUE_COLUMN_NAME, SEARCH_REFERENCE_ID_COLUMN_NAME } from './ColumnNames'
 import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Reduce'
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
@@ -64,7 +64,9 @@ const choroplethTooltipFunc = (datum) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const data = JEKYLL_DATA.projectsData
+  const data = JEKYLL_DATA.projectsData.map((d, i) => {
+    return Object.assign({}, d, { [SEARCH_REFERENCE_ID_COLUMN_NAME]: i })
+  })
   const totalProjects = data.length
   const totalPartners = Object.keys(lodash.groupBy(data, PARTNER_COLUMN_NAME)).length
   const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {
