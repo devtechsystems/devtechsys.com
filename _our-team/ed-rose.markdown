@@ -2,7 +2,7 @@
 title: Ed Rose
 date: 2017-05-30 19:04:00 Z
 Title: Ed Rose
-Headshot Image: "/uploads/Ed%20headshot.jpg"
+Headshot Image: "/uploads/Doug-headshot.jpg"
 Job Title: Controller
 layout: page
 ---
