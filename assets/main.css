@@ -2606,6 +2606,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   margin-bottom: 60px; }
 .site .marginB-large {
   margin-bottom: 80px; }
+.site .marginT-medium {
+  margin-top: 60px; }
+.site .marginT-large {
+  margin-top: 80px; }
 .site .icon-wBlueEllipse {
   background-color: rgba(102, 176, 211, 0.7);
   border-radius: 50px;
@@ -2628,6 +2632,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     font-weight: 700; }
 .site .background-darkBlue {
   background-color: #284460; }
+.site .background-mapBlue {
+  background-color: #f0f8ff; }
 
 .content h1 {
   font-size: 32px;
@@ -2800,6 +2806,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     color: #28445f;
     font-weight: 700;
     content: "Footnotes"; }
+.content .highlight-blue {
+  color: #008fc2 !important; }
 
 .home.site-header {
   min-height: 650px;
@@ -3498,9 +3506,11 @@ div.career-list .fa {
     color: #28445f;
     font-weight: 700; }
   .current-projects-list .CPL--project {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
-    color: #007cb7; }
+    color: #007cb7;
+    padding-right: 10px;
+    display: inline-block; }
 
 .past-projects-list .PPL--title {
   font-size: 28px;
@@ -3508,9 +3518,11 @@ div.career-list .fa {
   color: #28445f;
   font-weight: 700; }
 .past-projects-list .PPL--project {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
-  color: #007cb7; }
+  color: #007cb7;
+  padding-right: 10px;
+  display: inline-block; }
 
 .author-details {
   position: relative;
@@ -3543,6 +3555,133 @@ div.career-list .fa {
     color: #555;
     font-weight: 400;
     line-height: 1.3; }
+
+.content .background-lightGray {
+  background-color: #eaeaea; }
+.content .background-lighterGray {
+  background-color: #f5f5f5; }
+.content .background-lighterBlue {
+  background-color: #dfeff5; }
+.content .background-darkBlue {
+  background-color: #284460; }
+.content .projects-solutions-countries {
+  padding-bottom: 80px; }
+.content .projects-map {
+  margin-top: 50px; }
+.content .projects-section-title {
+  font-size: 23px;
+  margin-top: 65px; }
+.content .projects-chart, .content .regions-chart, .content .contracts-section {
+  position: relative;
+  margin-top: 20px; }
+.content .right-separator {
+  border-right: 1px solid #9d9d9d; }
+.content .contracts-chart-title {
+  font-weight: 600;
+  font-size: .95em; }
+.content .projects-partners {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .content .projects-partners .projects-section-title {
+    margin-top: 0;
+    margin-bottom: 40px; }
+  .content .projects-partners .row.align-center .column {
+    text-align: center; }
+  .content .projects-partners .row.align-center + .row.align-center {
+    margin-top: 20px; }
+.content .projects-contact-us {
+  margin-top: 60px;
+  padding-bottom: 40px;
+  background: url(/assets/images/background-practiceAreas.png) no-repeat right 20px;
+  background-size: 320px auto; }
+  .content .projects-contact-us h2 {
+    color: #bbe0ff;
+    font-size: 19px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 60px; }
+  .content .projects-contact-us h3 {
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase; }
+  .content .projects-contact-us p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0; }
+  .content .projects-contact-us .button {
+    min-width: 200px !important;
+    width: 100%; }
+.content .projects-search {
+  padding-bottom: 30px; }
+  .content .projects-search h2 {
+    margin-top: 0;
+    padding-top: 50px;
+    color: #26445f; }
+  .content .projects-search label {
+    position: relative; }
+  .content .projects-search label .fa {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    color: #6fc59c;
+    font-size: 22px; }
+  .content .projects-search input {
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 1;
+    border-color: #c0deed;
+    border-width: 2px;
+    background-color: #eef5f7;
+    box-shadow: none;
+    color: #4b4b4b;
+    text-indent: 40px;
+    font-size: 18px;
+    border-radius: 2px; }
+.content .projects-list {
+  margin-top: 40px; }
+  .content .projects-list .project-results-header {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .85em;
+    color: #26425f; }
+    .content .projects-list .project-results-header .sort-caret {
+      margin-left: 10px; }
+  .content .projects-list ul {
+    border-top: 2px solid #c8e2ef;
+    list-style-type: none;
+    padding-top: 15px; }
+  .content .projects-list li {
+    font-family: "brandon-grotesque", sans-serif !important;
+    list-style-type: none;
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #c8e2ef;
+    padding-bottom: 15px !important;
+    padding-left: 0px; }
+    .content .projects-list li:before {
+      display: none !important; }
+    .content .projects-list li .project-category {
+      color: #ababab;
+      font-weight: 700;
+      font-style: italic;
+      font-size: .9em; }
+    .content .projects-list li .project-country {
+      color: #ababab;
+      font-weight: 700;
+      font-size: 16px;
+      padding-right: 17px; }
+    .content .projects-list li .project-title {
+      color: #007cb7;
+      font-weight: 700;
+      line-height: 1.2;
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 4px; }
+.content p.slightly-smaller {
+  font-size: 15px;
+  margin-right: 5%;
+  color: #5a5a5a; }
 
 .post-header {
   margin-top: 80px;
@@ -3579,6 +3718,12 @@ div.career-list .fa {
       .post-header .post-details .post-detail:first-child:before {
         display: none;
         margin: 0; }
+      .post-header .post-details .post-detail.post-detail-dashed:before {
+        content: "\2013";
+        border-left: none;
+        height: 4px;
+        width: auto;
+        top: -1px; }
 
 ul.posts {
   margin-left: 0;
