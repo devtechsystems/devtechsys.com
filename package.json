@@ -1,0 +1,56 @@
+{
+  "name": "devtechsys.com",
+  "version": "1.0.0",
+  "description": "Devtech Corporate Website",
+  "main": "",
+  "scripts": {
+    "clean-projects": "node DataCleaner.js",
+    "projects-to-markdown": "to-jekyll-collection projects.tsv -o _projects/ --slug data_id",
+    "publications-to-markdown": "to-jekyll-collection publications.tsv -o _publications/ --slug data_id",
+    "data-to-markdown": "npm run projects-to-markdown && npm run publications-to-markdown",
+    "transform-frontmatter": "node TransformFrontmatter.js",
+    "regenerate-projects": "npm run clean-projects && npm run data-to-markdown && npm run transform-frontmatter",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install -g brunch && npm install --save-dev babel-brunch auto-reload-brunch babel-preset-latest babel-preset-react clean-css-brunch uglify-js-brunch && npm install --save react react-dom",
+    "start": "brunch watch --server",
+    "build": "brunch build --production",
+    "dev": "bundle exec jekyll serve --incremental npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devtechsystems/devtechsys.com.git"
+  },
+  "keywords": [
+    "devtech"
+  ],
+  "author": "Barquin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devtechsystems/devtechsys.com/issues"
+  },
+  "homepage": "https://github.com/devtechsystems/devtechsys.com#readme",
+  "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
+    "babel-brunch": "^6.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-css-brunch": "^2.10.0",
+    "js-yaml": "^3.9.1",
+    "uglify-js-brunch": "^2.10.0",
+    "xlsx": "^0.11.3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "d3": "^3.5.17",
+    "lodash": "^4.17.4",
+    "lunr": "^2.1.2",
+    "prop-types": "^15.5.10",
+    "qd-formatters": "git+https://github.com/QuickDash/qd-formatters.git",
+    "react": "^15.6.1",
+    "react-countup": "^2.1.1",
+    "react-dom": "^15.6.1",
+    "react-sizebox": "github:bi/react-sizebox",
+    "recharts": "^1.0.0-alpha.2",
+    "topojson": "^3.0.0"
+  }
+}

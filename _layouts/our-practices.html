@@ -81,10 +81,10 @@ layout: default
 			    <div class="row row--gutters column current-projects-list">
 				    <h3 class="CPL--title">Current Projects</h3>
 						<ul class="row link-list small-up-1 medium-up-2">
-			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Active'] == true" %}
+			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] != false" %}
 				    {% for p in linked_current_projects %}
 				      <li class="column column-block">
-				    		<a href="{{ p.url | relative_url }}" class="CPL--project">{{ p['Title'] }}</a>
+				    		<a href="{{ p.url | relative_url }}" class="CPL--project">{{ p['Project Title'] }}</a>
 				    	</li>
 				    {% endfor %}
 				    {% if linked_current_projects.size == 0 %}
@@ -97,10 +97,10 @@ layout: default
 						<div class="row row--gutters column past-projects-list clearfix">
 							<h3 class="BLB--title">Past Projects</h3>
 							<ul class="row link-list small-up-1 medium-up-2">
-					    	{% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Active'] == false" %}
+					    	{% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] == false" %}
 						    {% for p in linked_past_projects %}
 						      <li class="column column-block">
-						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Title'] }}</a>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
 						    	</li>
 						    {% endfor %}
 						    {% if linked_past_projects.size == 0 %}
@@ -116,15 +116,19 @@ layout: default
 				    	{% assign linked_reports = site.publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
 					    {% for p in linked_reports %}
 					      <li class="post">
-					      	<div class="post-category">Region</div>
+					      	{% if p['Region'].size > 0 %}
+					      		<div class="post-category">{{ p['Region'] }}</div>
+					      	{% endif %}
 					    		<a href="{{ p['Document URL'] | escape }}" class="post-title">{{ p.title }}</a>
 					    		<div class="post-details">
-					    			<span class="post-detail">{{ p['Year Published'] }}</span>
-					    			<span class="post-detail">{{ p['Mission Title'] }}</span>
+					    			{% if p['Year Published'].size > 0 %}
+						      		<span class="post-detail">{{ p['Year Published'] }}</span>
+						      	{% endif %}
 					    		</div>
-					    		<div class="post-description">{{ p.content }}</div>
+					    		{% if p.content.size > 0 %}
+					      		<div class="post-description">{{ p.content }}</div>
+					      	{% endif %}
 					    	</li>
-
 					    {% endfor %}
 				    </ul>
 				  </div>

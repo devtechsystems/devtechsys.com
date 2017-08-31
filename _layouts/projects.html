@@ -11,22 +11,157 @@ layout: default
 	<div class="site-content" id="site_content" aria-label="Content">
 		<div class="page">
 			<div class="content">
-		  	<div class="row row--gutters">
-		  		<div class="column">
-						{% if page['Title'].size > 0 %}
-							<h1 class="page-title">{{ page['Title']}}</h1>
-						{% endif %}
-						{% if page['Banner Image'].size > 0 %}
-							<img class="page-banner" src="{{ page['Banner Image'] }}"/>
-						{% endif %}
-						{% if page['Highlight'].size > 0 %}
-							<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
-						{% endif %}
+		  	<div class="row row--gutters column">
+					<h1 class="page-title"><span class="highlight-blue">DevTech</span> has a <span class="highlight-blue">broad portfolio</span> of work that creates a <span class="highlight-blue">worldwide impact</span>.</h1>
+					<p>With hundreds of projects around the world, DevTech’s portfolio spans across continents. Explore the map to see where our work has taken us.</p>
+				</div>
+				<div class="background-mapBlue">
+					<div class="row column projects-map">
+						<div class="projects-chart">
+							<div id="projects-choropleth">
+								<div class="zoom-controls-container">
+									<div class="reset-button">reset</div>
+									<div class="zoom-buttons">
+										<div id="zoom-in" class="zoom-button">+</div>
+										<div id="zoom-out" class="zoom-button">-</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row column medium-12 projects-solutions-countries">
+					<h2 class="projects-section-title"><span class="highlight-blue">DevTech</span> has created <span class="highlight-blue" id="projects-count"></span> solutions in <span class="highlight-blue" id="countries-count"></span> countries worldwide.</h2>
+					<p class="slightly-smaller">With a breadth of experience across six practice areas and nearly every region of the world, DevTech produces innovative results and addresses complex global challenges.</p>
+					<div class="row">
+						<div class="column small-16 medium-8">
+							<div class="projects-chart right-separator">
+								<div id="projects-by-practice-area" style="min-height:250px;max-height:330px;">
+									<!-- added max-height to remove overflow with fixed chart height -->
+								</div>
+							</div>
+						</div>
+						<div class="column small-16 medium-8">
+							<div class="regions-chart">
+								<div id="projects-by-region" style="min-height:250px;max-height:330px;">
+									<!-- added max-height to remove overflow with fixed chart height -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="background-lighterGray">
+					<div class="row column medium-12 projects-partners">
+						<h2 class="projects-section-title">We've worked with over <span class="highlight-blue" id="partners-count"></span> partners.</h2>
+						<div class="row align-center align-middle">
+							<div class="column">
+								<img src="/assets/images/logo-usaid.png" alt="logo: USAID" title="USAID"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-department-of-state.png" alt="logo: Department of State" title="Department of State"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-mcc.png" alt="logo: Millennium Challenge Corporation" title="Millennium Challenge Corporation"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-world-bank.png" alt="logo: The World Bank" title="The World Bank"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-amex.png" alt="logo: AMEX International, Inc." title="AMEX International, Inc."/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-caderh.png" alt="logo: Caderh" title="Caderh"/>
+							</div>
+						</div>
+						<div class="row align-center align-middle">
+							<div class="column">
+								<img src="/assets/images/logo-tetra-tech.png" alt="logo: Tetra Tech" title="Tetra Tech"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-mca-indonesia.png" alt="logo: Millennium Challenge Account - Indonesia" title="Millennium Challenge Account - Indonesia"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-luis-berger.png" alt="logo: Luis Berger" title="Luis Berger"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-pa.png" alt="logo: PA Consulting Group" title="PA Consulting Group"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-icma.png" alt="logo: ICMA" title="ICMA"/>
+							</div>
+							<div class="column">
+								<img src="/assets/images/logo-fiu.png" alt="logo: FIU" title="FIU"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row column medium-12 projects-contracts">
+					<h2 class="projects-section-title">Since 1984, <span class="highlight-blue">DevTech</span> contracts have made over <span class="highlight-blue" id="total-money"></span></h2>
+					<p class="slightly-smaller">From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.</p>
 
-				    {{ content }}
-			  	</div>
-			  </div>
+					<h6 class="contracts-chart-title">Contract Value by Region &amp; Practice Area</h6>
+					<div class="contracts-section">
+						<div id="contract-value" style="min-height:300px;">
+							<!--you can keep the min-height in the styles 
+							    but id remove the background color once implemented
+							-->
+						</div>
+					</div>
+				</div>
+				<div class="background-darkBlue">
+					<div class="row row--gutters column projects-contact-us">
+						<h2>Thirty Years of Solutions</h2>
+						<h3>Partner With Us.</h3>
+
+						<div class="row">
+							<div class="column small-16 medium-11">
+								<p>We work with agencies, organizations, and businesses to achieve data-driven solutions that build capacity, strengthen partnerships, and address complex policy challenges. We'd love to work with you, too.</p>
+							</div>
+							<div class="column small-16 medium-5">
+								<a href="/about/contact-us/" class="button button-inverse">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="project-search"></div>
 		  </div>
-
 		</div>
 	</div>
+
+<link rel="stylesheet" href="{{ "/assets/css/visualizations.css" | relative_url }}">
+<script src="{{ "/assets/brunch-compiled/node-modules.js" | relative_url }}"></script>
+<script src="{{ "/assets/brunch-compiled/projects-bundle.js" | relative_url }}"></script>
+<script>
+var JEKYLL_DATA = {}
+var PROJECTS_DATA = []
+{% for project in site.projects %}
+	var dataObject = {
+		url: "{{project['id']}}"
+	}
+	{% for column in site.data.project_column_names %}
+		{% assign columnKey = column['key'] %}
+		dataObject["{{columnKey}}"] = {{project[columnKey] | jsonify}}
+	{% endfor %}
+	PROJECTS_DATA.push(dataObject)
+{% endfor %}
+
+var PROJECT_COLUMN_NAMES = {{site.data.project_column_names | jsonify}}
+var ENUMERATED_COLUMN_NAMES = {}
+PROJECT_COLUMN_NAMES.forEach(function(column) {
+	ENUMERATED_COLUMN_NAMES[column['enumName']] = column['key']
+})
+{% assign practiceAreas = site.data.project_column_names | where:"type","practice_area" %}
+var PRACTICE_AREAS = {{ practiceAreas | jsonify }}
+var ENUMERATED_PRACTICE_AREAS = {}
+PRACTICE_AREAS.forEach(function(column) {
+	ENUMERATED_PRACTICE_AREAS[column['enumName']] = column
+})
+JEKYLL_DATA = {
+	projectsData: PROJECTS_DATA,
+	projectColumnNames: PROJECT_COLUMN_NAMES,
+	enumeratedColumnNames: ENUMERATED_COLUMN_NAMES,
+	enumeratedPracticeAreas: ENUMERATED_PRACTICE_AREAS
+}
+</script>
+
+<script>require('assets/js/projects/entry.js')</script>

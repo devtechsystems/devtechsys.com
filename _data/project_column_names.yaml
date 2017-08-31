@@ -1,0 +1,57 @@
+---
+- enumName: COUNTRY
+  displayName: Country
+  key: Country
+  type: country
+- enumName: ISO3_CODE
+  displayName: ISO 3
+  key: ISO3 Code
+  type: id
+- enumName: PROJECT_TITLE
+  displayName: Project Title
+  key: Project Title
+  type: title
+- enumName: DATA_ID
+  displayName: data_id
+  key: data_id
+  type: id
+- enumName: REGION
+  displayName: Region
+  key: Region
+  type: region
+- enumName: CONTRACT_VALUE
+  displayName: Contract Value USD
+  key: Contract Value USD
+  type: number
+- enumName: PARTNER
+  displayName: Partner
+  key: Client/ Donor
+  type: partner
+- enumName: PRACTICE_AREA
+  displayName: Practice Areas
+  key: Practice Area
+  type: practice_area_list
+- enumName: M_E_PRACTICE_AREA
+  displayName: Monitoring and Evaluation
+  key: M&E Practice Area
+  type: practice_area
+- enumName: EDUCATION_AND_YOUTH_PRACTICE_AREA
+  displayName: Education, Gender and Youth
+  key: Education, Gender, and Youth Development Practice Area
+  type: practice_area
+- enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
+  displayName: Gender and Inclusive Development
+  key: Gender and Inclusive Development Practice Area
+  type: practice_area
+- enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
+  displayName: Public Financial Management and Fiscal Sustainability
+  key: Public Financial Management and Fiscal Sustainability Practice Area
+  type: practice_area
+- enumName: KWLDGE_MNGEMENT_PRACTICE_AREA
+  displayName: Knowledge Management and Data Analytics
+  key: Knowledge Management and Data Analytics Practice Area
+  type: practice_area
+- enumName: SECURITY_TRSNP_GOVERNANCE
+  displayName: Security, Transparency, and Governance
+  key: Security, Transparency, and Governance
+  type: practice_area

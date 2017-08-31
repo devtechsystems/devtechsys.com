@@ -42,19 +42,10 @@ layout:
   {% for project in site.projects %}
       ,
       "{{ project.url | slugify }}": {
-        "title": "{{ project.title | xml_escape }}",
+        "title": "{{ project['Project Title'] | default:project.title | xml_escape | strip_html | remove: "\" }}",
         "type": "Project",
         "content"  : "{{project.content | strip_html | strip_newlines | escape | remove: "\"}}",
         "url": " {{ project.url | xml_escape }}"
-      }
-  {% endfor %}
-
-  {% for publications in site.publications %}
-      ,
-      "{{ publications.url | slugify }}": {
-        "title": "{{ publications.title | xml_escape }}",
-        "type": "Publication",
-        "url": " {{ publications.url | xml_escape }}"
       }
   {% endfor %}
 

@@ -1,0 +1,271 @@
+---
+---
+
+// Rad row
+.row-chart {
+  g.rad-row {
+    rect.rad-row-background {
+      fill: #edeeee;
+    }
+
+    rect.rad-row-value-background {
+      fill: white;
+    }
+
+    text {
+      font-size: .75em;
+      font-weight: 600;
+      &.rad-row-name-text {
+        fill:#2b2b2b;
+        &:hover {
+          fill: #0067b9;
+        }
+      }
+      &.rad-row-value-text {
+        fill: #848484;
+
+        &.rad-row-negative {
+          fill: #BD102B;
+        }
+      }
+    }
+  }
+}
+
+// Breakdown panel that includes the Countup number, pie, and row charts
+.breakdown-panel {
+  .left-column {
+    .number-countup {
+      font-size: 4em;
+      font-weight: 600;
+      color: #008fc2;
+      line-height: .75;
+    }
+
+    .breakdown-title {
+      color: #0c94c5;
+      font-size: .8em;
+      font-weight: 600;
+      margin-top: -6px;
+    }
+  }
+
+  .right-column {
+    .breakdown-group-title {
+      font-size: .7em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+
+  .breakdown-pie {
+    margin-top: 5px;
+  }
+}
+
+// Choropleth
+.projects-map {
+  padding:0;
+  overflow-x:auto;
+  .projects-chart {margin-top:0;}
+}
+
+.text{
+  font-size:10px;
+  text-transform:capitalize;
+}
+#projects-choropleth {
+  min-height:300px;
+  height: 300px;
+  min-width:600px;
+  background: #F0F8FF;
+  overflow: hidden;
+
+  svg{
+    path.country {
+      stroke: white;
+    }
+  } 
+
+  .zoom-controls-container {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+
+    .reset-button {
+      float: left;
+      margin-right: 20px;
+      background: white;
+      padding: 0px 5px;
+      cursor: pointer;
+      
+      &:hover {
+        background: #ededed;
+      }
+    }
+
+    .zoom-buttons {
+      float: right;
+      font-weight: 600;
+      font-size: 1.5em;
+      text-align: center;
+
+      .zoom-button {
+        background: white;
+        padding: 0px 10px;
+        line-height: 1.5em;
+        cursor: pointer;
+
+        &:hover {
+          background: #ededed;
+        }
+      }
+
+      #zoom-out {
+        border-top: 1px solid #ccc;
+      }
+    }
+  }
+
+  // Legend
+  .legend {
+    .legend-title {
+      font-size: .8em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .key-text {
+      font-size: .8em;
+    }
+  }
+}
+@media screen and (min-width: 50em) {
+  #projects-choropleth {height:460px;}
+}
+@media screen and (min-width: 60em) {
+  #projects-choropleth {height:545px;}
+}
+
+.hidden { 
+  display: none; 
+}
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+  font-size: 1em;
+}
+
+// Stacked bar chart
+.yAxis .recharts-cartesian-axis-line {
+  stroke: none;
+}
+.xAxis .recharts-cartesian-axis-line {
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+.recharts-cartesian-axis-tick-line {
+  stroke: none;
+}
+.recharts-text.recharts-cartesian-axis-tick-value {
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.recharts-legend-item-text {
+  font-size: .7em;
+  font-weight: 600;
+}
+
+li.recharts-legend-item:before {
+  content: '' !important;
+}
+
+// Tooltips
+.tt-content {
+  color: #222;
+  background: #fff;
+  padding: .5em;
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  opacity: 0.97; 
+
+  .tt-title {
+    font-weight: 600;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .stack-slice-content {
+    border-top: 1px solid #ccc;
+    padding: 5px 5px 0px 5px;
+
+    .stack-slice-name {
+      position: relative;
+      top: 3px;
+      margin-left: 10px;
+    }
+
+    .stack-slice-value {
+      font-size: 1.4em;
+      line-height: 1.4em;
+    }
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+// Search results
+.page-selector {
+  border: 2px solid #c8e2ef;
+  text-align: center;
+  margin: auto; 
+
+    .page-prev-button, .page-next-button {
+      font-size: 1.5em;
+      font-weight: 600;
+      display: inline-block;
+      color: #007cb7;
+      cursor: pointer;
+      line-height: 1em;
+      padding: 13px 0px 16px 0px;
+
+      &:hover {
+        background: #dedede;
+      }
+    }
+
+    .current-page {
+      padding-top: 15px;
+      text-transform: uppercase;
+    }
+}
+
+// Sizebox dimensions
+.pie-sizebox {
+  width: 100%;
+  height: 40%;
+}
+
+.row-chart-sizebox {
+  width: 100%;
+  min-height: 250px;
+}
+
+.stacked-bar-chart-sizebox {
+  width: 100%;
+  min-height: 350px;
+}
+
+
+@media screen and (max-width: 46em) {
+  //#projects-choropleth .legend {visibility:hidden;}
+}

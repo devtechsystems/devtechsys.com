@@ -2,8 +2,16 @@
 layout: default
 ---
 
-{% if page['Practice Area'].size > 0 %}
-	{% assign header_title = page['Practice Area'] | first %}
+{% assign foundPracticeAreas = site.newEmptyArray %}
+{% assign practiceAreaObjects = site.data.project_column_names | where:"type","practice_area" %}
+{% for practiceArea in practiceAreaObjects %}
+	{% if page['Practice Area'] contains practiceArea['displayName'] %}
+		{% assign foundPracticeAreas = foundPracticeAreas | push: practiceArea['displayName'] %}
+	{% endif %}
+{% endfor %}
+{% assign practiceAreas = foundPracticeAreas %}
+{% if practiceAreas.size > 0 %}
+	{% assign header_title = practiceAreas | first %}
 {% endif %}
 {% if page['Is Active'] == true %}
 	{% assign subheader_title = 'Current Project' %}
@@ -18,13 +26,15 @@ layout: default
 		  		<div class="column">
 		  			<div class="post-header">
 		  				<a href="#" onclick="window.history.back();" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>Back to the Previous Page</a>
-		  				{% if page['Practice Area'].size > 0 %}
-		  					<span class="post-category">{{ page['Practice Area'] | first }}</span>
+		  				{% if foundPracticeAreas.size > 0 %}
+								{% for practiceArea in foundPracticeAreas %}
+		  						<span class="post-category">{{ practiceArea }}</span>
+								{% endfor %}
 		  				{% endif %}
-							{% if page['Title'].size > 0 %}
-								<h1 class="post-title page-title">{{ page['Title']}}</h1>
+							{% if page['Project Title'].size > 0 %}
+								<h1 class="post-title page-title">{{ page['Project Title']}}</h1>
 							{% else %}
-								<h1 class="post-title page-title">{{ page.title }}</h1>
+								<h1 class="post-title page-title">No Project Title found</h1>
 							{% endif %}
 							<div class="post-details">
 								
@@ -32,16 +42,16 @@ layout: default
 			  					<span class="post-detail">{{ page['Region'] }}</span>
 			  				{% endif %}
 			  				
-			  				{% if page['Client'].size > 0 %}
-			  					<span class="post-detail">{{ page['Client'] }}</span>
+			  				{% if page['Client/ Donor'].size > 0 %}
+			  					<span class="post-detail">{{ page['Client/ Donor'] }}</span>
 			  				{% endif %}
 
-			  				{% if page['Year Started'].size > 0 %}
-			  					<span class="post-detail">{{ page['Year Started'] }}</span>
+			  				{% if page['Start Year'].size > 0 %}
+			  					<span class="post-detail">{{ page['Start Year'] }}</span>
 			  				{% endif %}
 			  				
-			  				{% if page['Year Ended'].size > 0 %}
-			  					<span class="post-detail">{{ page['Year Ended'] }}</span>
+			  				{% if page['End Year'].size > 0 %}
+			  					<span class="post-detail post-detail-dashed">{{ page['End Year'] }}</span>
 			  				{% endif %}
 							</div>
 						</div>
@@ -54,11 +64,10 @@ layout: default
 
 				    {{ content }}
 
-
-				    {% if page['Related Document Links'].size > 0 %}
-				    	<h3>Related Publications:</h3>
+				    {% if page['Link to the document file'].size > 0 %}
+				    	<h3 class="marginT-medium">Related Publications:</h3>
 				    	<ul>
-				    	{% assign links = page['Related Document Links'] %}
+				    	{% assign links = page['Link to the document file'] %}
 				    	{% for link in links %}
 		  					<li><a href="{{ link }}">{{ link }}</a></li>
 		  				{% endfor %}
