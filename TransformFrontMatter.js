@@ -30,7 +30,8 @@ fs.readdirSync(projectsPath).forEach((fileName) => {
     'Link',
     'Link to the document file',
     'Document Title',
-    'Subcontract Number/Order Number/Grant Number'
+    'Subcontract Number/Order Number/Grant Number',
+    'data_id'
   ].concat(practiceAreaColumns)
   fieldsToDelete.forEach((fieldName) => {
     delete transformedData[fieldName]
