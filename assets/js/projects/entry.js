@@ -146,11 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 
   ReactDOM.render(
-    <CountUp start={0} end={totalCountries} duration={3} />,
-    document.getElementById('countries-count')
-  )
-
-  ReactDOM.render(
     <span>{totalMoney}</span>,
     document.getElementById('total-money')
   )
