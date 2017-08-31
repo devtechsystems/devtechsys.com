@@ -1913,8 +1913,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalPartners, duration: 3 }), document.getElementById('partners-count'));
 
-  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
-
   _reactDom2.default.render(_react2.default.createElement(
     'span',
     null,
