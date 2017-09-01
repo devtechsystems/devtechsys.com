@@ -1231,8 +1231,34 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
     .fa {color: #7dcba7;}
   }
-
 }
+#resumator-widget {
+  ul li:before {display:none;}
+  .resumator-buttons input {
+    border: 2px solid #007cb7;
+    padding: 16px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #28445f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 0;
+    min-width: 260px;
+    letter-spacing: .1em;
+  }
+  .resumator-job-title {
+    font-size:22px;
+    font-weight: 700;
+  }
+  .resumator-job-description p,
+  .resumator-job-description li {
+    @extend .font-brandon;
+    font-size:17px;
+  }
+}
+
 .button.career-link {
   margin-top: 40px;
   padding: 20px 30px;
