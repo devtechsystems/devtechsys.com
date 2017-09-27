@@ -1,0 +1,23 @@
+---
+Project Title: Economic and Social Data Services (ESDS)
+Start Year: '1993'
+End Year: '1998'
+ISO3 Code: GBL
+Region: Global
+Country: Global
+Client/ Donor: USAID
+Brief Description: >-
+  The USAID Center for Development Information and Evaluation (CDIE) Economic
+  and Social Data Service project provided a wide range of analytic and
+  technical support services to maintain the Economic and Social Data Base
+  (ESDB) and to sustain ESDS and its corollary work with USAID central and
+  regional Bureaus, and field Missions.DevTech ESDS economists utilized the
+  latest computer software applications and statistical research techniques to
+  access, exchange, and manipulate large international databases.
+Is Current Project? (true/false): false
+Practice Area:
+  - Public Financial Management and Fiscal Sustainability
+projects_slug: Economic-and-Social-Data-Services-(ESDS)
+Contract Value USD: '$2,430,485 (first)$3,094,135 (successor)'
+---
+The USAID Center for Development Information and Evaluation (CDIE) Economic and Social Data Service project provided a wide range of analytic and technical support services to maintain the Economic and Social Data Base (ESDB) and to sustain ESDS and its corollary work with USAID central and regional Bureaus, and field Missions.DevTech ESDS economists utilized the latest computer software applications and statistical research techniques to access, exchange, and manipulate large international databases.

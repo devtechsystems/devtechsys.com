@@ -1,0 +1,21 @@
+---
+Project Title: Environmental Compliance Support Services
+Start Year: '2002'
+End Year: '2007'
+ISO3 Code: MKD
+Region: Europe and Eurasia
+Country: Macedonia
+Client/ Donor: USAID
+Brief Description: >-
+  A DevTech team provided administrative and information management support
+  services to the Office of Environmental Audit at DOE facilities nationwide.
+  The team was responsible for the implementation, operation, documentation, and
+  maintenance of systems for the collection, verification, and publication of
+  audit team (i.e., DOE staff and contractors) data.
+Is Current Project? (true/false): false
+Practice Area:
+  - Monitoring and Evaluation
+projects_slug: Environmental-Compliance-Support-Services
+Contract Value USD: ''
+---
+A DevTech team provided administrative and information management support services to the Office of Environmental Audit at DOE facilities nationwide. The team was responsible for the implementation, operation, documentation, and maintenance of systems for the collection, verification, and publication of audit team (i.e., DOE staff and contractors) data.

@@ -1,0 +1,19 @@
+---
+Project Title: 'Fiscal Policy Reform: Guatemalan Municipal Tax Code'
+Start Year: '2002'
+End Year: ''
+ISO3 Code: GTM
+Region: Latin America and the Caribbean
+Country: Guatemala
+Client/ Donor: USAID/Guatemala
+Brief Description: >-
+  DevTech provided technical assistance in the areas of fiscal and taxation
+  reform, and municipal finance to guide the overall process of development of
+  the Guatemalan Municipal Tax Code (MTC).
+Is Current Project? (true/false): false
+Practice Area:
+  - Public Financial Management and Fiscal Sustainability
+projects_slug: 'Fiscal-Policy-Reform:-Guatemalan-Municipal-Tax-Code'
+Contract Value USD: ''
+---
+DevTech provided technical assistance in the areas of fiscal and taxation reform, and municipal finance to guide the overall process of development of the Guatemalan Municipal Tax Code (MTC).

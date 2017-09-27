@@ -15,7 +15,7 @@ fs.readdirSync(projectsPath).forEach((fileName) => {
   const projectData = projectYaml[0]
   console.log(`transforming practice areas for: ${projectsPath}${fileName}`)
   const transformedData = transformYesNoToBoolean(transformPracticeAreas(projectData), 'Is Current Project? (true/false)')
-  const projectDescription = transformedData['description'] // Description will later be appended to the document
+  const projectDescription = transformedData['Brief Description'] // Description will later be appended to the document
 
   // remove fields
   const practiceAreaColumns = yaml.safeLoad(fs.readFileSync('_data/project_column_names.yaml', 'utf8')).filter((column) => column.type === 'practice_area').map((column) => column['key'])
@@ -63,16 +63,17 @@ fs.readdirSync(publicationsPath).forEach((fileName) => {
 
 function transformPracticeAreas(project) {
   const delimiter = '~'
-  const practiceAreasAsString = project['Practice Area'] || ''
+  const practiceAreasAsString = String(project['Practice Area']) || ''
   const practiceAreasAsArray = practiceAreasAsString.split(delimiter)
   return Object.assign({}, project, { 'Practice Area': practiceAreasAsArray })
 }
 
 function transformYesNoToBoolean(project, columnName) {
   const transformedProject = Object.assign({}, project)
-  if(project[columnName].toLowerCase() == 'no') {
+  let value = project[columnName] || 'no'
+  if(value.toLowerCase() == 'no') {
     transformedProject[columnName] = false
-  } else if (project[columnName].toLowerCase() === 'yes') {
+  } else if (value.toLowerCase() === 'yes') {
     transformedProject[columnName] = true
   }
   return transformedProject

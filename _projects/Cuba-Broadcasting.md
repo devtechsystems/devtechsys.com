@@ -1,0 +1,19 @@
+---
+Project Title: Cuba Broadcasting
+Start Year: '1999'
+End Year: '2000'
+ISO3 Code: CUB
+Region: Latin America and the Caribbean
+Country: Cuba
+Client/ Donor: FIU
+Brief Description: >-
+  The project involved extensive and intensive data collection through on-site
+  interviews, observations, document analysis, and reviews of existing records
+  and files in Washington, D.C., Lithuania, Poland, Slovakia, and Hungary.
+Is Current Project? (true/false): false
+Practice Area:
+  - Monitoring and Evaluation
+projects_slug: Cuba-Broadcasting
+Contract Value USD: '5200.00'
+---
+The project involved extensive and intensive data collection through on-site interviews, observations, document analysis, and reviews of existing records and files in Washington, D.C., Lithuania, Poland, Slovakia, and Hungary.

@@ -1,0 +1,23 @@
+---
+Project Title: 'Gender Assessments STTA & TTO: Gender Assessment: Colombia (TDY 66)'
+Start Year: '2007'
+End Year: '2007'
+ISO3 Code: COL
+Region: Latin America and the Caribbean
+Country: Colombia
+Client/ Donor: USAID
+Brief Description: >-
+  A team of three consultants conducted an assessment in anticipation of the
+  2007 Operational Plan. The Mission asked that the assessment focus on gender
+  in relation to the armed conflict and its effects, in five programming areas:
+  justice, human rights (with emphasis on domestic violence), alternative
+  development, internally displaced populations, and demobilization and
+  reintegration of ex-combatants. Recommendations were made for incorporating
+  gender into each sector
+Is Current Project? (true/false): false
+Practice Area:
+  - 'Education, Gender and Youth'
+projects_slug: 'Gender-Assessments-STTA-and-TTO:-Gender-Assessment:-Colombia-(TDY-66)'
+Contract Value USD: ''
+---
+A team of three consultants conducted an assessment in anticipation of the 2007 Operational Plan. The Mission asked that the assessment focus on gender in relation to the armed conflict and its effects, in five programming areas: justice, human rights (with emphasis on domestic violence), alternative development, internally displaced populations, and demobilization and reintegration of ex-combatants. Recommendations were made for incorporating gender into each sector

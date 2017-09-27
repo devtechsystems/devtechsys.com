@@ -38,9 +38,9 @@
   displayName: Education, Gender and Youth
   key: Education, Gender, and Youth Development Practice Area
   type: practice_area
-- enumName: GENDER_AND_INCLUSIVE_PRACTICE_AREA
-  displayName: Gender and Inclusive Development
-  key: Gender and Inclusive Development Practice Area
+- enumName: ENERGY_AND_ENVIRONMENT_PRACTICE_AREA
+  displayName: Energy and Environment
+  key: Energy and Environment
   type: practice_area
 - enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
   displayName: Public Financial Management and Fiscal Sustainability

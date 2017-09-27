@@ -1,0 +1,27 @@
+---
+Project Title: >-
+  United States merchandise trade with developing countries: sub-Saharan Africa,
+  Asia, Eastern Europe, New Independent States, Latin America and the Caribbean,
+  Near East
+Start Year: '1995'
+End Year: '1995'
+ISO3 Code: GBL
+Region: Global
+Country: Global
+Client/ Donor: USAID
+Brief Description: >-
+  The document summarizes United States trade with the world, OECD countries,
+  developing countries, sub-Saharan Africa, Asia and the Near East, Eastern
+  Europe and the New Independent States (NIS), and Latin America and-the
+  Caribbean. For each region there are summary tables of exports, imports and
+  the trade balance in addition to a series of graphs depicting merchandise
+  trade composition and trends.
+Is Current Project? (true/false): false
+Practice Area:
+  - Monitoring and Evaluation
+  - Public Financial Management and Fiscal Sustainability
+projects_slug: >-
+  United-States-merchandise-trade-with-developing-countries:-sub-Saharan-Africa-Asia-Eastern-Europe-New-Independent-States-Latin-America-and-the-Caribbean-Near-East
+Contract Value USD: ''
+---
+The document summarizes United States trade with the world, OECD countries, developing countries, sub-Saharan Africa, Asia and the Near East, Eastern Europe and the New Independent States (NIS), and Latin America and-the Caribbean. For each region there are summary tables of exports, imports and the trade balance in addition to a series of graphs depicting merchandise trade composition and trends.

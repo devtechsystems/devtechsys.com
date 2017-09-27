@@ -1,0 +1,26 @@
+---
+Project Title: 'Gender Assessments STTA & TTO: USAID/Zambia Gender Training (TDY 117)'
+Start Year: '2012'
+End Year: '2012'
+ISO3 Code: ZMB
+Region: Africa
+Country: Zambia
+Client/ Donor: USAID
+Brief Description: >-
+  The USAID Zambia training comprised three activities, a 3-day workshop for
+  USAID/Zambia staff, a one-day workshop for partners, and a half-day briefing
+  and discussion on gender with Senior Management. The training was delivered by
+  a team of three gender specialists, including a GenDev staff member, a task
+  order field international gender expert and a Zambian gender specialist.The
+  training team also tailored the core material to fit the Zambian context,
+  including recognizing that USAID/Zambia had completed its CDCS and was already
+  into design phase. Particular attention was paid to preparing, within the
+  limits of time and data availability, project-related case studies and
+  discussion materials that drew from USAID's own work program in Zambia.
+Is Current Project? (true/false): false
+Practice Area:
+  - 'Education, Gender and Youth'
+projects_slug: 'Gender-Assessments-STTA-and-TTO:-USAIDZambia-Gender-Training-(TDY-117)'
+Contract Value USD: ''
+---
+The USAID Zambia training comprised three activities, a 3-day workshop for USAID/Zambia staff, a one-day workshop for partners, and a half-day briefing and discussion on gender with Senior Management. The training was delivered by a team of three gender specialists, including a GenDev staff member, a task order field international gender expert and a Zambian gender specialist.The training team also tailored the core material to fit the Zambian context, including recognizing that USAID/Zambia had completed its CDCS and was already into design phase. Particular attention was paid to preparing, within the limits of time and data availability, project-related case studies and discussion materials that drew from USAID's own work program in Zambia.

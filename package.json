@@ -5,8 +5,8 @@
   "main": "",
   "scripts": {
     "clean-projects": "node DataCleaner.js",
-    "projects-to-markdown": "to-jekyll-collection projects.tsv -o _projects/ --slug data_id",
-    "publications-to-markdown": "to-jekyll-collection publications.tsv -o _publications/ --slug data_id",
+    "projects-to-markdown": "to-jekyll-collection projects.tsv -o _projects/ --slug projects_slug",
+    "publications-to-markdown": "to-jekyll-collection publications.tsv -o _publications/ --slug publications_slug",
     "data-to-markdown": "npm run projects-to-markdown && npm run publications-to-markdown",
     "transform-frontmatter": "node TransformFrontmatter.js",
     "regenerate-projects": "npm run clean-projects && npm run data-to-markdown && npm run transform-frontmatter",
@@ -51,6 +51,7 @@
     "react-dom": "^15.6.1",
     "react-sizebox": "github:bi/react-sizebox",
     "recharts": "^1.0.0-alpha.2",
+    "slugify": "^1.2.1",
     "topojson": "^3.0.0"
   }
 }
