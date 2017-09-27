@@ -46,6 +46,7 @@ defaults:
     Title: 
     Highlight: 
     Banner Image: 
+    SEO Excerpt Overwrite: 
     layout: page
 - scope:
     path: ''
@@ -57,8 +58,10 @@ defaults:
     Teaser Image: 
     Banner Image: 
     Highlight: 
+    SEO Excerpt Overwrite: 
     Category: 
     Author: 
+    Is Featured: 
     layout: post
 - scope:
     path: ''
@@ -67,6 +70,7 @@ defaults:
     permalink: "/news/:year/:month/:day/:title/"
     Banner Image: 
     Highlight: 
+    SEO Excerpt Overwrite: 
     Category: 
     layout: news
 - scope:
@@ -75,19 +79,6 @@ defaults:
   values:
     Author Image: 
     Author Title: 
-    layout: page
-- scope:
-    path: ''
-    type: careers
-  values:
-    Title: 
-    Highlight: 
-    Location: 
-    Type: Full time
-    Department: 
-    Experience: 
-    Application Link: 
-    navigation_group: Careers
     layout: page
 - scope:
     path: ''
@@ -103,6 +94,7 @@ defaults:
   values:
     Title: 
     Highlight: 
+    SEO Excerpt Overwrite: 
     Headshot Image: 
     Job Title: 
     navigation_group: Our Team
@@ -112,6 +104,7 @@ defaults:
     type: practice-areas
   values:
     Highlight: 
+    SEO Excerpt Overwrite: 
     Preview/Teaser Image: 
     Detail Page Image: 
     Light Icon Image: 
@@ -121,6 +114,7 @@ defaults:
     path: ''
     type: reports-and-publications
   values:
+    SEO Excerpt Overwrite: 
     Document Link Title: 
     Document Region: 
     Year Published: 
@@ -135,6 +129,7 @@ defaults:
   values:
     Title: 
     Highlight: 
+    SEO Excerpt Overwrite: 
     Banner Image: 
     Practice Area:
     - 
