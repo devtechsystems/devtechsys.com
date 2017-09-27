@@ -46,6 +46,7 @@ defaults:
     Title: 
     Highlight: 
     Banner Image: 
+    Excerpt: 
     layout: page
 - scope:
     path: ''
@@ -57,6 +58,7 @@ defaults:
     Teaser Image: 
     Banner Image: 
     Highlight: 
+    Excerpt: 
     Category: 
     Author: 
     layout: post
@@ -67,6 +69,7 @@ defaults:
     permalink: "/news/:year/:month/:day/:title/"
     Banner Image: 
     Highlight: 
+    Excerpt: 
     Category: 
     layout: news
 - scope:
@@ -75,19 +78,6 @@ defaults:
   values:
     Author Image: 
     Author Title: 
-    layout: page
-- scope:
-    path: ''
-    type: careers
-  values:
-    Title: 
-    Highlight: 
-    Location: 
-    Type: Full time
-    Department: 
-    Experience: 
-    Application Link: 
-    navigation_group: Careers
     layout: page
 - scope:
     path: ''
@@ -112,6 +102,7 @@ defaults:
     type: practice-areas
   values:
     Highlight: 
+    Excerpt: 
     Preview/Teaser Image: 
     Detail Page Image: 
     Light Icon Image: 
@@ -135,6 +126,7 @@ defaults:
   values:
     Title: 
     Highlight: 
+    Excerpt: 
     Banner Image: 
     Practice Area:
     - 
