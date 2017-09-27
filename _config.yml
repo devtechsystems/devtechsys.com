@@ -61,6 +61,7 @@ defaults:
     SEO Excerpt Overwrite: 
     Category: 
     Author: 
+    Is Featured: 
     layout: post
 - scope:
     path: ''

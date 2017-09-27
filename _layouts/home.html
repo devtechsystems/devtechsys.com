@@ -8,7 +8,24 @@ layout: default
     <div class="row insights">
       <div class="column small-16">
         <ul class="clearfix">
-          {% for post in site.posts limit:3 %}
+          {% assign featured_insights = site.posts | limit:3 | where:'Is Featured',true %}
+          {% assign featured_insight_count = featured_insights | size %}
+          {% assign insights_to_show = 3 | minus:featured_insight_count %}
+
+          {% for featured in featured_insights limit:3 %}
+            <li>
+              <span class="post-label">{{ featured['Practice Area'] | first }}</span>
+              {% if featured['Teaser Image'].size > 0 %}
+                <img src="{{ featured['Teaser Image'] | relative_url }}" alt="Teaser Image" />
+              {% else %}
+                <span class="post-missing-teaser"></span>
+              {% endif %}
+              <a class="post-link" href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a>
+              <span class="post-meta">{{ featured['Author'] }}</span>
+            </li>
+          {% endfor %}
+
+          {% for post in site.posts limit:insights_to_show %}
             <li>
               <span class="post-label">{{ post['Practice Area'] | first }}</span>
               {% if post['Teaser Image'].size > 0 %}
