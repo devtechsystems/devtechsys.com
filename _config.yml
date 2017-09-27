@@ -92,7 +92,7 @@ defaults:
     type: our-team
   values:
     Title: 
-    Highlight:
+    Highlight: 
     SEO Excerpt Overwrite: 
     Headshot Image: 
     Job Title: 
@@ -113,7 +113,7 @@ defaults:
     path: ''
     type: reports-and-publications
   values:
-    SEO Excerpt Overwrite:
+    SEO Excerpt Overwrite: 
     Document Link Title: 
     Document Region: 
     Year Published: 
