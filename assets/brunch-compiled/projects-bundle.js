@@ -1585,6 +1585,9 @@ var TooltipContent = function TooltipContent(_ref) {
     };
   });
   var stackContent = stackData.map(function (slice) {
+    if (slice.value === 0) {
+      return _react2.default.createElement('div', { className: 'slice-value-zero' });
+    }
     return _react2.default.createElement(
       'div',
       { key: xAxisValue + '-' + slice.name, className: 'stack-slice-content' },
@@ -1815,7 +1818,7 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
     });
     return !foundSomePracticeArea;
   }).map(function (project) {
-    return Object.assign({}, project, { denormalizedPracticeArea: 'None' });
+    return Object.assign({}, project, { denormalizedPracticeArea: 'No Practice Area' });
   });
 
   return denormalizedData.concat(nonePracticeAreas);

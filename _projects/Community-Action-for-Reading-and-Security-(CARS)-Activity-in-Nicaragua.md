@@ -16,7 +16,7 @@ Brief Description: >-
   implement an evidence-based approach to conduct activities at the municipal,
   community, and school level to transition to a local-led model to educational
   development and citizen security.
-Is Current Project? (true/false): false
+Is Current Project? (true/false): true
 Practice Area:
   - 'Education, Gender and Youth'
 projects_slug: Community-Action-for-Reading-and-Security-(CARS)-Activity-in-Nicaragua

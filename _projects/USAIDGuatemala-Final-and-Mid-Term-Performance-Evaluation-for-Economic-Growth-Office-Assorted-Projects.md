@@ -5,7 +5,7 @@ Project Title: >-
 Start Year: '2012'
 End Year: ''
 ISO3 Code: GTM
-Region: Latin America and Caribbean
+Region: Latin America and the Caribbean
 Country: Guatemala
 Client/ Donor: USAID/Guatemala
 Brief Description: >-

@@ -3,7 +3,7 @@ Project Title: Education Portfolio Mid-Term Performance Review
 Start Year: '2012'
 End Year: '2013'
 ISO3 Code: DOM
-Region: Latin America and Caribbean
+Region: Latin America and the Caribbean
 Country: Dominican Republic
 Client/ Donor: USAID
 Brief Description: >-

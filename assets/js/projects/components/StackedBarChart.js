@@ -41,6 +41,9 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
       }
     })
   const stackContent = stackData.map((slice) => {
+    if(slice.value === 0) {
+      return <div className="slice-value-zero" />
+    }
     return (
       <div key={`${xAxisValue}-${slice.name}`} className='stack-slice-content'>
         <svg width={20} height={20}><circle cx={10} cy={10} r={10} fill={slice.color} /></svg>

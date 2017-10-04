@@ -36,7 +36,7 @@ const denormalizePracticeAreas = (data) => {
     })
     return !foundSomePracticeArea
   })
-  .map(project => Object.assign({}, project, { denormalizedPracticeArea: 'None' }))
+  .map(project => Object.assign({}, project, { denormalizedPracticeArea: 'No Practice Area' }))
 
   return denormalizedData.concat(nonePracticeAreas)
 }

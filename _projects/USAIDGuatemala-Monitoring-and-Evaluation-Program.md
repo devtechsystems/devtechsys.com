@@ -3,7 +3,7 @@ Project Title: USAID/Guatemala Monitoring and Evaluation Program
 Start Year: '2013'
 End Year: '2017'
 ISO3 Code: GTM
-Region: Latin America and theCaribbean
+Region: Latin America and the Caribbean
 Country: Guatemala
 Client/ Donor: USAID/Guatemala
 Brief Description: >-
