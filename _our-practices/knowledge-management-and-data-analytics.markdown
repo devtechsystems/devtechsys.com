@@ -1,7 +1,7 @@
 ---
 title: Knowledge Management and Data Analytics
 date: 2017-05-30 18:50:00 Z
-position: 2
+position: 1
 Highlight: As a data-driven firm, DevTech specializes in the management, analysis,
   and dissemination of quality data. Our expertise in knowledge management and data
   analytics has placed DevTech at the forefront of open data initiatives. Founded
