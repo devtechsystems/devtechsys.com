@@ -63,10 +63,18 @@ const choroplethTooltipFunc = (datum) => {
   return`${datum.countryName}<br/>${datum.value} projects`
 }
 
+// A Project has multiple solutions
+// A solution is a Project in a country, eg: a Project in 3 countries is equivalent to 3 solutions
+const denormalizeProjectsIntoSolutions = (projects) => {
+  const solutions = []
+  
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const data = JEKYLL_DATA.projectsData.map((d, i) => {
     return Object.assign({}, d, { [SEARCH_REFERENCE_ID_COLUMN_NAME]: i })
   })
+  const solutions = denormalizeProjectsIntoSolutions(data) // A solution 
   const totalProjects = data.length
   const totalPartners = Object.keys(lodash.groupBy(data, PARTNER_COLUMN_NAME)).length
   const totalMoney = formatters.bigCurrencyFormat(data.reduce((acc, next) => {

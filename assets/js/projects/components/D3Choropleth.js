@@ -100,7 +100,7 @@ export default function(parentSelector) {
   function getLegendValueRange(color) {
     const colorValueRange = _colorScale.scale.invertExtent
     if(!colorValueRange(color)[0]) return '0 Projects'
-    return `${_numberFormatter(colorValueRange(color)[0])} to ${_numberFormatter(colorValueRange(color)[1])} Projects`
+    return `${_numberFormatter(Math.ceil(colorValueRange(color)[0]))} to ${_numberFormatter(Math.floor(colorValueRange(color)[1]))} Projects`
   }
 
   chart.numberFormatter = function (_) {
