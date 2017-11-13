@@ -99,8 +99,8 @@ export default function(parentSelector) {
 
   function getLegendValueRange(color) {
     const colorValueRange = _colorScale.scale.invertExtent
-    if(!colorValueRange(color)[0]) return '0 Projects'
-    return `${_numberFormatter(Math.ceil(colorValueRange(color)[0]))} to ${_numberFormatter(Math.floor(colorValueRange(color)[1]))} Projects`
+    if(!colorValueRange(color)[0]) return '0 Solutions'
+    return `${_numberFormatter(Math.ceil(colorValueRange(color)[0]))} to ${_numberFormatter(Math.floor(colorValueRange(color)[1]))} Solutions`
   }
 
   chart.numberFormatter = function (_) {
@@ -136,9 +136,9 @@ export default function(parentSelector) {
       if(!geoDatum) {
         return{ noDataFound: true, noGeoDataFound: true, name: key }
       }
-      return Object.assign({ noDataFound: true }, geoDatum)
+      return Object.assign({ noDataFound: true }, { geoData: geoDatum })
     }
-    return datum
+    return Object.assign(datum, { geoData: _topojson.find((d) => d.id === key)})
   }
 
   function getDataValue(key) {
