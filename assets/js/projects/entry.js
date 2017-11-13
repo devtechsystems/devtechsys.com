@@ -98,9 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const totalCountries = Object.keys(projectsGroupedByCountry).length // Don't include Global as a country
   const projectsGroupedByRegion = lodash.groupBy(projects, REGION_COLUMN_NAME)
   const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (pgbr) => lodash.uniqBy(pgbr, COUNTRY_COLUMN_NAME).length)
-  const dataDenormalizedByPracticeArea = denormalizePracticeAreas(projects)
-  const projectsGroupedByPracticeArea = lodash.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea')
-  const projectCountsForCountries = reduceCountIncludeExtraData(projectsGroupedByCountry, (recordGroup) => ({ countryName: recordGroup[0][COUNTRY_COLUMN_NAME] }))
+  const projectsDenormalizedByPracticeArea = denormalizePracticeAreas(projects)
+  const solutionsDenormalizedByPracticeArea = denormalizePracticeAreas(solutions)
+  const projectsGroupedByPracticeArea = lodash.groupBy(projectsDenormalizedByPracticeArea, 'denormalizedPracticeArea')
+  const solutionsGroupedByPracticeArea = lodash.groupBy(solutionsDenormalizedByPracticeArea, 'denormalizedPracticeArea')
   const solutionCountsForCountries = reduceCount(solutionsGroupedByCountry)
 
   const choroplethData = choroplethDataFormat(solutionCountsForCountries)
@@ -123,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const pbpaPanel = (
     <BreakDownPanel
-      data={chartDataFormat(reduceCount(projectsGroupedByPracticeArea))}
+      data={chartDataFormat(reduceCount(solutionsGroupedByPracticeArea))}
       bigNumber={totalSolutions}
       colorPalette={ColorPalette}
       title='Solutions'
@@ -143,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const stackedBarChart = (
     <Sizebox className="stacked-bar-chart-sizebox">
       <StackedBarChart
-        data={dataDenormalizedByPracticeArea}
+        data={projectsDenormalizedByPracticeArea}
         xAxisDataKey={REGION_COLUMN_NAME}
         stackDataKey={'denormalizedPracticeArea'}
         colorPalette={ColorPalette}
