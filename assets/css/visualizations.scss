@@ -163,6 +163,10 @@ div.tooltip {
 }
 
 // Stacked bar chart
+svg.recharts-surface {
+  overflow: visible;
+}
+
 .yAxis .recharts-cartesian-axis-line {
   stroke: none;
 }

@@ -84,7 +84,7 @@ const denormalizeProjectsIntoSolutions = (projects) => {
 document.addEventListener('DOMContentLoaded', () => {
   const projects = JEKYLL_DATA.projectsData.map((d, i) => {
     return Object.assign({}, d, { [SEARCH_REFERENCE_ID_COLUMN_NAME]: i })
-  })
+  })//.filter((p) => p[REGION_COLUMN_NAME].indexOf('Latin') === -1) // Remove latin america to see how stacked bar chart looks
   const solutions = denormalizeProjectsIntoSolutions(projects) 
   const totalSolutions = solutions.length
   const totalPartners = Object.keys(lodash.groupBy(projects, PARTNER_COLUMN_NAME)).length
@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])
   }, 0))
   const solutionsGroupedByCountry = lodash.groupBy(solutions, ISO_3_COlUMN_NAME)
-  const projectsGroupedByCountry = lodash.pickBy(lodash.groupBy(projects, 'ISO3 Code'), (p, iso3) => iso3 !== "" && iso3 !== "GBL" && iso3 !== "GLB" && iso3 !== "GLO")
-  const totalCountries = Object.keys(projectsGroupedByCountry).length // Don't include Global as a country
+  const totalCountries = Object.keys(solutionsGroupedByCountry).filter((isoCode) => isoCode !== "").length // Don't include countries that are unknown or global
   const projectsGroupedByRegion = lodash.groupBy(projects, REGION_COLUMN_NAME)
-  const countriesInRegions = lodash.mapValues(projectsGroupedByRegion, (pgbr) => lodash.uniqBy(pgbr, COUNTRY_COLUMN_NAME).length)
+  const solutionsGroupedByRegion = lodash.groupBy(solutions, REGION_COLUMN_NAME)
+  const countriesInRegions = lodash.mapValues(solutionsGroupedByRegion, (sgbr) => lodash.uniqBy(sgbr, ISO_3_COlUMN_NAME).length)
   const projectsDenormalizedByPracticeArea = denormalizePracticeAreas(projects)
   const solutionsDenormalizedByPracticeArea = denormalizePracticeAreas(solutions)
   const projectsGroupedByPracticeArea = lodash.groupBy(projectsDenormalizedByPracticeArea, 'denormalizedPracticeArea')
