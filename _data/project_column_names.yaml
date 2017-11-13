@@ -32,11 +32,11 @@
   type: practice_area_list
 - enumName: M_E_PRACTICE_AREA
   displayName: Monitoring and Evaluation
-  key: M&E Practice Area
+  key: M&E
   type: practice_area
 - enumName: EDUCATION_AND_YOUTH_PRACTICE_AREA
   displayName: Education, Gender and Youth
-  key: Education, Gender, and Youth Development Practice Area
+  key: Education, Gender, and Youth Development
   type: practice_area
 - enumName: ENERGY_AND_ENVIRONMENT_PRACTICE_AREA
   displayName: Energy and Environment
@@ -44,11 +44,11 @@
   type: practice_area
 - enumName: PUBLIC_FINANCIAL_PRACTICE_AREA
   displayName: Public Financial Management and Fiscal Sustainability
-  key: Public Financial Management and Fiscal Sustainability Practice Area
+  key: Public Financial Management and Fiscal Sustainability
   type: practice_area
 - enumName: KWLDGE_MNGEMENT_PRACTICE_AREA
   displayName: Knowledge Management and Data Analytics
-  key: Knowledge Management and Data Analytics Practice Area
+  key: Knowledge Management and Data Analytics
   type: practice_area
 - enumName: SECURITY_TRSNP_GOVERNANCE
   displayName: Security, Transparency, and Governance

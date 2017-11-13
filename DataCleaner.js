@@ -5,10 +5,11 @@ const yaml = require('js-yaml')
 const slugify = require('slugify')
 
 const homeDir = os.homedir()
-const workbook = ExcelUtil.readFile(`${homeDir}/Downloads/The Project Database.xlsm`)
+const workbook = ExcelUtil.readFile(`./The Project Database 2_UPDATED_FINAL.xlsm`)
 const sheetNames = workbook.SheetNames
 
 const MAIN_SHEET_NAME = 'MASTER'
+debugger;
 const mainSheetAsJson = ExcelUtil.utils.sheet_to_json(workbook.Sheets[MAIN_SHEET_NAME])
 const cleanedJson = cleanRecords(mainSheetAsJson)
 
@@ -30,7 +31,7 @@ function prepareProjectsJson(cleanProjects) {
 }
 
 function preparePublicationsJson(cleanProjects) {
-  const DOCUMENT_LINK_COLUMN_NAME = 'Link to the document file'
+  const DOCUMENT_LINK_COLUMN_NAME = 'Link'
   const DOCUMENT_TITLE_COLUMN_NAME = 'Document Title'
 
   let publications = []
@@ -59,7 +60,7 @@ function preparePublicationsJson(cleanProjects) {
     }
   })
 
-  return addSlugFor('data_id', 'publications_slug', publications)
+  return addSlugFor('title', 'publications_slug', publications)
 }
 
 function addSlugFor(slugSourceColumn, slugDestinationColumn, data) {
@@ -67,7 +68,7 @@ function addSlugFor(slugSourceColumn, slugDestinationColumn, data) {
   data.forEach((datum, index) => {
     const newDatum = Object.assign({}, datum)
     const preSluggedString = String(datum[slugSourceColumn]) || (slugSourceColumn + "-" + datum.data_id)
-    newDatum[slugDestinationColumn] = removeQuotes(slugify(preSluggedString))
+    newDatum[slugDestinationColumn] = removeQuotes(slugify(shorten(preSluggedString)))
     sluggedData.push(newDatum)
   })
 
@@ -127,4 +128,8 @@ function escapeQuotes(string) {
 
 function removeQuotes(string) {
   return string.replace(/"/g, '')
+}
+
+function shorten(string) {
+  return string.substring(0, 30)
 }
