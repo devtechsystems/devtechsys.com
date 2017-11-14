@@ -1,6 +1,6 @@
 ---
-title: Mid-Term Evaluation of the Pilot Program to Support Municipalities
-  and Small Enterprises in El Salvador
+title: Mid-Term Evaluation of the Pilot Program to Support Municipalities and Small
+  Enterprises in El Salvador
 Project Title: Mid-Term Evaluation of the Pilot Program to Support Municipalities
   and Small Enterprises in El Salvador
 Start Year: '2004'

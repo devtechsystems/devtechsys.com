@@ -1,6 +1,5 @@
 ---
-title: 'Partnership for Education: Monitoring and Evaluating Support Services
-  activity'
+title: 'Partnership for Education: Monitoring and Evaluating Support Services activity'
 Project Title: 'Partnership for Education: Monitoring and Evaluating Support Services
   activity'
 Start Year: '2014'

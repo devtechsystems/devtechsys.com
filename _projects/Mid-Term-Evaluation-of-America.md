@@ -1,6 +1,6 @@
 ---
-title: Mid-Term Evaluation of American University in Cairo (AUC) Leadership
-  for Education and Development (LEAD) Scholarship Program
+title: Mid-Term Evaluation of American University in Cairo (AUC) Leadership for Education
+  and Development (LEAD) Scholarship Program
 Project Title: Mid-Term Evaluation of American University in Cairo (AUC) Leadership
   for Education and Development (LEAD) Scholarship Program
 Start Year: '2008'

@@ -1,6 +1,6 @@
 ---
-title: Public Diplomacy Research, Monitoring, and Evaluation - Public Affairs
-  Section (PAS) of the US Embassy Kabul
+title: Public Diplomacy Research, Monitoring, and Evaluation - Public Affairs Section
+  (PAS) of the US Embassy Kabul
 Project Title: Public Diplomacy Research, Monitoring, and Evaluation - Public Affairs
   Section (PAS) of the US Embassy Kabul
 Start Year: '2015'

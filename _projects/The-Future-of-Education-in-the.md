@@ -1,6 +1,5 @@
 ---
-title: 'The Future of Education in the Dominican Republic: Opportunities and
-  Challenges'
+title: 'The Future of Education in the Dominican Republic: Opportunities and Challenges'
 Project Title: 'The Future of Education in the Dominican Republic: Opportunities and
   Challenges'
 Start Year: '2000'
