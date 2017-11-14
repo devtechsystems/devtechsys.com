@@ -1,6 +1,6 @@
 ---
-title: Ghana Partnership for Education and M&E Support Services in the Education
-  Sector (IDIQ)
+title: Ghana Partnership for Education and M&E Support Services in the Education Sector
+  (IDIQ)
 Project Title: Ghana Partnership for Education and M&E Support Services in the Education
   Sector (IDIQ)
 Start Year: '2014'

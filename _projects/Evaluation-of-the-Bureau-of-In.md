@@ -1,6 +1,5 @@
 ---
-title: Evaluation of the Bureau of Intelligence and Research (INR) Products
-  and Services
+title: Evaluation of the Bureau of Intelligence and Research (INR) Products and Services
 Project Title: Evaluation of the Bureau of Intelligence and Research (INR) Products
   and Services
 Start Year: '2013'

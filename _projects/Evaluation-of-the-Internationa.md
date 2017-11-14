@@ -1,6 +1,6 @@
 ---
-title: Evaluation of the International Narcotics and Law Enforcement Affairs
-  (INL) Rule of Law Programs in Colombia
+title: Evaluation of the International Narcotics and Law Enforcement Affairs (INL)
+  Rule of Law Programs in Colombia
 Project Title: Evaluation of the International Narcotics and Law Enforcement Affairs
   (INL) Rule of Law Programs in Colombia
 Start Year: '2012'

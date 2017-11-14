@@ -1,6 +1,6 @@
 ---
-title: Feasibility Study to Examine Kenya Revenue Authority's Information
-  and Communications Technology Strategy
+title: Feasibility Study to Examine Kenya Revenue Authority's Information and Communications
+  Technology Strategy
 Project Title: Feasibility Study to Examine Kenya Revenue Authority's Information
   and Communications Technology Strategy
 Start Year: '2005'

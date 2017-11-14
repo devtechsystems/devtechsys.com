@@ -1,6 +1,5 @@
 ---
-title: Latin America and the Caribbean Institute of Business Administration
-  (INCAE)
+title: Latin America and the Caribbean Institute of Business Administration (INCAE)
 Project Title: Latin America and the Caribbean Institute of Business Administration
   (INCAE)
 Start Year: '1985'

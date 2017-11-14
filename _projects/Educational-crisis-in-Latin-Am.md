@@ -1,6 +1,6 @@
 ---
-title: 'Educational crisis in Latin America : the financial constraint and
-  the dilemma of quality versus coverage'
+title: 'Educational crisis in Latin America : the financial constraint and the dilemma
+  of quality versus coverage'
 Project Title: 'Educational crisis in Latin America : the financial constraint and
   the dilemma of quality versus coverage'
 Start Year: '1992'

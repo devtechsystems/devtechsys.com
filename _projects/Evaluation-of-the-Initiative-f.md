@@ -1,6 +1,6 @@
 ---
-title: Evaluation of the Initiative for Social Action and Renewal (ISAR) Central
-  Asia Activities
+title: Evaluation of the Initiative for Social Action and Renewal (ISAR) Central Asia
+  Activities
 Project Title: Evaluation of the Initiative for Social Action and Renewal (ISAR) Central
   Asia Activities
 Start Year: '2001'

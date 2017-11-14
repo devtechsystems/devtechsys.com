@@ -1,6 +1,5 @@
 ---
-title: Evaluation of USAID Basic Education in Kyrgyzstan, Tajikistan, and
-  Uzbekistan
+title: Evaluation of USAID Basic Education in Kyrgyzstan, Tajikistan, and Uzbekistan
 Project Title: Evaluation of USAID Basic Education in Kyrgyzstan, Tajikistan, and
   Uzbekistan
 Start Year: '2005'
