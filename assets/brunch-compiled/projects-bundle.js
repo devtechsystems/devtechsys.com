@@ -1615,7 +1615,11 @@ var TooltipContent = function TooltipContent(_ref) {
       value: hoverData[stackDataName],
       color: colorMapper[stackDataName]
     };
+  }).filter(function (slice) {
+
+    return slice.value > 0;
   });
+
   var stackContent = stackData.map(function (slice) {
     return _react2.default.createElement(
       'div',
