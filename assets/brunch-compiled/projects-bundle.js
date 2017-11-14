@@ -292,6 +292,29 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var defaultNameRenderer = function defaultNameRenderer(name, x, y, fontSize, refFunc, onRowClick) {
+  return _react2.default.createElement(
+    'text',
+    {
+      ref: refFunc,
+      className: 'rad-row-name-text',
+      x: x,
+      y: y,
+      fontSize: fontSize,
+      alignmentBaseline: 'hanging',
+      onClick: function onClick() {
+        onRowClick(name);
+      }
+    },
+    _react2.default.createElement(
+      'title',
+      null,
+      name
+    ),
+    name
+  );
+};
+
 var RadRow = function (_Component) {
   _inherits(RadRow, _Component);
 
@@ -355,7 +378,9 @@ var RadRow = function (_Component) {
           chartWidth = _props.chartWidth,
           datum = _props.datum,
           data = _props.data,
-          xScale = _props.xScale;
+          xScale = _props.xScale,
+          nameRenderer = _props.nameRenderer,
+          onRowClick = _props.onRowClick;
 
       var barWidth = void 0;
       var textValueClassNames = (0, _classnames2.default)('rad-row-value-text', { 'rad-row-negative': datum.value < 0 });
@@ -395,25 +420,9 @@ var RadRow = function (_Component) {
           r: circleRadius,
           fill: this.props.color
         }),
-        _react2.default.createElement(
-          'text',
-          {
-            ref: function ref(textElement) {
-              _this2.nameTextElement = textElement;
-            },
-            className: 'rad-row-name-text',
-            x: this.widthForCircle(),
-            y: y,
-            fontSize: fontSize,
-            alignmentBaseline: 'hanging'
-          },
-          _react2.default.createElement(
-            'title',
-            null,
-            datum.name
-          ),
-          datum.name
-        ),
+        nameRenderer(datum.name, this.widthForCircle(), y, fontSize, function (textElement) {
+          _this2.nameTextElement = textElement;
+        }, onRowClick),
         _react2.default.createElement('rect', {
           className: 'rad-row-value-background',
           x: chartWidth - this.props.spaceForValueText,
@@ -470,12 +479,18 @@ RadRow.propTypes = {
     value: _propTypes2.default.number
   })),
   xScale: _propTypes2.default.func,
-  color: _propTypes2.default.string
+  color: _propTypes2.default.string,
+  nameRenderer: _propTypes2.default.func,
+  onRowClick: _propTypes2.default.func
 };
 
 RadRow.defaultProps = {
   circlePaddingRight: 8,
-  spaceForValueText: 54
+  spaceForValueText: 54,
+  nameRenderer: defaultNameRenderer,
+  onRowClick: function onRowClick() {
+    console.log('row clicked');
+  }
 };
 
 });
@@ -567,7 +582,9 @@ var RowChart = function (_Component) {
           datum: d,
           data: _this2.props.data,
           xScale: _this2.xScale(),
-          color: _this2.props.colorMapper(d.value)
+          color: _this2.props.colorMapper(d.value),
+          nameRenderer: _this2.props.nameRenderer,
+          onRowClick: _this2.props.onRowClick
         });
       });
 
@@ -604,7 +621,9 @@ RowChart.propTypes = {
   })),
   row: _propTypes2.default.func,
   rowHeight: _propTypes2.default.number,
-  colorMapper: _propTypes2.default.func
+  colorMapper: _propTypes2.default.func,
+  nameRenderer: _propTypes2.default.func,
+  onRowClick: _propTypes2.default.func
 };
 
 RowChart.defaultProps = {
@@ -645,13 +664,15 @@ exports.default = function (_ref) {
       bigNumber = _ref.bigNumber,
       colorPalette = _ref.colorPalette,
       title = _ref.title,
-      groupTitle = _ref.groupTitle;
+      groupTitle = _ref.groupTitle,
+      onRowClick = _ref.onRowClick,
+      className = _ref.className;
 
   var colorScale = new _ColorScale2.default(data, colorPalette.colors, colorPalette.noDataColor);
 
   return _react2.default.createElement(
     'div',
-    { className: 'breakdown-panel row' },
+    { className: 'breakdown-panel row ' + className },
     _react2.default.createElement(
       'div',
       { className: 'left-column column medium-5' },
@@ -684,7 +705,8 @@ exports.default = function (_ref) {
           data: data,
           colorMapper: function colorMapper(value) {
             return colorScale.getColorFor(value);
-          }
+          },
+          onRowClick: onRowClick
         })
       )
     )
@@ -1810,6 +1832,10 @@ var _PracticeAreaExists = require('./util/PracticeAreaExists');
 
 var _PracticeAreaExists2 = _interopRequireDefault(_PracticeAreaExists);
 
+var _slugify = require('slugify');
+
+var _slugify2 = _interopRequireDefault(_slugify);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1890,6 +1916,10 @@ var denormalizeProjectsIntoSolutions = function denormalizeProjectsIntoSolutions
   return solutions;
 };
 
+var goToPracticeArea = function goToPracticeArea(name) {
+  window.open('/our-practices/' + (0, _slugify2.default)(name));
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   var projects = JEKYLL_DATA.projectsData.map(function (d, i) {
     return Object.assign({}, d, _defineProperty({}, _ColumnNames.SEARCH_REFERENCE_ID_COLUMN_NAME, i));
@@ -1935,7 +1965,8 @@ document.addEventListener('DOMContentLoaded', function () {
     bigNumber: totalSolutions,
     colorPalette: _ColorPalette2.default,
     title: 'Solutions',
-    groupTitle: 'Practice Area'
+    groupTitle: 'Practice Area',
+    onRowClick: goToPracticeArea
   });
   var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
     data: chartDataFormat(countriesInRegions),

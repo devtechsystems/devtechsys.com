@@ -15,6 +15,7 @@ import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Redu
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 import PracticeAreaExists from './util/PracticeAreaExists'
+import slugify from 'slugify'
 
 const formatters = qdFormatters(d3)
 
@@ -81,6 +82,10 @@ const denormalizeProjectsIntoSolutions = (projects) => {
   return solutions
 }
 
+const goToPracticeArea = (name) => {
+  window.open(`/our-practices/${slugify(name)}`)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const projects = JEKYLL_DATA.projectsData.map((d, i) => {
     return Object.assign({}, d, { [SEARCH_REFERENCE_ID_COLUMN_NAME]: i })
@@ -130,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       colorPalette={ColorPalette}
       title='Solutions'
       groupTitle='Practice Area'
+      onRowClick={goToPracticeArea}
     />
   )
   const pbrPanel = (

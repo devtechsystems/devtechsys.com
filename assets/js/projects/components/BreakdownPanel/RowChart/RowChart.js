@@ -43,6 +43,8 @@ export default class RowChart extends Component {
           data={this.props.data}
           xScale={this.xScale()}
           color={this.props.colorMapper(d.value)}
+          nameRenderer={this.props.nameRenderer}
+          onRowClick={this.props.onRowClick}
         />
       )
     })
@@ -72,7 +74,9 @@ RowChart.propTypes = {
   })),
   row: PropTypes.func,
   rowHeight: PropTypes.number,
-  colorMapper: PropTypes.func
+  colorMapper: PropTypes.func,
+  nameRenderer: PropTypes.func,
+  onRowClick: PropTypes.func
 }
 
 RowChart.defaultProps = {

@@ -33,6 +33,20 @@
 }
 
 // Breakdown panel that includes the Countup number, pie, and row charts
+#projects-by-practice-area {
+  .rad-row-name-text {
+    cursor: pointer;
+  }
+}
+
+#projects-by-region {
+  .rad-row-name-text {
+    &:hover {
+      fill: black !important;
+    }
+  }
+}
+
 .breakdown-panel {
   .left-column {
     .number-countup {
