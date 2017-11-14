@@ -1,6 +1,6 @@
 ---
-title: Mid-Term Evaluation of the Accelerated Learning Program for Positive
-  Living and United Service (ALPP)
+title: Mid-Term Evaluation of the Accelerated Learning Program for Positive Living
+  and United Service (ALPP)
 Project Title: Mid-Term Evaluation of the Accelerated Learning Program for Positive
   Living and United Service (ALPP)
 Start Year: '2008'

@@ -1,6 +1,6 @@
 ---
-title: Monitoring and Evaluation of Latin America and the Caribbean Regional
-  Security Initiative Programs (CARSI)
+title: Monitoring and Evaluation of Latin America and the Caribbean Regional Security
+  Initiative Programs (CARSI)
 Project Title: Monitoring and Evaluation of Latin America and the Caribbean Regional
   Security Initiative Programs (CARSI)
 Start Year: '2014'

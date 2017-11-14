@@ -1,6 +1,5 @@
 ---
-title: Performance Evaluation of the USAID/Egpyt Trade Facilitation Project
-  (TFP)
+title: Performance Evaluation of the USAID/Egpyt Trade Facilitation Project (TFP)
 Project Title: Performance Evaluation of the USAID/Egpyt Trade Facilitation Project
   (TFP)
 Start Year: '2015'

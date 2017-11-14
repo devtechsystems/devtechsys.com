@@ -1,6 +1,6 @@
 ---
-title: Technical Assistance to Environmental Division of the Office of Project
-  Development, ANE Bureau Quarterly Progress Report
+title: Technical Assistance to Environmental Division of the Office of Project Development,
+  ANE Bureau Quarterly Progress Report
 Project Title: Technical Assistance to Environmental Division of the Office of Project
   Development, ANE Bureau Quarterly Progress Report
 Start Year: '1990'

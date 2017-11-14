@@ -1,6 +1,6 @@
 ---
-title: Summative Performance Evaluations for the Office of Global Women’s
-  Issues of the Secretary’s Innovative Small Grants Programs
+title: Summative Performance Evaluations for the Office of Global Women’s Issues of
+  the Secretary’s Innovative Small Grants Programs
 Project Title: Summative Performance Evaluations for the Office of Global Women’s
   Issues of the Secretary’s Innovative Small Grants Programs
 Start Year: '2012'

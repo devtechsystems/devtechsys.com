@@ -1,6 +1,5 @@
 ---
-title: Review of Environmental Activities Implemented in theBureau for Europe
-  & Eurasia
+title: Review of Environmental Activities Implemented in theBureau for Europe & Eurasia
 Project Title: Review of Environmental Activities Implemented in theBureau for Europe
   & Eurasia
 Start Year: '2002'

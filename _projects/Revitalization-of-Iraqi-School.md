@@ -1,6 +1,5 @@
 ---
-title: Revitalization of Iraqi Schools and Stabilization of Education (RISE)
-  Project
+title: Revitalization of Iraqi Schools and Stabilization of Education (RISE) Project
 Project Title: Revitalization of Iraqi Schools and Stabilization of Education (RISE)
   Project
 Start Year: '2003'

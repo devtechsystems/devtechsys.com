@@ -1,6 +1,6 @@
 ---
-title: Tax Computerization Project Outsourcing Initiative Feasibility Study
-  for the Philippine Bureau of Internal Revenue (BIR)
+title: Tax Computerization Project Outsourcing Initiative Feasibility Study for the
+  Philippine Bureau of Internal Revenue (BIR)
 Project Title: Tax Computerization Project Outsourcing Initiative Feasibility Study
   for the Philippine Bureau of Internal Revenue (BIR)
 Start Year: '2002'

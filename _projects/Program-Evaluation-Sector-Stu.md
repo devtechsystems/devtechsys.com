@@ -1,6 +1,6 @@
 ---
-title: Program Evaluation, Sector Studies, and Technical Assistance for the
-  Basic Education Program
+title: Program Evaluation, Sector Studies, and Technical Assistance for the Basic
+  Education Program
 Project Title: Program Evaluation, Sector Studies, and Technical Assistance for the
   Basic Education Program
 Start Year: '2006'

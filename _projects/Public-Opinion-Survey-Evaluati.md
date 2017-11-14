@@ -1,6 +1,6 @@
 ---
-title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
-  and Midline Evaluation of U.S. Ghana Child Protection Compact Partnership
+title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project and Midline
+  Evaluation of U.S. Ghana Child Protection Compact Partnership
 Project Title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
   and Midline Evaluation of U.S. Ghana Child Protection Compact Partnership
 Start Year: '2017'
