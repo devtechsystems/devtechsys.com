@@ -9,13 +9,15 @@ const yaml = require('js-yaml')
 // 2.) take the description field and move its contents to the 2nd document of this 
 // yaml document(Note: jekyll frontmatter is actually two yaml documents separated by ---)
 // 3.) Remove unnecessary fields we don't want to show up in siteleaf
+// 4.) Convert comma delimited ISO3 codes, into array of ISO3 codes
 const projectsPath = '_projects/'
 fs.readdirSync(projectsPath).forEach((fileName) => {
   const projectYaml = yaml.safeLoadAll(fs.readFileSync(projectsPath + fileName, 'utf8'))
   const projectData = projectYaml[0]
   console.log(`transforming practice areas for: ${projectsPath}${fileName}`)
-  const transformedData = transformYesNoToBoolean(transformPracticeAreas(projectData), 'Is Current Project? (true/false)')
-  const projectDescription = transformedData['description'] // Description will later be appended to the document
+  const projectsWithPracticeAreaArray = Object.assign({}, projectData, { 'Practice Area': convertDelimitedValueIntoArray(projectData['Practice Area'], '~') })
+  const transformedData = transformYesNoToBoolean(projectsWithPracticeAreaArray, 'Is Current Project? (true/false)')
+  const projectDescription = transformedData['Brief Description'] // Description will later be appended to the document
 
   // remove fields
   const practiceAreaColumns = yaml.safeLoad(fs.readFileSync('_data/project_column_names.yaml', 'utf8')).filter((column) => column.type === 'practice_area').map((column) => column['key'])
@@ -36,6 +38,8 @@ fs.readdirSync(projectsPath).forEach((fileName) => {
   fieldsToDelete.forEach((fieldName) => {
     delete transformedData[fieldName]
   })
+  const ISO3 = transformedData['ISO3 Code']
+  transformedData['ISO3 Code'] = convertDelimitedValueIntoArray(ISO3, ',')
   const transformedYaml = yaml.safeDump(transformedData)
 
   console.log(`writing new yaml for: ${projectsPath}${fileName}`)
@@ -52,7 +56,7 @@ fs.readdirSync(publicationsPath).forEach((fileName) => {
   const publicationYaml = yaml.safeLoadAll(fs.readFileSync(publicationsPath + fileName, 'utf8'))
   const publicationData = publicationYaml[0]
   console.log(`transforming practice areas for: ${projectsPath}${fileName}`)
-  const transformedData = transformPracticeAreas(publicationData)
+  const transformedData = Object.assign({}, publicationData, { 'Practice Area': convertDelimitedValueIntoArray(publicationData['Practice Area'], '~') })
   const transformedYaml = yaml.safeDump(transformedData)
 
   console.log(`writing new yaml for: ${publicationsPath}${fileName}`)
@@ -61,18 +65,18 @@ fs.readdirSync(publicationsPath).forEach((fileName) => {
   fs.appendFileSync(publicationsPath + fileName, '---\n')
 })
 
-function transformPracticeAreas(project) {
-  const delimiter = '~'
-  const practiceAreasAsString = project['Practice Area'] || ''
-  const practiceAreasAsArray = practiceAreasAsString.split(delimiter)
-  return Object.assign({}, project, { 'Practice Area': practiceAreasAsArray })
+function convertDelimitedValueIntoArray(value, delimiter) {
+  const valueAsString = String(value) || ''
+  const valueAsArray = valueAsString.split(delimiter)
+  return valueAsArray.map((v) => v.trim()) // incase any values have unnecessary surrounding whitespace
 }
 
 function transformYesNoToBoolean(project, columnName) {
   const transformedProject = Object.assign({}, project)
-  if(project[columnName].toLowerCase() == 'no') {
+  let value = project[columnName] || 'no'
+  if(value.toLowerCase() == 'no') {
     transformedProject[columnName] = false
-  } else if (project[columnName].toLowerCase() === 'yes') {
+  } else if (value.toLowerCase() === 'yes') {
     transformedProject[columnName] = true
   }
   return transformedProject

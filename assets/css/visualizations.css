@@ -102,6 +102,9 @@ div.tooltip {
   position: absolute;
   font-size: 1em; }
 
+svg.recharts-surface {
+  overflow: visible; }
+
 .yAxis .recharts-cartesian-axis-line {
   stroke: none; }
 
@@ -113,7 +116,7 @@ div.tooltip {
   stroke: none; }
 
 .recharts-text.recharts-cartesian-axis-tick-value {
-  font-size: .8em;
+  font-size: .7em;
   font-weight: 600; }
 
 .recharts-legend-item-text {
