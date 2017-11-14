@@ -2,12 +2,14 @@ const ExcelUtil = require('xlsx')
 const os = require('os')
 const fs = require('fs')
 const yaml = require('js-yaml')
+const slugify = require('slugify')
 
 const homeDir = os.homedir()
-const workbook = ExcelUtil.readFile(`${homeDir}/Downloads/DCWThe Project DatabaseV3.xlsm`)
+const workbook = ExcelUtil.readFile(`./The Project Database 2_UPDATED_FINAL.xlsm`)
 const sheetNames = workbook.SheetNames
 
 const MAIN_SHEET_NAME = 'MASTER'
+debugger;
 const mainSheetAsJson = ExcelUtil.utils.sheet_to_json(workbook.Sheets[MAIN_SHEET_NAME])
 const cleanedJson = cleanRecords(mainSheetAsJson)
 
@@ -25,11 +27,11 @@ fs.writeFileSync('publications.tsv', publicationsCSV)
 
 // Transform data for yaml(mostly take the practice areas and put them in one column)
 function prepareProjectsJson(cleanProjects) {
-  return cleanProjects.map(combinePracticeAreaColumns)
+  return addSlugFor('Project Title', 'projects_slug', cleanProjects.map(combinePracticeAreaColumns))
 }
 
 function preparePublicationsJson(cleanProjects) {
-  const DOCUMENT_LINK_COLUMN_NAME = 'Link to the document file'
+  const DOCUMENT_LINK_COLUMN_NAME = 'Link'
   const DOCUMENT_TITLE_COLUMN_NAME = 'Document Title'
 
   let publications = []
@@ -38,7 +40,6 @@ function preparePublicationsJson(cleanProjects) {
     let title = project[DOCUMENT_TITLE_COLUMN_NAME]
     let link = project[DOCUMENT_LINK_COLUMN_NAME]
     if(title || link) {
-      debugger;
       if(title) {
         publication['data_id'] = project['data_id']
         publication['title'] = title
@@ -59,7 +60,19 @@ function preparePublicationsJson(cleanProjects) {
     }
   })
 
-  return publications
+  return addSlugFor('title', 'publications_slug', publications)
+}
+
+function addSlugFor(slugSourceColumn, slugDestinationColumn, data) {
+  let sluggedData = []
+  data.forEach((datum, index) => {
+    const newDatum = Object.assign({}, datum)
+    const preSluggedString = String(datum[slugSourceColumn]) || (slugSourceColumn + "-" + datum.data_id)
+    newDatum[slugDestinationColumn] = removeQuotes(slugify(shorten(preSluggedString)))
+    sluggedData.push(newDatum)
+  })
+
+  return sluggedData
 }
 
 // Combine the multiple columns of practice areas into just one column that lists each practice area
@@ -111,4 +124,12 @@ function trimWhiteSpace(string) {
 
 function escapeQuotes(string) {
   return string.replace(/"/g, '\\"')
+}
+
+function removeQuotes(string) {
+  return string.replace(/"/g, '')
+}
+
+function shorten(string) {
+  return string.substring(0, 30)
 }
