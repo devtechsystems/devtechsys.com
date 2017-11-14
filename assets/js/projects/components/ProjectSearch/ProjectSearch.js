@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Lunr from 'lunr'
 import PageSelector from './PageSelector'
 import { SEARCH_FIELDS } from './SearchFields'
-import { COUNTRY_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, PROJECT_TITLE_COLUMN_NAME, SEARCH_REFERENCE_ID_COLUMN_NAME } from '../../ColumnNames'
+import { REGION_COLUMN_NAME, PRACTICE_AREA_COLUMN_NAMES, PRACTICE_AREA_COLUMN_NAME, PROJECT_TITLE_COLUMN_NAME, SEARCH_REFERENCE_ID_COLUMN_NAME } from '../../ColumnNames'
 import PracticeAreaExists from '../../util/PracticeAreaExists'
 
 export default class ProjectSearch extends Component {
@@ -120,7 +120,7 @@ export default class ProjectSearch extends Component {
                 <a href={`${record['url']}`} className="project-title">{record[PROJECT_TITLE_COLUMN_NAME] || "Project Title Unavailable"}</a>
               </div>
               <div className="column small-8 medium-6">
-                {record[COUNTRY_COLUMN_NAME] || "Country Unavailable"}
+                {record[REGION_COLUMN_NAME] || "Region Unavailable"}
               </div>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default class ProjectSearch extends Component {
           <div className="column background-lighterBlue project-results-header">
             <div className="row">
               <div className="column small-8 medium-10"><a onClick={() => this.setSort('Project Title')}>Project{this.getSortArrow('Project Title')}</a></div>
-              <div className="column small-8 medium-6"><a onClick={() => this.setSort('Country')}>Country{this.getSortArrow('Country')}</a></div>
+              <div className="column small-8 medium-6"><a onClick={() => this.setSort('Region')}>Region{this.getSortArrow('Region')}</a></div>
             </div>
           </div>
           <div className="overflow-container">

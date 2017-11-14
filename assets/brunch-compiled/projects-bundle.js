@@ -154,7 +154,7 @@ require.register("assets/js/projects/ColumnNames.js", function(exports, require,
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SEARCH_REFERENCE_ID_COLUMN_NAME = exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = exports.PRACTICE_AREA_COLUMN_NAME = undefined;
+exports.ISO_3_COlUMN_NAME = exports.SEARCH_REFERENCE_ID_COLUMN_NAME = exports.CONTRACT_VALUE_COLUMN_NAME = exports.PARTNER_COLUMN_NAME = exports.REGION_COLUMN_NAME = exports.ID_COLUMN_NAME = exports.PROJECT_TITLE_COLUMN_NAME = exports.COUNTRY_COLUMN_NAME = exports.PRACTICE_AREA_COLUMN_NAMES = exports.PRACTICE_AREA_COLUMN_NAME = undefined;
 
 var _lodash = require('lodash');
 
@@ -172,6 +172,7 @@ var CONTRACT_VALUE_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['CONTRACT_VALUE'];
 var ID_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['DATA_ID'];
 var PRACTICE_AREA_COLUMN_NAME = ENUMERATED_COLUMN_NAMES['PRACTICE_AREA'];
 var SEARCH_REFERENCE_ID_COLUMN_NAME = 'search_ref_id';
+var ISO_3_COlUMN_NAME = ENUMERATED_COLUMN_NAMES['ISO3_CODE'];
 
 exports.PRACTICE_AREA_COLUMN_NAME = PRACTICE_AREA_COLUMN_NAME;
 exports.PRACTICE_AREA_COLUMN_NAMES = PRACTICE_AREA_COLUMN_NAMES;
@@ -182,6 +183,7 @@ exports.REGION_COLUMN_NAME = REGION_COLUMN_NAME;
 exports.PARTNER_COLUMN_NAME = PARTNER_COLUMN_NAME;
 exports.CONTRACT_VALUE_COLUMN_NAME = CONTRACT_VALUE_COLUMN_NAME;
 exports.SEARCH_REFERENCE_ID_COLUMN_NAME = SEARCH_REFERENCE_ID_COLUMN_NAME;
+exports.ISO_3_COlUMN_NAME = ISO_3_COlUMN_NAME;
 
 });
 
@@ -803,8 +805,8 @@ exports.default = function (parentSelector) {
 
   function getLegendValueRange(color) {
     var colorValueRange = _colorScale.scale.invertExtent;
-    if (!colorValueRange(color)[0]) return '0 Projects';
-    return _numberFormatter(colorValueRange(color)[0]) + " to " + _numberFormatter(colorValueRange(color)[1]) + " Projects";
+    if (!colorValueRange(color)[0]) return '0 Solutions';
+    return _numberFormatter(Math.ceil(colorValueRange(color)[0])) + " to " + _numberFormatter(Math.floor(colorValueRange(color)[1])) + " Solutions";
   }
 
   chart.numberFormatter = function (_) {
@@ -844,9 +846,11 @@ exports.default = function (parentSelector) {
       if (!geoDatum) {
         return { noDataFound: true, noGeoDataFound: true, name: key };
       }
-      return Object.assign({ noDataFound: true }, geoDatum);
+      return Object.assign({ noDataFound: true }, { geoData: geoDatum });
     }
-    return datum;
+    return Object.assign(datum, { geoData: _topojson.find(function (d) {
+        return d.id === key;
+      }) });
   }
 
   function getDataValue(key) {
@@ -1254,7 +1258,7 @@ var ProjectSearch = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'column small-8 medium-6' },
-                record[_ColumnNames.COUNTRY_COLUMN_NAME] || "Country Unavailable"
+                record[_ColumnNames.REGION_COLUMN_NAME] || "Region Unavailable"
               )
             )
           )
@@ -1418,10 +1422,10 @@ var ProjectSearch = function (_Component) {
                 _react2.default.createElement(
                   'a',
                   { onClick: function onClick() {
-                      return _this5.setSort('Country');
+                      return _this5.setSort('Region');
                     } },
-                  'Country',
-                  this.getSortArrow('Country')
+                  'Region',
+                  this.getSortArrow('Region')
                 )
               )
             )
@@ -1477,7 +1481,7 @@ var _ColumnNames = require('../../ColumnNames');
 
 var SEARCH_FIELDS = {
   PROJECT_TITLE: { name: _ColumnNames.PROJECT_TITLE_COLUMN_NAME, weight: 100 },
-  COUNTRY: { name: _ColumnNames.COUNTRY_COLUMN_NAME, weight: 50 }
+  REGION: { name: _ColumnNames.REGION_COLUMN_NAME, weight: 50 }
 };
 
 exports.SEARCH_FIELDS = SEARCH_FIELDS;
@@ -1560,7 +1564,7 @@ var addWhiteTopBorders = function addWhiteTopBorders() {
     var emptyBorder = width + 2 * height;
     var dashArray = width + ',' + emptyBorder;
     return dashArray;
-  }).attr('stroke', 'white').attr('stroke-width', '4px');
+  }).attr('stroke', 'white').attr('stroke-width', '2px');
 };
 
 var TooltipContent = function TooltipContent(_ref) {
@@ -1570,13 +1574,19 @@ var TooltipContent = function TooltipContent(_ref) {
       label = _ref.label,
       xAxisDataKey = _ref.xAxisDataKey,
       colorMapper = _ref.colorMapper,
-      tooltipValueFormatter = _ref.tooltipValueFormatter;
+      tooltipValueFormatter = _ref.tooltipValueFormatter,
+      showTotal = _ref.showTotal;
 
   if (!active) return null;
   var hoverData = payload[0].payload;
   var xAxisValue = hoverData[xAxisDataKey];
   var stackData = Object.keys(hoverData).sort(sortStringsAsc).filter(function (key) {
     return key !== xAxisDataKey;
+  }).filter(function (key) {
+    if (!showTotal) {
+      return key !== 'Total';
+    }
+    return key === 'Total';
   }).map(function (stackDataName) {
     return {
       name: stackDataName,
@@ -1655,7 +1665,9 @@ var StackedBarChart = function (_Component) {
           _props$valueKey = _props.valueKey,
           valueKey = _props$valueKey === undefined ? 'value' : _props$valueKey,
           tickFormatter = _props.tickFormatter,
-          tooltipValueFormatter = _props.tooltipValueFormatter;
+          tooltipValueFormatter = _props.tooltipValueFormatter,
+          _props$showTotal = _props.showTotal,
+          showTotal = _props$showTotal === undefined ? false : _props$showTotal;
 
       var colorsDarkToLight = colorPalette.colors.slice(0).reverse(); // Clone then reverse
       var xGrouping = _lodash2.default.groupBy(data, xAxisDataKey);
@@ -1664,13 +1676,24 @@ var StackedBarChart = function (_Component) {
         var stackGroupingWithSums = (0, _Reduce.reduceSum)(stackGrouping, valueKey);
         return stackGroupingWithSums;
       });
+      var xGroupingSumsTotalled = _lodash2.default.mapValues(xGroupingWithSums, function (sumObject) {
+        var total = Object.keys(sumObject).reduce(function (accumulator, sumKey) {
+          return accumulator += sumObject[sumKey];
+        }, 0);
+        return total;
+      });
+      var xAxisGroupedByTotals = _lodash2.default.invert(xGroupingSumsTotalled);
+      var xAxisDataKeyForSorting = xAxisDataKey + '-sort-key';
       var flattenedGroupings = Object.entries(xGroupingWithSums).map(function (_ref2) {
         var _ref3 = _slicedToArray(_ref2, 2),
             xName = _ref3[0],
             stackGrouping = _ref3[1];
 
-        return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping);
+        return Object.assign(_defineProperty({}, xAxisDataKey, xName), stackGrouping, { Total: xGroupingSumsTotalled[xName] });
+      }).sort(function (a, b) {
+        return b.Total - a.Total;
       });
+
       var stackDataNamesAsc = _lodash2.default.uniqBy(data, stackDataKey).map(function (d) {
         return d[stackDataKey];
       }).sort(sortStringsAsc);
@@ -1703,7 +1726,7 @@ var StackedBarChart = function (_Component) {
         _react2.default.createElement(_recharts.YAxis, { tickFormatter: tickFormatter }),
         _react2.default.createElement(_recharts.Tooltip, {
           cursor: { stroke: '#ddd', strokeWidth: 1, fill: 'none' },
-          content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter })
+          content: _react2.default.createElement(TooltipContent, { colorMapper: colorMapper, xAxisDataKey: xAxisDataKey, tooltipValueFormatter: tooltipValueFormatter, showTotal: showTotal })
         }),
         _react2.default.createElement(_recharts.Legend, { iconType: 'circle', payload: legendData }),
         stackedBar
@@ -1818,7 +1841,7 @@ var denormalizePracticeAreas = function denormalizePracticeAreas(data) {
     return Object.assign({}, project, { denormalizedPracticeArea: 'None' });
   });
 
-  return denormalizedData.concat(nonePracticeAreas);
+  return denormalizedData; // .concat(nonePracticeAreas) // Unecessary to include None as a practice area
 };
 
 var chartDataFormat = function chartDataFormat(groupedValues) {
@@ -1834,7 +1857,7 @@ var chartDataFormat = function chartDataFormat(groupedValues) {
 var choroplethDataFormat = function choroplethDataFormat(groupedValues) {
   var flattenedArray = [];
   Object.keys(groupedValues).forEach(function (iso3Code) {
-    var country = { name: iso3Code, value: groupedValues[iso3Code].count, countryName: groupedValues[iso3Code].countryName };
+    var country = { name: iso3Code, value: groupedValues[iso3Code] };
     flattenedArray.push(country);
   });
   return flattenedArray;
@@ -1842,38 +1865,60 @@ var choroplethDataFormat = function choroplethDataFormat(groupedValues) {
 var choroplethTooltipFunc = function choroplethTooltipFunc(datum) {
   if (datum.noDataFound) {
     if (datum.noGeoDataFound) {
-      return 'No data found for ' + datum.name;
+      return 'No data found for Country';
     }
-    return datum.properties.name + '<br/>0 projects';
+    return datum.geoData.properties.name + '<br/>0 solutions';
   }
-  return datum.countryName + '<br/>' + datum.value + ' projects';
+  return datum.geoData.properties.name + '<br/>' + datum.value + ' solutions';
+};
+
+// A Project has multiple solutions
+// A solution is a Project in a country, eg: a Project in 3 countries is equivalent to 3 solutions
+var denormalizeProjectsIntoSolutions = function denormalizeProjectsIntoSolutions(projects) {
+  var solutions = [];
+  projects.forEach(function (p) {
+    if (p[_ColumnNames.ISO_3_COlUMN_NAME].length === 0) {
+      solutions.push(p);
+    } else {
+      p[_ColumnNames.ISO_3_COlUMN_NAME].forEach(function (isoCode) {
+        var solution = Object.assign({}, p, _defineProperty({}, _ColumnNames.ISO_3_COlUMN_NAME, isoCode));
+        solutions.push(solution);
+      });
+    }
+  });
+
+  return solutions;
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  var data = JEKYLL_DATA.projectsData.map(function (d, i) {
+  var projects = JEKYLL_DATA.projectsData.map(function (d, i) {
     return Object.assign({}, d, _defineProperty({}, _ColumnNames.SEARCH_REFERENCE_ID_COLUMN_NAME, i));
-  });
-  var totalProjects = data.length;
-  var totalPartners = Object.keys(_lodash2.default.groupBy(data, _ColumnNames.PARTNER_COLUMN_NAME)).length;
-  var totalMoney = formatters.bigCurrencyFormat(data.reduce(function (acc, next) {
+  }); //.filter((p) => p[REGION_COLUMN_NAME].indexOf('Latin') === -1) // Remove latin america to see how stacked bar chart looks
+  var solutions = denormalizeProjectsIntoSolutions(projects);
+  var totalSolutions = solutions.length;
+  var totalPartners = Object.keys(_lodash2.default.groupBy(projects, _ColumnNames.PARTNER_COLUMN_NAME)).length;
+  var totalMoney = formatters.bigCurrencyFormat(projects.reduce(function (acc, next) {
+    // Important that we iterate over 'projects' and not 'solutions', solutions would be double counting money
     var contractValue = Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
     if (isNaN(contractValue)) return acc;
     return acc + Number(next[_ColumnNames.CONTRACT_VALUE_COLUMN_NAME]);
   }, 0));
-  var projectsGroupedByCountry = _lodash2.default.pickBy(_lodash2.default.groupBy(data, 'ISO3 Code'), function (projects, iso3) {
-    return iso3 !== "" && iso3 !== "GBL" && iso3 !== "GLB" && iso3 !== "GLO";
+  var solutionsGroupedByCountry = _lodash2.default.groupBy(solutions, _ColumnNames.ISO_3_COlUMN_NAME);
+  var totalCountries = Object.keys(solutionsGroupedByCountry).filter(function (isoCode) {
+    return isoCode !== "";
+  }).length; // Don't include countries that are unknown or global
+  var projectsGroupedByRegion = _lodash2.default.groupBy(projects, _ColumnNames.REGION_COLUMN_NAME);
+  var solutionsGroupedByRegion = _lodash2.default.groupBy(solutions, _ColumnNames.REGION_COLUMN_NAME);
+  var countriesInRegions = _lodash2.default.mapValues(solutionsGroupedByRegion, function (sgbr) {
+    return _lodash2.default.uniqBy(sgbr, _ColumnNames.ISO_3_COlUMN_NAME).length;
   });
-  var totalCountries = Object.keys(projectsGroupedByCountry).length; // Don't include Global as a country
-  var projectsGroupedByRegion = _lodash2.default.groupBy(data, _ColumnNames.REGION_COLUMN_NAME);
-  var countriesInRegions = _lodash2.default.mapValues(projectsGroupedByRegion, function (projects) {
-    return _lodash2.default.uniqBy(projects, _ColumnNames.COUNTRY_COLUMN_NAME).length;
-  });
-  var dataDenormalizedByPracticeArea = denormalizePracticeAreas(data);
-  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(dataDenormalizedByPracticeArea, 'denormalizedPracticeArea');
-  var projectCountsForCountries = (0, _Reduce.reduceCountIncludeExtraData)(projectsGroupedByCountry, function (recordGroup) {
-    return { countryName: recordGroup[0][_ColumnNames.COUNTRY_COLUMN_NAME] };
-  });
-  var choroplethData = choroplethDataFormat(projectCountsForCountries);
+  var projectsDenormalizedByPracticeArea = denormalizePracticeAreas(projects);
+  var solutionsDenormalizedByPracticeArea = denormalizePracticeAreas(solutions);
+  var projectsGroupedByPracticeArea = _lodash2.default.groupBy(projectsDenormalizedByPracticeArea, 'denormalizedPracticeArea');
+  var solutionsGroupedByPracticeArea = _lodash2.default.groupBy(solutionsDenormalizedByPracticeArea, 'denormalizedPracticeArea');
+  var solutionCountsForCountries = (0, _Reduce.reduceCount)(solutionsGroupedByCountry);
+
+  var choroplethData = choroplethDataFormat(solutionCountsForCountries);
   var getCountryColor = function getCountryColor(datum) {
     return ChoroplethColorScale.getColorFor(datum.value);
   };
@@ -1886,10 +1931,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var pbpaPanel = _react2.default.createElement(_BreakdownPanel2.default, {
-    data: chartDataFormat((0, _Reduce.reduceCount)(projectsGroupedByPracticeArea)),
-    bigNumber: totalProjects,
+    data: chartDataFormat((0, _Reduce.reduceCount)(solutionsGroupedByPracticeArea)),
+    bigNumber: totalSolutions,
     colorPalette: _ColorPalette2.default,
-    title: 'Projects',
+    title: 'Solutions',
     groupTitle: 'Practice Area'
   });
   var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
@@ -1904,7 +1949,7 @@ document.addEventListener('DOMContentLoaded', function () {
     _reactSizebox2.default,
     { className: 'stacked-bar-chart-sizebox' },
     _react2.default.createElement(_StackedBarChart2.default, {
-      data: dataDenormalizedByPracticeArea,
+      data: projectsDenormalizedByPracticeArea,
       xAxisDataKey: _ColumnNames.REGION_COLUMN_NAME,
       stackDataKey: 'denormalizedPracticeArea',
       colorPalette: _ColorPalette2.default,
@@ -1914,7 +1959,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   );
 
-  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalProjects, duration: 3 }), document.getElementById('projects-count'));
+  _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalSolutions, duration: 3 }), document.getElementById('projects-count'));
 
   _reactDom2.default.render(_react2.default.createElement(_reactCountup2.default, { start: 0, end: totalCountries, duration: 3 }), document.getElementById('countries-count'));
 
@@ -1932,7 +1977,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(stackedBarChart, document.getElementById('contract-value'));
 
-  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: data }), document.getElementById('project-search'));
+  _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: projects }), document.getElementById('project-search'));
 });
 
 });
