@@ -1,5 +1,5 @@
 ---
-title: Evaluation Of Bolivia's Cathol
+title: Evaluation of Bolivia's Catholic University's Master's Program
 Project Title: Evaluation of Bolivia's Catholic University's Master's Program
 Start Year: '1997'
 End Year: '1997'

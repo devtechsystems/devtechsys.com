@@ -1,5 +1,6 @@
 ---
-title: Evaluation And Close Out Of Th
+title: Evaluation and Close-Out of the USAID/Zimbabwe Private Sector Investment
+  Program
 Project Title: Evaluation and Close-Out of the USAID/Zimbabwe Private Sector Investment
   Program
 Start Year: '2001'

@@ -1,5 +1,5 @@
 ---
-title: Improved Basic Education Throu
+title: Improved Basic Education through Private-Sector Sponsorship of Public
 Project Title: Improved Basic Education through Private-Sector Sponsorship of Public
   Schools
 Start Year: '2002'

@@ -1,5 +1,6 @@
 ---
-title: Economic Assessment Center Fo
+title: Economic Assessment, Center for the Administration of Justice in Latin
+  America
 Project Title: Economic Assessment, Center for the Administration of Justice in Latin
   America
 Start Year: '1986'

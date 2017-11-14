@@ -1,5 +1,5 @@
 ---
-title: Guatemala Decentralization And
+title: Guatemala Decentralization and Local Governance
 Project Title: Guatemala Decentralization and Local Governance
 Start Year: '2005'
 End Year: '2009'

@@ -1,5 +1,5 @@
 ---
-title: Educational Technology Assessm
+title: Educational Technology Assessment for the Foreign Service Institute
 Project Title: Educational Technology Assessment for the Foreign Service Institute
 Start Year: '2013'
 End Year: '2014'

@@ -1,5 +1,6 @@
 ---
-title: Evaluation Of The Bureau Of So
+title: Evaluation of the Bureau of South and Central Asian Affairs’ Women’s
+  Economic Symposium (WES) Initiative
 Project Title: Evaluation of the Bureau of South and Central Asian Affairs’ Women’s
   Economic Symposium (WES) Initiative
 Start Year: '2013'

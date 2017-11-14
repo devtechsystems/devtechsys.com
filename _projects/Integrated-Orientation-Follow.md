@@ -1,5 +1,6 @@
 ---
-title: Integrated Orientation Follow
+title: Integrated Orientation, Follow-on, & Evaluation Program for Participant
+  Training in Egypt
 Project Title: Integrated Orientation, Follow-on, & Evaluation Program for Participant
   Training in Egypt
 Start Year: '1992'

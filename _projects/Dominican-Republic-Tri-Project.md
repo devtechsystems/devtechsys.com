@@ -1,5 +1,5 @@
 ---
-title: Dominican Republic Tri Project
+title: Dominican Republic Tri-Project Evaluation
 Project Title: Dominican Republic Tri-Project Evaluation
 Start Year: '2012'
 End Year: '2013'

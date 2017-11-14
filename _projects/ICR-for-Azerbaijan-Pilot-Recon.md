@@ -1,5 +1,5 @@
 ---
-title: Icr For Azerbaijan Pilot Recon
+title: ICR for Azerbaijan Pilot Reconstruction Project
 Project Title: ICR for Azerbaijan Pilot Reconstruction Project
 Start Year: '2005'
 End Year: '2005'

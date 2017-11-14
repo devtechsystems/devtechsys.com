@@ -1,5 +1,5 @@
 ---
-title: Elimination Of The Worst Forms
+title: Elimination of the Worst Forms of Child Labor in Colombia
 Project Title: Elimination of the Worst Forms of Child Labor in Colombia
 Start Year: '2007'
 End Year: '2011'

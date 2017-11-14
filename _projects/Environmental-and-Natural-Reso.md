@@ -1,5 +1,5 @@
 ---
-title: Environmental And Natural Reso
+title: Environmental and Natural Resources Information System (ENRIS)
 Project Title: Environmental and Natural Resources Information System (ENRIS)
 Start Year: '1994'
 End Year: '1997'

@@ -1,5 +1,5 @@
 ---
-title: Eddata Ii
+title: EdData II
 Project Title: EdData II
 Start Year: '2004'
 End Year: '2009'

@@ -1,5 +1,5 @@
 ---
-title: Electronic Communications And
+title: Electronic Communications and Dissemination System (TradeNet)
 Project Title: Electronic Communications and Dissemination System (TradeNet)
 Start Year: '1995'
 End Year: '1996'

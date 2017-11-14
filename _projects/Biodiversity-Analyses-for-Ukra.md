@@ -1,5 +1,5 @@
 ---
-title: Biodiversity Analyses For Ukra
+title: Biodiversity Analyses for Ukraine, Belarus, and Moldova
 Project Title: Biodiversity Analyses for Ukraine, Belarus, and Moldova
 Start Year: '2006'
 End Year: '2007'

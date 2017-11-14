@@ -1,5 +1,5 @@
 ---
-title: Assistance To Environmental Ma
+title: Assistance to Environmental Management in Enterprises in the NIS
 Project Title: Assistance to Environmental Management in Enterprises in the NIS
 Start Year: '1998'
 End Year: '2001'

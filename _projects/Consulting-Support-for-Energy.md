@@ -1,5 +1,5 @@
 ---
-title: Consulting Support For Energy
+title: Consulting Support for Energy Training, MCC
 Project Title: Consulting Support for Energy Training, MCC
 Start Year: '2015'
 End Year: '2016'

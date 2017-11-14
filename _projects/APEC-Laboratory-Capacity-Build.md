@@ -1,5 +1,5 @@
 ---
-title: Apec Laboratory Capacity Build
+title: APEC Laboratory Capacity Building Evaluation
 Project Title: APEC Laboratory Capacity Building Evaluation
 Start Year: '2014'
 End Year: '2015'

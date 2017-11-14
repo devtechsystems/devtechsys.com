@@ -1,5 +1,5 @@
 ---
-title: Ghana Partnership For Accounta
+title: Ghana Partnership for Accountable Governance in Education
 Project Title: Ghana Partnership for Accountable Governance in Education
 Start Year: '2010'
 End Year: '2014'

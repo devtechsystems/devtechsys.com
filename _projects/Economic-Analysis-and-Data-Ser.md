@@ -1,5 +1,5 @@
 ---
-title: Economic Analysis And Data Ser
+title: Economic Analysis and Data Services (EADS II)
 Project Title: Economic Analysis and Data Services (EADS II)
 Start Year: '2012'
 End Year: '2018'

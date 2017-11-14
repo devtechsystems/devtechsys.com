@@ -1,5 +1,5 @@
 ---
-title: Lebanon Security Assistance Pr
+title: Lebanon Security Assistance Program - Evaluation and Monitoring Services
 Project Title: Lebanon Security Assistance Program - Evaluation and Monitoring Services
 Start Year: '2014'
 End Year: '2015'

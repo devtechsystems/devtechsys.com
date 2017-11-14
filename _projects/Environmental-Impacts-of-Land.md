@@ -1,5 +1,6 @@
 ---
-title: Environmental Impacts Of Land
+title: 'Environmental Impacts of Land Privatization in Selected Countries
+  of Eastern Europe and Eurasia: An Assessment of Priority Issues'
 Project Title: 'Environmental Impacts of Land Privatization in Selected Countries
   of Eastern Europe and Eurasia: An Assessment of Priority Issues'
 Start Year: '2002'

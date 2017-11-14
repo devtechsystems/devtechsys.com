@@ -1,5 +1,5 @@
 ---
-title: Basic Education Project Evalua
+title: 'Basic Education Project Evaluation: Honduras'
 Project Title: 'Basic Education Project Evaluation: Honduras'
 Start Year: '1995'
 End Year: '1996'

@@ -1,5 +1,5 @@
 ---
-title: Accelerated Microenterprise Ad
+title: Accelerated Microenterprise Advancement Project
 Project Title: Accelerated Microenterprise Advancement Project
 Start Year: '2002'
 End Year: '2006'

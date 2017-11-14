@@ -1,5 +1,5 @@
 ---
-title: Environmental Technology Netwo
+title: Environmental Technology Network for Asia (ETNA)
 Project Title: Environmental Technology Network for Asia (ETNA)
 Start Year: '1994'
 End Year: '1999'

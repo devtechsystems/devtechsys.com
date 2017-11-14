@@ -1,5 +1,5 @@
 ---
-title: Development Information Servic
+title: Development Information Services (DIS)
 Project Title: Development Information Services (DIS)
 Start Year: '2001'
 End Year: '2006'

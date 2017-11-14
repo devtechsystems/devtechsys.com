@@ -1,5 +1,5 @@
 ---
-title: Kosovo Private Enterprise Prog
+title: Kosovo Private Enterprise Program
 Project Title: Kosovo Private Enterprise Program
 Start Year: '2008'
 End Year: '2012'

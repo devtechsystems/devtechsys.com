@@ -1,5 +1,5 @@
 ---
-title: Early Childhood Education Prog
+title: Early Childhood Education Program Evaluation
 Project Title: Early Childhood Education Program Evaluation
 Start Year: '2007'
 End Year: '2007'

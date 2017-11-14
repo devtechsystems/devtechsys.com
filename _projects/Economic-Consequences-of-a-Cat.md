@@ -1,5 +1,5 @@
 ---
-title: Economic Consequences Of A Cat
+title: Economic Consequences of a Catastrophic Earthquake
 Project Title: Economic Consequences of a Catastrophic Earthquake
 Start Year: '1989'
 End Year: '1991'

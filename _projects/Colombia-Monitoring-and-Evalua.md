@@ -1,5 +1,5 @@
 ---
-title: Colombia Monitoring And Evalua
+title: Colombia Monitoring and Evaluation Program
 Project Title: Colombia Monitoring and Evaluation Program
 Start Year: '2010'
 End Year: '2014'

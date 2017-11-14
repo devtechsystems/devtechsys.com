@@ -1,5 +1,5 @@
 ---
-title: Ambassador's Girls' Scholarshi
+title: Ambassador’s Girls’ Scholarship Program
 Project Title: Ambassador’s Girls’ Scholarship Program
 Start Year: '2003'
 End Year: '2008'

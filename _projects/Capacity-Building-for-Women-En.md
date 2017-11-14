@@ -1,5 +1,5 @@
 ---
-title: Capacity Building For Women En
+title: Capacity Building for Women Entrepreneurs in Accessing Public Procurement
 Project Title: Capacity Building for Women Entrepreneurs in Accessing Public Procurement
 Start Year: '2016'
 End Year: '2016'

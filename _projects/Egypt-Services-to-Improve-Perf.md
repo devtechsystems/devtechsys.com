@@ -1,5 +1,6 @@
 ---
-title: Egypt Services To Improve Perf
+title: Egypt Services to Improve Performance Management, Enhance Learning
+  and Evaluation (SIMPLE) IDIQ Contract
 Project Title: Egypt Services to Improve Performance Management, Enhance Learning
   and Evaluation (SIMPLE) IDIQ Contract
 Start Year: '2015'

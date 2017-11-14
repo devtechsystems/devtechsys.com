@@ -1,5 +1,5 @@
 ---
-title: Evaluation Of The Usaidzambia
+title: Evaluation of the USAID/Zambia's Education Program
 Project Title: Evaluation of the USAID/Zambia's Education Program
 Start Year: '2003'
 End Year: '2009'

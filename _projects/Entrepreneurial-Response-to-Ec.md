@@ -1,5 +1,5 @@
 ---
-title: Entrepreneurial Response To Ec
+title: Entrepreneurial Response to Economic Liberalization
 Project Title: Entrepreneurial Response to Economic Liberalization
 Start Year: '1993'
 End Year: '1994'

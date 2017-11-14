@@ -1,5 +1,5 @@
 ---
-title: Internal Efficiency Of The Jud
+title: Internal Efficiency of the Judiciary System
 Project Title: Internal Efficiency of the Judiciary System
 Start Year: '1986'
 End Year: '1986'

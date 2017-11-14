@@ -1,5 +1,5 @@
 ---
-title: Accounting Certification And E
+title: Accounting Certification and Education Program (ACEP)
 Project Title: Accounting Certification and Education Program (ACEP)
 Start Year: '2007'
 End Year: '2010'

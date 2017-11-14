@@ -1,5 +1,5 @@
 ---
-title: Curriculum Development Assessm
+title: Curriculum Development Assessment for the Foreign Service Institute
 Project Title: Curriculum Development Assessment for the Foreign Service Institute
 Start Year: '2013'
 End Year: '2013'

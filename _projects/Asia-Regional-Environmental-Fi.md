@@ -1,5 +1,5 @@
 ---
-title: Asia Regional Environmental Fi
+title: Asia Regional Environmental Field Support (AREFS)
 Project Title: Asia Regional Environmental Field Support (AREFS)
 Start Year: '2011'
 End Year: '2013'

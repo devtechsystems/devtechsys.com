@@ -1,5 +1,5 @@
 ---
-title: Center For Trade And Investmen
+title: Center for Trade and Investment Services (CTIS)
 Project Title: Center for Trade and Investment Services (CTIS)
 Start Year: '1994'
 End Year: '1998'

@@ -1,5 +1,5 @@
 ---
-title: Community Action For Reading A
+title: Community Action for Reading and Security (CARS) Activity in Nicaragua
 Project Title: Community Action for Reading and Security (CARS) Activity in Nicaragua
 Start Year: '2013'
 End Year: '2019'

@@ -1,5 +1,5 @@
 ---
-title: Jordan Fiscal Reform And Publi
+title: Jordan Fiscal Reform and Public Financial Management (FRPFM)
 Project Title: Jordan Fiscal Reform and Public Financial Management (FRPFM)
 Start Year: '2016'
 End Year: '2020'

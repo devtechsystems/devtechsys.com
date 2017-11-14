@@ -1,5 +1,5 @@
 ---
-title: Justice Administration And Leg
+title: Justice Administration and Legal Systems
 Project Title: Justice Administration and Legal Systems
 Start Year: '1986'
 End Year: '1986'

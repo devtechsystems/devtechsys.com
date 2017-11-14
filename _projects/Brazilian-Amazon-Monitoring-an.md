@@ -1,5 +1,5 @@
 ---
-title: Brazilian Amazon Monitoring An
+title: Brazilian Amazon Monitoring and Evaluation (BAME) Program
 Project Title: Brazilian Amazon Monitoring and Evaluation (BAME) Program
 Start Year: '2017'
 End Year: '2018'

@@ -1,5 +1,6 @@
 ---
-title: Institutional Reform And Restr
+title: Institutional Reform and Restructure of the Regional Administration
+  of the National Authority of the Environment of the Government of Panama
 Project Title: Institutional Reform and Restructure of the Regional Administration
   of the National Authority of the Environment of the Government of Panama
 Start Year: '2000'

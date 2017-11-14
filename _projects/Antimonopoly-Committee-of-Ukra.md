@@ -1,5 +1,6 @@
 ---
-title: Antimonopoly Committee Of Ukra
+title: Antimonopoly Committee of Ukraine/ Antitrust/Consumer Protection in
+  the Newly Independent States
 Project Title: Antimonopoly Committee of Ukraine/ Antitrust/Consumer Protection in
   the Newly Independent States
 Start Year: '1997'

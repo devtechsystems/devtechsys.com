@@ -1,5 +1,5 @@
 ---
-title: Evaluation Of Enterprise Funds
+title: Evaluation of Enterprise Funds and Legacy Foundation
 Project Title: Evaluation of Enterprise Funds and Legacy Foundation
 Start Year: '2016'
 End Year: '2017'

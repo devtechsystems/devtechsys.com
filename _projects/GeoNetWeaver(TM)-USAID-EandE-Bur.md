@@ -1,5 +1,6 @@
 ---
-title: Geonetweaver(tm) Usaid Eande Bur
+title: 'GeoNetWeaver(TM) USAID E&E Bureau SO 1.6 model : an application in
+  results-oriented planning and monitoring'
 Project Title: 'GeoNetWeaver(TM) USAID E&E Bureau SO 1.6 model : an application in
   results-oriented planning and monitoring'
 Start Year: '2001'

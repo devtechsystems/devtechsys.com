@@ -1,5 +1,5 @@
 ---
-title: Eb Fiscal Transparency Innovat
+title: EB Fiscal Transparency Innovation Fund
 Project Title: EB Fiscal Transparency Innovation Fund
 Start Year: '2016'
 End Year: '2017'

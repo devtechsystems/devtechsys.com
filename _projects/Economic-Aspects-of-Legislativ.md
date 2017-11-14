@@ -1,5 +1,5 @@
 ---
-title: Economic Aspects Of Legislativ
+title: Economic Aspects of Legislative Processes
 Project Title: Economic Aspects of Legislative Processes
 Start Year: '1989'
 End Year: '1989'

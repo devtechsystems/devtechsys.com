@@ -1,5 +1,5 @@
 ---
-title: Development Of Investment Vehi
+title: Development of Investment Vehicles in Russia
 Project Title: Development of Investment Vehicles in Russia
 Start Year: '1996'
 End Year: '1997'

@@ -1,5 +1,5 @@
 ---
-title: Education Training And Human
+title: Education, Training, and Human Resource Development (IDIQ)
 Project Title: Education, Training, and Human Resource Development (IDIQ)
 Start Year: '1993'
 End Year: '1998'

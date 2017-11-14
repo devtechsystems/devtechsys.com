@@ -1,5 +1,5 @@
 ---
-title: Economic And Social Data Servi
+title: Economic and Social Data Services (ESDS)
 Project Title: Economic and Social Data Services (ESDS)
 Start Year: '1995'
 End Year: '2001'

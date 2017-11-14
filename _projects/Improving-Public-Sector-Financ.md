@@ -1,5 +1,5 @@
 ---
-title: Improving Public Sector Financ
+title: Improving Public Sector Financial Accounts
 Project Title: Improving Public Sector Financial Accounts
 Start Year: '1991'
 End Year: '1991'

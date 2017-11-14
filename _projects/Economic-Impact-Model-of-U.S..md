@@ -1,5 +1,5 @@
 ---
-title: Economic Impact Model Of U.s.
+title: Economic Impact Model of U.S. Small Business Administration
 Project Title: Economic Impact Model of U.S. Small Business Administration
 Start Year: '2001'
 End Year: '2002'

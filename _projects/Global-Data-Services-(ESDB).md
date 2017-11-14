@@ -1,6 +1,6 @@
 ---
-title: Global Data Services (edsb)
-Project Title: Global Data Services  (EDSB)
+title: Global Data Services  (ESDB)
+Project Title: Global Data Services  (ESDB)
 Start Year: '2006'
 End Year: '2007'
 ISO3 Code:

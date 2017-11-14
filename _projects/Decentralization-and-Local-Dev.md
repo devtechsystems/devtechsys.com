@@ -1,5 +1,5 @@
 ---
-title: Decentralization And Local Dev
+title: Decentralization and Local Development in Latin America and the Caribbean
 Project Title: Decentralization and Local Development in Latin America and the Caribbean
 Start Year: '1999'
 End Year: '1999'

@@ -1,5 +1,5 @@
 ---
-title: Health Care And Social Securit
+title: Health Care and Social Security
 Project Title: Health Care and Social Security
 Start Year: '1987'
 End Year: '1988'

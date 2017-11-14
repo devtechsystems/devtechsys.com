@@ -1,5 +1,6 @@
 ---
-title: Evaluation Of The Effectivenes
+title: Evaluation of the Effectiveness of PRM-Supported Programs to Build
+  the Capacity of Colombian Municipal Authorities to Assist Internally Displaced Persons
 Project Title: Evaluation of the Effectiveness of PRM-Supported Programs to Build
   the Capacity of Colombian Municipal Authorities to Assist Internally Displaced Persons
 Start Year: '2015'

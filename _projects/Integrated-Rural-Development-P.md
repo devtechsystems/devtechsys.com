@@ -1,5 +1,5 @@
 ---
-title: Integrated Rural Development P
+title: Integrated Rural Development Program
 Project Title: Integrated Rural Development Program
 Start Year: '1984'
 End Year: '1984'

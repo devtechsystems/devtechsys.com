@@ -1,5 +1,5 @@
 ---
-title: Egypt Trade Development Center
+title: Egypt Trade Development Center's ExpoLink
 Project Title: Egypt Trade Development Center's ExpoLink
 Start Year: '1998'
 End Year: '1999'

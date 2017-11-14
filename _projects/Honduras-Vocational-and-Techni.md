@@ -1,5 +1,5 @@
 ---
-title: Honduras Vocational And Techni
+title: Honduras Vocational and Technical Training Centers
 Project Title: Honduras Vocational and Technical Training Centers
 Start Year: '2000'
 End Year: '2002'

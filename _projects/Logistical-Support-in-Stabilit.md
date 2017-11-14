@@ -1,5 +1,5 @@
 ---
-title: Logistical Support In Stabilit
+title: Logistical Support in Stability Pact Countries
 Project Title: Logistical Support in Stability Pact Countries
 Start Year: '2001'
 End Year: '2002'

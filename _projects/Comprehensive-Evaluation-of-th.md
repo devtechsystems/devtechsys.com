@@ -1,5 +1,6 @@
 ---
-title: Comprehensive Evaluation Of Th
+title: Comprehensive Evaluation of the Bureau of Counterterrorism (CT) Antiterrorism
+  Assistance (ATA) Program (Indonesia)
 Project Title: Comprehensive Evaluation of the Bureau of Counterterrorism (CT) Antiterrorism
   Assistance (ATA) Program (Indonesia)
 Start Year: '2015'

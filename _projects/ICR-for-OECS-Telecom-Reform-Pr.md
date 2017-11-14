@@ -1,5 +1,5 @@
 ---
-title: Icr For Oecs Telecom Reform Pr
+title: ICR for OECS Telecom Reform Project
 Project Title: ICR for OECS Telecom Reform Project
 Start Year: '2005'
 End Year: '2005'

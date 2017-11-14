@@ -1,5 +1,5 @@
 ---
-title: Evaluation For Power Sector Pr
+title: Evaluation for Power Sector Program (PSP)
 Project Title: Evaluation for Power Sector Program (PSP)
 Start Year: '2015'
 End Year: '2016'

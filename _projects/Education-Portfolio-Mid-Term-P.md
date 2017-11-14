@@ -1,5 +1,5 @@
 ---
-title: Education Portfolio Mid Term P
+title: Education Portfolio Mid-Term Performance Review
 Project Title: Education Portfolio Mid-Term Performance Review
 Start Year: '2012'
 End Year: '2013'

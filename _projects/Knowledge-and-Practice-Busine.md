@@ -1,5 +1,5 @@
 ---
-title: Knowledge And Practice Busine
+title: 'Knowledge and Practice: Business Development Services'
 Project Title: 'Knowledge and Practice: Business Development Services'
 Start Year: '2004'
 End Year: '2006'

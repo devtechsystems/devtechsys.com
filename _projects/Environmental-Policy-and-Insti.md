@@ -1,5 +1,5 @@
 ---
-title: Environmental Policy And Insti
+title: Environmental Policy and Institutional Strength II IQC
 Project Title: Environmental Policy and Institutional Strength II IQC
 Start Year: '2004'
 End Year: '2009'

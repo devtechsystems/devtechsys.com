@@ -1,5 +1,5 @@
 ---
-title: Girls' And Women's Education
+title: Girls' and Women's Education
 Project Title: Girls' and Women's Education
 Start Year: '1997'
 End Year: '2003'

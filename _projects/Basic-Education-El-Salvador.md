@@ -1,5 +1,5 @@
 ---
-title: Basic Education El Salvador
+title: Basic Education - El Salvador
 Project Title: Basic Education - El Salvador
 Start Year: '1989'
 End Year: '1989'

@@ -1,5 +1,5 @@
 ---
-title: Component Of The Project On Co
+title: Component of the Project on Competition, Laws, and Regulations
 Project Title: Component of the Project on Competition, Laws, and Regulations
 Start Year: '1995'
 End Year: '1995'

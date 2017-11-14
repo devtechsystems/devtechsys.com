@@ -1,5 +1,6 @@
 ---
-title: Esea Title Vii Educational Ser
+title: ESEA Title VII Educational Services Provided for Secondary School Limited
+  English Proficient Students
 Project Title: ESEA Title VII Educational Services Provided for Secondary School Limited
   English Proficient Students
 Start Year: '1994'

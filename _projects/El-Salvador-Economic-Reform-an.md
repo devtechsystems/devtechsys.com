@@ -1,5 +1,5 @@
 ---
-title: El Salvador Economic Reform An
+title: El Salvador Economic Reform and Civil Society
 Project Title: El Salvador Economic Reform and Civil Society
 Start Year: '1997'
 End Year: '2002'

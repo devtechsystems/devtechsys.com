@@ -1,5 +1,5 @@
 ---
-title: Improved Quality Of Education
+title: Improved Quality of Education Activity
 Project Title: Improved Quality of Education Activity
 Start Year: '2003'
 End Year: '2006'

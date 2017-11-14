@@ -1,5 +1,5 @@
 ---
-title: Assessment Of Usaid Civil Soci
+title: Assessment of USAID Civil Society Program in the Dominican Republic
 Project Title: Assessment of USAID Civil Society Program in the Dominican Republic
 Start Year: '2001'
 End Year: '2002'

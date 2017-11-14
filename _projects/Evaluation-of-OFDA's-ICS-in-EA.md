@@ -1,5 +1,5 @@
 ---
-title: Evaluation Of Ofda's Ics In Ea
+title: Evaluation of OFDA's ICS in EAP
 Project Title: Evaluation of OFDA's ICS in EAP
 Start Year: '2016'
 End Year: '2017'

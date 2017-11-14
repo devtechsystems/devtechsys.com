@@ -1,5 +1,5 @@
 ---
-title: Governance Study And Capacity
+title: Governance Study and Capacity Building for Administrative Reform
 Project Title: Governance Study and Capacity Building for Administrative Reform
 Start Year: '2002'
 End Year: '2002'

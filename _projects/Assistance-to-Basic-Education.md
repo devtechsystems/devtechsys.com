@@ -1,5 +1,5 @@
 ---
-title: Assistance To Basic Education
+title: 'Assistance to Basic Education: All Children Reading (IDIQ)'
 Project Title: 'Assistance to Basic Education: All Children Reading (IDIQ)'
 Start Year: '2014'
 End Year: '2019'
