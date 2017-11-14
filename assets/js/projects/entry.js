@@ -38,7 +38,7 @@ const denormalizePracticeAreas = (data) => {
   })
   .map(project => Object.assign({}, project, { denormalizedPracticeArea: 'None' }))
 
-  return denormalizedData.concat(nonePracticeAreas)
+  return denormalizedData // .concat(nonePracticeAreas) // Unecessary to include None as a practice area
 }
 
 const chartDataFormat = (groupedValues) => {
@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const totalSolutions = solutions.length
   const totalPartners = Object.keys(lodash.groupBy(projects, PARTNER_COLUMN_NAME)).length
   const totalMoney = formatters.bigCurrencyFormat(projects.reduce((acc, next) => {
+    // Important that we iterate over 'projects' and not 'solutions', solutions would be double counting money
     const contractValue = Number(next[CONTRACT_VALUE_COLUMN_NAME])
     if(isNaN(contractValue)) return acc
     return acc + Number(next[CONTRACT_VALUE_COLUMN_NAME])

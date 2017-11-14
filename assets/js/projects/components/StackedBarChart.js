@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Brush } from 'recharts'
 import lodash from 'lodash'
 import { reduceSum } from '../util/Reduce'
 import { PRACTICE_AREAS } from '../ColumnNames'
@@ -24,15 +24,21 @@ const addWhiteTopBorders = () => {
     return dashArray
   })
   .attr('stroke', 'white')
-  .attr('stroke-width', '4px')
+  .attr('stroke-width', '2px')
 }
 
-const TooltipContent = function({ active, type, payload, label, xAxisDataKey, colorMapper, tooltipValueFormatter }) {
+const TooltipContent = function({ active, type, payload, label, xAxisDataKey, colorMapper, tooltipValueFormatter, showTotal }) {
   if(!active) return null
   const hoverData = payload[0].payload
   const xAxisValue = hoverData[xAxisDataKey]
   const stackData = Object.keys(hoverData).sort(sortStringsAsc)
     .filter((key) => key !== xAxisDataKey)
+    .filter((key) => {
+      if (!showTotal) {
+        return key !== 'Total'
+      }
+      return key === 'Total'
+    })
     .map((stackDataName) => {
       return { 
         name: stackDataName,
@@ -73,7 +79,7 @@ export default class StackedBarChart extends Component {
   }
 
   render() {
-    const { width, height, data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value', tickFormatter, tooltipValueFormatter } = this.props
+    const { width, height, data, xAxisDataKey, stackDataKey, colorPalette, valueKey = 'value', tickFormatter, tooltipValueFormatter, showTotal = false } = this.props
     const colorsDarkToLight = colorPalette.colors.slice(0).reverse() // Clone then reverse
     const xGrouping = lodash.groupBy(data, xAxisDataKey)
     const xGroupingWithSums = lodash.mapValues(xGrouping, (collectionForXGroup) => {
@@ -81,7 +87,14 @@ export default class StackedBarChart extends Component {
       const stackGroupingWithSums = reduceSum(stackGrouping, valueKey)
       return stackGroupingWithSums
     })
-    const flattenedGroupings = Object.entries(xGroupingWithSums).map(([xName, stackGrouping]) => Object.assign({ [xAxisDataKey]: xName }, stackGrouping))
+    const xGroupingSumsTotalled = lodash.mapValues(xGroupingWithSums, (sumObject) => {
+      const total = Object.keys(sumObject).reduce((accumulator, sumKey) => accumulator += sumObject[sumKey], 0)
+      return total
+    })
+    const xAxisGroupedByTotals = lodash.invert(xGroupingSumsTotalled)
+    const xAxisDataKeyForSorting = xAxisDataKey + '-sort-key'
+    const flattenedGroupings = Object.entries(xGroupingWithSums).map(([xName, stackGrouping]) => Object.assign({ [xAxisDataKey]: xName }, stackGrouping, { Total: xGroupingSumsTotalled[xName]})).sort((a, b) => b.Total - a.Total)
+
     const stackDataNamesAsc = lodash.uniqBy(data, stackDataKey)
     .map((d) => d[stackDataKey])
     .sort(sortStringsAsc)
@@ -107,11 +120,11 @@ export default class StackedBarChart extends Component {
     return (
       <BarChart width={width} height={height} data={flattenedGroupings} margin={{top: 20, right: 0, bottom: 0, left: -20}}>
         <CartesianGrid vertical={false} strokeDasharray="1 1" strokeWidth={2} />
-        <XAxis dataKey={xAxisDataKey} interval={0} />
+        <XAxis dataKey={xAxisDataKey} interval={0}/>
         <YAxis tickFormatter={tickFormatter} />
         <Tooltip 
           cursor={{ stroke: '#ddd', strokeWidth: 1, fill: 'none' }} 
-          content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} tooltipValueFormatter={tooltipValueFormatter} />} 
+          content={<TooltipContent colorMapper={colorMapper} xAxisDataKey={xAxisDataKey} tooltipValueFormatter={tooltipValueFormatter} showTotal={showTotal} />} 
         />
         <Legend iconType='circle' payload={legendData} />
       {stackedBar}
