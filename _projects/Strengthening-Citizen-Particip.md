@@ -1,5 +1,5 @@
 ---
-title: Strengthening Citizen Particip
+title: Strengthening Citizen Participation
 Project Title: Strengthening Citizen Participation
 Start Year: '1998'
 End Year: '1998'

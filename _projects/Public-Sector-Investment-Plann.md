@@ -1,5 +1,5 @@
 ---
-title: Public Sector Investment Plann
+title: Public-Sector Investment Planning
 Project Title: Public-Sector Investment Planning
 Start Year: '1989'
 End Year: '1990'

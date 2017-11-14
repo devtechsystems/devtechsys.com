@@ -1,5 +1,5 @@
 ---
-title: Ruta Social
+title: RUTA Social
 Project Title: RUTA Social
 Start Year: '1996'
 End Year: '1996'

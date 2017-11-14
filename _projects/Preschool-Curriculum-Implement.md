@@ -1,5 +1,5 @@
 ---
-title: Preschool Curriculum Implement
+title: Preschool Curriculum Implementation and Validation Plan
 Project Title: Preschool Curriculum Implementation and Validation Plan
 Start Year: '2001'
 End Year: '2001'

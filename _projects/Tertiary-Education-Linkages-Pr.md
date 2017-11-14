@@ -1,5 +1,5 @@
 ---
-title: Tertiary Education Linkages Pr
+title: Tertiary Education Linkages Project (TELP)
 Project Title: Tertiary Education Linkages Project (TELP)
 Start Year: '1995'
 End Year: '2000'

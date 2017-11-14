@@ -1,5 +1,5 @@
 ---
-title: Primary And Secondary Educatio
+title: Primary and Secondary Education
 Project Title: Primary and Secondary Education
 Start Year: '1987'
 End Year: '1988'

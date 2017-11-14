@@ -1,5 +1,6 @@
 ---
-title: Mid Term Evaluation Of The Usa
+title: Mid-term Evaluation of the USAID NARP II (National Agricultural Research
+  Project)
 Project Title: Mid-term Evaluation of the USAID NARP II (National Agricultural Research
   Project)
 Start Year: '1995'

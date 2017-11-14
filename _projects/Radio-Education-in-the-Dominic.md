@@ -1,5 +1,5 @@
 ---
-title: Radio Education In The Dominic
+title: Radio Education In The Dominican Republic
 Project Title: Radio Education in the Dominican Republic
 Start Year: '1985'
 End Year: '1985'

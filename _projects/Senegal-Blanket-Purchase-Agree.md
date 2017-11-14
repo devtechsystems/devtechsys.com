@@ -1,5 +1,5 @@
 ---
-title: Senegal Blanket Purchase Agree
+title: Senegal Blanket Purchase Agreement
 Project Title: Senegal Blanket Purchase Agreement
 Start Year: '2010'
 End Year: '2015'

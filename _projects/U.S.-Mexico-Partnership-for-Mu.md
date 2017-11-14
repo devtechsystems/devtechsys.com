@@ -1,10 +1,10 @@
 ---
-title: U.S. Mexico Partnership For Mu
+title: U.S. Mexico Partnership for Municipal Development
 Practice Area:
 - Monitoring and Evaluation
 - Public Financial Management and Fiscal Sustainability
 Region: Latin America and the Caribbean
-Project Title: U.S.-Mexico Partnership for Municipal Development
+Project Title: U.S. Mexico Partnership for Municipal Development
 Start Year: 2002
 End Year: 2003
 ISO3 Code:

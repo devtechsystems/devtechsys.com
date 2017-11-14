@@ -1,5 +1,5 @@
 ---
-title: Support For The Service Delive
+title: Support for the Service Delivery Integration (SSDI) Activity Evaluation
 Project Title: Support for the Service Delivery Integration (SSDI) Activity Evaluation
 Start Year: '2011'
 End Year: '2016'

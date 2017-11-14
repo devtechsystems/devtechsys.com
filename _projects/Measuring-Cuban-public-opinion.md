@@ -1,5 +1,5 @@
 ---
-title: Measuring Cuban Public Opinion
+title: 'Measuring Cuban public opinion: project report'
 Project Title: 'Measuring Cuban public opinion: project report'
 Start Year: '1999'
 End Year: '1999'

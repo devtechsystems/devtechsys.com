@@ -1,5 +1,5 @@
 ---
-title: Managing Natural Resource Weal
+title: Managing Natural Resource Wealth Topical Trust Fund
 Project Title: Managing Natural Resource Wealth Topical Trust Fund
 Start Year: '2014'
 End Year: '2015'

@@ -1,5 +1,5 @@
 ---
-title: Radio Education In Honduras
+title: Radio Education in Honduras
 Project Title: Radio Education in Honduras
 Start Year: '1990'
 End Year: '1990'

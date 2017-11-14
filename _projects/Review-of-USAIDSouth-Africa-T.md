@@ -1,5 +1,5 @@
 ---
-title: Review Of Usaidsouth Africa T
+title: Review of USAID/South Africa Training Program
 Project Title: Review of USAID/South Africa Training Program
 Start Year: '1992'
 End Year: '1992'

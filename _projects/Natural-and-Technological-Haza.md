@@ -1,5 +1,5 @@
 ---
-title: Natural And Technological Haza
+title: Natural and Technological Hazards
 Project Title: Natural and Technological Hazards
 Start Year: '1989'
 End Year: '1991'

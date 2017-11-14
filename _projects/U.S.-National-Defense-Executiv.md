@@ -1,5 +1,5 @@
 ---
-title: U.S. National Defense Executiv
+title: U.S. National Defense Executive Reserve
 Practice Area:
 - Knowledge Management and Data Analytics
 Region: North America

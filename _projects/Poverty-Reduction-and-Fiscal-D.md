@@ -1,5 +1,5 @@
 ---
-title: Poverty Reduction And Fiscal D
+title: Poverty Reduction and Fiscal Decentralization
 Project Title: Poverty Reduction and Fiscal Decentralization
 Start Year: '2000'
 End Year: '2000'

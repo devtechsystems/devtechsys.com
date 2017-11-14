@@ -1,5 +1,5 @@
 ---
-title: Mid Term Assessment Of The Usa
+title: Mid-Term Assessment of the USAID/Senegal Middle Basic Education Program
 Project Title: Mid-Term Assessment of the USAID/Senegal Middle Basic Education Program
 Start Year: '2006'
 End Year: '2006'

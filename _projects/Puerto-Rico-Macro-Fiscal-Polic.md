@@ -1,5 +1,5 @@
 ---
-title: Puerto Rico Macro Fiscal Polic
+title: Puerto Rico Macro Fiscal Policy Program
 Project Title: Puerto Rico Macro Fiscal Policy Program
 Start Year: '2016'
 End Year: Present

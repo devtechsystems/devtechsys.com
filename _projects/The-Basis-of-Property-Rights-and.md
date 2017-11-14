@@ -1,5 +1,5 @@
 ---
-title: The Basis Of Property Rights And
+title: The Basis of Property Rights & Predatory Behavior in Colombia
 Project Title: The Basis of Property Rights & Predatory Behavior in Colombia
 Start Year: '1992'
 End Year: '1993'

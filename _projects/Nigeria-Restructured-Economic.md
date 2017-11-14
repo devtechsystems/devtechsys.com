@@ -1,5 +1,6 @@
 ---
-title: Nigeria Restructured Economic
+title: Nigeria Restructured Economic Framework for Openness, Reform, and Macroeconomic
+  Stability (REFORMS)
 Project Title: Nigeria Restructured Economic Framework for Openness, Reform, and Macroeconomic
   Stability (REFORMS)
 Start Year: '2005'

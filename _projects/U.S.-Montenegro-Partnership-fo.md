@@ -1,10 +1,10 @@
 ---
-title: U.S. Montenegro Partnership Fo
+title: U.S. Montenegro Partnership for Municipal Development
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 - Security, Transparency, and Governance
 Region: Europe and Eurasia
-Project Title: U.S.-Montenegro Partnership for Municipal Development
+Project Title: U.S. Montenegro Partnership for Municipal Development
 Start Year: 2001
 End Year: 2001
 ISO3 Code:

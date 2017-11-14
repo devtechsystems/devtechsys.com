@@ -1,5 +1,5 @@
 ---
-title: Macedonia Competitiveness Acti
+title: Macedonia Competitiveness Activity
 Project Title: Macedonia Competitiveness Activity
 Start Year: '2003'
 End Year: '2006'

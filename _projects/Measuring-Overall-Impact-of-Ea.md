@@ -1,5 +1,5 @@
 ---
-title: Measuring Overall Impact Of Ea
+title: Measuring Overall Impact of East Africa CVE
 Project Title: Measuring Overall Impact of East Africa CVE
 Start Year: '2016'
 End Year: '2017'

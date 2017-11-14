@@ -1,5 +1,5 @@
 ---
-title: Social Profitability Of Invest
+title: Social Profitability of Investment in the Education Sector
 Project Title: Social Profitability of Investment in the Education Sector
 Start Year: '1990'
 End Year: '1990'

@@ -1,5 +1,6 @@
 ---
-title: Monitoring And Evaluation Of T
+title: Monitoring and Evaluation of the Bureau of International Narcotics
+  and Law Enforcement Affairs (INL) Caribbean Basin Security Initiative Program (CBSI)
 Project Title: Monitoring and Evaluation of the Bureau of International Narcotics
   and Law Enforcement Affairs (INL) Caribbean Basin Security Initiative Program (CBSI)
 Start Year: '2013'

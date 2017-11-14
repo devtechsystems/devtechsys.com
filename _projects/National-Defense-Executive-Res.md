@@ -1,5 +1,5 @@
 ---
-title: National Defense Executive Res
+title: National Defense Executive Reserve
 Project Title: National Defense Executive Reserve
 Start Year: '1989'
 End Year: '1991'

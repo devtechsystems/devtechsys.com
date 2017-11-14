@@ -1,5 +1,5 @@
 ---
-title: Radio Education Ecuador
+title: Radio Education - Ecuador
 Project Title: Radio Education - Ecuador
 Start Year: '1989'
 End Year: '1989'

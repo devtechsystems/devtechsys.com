@@ -1,5 +1,5 @@
 ---
-title: Sgwi Iraq Portfolio Evaluatio
+title: S/GWI Iraq Portfolio Evaluation Services
 Project Title: S/GWI Iraq Portfolio Evaluation Services
 Start Year: '2016'
 End Year: '2017'

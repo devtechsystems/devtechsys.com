@@ -1,5 +1,5 @@
 ---
-title: Transition Towards Market Econ
+title: Transition Towards Market Economy in Cuba
 Project Title: Transition Towards Market Economy in Cuba
 Start Year: '1992'
 End Year: '1993'

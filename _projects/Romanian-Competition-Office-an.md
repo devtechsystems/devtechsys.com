@@ -1,5 +1,5 @@
 ---
-title: Romanian Competition Office An
+title: Romanian Competition Office and Competition Council
 Project Title: Romanian Competition Office and Competition Council
 Start Year: '1997'
 End Year: '1998'

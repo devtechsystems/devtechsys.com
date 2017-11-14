@@ -1,5 +1,5 @@
 ---
-title: Technical Assistance To Usaid
+title: Technical Assistance to USAID/Cairo and the Egyptian Ministry of Education
 Project Title: Technical Assistance to USAID/Cairo and the Egyptian Ministry of Education
 Start Year: '1996'
 End Year: '1996'

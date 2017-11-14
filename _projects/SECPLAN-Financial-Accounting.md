@@ -1,5 +1,5 @@
 ---
-title: Secplan Financial Accounting
+title: SECPLAN Financial Accountings
 Project Title: SECPLAN Financial Accounting
 Start Year: '1989'
 End Year: '1990'

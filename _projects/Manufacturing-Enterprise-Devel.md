@@ -1,5 +1,5 @@
 ---
-title: Manufacturing Enterprise Devel
+title: Manufacturing Enterprise Development
 Project Title: Manufacturing Enterprise Development
 Start Year: '1988'
 End Year: '1988'

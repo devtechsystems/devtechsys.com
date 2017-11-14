@@ -1,5 +1,5 @@
 ---
-title: Mid Term Evaluation Of Basic E
+title: Mid-Term Evaluation of Basic Education Project (BASE)
 Project Title: Mid-Term Evaluation of Basic Education Project (BASE)
 Start Year: '1996'
 End Year: '1996'

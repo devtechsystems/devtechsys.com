@@ -1,5 +1,5 @@
 ---
-title: Segirgbti Global Technology N
+title: SEGIR/GBTI Global Technology Network
 Project Title: SEGIR/GBTI Global Technology Network
 Start Year: '2000'
 End Year: '2001'

@@ -1,5 +1,5 @@
 ---
-title: Mid Term Evaluation Of Primary
+title: Mid-Term Evaluation of Primary Education Project (PIPE)
 Project Title: Mid-Term Evaluation of Primary Education Project (PIPE)
 Start Year: '1994'
 End Year: '1994'

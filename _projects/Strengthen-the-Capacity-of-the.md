@@ -1,5 +1,6 @@
 ---
-title: Strengthen The Capacity Of The
+title: Strengthen the Capacity of the Accountant General of the Federation
+  of Nigeria
 Project Title: Strengthen the Capacity of the Accountant General of the Federation
   of Nigeria
 Start Year: '2007'

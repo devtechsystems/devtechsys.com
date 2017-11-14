@@ -1,5 +1,5 @@
 ---
-title: Sri Lanka Tsunami Reconstructi
+title: Sri Lanka Tsunami Reconstruction Program
 Project Title: Sri Lanka Tsunami Reconstruction Program
 Start Year: '2005'
 End Year: '2006'

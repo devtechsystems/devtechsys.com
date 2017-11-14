@@ -1,5 +1,5 @@
 ---
-title: Women In Development Strategi
+title: 'Women in Development: Strategic and Technical Support (WIDStrat)'s
 Project Title: 'Women in Development: Strategic and Technical Support (WIDStrat)'
 Start Year: '1998'
 End Year: '2000'

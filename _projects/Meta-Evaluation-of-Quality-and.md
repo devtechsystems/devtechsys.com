@@ -1,5 +1,5 @@
 ---
-title: Meta Evaluation Of Quality And
+title: Meta-Evaluation of Quality and Coverage of USAID Evaluations
 Project Title: Meta-Evaluation of Quality and Coverage of USAID Evaluations
 Start Year: '2009'
 End Year: '2012'

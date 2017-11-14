@@ -1,5 +1,5 @@
 ---
-title: Office Of Technological Hazard
+title: Office of Technological Hazards
 Project Title: Office of Technological Hazards
 Start Year: '1992'
 End Year: '1996'

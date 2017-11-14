@@ -1,5 +1,6 @@
 ---
-title: Nigeria Support For Strategic
+title: Nigeria Support for Strategic Information and Project Management Services
+  (S4SIPMS)
 Project Title: Nigeria Support for Strategic Information and Project Management Services
   (S4SIPMS)
 Start Year: '2017'

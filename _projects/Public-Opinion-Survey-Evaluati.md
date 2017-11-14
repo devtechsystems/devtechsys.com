@@ -1,7 +1,8 @@
 ---
-title: Public Opinion Survey Evaluati
+title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
+  and Midline Evaluation of U.S. Ghana Child Protection Compact Partnership
 Project Title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
-  and Midline Evaluation of U.S.-Ghana Child Protection Compact Partnership
+  and Midline Evaluation of U.S. Ghana Child Protection Compact Partnership
 Start Year: '2017'
 End Year: '2018'
 ISO3 Code:

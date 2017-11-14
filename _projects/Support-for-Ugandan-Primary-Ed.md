@@ -1,5 +1,6 @@
 ---
-title: Support For Ugandan Primary Ed
+title: 'Support for Ugandan Primary Education Reform (SUPER): A Formative
+  Evaluation'
 Project Title: 'Support for Ugandan Primary Education Reform (SUPER): A Formative
   Evaluation'
 Start Year: '1995'

@@ -1,5 +1,5 @@
 ---
-title: National Earthquake Hazards Re
+title: National Earthquake Hazards Reduction Program
 Project Title: National Earthquake Hazards Reduction Program
 Start Year: '1991'
 End Year: '1993'

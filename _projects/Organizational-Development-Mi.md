@@ -1,5 +1,5 @@
 ---
-title: Organizational Development Mi
+title: Organizational Development, Ministry of Commerce & Industry
 Project Title: Organizational Development, Ministry of Commerce & Industry
 Start Year: '1987'
 End Year: '1987'

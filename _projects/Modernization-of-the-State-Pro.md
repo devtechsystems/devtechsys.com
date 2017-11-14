@@ -1,5 +1,5 @@
 ---
-title: Modernization Of The State Pro
+title: Modernization of the State Program
 Project Title: Modernization of the State Program
 Start Year: '1998'
 End Year: '1999'

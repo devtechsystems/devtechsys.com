@@ -1,5 +1,5 @@
 ---
-title: Sao Tome And Principe Millenni
+title: São Tomé and Príncipe Millennium Challenge Corporation's (MCC's) Threshold
 Project Title: São Tomé and Príncipe Millennium Challenge Corporation's (MCC's) Threshold
   Country Plan
 Start Year: '2008'

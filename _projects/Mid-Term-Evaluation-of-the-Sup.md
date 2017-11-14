@@ -1,5 +1,5 @@
 ---
-title: Mid Term Evaluation Of The Sup
+title: Mid-Term Evaluation of the Support to Tertiary Education Project
 Project Title: Mid-Term Evaluation of the Support to Tertiary Education Project
 Start Year: '1995'
 End Year: '1995'

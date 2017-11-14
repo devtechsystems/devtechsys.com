@@ -1,5 +1,5 @@
 ---
-title: The Role Of Municipalities In
+title: The Role of Municipalities in the Reconstruction of Honduras
 Project Title: The Role of Municipalities in the Reconstruction of Honduras
 Start Year: '1999'
 End Year: '1999'
