@@ -1,17 +1,20 @@
 ---
-Project Title: 'Evaluation of USAID Basic Education in Kyrgyzstan, Tajikistan, and Uzbekistan'
+title: Evaluation Of Usaid Basic Educ
+Project Title: Evaluation of USAID Basic Education in Kyrgyzstan, Tajikistan, and
+  Uzbekistan
 Start Year: '2005'
 End Year: '2005'
 ISO3 Code:
-  - KGZ
+- KGZ
 Region: Asia
 Country: Kyrgyzstan
 Client/ Donor: USAID
 Brief Description: ''
 Is Current Project? (true/false): false
 Practice Area:
-  - Monitoring and Evaluation
-  - 'Education, Gender and Youth'
+- Monitoring and Evaluation
+- Education, Gender and Youth
 projects_slug: Evaluation-of-USAID-Basic-Educ
 Contract Value USD: ''
 ---
+
