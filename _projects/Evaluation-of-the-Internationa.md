@@ -6,7 +6,7 @@ Start Year: '2012'
 End Year: '2013'
 ISO3 Code:
   - COL
-Region: Latin America and theCaribbean
+Region: Latin America and the Caribbean
 Country: Colombia
 Client/ Donor: USAID
 Brief Description: >-

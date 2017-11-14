@@ -4,7 +4,7 @@ Start Year: '1995'
 End Year: '1996'
 ISO3 Code:
   - HON
-Region: Latin American and the Caribbean
+Region: Latin America and the Caribbean
 Country: Honduras
 Client/ Donor: USAID
 Brief Description: >-
