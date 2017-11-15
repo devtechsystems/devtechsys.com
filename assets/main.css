@@ -2609,6 +2609,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     background-color: transparent; }
     .site .button.button-inverse:focus, .site .button.button-inverse:hover {
       background-color: transparent; }
+.site .nowrap {
+  white-space: nowrap; }
 .site .marginB-medium {
   margin-bottom: 60px; }
 .site .marginB-large {
