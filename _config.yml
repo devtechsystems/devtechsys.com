@@ -112,7 +112,7 @@ defaults:
     layout: practice-areas
 - scope:
     path: ''
-    type: ''
+    type: 'publications'
 values:
     SEO Excerpt Overwrite: 
     Document URL: 
