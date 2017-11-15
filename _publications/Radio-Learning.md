@@ -6,7 +6,6 @@ Practice Area:
 - Education, Gender and Youth
 Project:
 - Radio Education - Ecuador
-- Radio Education in Honduras
 publications_slug: Radio-Learning
 ---
 
