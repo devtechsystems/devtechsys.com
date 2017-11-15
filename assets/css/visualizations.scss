@@ -69,15 +69,18 @@
   }
 
   .right-column {
+    position: relative;
+
     .breakdown-group-title {
       font-size: .7em;
       font-weight: 600;
       margin-bottom: 10px;
-      float: left;
     }
 
     .breakdown-value-title {
-      float: right;
+      position: absolute;
+      right: 17px;
+      top: 0px;
       font-size: .7em;
       font-weight: 600;
       color: #848484;
