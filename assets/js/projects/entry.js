@@ -83,7 +83,7 @@ const denormalizeProjectsIntoSolutions = (projects) => {
 }
 
 const goToPracticeArea = (name) => {
-  window.open(`/our-practices/${slugify(name)}`)
+  window.location.href = `/our-practices/${slugify(name)}`
 }
 
 document.addEventListener('DOMContentLoaded', () => {

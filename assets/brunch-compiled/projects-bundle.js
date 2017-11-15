@@ -184,10 +184,9 @@ exports.PARTNER_COLUMN_NAME = PARTNER_COLUMN_NAME;
 exports.CONTRACT_VALUE_COLUMN_NAME = CONTRACT_VALUE_COLUMN_NAME;
 exports.SEARCH_REFERENCE_ID_COLUMN_NAME = SEARCH_REFERENCE_ID_COLUMN_NAME;
 exports.ISO_3_COlUMN_NAME = ISO_3_COlUMN_NAME;
-
 });
 
-require.register("assets/js/projects/components/BreakdownPanel/PieChart.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/BreakdownPanel/PieChart.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -256,10 +255,9 @@ var TooltipContent = function TooltipContent(_ref) {
     valueName
   );
 };
-
 });
 
-require.register("assets/js/projects/components/BreakdownPanel/RowChart/DefaultRow.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/BreakdownPanel/RowChart/DefaultRow.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -492,10 +490,9 @@ RadRow.defaultProps = {
     console.log('row clicked');
   }
 };
-
 });
 
-require.register("assets/js/projects/components/BreakdownPanel/RowChart/RowChart.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/BreakdownPanel/RowChart/RowChart.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -629,10 +626,9 @@ RowChart.propTypes = {
 RowChart.defaultProps = {
   row: _DefaultRow2.default
 };
-
 });
 
-require.register("assets/js/projects/components/BreakdownPanel/RowChart/index.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/BreakdownPanel/RowChart/index.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -649,7 +645,6 @@ Object.defineProperty(exports, 'default', {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 });
 
 ;require.register("assets/js/projects/components/BreakdownPanel/index.js", function(exports, require, module) {
@@ -744,7 +739,6 @@ var _PieChart = require('./PieChart');
 var _PieChart2 = _interopRequireDefault(_PieChart);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 });
 
 ;require.register("assets/js/projects/components/D3Choropleth.js", function(exports, require, module) {
@@ -1029,7 +1023,6 @@ var _ColorScale = require("../util/ColorScale");
 var _ColorScale2 = _interopRequireDefault(_ColorScale);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 });
 
 ;require.register("assets/js/projects/components/ProjectSearch/PageSelector.js", function(exports, require, module) {
@@ -1077,7 +1070,6 @@ var _react = require("react");
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 });
 
 ;require.register("assets/js/projects/components/ProjectSearch/ProjectSearch.js", function(exports, require, module) {
@@ -1494,10 +1486,9 @@ ProjectSearch.defaultProps = {
   searchFields: _SearchFields.SEARCH_FIELDS,
   showCount: 10
 };
-
 });
 
-require.register("assets/js/projects/components/ProjectSearch/SearchFields.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/ProjectSearch/SearchFields.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1513,10 +1504,9 @@ var SEARCH_FIELDS = {
 };
 
 exports.SEARCH_FIELDS = SEARCH_FIELDS;
-
 });
 
-require.register("assets/js/projects/components/ProjectSearch/index.js", function(exports, require, module) {
+;require.register("assets/js/projects/components/ProjectSearch/index.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1533,7 +1523,6 @@ Object.defineProperty(exports, 'default', {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 });
 
 ;require.register("assets/js/projects/components/StackedBarChart.js", function(exports, require, module) {
@@ -1770,10 +1759,9 @@ var StackedBarChart = function (_Component) {
 }(_react.Component);
 
 exports.default = StackedBarChart;
-
 });
 
-require.register("assets/js/projects/entry.js", function(exports, require, module) {
+;require.register("assets/js/projects/entry.js", function(exports, require, module) {
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -1927,7 +1915,7 @@ var denormalizeProjectsIntoSolutions = function denormalizeProjectsIntoSolutions
 };
 
 var goToPracticeArea = function goToPracticeArea(name) {
-  window.open('/our-practices/' + (0, _slugify2.default)(name));
+  window.location.href = '/our-practices/' + (0, _slugify2.default)(name);
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -2022,10 +2010,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _reactDom2.default.render(_react2.default.createElement(_ProjectSearch2.default, { projects: projects }), document.getElementById('project-search'));
 });
-
 });
 
-require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
+;require.register("assets/js/projects/test/Data.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2043,10 +2030,9 @@ var regionAndPracAreas = [{ region: 'East Asia & Oceania', practiceArea: 'Monito
 
 exports.regionAndPracAreas = regionAndPracAreas;
 exports.practiceAreas = practiceAreas;
-
 });
 
-require.register("assets/js/projects/util/ColorPalette.js", function(exports, require, module) {
+;require.register("assets/js/projects/util/ColorPalette.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2056,10 +2042,9 @@ exports.default = {
   colors: ['#62AFD1', '#3D98C3', '#297DA6', '#1F5D7B', '#173F53', '#0E242F'],
   noDataColor: '#cae0ea'
 };
-
 });
 
-require.register("assets/js/projects/util/ColorScale.js", function(exports, require, module) {
+;require.register("assets/js/projects/util/ColorScale.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2143,10 +2128,9 @@ var ColorScale = function () {
 }();
 
 exports.default = ColorScale;
-
 });
 
-require.register("assets/js/projects/util/Humanify.js", function(exports, require, module) {
+;require.register("assets/js/projects/util/Humanify.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2159,10 +2143,9 @@ var PracticeAreaTitle = function PracticeAreaTitle(practiceArea) {
 };
 
 exports.PracticeAreaTitle = PracticeAreaTitle;
-
 });
 
-require.register("assets/js/projects/util/PracticeAreaExists.js", function(exports, require, module) {
+;require.register("assets/js/projects/util/PracticeAreaExists.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2177,10 +2160,9 @@ var PracticeAreaExists = function PracticeAreaExists(practiceArea, project) {
 };
 
 exports.default = PracticeAreaExists;
-
 });
 
-require.register("assets/js/projects/util/Reduce.js", function(exports, require, module) {
+;require.register("assets/js/projects/util/Reduce.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2224,12 +2206,11 @@ var reduceCountIncludeExtraData = function reduceCountIncludeExtraData(grouping,
 exports.reduceSum = reduceSum;
 exports.reduceCount = reduceCount;
 exports.reduceCountIncludeExtraData = reduceCountIncludeExtraData;
-
 });
 
-require.alias("brunch/node_modules/buffer/index.js", "buffer");
-require.alias("brunch/node_modules/events/events.js", "events");
-require.alias("brunch/node_modules/process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+;require.alias("buffer/index.js", "buffer");
+require.alias("events/events.js", "events");
+require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 
 // Auto-loaded modules from config.npm.globals.
@@ -2331,6 +2312,5 @@ window.d3 = require("d3");
   connect();
 })();
 /* jshint ignore:end */
-
 ;
 //# sourceMappingURL=projects-bundle.js.map
