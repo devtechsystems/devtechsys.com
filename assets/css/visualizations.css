@@ -14,6 +14,14 @@
     .row-chart g.rad-row text.rad-row-value-text.rad-row-negative {
       fill: #BD102B; }
 
+#projects-by-practice-area .rad-row-name-text {
+  cursor: pointer; }
+
+#projects-by-region .rad-row-name-text:hover {
+  fill: black !important; }
+#projects-by-region .breakdown-value-title {
+  margin-right: 16px; }
+
 .breakdown-panel .left-column .number-countup {
   font-size: 4em;
   font-weight: 600;
@@ -24,10 +32,19 @@
   font-size: .8em;
   font-weight: 600;
   margin-top: -6px; }
-.breakdown-panel .right-column .breakdown-group-title {
-  font-size: .7em;
-  font-weight: 600;
-  margin-bottom: 10px; }
+.breakdown-panel .right-column {
+  position: relative; }
+  .breakdown-panel .right-column .breakdown-group-title {
+    font-size: .7em;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .breakdown-panel .right-column .breakdown-value-title {
+    position: absolute;
+    right: 17px;
+    top: 0px;
+    font-size: .7em;
+    font-weight: 600;
+    color: #848484; }
 .breakdown-panel .breakdown-pie {
   margin-top: 5px; }
 

@@ -46,6 +46,11 @@ const TooltipContent = function({ active, type, payload, label, xAxisDataKey, co
         color: colorMapper[stackDataName]
       }
     })
+    .filter((slice) => {
+      
+      return slice.value > 0
+    })
+
   const stackContent = stackData.map((slice) => {
     return (
       <div key={`${xAxisValue}-${slice.name}`} className='stack-slice-content'>

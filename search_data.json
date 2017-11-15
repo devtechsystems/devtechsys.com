@@ -297,6 +297,22 @@
       }
   
       ,
+      "projects-combating-exploitative-child-labor-through-education-in-central-america": {
+        "title": "Combating Exploitative Child Labor through Education in Central America",
+        "type": "Project",
+        "content"  : "DevTech worked with CARE USA to implement the U.S. Department of Labor-funded project, Primero Aprendo, in the Central American  and Caribbean region. The project was aimed at improving access to quality education as a means to combat exploitative child  labor in Costa Rica, Dominican Republic, El Salvador, Guatemala, Honduras, and Nicaragua.",
+        "url": " /projects/Combating-Exploitative-Child-Labor-through-Education-in-Central-America/"
+      }
+  
+      ,
+      "projects-combating-exploitative-child-labor-through-education-in-the-dominican-republic-2003": {
+        "title": "Combating Exploitative Child Labor through Education in the Dominican Republic-2003",
+        "type": "Project",
+        "content"  : "In 2003, the U.S. Department of Labor (USDOL) signed a cooperative agreement with DevTech to implement the Combating Child Labor through Education in the Dominican Republic project. The program works worked with the International Labor Organization, the Dominican Secretariats of Education and Labor, and other stakeholders to: Raise awareness of the importance of education for all children and to mobilize a wide array of actors to improve and expand education infrastructures; Strengthen national institutions and policies on education and child labor; and Ensure the long-term sustainability of these efforts.",
+        "url": " /projects/Combating-Exploitative-Child-Labor-through-Education-in-the-Dominican-Republic-2003/"
+      }
+  
+      ,
       "projects-community-action-for-reading-a": {
         "title": "Community Action for Reading and Security (CARS) Activity in Nicaragua",
         "type": "Project",
@@ -438,6 +454,14 @@
         "type": "Project",
         "content"  : "DevTech manages USAID’s Economic Analysis and Data Services (EADS), the Chief Information Officer’s initiative to provide U.S. Agency for International Development (USAID) employees with quick and easy access to development data and quantitative analytical support. EADS maintains several specialized websites, which provide access to thousands of statistical series covering all aspects of the development process along with data analysis tools.In September 2013, DevTech was awarded an add-on to the EADS project. The Microenterprise Accountability and Results Tracking Activity is a four-year activity designed to assist USAID/E3 office to respond to the congressionally-mandated reporting on the status of the agency’s microenterprise work each year, while also making the information collected publicly available.The EADS Websites include the Trade Capacity Building Database, the U.S. Official Development Assistance Database, and the U.S. Overseas Loans and Grants (Greenbook).",
         "url": " /projects/Economic-Analysis-and-Data-Ser/"
+      }
+  
+      ,
+      "projects-economic-analysis-and-data-services-eads-i": {
+        "title": "Economic Analysis and Data Services (EADS I)",
+        "type": "Project",
+        "content"  : "",
+        "url": " /projects/Economic-Analysis-and-Data-Services-(EADS-I)/"
       }
   
       ,
@@ -598,6 +622,14 @@
         "type": "Project",
         "content"  : "",
         "url": " /projects/Environmental-Compliance-Suppo/"
+      }
+  
+      ,
+      "projects-environmental-compliance-support-service": {
+        "title": "Environmental Compliance Support Service",
+        "type": "Project",
+        "content"  : "A DevTech team provided administrative and information management support services to the Office of Environmental Audit at DOE facilities nationwide. The team was responsible for the implementation, operation, documentation, and maintenance of systems for the collection, verification, and publication of audit team (i.e., DOE staff and contractors) data.",
+        "url": " /projects/Environmental-Compliance-Support-Service/"
       }
   
       ,
@@ -1086,6 +1118,14 @@
         "type": "Project",
         "content"  : "DevTech evaluated the curriculum and course content of a master’s degree program in business economics to be offered in September 1986 to Latin America and the Caribbean students. DevTech performed a two-pronged demand analysis of the program to determine the level of interest in neighboring countries and their students, as well as the potential demand for graduates of the program.",
         "url": " /projects/Latin-America-and-the-Caribbea/"
+      }
+  
+      ,
+      "projects-latin-america-and-the-caribbean-institute-for-industrial-research-technology": {
+        "title": "Latin America and the Caribbean Institute for Industrial Research Technology",
+        "type": "Project",
+        "content"  : "DevTech conducted an analysis of the internal financial and personnel management systems of ICAITI and made recommendations to improve their effectiveness. The institutional review included the historical, current, and projected balance sheet and cash flow statements to determine the long-term viability of the institution; the management structure, personnel policies, and employee benefits package; and internal financial practices.",
+        "url": " /projects/Latin-America-and-the-Caribbean-Institute-for-Industrial-Research-Technology/"
       }
   
       ,
@@ -1681,6 +1721,14 @@
       }
   
       ,
+      "projects-tax-administration-modernization-project-tamp-phase-i": {
+        "title": "Tax Administration Modernization Project (TAMP): Phase I",
+        "type": "Project",
+        "content"  : "As a SEGIR-EP subcontractor, DevTech assisted the three tax administrations in Bosnia and Herzegovina (Federation of Bosnia and Herzegovina, the Republic of Srpska, and the District of Brcko) to develop a comprehensive design for tax administration reform under strict and challenging time constraints.The TAMP team applied Business Process Analysis and Business Process Reengineering techniques using a sophisticated software program to fully document the tax administration processes and propose reengineered processes and their automation. DevTech technical experts developed complete automation plans, full systemization design and architecture, database development, and data processing centralization. In addition, DevTech completed an assessment of the legal framework for tax administration and tax policy, and established a system to ensure that future necessary legal reforms will be defined in a way that will help to facilitate further reform.All tasks were completed on time and within scope. In addition to the original scope of work, USAID asked TAMP to support the immediate implementation of the Taxpayer Registration system.",
+        "url": " /projects/Tax-Administration-Modernization-Project-(TAMP)-Phase-I/"
+      }
+  
+      ,
       "projects-tax-computerization-project-ou": {
         "title": "Tax Computerization Project Outsourcing Initiative Feasibility Study for the Philippine Bureau of Internal Revenue (BIR)",
         "type": "Project",
@@ -1830,6 +1878,14 @@
         "type": "Project",
         "content"  : "DevTech provided technical support to the Office of Women in Development to incorporate gender considerations in USAID’s field and Bureau activities, guidance and policies, and training.",
         "url": " /projects/Women-in-Development-Strategi/"
+      }
+  
+      ,
+      "projects-women-in-development-strategies-and-resources-widsr": {
+        "title": "Women in Development: Strategies and Resources (WIDSR)",
+        "type": "Project",
+        "content"  : "DevTech supported the Office of Women in Development (WID) in integrating gender concerns throughout the Agency with an interest in developing countries. DevTech assisted the WID office with the following:Training program design and implementation;Information dissemination;Technical support to the Agency’s central and regional Bureaus and overseas Missions; andResponse to data collection and analysis requests as needed for Agency WID strategy and policy papers and statistical data.",
+        "url": " /projects/Women-in-Development-Strategies-and-Resources-(WIDSR)/"
       }
   
 

@@ -15,8 +15,12 @@ import { reduceSum, reduceCount, reduceCountIncludeExtraData } from './util/Redu
 import D3Choropleth from './components/D3Choropleth'
 import ProjectSearch from './components/ProjectSearch'
 import PracticeAreaExists from './util/PracticeAreaExists'
+import slugify from 'slugify'
 
 const formatters = qdFormatters(d3)
+if(process.env.NODE_ENV === "production") {
+  console.warn = () => {}
+}
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
@@ -81,6 +85,10 @@ const denormalizeProjectsIntoSolutions = (projects) => {
   return solutions
 }
 
+const goToPracticeArea = (name) => {
+  window.location.href = `/our-practices/${slugify(name)}`
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const projects = JEKYLL_DATA.projectsData.map((d, i) => {
     return Object.assign({}, d, { [SEARCH_REFERENCE_ID_COLUMN_NAME]: i })
@@ -130,6 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
       colorPalette={ColorPalette}
       title='Solutions'
       groupTitle='Practice Area'
+      valueTitle='Solutions'
+      onRowClick={goToPracticeArea}
     />
   )
   const pbrPanel = (
@@ -139,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       colorPalette={ColorPalette}
       title='Countries'
       groupTitle='Region'
+      valueTitle='Countries'
     />
   )
 

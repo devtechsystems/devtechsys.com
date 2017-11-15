@@ -3,6 +3,21 @@ import PropTypes from 'prop-types'
 import d3 from 'd3'
 import classNames from 'classnames'
 
+const defaultNameRenderer = (name, x, y, fontSize, refFunc, onRowClick) => (
+  <text
+    ref={refFunc}
+    className="rad-row-name-text"
+    x={x}
+    y={y}
+    fontSize={fontSize}
+    alignmentBaseline="hanging"
+    onClick={() => {onRowClick(name)}}
+  >
+    <title>{name}</title>
+    {name}
+  </text>
+)
+
 export default class RadRow extends Component {
   constructor(props) {
     super(props)
@@ -44,7 +59,7 @@ export default class RadRow extends Component {
   }
 
   render() {
-    const { y, rowHeight, chartWidth, datum, data, xScale } = this.props
+    const { y, rowHeight, chartWidth, datum, data, xScale, nameRenderer, onRowClick } = this.props
     let barWidth
     const textValueClassNames = classNames('rad-row-value-text', { 'rad-row-negative': (datum.value < 0) })
     if (datum.value < 0) {
@@ -80,17 +95,7 @@ export default class RadRow extends Component {
           r={circleRadius}
           fill={this.props.color}
         />
-        <text
-          ref={(textElement) => { this.nameTextElement = textElement }}
-          className="rad-row-name-text"
-          x={this.widthForCircle()}
-          y={y}
-          fontSize={fontSize}
-          alignmentBaseline="hanging"
-        >
-          <title>{datum.name}</title>
-          {datum.name}
-        </text>
+        {nameRenderer(datum.name, this.widthForCircle(), y, fontSize, (textElement) => { this.nameTextElement = textElement }, onRowClick)}
         <rect
           className="rad-row-value-background"
           x={chartWidth - this.props.spaceForValueText}
@@ -140,10 +145,14 @@ RadRow.propTypes = {
     value: PropTypes.number
   })),
   xScale: PropTypes.func,
-  color: PropTypes.string
+  color: PropTypes.string,
+  nameRenderer: PropTypes.func,
+  onRowClick: PropTypes.func
 }
 
 RadRow.defaultProps = {
   circlePaddingRight: 8,
-  spaceForValueText: 54
+  spaceForValueText: 54,
+  nameRenderer: defaultNameRenderer,
+  onRowClick: () => {console.log('row clicked')}
 }

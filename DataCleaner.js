@@ -5,11 +5,11 @@ const yaml = require('js-yaml')
 const slugify = require('slugify')
 
 const homeDir = os.homedir()
-const workbook = ExcelUtil.readFile(`./The Project Database 2_UPDATED_FINAL.xlsm`)
+const workbook = ExcelUtil.readFile(`./YourExcelData.xlsm`)
 const sheetNames = workbook.SheetNames
 
 const MAIN_SHEET_NAME = 'MASTER'
-debugger;
+
 const mainSheetAsJson = ExcelUtil.utils.sheet_to_json(workbook.Sheets[MAIN_SHEET_NAME])
 const cleanedJson = cleanRecords(mainSheetAsJson)
 
@@ -131,5 +131,5 @@ function removeQuotes(string) {
 }
 
 function shorten(string) {
-  return string.substring(0, 30)
+  return string.substring(0, 100)
 }

@@ -5,11 +5,11 @@ import CountUp from 'react-countup'
 import Sizebox from 'react-sizebox'
 import PieChart from './PieChart'
 
-export default function({ data, bigNumber, colorPalette, title, groupTitle }) {
+export default function({ data, bigNumber, colorPalette, title, groupTitle, valueTitle, onRowClick, className }) {
   const colorScale = new ColorScale(data, colorPalette.colors, colorPalette.noDataColor)
 
   return (
-    <div className='breakdown-panel row'>
+    <div className={'breakdown-panel row ' + className}>
       <div className='left-column column medium-5'>
         <CountUp className='number-countup' start={0} end={bigNumber} duration={3} />
         <div className='breakdown-title'>{title}</div>
@@ -19,11 +19,13 @@ export default function({ data, bigNumber, colorPalette, title, groupTitle }) {
       </div>
       <div className='right-column column medium-10'>
         <div className='breakdown-group-title'>By {groupTitle}</div>
+        <div className='breakdown-value-title'>{valueTitle}</div>
         <Sizebox className="row-chart-sizebox">
           <RowChart
             rowHeight={40}
             data={data}
             colorMapper={(value) => colorScale.getColorFor(value)}
+            onRowClick={onRowClick}
           />
         </Sizebox>
       </div>
