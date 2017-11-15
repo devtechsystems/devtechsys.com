@@ -229,12 +229,14 @@ layout: default
 							      		{% for item in selected_project %}
 							      			<li>
 							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>
+							      				<span class="nowrap">
 							      				{% if item['Start Year'].size > 0 %}
 									  					<span> {{ item['Start Year'] }}</span>
 									  				{% endif %}
 							      				{% if item['End Year'].size > 0 %}
 									  					<span>- {{ item['End Year'] }}</span>
 									  				{% endif %}
+									  				</span>
 							      			</li>
 							      		{% endfor %}
 							      	{% endfor %}
