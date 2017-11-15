@@ -53,7 +53,8 @@ Here's a code sample:
 # Let me re-iterate ...
 for i in 1 .. 10 { do-something(i) }
 ~~~
-
+# An h1 header #
+## An h2 header ##
 ### An h3 header ###
 
 Here's a link to [a website](http://google.com), to a [local
