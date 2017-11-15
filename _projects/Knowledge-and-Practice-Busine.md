@@ -1,28 +1,28 @@
 ---
+title: 'Knowledge and Practice: Business Development Services'
 Project Title: 'Knowledge and Practice: Business Development Services'
 Start Year: '2004'
 End Year: '2006'
 ISO3 Code:
-  - GTM
+- GTM
 Region: Latin America and the Caribbean
 Country: Guatemala
 Client/ Donor: USAID
-Brief Description: >-
-  DevTech was an active member of a multi-organizational team that developed
-  tools and strategies to:Enhance inter-firm cooperation and coordination
-  between MSEs and other firms in value chains; and Encourage MSE owners to
-  upgrade their businesses to improve competitiveness.DevTech staff led the
-  field work for a quantitative study of Micro and Small Enterprises in
-  Guatemala. The purpose of the survey was to identify opportunities and
-  difficulties small enterprises experienced in Guatemala, and to research how
-  small enterprises can thrive in local, national, and global markets. DevTech
-  staff worked with the team to design the research protocol, survey methodology
-  and training materials for local surveyors.
+Brief Description: DevTech was an active member of a multi-organizational team that
+  developed tools and strategies to:Enhance inter-firm cooperation and coordination
+  between MSEs and other firms in value chains; and Encourage MSE owners to upgrade
+  their businesses to improve competitiveness.DevTech staff led the field work for
+  a quantitative study of Micro and Small Enterprises in Guatemala. The purpose of
+  the survey was to identify opportunities and difficulties small enterprises experienced
+  in Guatemala, and to research how small enterprises can thrive in local, national,
+  and global markets. DevTech staff worked with the team to design the research protocol,
+  survey methodology and training materials for local surveyors.
 Is Current Project? (true/false): false
 Practice Area:
-  - Public Financial Management and Fiscal Sustainability
-  - Knowledge Management and Data Analytics
-projects_slug: 'Knowledge-and-Practice:-Busine'
+- Public Financial Management and Fiscal Sustainability
+- Knowledge Management and Data Analytics
+projects_slug: Knowledge-and-Practice:-Busine
 Contract Value USD: ''
 ---
+
 DevTech was an active member of a multi-organizational team that developed tools and strategies to:Enhance inter-firm cooperation and coordination between MSEs and other firms in value chains; and Encourage MSE owners to upgrade their businesses to improve competitiveness.DevTech staff led the field work for a quantitative study of Micro and Small Enterprises in Guatemala. The purpose of the survey was to identify opportunities and difficulties small enterprises experienced in Guatemala, and to research how small enterprises can thrive in local, national, and global markets. DevTech staff worked with the team to design the research protocol, survey methodology and training materials for local surveyors.

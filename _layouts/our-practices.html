@@ -120,14 +120,39 @@ layout: default
 					      		<div class="post-category">{{ p['Region'] }}</div>
 					      	{% endif %}
 					    		<a href="{{ p['Document URL'] | escape }}" class="post-title">{{ p.title }}</a>
-					    		<div class="post-details">
-					    			{% if p['Year Published'].size > 0 %}
-						      		<span class="post-detail">{{ p['Year Published'] }}</span>
-						      	{% endif %}
-					    		</div>
+				    			{% if p['Year Published'].size > 0 %}
+				    			<div class="post-details">
+					      		<span class="post-detail">{{ p['Year Published'] }}</span>
+					      	</div>
+					      	{% endif %}
 					    		{% if p.content.size > 0 %}
 					      		<div class="post-description">{{ p.content }}</div>
 					      	{% endif %}
+
+					      	{% assign this_pubs_projects = p['Project'] %}
+					      	{% if this_pubs_projects.size > 0 %}
+						      	<div class="post-details linked-projects">
+							      	<p>This publication was linked from the following projects;</p>
+							      	<ul>
+							      	{% for item in this_pubs_projects %}
+							      		{% assign selected_item = item %}
+							      		{% assign selected_project = site.projects | where_exp: "item", "item.title contains selected_item" %}
+							      		{% for item in selected_project %}
+							      			<li>
+							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>
+							      				{% if item['Start Year'].size > 0 %}
+									  					<span> {{ item['Start Year'] }}</span>
+									  				{% endif %}
+							      				{% if item['End Year'].size > 0 %}
+									  					<span>- {{ item['End Year'] }}</span>
+									  				{% endif %}
+							      			</li>
+							      		{% endfor %}
+							      	{% endfor %}
+							      	</ul>
+							      </div>
+						      {% endif %}
+					      	
 					    	</li>
 					    {% endfor %}
 				    </ul>

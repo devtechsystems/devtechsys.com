@@ -1,6 +1,7 @@
 ---
 title: Markdown Banner Title
 date: 2017-07-18 23:32:00 Z
+published: false
 Title: Markdown Styling Example Title.  A Title Should be used to change the Title
   in the page.
 Highlight: Highlight text appears at the top of the page.  This content should be
@@ -52,7 +53,8 @@ Here's a code sample:
 # Let me re-iterate ...
 for i in 1 .. 10 { do-something(i) }
 ~~~
-
+# An h1 header #
+## An h2 header ##
 ### An h3 header ###
 
 Here's a link to [a website](http://google.com), to a [local
