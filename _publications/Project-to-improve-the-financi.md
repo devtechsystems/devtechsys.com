@@ -4,7 +4,7 @@ Document URL: https://dec.usaid.gov/dec/content/Detail.aspx?q=KERvY3VtZW50cy5Jbn
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Project:
-- SECPLAN Financial Accountings
+- Improving Public Sector Financial Accounts
 data_id: 35
 publications_slug: Project-to-improve-the-financi
 ---
