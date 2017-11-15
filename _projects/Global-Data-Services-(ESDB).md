@@ -1,9 +1,9 @@
 ---
-title: Global Data Services  (EDSB)
+title: Global Data Services  (ESDB)
 Practice Area:
 - Knowledge Management and Data Analytics
 Region: Global
-Project Title: Global Data Services  (EDSB)
+Project Title: Global Data Services  (ESDB)
 Start Year: 2006
 End Year: 2007
 ISO3 Code:
@@ -20,4 +20,4 @@ projects_slug: Global-Data-Services-(EDSB)
 Contract Value USD: 899078
 ---
 
-DevTech managed the Economic and Social Data Base (EDSB) for the United States Agency for International Development (USAID). The ESDB is a sophisticated information system that provides macro-level, international economic and social statistical data to USAID Central and Regional Bureaus, USAID Missions, and other U.S. Government Departments and Offices.
+DevTech managed the Economic and Social Data Base (ESDB) for the United States Agency for International Development (USAID). The ESDB is a sophisticated information system that provides macro-level, international economic and social statistical data to USAID Central and Regional Bureaus, USAID Missions, and other U.S. Government Departments and Offices.
