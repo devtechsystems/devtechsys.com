@@ -96,17 +96,92 @@ layout: default
 			  	<div class="background-lightBlue content-bottomPadding">
 						<div class="row row--gutters column past-projects-list clearfix">
 							<h3 class="BLB--title">Past Projects</h3>
-							<ul class="row link-list small-up-1 medium-up-2">
-					    	{% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] == false" %}
-						    {% for p in linked_past_projects %}
-						      <li class="column column-block">
+					    {% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] == false" | sort %}
+
+
+					    {% assign africa_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Africa'" %}
+					    {% if africa_past_projects.size > 0 %}
+					    	<h3>Africa</h3>
+					    	<ul>
+						    {% for p in africa_past_projects %}
+						    	<li>
 						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
 						    	</li>
 						    {% endfor %}
-						    {% if linked_past_projects.size == 0 %}
-					    		<li>No current projects found.</li>
-					    	{% endif %}
-					    </ul>
+						   	</ul>
+					    {% endif %}
+
+					    {% assign asia_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Asia'" %}
+					    {% if asia_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Asia</h3>
+					    	<ul>
+						    {% for p in asia_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign ee_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Europe and Eurasia'" %}
+					    {% if ee_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Europe and Eurasia</h3>
+					    	<ul>
+						    {% for p in ee_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign global_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Global'" %}
+					    {% if global_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Global</h3>
+					    	<ul>
+						    {% for p in global_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign laatc_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Latin America and the Caribbean'" %}
+					    {% if laatc_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Latin America and the Caribbean</h3>
+					    	<ul>
+						    {% for p in laatc_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign middle_east_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Middle East'" %}
+					    {% if middle_east_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Middle East</h3>
+					    	<ul>
+						    {% for p in middle_east_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign north_america_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'North America'" %}
+					    {% if north_america_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">North America</h3>
+					    	<ul>
+						    {% for p in north_america_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
 					  </div>
 				  </div>
 			  </div>
@@ -136,7 +211,7 @@ layout: default
 							      	<ul>
 							      	{% for item in this_pubs_projects %}
 							      		{% assign selected_item = item %}
-							      		{% assign selected_project = site.projects | where_exp: "item", "item.title contains selected_item" %}
+							      		{% assign selected_project = site.projects | where_exp: "item", "item.title == selected_item" %}
 							      		{% for item in selected_project %}
 							      			<li>
 							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>
