@@ -3803,6 +3803,16 @@ li.post {
       li.post .post-details .post-detail:first-child:before {
         display: none;
         margin: 0; }
+    li.post .post-details.linked-projects p {
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+    li.post .post-details.linked-projects ul {
+      margin-bottom: 0; }
+    li.post .post-details.linked-projects li {
+      margin-bottom: 5px; }
+      li.post .post-details.linked-projects li:last-child {
+        margin-bottom: 0; }
   li.post .post-description {
     font-size: 18px;
     color: #555;
