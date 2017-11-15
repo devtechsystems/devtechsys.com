@@ -45,6 +45,10 @@
       fill: black !important;
     }
   }
+
+  .breakdown-value-title {
+    margin-right: 16px;
+  }
 }
 
 .breakdown-panel {
@@ -69,6 +73,14 @@
       font-size: .7em;
       font-weight: 600;
       margin-bottom: 10px;
+      float: left;
+    }
+
+    .breakdown-value-title {
+      float: right;
+      font-size: .7em;
+      font-weight: 600;
+      color: #848484;
     }
   }
 

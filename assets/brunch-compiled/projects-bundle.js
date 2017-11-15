@@ -665,6 +665,7 @@ exports.default = function (_ref) {
       colorPalette = _ref.colorPalette,
       title = _ref.title,
       groupTitle = _ref.groupTitle,
+      valueTitle = _ref.valueTitle,
       onRowClick = _ref.onRowClick,
       className = _ref.className;
 
@@ -696,6 +697,11 @@ exports.default = function (_ref) {
         { className: 'breakdown-group-title' },
         'By ',
         groupTitle
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'breakdown-value-title' },
+        valueTitle
       ),
       _react2.default.createElement(
         _reactSizebox2.default,
@@ -1970,6 +1976,7 @@ document.addEventListener('DOMContentLoaded', function () {
     colorPalette: _ColorPalette2.default,
     title: 'Solutions',
     groupTitle: 'Practice Area',
+    valueTitle: 'Solutions',
     onRowClick: goToPracticeArea
   });
   var pbrPanel = _react2.default.createElement(_BreakdownPanel2.default, {
@@ -1977,7 +1984,8 @@ document.addEventListener('DOMContentLoaded', function () {
     bigNumber: totalCountries,
     colorPalette: _ColorPalette2.default,
     title: 'Countries',
-    groupTitle: 'Region'
+    groupTitle: 'Region',
+    valueTitle: 'Countries'
   });
 
   var stackedBarChart = _react2.default.createElement(
