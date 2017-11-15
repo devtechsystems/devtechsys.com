@@ -1743,6 +1743,13 @@ li.post {
         top: 3px;
       }
       &:first-child:before {display: none;margin:0;}
+      &.post-detail-dashed:before {
+        content: "\2013";
+        border-left: none;
+        height: 4px;
+        width: auto;
+        top: -1px;
+      }
     }
     &.linked-projects {
       p {

@@ -138,7 +138,15 @@ layout: default
 							      		{% assign selected_item = item %}
 							      		{% assign selected_project = site.projects | where_exp: "item", "item.title contains selected_item" %}
 							      		{% for item in selected_project %}
-							      			<li><a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a></li>
+							      			<li>
+							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>
+							      				{% if item['Start Year'].size > 0 %}
+									  					<span> {{ item['Start Year'] }}</span>
+									  				{% endif %}
+							      				{% if item['End Year'].size > 0 %}
+									  					<span>- {{ item['End Year'] }}</span>
+									  				{% endif %}
+							      			</li>
 							      		{% endfor %}
 							      	{% endfor %}
 							      	</ul>
