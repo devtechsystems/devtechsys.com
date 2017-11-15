@@ -149,8 +149,8 @@ defaults:
     Country: 
     Client/ Donor: 
     Is Current Project? (true/false): false
-    Practice Area:
-    Contract Value USD:
+    Practice Area: 
+    Contract Value USD: 
     layout: project
 - scope:
     path: ''
