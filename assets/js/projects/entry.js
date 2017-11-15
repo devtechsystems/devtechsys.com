@@ -18,6 +18,9 @@ import PracticeAreaExists from './util/PracticeAreaExists'
 import slugify from 'slugify'
 
 const formatters = qdFormatters(d3)
+if(process.env.NODE_ENV === "production") {
+  console.warn = () => {}
+}
 
 // Make sure each record only has one practice area
 // We need this in order to group by practice area because the original data can have multiple practice areas per record
