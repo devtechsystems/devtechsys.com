@@ -135,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       colorPalette={ColorPalette}
       title='Solutions'
       groupTitle='Practice Area'
+      valueTitle='Solutions'
       onRowClick={goToPracticeArea}
     />
   )
@@ -145,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       colorPalette={ColorPalette}
       title='Countries'
       groupTitle='Region'
+      valueTitle='Countries'
     />
   )
 
