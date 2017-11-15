@@ -138,14 +138,19 @@ defaults:
     path: ''
     type: projects
   values:
-    Title: 
     Highlight: 
     SEO Excerpt Overwrite: 
-    Banner Image: 
-    Practice Area:
+    Project Title: 
+    Start Year: 
+    End Year: 
+    ISO3 Code:
     - 
     Region: 
-    Is Active: 
+    Country: 
+    Client/ Donor: 
+    Is Current Project? (true/false): false
+    Practice Area:
+    Contract Value USD:
     layout: project
 - scope:
     path: ''
