@@ -80,11 +80,25 @@ layout: default
 			  <div class="tabs-panel" id="projects">
 			    <div class="row row--gutters column current-projects-list">
 				    <h3 class="CPL--title">Current Projects</h3>
-						<ul class="row link-list small-up-1 medium-up-2">
+						<ul class="posts">
 			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] != false" %}
 				    {% for p in linked_current_projects %}
-				      <li class="column column-block">
-				    		<a href="{{ p.url | relative_url }}" class="CPL--project">{{ p['Project Title'] }}</a>
+				      <li class="post">
+				    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p['Project Title'] }}</a>
+				    		<div class="post-details">
+				    			{% if p['Region'].size > 0 %}
+				    				<span class="post-detail">{{ p['Region'] }}</span>
+				    			{% endif %}
+				    			{% if p['Client/ Donor'].size > 0 %}
+				    				<span class="post-detail">{{ p['Client/ Donor'] }}</span>
+				    			{% endif %}
+				    			{% if p['Start Year'].size > 0 %}
+				  					<span class="post-detail">{{ p['Start Year'] }}</span>
+				  				{% endif %}
+				  				{% if p['End Year'].size > 0 %}
+				  					<span class="post-detail post-detail-dashed">{{ p['End Year'] }}</span>
+				  				{% endif %}
+				    		</div>
 				    	</li>
 				    {% endfor %}
 				    {% if linked_current_projects.size == 0 %}
