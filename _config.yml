@@ -112,6 +112,17 @@ defaults:
     layout: practice-areas
 - scope:
     path: ''
+    type: ''
+values:
+    SEO Excerpt Overwrite: 
+    Document URL: 
+    Practice Area:
+    - 
+    Project:
+    - 
+    layout: page
+- scope:
+    path: ''
     type: reports-and-publications
   values:
     SEO Excerpt Overwrite: 

@@ -1744,6 +1744,18 @@ li.post {
       }
       &:first-child:before {display: none;margin:0;}
     }
+    &.linked-projects {
+      p {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+      ul {margin-bottom:0;}
+      li {
+        margin-bottom:5px;
+        &:last-child {margin-bottom:0;}
+      }
+    }
   }
   .post-description {
     font-size: 18px;
