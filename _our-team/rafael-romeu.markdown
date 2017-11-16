@@ -1,6 +1,7 @@
 ---
 title: Rafael Romeu
 date: 2017-05-30 19:04:00 Z
+position: 2
 Title: Rafael Romeu
 Highlight: "Rafael Romeu is the President and CEO of  DevTech Systems, Inc., (DevTech).
   \x03In this capacity, he oversees all aspects of DevTech’s business operations and
