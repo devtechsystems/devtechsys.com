@@ -930,13 +930,13 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     list-style-type:none;
     margin:0 !important;
   }
-  li {margin-bottom:10px;}
+  li {margin-bottom:14px;}
   a {
     color: #7dcba7;
     text-decoration: none;
     font-size: 18px !important;
     letter-spacing: .01em;
-    line-height: 1.3;
+    line-height: 1.1;
     font-weight: 700;
     padding: 0 !important;
 
@@ -1642,7 +1642,8 @@ div.career-list {
       }
     }
   }
-  p.slightly-smaller {
+  p.slightly-smaller,
+  .slightly-smaller p {
     font-size: 15px;
     margin-right: 5%;
     color: #5a5a5a;
