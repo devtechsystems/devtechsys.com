@@ -1095,8 +1095,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 }
 .team-list-block {
   list-style-type: none;
-  padding-left: 30px;
-  padding-right: 30px;
+  & > a {display: inline-block;}
+  img {max-width: 220px; width: 100%;}
   .tl-title {
     font-size: 22px;
     margin-top: 15px;
@@ -1963,11 +1963,16 @@ ul.featured-insights {
     &:first-child {clear:none;}
   }
 
-
-
   .team-list-block {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    img {max-width:292px;}
+  }
+  .team-list-top-row {
+    .team-list-block {
+      &:first-child > a {float:right;}
+      img {max-width: none;}
+    }
   }
 }
 @media screen and (min-width: 64em) {
