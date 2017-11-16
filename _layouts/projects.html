@@ -97,7 +97,7 @@ layout: default
 				</div>
 				<div class="row column medium-12 projects-contracts">
 					<h2 class="projects-section-title">{{ page['Bar Chart Header'] }}</h2>
-					<p class="slightly-smaller">{{ page['Bar Chart Text'] }}</p>
+					<div class="slightly-smaller">{{ page['Bar Chart Text'] | strip | markdownify }}</div>
 
 					<h6 class="contracts-chart-title">Contract Value by Region &amp; Practice Area</h6>
 					<div class="contracts-section">
