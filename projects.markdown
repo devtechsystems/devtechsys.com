@@ -22,4 +22,4 @@ Bar Chart Text: "From small task orders to large multi-year contracts, DevTech h
 layout: projects
 ---
 
-this page is still a work in progress but I wanted to add the placeholder to get started
+this charts on this page use the project meta values to calculate contract values and solution/project counts.  below are a few meta fields that will allow you to edit text.  please note the <span id="countries-count" class="highlight-blue"></span>, there are two things to notice, the ID is used to work with the scripts to produce content and is required for this page to work without error, the second thing is the CLASS which is used to provided the blue highlight color, this is not required and only provides style.  
