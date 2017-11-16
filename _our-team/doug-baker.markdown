@@ -1,7 +1,7 @@
 ---
 title: Doug Baker
 date: 2017-08-28 17:29:00 Z
-position: 7
+position: 3
 Title: Doug Baker
 Headshot Image: "/uploads/Doug%20headshot%20circle.png"
 Job Title: 'Senior Director for Strategic Operations '
