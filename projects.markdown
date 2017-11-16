@@ -15,11 +15,11 @@ Partners Header: We've worked with over <span class="highlight-blue" id="partner
   partners.
 Bar Chart Header: Since 1984, <span class="highlight-blue">DevTech</span> contracts
   have made over <span class="highlight-blue" id="total-money"></span>
-Bar Chart Text: "From small task orders to large multi-year contracts, DevTech has
-  spent decades producing successful results for clients. No matter the task, we bring
-  agility and experience to our work.\n\nPlease note when a project below belongs
-  to more than one Practice Area the contract value has been double counted. "
+Bar Chart Text: |-
+  From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.
+
+  Please note when a project below belongs to more than one Practice Area the contract value has been counted for each Practice Area.
 layout: projects
 ---
 
-this page is still a work in progress but I wanted to add the placeholder to get started
+this charts on this page use the project meta values to calculate contract values and solution/project counts.  below are a few meta fields that will allow you to edit text.  please note the <span id="countries-count" class="highlight-blue"></span>, there are two things to notice, the ID is used to work with the scripts to produce content and is required for this page to work without error, the second thing is the CLASS which is used to provided the blue highlight color, this is not required and only provides style.  
