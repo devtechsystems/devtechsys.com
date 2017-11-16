@@ -74,12 +74,43 @@
           </div>
           <div class="small-16 medium-4 column">
             <h2><a href="/projects/">Our Projects</a></h2>
-            <!--ADD PROJECTS-->
+            <ul>
+              {% assign featured_projects = site.projects | limit:3 | where:'Is Featured',true %}
+              {% assign featured_projects_count = featured_projects | size %}
+              {% assign projects_to_show = 3 | minus:featured_projects_count %}
+
+              {% for featured in featured_projects limit:3 %}
+              <li>
+                <a class="post-link" href="{{ featured.url | relative_url }}">
+                  {{ featured.title | escape }}
+                </a>
+                <span class="post-details">
+                  {% if featured['Client/ Donor'].size > 0 %}
+                    <span class="post-detail">{{ featured['Client/ Donor'] }}</span>
+                  {% endif %}
+                </span>
+              </li>
+              {% endfor %}
+
+              {% for project in site.projects limit:projects_to_show %}
+              <li>
+                <a class="post-link" href="{{ project.url | relative_url }}">
+                  {{ project.title | escape }}
+                </a>
+                <span class="post-details">
+                  {% if project['Client/ Donor'].size > 0 %}
+                    <span class="post-detail">{{ project['Client/ Donor'] }}</span>
+                  {% endif %}
+                </span>
+              </li>
+              {% endfor %}
+              <li><a class="post-button" href="/projects/">See all projects</a></li>
+            </ul>
           </div>
           <div class="small-16 medium-5 column">
             <h2><a href="/insights/">Our Insights</a></h2>
             <ul>
-            {% for post in site.posts limit:3 %}
+              {% for post in site.posts limit:3 %}
               <li>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                   {{ post.title | escape }}
@@ -91,7 +122,7 @@
                   <span class="post-detail">{{ post.date | date: "%B %d, %Y" }}</span>
                 </span>
               </li>
-            {% endfor %}
+              {% endfor %}
               <li><a class="post-button" href="/insights/">See all posts</a></li>
             </ul>
           </div>
