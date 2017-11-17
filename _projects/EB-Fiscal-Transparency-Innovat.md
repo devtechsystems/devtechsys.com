@@ -1,5 +1,5 @@
 ---
-title: EB Fiscal Transparency Innovation Fund
+title: E3 Fiscal Transparency Innovation Fund
 Project Title: EB Fiscal Transparency Innovation Fund
 Start Year: 2016
 End Year: 2017
