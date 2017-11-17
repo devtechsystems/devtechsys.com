@@ -24,6 +24,8 @@ Brief Description: DevTech was an active member of a multi-organizational team t
 projects_slug: Knowledge-and-Practice:-Busine
 ---
 
-DevTech was an active member of a multi-organizational team that developed tools and strategies to:Enhance inter-firm cooperation and coordination between MSEs and other firms in value chains; and Encourage MSE owners to upgrade their businesses to improve competitiveness.
+DevTech was an active member of a multi-organizational team that developed tools and strategies to:
+* Enhance inter-firm cooperation and coordination between MSEs and other firms in value chains; and 
+* Encourage MSE owners to upgrade their businesses to improve competitiveness.
 
 DevTech staff led the field work for a quantitative study of Micro and Small Enterprises in Guatemala. The purpose of the survey was to identify opportunities and difficulties small enterprises experienced in Guatemala, and to research how small enterprises can thrive in local, national, and global markets. DevTech staff worked with the team to design the research protocol, survey methodology and training materials for local surveyors.
