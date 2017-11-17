@@ -1,6 +1,6 @@
 ---
 title: Investment Planning Technical Assistance in Costa Rica
-Project Title: Investment Planning
+Project Title: Investment Planning Technical Assistance in Costa Rica
 Start Year: 1988
 End Year: 1989
 ISO3 Code:
