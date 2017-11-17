@@ -3,7 +3,7 @@ title: Jorge Sanguinetty
 date: 2017-05-30 19:00:00 Z
 position: 0
 Title: Jorge Sanguinetty
-Headshot Image: "/uploads/Jorge-headshot.jpg"
+Headshot Image: "/uploads/Jorge%20circle-b8f270.png"
 Job Title: Ph.D., Founder, Chair Board of Directors
 Is Featured: true
 layout: page

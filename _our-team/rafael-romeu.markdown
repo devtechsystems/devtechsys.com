@@ -8,7 +8,7 @@ Highlight: "Rafael Romeu is the President and CEO of  DevTech Systems, Inc., (De
   serves as DevTech’s representative in professional forums. He holds a Ph.D. in international
   finance from the Department of Economics of the University of Maryland, \x03College
   Park."
-Headshot Image: "/uploads/Rafael%20headshot%20for%20web.jpg"
+Headshot Image: "/uploads/Rafael%20circle.png"
 Job Title: Ph.D., President, CEO
 navigation_group: Our Team
 layout: page
