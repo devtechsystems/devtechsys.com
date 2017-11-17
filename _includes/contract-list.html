@@ -11,7 +11,7 @@
   {% endfor %}
 
   <h2 class="CL--subtitle">Other Contractual Mechanisms</h2>
-  {% assign otherContracts = site.contracting-vehicles | sort: 'position' | where: 'Is Prime Contract', false | group_by: 'Agency' %}
+  {% assign otherContracts = site.contracting-vehicles | sort: 'position' | where_exp: "item", "item['Is Prime Contract'] != true" | group_by: 'Agency' %}
   {% for agency in otherContracts %}
     <h3 class="CL--agency">{{ agency.name }}</h3>
     <ul>
