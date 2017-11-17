@@ -74,12 +74,10 @@ DevTech worked in three primary areas:
 * Conducted workshops in support of women's legal rights through the Strengthening of Integrated Legal Services (SLIMS) in project municipalities.
 
 2. Projects and Service Delivery
-
 * Designed a manual for municipalities for the use of System Control for Public Lighting Management (SISCOC) that introduced general urban planning techniques and provided an easy-to-use tool for decision-making within an overall framework of transparent municipal management;
 * Increased capacity of municipalities to provide basic public services either directly or through single entities to provide public services (EPSAS). Several municipalities opened public service units to coordinate and articulate basic public service provision;
 * Gained citizen support for adjusting the water fee structure to be based on the real costs for operation, maintenance, and expansion.Improved potable water quality at the Municipality of Concepción; and
 * Developed a program for the use of ecological latrines and sewage connection, and provided training in the municipalities of San Javier, Concepción, Ascensión de Guarayos, and San Antonio de Lomerío, with additional training provided in project supervision and control in the municipalities of Cliza, Punata, Rurrenabaque, San Buenaventura, Reyes, Turco, and Curahuara.
 
 3. Municipal Finance
-
 * DevTech assisted on issues of municipal finance (including independent revenue sources) and played a key role in the initial stages of defining the Municipal Development Index. A specific accomplishment includes institutionalization of capacity to increase own source revenues in rural municipalities (completed in Cliza and San Juan de Yapacani, and ongoing in Chapare and Chiquitanía).
