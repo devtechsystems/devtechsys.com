@@ -20,4 +20,4 @@ Brief Description: For the Ministry of Education of Guatemala, DevTech developed
 projects_slug: National-Education-Program-Rev
 ---
 
-For the Ministry of Education of Guatemala, DevTech developed a negotiated proposal for restructuring the Ministry of Education of Guatemala to ensure that bilingual/inter-cultural education is an integral part of the national education program, as mandated by the Peace Accords. The proposal was well-received by officials at all levels of the Ministry and was implemented over the next several years.
+DevTech developed a negotiated proposal for restructuring the Ministry of Education of Guatemala to ensure that bilingual/inter-cultural education is an integral part of the national education program, as mandated by the Peace Accords. The proposal was well-received by officials at all levels of the Ministry and was implemented over the next several years.
