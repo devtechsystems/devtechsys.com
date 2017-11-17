@@ -27,5 +27,6 @@ The purpose of this feasibility study was to determine the needs and options for
 
 The assessment included:
 1. Examining labor market needs for long term sustainable development; 
-2. Assessing long term sustainable economic growth and the skills needed in growth industries; 3. Assessing the status of technical and vocational education institutions; and
+2. Assessing long term sustainable economic growth and the skills needed in growth industries; 
+3. Assessing the status of technical and vocational education institutions; and
 4. Analyzing construction and maintenance costs to build a new polytechnic institution in Aceh
