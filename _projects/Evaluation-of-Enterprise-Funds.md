@@ -10,7 +10,7 @@ Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
 - Public Financial Management and Fiscal Sustainability
-Contract Value USD: 379998
+Contract Value USD: 385470
 Brief Description: DevTech conducted a comprehensive evaluation of the Enterprise
   Funds and Legacy Foundations to provide USAID, other Fund and Foundation stakeholders,
   and the American public with an account of the experiences, successes and accomplishments,
