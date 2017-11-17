@@ -36,6 +36,6 @@ The goal of the Environmental Audit program was to provide a continuing program 
 A DevTech team provided administrative and information management support services to the Office of Environmental Audit at DOE facilities nationwide. The team was responsible for the implementation, operation, documentation, and maintenance of systems for the collection, verification, and publication of audit team (i.e., DOE staff and contractors) data.
 
 For each audit, DevTech's administrative team:
-* wrote and produced 50-page site handbooks for use by audit team members in preparing for the on-site portion of the audit and writing the report;
-* produced an on-site, 200-page draft report, including compilation of sections by technical specialists, integration of graphics, editing, and coordination of printing; and
-* produced camera-ready final reports incorporating site, technical specialist, and editorial comments for printing by the Government Printing Office.
+1. wrote and produced 50-page site handbooks for use by audit team members in preparing for the on-site portion of the audit and writing the report;
+2. produced an on-site, 200-page draft report, including compilation of sections by technical specialists, integration of graphics, editing, and coordination of printing; and
+3. produced camera-ready final reports incorporating site, technical specialist, and editorial comments for printing by the Government Printing Office.
