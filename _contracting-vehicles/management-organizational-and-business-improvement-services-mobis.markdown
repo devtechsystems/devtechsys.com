@@ -7,5 +7,4 @@ Agency: General Services Administration
 Is Prime Contract: true
 ---
 
-SIN 874-1: Consulting Services
-SIN 874-7: Program Integration and Project Management Services
+
