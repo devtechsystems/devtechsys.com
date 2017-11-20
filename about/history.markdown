@@ -1,7 +1,7 @@
 ---
 title: History
 position: 2
-Title: For more than 30 years, DevTech has been an innovative, solutions-oriented
+Title: For more than 32 years, DevTech has been an innovative, solutions-oriented
   firm.
 Highlight: 'Founded in 1984 by Jorge Sanguinetty, Ph.D., DevTech has evolved from
   a Latin America and Caribbean consulting firm, to an agile and technically robust
