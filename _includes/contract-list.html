@@ -10,16 +10,18 @@
     </ul>
   {% endfor %}
 
-  <h2 class="CL--subtitle">Other Contractual Mechanisms</h2>
   {% assign otherContracts = site.contracting-vehicles | sort: 'position' | where_exp: "item", "item['Is Prime Contract'] != true" | group_by: 'Agency' %}
-  {% for agency in otherContracts %}
-    <h3 class="CL--agency">{{ agency.name }}</h3>
-    <ul>
-      {% for contracts in agency.items %}
-      <li>
-        {{ contracts['Full Title'] | escape }}
-      </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
+  {% if otherContracts.size > 0 %}
+  <h2 class="CL--subtitle">Other Contractual Mechanisms</h2>
+    {% for agency in otherContracts %}
+      <h3 class="CL--agency">{{ agency.name }}</h3>
+      <ul>
+        {% for contracts in agency.items %}
+        <li>
+          {{ contracts['Full Title'] | escape }}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endif %}
 </div>
