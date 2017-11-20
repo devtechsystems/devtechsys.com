@@ -54,7 +54,11 @@ projects_slug: Evaluation-of-the-Education-Su
 
 Evaluation of ESP:
 
-The USAID/Egypt Education Support Program (ESP) was a three-year nationwide activity of support to the Ministry of Education (MOE) to restore stability and build the quality of the public education system in the period immediately following the January 2011 revolution. At the conclusion of the ESP (January 31, 2015), USAID/Egypt contracted DevTech Systems Inc. (DevTech) and its subcontractor The QED Group, LLC (QED) to conduct the final performance evaluation of the program.  The evaluation objectives were: (1) to review analyze, and evaluate the effectiveness of USAID-funded ESP activities in achieving program objectives and completing deliverables; and, (2) to provide specific recommendations and lessons learned to ensure that future funding for capacity-building in the areas for Boards of Trustees (BOTs), teacher training, and remedial reading are directed to activities that have the highest potential to achieve improved and sustainable results
+The USAID/Egypt Education Support Program (ESP) was a three-year nationwide activity of support to the Ministry of Education (MOE) to restore stability and build the quality of the public education system in the period immediately following the January 2011 revolution. At the conclusion of the ESP (January 31, 2015), USAID/Egypt contracted DevTech Systems Inc. (DevTech) and its subcontractor The QED Group, LLC (QED) to conduct the final performance evaluation of the program.  
+
+The evaluation objectives were: 
+1. to review analyze, and evaluate the effectiveness of USAID-funded ESP activities in achieving program objectives and completing deliverables; and,
+2. to provide specific recommendations and lessons learned to ensure that future funding for capacity-building in the areas for Boards of Trustees (BOTs), teacher training, and remedial reading are directed to activities that have the highest potential to achieve improved and sustainable results
 
 Evaluation of CISP:
 
