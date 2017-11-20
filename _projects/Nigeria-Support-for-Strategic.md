@@ -14,6 +14,7 @@ Practice Area:
 - Monitoring and Evaluation
 - Knowledge Management and Data Analytics
 Contract Value USD: 22696378
+Is Featured: true
 Brief Description: 7. Scope of work or complexity/diversity of tasks:In October 2016,
   USAID/Nigeria awarded DevTech Systems Inc. the Support for Strategic Information
   and Program Management Services (S4SIPMS) project in support of the HIV/AIDS, TB
