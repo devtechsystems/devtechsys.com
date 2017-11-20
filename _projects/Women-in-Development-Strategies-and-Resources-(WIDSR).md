@@ -5,7 +5,6 @@ Start Year: 1993
 End Year: 1998
 Region: Global
 Client/ Donor: USAID
-Is Current Project? (true/false): "(202) 712-1524"
 Practice Area:
 - Education, Gender and Youth
 - Knowledge Management and Data Analytics
