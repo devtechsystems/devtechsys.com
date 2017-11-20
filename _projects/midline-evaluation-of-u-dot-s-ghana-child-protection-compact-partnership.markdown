@@ -9,6 +9,8 @@ ISO3 Code:
 Region: Africa
 Country: Ghana
 Client/ Donor: U.S. Department of State
+Practice Area: Monitoring and Evaluation
+Contract Value USD: 598400
 ---
 
 Task order evaluation under the Department of State's Office to Monitor and Combat Trafficking in Persons (J/TIP) BPA.
