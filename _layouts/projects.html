@@ -30,12 +30,12 @@ layout: default
 						</div>
 					</div>
 				</div>
-				<div class="row column medium-12 projects-solutions-countries">
+				<div class="row column medium-16 large-12 projects-solutions-countries">
 					<h2 class="projects-section-title">{{ page['Donut Header'] }}</h2>
-					<p class="slightly-smaller">{{ page['Donut Text'] }}</p>
+					<p class="slightly-smaller">{{ page['Donut Text'] | strip | markdownify }}</p>
 					<div class="row">
 						<div class="column small-16 medium-8">
-							<div class="projects-chart right-separator">
+							<div class="projects-chart right-separator-medium">
 								<div id="projects-by-practice-area" style="min-height:250px;max-height:330px;">
 									<!-- added max-height to remove overflow with fixed chart height -->
 								</div>
@@ -51,7 +51,7 @@ layout: default
 					</div>
 				</div>
 				<div class="background-lighterGray">
-					<div class="row column medium-12 projects-partners">
+					<div class="row column medium-14 large-12 projects-partners">
 						<h2 class="projects-section-title">{{ page['Partners Header'] }}</h2>
 						<div class="row align-center align-middle hide-for-large">
 							<div class="small-6 medium-4 column">
@@ -136,17 +136,19 @@ layout: default
 						</div>
 					</div>
 				</div>
-				<div class="row column medium-12 projects-contracts">
+				<div class="row column medium-16 large-12 projects-contracts">
 					<h2 class="projects-section-title">{{ page['Bar Chart Header'] }}</h2>
 					<div class="slightly-smaller">{{ page['Bar Chart Text'] | strip | markdownify }}</div>
 
-					<h6 class="contracts-chart-title">Contract Value by Region &amp; Practice Area</h6>
-					<div class="contracts-section">
-						<div id="contract-value" style="min-height:300px;">
-							<!--you can keep the min-height in the styles 
-							    but id remove the background color once implemented
-							-->
+					<div class="show-for-medium-screen">
+						<h6 class="contracts-chart-title">Contract Value by Region &amp; Practice Area</h6>
+						<div class="contracts-section">
+							<div id="contract-value" style="min-height:300px;"></div>
 						</div>
+					</div>
+					<div class="show-for-medium-screen-only">
+						<h6 class="contracts-chart-title">Contract Value by Region &amp; Practice Area</h6>
+						<div class="note"><span class="fa fa-note" aria-hidden="true"></span> chart only available on large screen sizes</div>
 					</div>
 				</div>
 				<div class="background-darkBlue">

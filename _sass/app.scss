@@ -1098,6 +1098,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     .button-container {
       margin-top:10px;
       button {font-size: 26px;}
+      button .close-x {
+        font-size: 50px;
+        top: 0px;
+      }
     }
     .site-title img {width:162px;}
     .section-links {
@@ -1123,6 +1127,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     margin:0 0 10px 20px;
   }
 }
+.show-for-medium-screen-only {display: none;}
 @media print, screen and (max-width: 46em) {
   .site-header-navigation .is-stuck .section-links {display: none;}
   .content blockquote {
@@ -1131,6 +1136,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     margin-left: 0;
     margin-bottom: 20px;
   }
+  .show-for-medium-screen {display: none;}
+  .show-for-medium-screen-only {display: block;}
 }
 
 //#########
@@ -1591,6 +1598,12 @@ div.career-list {
   .background-lighterGray {background-color:#f5f5f5;}
   .background-lighterBlue {background-color: #dfeff5;}
   .background-darkBlue {background-color: #284460;}
+  .note {
+    background-color: #f6f5f6;
+    padding: 10px;
+    font-size: 21px;
+    font-weight: 300;
+  }
   .projects-solutions-countries {
     padding-bottom: 80px;
   }
@@ -1605,9 +1618,7 @@ div.career-list {
     position: relative;
     margin-top:20px;
   }
-  .right-separator {
-    border-right: 1px solid #9d9d9d;
-  }
+  .right-separator-medium {border-right: 1px solid transparent;}
   .contracts-chart-title {
     font-weight: 600;
     font-size: .95em;
@@ -1646,11 +1657,11 @@ div.career-list {
     p {
       color: #fff;
       font-size: 14px;
-      margin-bottom: 0;
     }
     .button {
-      min-width: 200px !important;
+      min-width: 160px !important;
       width: 100%;
+      padding:16px 20px;
     }
   }
   .projects-search {
@@ -2041,9 +2052,8 @@ ul.featured-insights {
       }
     }
   }
-  .site {
-    .button {min-width: 300px;}
-  }
+  .site .button {min-width: 300px;}
+  .content .right-separator-medium {border-right-color:#9d9d9d;}
   ul.featured-insights li {
     float:left;
     width:50%;
