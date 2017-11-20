@@ -17,7 +17,7 @@ DevTech’s technical capabilities complement its ability to operate and manage 
 
 DevTech has implemented long- and short-term projects in 98 different countries for over two dozen government agencies, multilateral development institutions, subnational governments, and private sector entities. 
 
-DevTech’s headquarters is located in Rosslyn, VA, with offices in the District of Columbia, Guatemala, Nicaragua, Nigeria, and Brazil.
+DevTech’s headquarters is located in Rosslyn, VA, with offices in Guatemala, Nicaragua, Nigeria, and Brazil.
 
 
 
