@@ -7,7 +7,8 @@ End Year: 2018
 Region: Africa
 Client/ Donor: U.S. Department of State
 Is Current Project? (true/false): true
-Practice Area: Monitoring and Evaluation
+Practice Area:
+- Monitoring and Evaluation
 Contract Value USD: 238741
 ---
 
