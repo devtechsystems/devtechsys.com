@@ -1,133 +1,145 @@
-  <div class="row column">
-    <a class="site-title" href="{{ "/" | relative_url }}"><img src="/assets/images/logo-devtech.png" alt="{{ site.title | escape }}"/></a>
+  <div class="site-header-navigation" data-sticky-container>
+    <div class="sticky" data-sticky data-top-anchor="site_content">
+      <div class="row column">
+        <a class="site-title" href="{{ "/" | relative_url }}"><img src="/assets/images/logo-devtech.png" alt="{{ site.title | escape }}"/></a>
 
-    <div class="button-container">
-      <button class="search-button" type="button" data-toggle="search-dropdown">
-        <span class="sr-only">Toggle Search</span>
-        <span class="fa fa-search" aria-hidden="true"></span>
-      </button>
+        <div class="section-links">
+          <a href="/about/history/">About<span>&#160;Us</span></a>
+          <a href="/our-practices/"><span>Our&#160;</span>Practices</a>
+          <a href="/projects/"><span>Our&#160;</span>Projects</a>
+          <a href="/insights/"><span>Our&#160;</span>Insights</a>
+        </div>
 
-      <button class="menu-button" type="button" data-toggle="menu-dropdown">
-        <span class="sr-only">Toggle Menu</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
-      </button>
+        <div class="button-container">
+          <button class="search-button" type="button" data-toggle="search-dropdown">
+            <span class="sr-only">Toggle Search</span>
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <span class="close-x" aria-hidden="true">x</span>
+          </button>
+
+          <button class="menu-button" type="button" data-toggle="menu-dropdown">
+            <span class="sr-only">Toggle Menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+            <span class="close-x" aria-hidden="true">x</span>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown-container site-header-dropdown">
-    <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true">
-      <div class="background-darkBlue">
-        <div class="row">
-          <div class="small-16 column">
-            <form action="/search" method="get" id="global_site_search">
-              <label class="SD--label">
-                <span class="sr-only">Search</span>
-                <span class="fa fa-search" aria-hidden="true"></span>
-                <input type="text" name="q" placeholder="Begin typing to search" autocomplete="off" />
-              </label>
-            </form>
+    <div class="dropdown-container site-header-dropdown">
+      <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true">
+        <div class="background-darkBlue">
+          <div class="row">
+            <div class="small-16 column">
+              <form action="/search" method="get" id="global_site_search">
+                <label class="SD--label">
+                  <span class="sr-only">Search</span>
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                  <input type="text" name="q" placeholder="Begin typing to search" autocomplete="off" />
+                </label>
+              </form>
 
-            {% assign search_page = site.pages | where_exp: "item", "item.title contains 'Search'" %}
+              {% assign search_page = site.pages | where_exp: "item", "item.title contains 'Search'" %}
 
-            <div class="SD--content">
-              {% for p in search_page %}
-                {{ p.content | markdownify }}
-              {% endfor %}
+              <div class="SD--content">
+                {% for p in search_page %}
+                  {{ p.content | markdownify }}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-container site-header-dropdown">
+      <div class="dropdown-pane" id="menu-dropdown" data-dropdown>
+        <div class="background-darkBlue">
+          <div class="row">
+            <div class="small-16 medium-7 large-3 column">
+              <h2><a href="/about/history/">About Us</a></h2>
+              <ul>
+                {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
+                {% for p in aboutNav_pages %}
+                  {% if p.navigation_order %}
+                    <li>
+                      <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                        {{ p.title }}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="small-16 medium-9 large-4 column">
+              <h2><a href="/our-practices/">Our Practices</a></h2>
+              <ul>
+                {% assign practicesNav_pages = site.our-practices | sort: 'position'  %}
+                {% for p in practicesNav_pages %}
+                  <li>
+                    <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                      {{ p.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="small-16 medium-7 large-4 column">
+              <h2><a href="/projects/">Our Projects</a></h2>
+              <ul>
+                {% assign featured_projects = site.projects | limit:3 | where:'Is Featured',true %}
+                {% assign featured_projects_count = featured_projects | size %}
+                {% assign projects_to_show = 3 | minus:featured_projects_count %}
+
+                {% for featured in featured_projects limit:3 %}
+                <li>
+                  <a class="post-link" href="{{ featured.url | relative_url }}">
+                    {{ featured.title | escape }}
+                  </a>
+                  <span class="post-details">
+                    {% if featured['Client/ Donor'].size > 0 %}
+                      <span class="post-detail">{{ featured['Client/ Donor'] }}</span>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+
+                {% for project in site.projects limit:projects_to_show %}
+                <li>
+                  <a class="post-link" href="{{ project.url | relative_url }}">
+                    {{ project.title | escape }}
+                  </a>
+                  <span class="post-details">
+                    {% if project['Client/ Donor'].size > 0 %}
+                      <span class="post-detail">{{ project['Client/ Donor'] }}</span>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+                <li><a class="post-button" href="/projects/">See all projects</a></li>
+              </ul>
+            </div>
+            <div class="small-16 medium-9 large-5 column">
+              <h2><a href="/insights/">Our Insights</a></h2>
+              <ul>
+                {% for post in site.posts limit:3 %}
+                <li>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                  <span class="post-details">
+                    {% if post['Author'].size > 0 %}
+                      <span class="post-detail">By {{ post['Author'] }}</span>
+                    {% endif %}
+                    <span class="post-detail">{{ post.date | date: "%B %d, %Y" }}</span>
+                  </span>
+                </li>
+                {% endfor %}
+                <li><a class="post-button" href="/insights/">See all posts</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="dropdown-container site-header-dropdown">
-    <div class="dropdown-pane" id="menu-dropdown" data-dropdown>
-      <div class="background-darkBlue">
-        <div class="row">
-          <div class="small-16 medium-3 column">
-            <h2><a href="/about/history/">About Us</a></h2>
-            <ul>
-              {% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-              {% for p in aboutNav_pages %}
-                {% if p.navigation_order %}
-                  <li>
-                    <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-                      {{ p.title }}
-                    </a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="small-16 medium-4 column">
-            <h2><a href="/our-practices/">Our Practices</a></h2>
-            <ul>
-              {% assign practicesNav_pages = site.our-practices | sort: 'position'  %}
-              {% for p in practicesNav_pages %}
-                <li>
-                  <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-                    {{ p.title }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="small-16 medium-4 column">
-            <h2><a href="/projects/">Our Projects</a></h2>
-            <ul>
-              {% assign featured_projects = site.projects | limit:3 | where:'Is Featured',true %}
-              {% assign featured_projects_count = featured_projects | size %}
-              {% assign projects_to_show = 3 | minus:featured_projects_count %}
-
-              {% for featured in featured_projects limit:3 %}
-              <li>
-                <a class="post-link" href="{{ featured.url | relative_url }}">
-                  {{ featured.title | escape }}
-                </a>
-                <span class="post-details">
-                  {% if featured['Client/ Donor'].size > 0 %}
-                    <span class="post-detail">{{ featured['Client/ Donor'] }}</span>
-                  {% endif %}
-                </span>
-              </li>
-              {% endfor %}
-
-              {% for project in site.projects limit:projects_to_show %}
-              <li>
-                <a class="post-link" href="{{ project.url | relative_url }}">
-                  {{ project.title | escape }}
-                </a>
-                <span class="post-details">
-                  {% if project['Client/ Donor'].size > 0 %}
-                    <span class="post-detail">{{ project['Client/ Donor'] }}</span>
-                  {% endif %}
-                </span>
-              </li>
-              {% endfor %}
-              <li><a class="post-button" href="/projects/">See all projects</a></li>
-            </ul>
-          </div>
-          <div class="small-16 medium-5 column">
-            <h2><a href="/insights/">Our Insights</a></h2>
-            <ul>
-              {% for post in site.posts limit:3 %}
-              <li>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-                <span class="post-details">
-                  {% if post['Author'].size > 0 %}
-                    <span class="post-detail">By {{ post['Author'] }}</span>
-                  {% endif %}
-                  <span class="post-detail">{{ post.date | date: "%B %d, %Y" }}</span>
-                </span>
-              </li>
-              {% endfor %}
-              <li><a class="post-button" href="/insights/">See all posts</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  

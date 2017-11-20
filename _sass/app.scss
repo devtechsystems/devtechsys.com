@@ -101,12 +101,11 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     position: relative;
     z-index: 11;
     display: inline-block;
-    margin-top: 28px;
   }
 
   .button-container {
     float:right;
-    margin-top:42px;
+    margin-top:14px;
     position: relative;
     z-index: 12;
 
@@ -114,8 +113,26 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       font-size: 31px;
       border-radius: 0;
       cursor: pointer;
+
+      .close-x {
+        visibility:hidden;
+        position: absolute;
+        top: 2px;
+        left: 23px;
+        font-size: 56px;
+        line-height: 14px;
+        color: #7dcba7;
+      }
+
+      &.hover {
+        .fa {visibility: hidden;}
+        .close-x {visibility:visible;}
+      }
     }
-    .search-button {color:#fff;}
+    .search-button {
+      color:#fff;
+      .close-x {left:3px;}
+    }
     .menu-button {
       color: #fff;
       margin-left: 20px;
@@ -709,10 +726,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       text-transform: none;
       font-size: 22px;
       letter-spacing: 0;
+      box-shadow: 0px 5px 0px 0px #7dcba7;
 
       .fa {
         margin-left: 20px;
         font-size: 16px;
+        float: right;
       }
     }
     .dropdown-pane {
@@ -907,7 +926,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   background-color: #284460;
 
   .dropdown-pane {
-    top: -91px !important;
+    top: -101px !important;
     left: 0 !important;
     width: 100%;
     border: 0;
@@ -1041,6 +1060,79 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
+.site-header-navigation {
+  .sticky {
+    z-index: 11;
+    transition: all .32s ease;
+    background-color:rgba(41, 68, 95, 0);
+    & > .column {
+      padding-top:28px;
+      padding-bottom:10px;
+    }
+    .section-links {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      top: -30px;
+
+      a {
+        display: inline-block;
+        padding: 11px 8px 0;
+        font-weight: 700;
+        color: #fff;
+        font-size: 17px;
+        line-height: 1;
+        text-transform: uppercase;
+        opacity:0;
+        span {display: none;}
+      }
+    }
+  }
+  .is-stuck {
+    background-color:rgba(41, 68, 95, 1);
+    margin-top:0 !important;
+    & > .column {
+      padding-top:10px;
+    }
+    .button-container {
+      margin-top:10px;
+      button {font-size: 26px;}
+    }
+    .site-title img {width:162px;}
+    .section-links {
+      top: 15px;
+      padding-left:67px;
+      a {opacity:1;}
+    }
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .site-header-navigation {
+    .sticky  > .column .section-links a {
+      padding: 11px 15px 0;
+    }
+  }
+}
+
+@media print, screen and (min-width: 55em) {
+  .site-header-navigation .sticky  > .column .section-links a span {display: inline-block;}
+  .headshot-thumbnail {
+    float:right;
+    margin:0 0 10px 20px;
+  }
+}
+@media print, screen and (max-width: 46em) {
+  .site-header-navigation .is-stuck .section-links {display: none;}
+  .content blockquote {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
 //#########
 //page specific styles
 
@@ -1089,8 +1181,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
 
 //team list
 .headshot-thumbnail {
-  float:right;
-  margin:0 0 10px 20px;
+  margin:10px 0 20px;
   max-width: 300px;
 }
 .team-list-block {
@@ -1178,7 +1269,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   margin-left:0 !important;
   margin-right:0 !important;
   font-size: 18px;
-  .column:first-child {
+  .column {
     text-align: center;
   }
   .fa {
@@ -1531,8 +1622,8 @@ div.career-list {
     .row.align-center {
       .column {
         text-align: center;
+        margin-bottom: 20px;
       }
-      & + .row.align-center {margin-top:20px;}
     }
   }
   .projects-contact-us {
