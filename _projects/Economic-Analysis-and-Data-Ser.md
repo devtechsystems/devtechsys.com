@@ -8,9 +8,9 @@ Country: Global
 Client/ Donor: USAID
 Is Current Project? (true/false): true
 Practice Area:
-- Education, Gender and Youth
-- Public Financial Management and Fiscal Sustainability
 - Knowledge Management and Data Analytics
+- Public Financial Management and Fiscal Sustainability
+- Education, Gender and Youth
 Contract Value USD: 21852354
 Is Featured: true
 Brief Description: DevTech manages USAID's Economic Analysis and Data Services (EADS),

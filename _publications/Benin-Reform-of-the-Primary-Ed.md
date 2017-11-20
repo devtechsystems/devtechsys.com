@@ -1,6 +1,6 @@
 ---
-title: Benin Reform of the Primary Education System
-Document URL: "/uploads/benin-reform-of-the-primary-education-system.pdf"
+title: Evaluation of Benin's Basic Education Reform Pedagogical Component
+Document URL: http://pdf.usaid.gov/pdf_docs/Pdaby813.pdf
 Practice Area:
 - Monitoring and Evaluation
 - Education, Gender and Youth

@@ -2,7 +2,7 @@
 title: Comprehensive Evaluation of the Bureau of Counterterrorism (CT) Antiterrorism
   Assistance (ATA) Program
 Project Title: Comprehensive Evaluation of the Bureau of Counterterrorism (CT) Antiterrorism
-  Assistance (ATA) Program (Indonesia)
+  Assistance (ATA) Program
 Start Year: 2015
 End Year: 2017
 ISO3 Code:
@@ -12,7 +12,7 @@ ISO3 Code:
 Region: Africa
 Country: Indonesia, Jordan, Niger
 Client/ Donor: U.S. Department of State
-Is Current Project? (true/false): false
+Is Current Project? (true/false): true
 Practice Area:
 - Monitoring and Evaluation
 - Security, Transparency, and Governance

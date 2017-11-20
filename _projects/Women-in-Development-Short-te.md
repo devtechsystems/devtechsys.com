@@ -1,6 +1,6 @@
 ---
-title: 'Women in Development: Short-term Technical Assistance and Training Supporting
-  Gender Integration in USAID Operating Units Under Leadership of EGAT/WID'
+title: 'Women in Development: Short-Term Technical Assistance and Training (STTA&T)
+  Supporting Gender Integration in USAID Operating Units Under Leadership of EGAT/WID'
 Project Title: 'Women in Development: Short-term Technical Assistance and Training
   Supporting Gender Integration in USAID Operating Units Under Leadership of EGAT/WID'
 Start Year: 2002

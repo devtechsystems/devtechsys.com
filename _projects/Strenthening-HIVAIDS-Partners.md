@@ -1,6 +1,6 @@
 ---
 title: Strengthening HIV/AIDS Partnerships in Education (SHAPE) I and II Evaluation
-Project Title: Strenthening HIV/AIDS Partnerships in Educatino (SHAPE) I and II Evaluation
+Project Title: Strenthening HIV/AIDS Partnerships in Education (SHAPE) I and II Evaluation
 Start Year: 2007
 End Year: 2007
 ISO3 Code:

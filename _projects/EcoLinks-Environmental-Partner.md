@@ -1,6 +1,6 @@
 ---
-title: EcoLinks Environmental Partnership Program Management Support
-Project Title: EcoLinks Environmental Partnership Program Management Support
+title: Environmental Information Systems and Networking (EISN) Project
+Project Title: Environmental Information Systems and Networking (EISN) Project
 Start Year: 1998
 End Year: 2003
 ISO3 Code:
