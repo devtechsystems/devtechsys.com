@@ -7,8 +7,8 @@ Region: Asia
 Client/ Donor: USAID
 Is Current Project? (true/false): false
 Practice Area:
-- Monitoring and Evaluation
 - Energy and Environment
+- Monitoring and Evaluation
 Contract Value USD: 4252305
 Brief Description: Under the management of the U.S.-Asia Environmental Partnership
   (US-AEP), the Environmental Technology Network for Asia (ETNA) linked nine US-AEP
