@@ -48,8 +48,15 @@ function checkVersion() {
   }
 }
 
+function enableMenuScroll() {
+	$('#menu-dropdown').on('show.zf.dropdown', function() {
+	  $(window).scrollTop(0);
+	});
+}
+
 $(document).ready(function() {
   $(document).foundation();
   dropdownWithTabs();
 	checkVersion();
+	enableMenuScroll();
 });

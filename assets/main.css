@@ -2493,19 +2493,32 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   .site-header .site-title {
     position: relative;
     z-index: 11;
-    display: inline-block;
-    margin-top: 28px; }
+    display: inline-block; }
   .site-header .button-container {
     float: right;
-    margin-top: 42px;
+    margin-top: 14px;
     position: relative;
     z-index: 12; }
     .site-header .button-container button {
       font-size: 31px;
       border-radius: 0;
       cursor: pointer; }
+      .site-header .button-container button .close-x {
+        visibility: hidden;
+        position: absolute;
+        top: 2px;
+        left: 23px;
+        font-size: 56px;
+        line-height: 14px;
+        color: #7dcba7; }
+      .site-header .button-container button.hover .fa {
+        visibility: hidden; }
+      .site-header .button-container button.hover .close-x {
+        visibility: visible; }
     .site-header .button-container .search-button {
       color: #fff; }
+      .site-header .button-container .search-button .close-x {
+        left: 3px; }
     .site-header .button-container .menu-button {
       color: #fff;
       margin-left: 20px;
@@ -2973,10 +2986,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     background-color: #c8e2ef;
     text-transform: none;
     font-size: 22px;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    box-shadow: 0px 5px 0px 0px #7dcba7; }
     .page .dropdown-container .button-dropdown .fa {
       margin-left: 20px;
-      font-size: 16px; }
+      font-size: 16px;
+      float: right; }
   .page .dropdown-container .dropdown-pane {
     border: 0;
     border-radius: 0;
@@ -3126,7 +3141,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   width: 100%;
   background-color: #284460; }
   .site-header .site-header-dropdown .dropdown-pane {
-    top: -91px !important;
+    top: -101px !important;
     left: 0 !important;
     width: 100%;
     border: 0;
@@ -3235,6 +3250,78 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     display: block;
     margin-bottom: 9px; }
 
+.site-header-navigation .sticky {
+  z-index: 11;
+  transition: all .32s ease;
+  background-color: rgba(41, 68, 95, 0); }
+  .site-header-navigation .sticky > .column {
+    padding-top: 28px;
+    padding-bottom: 10px; }
+  .site-header-navigation .sticky .section-links {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: -30px; }
+    .site-header-navigation .sticky .section-links a {
+      display: inline-block;
+      padding: 11px 8px 0;
+      font-weight: 700;
+      color: #fff;
+      font-size: 17px;
+      line-height: 1;
+      text-transform: uppercase;
+      opacity: 0; }
+      .site-header-navigation .sticky .section-links a span {
+        display: none; }
+.site-header-navigation .is-stuck {
+  background-color: #29445f;
+  margin-top: 0 !important; }
+  .site-header-navigation .is-stuck > .column {
+    padding-top: 10px; }
+  .site-header-navigation .is-stuck .button-container {
+    margin-top: 10px; }
+    .site-header-navigation .is-stuck .button-container button {
+      font-size: 26px; }
+    .site-header-navigation .is-stuck .button-container button .close-x {
+      font-size: 50px;
+      top: 0px; }
+  .site-header-navigation .is-stuck .site-title img {
+    width: 162px; }
+  .site-header-navigation .is-stuck .section-links {
+    top: 15px;
+    padding-left: 67px; }
+    .site-header-navigation .is-stuck .section-links a {
+      opacity: 1; }
+
+@media print, screen and (min-width: 64em) {
+  .site-header-navigation .sticky > .column .section-links a {
+    padding: 11px 15px 0; } }
+@media print, screen and (min-width: 55em) {
+  .site-header-navigation .sticky > .column .section-links a span {
+    display: inline-block; }
+
+  .headshot-thumbnail {
+    float: right;
+    margin: 0 0 10px 20px; } }
+.show-for-medium-screen-only {
+  display: none; }
+
+@media print, screen and (max-width: 46em) {
+  .site-header-navigation .is-stuck .section-links {
+    display: none; }
+
+  .content blockquote {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px; }
+
+  .show-for-medium-screen {
+    display: none; }
+
+  .show-for-medium-screen-only {
+    display: block; } }
 .contract-list .CL--title {
   font-size: 30px;
   color: #28445f;
@@ -3271,8 +3358,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   padding-top: 24px; }
 
 .headshot-thumbnail {
-  float: right;
-  margin: 0 0 10px 20px;
+  margin: 10px 0 20px;
   max-width: 300px; }
 
 .team-list-block {
@@ -3346,7 +3432,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   margin-left: 0 !important;
   margin-right: 0 !important;
   font-size: 18px; }
-  .contact-details .column:first-child {
+  .contact-details .column {
     text-align: center; }
   .contact-details .fa {
     color: #66b0d3;
@@ -3601,6 +3687,11 @@ div.career-list .fa {
   background-color: #dfeff5; }
 .content .background-darkBlue {
   background-color: #284460; }
+.content .note {
+  background-color: #f6f5f6;
+  padding: 10px;
+  font-size: 21px;
+  font-weight: 300; }
 .content .projects-solutions-countries {
   padding-bottom: 80px; }
 .content .projects-map {
@@ -3611,8 +3702,8 @@ div.career-list .fa {
 .content .projects-chart, .content .regions-chart, .content .contracts-section {
   position: relative;
   margin-top: 20px; }
-.content .right-separator {
-  border-right: 1px solid #9d9d9d; }
+.content .right-separator-medium {
+  border-right: 1px solid transparent; }
 .content .contracts-chart-title {
   font-weight: 600;
   font-size: .95em; }
@@ -3623,9 +3714,8 @@ div.career-list .fa {
     margin-top: 0;
     margin-bottom: 40px; }
   .content .projects-partners .row.align-center .column {
-    text-align: center; }
-  .content .projects-partners .row.align-center + .row.align-center {
-    margin-top: 20px; }
+    text-align: center;
+    margin-bottom: 20px; }
 .content .projects-contact-us {
   margin-top: 60px;
   padding-bottom: 40px;
@@ -3643,11 +3733,11 @@ div.career-list .fa {
     text-transform: uppercase; }
   .content .projects-contact-us p {
     color: #fff;
-    font-size: 14px;
-    margin-bottom: 0; }
+    font-size: 14px; }
   .content .projects-contact-us .button {
-    min-width: 200px !important;
-    width: 100%; }
+    min-width: 160px !important;
+    width: 100%;
+    padding: 16px 20px; }
 .content .projects-search {
   padding-bottom: 30px; }
   .content .projects-search h2 {
@@ -3990,6 +4080,9 @@ ul.featured-insights {
 
   .site .button {
     min-width: 300px; }
+
+  .content .right-separator-medium {
+    border-right-color: #9d9d9d; }
 
   ul.featured-insights li {
     float: left;
