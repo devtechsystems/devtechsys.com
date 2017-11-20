@@ -24,7 +24,7 @@ Brief Description: 'DevTech performed a mid-term evaluation of the USAID Basic E
 projects_slug: Mid-Term-Evaluation-of-Basic-E
 ---
 
-DevTech performed a mid-term evaluation of the USAID Basic Education Project (BASE). The three-person team evaluated the design, management, and implementation of the project under three major components:
+DevTech performed a mid-term evaluation of the USAID Basic Education Project (BASE) in Nicaragua. The three-person team evaluated the design, management, and implementation of the project under three major components:
 * institutional strengthening, 
 * teacher training, and curriculum and 
 * instructional materials design. 
