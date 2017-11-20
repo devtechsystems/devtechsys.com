@@ -1,7 +1,7 @@
 ---
 title: USAID/Zambia Assistance to Strengthen Ministry of Education Support to Community
   Schools
-Document URL: http://www.devtechsys.com/images/eyd/zambia-strengthen-support-to-community-schools-2008-05.pdf
+Document URL: http://pdf.usaid.gov/pdf_docs/Pdacn014.pdf
 Practice Area:
 - Monitoring and Evaluation
 - Education, Gender and Youth
