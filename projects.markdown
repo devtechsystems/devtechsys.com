@@ -12,8 +12,8 @@ Donut Text: |-
   With a breadth of experience across six practice areas and nearly every region of the world, DevTech produces innovative results and addresses complex global challenges. Our solutions include large multi-year projects, short-term task orders, and short-term technical assistance.
 
   *Please note that when a solution below belongs to more than one Practice Area it is counted for each individual Practice Area.
-Partners Header: We've worked with over <span class="highlight-blue" id="partners-count"></span>
-  partners.
+Partners Header: We've worked on projects with over <span class="highlight-blue" id="partners-count"></span>
+  partners and clients.
 Bar Chart Header: Since 1984, <span class="highlight-blue">DevTech</span> contracts
   have made over <span class="highlight-blue" id="total-money"></span>
 Bar Chart Text: |-
