@@ -7,7 +7,7 @@ ISO3 Code:
 - GBL
 Region: Global
 Country: Global
-Client/ Donor: USAID/Bureau fo Policy, Planning, and Learning (PPL)
+Client/ Donor: USAID/Bureau for Policy, Planning, and Learning (PPL)
 Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
