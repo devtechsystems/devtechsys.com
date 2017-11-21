@@ -1,5 +1,5 @@
 ---
-title: USAID/Guatemala Monitoring and Evaluation Program
+title: USAID/Guatemala Monitoring and Evaluation Program (MEP)
 Project Title: USAID/Guatemala Monitoring and Evaluation Program (MEP)
 Start Year: 2013
 End Year: 2018
