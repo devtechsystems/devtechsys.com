@@ -10,6 +10,7 @@ Country: Jamaica
 Client/ Donor: USAID
 Is Current Project? (true/false): false
 Practice Area:
+- Energy and Environment
 - Education, Gender and Youth
 Contract Value USD: 3699965
 Brief Description: USAID contracted DevTech to facilitate the rapid reconstruction
