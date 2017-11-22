@@ -162,13 +162,12 @@ defaults:
     Location Image: 
     Phone Number: 
     layout: page
-newEmptyArray: []
-email: ''
+email: 
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
   partnerships, and address complex policy challenges.
 
 '
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 permalink: pretty
 google_analytics: UA-106154880-1
