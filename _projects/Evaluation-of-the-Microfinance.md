@@ -27,7 +27,9 @@ Brief Description: DevTech successfully completed on schedule and within scope a
 projects_slug: Evaluation-of-the-Microfinance
 ---
 
-DevTech successfully completed on schedule and within scope an in-country evaluation of USAID Honduras progress and the effectiveness of the current technical assistance to strengthen the micro- and small-business lending capacity of selected microfinance institutions in Honduras.The DevTech evaluators reviewed and provided written analysis of the:
+DevTech successfully completed on schedule and within scope an in-country evaluation of USAID Honduras progress and the effectiveness of the current technical assistance to strengthen the micro- and small-business lending capacity of selected microfinance institutions in Honduras.
+
+The DevTech evaluators reviewed and provided written analysis of the:
 * Long- and short-term staffing, contract management, and support;
 * Technical assistance and training activities, including indicators developed by the contractor for measuring results, the strategy followed, and results to date;
 * Coordination between the institutional contractor, the Covelo Foundation, and the institutional contractor and USAID;

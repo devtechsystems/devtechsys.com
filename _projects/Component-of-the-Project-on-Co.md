@@ -4,7 +4,7 @@ Project Title: Component of the Project on Competition, Laws, and Regulations
 Start Year: 1995
 End Year: 1995
 Region: Europe and Eurasia
-Client/ Donor: FTC/DOJ
+Client/ Donor: Federal Trade Commission, U.S. Department of Justice
 Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
