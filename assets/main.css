@@ -2864,6 +2864,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   padding-bottom: 80px; }
   .home .insights .column {
     text-align: center; }
+  .home .insights .insights--title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #284460;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
   .home .insights ul {
     list-style-type: none; }
     .home .insights ul li {
