@@ -1097,10 +1097,12 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
     .button-container {
       margin-top:10px;
-      button {font-size: 26px;}
-      button .close-x {
-        font-size: 50px;
-        top: 0px;
+      button {
+        font-size: 26px;
+        .close-x {
+          font-size: 50px;
+          top: 0px;
+        }
       }
     }
     .site-title img {width:162px;}
