@@ -7,6 +7,7 @@ layout: default
   <div class="site-content home" id="site_content" aria-label="Content">
     <div class="row insights">
       <div class="column small-16">
+        <h2 class="insights--title">{{page['Insights Section']['Title']}}</h2>
         <ul class="clearfix">
           {% assign featured_insights = site.posts | limit:3 | where:'Is Featured',true %}
           {% assign featured_insight_count = featured_insights | size %}

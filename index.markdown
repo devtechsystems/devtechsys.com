@@ -9,7 +9,8 @@ Hero Section:
   Button Label: What Makes Us Different
   Button Link: "/about/history/"
 Insights Section:
-  Button Label: Read Our Latest Insights
+  Title: Our Latest Insights
+  Button Label: Read More
 Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
