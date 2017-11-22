@@ -3283,9 +3283,9 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     margin-top: 10px; }
     .site-header-navigation .is-stuck .button-container button {
       font-size: 26px; }
-    .site-header-navigation .is-stuck .button-container button .close-x {
-      font-size: 50px;
-      top: 0px; }
+      .site-header-navigation .is-stuck .button-container button .close-x {
+        font-size: 50px;
+        top: 0px; }
   .site-header-navigation .is-stuck .site-title img {
     width: 162px; }
   .site-header-navigation .is-stuck .section-links {
@@ -3716,6 +3716,12 @@ div.career-list .fa {
   .content .projects-partners .row.align-center .column {
     text-align: center;
     margin-bottom: 20px; }
+  .content .projects-partners .pp--seal-layout {
+    max-width: 72px; }
+  .content .projects-partners .pp--usda-layout {
+    max-width: 88px; }
+  .content .projects-partners .pp--idb-layout {
+    max-width: 160px; }
 .content .projects-contact-us {
   margin-top: 60px;
   padding-bottom: 40px;
