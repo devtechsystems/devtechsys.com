@@ -1,6 +1,6 @@
 ---
-title: 'Education in a Multiethnic and Multi-Cultural Context: Understanding the past
-  to comprehend the present'
+title: 'Education in a Multi-Ethnic and Multi-Cultural Context: Understanding the
+  past to comprehend the present'
 date: 2017-07-19 15:38:00 Z
 Practice Area:
 - Education, Gender and Youth
