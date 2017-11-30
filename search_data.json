@@ -1297,19 +1297,19 @@
       }
   
       ,
-      "projects-monitoring-and-evaluation-of-l": {
-        "title": "Monitoring and Evaluation of Latin America and the Caribbean Regional Security Initiative Programs (CARSI)",
+      "projects-monitoring-and-evaluation-of-carsi": {
+        "title": "Monitoring and Evaluation of Central American Regional Security Initiative (CARSI) Programs",
         "type": "Project",
-        "content"  : "For the INL’s Central America Regional Security Initiative (CARSI) task order, DevTech supported the Office of Western Hemisphere to develop a systematic data collection mechanism and procedure to facilitate the regular monitoring of CARSI programs and conducted evidence-based evaluations of program progress to determine the effectiveness in meeting goals and objectives, identify lessons learned, and provide timely analysis for effective management decisions. The evaluations focused on El Salvador, Guatemala, Honduras, and Panama. DevTech also developed the monitoring system using InfoPath so that it remains compliant with INL’s security and information technology system requirements. CARSI has implemented program activities aimed at three core outcomes:  Disrupting criminal infrastructure, routes, and networks;  Building the capacity of law enforcement and justice sector actors and institutions to serve citizens and address regional threats;  Advancing community policing, gang prevention, and economic and social programming for at-risk youth in communities disproportionately impacted by crime.",
-        "url": " /projects/Monitoring-and-Evaluation-of-L/"
+        "content"  : "For the INL’s Central America Regional Security Initiative (CARSI) task order, For INL’s Central America Regional Security Initiative (CARSI) task order, DevTech conducted evidence-based evaluations of CARSI activities financed with International Narcotics and Control and Law Enforcement (INCLE) funds, administered by INL’s Office of Western Hemisphere Programs (INL/WHP), in Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, and Panama from Fiscal Year 2009 to FY2016. During this period, the U.S. Congress appropriated $733.1 million in INCLE funds to INL/CARSI to help to strengthen Central American law enforcement and justice sector institutions; assist in countering organized crime; and advance community policing, gang prevention, and socioeconomic programs for at-risk communities. DevTech also developed a systematic monitoring and reporting system for these civilian security activities, adapted from the system DevTech developed for the INL/CBSI evaluation to support INL’s monitoring, analysis, and reporting activities as well as management decisions.",
+        "url": " /projects/Monitoring-and-Evaluation-of-CARSI/"
       }
   
       ,
-      "projects-monitoring-and-evaluation-of-t": {
+      "projects-monitoring-and-evaluation-of-inl-cbsi": {
         "title": "Monitoring and Evaluation of the Bureau of International Narcotics and Law Enforcement Affairs (INL) Caribbean Basin Security Initiative Program (CBSI)",
         "type": "Project",
         "content"  : "DevTech worked with INL to develop and implement a monitoring system for the INL programs under the Caribbean Basin Security Initiative (CBSI) and conducted mid-term and summative evaluations of the INCLE-funded programs that are part of this initiative.",
-        "url": " /projects/Monitoring-and-Evaluation-of-t/"
+        "url": " /projects/Monitoring-and-Evaluation-of-INL-CBSI/"
       }
   
       ,
