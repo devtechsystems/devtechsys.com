@@ -7,6 +7,6 @@ Practice Area:
 - Education, Gender and Youth
 - Knowledge Management and Data Analytics
 Project:
-- 'Women in Development: Strategic and Technical Support (WIDStrat)'
+- Girls' and Women's Education
 ---
 
