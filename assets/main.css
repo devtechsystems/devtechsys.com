@@ -4110,12 +4110,10 @@ ul.featured-insights {
     padding-left: 16px;
     padding-right: 16px; }
     .team-list-block img {
-      max-width: 292px; }
+      max-width: 280px; }
 
   .team-list-top-row .team-list-block:first-child > a {
-    float: right; }
-  .team-list-top-row .team-list-block img {
-    max-width: none; } }
+    float: right; } }
 @media screen and (min-width: 64em) {
   .row--office-locations p.OL--phone {
     float: right; } }
