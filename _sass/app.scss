@@ -2080,12 +2080,11 @@ ul.featured-insights {
   .team-list-block {
     padding-left: 16px;
     padding-right: 16px;
-    img {max-width:292px;}
+    img {max-width:280px;}
   }
   .team-list-top-row {
     .team-list-block {
       &:first-child > a {float:right;}
-      img {max-width: none;}
     }
   }
 }
