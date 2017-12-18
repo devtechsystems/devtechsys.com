@@ -1,5 +1,5 @@
 ---
-title: Combatting Chronic Malnutrition in Guatemala
+title: Combating Chronic Malnutrition in Guatemala
 date: 2017-06-05 18:44:00 Z
 Practice Area:
 - Education, Gender and Youth
