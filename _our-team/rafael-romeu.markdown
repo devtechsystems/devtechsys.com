@@ -1,15 +1,15 @@
 ---
-title: Rafael Romeu
+title: Rafael Romeu, Ph.D.
 date: 2017-05-30 19:04:00 Z
 position: 2
-Title: Rafael Romeu
+Title: Rafael Romeu, Ph.D.
 Highlight: "Rafael Romeu is the President and CEO of  DevTech Systems, Inc., (DevTech).
   \x03In this capacity, he oversees all aspects of DevTech’s business operations and
   serves as DevTech’s representative in professional forums. He holds a Ph.D. in international
   finance from the Department of Economics of the University of Maryland, \x03College
   Park."
 Headshot Image: "/uploads/Rafael%20circle.png"
-Job Title: Ph.D., President, CEO
+Job Title: President, Chief Executive Officer
 navigation_group: Our Team
 layout: page
 ---
