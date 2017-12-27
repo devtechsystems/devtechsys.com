@@ -56,6 +56,6 @@ In October 2016, USAID/Nigeria awarded DevTech Systems Inc. the Support for Stra
 
 3. Synthesize Evaluation Lessons and Analyze to determine Policy Implications
 * Increase proper documentation, recording, data demand and use; and 
-* Foster country ownership and sustainability for program improvement and services delivery through data us.
+* Foster country ownership and sustainability for program improvement and services delivery through data use.
 
 In FY2017, the S4SIPMS Project completed 635 Site Improvement through Monitoring Systems (SIMS) assessments, across 28 states, on behalf of USAID. In FY2018, the project has a target of 420 SIMS assessments, including above-site, facility, and community site visits.
