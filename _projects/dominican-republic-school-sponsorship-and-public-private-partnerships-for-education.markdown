@@ -1,8 +1,9 @@
 ---
-title: Dominican Republic School Sponsorship and Public-Private Partnerships for Education
+title: Dominican Republic Improved Basic Education through Private Sector Sponsorship
+  of Public Schools
 date: 2018-02-13 15:22:00 Z
-Project Title: Dominican Republic School Sponsorship and Public-Private Partnerships
-  for Education
+Project Title: Dominican Republic Improved Basic Education through Private Sector
+  Sponsorship of Public Schools
 Start Year: 2002
 End Year: 2003
 ISO3 Code:
