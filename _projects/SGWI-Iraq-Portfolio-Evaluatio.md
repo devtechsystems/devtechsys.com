@@ -8,7 +8,7 @@ ISO3 Code:
 Region: Middle East
 Country: Iraq
 Client/ Donor: U.S. Department of State
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
 - Education, Gender and Youth
