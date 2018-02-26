@@ -2,13 +2,13 @@
 title: Brazilian Amazon Monitoring and Evaluation (BAME) Program
 Project Title: Brazilian Amazon Monitoring and Evaluation (BAME) Program
 Start Year: 2017
-End Year: 2019
+End Year: 2018
 ISO3 Code:
 - BRA
 Region: Latin America and the Caribbean
 Country: Brazil
 Client/ Donor: USAID
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
 - Energy and Environment
