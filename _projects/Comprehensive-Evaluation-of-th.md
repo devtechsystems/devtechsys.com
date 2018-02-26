@@ -12,7 +12,7 @@ ISO3 Code:
 Region: Africa
 Country: Indonesia, Jordan, Niger
 Client/ Donor: U.S. Department of State
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
 - Security, Transparency, and Governance
