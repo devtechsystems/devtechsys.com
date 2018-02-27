@@ -27,6 +27,7 @@ jQuery(function() {
   $("#site_search").submit(function(event){
       event.preventDefault();
       var query = $("#search-query").val(); // Get the value for the text field
+      query = query.replace('+', ' ')
       var results = window.idx.search(query); // Get lunr to perform a search
       display_search_results(results); // Hand the results off to be displayed
   });
@@ -68,6 +69,7 @@ jQuery(function() {
     if (is_query != -1) {
       var query = loc.substr(is_query + 3);
       var decoded_query = decodeURI(query);
+      decoded_query = decoded_query.replace('+', ' ')
       $("#search-query").val(decoded_query);
 
       setTimeout(function(){
