@@ -13,9 +13,7 @@ ISO3 Code:
 - USA
 - KHM
 - ZAF
-- USA
 - UGA
-- USA
 - PER
 - TZA
 - HTI
