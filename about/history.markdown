@@ -1,7 +1,7 @@
 ---
 title: History
 position: 2
-Title: For more than 32 years, DevTech has been an innovative, solutions-oriented
+Title: For more than 33 years, DevTech has been an innovative, solutions-oriented
   firm.
 Highlight: 'Founded in 1984 by Jorge Sanguinetty, Ph.D., DevTech has evolved from
   a Latin America and Caribbean consulting firm, to an agile and technically robust
@@ -17,7 +17,7 @@ DevTech’s technical capabilities complement its ability to operate and manage 
 
 DevTech has implemented long- and short-term projects in 98 different countries for over two dozen government agencies, multilateral development institutions, subnational governments, and private sector entities. 
 
-DevTech’s headquarters is located in Rosslyn, VA, with offices in Guatemala, Nicaragua, Nigeria, and Brazil.
+DevTech’s headquarters is located in Rosslyn, VA, with offices in Guatemala, Nicaragua, and Nigeria.
 
 
 
