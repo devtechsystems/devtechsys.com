@@ -28,5 +28,3 @@ The story recreates a scene in a local park, where young children meet a strange
 The puppets sing, dance, speak in rhyme, laugh, and cry to capture children’s attention, strengthen listening skills, and vocabulary development. They also warn children, parents, and community members about the dangers of trafficking and empower the audience to take action. The puppet show has been showcased at the American Chamber of Commerce in Nicaragua national business school fair, national and local TV channels, local fairs, and local radio and in a national newspaper.
 
 The DevTech initiative emphasizes arts and culture through drama to connect with audiences on a far more emotional level than most other education efforts, potentially leading to greater learning and eventual behavioral change. In schools, this puppet theater performance will continue to engage children, parents and community members in Nicaragua in making the path to peacebuilding a personal one.
-
-[Puppet 2.JPG](/uploads/Puppet%202.JPG)
