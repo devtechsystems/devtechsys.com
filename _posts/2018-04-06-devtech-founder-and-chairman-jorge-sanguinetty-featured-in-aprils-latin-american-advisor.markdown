@@ -5,6 +5,7 @@ date: 2018-04-06 12:20:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 - 
+Teaser Image: "/uploads/2.JPG"
 Author: Cory M. Cali, Esq.
 Is Featured: true
 Field name: 
