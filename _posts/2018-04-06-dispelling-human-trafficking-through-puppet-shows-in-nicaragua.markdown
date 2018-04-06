@@ -4,6 +4,7 @@ date: 2018-04-06 16:10:00 Z
 Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/Puppet.JPG"
+Banner Image: "/uploads/Puppet%202.JPG"
 Author: Ileana Lacayo, Communications Specialist, CARS Project
 Is Featured: true
 ---
