@@ -1,6 +1,6 @@
 ---
-title: DevTech Systems Founder and Chairman, Dr. Jorge A. Sanguinetty, was quoted
-  this April in the Latin America Advisor
+title: DevTech Founder and Chairman, Dr. Jorge Sanguinetty, featured in Latin America
+  Advisor
 date: 2018-04-06 14:56:00 Z
 ---
 
