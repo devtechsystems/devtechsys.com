@@ -6,6 +6,7 @@ Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/teaser-cars-2011.jpg"
 Author: George Henriquez Cayasso
+Is Featured: true
 ---
 
 In order to understand the high illiteracy rate and educational context on the Caribbean coast of Nicaragua, it is necessary to take a look back at Nicaragua’s history.
