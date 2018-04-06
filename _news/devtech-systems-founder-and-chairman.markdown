@@ -1,5 +1,6 @@
 ---
-title: DevTech Systems Founder and Chairman
+title: DevTech Founder and Chairman, Dr. Jorge Sanguinetty, featured in Latin America
+  Advisor
 date: 2018-04-06 15:33:00 Z
 ---
 
