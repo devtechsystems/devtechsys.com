@@ -2,6 +2,7 @@
 title: DevTech is proud to announce the release of its Microenterprise Results Reporting
   (MRR) FY2016 annual report to Congress
 date: 2017-07-31 19:56:00 Z
+position: 2
 ---
 
 DevTech is proud to announce the release of its Microenterprise Results Reporting (MRR) FY2016 annual report to Congress. [You can view the report here](https://mrr.usaid.gov/reports.html).  MRR is part of the USAID Economic Analysis and Data Services (EADS) project, a five-year contract to provide USAID with a suite of data tools and technical services. 
