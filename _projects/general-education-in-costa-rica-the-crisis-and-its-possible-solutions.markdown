@@ -13,3 +13,4 @@ Practice Area:
 - Education, Gender and Youth
 ---
 
+DevTech founder, Dr. Jorge Sanguinetty, conducted technical assistance for the World Bank to Costa Rica identifying solutions to the education crisis in the 1980s.
