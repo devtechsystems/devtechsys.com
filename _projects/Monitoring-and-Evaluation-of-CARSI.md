@@ -10,6 +10,9 @@ ISO3 Code:
 - GTM
 - HND
 - PAN
+- CRI
+- BLZ
+- NIC
 Region: Latin America and the Caribbean
 Country: El Salvador, Guatemala, Honduras, Panama
 Client/ Donor: U.S. Department of State
