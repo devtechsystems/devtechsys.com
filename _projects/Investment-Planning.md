@@ -4,7 +4,7 @@ Project Title: Investment Planning Technical Assistance in Costa Rica
 Start Year: 1988
 End Year: 1989
 ISO3 Code:
-- COS
+- CRI
 Region: Latin America and the Caribbean
 Country: Costa Rica
 Client/ Donor: World Bank
