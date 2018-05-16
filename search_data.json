@@ -161,6 +161,22 @@
       }
   
       ,
+      "projects-health-and-social-security-in-costa-rica": {
+        "title": "Health and Social Security in Costa Rica",
+        "type": "Project",
+        "content"  : "",
+        "url": " /projects/health-and-social-security-in-costa-rica/"
+      }
+  
+      ,
+      "projects-general-education-in-costa-rica-the-crisis-and-its-possible-solutions": {
+        "title": "General Education in Costa Rica: The Crisis and Its Possible Solutions",
+        "type": "Project",
+        "content"  : "",
+        "url": " /projects/general-education-in-costa-rica-the-crisis-and-its-possible-solutions/"
+      }
+  
+      ,
       "projects-apec-laboratory-capacity-build": {
         "title": "APEC Laboratory Capacity Building Evaluation",
         "type": "Project",
