@@ -4,7 +4,7 @@ Project Title: Primary and Secondary Education
 Start Year: 1987
 End Year: 1988
 ISO3 Code:
-- COS
+- CRI
 Region: Latin America and the Caribbean
 Country: Costa Rica
 Client/ Donor: World Bank
