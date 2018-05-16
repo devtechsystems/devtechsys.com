@@ -1,5 +1,5 @@
 ---
-title: Primary and Secondary Education
+title: General Education Study in Costa Rica
 Project Title: Primary and Secondary Education
 Start Year: 1987
 End Year: 1988
