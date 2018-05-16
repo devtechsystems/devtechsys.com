@@ -5,6 +5,8 @@ Start Year: 2011
 End Year: 2017
 ISO3 Code:
 - GBL
+- SOM
+- MMR
 Region: Global
 Country: Global
 Client/ Donor: USAID/Bureau for Policy, Planning, and Learning (PPL)
