@@ -13,3 +13,4 @@ Practice Area:
 - Education, Gender and Youth
 ---
 
+DevTech founder, Dr. Jorge Sanguinetty, completed a report detailing research findings on the health sector in Costa Rica. This report was funded by the World Bank.
