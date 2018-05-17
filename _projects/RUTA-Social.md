@@ -4,7 +4,7 @@ Project Title: RUTA Social
 Start Year: 1996
 End Year: 1996
 ISO3 Code:
-- BEL
+- BLZ
 - CRI
 - SLV
 - GTM
