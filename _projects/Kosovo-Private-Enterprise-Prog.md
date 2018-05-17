@@ -4,7 +4,7 @@ Project Title: Kosovo Private Enterprise Program
 Start Year: 2008
 End Year: 2012
 ISO3 Code:
-- KKO
+- KOS
 Region: Europe and Eurasia
 Country: Kosovo
 Client/ Donor: USAID
