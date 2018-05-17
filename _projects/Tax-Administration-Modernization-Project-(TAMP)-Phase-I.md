@@ -4,7 +4,7 @@ Project Title: 'Tax Administration Modernization Project (TAMP): Phase I'
 Start Year: 2001
 End Year: 2002
 ISO3 Code:
-- HGO
+- BIH
 Region: Europe and Eurasia
 Country: Bosnia and Herzegovina
 Client/ Donor: USAID
