@@ -14,7 +14,7 @@ ISO3 Code:
 - BLZ
 - NIC
 Region: Latin America and the Caribbean
-Country: El Salvador, Guatemala, Honduras, Panama
+Country: El Salvador, Guatemala, Honduras, Panama, Belize, Costa Rica, Nicaragua
 Client/ Donor: U.S. Department of State
 Is Current Project? (true/false): false
 Practice Area:
