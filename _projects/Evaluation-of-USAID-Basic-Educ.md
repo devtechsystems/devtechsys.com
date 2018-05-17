@@ -9,7 +9,7 @@ ISO3 Code:
 - TJK
 - UZB
 Region: Asia
-Country: Kyrgyzstan
+Country: Kyrgyzstan, Tajikistan, Uzbekistan
 Client/ Donor: USAID
 Is Current Project? (true/false): false
 Practice Area:
