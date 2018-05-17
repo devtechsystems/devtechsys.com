@@ -4,7 +4,7 @@ Project Title: Moldova Governance Country Threshold Program
 Start Year: 2007
 End Year: 2009
 ISO3 Code:
-- MOL
+- MDA
 Region: Europe and Eurasia
 Country: Moldova
 Client/ Donor: USAID
