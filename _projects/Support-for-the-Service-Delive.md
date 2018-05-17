@@ -4,7 +4,7 @@ Project Title: Support for the Service Delivery Integration (SSDI) Activity Eval
 Start Year: 2011
 End Year: 2016
 ISO3 Code:
-- MLI
+- MWI
 Region: Africa
 Country: Malawi
 Client/ Donor: USAID
