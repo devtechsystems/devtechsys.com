@@ -1,7 +1,7 @@
 ---
 title: Monitoring and Evaluation
 date: 2017-05-30 18:47:00 Z
-position: 2
+position: 0
 Highlight: DevTech was founded on the premise that quality research can impact social
   change and lead to more effective development assistance. The firm has more than
   32 years of experience monitoring the performance and evaluating the impact of development
