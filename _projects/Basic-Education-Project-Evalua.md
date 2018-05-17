@@ -4,7 +4,7 @@ Project Title: 'Basic Education Project Evaluation: Honduras'
 Start Year: 1995
 End Year: 1996
 ISO3 Code:
-- HON
+- HND
 Region: Latin America and the Caribbean
 Country: Honduras
 Client/ Donor: USAID
