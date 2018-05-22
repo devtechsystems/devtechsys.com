@@ -1,11 +1,10 @@
 ---
 title: DevTech Systems Hires Leon “Skip” Waskin to Lead Business Development and Program
   Management Operations
-date: 2018-05-22 12:49:00 Z
-published: false
+date: 2018-05-22 10:00:00 Z
 ---
 
-DevTech Systems today announced it has hired Leon “Skip” Watson as Senior Director of Operations. He brings more than 35 years of international development experience and will be focused on shaping the firm’s strategic business development efforts and helping to manage business expansion and program management operations.
+DevTech Systems today announced it has hired Leon “Skip” Waskin as Senior Director of Operations. He brings more than 35 years of international development experience and will be focused on shaping the firm’s strategic business development efforts and helping to manage business expansion and program management operations.
 
 Mr. Waskin has spent much of his career as a senior foreign services officer, most recently as the Coordinator for Economic and Development Assistance at the U.S. Embassy in Pakistan.  Some of his achievements in the foreign service include:
 
