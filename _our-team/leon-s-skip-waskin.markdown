@@ -3,7 +3,7 @@ title: Leon S. "Skip" Waskin
 date: 2018-05-17 14:28:00 Z
 position: 4
 Title: Leon S. "Skip" Waskin
-Headshot Image: "/uploads/Skip%20Website-8d65c1.jpg"
+Headshot Image: "/uploads/SkipWaskinWeb.png"
 Job Title: Senior Director for Operations
 ---
 
