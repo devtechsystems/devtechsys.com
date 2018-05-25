@@ -16,4 +16,4 @@ Prior to his assignment to Pakistan, Mr. Waskin worked with the Pax Mondial Grou
 
 “I have dedicated my career to helping governments and governmental organizations around the world achieve long-term stability, prosperity, and growth,” said Mr. Waskin.  “I am looking forward to putting that experience to use at DevTech, to help grow their unique data-driven approach to innovative solutions for international development.”
 
-“We are excited to bring onboard someone with such extensive international senior management experience,” commented Rafael Romeau, President and Chief Executive Officer of DevTech.  “We have entered an intense new phase of growth, and he will play a crucial role in helping us and our customers achieve our goals.”
+“We are excited to bring onboard someone with such extensive international senior management experience,” commented Rafael Romeu, President and Chief Executive Officer of DevTech.  “We have entered an intense new phase of growth, and he will play a crucial role in helping us and our customers achieve our goals.”
