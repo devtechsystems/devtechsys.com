@@ -9,7 +9,7 @@ ISO3 Code:
 Region: Asia
 Country: India
 Client/ Donor: World Bank
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area: Public Financial Management and Fiscal Sustainability
 Contract Value USD: 49997
 ---
