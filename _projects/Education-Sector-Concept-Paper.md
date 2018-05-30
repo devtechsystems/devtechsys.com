@@ -5,7 +5,13 @@ Start Year: 1990
 End Year: 1992
 ISO3 Code:
 - CRI
+- DOM
+- SLV
+- GTM
+- HND
+- PAN
 Region: Latin America and the Caribbean
+Country: Costa Rica, Dominican Republic, El Salvador, Guatemala, Honduras, Panama
 Client/ Donor: USAID
 Is Current Project? (true/false): false
 Practice Area:
