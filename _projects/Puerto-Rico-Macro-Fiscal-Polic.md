@@ -4,7 +4,7 @@ Project Title: Puerto Rico Macro Fiscal Policy Program
 Start Year: 2016
 End Year: Present
 ISO3 Code:
-- PRI
+- USA
 Region: Latin America and the Caribbean
 Country: Puerto Rico
 Client/ Donor: Puerto Rico Fiscal Agency and Financial Advisory Authority
