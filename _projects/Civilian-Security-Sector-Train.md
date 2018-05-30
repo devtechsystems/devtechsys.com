@@ -9,7 +9,7 @@ ISO3 Code:
 Region: Africa
 Country: Tunisia
 Client/ Donor: U.S. Department of State
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Security, Transparency, and Governance
 Contract Value USD: 333420
