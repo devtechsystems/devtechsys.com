@@ -8,8 +8,8 @@ tags:
 - Development
 Practice Area:
 - Monitoring and Evaluation
-Teaser Image: "/uploads/ProjectSpotlightTeaser.png"
-Banner Image: "/uploads/ProjectSpotlightBanner.png"
+Teaser Image: "/uploads/PSSenegalTeaser.png"
+Banner Image: "/uploads/PSSenegalBanner.png"
 ---
 
 The United States Agency for International Development (USAID) provides economic development and humanitarian assistance to foreign countries around the world. For more than 30 years, DevTech has worked closely with USAID to monitor the performance and evaluate the impact of USAID and USAID programs through robust data collection and quality research.
