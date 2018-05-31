@@ -1,6 +1,6 @@
 ---
 title: Markdown Banner Title
-date: 2017-07-18 23:32:00 Z
+date: 2017-06-01 23:32:00 Z
 published: false
 Title: Markdown Styling Example Title.  A Title Should be used to change the Title
   in the page.
