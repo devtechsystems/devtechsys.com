@@ -1,6 +1,6 @@
 ---
 title: The Changing Environment of the Development Industry
-date: 2018-06-05 15:46:00 Z
+date: 2018-06-05 12:00:00 Z
 Teaser Image: "/uploads/SIDAttendeeTeaser.png"
 Banner Image: "/uploads/SIDAttendeeBanner.png"
 ---
