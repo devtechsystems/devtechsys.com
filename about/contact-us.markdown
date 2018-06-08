@@ -3,8 +3,9 @@ title: Contact Us
 position: 7
 Title: Say Hello
 Highlight: For all general inquiries, you can reach us at the below phone number and
-  email addresses. You can also fill out the below form and someone from our team
-  will contact you.
+  email addresses. For journalist and media inquiries please email our communications
+  team at media@devtechsys.com. For all inquiries, you can also fill out the below
+  form and someone from our team will contact you.
 navigation_group: About Us
 navigation_order: 6
 footer_navigation_order: 1
