@@ -1,7 +1,7 @@
 ---
-title: Our Insights & News
+title: Our Insights
 date: 2017-06-12 18:08:00 Z
-Title: Our Insights & News
+Title: Our Insights
 Insights:
 - DevTech Sponsors 2018 SID-Washington Annual Conference
 - Dispelling Human Trafficking through Puppet Shows in Nicaragua
