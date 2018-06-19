@@ -1,6 +1,15 @@
 ---
 title: Incident Command System Performance Evaluation – Indonesia
-date: 2018-06-19 19:49:00 Z
+date: 2018-06-20 10:00:00 Z
+tags:
+- USAID
+- ICS
+- Environment
+- Natural Disaster
+- Indonesia
+- Prevention
+Teaser Image: "/uploads/PSIndonesiaTeaser.png"
+Banner Image: "/uploads/PSIndonesiaBanner.png"
 ---
 
 Countries in the East Asia Pacific (EAP) region face extremely high climate-related disaster risks from typhoons, hurricanes, monsoon rains, volcanoes, earthquakes, tsunamis, and other natural phenomena. Indonesia in particular endures over 2,000 disaster events each year, with the incidence of natural disasters rising by almost 350 percent over the last three decades. 
