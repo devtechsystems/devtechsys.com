@@ -8,7 +8,6 @@ tags:
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DebtTeaser.png"
-Banner Image: "/uploads/DebtBanner.png"
 Author: Emily Forrest
 Is Featured: true
 ---
