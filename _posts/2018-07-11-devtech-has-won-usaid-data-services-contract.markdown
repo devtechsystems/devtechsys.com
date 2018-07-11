@@ -1,6 +1,8 @@
 ---
 title: DevTech Has Won USAID Data Services Contract
-date: 2018-07-11 10:00:00 Z
+date: 2018-07-11 10:05:00 Z
+Teaser Image: "/uploads/USAIDTeaser.png"
+Banner Image: "/uploads/USAIDBanner.png"
 Is Featured: true
 ---
 
