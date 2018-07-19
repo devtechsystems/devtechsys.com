@@ -39,7 +39,7 @@ layout: default
 			  		<ul class="featured-insights clearfix">
 		          {% for post in site.posts limit:2 %}
 		            <li>
-		              <span class="post-label">{{ post['Practice Area'] | first }}</span>
+		              <span class="post-label">{{ post['Practice Area'] | first | default: "Corporate Update" }}</span>
 		              {% if post['Teaser Image'].size > 0 %}
 		                <img src="{{ post['Teaser Image'] | relative_url }}" alt="Teaser Image" />
 		              {% else %}

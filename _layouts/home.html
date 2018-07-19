@@ -15,7 +15,7 @@ layout: default
 
           {% for featured in featured_insights limit:3 %}
             <li>
-              <span class="post-label">{{ featured['Practice Area'] | first }}</span>
+              <span class="post-label">{{ featured['Practice Area'] | first | default: "Corporate Update" }}</span>
               {% if featured['Teaser Image'].size > 0 %}
                 <img src="{{ featured['Teaser Image'] | relative_url }}" alt="Teaser Image" />
               {% else %}
