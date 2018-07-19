@@ -169,10 +169,11 @@ defaults:
     path: ''
     type: footer-links
   values:
-    Title: 
+    Title:
+    Link Url:
     Is Icon Link (true/false): true
     FontAwesome Class: 
-    Link Url: 
+    FontAwesome Class Instructions: 'All FontAwesome Class: text should be picked from the list of icons at https://fontawesome.com/v4.7.0/icons/#brand which is used when Is Icon Link is set to true'
     layout: page
 email: 
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
