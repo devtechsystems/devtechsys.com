@@ -8,7 +8,6 @@ Highlight: For all general inquiries, you can reach us at the below phone number
   form and someone from our team will contact you.
 navigation_group: About Us
 navigation_order: 6
-footer_navigation_order: 1
 Contact Details:
   Phone Number: 703.312.6038
   General Email: devtech@devtechsys.com
