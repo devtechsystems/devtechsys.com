@@ -9,6 +9,9 @@ collections:
     title: Contracting Vehicles
     output: false
     permalink: "/:collection/:path/"
+  footer-links:
+    title: Footer Links
+    output: false
   posts:
     title: Insights
     output: true
@@ -38,9 +41,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  footer-links:
-    title: Footer Links
-    output: false
 defaults:
 - scope:
     path: ''
@@ -172,7 +172,7 @@ defaults:
     Title: 
     Is Icon Link (true/false): true
     FontAwesome Class: 
-    Link Url:
+    Link Url: 
     layout: page
 email: 
 description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
