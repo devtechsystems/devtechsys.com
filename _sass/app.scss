@@ -210,6 +210,17 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
             top: 6px;
           }
         }
+
+        &.social-media-link {
+          width: 34px;
+          a {
+            position: absolute;
+            bottom: -.785em;
+            left: 12px;
+          }
+          .fa {font-size: 2em;}
+        }
+        &:last-child {margin-right:4px;}
       }
     }
     a {
