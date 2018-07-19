@@ -9,6 +9,9 @@ collections:
     title: Contracting Vehicles
     output: false
     permalink: "/:collection/:path/"
+  footer-links:
+    title: Footer Links
+    output: true
   posts:
     title: Insights
     output: true
