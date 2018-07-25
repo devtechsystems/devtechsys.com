@@ -2586,6 +2586,16 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
             position: absolute;
             left: -2px;
             top: 6px; }
+        .site-footer .column ul.link-list li.social-media-link {
+          width: 34px; }
+          .site-footer .column ul.link-list li.social-media-link a {
+            position: absolute;
+            bottom: -.785em;
+            left: 12px; }
+          .site-footer .column ul.link-list li.social-media-link .fa {
+            font-size: 2em; }
+        .site-footer .column ul.link-list li:last-child {
+          margin-right: 4px; }
     .site-footer .column a {
       color: #fff;
       font-size: 15px;
