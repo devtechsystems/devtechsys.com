@@ -1,7 +1,7 @@
 ---
 title: 'DevTech Project Spotlight: Mid-Term Evaluation of the Pilot Program to Support
   Municipalities and Small Enterprises in El Salvador'
-date: 2018-07-26 13:17:00 Z
+date: 2018-07-26 09:30:00 Z
 tags:
 - USAID
 - El Salvador
