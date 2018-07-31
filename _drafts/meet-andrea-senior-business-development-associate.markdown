@@ -7,6 +7,7 @@ Teaser Image: "/uploads/DayTeaser_FINAL.png"
 Banner Image: "/uploads/DayBannerAndrea.png"
 ---
 
+
 **What do you do?**
 
 As a Senior Business Development Associate I wear several hats. 
