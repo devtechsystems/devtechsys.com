@@ -1,6 +1,6 @@
 ---
 title: Meet Andrea, Senior Business Development Associate
-date: 2018-07-26 19:30:00 Z
+date: 2018-07-31 10:05:00 Z
 tags:
 - Staff
 Teaser Image: "/uploads/DayTeaser_FINAL.png"
