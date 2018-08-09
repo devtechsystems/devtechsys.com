@@ -1,7 +1,7 @@
 ---
 title: 'DevTech Project Spotlight: Civilian Security Sector Train-the-Trainer Performance
   Evaluation'
-date: 2018-08-09 11:17:00 Z
+date: 2018-08-09 07:17:00 Z
 tags:
 - inl
 - Department of State
