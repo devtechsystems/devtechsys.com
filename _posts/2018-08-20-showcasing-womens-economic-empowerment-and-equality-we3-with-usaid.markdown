@@ -1,6 +1,6 @@
 ---
 title: Showcasing Women’s Economic Empowerment and Equality (WE3) with USAID
-date: 2018-08-20 12:44:00 Z
+date: 2018-08-20 09:00:00 Z
 tags:
 - USAID
 - Gender
