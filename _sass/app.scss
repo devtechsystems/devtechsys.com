@@ -574,17 +574,22 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
   .insights {
-    padding-top:80px;
-    padding-bottom:80px;
-
     .column {text-align: center;}
+    & > .column:first-child {
+        padding-top:80px;
+        padding-bottom:80px;
+      }
 
-    .insights--title {
+    .insights--title,
+    .news--title {
       font-size: 38px;
       font-weight: 700;
       color: #284460;
       margin-bottom: 3rem;
       text-transform: uppercase;
+    }
+    .news--title {
+      margin-bottom:38px;
     }
 
     ul {
@@ -636,6 +641,24 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       & + .button {
         margin:0 auto;
       }
+    }
+
+    ul.news--list {
+      li {
+        margin-bottom: 30px;
+      }
+      .post-link {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 1.1;
+      }
+      .post-meta {margin-top: 5px;}
+    }
+
+    .news--container {
+      background-color: #f0f0f0;
+      padding-bottom: 70px;
+      padding-top: 80px;
     }
   }
   .practice-areas {
@@ -924,6 +947,7 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
   .page-banner + .page-highlight {margin-top:60px;}
   .page-highlight + .page-banner {margin-bottom:60px;}
+  .page-banner + p {margin-top:60px;}
   .back-link {
     display: block;
     font-style: italic;
@@ -2060,7 +2084,6 @@ ul.featured-insights {
         &:first-child {clear:none;}
       }
     }
-
     .hero {
       .hero--content {padding-top:172px;}
       .allcaps {font-size: 50px;}
@@ -2102,6 +2125,16 @@ ul.featured-insights {
 @media screen and (min-width: 64em) {
   .row--office-locations p.OL--phone {
     float:right;
+  }
+  .home .insights .news--container {
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    margin-bottom: 80px;
+    width: calc(100% - 80px);
+    max-width: none;
+    flex: 0 0 auto;
+    margin-left: 40px;
   }
 }
 

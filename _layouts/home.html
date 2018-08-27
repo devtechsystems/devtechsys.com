@@ -41,6 +41,24 @@ layout: default
         </ul>
         <a href="/insights/" class="button">{{page['Insights Section']['Button Label']}}</a>
       </div>
+      <div class="column small-16 news--container">
+        <h2 class="news--title">{{page['News Section']['Title']}}</h2>
+        <ul class="news--list clearfix">
+          {% assign sorted_news = site.news | sort:"date" | reverse %}
+
+          {% for news in sorted_news limit:3 %}
+            <li>
+              {% if news['Category'].size > 0 %}
+                <div class="post-category">{{ news['Category'] }}</div>
+              {% endif %}
+              <a class="post-link" href="{{ news.url | relative_url }}">{{ news.title | escape }}</a>
+              <span class="post-meta">{{ news.date | date: "%B %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+
+        </ul>
+        <a href="/news/" class="button">{{page['News Section']['Button Label']}}</a>
+      </div>
     </div>
     <div class="practice-areas">
       <div class="row">

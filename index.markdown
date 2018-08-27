@@ -11,6 +11,9 @@ Hero Section:
 Insights Section:
   Title: Our Latest Insights
   Button Label: Read More
+News Section:
+  Title: Recent News Stories
+  Button Label: View More
 Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
