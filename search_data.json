@@ -397,6 +397,14 @@
       }
   
       ,
+      "projects-usaid-slash-zambia-education-data-activity": {
+        "title": "USAID/Zambia Education Data Activity",
+        "type": "Project",
+        "content"  : "The purpose of USAID Education Data Activity under the ABE-ACR IDIQ mechanism is to provide distinct assessment, data management, and research and evaluation services to monitor and track the progress of USAID’s Let’s Read Zambia. Among the main tasks of this contract are the completion of two Early Grade Reading Assessment (EGRA) for children in Grade 2. The period of performance is from April 2018 thru September 2021.These activities will be done in complete collaboration with USAID/Zambia, the Ministry of General Education (MOGE), the Examination Council of Zambia (ECZ), and other key stakeholders. Throughout the USAID Education Data Activity, DevTech will continue to build on work previously done and strengthen the capacity of the Zambian MOGE, ECZ, and Provincial and District Education Offices to conduct EGRA and other research that inform policy making to improve learning outcomes.",
+        "url": " /projects/usaid-slash-zambia-education-data-activity/"
+      }
+  
+      ,
       "projects-apec-laboratory-capacity-build": {
         "title": "APEC Laboratory Capacity Building Evaluation",
         "type": "Project",
