@@ -26,8 +26,7 @@ I’m a communications specialist and touch on a myriad of projects and material
 
 I will usually grab oatmeal from Panera to start my day.
 
-**What kind of skills do you need to be effective in your role?
-**
+**What kind of skills do you need to be effective in your role?**
 
 A communications specialist will need to be creative, constantly adaptive to changing environments, responsive to requests and well organized, and steadfast in providing guidance in all things communications-related. 
 
