@@ -28,6 +28,7 @@ I will usually grab oatmeal from Panera to start my day.
 
 **What kind of skills do you need to be effective in your role?**
 
+
 A communications specialist will need to be creative, constantly adaptive to changing environments, responsive to requests and well organized, and steadfast in providing guidance in all things communications-related. 
 
 **What is one word you would use to describe DevTech’s culture? Why?**
