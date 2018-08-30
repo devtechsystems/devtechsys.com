@@ -23,6 +23,7 @@ I’m a communications specialist and touch on a myriad of projects and material
 
 **Do you have a morning ritual? Something you do to start your day?**
 
+
 I will usually grab oatmeal from Panera to start my day.
 
 **What kind of skills do you need to be effective in your role?
