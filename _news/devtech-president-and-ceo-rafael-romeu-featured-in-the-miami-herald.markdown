@@ -1,6 +1,6 @@
 ---
 title: DevTech President and CEO, Rafael Romeu, featured in The Miami Herald
-date: 2018-08-31 16:11:00 Z
+date: 2018-08-31 12:20:00 Z
 tags:
 - currency reform
 - Cuba
