@@ -13,6 +13,7 @@ Practice Area:
 Teaser Image: "/uploads/Church_Teaser.png"
 Banner Image: "/uploads/Church_Banner.png"
 Author: Phillip Ely Church
+Is Featured: true
 ---
 
 Economic development is not an exact science. Far from being predictable, the outcomes of our development assistance may differ from what we plan or expect. We may formulate a solid development hypothesis or theory of change, but there are many variables that enter into the implementation process. We cannot control for all these variables or anticipate the impact they may have. Often, surprises result.  Or as we say in the business, there are often unintended consequences we didn’t expect. 
