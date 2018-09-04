@@ -1,6 +1,6 @@
 ---
 title: Evaluating for Unintended Consequences – Small Farmer Cooperatives in Guatemala
-date: 2018-08-30 14:09:00 Z
+date: 2018-09-04 09:05:00 Z
 tags:
 - M&E
 - monitoring
