@@ -12,7 +12,7 @@ Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/Church_Teaser.png"
 Banner Image: "/uploads/Church_Banner.png"
-Author: Phillip Ely Church
+Author: Dr. Phillip Ely Church
 Is Featured: true
 ---
 
