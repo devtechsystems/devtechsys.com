@@ -9,6 +9,7 @@ Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/WE3_Teaser.png"
 Banner Image: "/uploads/WE3_Banner.png"
+Author: Catherine Howell and Georges Fadel
 Is Featured: true
 ---
 
