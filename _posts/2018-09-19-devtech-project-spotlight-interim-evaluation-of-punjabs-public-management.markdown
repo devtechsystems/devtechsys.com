@@ -12,6 +12,7 @@ Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/PS_Punjab_Teaser.png"
 Banner Image: "/uploads/PS_Punjab_Banner.png"
+Is Featured: true
 ---
 
 Punjab is Pakistan’s largest province, accounting for 74 million of a national population of 132 million in 1998; it is also the country’s wealthiest, with a share of 52 percent of the economy. However, the incidence of poverty is the second highest in all of Pakistan—more than 19 percent in 2013. As a result, economic inequalities within different classes of households and between urban and rural areas have risen, inducing wide variations across districts and along the urban/rural and gender divide. Additionally, quality of, and subsequent use of and faith in government services such as family planning (10 percent), basic health units (30 percent), veterinary services (17 percent), agriculture extension (15 percent), and 5 policing (9 percent) is even lower than the extremely low national average. 
