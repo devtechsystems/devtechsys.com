@@ -1,6 +1,6 @@
 ---
 title: 'DevTech Project Spotlight: Interim Evaluation of Punjab’s Public Management'
-date: 2018-09-12 18:53:00 Z
+date: 2018-09-19 09:40:00 Z
 tags:
 - World Bank
 - Punjab
