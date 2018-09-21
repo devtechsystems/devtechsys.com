@@ -16,6 +16,7 @@ Practice Area:
 The DevTech Debt Restructuring Team recently visited Caracas and witnessed conditions on the ground. Everyday life is becoming impossible for the lower strata of the income distribution. The National Survey of Living Conditions (Encuesta Nacional de Condicionnes de Vida, or ENCOVI) reported an average of weight loss of 11 kilograms (22 pounds) in 2017, following an average loss of eight kilograms (16 pounds) in 2016.
 
 Basic services like banking, electronic payments, electricity, fixed and mobile telephony, water, and transportation present significant deficiencies, ranging from rationing to the complete suspension of supply, negatively affecting the quality of life of citizens. The availability of products in the market is higher compared to previous years, partly due to the increasing flow of remittances following massive migration, mixed remuneration strategies of some companies (for example paying a portion of wages in USD), and an implicit relaxation of the price controls policy. However, given the current policy mix, the situation will soon worsen.
+
 Real GDP has contracted by 35 percent since Hugo Chávez’s death in 2013. During this period, hyperinflation has set in, with accelerating annual inflation rates that regularly reach three digits.
 
 ![RealGDPGrowth.png](/uploads/RealGDPGrowth.png)
