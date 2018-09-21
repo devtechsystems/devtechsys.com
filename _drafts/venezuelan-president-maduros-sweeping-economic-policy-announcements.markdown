@@ -8,6 +8,9 @@ tags:
 - public finance
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Venezuela%20Teaser.png"
+Banner Image: "/uploads/Venezuela%20Banner.png"
+Is Featured: true
 ---
 
 *This blog is a summary of a more detailed article, which you can download here: [Venezuelan Economic Policy Announcements.pdf](/uploads/Venezuelan%20Economic%20Policy%20Announcements.pdf).*
