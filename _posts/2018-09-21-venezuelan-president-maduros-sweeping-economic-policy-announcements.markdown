@@ -10,6 +10,7 @@ Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Venezuela%20Teaser.png"
 Banner Image: "/uploads/Venezuela%20Banner.png"
+Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
 
