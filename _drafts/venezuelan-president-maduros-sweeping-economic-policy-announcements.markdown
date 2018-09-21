@@ -6,6 +6,8 @@ tags:
 - Debt restructuring
 - economics
 - public finance
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 ---
 
 *This blog is a summary of a more detailed article, which you can upload here. [Venezuelan Economic Policy Announcements.pdf](/uploads/Venezuelan%20Economic%20Policy%20Announcements.pdf).*
@@ -15,6 +17,8 @@ The DevTech Debt Restructuring Team recently visited Caracas and witnessed condi
 
 Basic services like banking, electronic payments, electricity, fixed and mobile telephony, water, and transportation present significant deficiencies, ranging from rationing to the complete suspension of supply, negatively affecting the quality of life of citizens. The availability of products in the market is higher compared to previous years, partly due to the increasing flow of remittances following massive migration, mixed remuneration strategies of some companies (for example paying a portion of wages in USD), and an implicit relaxation of the price controls policy. However, given the current policy mix, the situation will soon worsen.
 Real GDP has contracted by 35 percent since Hugo Chávez’s death in 2013. During this period, hyperinflation has set in, with accelerating annual inflation rates that regularly reach three digits.
+
+![RealGDPGrowth.png](/uploads/RealGDPGrowth.png)
 
 ## Against this backdrop, the President of Venezuela has dictated a set of new policy measures:
 
@@ -30,7 +34,7 @@ A "conversion bonus” of 600 sovereign bolivars will be paid via the national i
 A new salary system will establish the minimum wage at 1,800 sovereign bolivars for public and private sector employees, and 1,350 for adolescents, effective September 1, 2018. This is the ninth minimum wage increase carried out by the Venezuelan government since 2017. 
 The Venezuelan government will assign direct subsidies to the payroll of the small and medium-sized Venezuelan companies with the objective of minimizing the inflationary impact on the purchasing power of the workers. This represents significant implementation difficulties and will impose significant risks to the private sector, since for employees to receive payments they will need to register with the government and provide detailed information about the company.
 
-In addition, the complementary food voucher (Cestaticket) was adjusted up to 180 sovereign bolivars , which is equivalent to 10 percent of the minimum wage. 
+In addition, the complementary food voucher (Cestaticket) was adjusted up to 180 sovereign bolivars , which is equivalent to 10 percent of the minimum wage[1]. 
 
 ### Fiscal Deficit
 Head of State Maduro also announced a fiscal plan called "fiscal deficit equal to zero", which will consist of increases in Value Added Tax and increases in income tax rates and the frequency of required payments. 
@@ -65,3 +69,5 @@ The Central Bank of Venezuela will be in charge of governing and administering t
 
 ## Conclusions
 These policy announcements fail to outline a clear path towards stabilization. Revenues will be insufficient and quickly eroded by hyperinflation, while expenditures are expected to continue to rise (financed by the Central Bank). The private sector will be unable to afford the wage increase, as there are neither increases in productivity nor external resources, like foreign currency inflows in the form of loans or aid, to support the increase.  The Central Bank will continue to print money to finance the fiscal deficit, further accelerating Venezuela’s economic decline.  The International Monetary Fund forecasts an economic decline of 15 percent and inflation of 1,000,000 (one million) percent are expected this year.
+
+[1]  This implies that the food bonus experienced an increase of 820 percent with respect to the value on July 1, 2018. In addition, this increase ignores the indexation that the supplement to wages used to have with respect to the unit of account for tax purposes (“Unidad Tributaria”), and instead it became a fixed value whose fixation will depend exclusively on what the Venezuelan Head of State announces.
