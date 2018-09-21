@@ -10,7 +10,7 @@ Practice Area:
 - Public Financial Management and Fiscal Sustainability
 ---
 
-*This blog is a summary of a more detailed article, which you can upload here. [Venezuelan Economic Policy Announcements.pdf](/uploads/Venezuelan%20Economic%20Policy%20Announcements.pdf).*
+*This blog is a summary of a more detailed article, which you can download here. [Venezuelan Economic Policy Announcements.pdf](/uploads/Venezuelan%20Economic%20Policy%20Announcements.pdf).*
 
 ## Current conditions in Venezuela 
 The DevTech Debt Restructuring Team recently visited Caracas and witnessed conditions on the ground. Everyday life is becoming impossible for the lower strata of the income distribution. The National Survey of Living Conditions (Encuesta Nacional de Condicionnes de Vida, or ENCOVI) reported an average of weight loss of 11 kilograms (22 pounds) in 2017, following an average loss of eight kilograms (16 pounds) in 2016.
