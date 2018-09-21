@@ -74,6 +74,6 @@ The Central Bank of Venezuela will be in charge of governing and administering t
 ## Conclusions
 These policy announcements fail to outline a clear path towards stabilization. Revenues will be insufficient and quickly eroded by hyperinflation, while expenditures are expected to continue to rise (financed by the Central Bank). The private sector will be unable to afford the wage increase, as there are neither increases in productivity nor external resources, like foreign currency inflows in the form of loans or aid, to support the increase.  The Central Bank will continue to print money to finance the fiscal deficit, further accelerating Venezuela’s economic decline.  The International Monetary Fund forecasts an economic decline of 15 percent and inflation of 1,000,000 (one million) percent are expected this year.
 
-### Note
+**Note**
 
 [1]  This implies that the food bonus experienced an increase of 820 percent with respect to the value on July 1, 2018. In addition, this increase ignores the indexation that the supplement to wages used to have with respect to the unit of account for tax purposes (“Unidad Tributaria”), and instead it became a fixed value whose fixation will depend exclusively on what the Venezuelan Head of State announces.
