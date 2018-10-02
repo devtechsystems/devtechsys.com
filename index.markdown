@@ -23,7 +23,7 @@ Practice Areas Section:
 Projects Section:
   Title: Data-Driven Projects
   Subtitle: Our Work Around the World
-  Brief Description: DevTech has worked in over 95 countries and our projects span
+  Brief Description: DevTech has worked in over 100 countries and our projects span
     nearly every region of the world. Click below to explore our comprehensive database
     and see where our work has taken us.
   Button Label: View Projects
