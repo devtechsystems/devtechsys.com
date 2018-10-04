@@ -6,6 +6,7 @@ tags:
 - USAID
 - foreign assistance reporting
 - data
+- FATAA
 ---
 
 The Modernizing Foreign Assistance Network (MFAN) and Publish What You Fund (PWYF) have [analyzed the two most prominent U.S. Federal foreign aid reporting data platforms](http://modernizeaid.net/wp-content/uploads/2018/10/Improving-Aid-Data.pdf) in connection with the Foreign Aid Transparency and Accountability Act (FATAA). That act called for the State Department and USAID to consolidate data collection and web platforms in order to improve US aid transparency.  MFAN today issued a call underscoring the need for the two agencies to commit to a single platform*.  
