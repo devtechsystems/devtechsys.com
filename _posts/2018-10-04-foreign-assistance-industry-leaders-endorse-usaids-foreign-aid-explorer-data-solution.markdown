@@ -1,12 +1,14 @@
 ---
 title: Foreign Assistance Industry Leaders Endorse USAID’s Foreign Aid Explorer Data
   Solution as Basis for Future Unified U.S. Foreign Assistance Reporting
-date: 2018-10-04 21:05:00 Z
+date: 2018-10-04 17:18:00 Z
 tags:
 - USAID
 - foreign assistance reporting
 - data
 - FATAA
+Practice Area:
+- Knowledge Management and Data Analytics
 Teaser Image: "/uploads/USAID_Teaser.png"
 Banner Image: "/uploads/USAID_Banner.png"
 Is Featured: true
