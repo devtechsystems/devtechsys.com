@@ -11,7 +11,7 @@ Donut Header: <span class="highlight-blue">DevTech</span> has created <span clas
 Donut Text: |-
   With a breadth of experience across six practice areas and nearly every region of the world, DevTech produces innovative results and addresses complex global challenges. Our solutions include large multi-year projects, short-term task orders, and short-term technical assistance.
 
-  *Please note that when a solution below belongs to more than one Practice Area it is counted for each individual Practice Area.
+  *Please note that when a solution below belongs to more than one Practice Area it is counted for each individual Practice Area. Each solution is only counted once in the total.
 Partners Header: We've worked on projects with over <span class="highlight-blue" id="partners-count"></span>
   partners and clients.
 Bar Chart Header: Since 1984, <span class="highlight-blue">DevTech</span> contracts
@@ -19,7 +19,7 @@ Bar Chart Header: Since 1984, <span class="highlight-blue">DevTech</span> contra
 Bar Chart Text: |-
   From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.
 
-  *Please note when a solution below belongs to more than one Practice Area the contract value has been counted for each Practice Area.
+  *Please note when a solution below belongs to more than one Practice Area the contract value has been counted for each Practice Area. Each solution value is only counted once for the total.
 layout: projects
 ---
 
