@@ -19,7 +19,7 @@ Bar Chart Header: Since 1984, <span class="highlight-blue">DevTech</span> contra
 Bar Chart Text: |-
   From small task orders to large multi-year contracts, DevTech has spent decades producing successful results for clients. No matter the task, we bring agility and experience to our work.
 
-  *Please note when a solution below belongs to more than one Practice Area the contract value has been counted for each Practice Area. Each solution value is only counted once for the total.
+  *Please note when a solution below belongs to more than one Practice Area the contract value has been counted for each Practice Area. Each solution contract value is only counted once in the total.
 layout: projects
 ---
 
