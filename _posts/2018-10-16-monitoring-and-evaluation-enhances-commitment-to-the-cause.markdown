@@ -1,6 +1,6 @@
 ---
 title: Monitoring & Evaluation Enhances Commitment to the Cause
-date: 2018-10-15 19:36:00 Z
+date: 2018-10-16 09:25:00 Z
 tags:
 - monitoring
 - Evaluation
