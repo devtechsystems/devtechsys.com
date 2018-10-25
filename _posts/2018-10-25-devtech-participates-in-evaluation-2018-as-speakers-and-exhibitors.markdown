@@ -1,6 +1,6 @@
 ---
 title: DevTech Participates in Evaluation 2018 as Speakers and Exhibitors
-date: 2018-10-16 13:39:00 Z
+date: 2018-10-25 10:30:00 Z
 tags:
 - monitoring
 - Evaluation
