@@ -1,7 +1,6 @@
 ---
 title: DevTech Awarded USAID Latin America and Caribbean (LAC) Education Support Contract
 date: 2018-10-26 20:02:00 Z
-published: false
 tags:
 - USAID
 - Latin America
