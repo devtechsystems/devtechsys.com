@@ -1454,6 +1454,59 @@ div.career-list {
   .fa {color: #7dcba7;}
 }
 
+
+/* ===== SITE LAYOUT =================== */
+.jv-page-container  { }
+.jv-page      { }
+.jv-page-content  { }
+.jv-page-header   { }
+.jv-page-body     { }
+.jv-wrapper     { }
+.jv-footer      { }
+
+/* ===== JOB LISTINGS PAGE  =================== */ 
+
+.jv-page-error    { }
+.jv-page-body h2  { }
+
+h3.h2           { }
+.jv-job-list      { }
+.jv-job-list th   { }
+.jv-job-list td   { }
+.jv-job-list .jv-job-list-name      { }
+.jv-job-list .jv-job-list-location    { }
+
+/* ========== JOB DETAILS PAGE =============== */ 
+
+h2.jv-header  {}
+
+.jv-job-detail-meta,
+.jv-apply-meta        {}
+
+
+.jv-button { }
+.jv-button-primary { }
+
+.jv-current-openings  { }
+.jv-share-widget    { }
+
+.jv-job-detail-bottom-actions,
+.jv-apply-form-actions  { }
+
+/* ========== APPLY PAGE ====================== */ 
+
+.jv-form        {}
+.jv-apply-form      {}
+.jv-search-form     {}
+
+.jv-apply-step      {}
+.jv-apply-section     {}
+.jv-step-header     {}    /* Section Title */
+.jv-required-label    {}
+
+
+
+
 //practice areas
 .row--our-practices-list {
   padding:80px 0 0;
