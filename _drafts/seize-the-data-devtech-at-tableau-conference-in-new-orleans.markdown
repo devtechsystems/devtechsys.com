@@ -22,4 +22,6 @@ DevTech staff attended breakout sessions that were designed to introduce new con
 “The conference spanned everything about this software—from the most basic, minute functionalities to the parts of Tableau that push the boundaries of what we can do with computers. Each session was presented with an infectious, earnest energy that was unapologetically passionate about data visualization, which reminded me vividly of the ADVISE team," commented Robindra Banerji, 
 DevTech Data Analyst (Economist), ADVISE. "The ten sessions I selected cover most of the data analysis functionalities there are in Tableau, and I’m especially looking forward to sharing level of detail calculations with the Foreign Aid Explorer team, since we deal with data along several aggregable dimensions.”
 
+![TableauGallery1.png](/uploads/TableauGallery1.png)
+
 (1) Some sessions were counted twice as they were attended by multiple individuals.
