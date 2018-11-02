@@ -1,11 +1,19 @@
 ---
 title: Seize the Data! DevTech at Tableau Conference in New Orleans
 date: 2018-11-02 15:31:00 Z
+tags:
+- Tableau
+- USAID
+- data visualization
+- events
+Teaser Image: "/uploads/Tableau_Teaser.png"
+Banner Image: "/uploads/Tableau_Banner.png"
+Is Featured: true
 ---
 
 **Visualizing our Way to Success**
 
-On October 22nd DevTech sent five staff to the annual Tableau Software Conference in New Orleans, LA. The conference consists of three jam-packed days where 16,000 data visualization professionals participated in hands-on trainings, breakout sessions, keynote speakers, and data-focused activities. 
+On October 22nd, DevTech sent five staff to the annual Tableau Software Conference in New Orleans, LA. The conference consists of three jam-packed days where 16,000 data visualization professionals participated in hands-on trainings, breakout sessions, keynote speakers, and data-focused activities. 
 
 The Tableau Software gives DevTech the ability to manipulate data into stunning and interactive charts, graphs, and maps, which can be easily accessed online. DevTech uses Tableau to produce data analyses for the Analytics Data Visualization and Information Services ([ADVISE](http://devtechsys.com/insights/2018/07/11/devtech-has-won-usaid-data-services-contract/)) project for USAID globally, and the Support for Strategic Information and Project Management Services ([S4SIPMS](http://devtechsys.com/projects/Nigeria-Support-for-Strategic/)) project for USAID/Nigeria.
 
