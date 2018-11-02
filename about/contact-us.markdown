@@ -11,7 +11,6 @@ navigation_order: 6
 Contact Details:
   Phone Number: 703.312.6038
   General Email: devtech@devtechsys.com
-  Jobs Email: jobs@devtechsys.com
   Form Delivery Email: test@test.com
 Has Contact Form: true
 ---
