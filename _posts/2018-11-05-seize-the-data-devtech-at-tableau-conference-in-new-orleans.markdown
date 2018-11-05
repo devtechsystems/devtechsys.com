@@ -1,6 +1,6 @@
 ---
 title: Seize the Data! DevTech at Tableau Conference in New Orleans
-date: 2018-11-02 15:31:00 Z
+date: 2018-11-05 09:31:00 Z
 tags:
 - Tableau
 - USAID
