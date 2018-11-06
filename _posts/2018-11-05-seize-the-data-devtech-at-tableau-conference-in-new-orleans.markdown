@@ -8,6 +8,7 @@ tags:
 - events
 Teaser Image: "/uploads/Tableau_Teaser.png"
 Banner Image: "/uploads/Tableau_Banner.png"
+Author: Julia P. King
 Is Featured: true
 ---
 
