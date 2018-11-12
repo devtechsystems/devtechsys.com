@@ -1,6 +1,16 @@
 ---
 title: American Evaluation Association Annual Conference Informative and Productive
-date: 2018-11-12 15:50:00 Z
+date: 2018-11-14 15:50:00 Z
+tags:
+- Monitoring
+- Evaluation
+- events
+- East Africa
+Practice Area:
+- Monitoring and Evaluation
+Teaser Image: "/uploads/PostAEA_Teaser.png"
+Banner Image: "/uploads/PostAEA_Banner.png"
+Is Featured: true
 ---
 
 DevTech recently attended the American Evaluation Association 32nd Annual Conference, hosted this year in Cleveland, Ohio, as an exhibitor and presenter. The conference brought together a large network of evaluators from across the country and the world to share research findings and best practices in evaluation and to come together as an evaluation community to discuss how we can better *Speak Truth to Power* – the theme of this year’s conference. As evaluators, we are tasked with obtaining and presenting evidence-based findings to identify areas of success or failure within a given context or project. The conference was focused around thinking critically about the theme of *Speaking Truth to Power*: What is power and influence in today’s world? Do we, as evaluators, have power and influence? What is truth? How can we best identify truths? What defines “speaking” and how can we best make our voices heard in speaking truth to diverse audiences?
