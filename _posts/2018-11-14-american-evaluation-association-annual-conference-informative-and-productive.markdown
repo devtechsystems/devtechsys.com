@@ -1,6 +1,6 @@
 ---
 title: American Evaluation Association Annual Conference Informative and Productive
-date: 2018-11-14 15:50:00 Z
+date: 2018-11-14 09:00:00 Z
 tags:
 - Monitoring
 - Evaluation
