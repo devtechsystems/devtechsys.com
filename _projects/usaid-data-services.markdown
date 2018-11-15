@@ -23,7 +23,7 @@ DevTech is responsible for ensuring that the Agency's development outcomes are s
 Under the USAID Data Services contract, DevTech continues to manage the EADS Platforms as well as USAID's Knowledge Services Center (including the Development Experience Clearinghouse), the Development Data Library, and the Enterprise Reporting Portal (ERP).
 
 
-EADS is USAID’s central source for U.S. foreign assistance data, international socioeconomic data, and data-driven analysis in support of USAID goals. EADS manages six databases and five public websites (https://eads.usaid.gov), containing data from across the Agency, U.S. Government, and international development organizations. EADS generates the data in three of the databases through data calls to USG agencies, different parts of USAID and USAID partners. The fourth database collects international socioeconomic data from reputable sources and makes them available to USAID, its partners and the public, through unique data visualizations and tools on one convenient site. The six databases are the following:
+EADS is USAID’s central source for U.S. foreign assistance data, international socioeconomic data, and data-driven analysis in support of USAID goals. EADS manages six databases and five public websites ([https://eads.usaid.gov](https://eads.usaid.gov)), containing data from across the Agency, U.S. Government, and international development organizations. EADS generates the data in three of the databases through data calls to USG agencies, different parts of USAID and USAID partners. The fourth database collects international socioeconomic data from reputable sources and makes them available to USAID, its partners and the public, through unique data visualizations and tools on one convenient site. The six databases are the following:
 * Foreign Aid Database - contains all US government foreign assistance data from 1946 to the present. This data is available publicly via the Foreign Aid Explorer (FAE) website.
 * Economic and Social Database - collects global country level economic and social data and makes the data easily accessible to USAID staff and the public on the International Data and Economic Analysis (IDEA) website. IDEA features the Country Dashboard, which is an interactive data visualization tool that allows users to compare a country with selected groups of countries and assess its progress over time. The Dashboard compares countries across eight sectors, 45 subsectors, and 335 indicators and provides the most up-to-date data.
 * Trade Capacity Building Database - reports all trade capacity building activities from the U.S. government.
@@ -31,7 +31,8 @@ EADS is USAID’s central source for U.S. foreign assistance data, international
 * Foreign Assistance Data Redaction System (FADRS) – has helped to institutionalize redactions by housing all redaction requests in a central web interface. It has also streamlined the process of reporting and protected the privacy of staff by making it easier to remove personally identifiable information.
 * Tying Status Aid Database (TSAD) - reporting tied/untied procurement/grant actions to the OECD, Department of the Treasury, and the Export-Import Bank of the U.S.
 
-Other Services:
+
+### Other Services
 
 **International Aid Transparency Initiative:** DevTech assists USAID with reporting on its foreign assistance activities within the IATI standard, which aims to improve the transparency of aid and development resources among the international community.
 
