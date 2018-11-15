@@ -8,7 +8,7 @@ ISO3 Code:
 Region: Latin America and the Caribbean
 Country: Guatemala
 Client/ Donor: USAID
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Monitoring and Evaluation
 Contract Value USD: 14752983.31
