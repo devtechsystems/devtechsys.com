@@ -1,9 +1,18 @@
 ---
 title: USAID Data Services
 date: 2018-11-15 20:34:00 Z
+Project Title: USAID Data Services
+Start Year: 2018
+End Year: 2023
+Region: Global
+Client/ Donor: USAID
+Is Current Project? (true/false): true
+Practice Area:
+- Knowledge Management and Data Analytics
+Contract Value USD: '90,000,000'
 ---
 
-USAID Data Services is the follow-on contract to the Economic Analysis and Data Services (EADS) project, which DevTech has managed for over 20 years. DevTech is tasked with integrating all of USAID's data products and services working directly for and with USAID's Bureau for Management and the Chief Information Officer (M/CIO).
+USAID Data Services (also known as ADVISE - Analytics, Data, Visualization, and Information Services) is the follow-on contract to the Economic Analysis and Data Services (EADS) project, which DevTech has managed for over 20 years. DevTech is tasked with integrating all of USAID's data products and services working directly for and with USAID's Bureau for Management and the Chief Information Officer (M/CIO).
 
 DevTech is responsible for ensuring that the Agency's development outcomes are supported by evidence through:
 *Enhancing the internal and external availability of USAID data and information via technology platforms, policy, guidance, standards, governance, and best practices in data curation;
