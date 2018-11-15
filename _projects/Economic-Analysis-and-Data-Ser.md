@@ -6,7 +6,7 @@ End Year: 2018
 Region: Global
 Country: Global
 Client/ Donor: USAID
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
 - Knowledge Management and Data Analytics
 - Public Financial Management and Fiscal Sustainability
