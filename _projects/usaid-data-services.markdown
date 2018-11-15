@@ -33,9 +33,9 @@ EADS is USAID’s central source for U.S. foreign assistance data, international
 
 Other Services:
 
-**International Aid Transparency Initiative: ** DevTech assists USAID with reporting on its foreign assistance activities within the IATI standard, which aims to improve the transparency of aid and development resources among the international community.
+**International Aid Transparency Initiative:** DevTech assists USAID with reporting on its foreign assistance activities within the IATI standard, which aims to improve the transparency of aid and development resources among the international community.
 
-**Training: ** The Finding and Using Development Data (FUDD) course trains USAID staff on how to access development data sources, and how to approach data selection, handling and reporting with attention to data quality. The class is offered several times per year.
+**Training:** The Finding and Using Development Data (FUDD) course trains USAID staff on how to access development data sources, and how to approach data selection, handling and reporting with attention to data quality. The class is offered several times per year.
 
 **Help Desk Support:** DevTech offers help desk support on the use of all USAID Data Services products and platforms to assist USAID staff and the broader community with using these tools to their full advantage.
 
