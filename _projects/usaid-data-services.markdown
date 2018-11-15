@@ -29,7 +29,7 @@ EADS is USAID’s central source for U.S. foreign assistance data, international
 * Trade Capacity Building Database - reports all trade capacity building activities from the U.S. government.
 * Microenterprise Results Reporting Database - source of data for USAID’s reporting of its microenterprise supporting activities in compliance with the Microenterprise Results and Accountability Act (MRAA) of 2004.
 * Foreign Assistance Data Redaction System (FADRS) – has helped to institutionalize redactions by housing all redaction requests in a central web interface. It has also streamlined the process of reporting and protected the privacy of staff by making it easier to remove personally identifiable information.
-*Tying Status Aid Database (TSAD) - reporting tied/untied procurement/grant actions to the OECD, Department of the Treasury, and the Export-Import Bank of the U.S.
+* Tying Status Aid Database (TSAD) - reporting tied/untied procurement/grant actions to the OECD, Department of the Treasury, and the Export-Import Bank of the U.S.
 
 Other Services:
 * International Aid Transparency Initiative
