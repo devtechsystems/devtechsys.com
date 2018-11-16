@@ -2402,6 +2402,22 @@
         "url": " /projects/usaid-data-services/"
       }
   
+      ,
+      "projects-public-opinion-survey-evaluation-of-zimbabwe-public-awareness-project": {
+        "title": "Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project",
+        "type": "Project",
+        "content"  : "DevTech conducted the Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project as part of the Dept. of State Office to Monitor and Combat Trafficking in Persons Evaluation BPA. The survey design of an IE methodology enabled DoS to evaluate the effectiveness of various types of public awareness campaigns to prevent TIP and reduce risk factors",
+        "url": " /projects/public-opinion-survey-evaluation-of-zimbabwe-public-awareness-project/"
+      }
+  
+      ,
+      "projects-program-evaluation-of-criminal-justice-training-programs-funded-by-j-slash-tip": {
+        "title": "Program Evaluation of Criminal Justice Training Programs funded by J/TIP",
+        "type": "Project",
+        "content"  : "As part of the Department of State Office to Monitor and Combat Trafficking in Persons (J/TIP) Evaluation BPA DevTech is conducting the Program Evaluation of Criminal Justice Training Programs Funded by J/TIP, whose goal was to evaluate what key characteristics of TIP training for criminal justice system officials contribute to the strongest and most sustainable results based on a sample of trainings conducted in five countries.",
+        "url": " /projects/program-evaluation-of-criminal-justice-training-programs-funded-by-j-slash-tip/"
+      }
+  
 
   
 
