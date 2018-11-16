@@ -8,7 +8,7 @@ ISO3 Code:
 - ZMB
 Region: Africa
 Country: Zimbabwe
-Client/ Donor: Department of State
+Client/ Donor: U.S. Department of State
 Practice Area:
 - Security, Transparency, and Governance
 - Monitoring and Evaluation
