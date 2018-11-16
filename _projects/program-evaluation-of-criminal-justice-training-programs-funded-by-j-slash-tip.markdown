@@ -5,7 +5,7 @@ Project Title: Program Evaluation of Criminal Justice Training Programs funded b
   J/TIP
 Start Year: 2018
 End Year: 2019
-Region: Africa
+Region: Global
 Client/ Donor: Department of State
 Practice Area:
 - Security, Transparency, and Governance
