@@ -2,8 +2,10 @@
 title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
 date: 2018-11-16 16:22:00 Z
 Project Title: Public Opinion Survey Evaluation of Zimbabwe Public Awareness Project
-Start Year: 2018
+Start Year: 2017
 End Year: 2018
+ISO3 Code:
+- ZMB
 Region: Africa
 Country: Zimbabwe
 Client/ Donor: Department of State
