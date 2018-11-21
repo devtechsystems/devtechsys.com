@@ -1,6 +1,11 @@
 ---
 title: Meet Haley, Talent Acquisition and Human Capital Manager
 date: 2018-11-21 14:58:00 Z
+tags:
+- Staff
+Teaser Image: "/uploads/DayTeaser_FINAL-c68998.png"
+Banner Image: "/uploads/Day%20at%20DevTech_Haley_Banner.png"
+Is Featured: true
 ---
 
 ## What do you do? 
