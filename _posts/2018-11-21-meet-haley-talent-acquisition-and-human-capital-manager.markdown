@@ -1,6 +1,6 @@
 ---
 title: Meet Haley, Talent Acquisition and Human Capital Manager
-date: 2018-11-21 14:58:00 Z
+date: 2018-11-21 10:10:00 Z
 tags:
 - Staff
 Teaser Image: "/uploads/DayTeaser_FINAL-c68998.png"
