@@ -1,6 +1,6 @@
 ---
 title: DevTech To Present at ICGFM Winter Training Conference
-date: 2018-11-15 19:56:00 Z
+date: 2018-11-27 09:20:00 Z
 tags:
 - ICGFM
 - events
