@@ -2588,14 +2588,6 @@
       }
   
       ,
-      "office-locations-guatemala": {
-        "title": "Guatemala",
-        "type": "Office Location",
-        "content"  : "",
-        "url": " /office-locations/guatemala/"
-      }
-  
-      ,
       "office-locations-nicaragua": {
         "title": "Nicaragua",
         "type": "Office Location",
@@ -2609,6 +2601,14 @@
         "type": "Office Location",
         "content"  : "",
         "url": " /office-locations/nigeria/"
+      }
+  
+      ,
+      "office-locations-zambia": {
+        "title": "Zambia",
+        "type": "Office Location",
+        "content"  : "",
+        "url": " /office-locations/zambia/"
       }
   
 
