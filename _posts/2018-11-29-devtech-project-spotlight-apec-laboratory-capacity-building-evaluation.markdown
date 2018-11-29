@@ -1,6 +1,6 @@
 ---
 title: 'DevTech Project Spotlight: APEC Laboratory Capacity Building Evaluation'
-date: 2018-11-26 21:35:00 Z
+date: 2018-11-29 09:25:00 Z
 tags:
 - USDA
 - Agriculture
