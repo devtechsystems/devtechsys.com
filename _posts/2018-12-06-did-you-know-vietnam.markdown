@@ -14,7 +14,7 @@ Banner Image: "/uploads/Vietnam_Banner.png"
 Is Featured: true
 ---
 
-Did you know that the US Department of Health and Human Services is an important contributor to Vietnam in the health sector?  In FY16, HHS gave $31.466,818, which represents approximately 20% of the total US agency foreign aid to the country.  $15 million of that funding was for HIV/AIDS programs. Source: [https://explorer.usaid.gov/cd/VN](https://explorer.usaid.gov/cd/VN)M
+Did you know that the US Department of Health and Human Services is an important contributor to Vietnam in the health sector?  In FY16, HHS gave $31.466,818, which represents approximately 20% of the total US agency foreign aid to the country.  $15 million of that funding was for HIV/AIDS programs. Source: [https://explorer.usaid.gov/cd/VNM](https://explorer.usaid.gov/cd/VNM)
 
 When organizations approach monitoring and evaluation (M&E), it is often from the standpoint of compliance: Certain regulations require performance assessments for development projects, which require collecting and evaluating multiple kinds of data and information.  Dr. Reuben Hermoso, DevTech’s director of M&E [believes this is not, however, the most important driver of the value of M&E](https://devtechsys.com/insights/2018/10/16/monitoring-and-evaluation-enhances-commitment-to-the-cause/).  Rather, it is the picture of accomplishment that M&E practices deliver. 
 
