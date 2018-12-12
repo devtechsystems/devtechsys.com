@@ -1,6 +1,15 @@
 ---
 title: Did You Know? Nigeria
 date: 2018-12-12 21:18:00 Z
+tags:
+- USAID
+- Nigeria
+- HIV/AIDS
+- health
+- MEL
+- S4SIPMS
+- SIMS
+- PEPFAR
 Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/Did%20You%20Know%20Nigeria_Teaser.png"
