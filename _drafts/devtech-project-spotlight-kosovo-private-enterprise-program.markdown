@@ -1,6 +1,6 @@
 ---
 title: 'DevTech Project Spotlight: Kosovo Private Enterprise Program'
-date: 2018-12-12 21:02:00 Z
+date: 2018-12-13 09:30:00 Z
 tags:
 - USAID
 - Kosovo
