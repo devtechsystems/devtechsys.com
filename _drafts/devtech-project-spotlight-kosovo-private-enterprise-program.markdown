@@ -5,6 +5,9 @@ tags:
 - USAID
 - Kosovo
 - workforce development
+- fiscal sustainability
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/PS_Kosovo_Teaser.png"
 Banner Image: "/uploads/PS_Kosovo_Banner.png"
 Is Featured: true
