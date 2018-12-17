@@ -1,0 +1,82 @@
+/* Template Classnames were gathered from 
+http://careers.jobvite.com/careersites/Jobvite-CSS-Template-Desktop.css
+*/
+
+/* ===== SITE LAYOUT =================== */
+.jv-page-container {}
+.jv-page {}
+.jv-page-content {}
+.jv-page-header {}
+.jv-page-body {}
+.jv-wrapper {color:#0a0a0a;}
+.jv-footer {}
+
+.jv-wrapper a {
+  line-height: inherit;
+  color: #2C659F;
+  text-decoration: none;
+  cursor: pointer;
+}
+.jv-wrapper a:hover,
+.jv-wrapper a:focus {color:#258faf;}
+
+.jv-wrapper a:visited {color:#86a2bf;}
+
+
+/* ===== JOB LISTINGS PAGE  =================== */ 
+
+.jv-page-jobs {}
+.jv-page-error {}
+.jv-page-jobs .jv-wrapper > h2 	{display: none;}
+
+.jv-wrapper h3.h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+.jv-job-list {
+  border-top: 1px solid #ddd;
+  color:#0a0a0a;
+}
+
+.jv-job-list td {border-bottom-color:#ddd !important;}
+
+.jv-job-list .jv-job-list-location {}
+
+.jv-job-list .jv-job-list-location:before {
+	content: "Location: ";
+	font-weight: bold;
+}
+
+
+/* ========== JOB DETAILS PAGE =============== */
+
+.jv-page-job {}
+	
+.jv-page-job h2.jv-header {display: block;}
+
+.jv-job-detail-meta,
+.jv-apply-meta {}
+
+
+.jv-button {}
+.jv-button-primary {}
+
+.jv-current-openings {}
+.jv-share-widget {}
+
+.jv-job-detail-bottom-actions,
+.jv-apply-form-actions {}
+
+
+/* ========== APPLY PAGE ====================== */ 
+
+.jv-form {}
+.jv-apply-form {}
+.jv-search-form {}
+
+.jv-apply-step {}
+.jv-apply-section {}
+.jv-step-header {} /* Section Title */
+.jv-required-label {}
