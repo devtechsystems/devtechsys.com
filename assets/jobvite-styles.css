@@ -61,7 +61,7 @@ http://careers.jobvite.com/careersites/Jobvite-CSS-Template-Desktop.css
 
 
 .jv-button {}
-.jv-button-primary {}
+.jv-wrapper .jv-button-primary {color:#fff;}
 
 .jv-current-openings {}
 .jv-share-widget {}
