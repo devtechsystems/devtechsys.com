@@ -12,6 +12,7 @@ Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/ICGFM_Wrap_Teaser.png"
 Banner Image: "/uploads/ICGFM_Wrap_Banner.png"
+Is Featured: true
 ---
 
 By Arwa Al-Najdawi, DevTech’s Gender Budget Expert on the USAID Jordan Fiscal Reform and Public Financial Management Project 
