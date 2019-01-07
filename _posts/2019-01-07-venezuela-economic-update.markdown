@@ -60,11 +60,17 @@ The previous minimum wage increase was in August 2018 and was followed by a hype
 
 ______
 (1) [http://tass.com/economy/1034854](http://tass.com/economy/1034854)
+
 (2) [https://www.bloomberg.com/news/articles/2018-08-29/what-s-the-card-of-the-fatherland-a-ticket-to-free-gasoline](https://www.bloomberg.com/news/articles/2018-08-29/what-s-the-card-of-the-fatherland-a-ticket-to-free-gasoline)
+
 (3) [http://www.venezuelaaldia.com/2018/04/12/tibisay-lucena-hablo-sobre-el-uso-del-carnet-de-la-patria-en-las-elecciones/](http://www.venezuelaaldia.com/2018/04/12/tibisay-lucena-hablo-sobre-el-uso-del-carnet-de-la-patria-en-las-elecciones/)
+
 (4)[http://efectococuyo.com/economia/presidente-de-conindustria-asegura-que-han-cerrado-700-empresas-en-lo-que-va-de-2018/](http://efectococuyo.com/economia/presidente-de-conindustria-asegura-que-han-cerrado-700-empresas-en-lo-que-va-de-2018/)
+
 (5) November 29th 2018 exchange rate according to DolarToday.
+
 (6) Own calculations based on the National Consumer Price Index presented by the National Assembly of Venezuela.
+
 (7) Own calculations based on the statistical information of DolarToday.
 
 
