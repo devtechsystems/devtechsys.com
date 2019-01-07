@@ -57,3 +57,14 @@ The closure of this company is a sign of what is to come. In a Quarterly Outlook
 Nicolás Maduro decreed a new increase in the minimum wage of 150% (the fourth in 2018). The new minimum wage is Bs.S. 4,500 (USD $11.30) (5) and was to take effect in December 2018. In addition to the new increase in the minimum wage, the Venezuelan president also announced new transfers through social protection programs, which include pensions and Christmas bonuses.
 
 The previous minimum wage increase was in August 2018 and was followed by a hyperinflationary spiral. From August to October, inflation grew by 727.3%, (6) and the parallel exchange rate depreciated 400% monthly on average during this period. (7)  These numbers provide evidence that Maduro's “Recovery, Growth and Economic Prosperity Program” has not helped to mitigate inflation nor generated confidence to reactivate the private sector. This program is characterized by being ambiguous, deeply ideological, and lacking economic foundations. We expect a deepening of the hyperinflation spiral, including a more aggressive depreciation rate, and closing of the few remaining small businesses and commercial establishments in the short run.
+
+______
+(1) [http://tass.com/economy/1034854](http://tass.com/economy/1034854)
+(2) [https://www.bloomberg.com/news/articles/2018-08-29/what-s-the-card-of-the-fatherland-a-ticket-to-free-gasoline](https://www.bloomberg.com/news/articles/2018-08-29/what-s-the-card-of-the-fatherland-a-ticket-to-free-gasoline)
+(3) [http://www.venezuelaaldia.com/2018/04/12/tibisay-lucena-hablo-sobre-el-uso-del-carnet-de-la-patria-en-las-elecciones/](http://www.venezuelaaldia.com/2018/04/12/tibisay-lucena-hablo-sobre-el-uso-del-carnet-de-la-patria-en-las-elecciones/)
+(4)[http://efectococuyo.com/economia/presidente-de-conindustria-asegura-que-han-cerrado-700-empresas-en-lo-que-va-de-2018/](http://efectococuyo.com/economia/presidente-de-conindustria-asegura-que-han-cerrado-700-empresas-en-lo-que-va-de-2018/)
+(5) November 29th 2018 exchange rate according to DolarToday.
+(6) Own calculations based on the National Consumer Price Index presented by the National Assembly of Venezuela.
+(7) Own calculations based on the statistical information of DolarToday.
+
+
