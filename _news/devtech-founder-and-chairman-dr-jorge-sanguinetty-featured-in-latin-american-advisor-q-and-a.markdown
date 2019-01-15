@@ -2,7 +2,6 @@
 title: DevTech Founder and Chairman, Dr. Jorge Sanguinetty, Featured in Latin American
   Advisor Q&A
 date: 2019-01-14 19:24:00 Z
-published: false
 tags:
 - Latin America
 - Cuba
