@@ -13,6 +13,8 @@ Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/EGRA_Teaser.png"
 Banner Image: "/uploads/EGRA%20Banner.png"
+Author: Nasim Mirreh, Monitoring and Evaluation Associate
+Is Featured: true
 ---
 
 One cannot predict the circumstances that arise when implementing a project in a developing country. Undoubtedly, many issues related to the geographical, economic, and political spectrums of a country may contribute to the execution of a project and there is not a thorough manual for how to train a large group of data collectors. Despite the challenges that come to light during the implementation phase, it is imperative that the logistical preparation is conducted properly to ensure a successful training. 
