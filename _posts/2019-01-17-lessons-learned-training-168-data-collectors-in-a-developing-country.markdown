@@ -1,6 +1,6 @@
 ---
 title: Lessons Learned Training 168 Data Collectors in a Developing Country
-date: 2019-01-16 21:26:00 Z
+date: 2019-01-17 09:15:00 Z
 tags:
 - Zambia
 - EGRA
