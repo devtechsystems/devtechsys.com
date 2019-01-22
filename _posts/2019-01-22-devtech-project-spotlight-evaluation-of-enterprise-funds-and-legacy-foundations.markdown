@@ -15,6 +15,11 @@ tags:
 - research
 - Enterprise Funds
 - Legacy Foundation
+Practice Area:
+- Monitoring and Evaluation
+Teaser Image: "/uploads/PS_EFUNDS_Teaser.png"
+Banner Image: "/uploads/PS_EFUNDS_Banner.png"
+Is Featured: true
 ---
 
 In 2016, DevTech conducted a comprehensive evaluation of the Enterprise Funds and Legacy Foundations to provide USAID, other Fund and Foundation stakeholders, and the American public with an account of the experiences, successes and accomplishments, and shortcomings of the Funds and Foundations. 
