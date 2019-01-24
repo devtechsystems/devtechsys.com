@@ -1,6 +1,6 @@
 ---
 title: Meet Jake, Policy Analyst
-date: 2019-01-23 19:25:00 Z
+date: 2019-01-24 09:30:00 Z
 Teaser Image: "/uploads/DayTeaser_FINAL-c68998.png"
 Banner Image: "/uploads/Day%20at%20DevTech_Jake_Banner.png"
 Is Featured: true
