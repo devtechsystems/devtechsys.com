@@ -14,6 +14,8 @@ tags:
 - Oil
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/VZ_Jan2_Teaser.png"
+Banner Image: "/uploads/VZ_Jan2_Banner.png"
 Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
