@@ -24,4 +24,5 @@ DevTech promotes safe, inclusive, and effective learning environments by working
 * Security in Education
 * Education Technology and Data Projects
 * Gender Trainings and Assessments
+
 We have worked on many education-related projects in Costa Rica and other countries in Central America.  Today, we are supporting the Latin America and Caribbean (LAC) Education Support Contract for USAID.  Learn more about our [Education and Gender practice area](http://devtechsys.com/our-practices/education-gender-and-youth) and the work we are doing on the [LAC project here](http://devtechsys.com/projects/latin-america-and-caribbean-lac-education-support-contract/).
