@@ -2,6 +2,18 @@
 title: 'DevTech Project Spotlight: Evaluation of the Education Support Program (ESP)
   and the Cairo Scholarship Initiative Program (CISP)'
 date: 2019-02-05 20:41:00 Z
+tags:
+- Egypt
+- USAID
+- monitoring
+- evaluation
+- Education
+- M&E
+Practice Area:
+- Monitoring and Evaluation
+Teaser Image: "/uploads/PS_Cairo_Teaser.png"
+Banner Image: "/uploads/PS_Cairo_Banner.png"
+Is Featured: true
 ---
 
 Following the January 2011 revolution in Egypt, the Ministry of Education launched a three-year nationwide project to restore stability and build the quality of the public education system.  They were supported by the USAID/Egypt Education Support Program (ESP). At the conclusion of the ESP, USAID/Egypt contracted DevTech and its subcontractor The QED Group, LLC (QED) to conduct the final performance evaluation of the program.
