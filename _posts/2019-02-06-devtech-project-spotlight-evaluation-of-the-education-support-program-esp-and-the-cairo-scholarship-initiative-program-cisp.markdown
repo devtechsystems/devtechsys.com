@@ -1,7 +1,7 @@
 ---
 title: 'DevTech Project Spotlight: Evaluation of the Education Support Program (ESP)
   and the Cairo Scholarship Initiative Program (CISP)'
-date: 2019-02-05 20:41:00 Z
+date: 2019-02-06 09:20:00 Z
 tags:
 - Egypt
 - USAID
