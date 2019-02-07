@@ -16,6 +16,7 @@ Under the guidance of the Senior M&E Specialists and the Chief of Party (COP), t
 While traveling to Abuja in November, I sat down with each of our MEL Specialists to talk a little about themselves and their professional backgrounds, how they became involved in M&E, what a typical day in the life of a MEL Specialist looks like, and what constitutes the most challenging aspects of the job, as well as the most rewarding. 
 
 ### Rosemary Okafor – MEL Specialist for Peace, Democracy and Governance:
+![Rosemary Okafor_SM.png](/uploads/Rosemary%20Okafor_SM.png)
 
 Prior to joining DevTech in 2017, Rosemary was a Senior M&E Officer strengthening democratic Institutions in Nigeria. She holds a master’s degree in Public Administration from the University of Liverpool. When asked what a typical day looks like for her as a MEL Specialist for Peace, Democracy and Governance, she replied, “We do a lot of talking – collaborating, and sharing ideas.” From my time in the MEL Nigeria office, I can certainly attest that this is true – from doing data quality assessments, reviewing reports and deliverables, and meeting with implementing partners and USAID, to reviewing activity MEL plans, providing feedback on IP’s work plans, and even collaborating among fellow specialists – all specialists work in one room and constantly share ideas.  
 
