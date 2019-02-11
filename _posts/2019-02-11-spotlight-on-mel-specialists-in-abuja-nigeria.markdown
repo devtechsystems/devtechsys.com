@@ -1,6 +1,6 @@
 ---
 title: Spotlight on MEL Specialists in Abuja, Nigeria
-date: 2019-02-07 20:24:00 Z
+date: 2019-02-11 09:45:00 Z
 Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/MELNigeria_Teaser.png"
