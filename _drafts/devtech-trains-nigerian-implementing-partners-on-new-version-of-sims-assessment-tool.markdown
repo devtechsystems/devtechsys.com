@@ -25,4 +25,5 @@ The Department of State’s Office of the US Global AIDS Coordinator (OGAC) rece
 * How SIMS 4.0 differs from previous versions and what that means for IPs
 * The new scoring system used in SIMS 4.0
 * How to identify the required vs. elective elements of an assessment
+
 All Operating Units (OUs) are required by PEPFAR to use the SIMS tools, and most OUs oversee SIMS scheduling, assessments, and management of IPs without the engagement of third-party contractors.  However, DevTech’s highly skilled team in Abuja was entrusted with the training of IPs in Nigeria due to their high level of competency with SIMS tools and assessment management. In fact, S4SIPMS is the only standalone SIMS project in the world, and DevTech’s work in Nigeria has become the industry standard thanks to the team’s great work over the past three years.
