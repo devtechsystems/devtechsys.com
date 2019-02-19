@@ -1,7 +1,7 @@
 ---
 title: DevTech Trains Nigerian Implementing Partners on New Version of SIMS Assessment
   Tool
-date: 2019-02-13 16:14:00 Z
+date: 2019-02-19 09:15:00 Z
 tags:
 - Department of State
 - DoS
