@@ -9,7 +9,7 @@ Author: Ileana Lacayo, Communications Specialist, CARS Project
 Is Featured: true
 ---
 
-[Nicaragua CARS Project](http://devtechsys.com/projects/Community-Action-for-Reading-a/)
+[Nicaragua CARS Project](https://devtechsys.com/projects/Community-Action-for-Reading-a/)
 
 In the coastal communities of Nicaragua, young children are joining the fight to end human trafficking through an unlikely way: a puppet show. (Click [here ](https://www.youtube.com/watch?v=Eb1luhaMMKY&feature=youtu.be)to view the video.)
 

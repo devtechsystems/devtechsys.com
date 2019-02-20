@@ -44,4 +44,4 @@ These are several key recommendations, however, various sources exist that provi
 * Optimising Learning, Education and Publishing in Africa: The Language Factor--A Review and Analysis of Theory and Practice in Mother-Tongue and Bilingual Education in Sub-Saharan Africa. [http://unesdoc.unesco.org/images/0021/002126/212602e.pdf](http://unesdoc.unesco.org/images/0021/002126/212602e.pdf)
 
 
-DevTech has a practice area devoted to Education, Gender and Youth.  You can see [examples of the projects we have done here](http://devtechsys.com/our-practices/education-gender-and-youth#project).
+DevTech has a practice area devoted to Education, Gender and Youth.  You can see [examples of the projects we have done here](https://devtechsys.com/our-practices/education-gender-and-youth#project).
