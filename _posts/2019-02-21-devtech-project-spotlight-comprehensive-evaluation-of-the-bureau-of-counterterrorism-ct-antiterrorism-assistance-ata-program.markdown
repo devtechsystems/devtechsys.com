@@ -1,7 +1,7 @@
 ---
 title: 'DevTech Project Spotlight: Comprehensive Evaluation of the Bureau of Counterterrorism
   (CT) Antiterrorism Assistance (ATA) Program'
-date: 2019-02-20 14:19:00 Z
+date: 2019-02-21 09:15:00 Z
 tags:
 - Department of State
 - counterterrorism
