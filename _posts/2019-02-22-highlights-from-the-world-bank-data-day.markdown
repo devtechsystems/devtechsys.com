@@ -10,7 +10,7 @@ Banner Image: "/uploads/DataDay2_Banner.png"
 Is Featured: true
 ---
 
-On February 13th, 201,9 DevTech Systems attended the first ever World Bank Data Day at its Headquarters in Washington, DC. DevTech participated in the Data Day Fair and Senior Economist Anne Bernier and Data Analysts Evan Williams and CJ Tracey attended talks throughout the day. Here are some highlights from the day:
+On February 13th, 2019, DevTech Systems attended the first ever World Bank Data Day at its Headquarters in Washington, DC. DevTech participated in the Data Day Fair and Senior Economist Anne Bernier and Data Analysts Evan Williams and CJ Tracey attended talks throughout the day. Here are some highlights from the day:
 
 ![DataDay1.jpg](/uploads/DataDay1.jpg)
 
