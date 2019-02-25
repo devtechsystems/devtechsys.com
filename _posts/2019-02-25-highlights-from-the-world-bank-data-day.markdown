@@ -1,6 +1,6 @@
 ---
 title: Highlights from the World Bank Data Day
-date: 2019-02-22 15:42:00 Z
+date: 2019-02-25 09:20:00 Z
 tags:
 - World Bank
 - data
