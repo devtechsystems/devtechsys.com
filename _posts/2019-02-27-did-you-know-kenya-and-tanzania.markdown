@@ -1,6 +1,17 @@
 ---
 title: 'Did You Know: Kenya & Tanzania'
 date: 2019-02-27 13:39:00 Z
+tags:
+- Kenya
+- Tanzania
+- Evaluation
+- DoD
+- counterterrorism
+Practice Area:
+- Security, Transparency, and Governance
+Teaser Image: "/uploads/KT_Teaser.png"
+Banner Image: "/uploads/KT_Banner.png"
+Is Featured: true
 ---
 
 Did you know that the US Department of Defense (DoD) gave more than $45 million in aid to Kenya and $50 million to Tanzania in 2017? This represents 4% of all US agency aid to Kenya and 8% of aid to Tanzania. In Kenya, most of this funding is used for training and equipment, while in Tanzania it is used for HIV/AIDS. Sources: [https://explorer.usaid.gov/cd/KEN](https://explorer.usaid.gov/cd/KEN); [https://explorer.usaid.gov/cd/TZA](https://explorer.usaid.gov/cd/TZA)
