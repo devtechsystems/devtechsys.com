@@ -14,7 +14,7 @@ DevTech is proud to support WomenStrong International, an organization that grew
 The Handbook contains information from DevTech’s Safe School Program in Malawi. The Safe Schools Program is a pioneering, evidence-based initiative designed to reduce school-related gender-based violence (SRGBV), improve educational outcomes, and reduce negative health outcomes in Malawian schools. Safe Schools produced publications such as *Doorways I: Student Training Manual, On School-Related Gender-Based Violence and Prevention and Response*, now cited in WomenStrong International’s Handbook. 
 
 For more information on the Safe Schools Program:
-https://devtechsys.com/insights/2018/08/23/devtech-project-spotlight-the-safe-schools-program-malawi/ 
+[https://devtechsys.com/insights/2018/08/23/devtech-project-spotlight-the-safe-schools-program-malawi/ ](https://devtechsys.com/insights/2018/08/23/devtech-project-spotlight-the-safe-schools-program-malawi/)
 
 To learn about or download the *Strong Girls Make Strong Women: A Practical Handbook for Creating and Leading a Girls’ Club*: 
-https://www.womenstrong.org/publications/stronggirls 
+[https://www.womenstrong.org/publications/stronggirls ](https://www.womenstrong.org/publications/stronggirls)
