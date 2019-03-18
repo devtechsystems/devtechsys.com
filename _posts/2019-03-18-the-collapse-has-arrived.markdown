@@ -3,6 +3,7 @@ title: The Collapse has Arrived
 date: 2019-03-18 13:35:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Collapse%20Teaser.png"
 Banner Image: "/uploads/Collapse%20Banner.png"
 Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
