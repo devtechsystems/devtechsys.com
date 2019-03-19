@@ -1,5 +1,5 @@
 ---
-title: 'Working in Non-Permissive Environments: Arming Civilians isn''t the Answer'
+title: 'Working in Non-Permissive Environments: Arming Citizens isn''t the Answer'
 date: 2019-03-14 18:20:00 Z
 Practice Area:
 - Security, Transparency, and Governance
