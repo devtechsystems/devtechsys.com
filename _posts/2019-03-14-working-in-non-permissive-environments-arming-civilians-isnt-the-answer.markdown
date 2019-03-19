@@ -4,7 +4,7 @@ date: 2019-03-14 18:20:00 Z
 Practice Area:
 - Security, Transparency, and Governance
 Teaser Image: "/uploads/Non%20Permissive%20Environemtns%20Teaser.png"
-Banner Image: "/uploads/Non%20Permissive%20Environemtns%20Banner-94270d.png"
+Banner Image: "/uploads/Non%20Permissive%20Environemtns%20Banner-304a54.png"
 Author: Leon S. Waskin
 Is Featured: true
 ---
