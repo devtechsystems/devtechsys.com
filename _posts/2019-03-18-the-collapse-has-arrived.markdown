@@ -9,7 +9,7 @@ Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
 
-**The collapse has arrive: Venezuela suffers its longest blackout in recent years**
+**The collapse has arrived: Venezuela suffers its longest blackout in recent years**
 
 Beginning the afternoon of March 7, 18 of the 23 states of Venezuela suffered a power outage that lasted for five consecutive days. Although the Venezuelan electrical grid has suffered numerous collapses in its operation since its nationalization under the regime of socialist leader Hugo Chávez in 2007, with programmed cuts and blackouts of up to four days recorded in recent years, the March 2019 blackout is unprecedented in scope. According to the president of the Venezuelan Association of Electrical, Mechanical and Allied Energy (Aviem), the blackout was caused by a fire in the sub-station "Malena", located in the El Guri dam, causing two of the three lines of the electrical system to collapse. This latest outage occurred in the context of a complete lack of maintenance of the entire electric power generation and distribution system in Venezuela(1). 
 
