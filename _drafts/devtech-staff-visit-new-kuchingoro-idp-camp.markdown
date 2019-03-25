@@ -21,4 +21,7 @@ With so much uncertainty and difficulties faced by the camp and the school in ge
 3.	**Need for Volunteer Teachers:** The school welcomes individuals or groups who can volunteer to teach. They are looking for teachers in all subject areas who can work with students to increase their knowledge base. 
 
 After much discussion the DevTech representatives presented the collected books to the students. Principal Yohanna and the students thanked DevTech for the contribution.  
-[Nigeria Books 2.JPG](/uploads/Nigeria%20Books%202.JPG)[Nigeria books 3.JPG](/uploads/Nigeria%20books%203.JPG)
+
+[Nigeria Books 2.JPG](/uploads/Nigeria%20Books%202.JPG)
+
+[Nigeria books 3.JPG](/uploads/Nigeria%20books%203.JPG)
