@@ -23,9 +23,9 @@ With so much uncertainty and difficulties faced by the camp and the school in ge
 
 After much discussion the DevTech representatives presented the collected books to the students. Principal Yohanna and the students thanked DevTech for the contribution.  See pictures below.
 
-*[Nigeria books 3.JPG](/uploads/Nigeria%20books%203.JPG)*
+![Nigeria books 3.JPG](/uploads/Nigeria%20books%203.JPG)
 
 
-*[Nigeria Books 2.JPG](/uploads/Nigeria%20Books%202.JPG)*
+![Nigeria Books 2.JPG](/uploads/Nigeria%20Books%202.JPG)
 
 
