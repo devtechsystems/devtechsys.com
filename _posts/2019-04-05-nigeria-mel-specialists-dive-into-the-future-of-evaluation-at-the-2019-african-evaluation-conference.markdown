@@ -30,4 +30,9 @@ All three MEL Specialists stated that it would be a great opportunity to attend 
 (left to right) Mukhtar Ijaiya, Folake Akeju, Samuel Gyang  at the African Evaluation Association Conference
 
 ![AfrEA 2.png](/uploads/AfrEA%202.png)
-![AfrEA 3.png](/uploads/AfrEA%203.png)![AfrEA 4.png](/uploads/AfrEA%204.png)![AfrEA 5.png](/uploads/AfrEA%205.png)
+
+![AfrEA 3.png](/uploads/AfrEA%203.png)
+
+![AfrEA 4.png](/uploads/AfrEA%204.png)
+
+![AfrEA 5.png](/uploads/AfrEA%205.png)
