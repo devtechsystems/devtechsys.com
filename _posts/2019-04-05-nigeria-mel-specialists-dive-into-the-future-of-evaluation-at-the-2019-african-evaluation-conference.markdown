@@ -4,6 +4,8 @@ title: Nigeria MEL Specialists Dive into the Future of Evaluation at the 2019 Af
 date: 2019-04-05 15:36:00 Z
 Practice Area:
 - Monitoring and Evaluation
+Teaser Image: "/uploads/AFrEA%20Teaser-b1e49a.png"
+Banner Image: "/uploads/AfrEA%20Banner-d9632f.png"
 Author: Madeline Suess
 Is Featured: true
 ---
@@ -25,4 +27,7 @@ Participants also got to meet with Dr Zakari Lawal, Director of the M&E departme
 
 All three MEL Specialists stated that it would be a great opportunity to attend the preconference workshops if they were to present at the next AfrEA Conference. Their interactions with participants who attended these workshops highlighted how insightful and innovative the presentations were and how the workshops added to their skills and knowledge of managing and conducting evaluations. The team also stressed that they are looking forward to submitting more abstracts, across more sectors, to next year’s conference.
 
-Folake Akeju, Samuel Gyang, Mukhtar Ijaiya
+(left to right) Mukhtar Ijaiya, Folake Akeju, Samuel Gyang  at the African Evaluation Association Conference
+
+![AfrEA 2.png](/uploads/AfrEA%202.png)
+![AfrEA 3.png](/uploads/AfrEA%203.png)![AfrEA 4.png](/uploads/AfrEA%204.png)![AfrEA 5.png](/uploads/AfrEA%205.png)
