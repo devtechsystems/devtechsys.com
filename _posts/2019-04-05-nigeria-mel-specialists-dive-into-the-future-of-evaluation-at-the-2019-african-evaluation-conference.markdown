@@ -10,7 +10,7 @@ Author: Madeline Suess
 Is Featured: true
 ---
 
-**From March 13 to March 15, 2019, three members of the MEL Activity participated in the 9th African Evaluation Association International Conference 2019 Abidjan, Cote d’Ivoire **
+**From March 13 to March 15, 2019, three members of the MEL Activity participated in the 9th African Evaluation Association International Conference 2019 Abidjan, Cote d’Ivoire**
 
 The Monitoring, Evaluation and Learning (MEL) Activity attended the 9th African Evaluation Association (AfrEA) conference between March 13-15, 2019 in Abidjan, Cote d’Ivoire. The conference is the premier event in the African Evaluation sector and acts as the foundation for promoting and advocating the Association’s “Made in Africa” approach. It allows knowledge sharing, collaboration and networking with a wide range of international organizations and individuals. This year’s conference theme was, “Accelerating Africa’s Development: Strengthening National Evaluation Ecosystems.” Attendees from the MEL Activity included: Samuel Gyang, Senior Monitoring, Evaluation and Learning Specialist for Analysis; Olufolake Akeju, Senior Monitoring, Evaluation and Learning Specialist for Health; Mukhtar Ijaiya, Monitoring, Evaluation and Learning Specialist for Health. 
 
