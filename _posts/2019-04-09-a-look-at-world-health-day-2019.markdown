@@ -3,7 +3,7 @@ title: A Look at World Health Day 2019
 date: 2019-04-09 13:07:00 Z
 Practice Area:
 - Monitoring and Evaluation
-Teaser Image: "/uploads/World%20Health%20Day%20Teaser.png"
+Teaser Image: "/uploads/World%20Health%20Day%20Teaser-3ac68d.png"
 Banner Image: "/uploads/World%20Health%20Day%20Banner.png"
 Author: Marisa Acierno
 Is Featured: true
