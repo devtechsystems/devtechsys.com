@@ -3,7 +3,7 @@ title: 'Coyote Guatemala: Operation, Structure, and Marketing Study'
 date: 2019-04-22 13:22:00 Z
 Practice Area:
 - Monitoring and Evaluation
-Teaser Image: "/uploads/Coyote%20Teaser.png"
+Teaser Image: "/uploads/Coyote%20Teaser-c1995c.png"
 Author: 'Meredith Kerrigan '
 Is Featured: true
 ---
