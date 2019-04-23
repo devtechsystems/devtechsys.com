@@ -4,7 +4,7 @@ title: Nigeria MEL Specialists Dive into the Future of Evaluation at the 2019 Af
 date: 2019-04-05 15:36:00 Z
 Practice Area:
 - Monitoring and Evaluation
-Teaser Image: "/uploads/AFrEA%20Teaser-b1e49a.png"
+Teaser Image: "/uploads/AfrEA%20Teaser%202.png"
 Banner Image: "/uploads/AfrEA%20Banner-d9632f.png"
 Author: Madeline Suess
 Is Featured: true
