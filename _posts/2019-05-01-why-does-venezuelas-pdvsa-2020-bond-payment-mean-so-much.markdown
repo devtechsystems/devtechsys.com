@@ -3,6 +3,7 @@ title: Why does Venezuela's PDVSA 2020 Bond payment mean so much?
 date: 2019-05-01 16:21:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Venezuela%20Teaser-6d4f2a.png"
 Author: 'Dr. Jose Pineda and Emily Forrest '
 Is Featured: true
 ---
