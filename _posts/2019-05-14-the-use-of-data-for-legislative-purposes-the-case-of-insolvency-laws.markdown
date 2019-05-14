@@ -9,6 +9,7 @@ Is Featured: true
 ---
 
 *Legislating "in the dark" in an anomaly in the age of big data*
+
 International Monetary Fund, 2019
 
 In a new working paper (1), the International Monetary Fund pointed out that the use of empirical data in insolvency law analysis has been sporadic. This paper provides a conceptual framework for the use of data to assess insolvency systems. The design of a good system requires the use of both qualitative and quantitative benchmarks. Compliance with international standards is very important for every country (especially less developed ones), but this only satisfies the qualitative part of the system. Data is needed to evaluate the effectiveness and efficiency of every step of the process and to identify bottlenecks. 
