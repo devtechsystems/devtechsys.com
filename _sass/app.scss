@@ -661,6 +661,29 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       padding-top: 80px;
     }
   }
+  .promotional {
+    padding: 0 20px;
+    margin-top: 60px;
+
+    .anniversary-container {
+      width: calc(100% - 410px);
+      display: inline-block;
+      margin-bottom: 60px;
+
+      video {
+        background: #e2e2e2 url(/assets/images/35anniversary-poster.png) no-repeat center center/60%;
+        width: 100%;
+      }
+    }
+    .twitter-container {
+      width: 100%;
+      height: 450px;
+      display: inline-block;
+      margin-bottom: 60px;
+
+      iframe {max-height:100% !important;}
+    }
+  }
   .practice-areas {
     background-color: #007cb7;
     .PA--content {
@@ -1148,10 +1171,10 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
         }
       }
     }
-    .site-title img {width:162px;}
+    .site-title img {height:47px;}
     .section-links {
       top: 15px;
-      padding-left:67px;
+      padding-left:185px;
       a {opacity:1;}
     }
   }
@@ -1164,17 +1187,20 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     }
   }
 }
-
-@media print, screen and (min-width: 55em) {
+@media print, screen and (min-width: 60.5em) {
   .site-header-navigation .sticky  > .column .section-links a span {display: inline-block;}
+}
+@media print, screen and (min-width: 55em) {
   .headshot-thumbnail {
     float:right;
     margin:0 0 10px 20px;
   }
 }
 .show-for-medium-screen-only {display: none;}
-@media print, screen and (max-width: 46em) {
+@media print, screen and (max-width: 51.25em) {
   .site-header-navigation .is-stuck .section-links {display: none;}
+}
+@media print, screen and (max-width: 46em) {
   .content blockquote {
     float: none;
     width: 100%;
@@ -2188,6 +2214,11 @@ ul.featured-insights {
     max-width: none;
     flex: 0 0 auto;
     margin-left: 40px;
+  }
+  .home .promotional {margin-top: 0;}
+  .home .promotional .twitter-container {
+    width: 365px;
+    margin-bottom: 0;
   }
 }
 
