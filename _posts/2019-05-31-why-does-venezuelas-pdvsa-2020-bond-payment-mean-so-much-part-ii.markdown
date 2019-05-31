@@ -5,6 +5,7 @@ Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Venezuela%20Bond%20Payment%20Teaser.png"
 Author: Dr. Jose Pineda and Emily Forrest
+Is Featured: true
 ---
 
 Foreign debt is a subject of significant debate in Venezuela, especially given the challenges faced by the Maduro government to meet its external obligations in the context of an economy that has already spent six consecutive years in deep recession and faces an increasingly meager flow of foreign currency due to the fall in oil prices (between 2014 and 2016) and ensuing collapse in oil production, difficulties in accessing financial markets, the erosion of the purchasing power of tax revenues due to hyperinflation, and internal political problems.
