@@ -1,8 +1,9 @@
 ---
-title: 'The Socialist Cataclysm: new Economic Data'
+title: 'The Socialist Cataclysm: New Economic Data'
 date: 2019-06-17 19:27:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Venezuela%20Data%20teaser.png"
 ---
 
 In February 2016, the Central Bank of Venezuela published a press release detailing economic performance in 2014 and 2015. At that time, the Venezuelan economy had experienced two consecutive years in recession and galloping inflation. Venezuelan economic activity was suffering the ravages of a decline in oil prices, which had fallen from U.S. $105.70/barrel in June 2014 to U.S. $37.19/barrel in December 2015 (US Energy Information Administration); as well as a 30% decrease in merchandise imports and a 8.1% decline in the manufacturing sector. This was the last time that the Central Bank of Venezuela published information about economic performance. The lack of information that followed has institutionalized opacity of public data in Venezuela and violates Article 319 of the Venezuelan Constitution, which states that the Central Bank of Venezuela is governed by the principle of public responsibility and "(...) will provide periodic reports on the behaviour of the macroeconomic variables of the country and on other matters that are requested and will include the analyses that allow for their evaluation."
