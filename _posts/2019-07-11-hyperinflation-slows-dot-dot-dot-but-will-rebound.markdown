@@ -8,7 +8,6 @@ Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
 
-Hyperinflation slows ... but will rebound
 For the third consecutive month, the hyperinflation has slowed.  The National Assembly reported inflation of 31.3% in May. This deceleration is due to the recent increase in marginal reserve requirement, which has also slowed the growth of monetary liquidity and the parallel exchange rate (Figure 1), alleviating inflationary pressures.
 
 **Panel 1
