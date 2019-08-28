@@ -5,6 +5,7 @@ Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/FBM%20Teaser.png"
 Author: Madeline Suess
+Is Featured: true
 ---
 
 In September 2016, USAID/Nigeria awarded DevTech Systems, Inc. the four-year Monitoring, Evaluation and Learning Activity (MEL). This contract aims to make USAID/Nigeria the premier practitioner in Monitoring and Evaluation (M&E) and Collaborating, Learning and Adapting (CLA). Out of the work of the MEL Activity, one of the main components and focus on the second half of the Activity is Field Based Monitoring (FBM).
