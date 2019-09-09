@@ -36,3 +36,5 @@ Workshop participants shared their reflections on “learning”:
 ![Zambia Edu 2.jpg](/uploads/Zambia%20Edu%202.jpg)
 
 As part of the midline EGRA, ECZ alongside Education Data activity staff will apply the skills developed as part of this workshop to ensure that there are reliable, valid, and equitable relationships between the baseline and midline score scales.
+
+You can read more about the Zambia Education Data Activity [here](https://devtechsys.com/insights/2018/10/31/devtech-project-spotlight-evaluation-of-the-usaid-slash-zambia-education-program/). 
