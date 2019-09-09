@@ -4,6 +4,7 @@ title: 'Learning Within Learning in Zambia: Knowledge Transfers for managing bet
 date: 2019-09-09 14:21:00 Z
 Practice Area:
 - Education, Gender and Youth
+Teaser Image: "/uploads/Edu%20Series%20Teaser.jpg"
 Author: Dr. Francis Sampa and Dr. Randy Hatfield
 Is Featured: true
 ---
