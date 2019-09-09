@@ -1,5 +1,5 @@
 ---
-title: 'Learning Within Learning in Zambia: Knowledge Transfers for managing better
+title: 'Learning Within Learning in Zambia: Knowledge transfers for managing better
   student assessments'
 date: 2019-09-09 14:21:00 Z
 Practice Area:
