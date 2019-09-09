@@ -19,7 +19,7 @@ The first of the series of skills training workshops was conducted and is demons
 
 Workshop participants shared their reflections on “learning”:
 
-* * Good **learning** experience. I work on test development and research. Now I have an opportunity and need to read so that I **learn** more. 
+* Good **learning** experience. I work on test development and research. Now I have an opportunity and need to read so that I **learn** more. 
 
 * It has been very educational. I am a person responsible for test development. I heard about terms like “item discrimination” and “item difficulty.” During this workshop I now know how these terms are used. The course has been an eye opener but I need more time to practice.
 
