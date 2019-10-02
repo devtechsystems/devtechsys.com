@@ -3,6 +3,7 @@ title: DevTech completes Mid-term Performance Evaluation field work in Moldova
 date: 2019-10-02 18:50:00 Z
 Practice Area:
 - Monitoring and Evaluation
+Teaser Image: "/uploads/Moldova%201%20Teaser.png"
 Author: Dr. Oleksandr Rohozynsky
 Is Featured: true
 ---
