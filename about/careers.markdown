@@ -9,3 +9,4 @@ navigation_order: 4
 Has Career List: true
 ---
 
+[Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
