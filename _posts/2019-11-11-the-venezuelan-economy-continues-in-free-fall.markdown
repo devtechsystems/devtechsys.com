@@ -12,7 +12,7 @@ Last year, in August and September 2018, socialist leader Nicolás Maduro launch
 
 Now, more than a year after the plan’s introduction, the Venezuelan economy does not show signs of recovery. Although the hyperinflationary process has slowed down (inflation in September was 23.5%, a steep decline from August’s inflation of 65.2%) (2),  economic activity has continued to decline, now registering a drop of 49.3% since 2013(3). This result is mostly explained by declines in the construction sector (52.3%), financial and insurance institutions (45.2%), and the manufacturing sector (39.3%). Regarding aggregate demand, fixed gross investment in Venezuela fell by 64.8% compared to 2017; while private consumption expenditure and government consumption expenditure declined at rates of 9.1% and 20.1%, respectively. 
 
-**Gross domestic product continues to decline **
+**Gross domestic product continues to decline**
 
 For the first quarter of 2019, the Venezuelan economy registered a decrease of 26.8% compared to the same period of 2018. The construction sector was the most affected, with a decrease of 74.1%, followed by the manufacturing sector (56.3%), and then by the social service provider sector with a drop of 47.4%. Among the reasons for this poor economic performance are the difficulties in accessing internal financing due to the strict marginal reserve requirement, delays in the allocation of foreign exchange, and the negative expectations of the private sector regarding the short- and medium-term economic outlook (4).  
 
