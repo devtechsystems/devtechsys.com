@@ -3,6 +3,7 @@ title: The Venezuelan economy continues in free fall
 date: 2019-11-11 15:02:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/VE%20teaser.png"
 Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
