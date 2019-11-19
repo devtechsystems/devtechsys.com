@@ -11,7 +11,7 @@ Is Featured: true
 
 In a recent Wall Street Journal article, The Secret Power of the Children’s Picture book, the author highlights how early experiences reading picture books with caregivers supports children’s cognitive, oral language and vocabulary development, thereby laying the foundation for subsequent development. In contrast to both purely listening to a story without any visualizations, which is too little to support young children’s sustained attention, and watching animations, which stimulates their brain too much to enable them to interact with the content, research suggests that reading picture books provides young learners with a “just right” amount of neural stimulation to positively contribute to their development (1).
 
-![Zambia 1-2afe4d.png](/uploads/Zambia%201-2afe4d.png)
+![Zambia 1-253c70.png](/uploads/Zambia%201-253c70.png)
 
 *An Early Childhood Education teacher reading a picture book to learners in Eastern Province, Zambia. Photo taken with consent.*
 
