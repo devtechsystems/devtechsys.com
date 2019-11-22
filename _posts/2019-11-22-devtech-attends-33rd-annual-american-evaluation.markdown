@@ -1,5 +1,5 @@
 ---
-title: DevTech attends 33rd Annual American Evaluation
+title: DevTech attends 33rd Annual American Evaluation Association Conference
 date: 2019-11-22 19:40:00 Z
 Practice Area:
 - Monitoring and Evaluation
