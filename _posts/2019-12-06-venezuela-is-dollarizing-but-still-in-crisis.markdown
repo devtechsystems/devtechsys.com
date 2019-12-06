@@ -3,6 +3,7 @@ title: Venezuela is dollarizing, but still in crisis
 date: 2019-12-06 17:35:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/dollarization%20teaser.png"
 Author: Dr. Jose Pineda and Emily Forrest
 Is Featured: true
 ---
