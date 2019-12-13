@@ -96,6 +96,16 @@ defaults:
     layout: page
 - scope:
     path: ''
+    type: procurements
+  values:
+    Full Title: 
+    Description: 
+    File URL:
+    Email Address:
+    Is Open: 
+    layout: page
+- scope:
+    path: ''
     type: our-team
   values:
     Title: 
