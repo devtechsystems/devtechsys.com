@@ -46,7 +46,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "d3": "^3.5.17",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "lunr": "^2.1.2",
     "prop-types": "^15.5.10",
     "qd-formatters": "git+https://github.com/QuickDash/qd-formatters.git",
