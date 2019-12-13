@@ -1,8 +1,8 @@
 ---
 title: Office Locations
-position: 6
+position: 7
 navigation_group: About Us
-navigation_order: 5
+navigation_order: 6
 Has Office Locations: true
 ---
 
