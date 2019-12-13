@@ -8,9 +8,9 @@ layout: default
 
 		{% include header.html title='About Us' subtitle=header_subtitle %}
 			<div class="site-content" id="site_content" aria-label="Content">
-				<div class="page">
+				<div class="page about-page">
 					{% assign aboutNav_pages = site.html_pages | sort: 'position' | where:'navigation_group','About Us' %}
-					<div class="dropdown-container show-for-small-only">
+					<div class="dropdown-container">
 						<div class="row row--gutters column">
 		          <button class="button button-dropdown" type="button" data-toggle="about-dropdown">
 		          	<span class="text">{{ page.title }}</span>
@@ -28,8 +28,8 @@ layout: default
 		        </div>
 	        </div>
 
-					<div class="tabs-container show-for-medium">
-						<ul class="tabs tabs-6-up" id="about-tabs">
+					<div class="tabs-container">
+						<ul class="tabs tabs-7-up" id="about-tabs">
 					    {% for p in aboutNav_pages %}
 					      <li class="tabs-title {% if p.url == page.url %}is-active{% endif %}">
 					        <a href="{{ p.url }}" {% if p.url == page.url %}aria-selected="true"{% endif %}>
@@ -237,6 +237,10 @@ layout: default
 
 						{% if page['Has Contract List'] == true %}
 							{% include contract-list.html %}
+						{% endif %}
+
+						{% if page['Has Procurement List'] == true %}
+							{% include procurement-list.html %}
 						{% endif %}
 
 						{% if page['Has Contact Form'] == true %}
