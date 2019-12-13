@@ -5,9 +5,6 @@ collections:
   authors:
     title: Authors
     output: false
-  procurements:
-    title: Procurements
-    output: false
   contracting-vehicles:
     title: Contracting Vehicles
     output: false
@@ -35,6 +32,9 @@ collections:
     Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
       urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
       penatibus et.
+  procurements:
+    title: Procurements
+    output: false
   projects:
     title: Projects
     output: true
@@ -100,8 +100,8 @@ defaults:
   values:
     Full Title: 
     Description: 
-    File URL:
-    Email Address:
+    File URL: 
+    Email Address: 
     Is Open: 
     layout: page
 - scope:
