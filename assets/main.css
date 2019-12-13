@@ -3139,6 +3139,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
       justify-content: center; }
     .page .tabs-container .tabs.tabs-gutter {
       max-width: 48.75rem; }
+    .page .tabs-container .tabs.tabs-7-up .tabs-title {
+      width: 14.2%; }
     .page .tabs-container .tabs.tabs-6-up .tabs-title {
       width: 16.6%; }
     .page .tabs-container .tabs.tabs-4-up .tabs-title {
@@ -3151,6 +3153,15 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   padding: 80px 0 0; }
   .page .tabs-panel .page-title {
     margin-top: 0; }
+.page.about-page .tabs-container {
+  display: none; }
+.page.about-page .dropdown-container .button-dropdown {
+  min-width: 100%; }
+@media screen and (min-width: 52em) {
+  .page.about-page .tabs-container {
+    display: block; }
+  .page.about-page .dropdown-container {
+    display: none; } }
 .page .content {
   padding-bottom: 80px; }
   .page .content.content-noBottomPadding {
@@ -3403,7 +3414,8 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
     color: #555; }
     .contract-list ul li:before {
       display: none; }
-.contract-list ul + .CL--agency {
+.contract-list ul + .CL--agency,
+.contract-list p + .CL--agency {
   border-top: 2px solid #c8e2ef;
   padding-top: 24px; }
 
