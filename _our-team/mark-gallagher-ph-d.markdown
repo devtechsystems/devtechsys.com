@@ -1,6 +1,7 @@
 ---
 title: Mark Gallagher, Ph. D
 date: 2019-12-19 16:06:00 Z
+position: 8
 Title: Mark Gallagher, Ph. D
 Job Title: Director of Public Finance
 ---
