@@ -9,7 +9,11 @@ Description: |
   * [Proposal](/uploads/Education%20Data%20activity%20-%20ECE%20Research%20Study%20Proposal.pdf)
   * [Methodology](/uploads/ECE%20Sampling%20Methodology-816460.pdf)
   * Questions & Answers
-  * Addendum
+  * [Addendum](/uploads/Terms%20of%20Reference_ECE%20Research%20Study_Addendum%201_12.18.19.pdf)
+File URL: |-
+  /uploads/Education%20Data%20activity%20-%20ECE%20Research%20Study%20Proposal.pdf
+  /uploads/ECE%20Sampling%20Methodology-816460.pdf
+  /uploads/Terms%20of%20Reference_ECE%20Research%20Study_Addendum%201_12.18.19.pdf
 Email Address: Ed-data@devtechsys.com
 Is Open: true
 ---
