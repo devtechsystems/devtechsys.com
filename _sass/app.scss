@@ -1277,6 +1277,37 @@ https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/compone
   }
 }
 
+//procurement list
+.procurement-list {
+  .PL--title {
+    font-size: 30px;
+    color: #28445f;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    letter-spacing: .025em;
+  }
+  .PL--agency {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+  }
+  .PL--subtitle {
+    font-size: 17px;
+    color: #555;
+    font-style: italic;
+    font-weight: 700;
+    border-top:2px solid #c8e2ef;
+    padding-top:24px;
+    margin-top: 26px;
+  }
+  p + .PL--agency {
+    border-top:2px solid #c8e2ef;
+    padding-top:24px;
+  }
+}
+
 //team list
 .headshot-thumbnail {
   margin:10px 0 20px;

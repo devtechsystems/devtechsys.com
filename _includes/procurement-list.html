@@ -1,10 +1,10 @@
-<div class="row row--gutters column contract-list">
-  <h2 class="CL--title">Open Procurements</h2>
+<div class="row row--gutters column procurement-list">
+  <h2 class="PL--title">Open Procurements</h2>
   {% assign openProcurements = site.procurements | sort: 'position' | where: 'Is Open', true %}
   {% if openProcurements.size > 0 %}
     {% for procurement in openProcurements %}
-      <h3 class="CL--agency">{{ procurement["Full Title"] }}</h3>
-      <p>{{ procurement["Description"] }}</p>
+      <h3 class="PL--agency">{{ procurement["Full Title"] }}</h3>
+      <p>{{ procurement["Description"] | markdownify}}</p>
       <p>Please download the <a href="{{ procurement['File URL'] }}">Terms of Reference</a> to learn more about this procurement opportunity, including instructions on how to submit a response.</p>
       <p>Please submit all questions and proposals directly to: <a href="mailto:{{ procurement['Email Address'] }}">{{ procurement["Email Address"] }}</a></p>
     {% endfor %}
@@ -14,10 +14,10 @@
 
   {% assign pastProcurements = site.procurements | sort: 'position' | where_exp: "item", "item['Is Open'] != true" %}
   {% if pastProcurements.size > 0 %}
-  <h2 class="CL--subtitle">Previous Procurements</h2>
+  <h2 class="PL--subtitle">Previous Procurements</h2>
     {% for procurement in pastProcurements %}
-      <h3 class="CL--agency">{{ procurement["Full Title"] }}</h3>
-      <p>{{ procurement["Description"] }}</p>
+      <h3 class="PL--agency">{{ procurement["Full Title"] }}</h3>
+      <p>{{ procurement["Description"] | markdownify}}</p>
       <p>Please download the <a href="{{ procurement['File URL'] }}">Terms of Reference</a> to learn more about this procurement opportunity.</p>
       <p><strong>Note:</strong> This opportunities deadline has passed and applications are no longer being accepted.</p>
     {% endfor %}
