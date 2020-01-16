@@ -11,4 +11,4 @@ On January 15th, 2020 US Ambassador to Nicaragua, Kevin Sullivan, visited ten sc
 
 ![CARS.jpg](/uploads/CARS.jpg)
 
-(Photo: Ms. Lisa Powell, Director of a primary school in Blue Lagoon receiving TLM from Ambassador Sullivan)
+(Photo: Ms. Lisa Powell, Director of a primary school in Pearl Lagoon receiving TLM from Ambassador Sullivan)
