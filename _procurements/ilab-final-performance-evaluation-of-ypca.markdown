@@ -13,4 +13,4 @@ Is Open: true
 
 The Bureau of International Labor Affairs (ILAB) of the US Department of Labor has awarded DevTech the contract to conduct a Final Performance Evaluation of the Youth Pathways Central America (YPCA) project. The Period of Performance is February 5, 2020, to  February 4, 2021, and will focus on Honduras and El Salvador. 
 
-Please submit all questions to: Ed-YPCAeval@devtechsys.com
+
