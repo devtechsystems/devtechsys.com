@@ -14,7 +14,7 @@ DevTech’s technical capabilities complement its ability to operate and manage 
 
 > DEVTECH WAS FOUNDED ON THE CONVICTION THAT COMPLEX DEVELOPMENT CHALLENGES HAVE TO BE ADDRESSED THROUGH INNOVATIVE AND PRACTICAL SOLUTIONS. - Dr. Jorge Sanguinetty
 
-DevTech has implemented long- and short-term projects in 98 different countries for over two dozen government agencies, multilateral development institutions, subnational governments, and private sector entities. 
+DevTech has implemented long- and short-term projects in over 100 different countries for over two dozen government agencies, multilateral development institutions, subnational governments, and private sector entities. 
 
 DevTech’s headquarters is located in Rosslyn, VA, with offices in Nigeria, Zambia, and Indonesia.
 
