@@ -8,7 +8,9 @@
       {% if procurement['File URL'].size > 0 %}
         <p>Please download the <a href="{{ procurement['File URL'] }}">Terms of Reference</a> to learn more about this procurement opportunity, including instructions on how to submit a response.</p>
       {% endif %}
-      <p>Please submit all questions and proposals directly to: <a href="mailto:{{ procurement['Email Address'] }}">{{ procurement["Email Address"] }}</a></p>
+      {% if procurement['Email Address'].size > 0 %}
+        <p>Please submit all correspondence directly to: <a href="mailto:{{ procurement['Email Address'] }}">{{ procurement["Email Address"] }}</a></p>
+      {% endif %}
     {% endfor %}
   {% else %}
     <p>There are currently no open procurements, please check back soon for more opportunities.</p>
