@@ -3,7 +3,6 @@ title: John Yates
 date: 2020-02-12 20:52:00 Z
 position: 8
 Title: John Yates
-Headshot Image: "/uploads/DSC_0507%20-%20Copy.JPG"
 Job Title: Executive Director of Public Finance
 ---
 
