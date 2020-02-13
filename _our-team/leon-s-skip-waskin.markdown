@@ -4,7 +4,7 @@ date: 2018-05-17 14:28:00 Z
 position: 4
 Title: Leon S. "Skip" Waskin
 Headshot Image: "/uploads/SkipWaskinWeb1.png"
-Job Title: Senior Director for Operations
+Job Title: Senior Executive Director for Operations
 ---
 
 Mr. Waskin is DevTech's Senior Director for Operations. Before coming to DevTech, Skip was the Coordinator for Economic and Development Assistance at the US Embassy in Islamabad, where he worked to ensure that assistance from the United States supports US national interests and contributes effectively to Pakistan’s long-term stability, prosperity, and growth. 
