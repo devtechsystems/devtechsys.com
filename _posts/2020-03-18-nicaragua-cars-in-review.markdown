@@ -26,3 +26,5 @@ The external evaluation led by Mathematica Policy Research found that the EpC pr
 EpCs are a DevTech product inspired by Quantum Learning. The program was originally financed by the USDOL. We have worked with partners in an array of countries to revise, contextualize, and adapt the program. We developed the program in the Dominican Republic (2007-2011) where EpCs are still being implemented with USAID funding and active private sector and community support. In addition, we have implemented EpCs with CARE in Central America and with Partners of the Americas in Colombia, Ecuador and Panama. DevTech considers the program implementation in Nicaragua as highly successful, despite the implementation challenges in the region, and can serve as a starting point for future educational interventions in the Caribbean Coast of Nicaragua
 
 ![CARS Review 4.jpg](/uploads/CARS%20Review%204.jpg)
+
+Learn more about the CARS project [here](https://devtechsys.com/projects/Community-Action-for-Reading-a/). 
