@@ -3,7 +3,7 @@ title: Desiree "Dede" Naylor
 date: 2020-03-27 15:03:00 Z
 position: 6
 Title: Dede Naylor
-Headshot Image: "/uploads/181030_Dede_Naylor_portrait_112_rev_screen.jpg"
+Headshot Image: "/uploads/Dede%20website.png"
 Job Title: Director of Contracts and Grants Administration
 ---
 
