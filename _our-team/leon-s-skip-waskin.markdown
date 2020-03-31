@@ -7,7 +7,7 @@ Headshot Image: "/uploads/SkipWaskinWeb1.png"
 Job Title: Senior Executive Director for Operations
 ---
 
-Mr. Waskin is DevTech's Senior Director for Operations. Before coming to DevTech, Skip was the Coordinator for Economic and Development Assistance at the US Embassy in Islamabad, where he worked to ensure that assistance from the United States supports US national interests and contributes effectively to Pakistan’s long-term stability, prosperity, and growth. 
+Mr. Waskin is DevTech's Senior Executive Director for Operations. Before coming to DevTech, Skip was the Coordinator for Economic and Development Assistance at the US Embassy in Islamabad, where he worked to ensure that assistance from the United States supports US national interests and contributes effectively to Pakistan’s long-term stability, prosperity, and growth. 
 
 Immediately prior to that, he spent nearly three years in Karachi as USAID’s Deputy Mission Director responsible for that agency’s work in the provinces of Sindh and Balochistan. In this capacity he provided strategic leadership to, and drove forward implementation of a $290 million portfolio focused on education and health infrastructure and community outreach efforts designed to promote stability and reduce the lure of violent extremism. Prior to his position in Karachi, he led a team in Islamabad that conducted an assessment of USAID/Pakistan’s “implementation modalities” and suggested ways to accelerate delivery of assistance and reduce the mission’s pipeline. 
 
