@@ -4,6 +4,8 @@ date: 2020-04-07 15:01:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/IFI%20COVID%20Teaser.png"
+Author: Welmar Rosado, Ph. D.
+Is Featured: true
 ---
 
 “The success and pace of recovery will depend crucially on policies undertaken during the crisis. If policies ensure that workers do not lose their jobs, renters and homeowners are not evicted, companies avoid bankruptcy, and business and trade networks are preserved, the recovery will occur sooner and more smoothly”
