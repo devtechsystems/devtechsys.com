@@ -1,6 +1,8 @@
 ---
 title: Responses of International Financial Institutions to COVID-19
 date: 2020-04-07 15:01:00 Z
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 ---
 
 “The success and pace of recovery will depend crucially on policies undertaken during the crisis. If policies ensure that workers do not lose their jobs, renters and homeowners are not evicted, companies avoid bankruptcy, and business and trade networks are preserved, the recovery will occur sooner and more smoothly”
@@ -65,5 +67,27 @@ International Financial Institutions are rapidly taking measures to inject liqui
 * CAF made available the Emergency Credit Line of rapid disbursement of up to USD 2.5 billion, which will allow authorities to offer a rapid and timely response to mitigate the effects of COVID-19's expansion, and contribute to the continuity of business operations and the recovery of economic growth.
 
 
+**Sources**
+Dell’Ariccia, Mauro, Spilimbergo, and Zettelmeyer. “Economic Policies for the COVID-19 War". IMF Blog. 2020. [https://blogs.imf.org/2020/04/01/economic-policies-for-the-covid-19-war/](https://blogs.imf.org/2020/04/01/economic-policies-for-the-covid-19-war/)
+
+WB - [https://www.worldbank.org/en/news/feature/2020/04/02/the-world-bank-group-moves-quickly-to-help-countries-respond-to-covid-19](https://www.worldbank.org/en/news/feature/2020/04/02/the-world-bank-group-moves-quickly-to-help-countries-respond-to-covid-19)
+
+IMF - [https://www.imf.org/en/About/Factsheets/Sheets/2020/02/28/how-the-imf-can-help-countries-address-the-economic-impact-of-coronavirus](https://www.imf.org/en/About/Factsheets/Sheets/2020/02/28/how-the-imf-can-help-countries-address-the-economic-impact-of-coronavirus)
+
+EIB - [https://www.eib.org/en/about/initiatives/covid-19-response/index.htm](https://www.eib.org/en/about/initiatives/covid-19-response/index.htm)
+
+EIB - [https://www.eib.org/en/press/all/2020-094-eib-group-moves-to-scale-up-economic-response-to-covid-19-crisis.htm](https://www.eib.org/en/press/all/2020-094-eib-group-moves-to-scale-up-economic-response-to-covid-19-crisis.htm)
+
+EBRD - [https://www.ebrd.com/what-we-do/coronavirus-solidarity](https://www.ebrd.com/what-we-do/coronavirus-solidarity)
+
+ADB - [https://www.adb.org/news/adb-announces-6-5-billion-initial-response-covid-19-pandemic](https://www.adb.org/news/adb-announces-6-5-billion-initial-response-covid-19-pandemic)
+
+IDB - [https://www.iadb.org/en/news/idb-group-announces-priority-support-areas-countries-affected-covid-19](https://www.iadb.org/en/news/idb-group-announces-priority-support-areas-countries-affected-covid-19)
+
+AfDB - [https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-launches-record-breaking-3-billion-fight-covid-19-social-bond-34982](https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-launches-record-breaking-3-billion-fight-covid-19-social-bond-34982)
+
+IsDB - [https://www.isdb.org/news/the-islamic-development-bank-group-strategic-preparedness-and-response-programme-for-the-covid-19-pandemic-allocates-us23-billion-to-member-countries](https://www.isdb.org/news/the-islamic-development-bank-group-strategic-preparedness-and-response-programme-for-the-covid-19-pandemic-allocates-us23-billion-to-member-countries)
+
+AIIB - [https://www.aiib.org/en/news-events/news/2020/AIIB-Looks-to-Launch-USD5-Billion-COVID-19-Crisis-Recovery-Facility.html](https://www.aiib.org/en/news-events/news/2020/AIIB-Looks-to-Launch-USD5-Billion-COVID-19-Crisis-Recovery-Facility.html)
 
 
