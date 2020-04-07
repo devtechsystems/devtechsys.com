@@ -9,6 +9,8 @@ Is Featured: true
 ---
 
 “The success and pace of recovery will depend crucially on policies undertaken during the crisis. If policies ensure that workers do not lose their jobs, renters and homeowners are not evicted, companies avoid bankruptcy, and business and trade networks are preserved, the recovery will occur sooner and more smoothly”
+
+
 Dell’Ariccia et al. (2020)
 
 
@@ -71,6 +73,7 @@ International Financial Institutions are rapidly taking measures to inject liqui
 
 
 **Sources**
+
 Dell’Ariccia, Mauro, Spilimbergo, and Zettelmeyer. “Economic Policies for the COVID-19 War". IMF Blog. 2020. [https://blogs.imf.org/2020/04/01/economic-policies-for-the-covid-19-war/](https://blogs.imf.org/2020/04/01/economic-policies-for-the-covid-19-war/)
 
 WB - [https://www.worldbank.org/en/news/feature/2020/04/02/the-world-bank-group-moves-quickly-to-help-countries-respond-to-covid-19](https://www.worldbank.org/en/news/feature/2020/04/02/the-world-bank-group-moves-quickly-to-help-countries-respond-to-covid-19)
