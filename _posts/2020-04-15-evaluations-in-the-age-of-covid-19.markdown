@@ -14,10 +14,7 @@ There are several mechanisms that can be employed when conducting remote data co
  
 There are other creative ways evaluators can conduct data collection, including utilizing firms that can provide spatial mapping of sites or utilizing remote survey providers. If possible and only if approved by the client, evaluators could also consider moving budget line items or suggest extending the evaluation timeline to best meet current Covid-19 demands. 
   
-The DevTech M&E team is working to provide guidance and solutions to our units and methodological support to implementing partners. Oleksandr Rohozynsky (Senior Technical Adviser and Evaluation Specialist) developed guidance for our Nigeria MEL platform to adjust implementation of monitoring and evaluation activities; Meredith Kerrigan (Senior M&E Associate) adopted it to this guidance (below) for M&E unit staff; Jerome Gallagher (embedded in USAID/PPL through the ISSC project) and the DevTech team at USAID Data Services, are working with PPL to develop guidance for remote monitoring due to COVID-19 for USAID.
+The DevTech M&E team is working to provide guidance and solutions to our units and methodological support to implementing partners. Oleksandr Rohozynsky (Senior Technical Adviser and Evaluation Specialist) developed guidance for our Nigeria MEL platform to adjust implementation of monitoring and evaluation activities; Meredith Kerrigan (Senior M&E Associate) adopted it to this guidance ([COVID Evals.PNG](/uploads/COVID%20Evals.PNG)) for M&E unit staff; Jerome Gallagher (embedded in USAID/PPL through the ISSC project) and the DevTech team at USAID Data Services, are working with PPL to develop guidance for remote monitoring due to COVID-19 for USAID.
  
 Luckily, we live in an age of internet and can respond and adapt to unprecedented situations. It is hopeful the pandemic will be contained and end soon, however in the meantime it will not prevent DevTech from conducting evaluations. 
-
-
-[COVID Evals.PNG](/uploads/COVID%20Evals.PNG)
 
