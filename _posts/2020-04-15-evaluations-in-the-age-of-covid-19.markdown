@@ -3,6 +3,7 @@ title: Evaluations in the Age of COVID-19
 date: 2020-04-15 16:47:00 Z
 Practice Area:
 - Monitoring and Evaluation
+Teaser Image: "/uploads/COVID%20Evals%202.png"
 Author: Meredith Kerrigan
 Is Featured: true
 ---
