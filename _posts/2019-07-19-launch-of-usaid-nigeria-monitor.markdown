@@ -10,7 +10,7 @@ Is Featured: true
 
 ![Monitor 3.png](/uploads/Monitor%203.png)
 
-DevTech is pleased to announce the launch of USAID Nigeria’s new performance reporting system, Monitor®. DevTech, under the Monitoring, Evaluation and Learning (MEL) Activity, developed and launched a brand-new reporting system for implementing partners (IPs) and USAID Mission staff on July 1, 2019. The prior reporting system, PRS, will be disabled so that IPs and Mission staff can enter data into the new system. USAID will host a launch event on July 17th and July 19th to celebrate Monitor’s launch.
+DevTech is pleased to announce the launch of USAID Nigeria’s performance reporting system, Monitor®. DevTech, under the Monitoring, Evaluation and Learning (MEL) Activity, developed and launched a significantly upgraded reporting system for implementing partners (IPs) and USAID Mission staff on July 1, 2019. The prior reporting system, PRS, will be disabled so that IPs and Mission staff can enter data into the new system. USAID will host a launch event on July 17th and July 19th to celebrate Monitor’s launch.
 
 ![Monitor 1.png](/uploads/Monitor%201.png)
 *Figure 1 USAID Nigeria Monitor Home Page*
