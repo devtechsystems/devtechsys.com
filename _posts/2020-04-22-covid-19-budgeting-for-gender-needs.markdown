@@ -3,6 +3,9 @@ title: 'COVID-19: Budgeting for Gender Needs'
 date: 2020-04-22 15:12:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/COVID%20Gender%20Teaser.png"
+Author: Arwa Al-Najdawi, Gender Budgeting Expert
+Is Featured: true
 ---
 
 COVID-19; it’s not only a health issue, it proved to be cross border crisis having its severe impacts across the Global Economy.
