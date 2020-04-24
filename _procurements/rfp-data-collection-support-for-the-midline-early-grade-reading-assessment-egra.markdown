@@ -17,13 +17,15 @@ Description: "The 3.5 year USAID Education Data activity implemented by DevTech 
   \n\nThe attached Terms of Reference outline a solicitation to recruit an interested
   local survey firm or institution to provide logistical and administrative support
   to USAID Education Data activity in collaboration with ECZ and USAID/Zambia to carry
-  out the 2020 Midline EGRA data collection. The Terms of Reference outline the anticipated
-  support needed to implement two possible EGRA scenarios:\n\n1.\tEGRA in 5 provinces
-  previously assessed in the 2018 Baseline EGRA; or \n2.\tEGRA in all 10 provinces,
-  5 assessed and 5 not assessed in the 2018 Baseline EGRA. \n\nInterested applicants
-  should send an email to Ed-data@devtechsys.com  expressing intent to submit a proposal
-  and carefully read the Terms of Reference. Upon receiving an email reply, Education
-  Data activity will send supplemental documents to submit as part of the proposal. "
+  out the 2020 Midline EGRA data collection. The [Terms of Reference](/uploads/Terms%20of%20Reference%20-%20Midline%20EGRA%20-%20Optional%20Activities_FINAL.pdf)
+  outline the anticipated support needed to implement two possible EGRA scenarios:\n\n1.\tEGRA
+  in 5 provinces previously assessed in the 2018 Baseline EGRA; or \n2.\tEGRA in all
+  10 provinces, 5 assessed and 5 not assessed in the 2018 Baseline EGRA. \n\nInterested
+  applicants should send an email to Ed-data@devtechsys.com  expressing intent to
+  submit a proposal and carefully read the Terms of Reference. Upon receiving an email
+  reply, Education Data activity will send supplemental documents to submit as part
+  of the proposal. "
+File URL: "/uploads/Terms%20of%20Reference%20-%20Midline%20EGRA%20-%20Optional%20Activities_FINAL.pdf"
 Email Address: Ed-data@devtechsys.com
 Is Open: true
 ---
