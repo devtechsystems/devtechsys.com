@@ -2,6 +2,7 @@
 title: 'RFP: Data Collection Support for the Midline Early Grade Reading Assessment
   (EGRA)'
 date: 2020-04-24 20:52:00 Z
+position: 0
 Full Title: 'RFP: Data Collection Support for the Midline Early Grade Reading Assessment
   (EGRA)'
 Description: "The 3.5 year USAID Education Data activity implemented by DevTech Systems,
