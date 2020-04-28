@@ -10,14 +10,15 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
-[[Full Stack Engineer]](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
+[Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
 
 [Chief of Party (Philippines CLA)](https://devtechsys.bamboohr.com/jobs/view.php?id=40&source=other)
 
+## Other Opportunities
 [Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
 
-Featured Job: [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/)
 
+## Benefits
 DevTech is excited to offer a dynamic benefits package to our employees, including:
 * Ample paid vacation and sick time 
 * Paid holidays
