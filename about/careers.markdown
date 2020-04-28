@@ -9,6 +9,11 @@ navigation_order: 5
 Has Career List: false
 ---
 
+## Check out our Featured Jobs:
+[[Full Stack Engineer]](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
+
+[Chief of Party (Philippines CLA)](https://devtechsys.bamboohr.com/jobs/view.php?id=40&source=other)
+
 [Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
 
 Featured Job: [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/)
