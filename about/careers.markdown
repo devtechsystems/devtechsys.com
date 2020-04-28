@@ -11,6 +11,7 @@ Has Career List: false
 
 [Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
 
+Featured Job: [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/)
 
 DevTech is excited to offer a dynamic benefits package to our employees, including:
 * Ample paid vacation and sick time 
