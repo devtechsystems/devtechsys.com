@@ -26,6 +26,7 @@ DevTech is excited to offer a dynamic benefits package to our employees, includi
 * Paid holidays
 * Medical, dental, and vision insurance, including HSA options, for you and your dependents effective from your first day 
 * 401K with generous employer matching
+* Employee referral bonus program
 * Discounted gym membership
 * Flexible schedule and telework options
 * Free tea and coffee in the office!
