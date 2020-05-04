@@ -10,9 +10,11 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Accounting/Billing Specialist (CostPoint)](https://devtechsys.bamboohr.com/jobs/view.php?id=42)
+
 [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
 
-[Chief of Party (Philippines CLA)](https://devtechsys.bamboohr.com/jobs/view.php?id=40&source=other)
+[Intern (Program Management and Business Development)](https://devtechsys.bamboohr.com/jobs/view.php?id=41&source=bamboohr)
 
 ## Other Opportunities
 [Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
