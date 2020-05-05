@@ -4,7 +4,7 @@ date: 2017-05-30 19:02:00 Z
 position: 1
 Title: Mercy Sanguinetty
 Headshot Image: "/uploads/Mercy%20circle-8fc67b.png"
-Job Title: Vice Chairman and Senior Advisor
+Job Title: Vice Chairwoman of the Board of Advisors
 Is Featured: true
 layout: page
 ---
