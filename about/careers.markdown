@@ -10,6 +10,9 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+
+[Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43)- Secret Clearance Required
+
 [Accounting/Billing Specialist (CostPoint)](https://devtechsys.bamboohr.com/jobs/view.php?id=42)
 
 [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
