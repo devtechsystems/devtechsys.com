@@ -40,3 +40,5 @@ The attached Terms of Reference outline a solicitation to recruit an interested 
 2.	EGRA in all 10 provinces, 5 assessed and 5 not assessed in the 2018 Baseline EGRA. 
 
 Interested applicants should send an email to Ed-data@devtechsys.com  expressing intent to submit a proposal and carefully read the Terms of Reference. Upon receiving an email reply, Education Data activity will send supplemental documents to submit as part of the proposal. 
+
+[To click here to view Q&A.](/uploads/Applicant%20ToR%20questions-final.docx)
