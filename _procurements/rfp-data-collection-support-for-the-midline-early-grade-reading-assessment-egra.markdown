@@ -25,7 +25,7 @@ Description: "The 3.5 year USAID Education Data activity implemented by DevTech 
   applicants should send an email to Ed-data@devtechsys.com  expressing intent to
   submit a proposal and carefully read the Terms of Reference. Upon receiving an email
   reply, Education Data activity will send supplemental documents to submit as part
-  of the proposal. "
+  of the proposal. \n\nTo click here to view Q&A."
 File URL: "/uploads/Terms%20of%20Reference%20-%20Midline%20EGRA%20-%20Optional%20Activities_FINAL.pdf"
 Email Address: Ed-data@devtechsys.com
 Is Open: true
