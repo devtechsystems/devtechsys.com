@@ -4,6 +4,7 @@ title: 'COVID-19: DevTech''s innovative approach to conducting performance evalu
 date: 2020-05-12 15:06:00 Z
 Practice Area:
 - Education, Gender and Youth
+Teaser Image: "/uploads/YCPA%20Teaser.png"
 Author: Mario Martinez and Miguel Nunez
 ---
 
