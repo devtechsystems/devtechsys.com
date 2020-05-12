@@ -6,6 +6,7 @@ Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/YCPA%20Teaser.png"
 Author: Mario Martinez and Miguel Nunez
+Is Featured: true
 ---
 
 As the COVID-19 pandemic continues to impact development globally, Latin America has not been spared and countries in the region have been paralyzed in terms of mobility. DevTech recently faced this challenge after being awarded a contract by the Department of Labor (DOL) to conduct a performance evaluation of the Youth Pathways in Central America Project (YPCA) being implemented in Honduras and El Salvador. As the evaluation team prepared to mobilize data collection, travel in these countries came to a halt and threatened the delivery of the evaluation. 
