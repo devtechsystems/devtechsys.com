@@ -10,9 +10,6 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
-
-[Senior Youth Engagement & Community Director (USAID/Jordan)](https://devtechsys.bamboohr.com/jobs/view.php?id=46)
-
 [Senior Learning Advisor](https://devtechsys.bamboohr.com/jobs/view.php?id=45): Secret Clearance Required
 
 [Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43&source=bamboohr): Secret Clearance Required
