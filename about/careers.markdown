@@ -12,7 +12,7 @@ Has Career List: false
 ## Check out our Featured Jobs:
 [Senior Learning Advisor](https://devtechsys.bamboohr.com/jobs/view.php?id=45): Secret Clearance Required
 
-[Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43&source=bamboohr):Secret Clearance Required
+[Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43&source=bamboohr): Secret Clearance Required
 
 [Policy Analyst, J2SR Metrics](https://devtechsys.bamboohr.com/jobs/view.php?id=44&source=bamboohr): Secret Clearance Required
 
