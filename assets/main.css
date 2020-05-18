@@ -1443,15 +1443,15 @@ body { height: 100%; font-family: "brandon-grotesque", Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "brandon-grotesque", Arial, sans-serif; line-height: 1.3; }
 
-.font-brandon, .content blockquote p, .content dl dt, .row--office-locations p.OL--address, .row--office-locations p.OL--phone, #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description li { font-family: "brandon-grotesque", Arial, sans-serif; }
+.font-brandon, #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description li, .row--office-locations p.OL--phone, .row--office-locations p.OL--address, .content dl dt, .content blockquote p { font-family: "brandon-grotesque", Arial, sans-serif; }
 
-.font-vista, .content p, .content ul li, .content ol > li, .content dl dd, .content table td, .home .hero p, .home .practice-areas .PA--content p, .home .projects p, .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content h4 { font-family: "vista-slab", Arial, sans-serif; }
+.font-vista, .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content h4, .home .projects p, .home .practice-areas .PA--content p, .home .hero p, .content table td, .content dl dd, .content ol > li, .content ul li, .content p { font-family: "vista-slab", Arial, sans-serif; }
 
-.wf-loading .font-brandon, .wf-loading .content blockquote p, .content blockquote .wf-loading p, .wf-loading .content dl dt, .content dl .wf-loading dt, .wf-loading .row--office-locations p.OL--address, .row--office-locations .wf-loading p.OL--address, .wf-loading .row--office-locations p.OL--phone, .row--office-locations .wf-loading p.OL--phone, .wf-loading #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-loading p, .wf-loading #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-loading li, .wf-loading .font-vista, .wf-loading .content p, .content .wf-loading p, .wf-loading .content ul li, .content ul .wf-loading li, .wf-loading .content ol > li, .content .wf-loading ol > li, .wf-loading .content dl dd, .content dl .wf-loading dd, .wf-loading .content table td, .content table .wf-loading td, .wf-loading .home .hero p, .home .hero .wf-loading p, .wf-loading .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-loading p, .wf-loading .home .projects p, .home .projects .wf-loading p, .wf-loading .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-loading h2, .wf-loading .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-loading h3, .wf-loading .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-loading h4, .wf-loading body { visibility: hidden; }
+.wf-loading .font-brandon, .wf-loading #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-loading p, .wf-loading #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-loading li, .wf-loading .row--office-locations p.OL--phone, .row--office-locations .wf-loading p.OL--phone, .wf-loading .row--office-locations p.OL--address, .row--office-locations .wf-loading p.OL--address, .wf-loading .content dl dt, .content dl .wf-loading dt, .wf-loading .font-vista, .wf-loading .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-loading h2, .wf-loading .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-loading h3, .wf-loading .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-loading h4, .wf-loading .home .projects p, .home .projects .wf-loading p, .wf-loading .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-loading p, .wf-loading .home .hero p, .home .hero .wf-loading p, .wf-loading .content table td, .content table .wf-loading td, .wf-loading .content dl dd, .content dl .wf-loading dd, .wf-loading .content ol > li, .content .wf-loading ol > li, .wf-loading .content ul li, .content ul .wf-loading li, .wf-loading .content p, .content .wf-loading p, .wf-loading body { visibility: hidden; }
 
-.wf-active .font-brandon, .wf-active .content blockquote p, .content blockquote .wf-active p, .wf-active .content dl dt, .content dl .wf-active dt, .wf-active .row--office-locations p.OL--address, .row--office-locations .wf-active p.OL--address, .wf-active .row--office-locations p.OL--phone, .row--office-locations .wf-active p.OL--phone, .wf-active #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-active p, .wf-active #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-active li, .wf-active .font-vista, .wf-active .content p, .content .wf-active p, .wf-active .content ul li, .content ul .wf-active li, .wf-active .content ol > li, .content .wf-active ol > li, .wf-active .content dl dd, .content dl .wf-active dd, .wf-active .content table td, .content table .wf-active td, .wf-active .home .hero p, .home .hero .wf-active p, .wf-active .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-active p, .wf-active .home .projects p, .home .projects .wf-active p, .wf-active .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-active h2, .wf-active .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-active h3, .wf-active .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-active h4, .wf-active body { visibility: visible; }
+.wf-active .font-brandon, .wf-active #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-active p, .wf-active #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-active li, .wf-active .row--office-locations p.OL--phone, .row--office-locations .wf-active p.OL--phone, .wf-active .row--office-locations p.OL--address, .row--office-locations .wf-active p.OL--address, .wf-active .content dl dt, .content dl .wf-active dt, .wf-active .font-vista, .wf-active .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-active h2, .wf-active .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-active h3, .wf-active .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-active h4, .wf-active .home .projects p, .home .projects .wf-active p, .wf-active .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-active p, .wf-active .home .hero p, .home .hero .wf-active p, .wf-active .content table td, .content table .wf-active td, .wf-active .content dl dd, .content dl .wf-active dd, .wf-active .content ol > li, .content .wf-active ol > li, .wf-active .content ul li, .content ul .wf-active li, .wf-active .content p, .content .wf-active p, .wf-active body { visibility: visible; }
 
-.wf-inactive .font-brandon, .wf-inactive .content blockquote p, .content blockquote .wf-inactive p, .wf-inactive .content dl dt, .content dl .wf-inactive dt, .wf-inactive .row--office-locations p.OL--address, .row--office-locations .wf-inactive p.OL--address, .wf-inactive .row--office-locations p.OL--phone, .row--office-locations .wf-inactive p.OL--phone, .wf-inactive #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-inactive p, .wf-inactive #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-inactive li, .wf-inactive .font-vista, .wf-inactive .content p, .content .wf-inactive p, .wf-inactive .content ul li, .content ul .wf-inactive li, .wf-inactive .content ol > li, .content .wf-inactive ol > li, .wf-inactive .content dl dd, .content dl .wf-inactive dd, .wf-inactive .content table td, .content table .wf-inactive td, .wf-inactive .home .hero p, .home .hero .wf-inactive p, .wf-inactive .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-inactive p, .wf-inactive .home .projects p, .home .projects .wf-inactive p, .wf-inactive .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-inactive h2, .wf-inactive .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-inactive h3, .wf-inactive .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-inactive h4, .wf-inactive body { visibility: visible; }
+.wf-inactive .font-brandon, .wf-inactive #resumator-widget .resumator-job-description p, #resumator-widget .resumator-job-description .wf-inactive p, .wf-inactive #resumator-widget .resumator-job-description li, #resumator-widget .resumator-job-description .wf-inactive li, .wf-inactive .row--office-locations p.OL--phone, .row--office-locations .wf-inactive p.OL--phone, .wf-inactive .row--office-locations p.OL--address, .row--office-locations .wf-inactive p.OL--address, .wf-inactive .content dl dt, .content dl .wf-inactive dt, .wf-inactive .font-vista, .wf-inactive .site-header .site-header-dropdown .SD--content h2, .site-header .site-header-dropdown .SD--content .wf-inactive h2, .wf-inactive .site-header .site-header-dropdown .SD--content h3, .site-header .site-header-dropdown .SD--content .wf-inactive h3, .wf-inactive .site-header .site-header-dropdown .SD--content h4, .site-header .site-header-dropdown .SD--content .wf-inactive h4, .wf-inactive .home .projects p, .home .projects .wf-inactive p, .wf-inactive .home .practice-areas .PA--content p, .home .practice-areas .PA--content .wf-inactive p, .wf-inactive .home .hero p, .home .hero .wf-inactive p, .wf-inactive .content table td, .content table .wf-inactive td, .wf-inactive .content dl dd, .content dl .wf-inactive dd, .wf-inactive .content ol > li, .content .wf-inactive ol > li, .wf-inactive .content ul li, .content ul .wf-inactive li, .wf-inactive .content p, .content .wf-inactive p, .wf-inactive body { visibility: visible; }
 
 /** https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css 1. Avoid the IE 10-11 `min-height` bug. 2. Set `flex-shrink` to `0` to prevent some browsers from letting these items shrink to smaller than their content's default minimum size. See http://bit.ly/1Mn35US for details. 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari. */
 .site { display: flex; flex-direction: column; height: 100%; /* 1, 3 */ }
@@ -1786,8 +1786,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "brandon-grotesque", Arial, sans-serif; li
 
 .page.about-page .dropdown-container .button-dropdown { min-width: 100%; }
 
-@media screen and (min-width: 52em) { .page.about-page .tabs-container { display: block; }
-  .page.about-page .dropdown-container { display: none; } }
+@media screen and (min-width: 52em) { .page.about-page .tabs-container { display: block; } .page.about-page .dropdown-container { display: none; } }
 
 .page .content { padding-bottom: 80px; }
 
@@ -1889,9 +1888,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "brandon-grotesque", Arial, sans-serif; li
 
 @media print, screen and (max-width: 51.25em) { .site-header-navigation .is-stuck .section-links { display: none; } }
 
-@media print, screen and (max-width: 46em) { .content blockquote { float: none; width: 100%; margin-left: 0; margin-bottom: 20px; }
-  .show-for-medium-screen { display: none; }
-  .show-for-medium-screen-only { display: block; } }
+@media print, screen and (max-width: 46em) { .content blockquote { float: none; width: 100%; margin-left: 0; margin-bottom: 20px; } .show-for-medium-screen { display: none; } .show-for-medium-screen-only { display: block; } }
 
 .contract-list .CL--title { font-size: 30px; color: #28445f; font-weight: 700; margin-bottom: 5px; margin-top: 10px; letter-spacing: .025em; }
 
@@ -2022,8 +2019,7 @@ div.career-list .fa { color: #7dcba7; }
 
 @media print, screen and (min-width: 76em) { .row--our-practices-list .PA--block-link-title { top: 64%; padding-left: 100px; padding-right: 100px; } }
 
-@media print, screen and (max-width: 45em) { .row--our-practices-list .medium-8 { -ms-flex: 0 0 auto; flex: 0 0 auto; max-width: 100%; }
-  .row--our-practices-list .PA--block-link-title { font-size: 26px; } }
+@media print, screen and (max-width: 45em) { .row--our-practices-list .medium-8 { -ms-flex: 0 0 auto; flex: 0 0 auto; max-width: 100%; } .row--our-practices-list .PA--block-link-title { font-size: 26px; } }
 
 @media print, screen and (max-width: 28em) { .row--our-practices-list .PA--block-link-title { font-size: 22px; } }
 
@@ -2217,39 +2213,11 @@ ul.featured-insights .post-missing-teaser { width: 100%; height: 50px; backgroun
 
 .site #search_results a span { display: inline-block; }
 
-@media screen and (min-width: 40em) { .site-header .banner-page-title { font-size: 41px; }
-  .site-footer { text-align: left; }
-  .site-footer .column { padding-top: 45px; padding-bottom: 40px; }
-  .site-footer .column ul.link-list { float: right; margin-bottom: 0; }
-  .home .insights ul li { float: left; width: 50%; }
-  .home .insights ul li:nth-child(odd) { clear: left; }
-  .home .insights ul li:first-child { clear: none; }
-  .home .hero .hero--content { padding-top: 172px; }
-  .home .hero .allcaps { font-size: 50px; }
-  .home .hero p { font-size: 21px; }
-  .home .practice-areas .PA--content { padding-bottom: 80px; }
-  .home .practice-areas .PA--icon-list { margin-top: 70px; margin-bottom: 0; }
-  .site .button { min-width: 300px; }
-  .content .right-separator-medium { border-right-color: #9d9d9d; }
-  ul.featured-insights li { float: left; width: 50%; margin-bottom: 28px; padding: 0 20px; }
-  ul.featured-insights li:nth-child(odd) { clear: left; }
-  ul.featured-insights li:first-child { clear: none; }
-  .team-list-block { padding-left: 16px; padding-right: 16px; }
-  .team-list-block img { max-width: 280px; }
-  .team-list-top-row .team-list-block:first-child > a { float: right; } }
+@media screen and (min-width: 40em) { .site-header .banner-page-title { font-size: 41px; } .site-footer { text-align: left; } .site-footer .column { padding-top: 45px; padding-bottom: 40px; } .site-footer .column ul.link-list { float: right; margin-bottom: 0; } .home .insights ul li { float: left; width: 50%; } .home .insights ul li:nth-child(odd) { clear: left; } .home .insights ul li:first-child { clear: none; } .home .hero .hero--content { padding-top: 172px; } .home .hero .allcaps { font-size: 50px; } .home .hero p { font-size: 21px; } .home .practice-areas .PA--content { padding-bottom: 80px; } .home .practice-areas .PA--icon-list { margin-top: 70px; margin-bottom: 0; } .site .button { min-width: 300px; } .content .right-separator-medium { border-right-color: #9d9d9d; } ul.featured-insights li { float: left; width: 50%; margin-bottom: 28px; padding: 0 20px; } ul.featured-insights li:nth-child(odd) { clear: left; } ul.featured-insights li:first-child { clear: none; } .team-list-block { padding-left: 16px; padding-right: 16px; } .team-list-block img { max-width: 280px; } .team-list-top-row .team-list-block:first-child > a { float: right; } }
 
-@media screen and (min-width: 64em) { .row--office-locations p.OL--phone { float: right; }
-  .home .insights .news--container { background-color: #f0f0f0; padding-bottom: 50px; padding-top: 40px; margin-bottom: 80px; width: calc(100% - 80px); max-width: none; flex: 0 0 auto; margin-left: 40px; }
-  .home .promotional { margin-top: 0; }
-  .home .promotional .twitter-container { width: 365px; margin-bottom: 0; } }
+@media screen and (min-width: 64em) { .row--office-locations p.OL--phone { float: right; } .home .insights .news--container { background-color: #f0f0f0; padding-bottom: 50px; padding-top: 40px; margin-bottom: 80px; width: calc(100% - 80px); max-width: none; flex: 0 0 auto; margin-left: 40px; } .home .promotional { margin-top: 0; } .home .promotional .twitter-container { width: 365px; margin-bottom: 0; } }
 
-@media screen and (min-width: 76em) { .page blockquote { margin-right: -230px; padding-right: 16px; }
-  .home .insights ul li { float: left; width: 33%; }
-  .home .insights ul li:nth-child(odd) { clear: none; }
-  .home .insights ul li:first-child { margin-left: 1%; }
-  ul.featured-insights li { padding: 0 0 0 20px; }
-  ul.featured-insights li:first-child { padding-left: 0; padding-right: 20px; }
-  ul.featured-insights li:first-child .post-label { left: 10px; } }
+@media screen and (min-width: 76em) { .page blockquote { margin-right: -230px; padding-right: 16px; } .home .insights ul li { float: left; width: 33%; } .home .insights ul li:nth-child(odd) { clear: none; } .home .insights ul li:first-child { margin-left: 1%; } ul.featured-insights li { padding: 0 0 0 20px; } ul.featured-insights li:first-child { padding-left: 0; padding-right: 20px; } ul.featured-insights li:first-child .post-label { left: 10px; } }
 
 @media screen and (min-width: 80em) { .home .practice-areas .PA--content { padding-left: 0; padding-right: 0; } }
 
