@@ -16,6 +16,10 @@ Has Career List: false
 
 [Policy Analyst, J2SR Metrics](https://devtechsys.bamboohr.com/jobs/view.php?id=44&source=bamboohr): Secret Clearance Required
 
+[Domestic Resource Mobilization (DRM) Expert (Sudan)](https://devtechsys.bamboohr.com/jobs/view.php?id=47)
+
+[Budget Expert (Sudan)](https://devtechsys.bamboohr.com/jobs/view.php?id=48)
+
 [Accounting/Billing Specialist (CostPoint)](https://devtechsys.bamboohr.com/jobs/view.php?id=42)
 
 [Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
