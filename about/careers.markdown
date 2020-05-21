@@ -10,6 +10,10 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Senior Evaluator (DOD AM&E)](https://devtechsys.bamboohr.com/jobs/view.php?id=50): Secret Clearance Required
+
+[Senior Evaluator (call for CVs)](https://devtechsys.bamboohr.com/jobs/view.php?id=49&source=bamboohr)
+
 [Senior Learning Advisor](https://devtechsys.bamboohr.com/jobs/view.php?id=45): Secret Clearance Required
 
 [Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43&source=bamboohr): Secret Clearance Required
