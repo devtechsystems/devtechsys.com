@@ -5,6 +5,9 @@ collections:
   authors:
     title: Authors
     output: false
+  covid-19:
+    title: COVID-19
+    output: true
   contracting-vehicles:
     title: Contracting Vehicles
     output: false
