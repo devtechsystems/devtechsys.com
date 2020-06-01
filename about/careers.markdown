@@ -10,6 +10,12 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Front End Web Designer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=52)
+
+[Program Manager (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=53)
+
+[Web Developer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=55)
+
 [Senior Evaluator (DOD AM&E)](https://devtechsys.bamboohr.com/jobs/view.php?id=50): Secret Clearance Required
 
 [Senior Evaluator (call for CVs)](https://devtechsys.bamboohr.com/jobs/view.php?id=49&source=bamboohr)
@@ -25,10 +31,6 @@ Has Career List: false
 [Budget Expert (Sudan)](https://devtechsys.bamboohr.com/jobs/view.php?id=48)
 
 [Accounting/Billing Specialist (CostPoint)](https://devtechsys.bamboohr.com/jobs/view.php?id=42)
-
-[Full Stack Engineer](https://devtechsys.bamboohr.com/jobs/view.php?id=39&source=devtechsys)
-
-[Intern (Program Management and Business Development)](https://devtechsys.bamboohr.com/jobs/view.php?id=41&source=bamboohr)
 
 ## Other Opportunities
 [Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
