@@ -10,6 +10,10 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Strategic Communications Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=58)
+
+[Monitoring and Evaluation Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=57)
+
 [Expression of Interest (Indonesia EGSA)](https://devtechsys.bamboohr.com/jobs/view.php?id=56)
 
 [Front End Web Designer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=52)
