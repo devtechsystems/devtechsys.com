@@ -10,6 +10,8 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Expression of Interest (Indonesia EGSA)](https://devtechsys.bamboohr.com/jobs/view.php?id=56)
+
 [Front End Web Designer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=52)
 
 [Program Manager (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=53)
