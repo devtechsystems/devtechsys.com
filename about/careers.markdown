@@ -10,6 +10,9 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+
+[Chief of Party (USAID/Jordan)](https://devtechsys.bamboohr.com/jobs/view.php?id=59)
+
 [Strategic Communications Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=58)
 
 [Monitoring and Evaluation Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=57)
