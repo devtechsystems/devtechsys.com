@@ -10,6 +10,7 @@ Has Career List: false
 ---
 
 ## Check out our Featured Jobs:
+[Accounting Manager](https://devtechsys.bamboohr.com/jobs/view.php?id=60)
 
 [Chief of Party (USAID/Jordan)](https://devtechsys.bamboohr.com/jobs/view.php?id=59)
 
