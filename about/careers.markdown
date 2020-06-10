@@ -9,45 +9,26 @@ navigation_order: 5
 Has Career List: false
 ---
 
-## Check out our Featured Jobs:
-[Accounting Manager](https://devtechsys.bamboohr.com/jobs/view.php?id=60)
+# Welcome to DevTech's Career page! 
+Please review our open positions for corporate, field offices, technical assistance and more below!
 
-[Chief of Party (USAID/Jordan)](https://devtechsys.bamboohr.com/jobs/view.php?id=59)
+## U.S. Opportunities
+This platform contains all jobs for US-based persons including full-time and short-term roles, as well as proposal opportunities. 
 
-[Strategic Communications Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=58)
+## International Opportunities
+This platform contains all jobs for non US-based persons including full-time and short-terms roles, as well as proposal opportunities.
 
-[Monitoring and Evaluation Consultant (Indonesian National)](https://devtechsys.bamboohr.com/jobs/view.php?id=57)
 
-[Expression of Interest (Indonesia EGSA)](https://devtechsys.bamboohr.com/jobs/view.php?id=56)
+## DevTech is an Equal Opportunity Employer
+DevTech is proud to be an Equal Opportunity Employer, we value the perspectives that a diverse workforce brings to implementing creative solutions for development. We do not discriminate based upon race, religion, color, national origin, gender, sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. 
+To that end, DevTech actively encourages people of color, women, LGBTQ+ individuals, people with disabilities, members of ethnic minorities, and veterans to apply.
 
-[Front End Web Designer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=52)
-
-[Program Manager (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=53)
-
-[Web Developer (SEC)](https://devtechsys.bamboohr.com/jobs/view.php?id=55)
-
-[Senior Evaluator (DOD AM&E)](https://devtechsys.bamboohr.com/jobs/view.php?id=50): Secret Clearance Required
-
-[Senior Evaluator (call for CVs)](https://devtechsys.bamboohr.com/jobs/view.php?id=49&source=bamboohr)
-
-[Senior Learning Advisor](https://devtechsys.bamboohr.com/jobs/view.php?id=45): Secret Clearance Required
-
-[Junior Analyst, Enterprise Risk Management (ERM)](https://devtechsys.bamboohr.com/jobs/view.php?id=43&source=bamboohr): Secret Clearance Required
-
-[Policy Analyst, J2SR Metrics](https://devtechsys.bamboohr.com/jobs/view.php?id=44&source=bamboohr): Secret Clearance Required
-
-[Domestic Resource Mobilization (DRM) Expert (Sudan)](https://devtechsys.bamboohr.com/jobs/view.php?id=47)
-
-[Budget Expert (Sudan)](https://devtechsys.bamboohr.com/jobs/view.php?id=48)
-
-[Accounting/Billing Specialist (CostPoint)](https://devtechsys.bamboohr.com/jobs/view.php?id=42)
-
-## Other Opportunities
-[Click here to view current openings with DevTech](https://jobs.talent.dynamics.com/jobs/devtechsys.com/2)
+## Reasonable Accommodations
+If you require reasonable accommodations at any point in the recruitment process please email communications@devtechsys.com with "Accommodation Request" in the subject line or call our office at 703-312-6038 and request to speak to Human Resources.
 
 
 ## Benefits
-DevTech is excited to offer a dynamic benefits package to our employees, including:
+DevTech is excited to offer a dynamic benefits package to our US employees, including:
 * Ample paid vacation and sick time 
 * Paid holidays
 * Medical, dental, and vision insurance, including HSA options, for you and your dependents effective from your first day 
