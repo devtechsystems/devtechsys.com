@@ -13,7 +13,7 @@ Please review our open positions for corporate, field offices, technical assista
 ## [U.S. Opportunities](https://uscareers-devtechsys.icims.com/)
 This platform contains all jobs for US-based persons including full-time and short-term roles, as well as proposal opportunities. 
 
-[## International Opportunities](https://internationalcareers-devtechsys.icims.com/)
+## [International Opportunities](https://internationalcareers-devtechsys.icims.com/)
 This platform contains all jobs for non US-based persons including full-time and short-terms roles, as well as proposal opportunities.
 
 
