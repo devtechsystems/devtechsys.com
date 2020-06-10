@@ -7,7 +7,6 @@ navigation_order: 5
 Has Career List: false
 ---
 
-# Welcome to DevTech's Career page! 
 Please review our open positions for corporate, field offices, technical assistance and more below:
 
 ## [U.S. Opportunities](https://uscareers-devtechsys.icims.com/)
