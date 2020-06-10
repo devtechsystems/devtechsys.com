@@ -10,7 +10,7 @@ Has Career List: false
 ---
 
 # Welcome to DevTech's Career page! 
-Please review our open positions for corporate, field offices, technical assistance and more below!
+Please review our open positions for corporate, field offices, technical assistance and more below:
 
 ## U.S. Opportunities
 This platform contains all jobs for US-based persons including full-time and short-term roles, as well as proposal opportunities. 
