@@ -66,7 +66,7 @@ layout: default
 						{% if page['Detail Page Image'].size > 0 %}
 							<div class="page-banner practice-area">
 								<div class="icon-wDarkEllipse">
-									<img class="icon" src="{{ page['Light Icon Image'] }}"/>	
+									<img class="icon" src="{{ page['Light Icon Image'] }}"/>
 								</div>
 								<img src="{{ page['Detail Page Image'] }}"/>
 							</div>
@@ -243,7 +243,7 @@ layout: default
 							      	</ul>
 							      </div>
 						      {% endif %}
-					      	
+
 					    	</li>
 					    {% endfor %}
 				    </ul>
@@ -270,8 +270,8 @@ layout: default
 				    {% else %}
 				    	<p class="marginB-medium">No insight posts have been tagged with {{ current_practice_area }}, below are the most recent insight posts.</p>
 				    	<ul class="posts">
-				    	{% assign recent_insights = site.posts limit:3 %}
-					    {% for p in recent_insights %}
+				    	{% assign recent_insights = site.posts %}
+					    {% for p in recent_insights limit: 3 %}
 					      <li class="post">
 					      	{% if p['Category'].size > 0 %}
 					    			<div class="post-category">{{ p['Category'] }}</div>
