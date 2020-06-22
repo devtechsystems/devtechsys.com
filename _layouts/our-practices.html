@@ -225,7 +225,7 @@ layout: default
 							      	<ul>
 							      	{% for item in this_pubs_projects %}
 							      		{% assign selected_item = item %}
-							      		{% assign selected_project = site.projects | where_exp: "item", "item.title == selected_item" %}
+							      		{% assign selected_project = site.projects | where_exp: "item", "item['Project Title'] == selected_item" %}
 							      		{% for item in selected_project %}
 							      			<li>
 							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>

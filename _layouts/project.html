@@ -37,11 +37,11 @@ layout: default
 								<h1 class="post-title page-title">No Project Title found</h1>
 							{% endif %}
 							<div class="post-details">
-								
+
 								{% if page['Region'].size > 0 %}
 			  					<span class="post-detail">{{ page['Region'] }}</span>
 			  				{% endif %}
-			  				
+
 			  				{% if page['Client/ Donor'].size > 0 %}
 			  					<span class="post-detail">{{ page['Client/ Donor'] }}</span>
 			  				{% endif %}
@@ -49,7 +49,7 @@ layout: default
 			  				{% if page['Start Year'].size > 0 %}
 			  					<span class="post-detail">{{ page['Start Year'] }}</span>
 			  				{% endif %}
-			  				
+
 			  				{% if page['End Year'].size > 0 %}
 			  					<span class="post-detail post-detail-dashed">{{ page['End Year'] }}</span>
 			  				{% endif %}
@@ -62,9 +62,9 @@ layout: default
 							<h2 class="page-highlight">{{ page['Highlight'] }}</h2>
 						{% endif %}
 
-				    {{ content }}
+						{{ content }}
 
-				    {% assign linked_publications = site.publications | where_exp: "item", "item['Project'] contains page.title "%}
+				    {% assign linked_publications = site.publications | where_exp: "item", "item['Project'] contains page['Project Title'] "%}
 				    {% if linked_publications.size > 0 %}
 				    	<h3 class="marginT-medium">Related Publications:</h3>
 				    	<ul>
