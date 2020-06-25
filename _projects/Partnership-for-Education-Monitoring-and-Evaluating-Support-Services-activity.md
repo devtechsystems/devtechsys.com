@@ -12,6 +12,6 @@ Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - 'Education, Gender and Youth'
-projects_slug: 'Partnership-for-Education:-Monitoring-and-Evaluating-Support-Services-activity'
+projects_slug: 'Partnership-for-Education-Monitoring-and-Evaluating-Support-Services-activity'
 Contract Value USD: '25000.00'
 ---

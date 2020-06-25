@@ -16,7 +16,7 @@ Is Current Project? (true/false): false
 Practice Area:
   - 'Education, Gender and Youth'
 projects_slug: >-
-  U.S.-Egyptian-Partnership-for-Economic-Growth-and-Development:-Human-Resource-Development-Project
+  U.S.-Egyptian-Partnership-for-Economic-Growth-and-Development-Human-Resource-Development-Project
 Contract Value USD: '879973.00'
 ---
 DevTech provided services to plan and implement intellectual exchanges between private industry and private/public education

@@ -18,7 +18,7 @@ Practice Area:
   - Monitoring and Evaluation
   - 'Education, Gender and Youth'
 projects_slug: >-
-  Educational-crisis-in-Latin-America-:-the-financial-constraint-and-the-dilemma-of-quality-versus-cov
+  Educational-crisis-in-Latin-America-the-financial-constraint-and-the-dilemma-of-quality-versus-cov
 Contract Value USD: ''
 ---
 Book written by Jorge Sanguinetty for the USAID/Bureau for Latin America and the Caribbean, Office of Development Resources, Education and Human Resources Division in 1992.

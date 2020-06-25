@@ -11,6 +11,6 @@ Brief Description: ''
 Is Current Project? (true/false): false
 Practice Area:
   - ''
-projects_slug: 'Evaluation-IQC:-Evaluation-Studies-of-USAID-Development-Programs'
+projects_slug: 'Evaluation-IQC-Evaluation-Studies-of-USAID-Development-Programs'
 Contract Value USD: ''
 ---

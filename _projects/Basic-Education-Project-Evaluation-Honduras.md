@@ -14,7 +14,7 @@ Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - 'Education, Gender and Youth'
-projects_slug: 'Basic-Education-Project-Evaluation:-Honduras'
+projects_slug: 'Basic-Education-Project-Evaluation-Honduras'
 Contract Value USD: '87846.00'
 ---
 EVALUATED THE DEGREE TO WHICH THE BASIC EDUCATION PROJECT ACTIVITIES ARE CONTRIBUTING TO PRIMARY EDUCATION
