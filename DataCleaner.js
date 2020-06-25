@@ -5,7 +5,7 @@ const yaml = require('js-yaml')
 const slugify = require('slugify')
 
 const homeDir = os.homedir()
-const workbook = ExcelUtil.readFile(`./YourExcelData.xlsm`)
+const workbook = ExcelUtil.readFile(`./TheProjectDatabase_2_UPDATED_Jun2020.xlsm`)
 const sheetNames = workbook.SheetNames
 
 const MAIN_SHEET_NAME = 'MASTER'
@@ -49,7 +49,7 @@ function preparePublicationsJson(cleanProjects) {
         return
       }
       if(link) {
-        // Use link for title if there is no 
+        // Use link for title if there is no
         publication['data_id'] = project['data_id']
         publication['title'] = link
         publication['Document URL'] = link
@@ -88,7 +88,7 @@ function combinePracticeAreaColumns(record) {
     }
   })
   foundPracticeAreas = foundPracticeAreas.join(delimiter)
-  
+
   const recordWithCombinedPA = Object.assign({}, record, { 'Practice Area': foundPracticeAreas})
   return recordWithCombinedPA
 }
