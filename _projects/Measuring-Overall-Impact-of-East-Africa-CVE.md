@@ -23,7 +23,7 @@ Brief Description: >-
   age, gender, annual expenditures, education level, and rural vs. non-rural –
   as well as specific observable regional characteristics including known
   presence of violent extremist organizations and recent attacks.
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - 'Security, Transparency, and Governance'

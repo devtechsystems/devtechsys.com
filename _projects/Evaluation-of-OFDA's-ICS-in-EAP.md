@@ -29,7 +29,7 @@ Brief Description: >-
   will also be better understood if local government agencies develop
   performance management plans to track the program’s effectiveness and
   sustainability.
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - Energy and Environment

@@ -79,7 +79,7 @@ layout: default
 			  </div>
 			  <div class="tabs-panel" id="projects">
 			    <div class="row row--gutters column current-projects-list">
-				    <h3 class="CPL--title">Current Projects</h3>
+				    <h3 class="CPL--title">Current and Recent Projects</h3>
 						<ul class="posts">
 			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] != false" %}
 				    {% for p in linked_current_projects %}

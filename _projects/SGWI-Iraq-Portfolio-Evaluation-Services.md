@@ -25,7 +25,7 @@ Brief Description: >-
   Review and Portfolio Analysis; Results Framework and Performance Metric
   Development; Evaluability Assessment for Field Work and Data Collection
   Candidate Selection; and Good Practices, and Lessons Learned Aggregation.
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - 'Education, Gender and Youth'

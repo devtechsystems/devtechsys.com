@@ -25,7 +25,7 @@ Brief Description: >-
   assistance (TA) efforts designed and implemented by U.S. diplomatic missions
   abroad, to build public and institutional support for strong FT regimes and to
   reinforce United States Government (USG) foreign assistance policy priorities.
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - Public Financial Management and Fiscal Sustainability

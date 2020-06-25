@@ -7,6 +7,7 @@ ISO3 Code:
 Region: Africa
 Country: Nigeria
 Client/ Donor: USAID
+Is Featured: true
 Brief Description: >-
   The activity goal is to transform USAID/Nigeria into a premier practitioner of
   program monitoring and evaluation (M&E) rooted in a learning and adaptive

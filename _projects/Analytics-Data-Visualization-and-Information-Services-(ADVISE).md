@@ -7,6 +7,7 @@ ISO3 Code:
 Region: Global
 Country: Global
 Client/ Donor: USAID
+Is Featured: true
 Brief Description: >-
   USAID Data Services (also known as ADVISE - Analytics, Data, Visualization,
   and Information Services) is the follow-on contract to the Economic Analysis

@@ -23,7 +23,7 @@ Brief Description: >-
   to support USAID staff and Implementing Partners. The related tasks include
   conducting key informant interview, collecting survey data, analyzing
   quantitative and qualitative data, and report writing.
-Is Current Project? (true/false): true
+Is Current Project? (true/false): false
 Practice Area:
   - Monitoring and Evaluation
   - 'Security, Transparency, and Governance'

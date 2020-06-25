@@ -7,6 +7,7 @@ ISO3 Code:
 Region: ''
 Country: Global
 Client/ Donor: USAID
+Is Featured: true
 Brief Description: >-
   DevTech is tasked with supporting rapid, sustainable, and equitable economic
   growth in USAID-assisted countries by enabling USAID to bring a systems
