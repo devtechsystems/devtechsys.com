@@ -1,0 +1,204 @@
+---
+title: DevTech Systems, Inc.
+timezone: UTC
+collections:
+  authors:
+    title: Authors
+    output: false
+  covid-19:
+    title: COVID-19
+    output: true
+  contracting-vehicles:
+    title: Contracting Vehicles
+    output: false
+    permalink: "/:collection/:path/"
+  footer-links:
+    title: Footer Links
+    output: false
+  posts:
+    title: Insights
+    output: true
+  our-team:
+    title: Management Team
+    output: true
+  news:
+    title: News
+    output: true
+  office-locations:
+    title: Office Locations
+    output: false
+  our-practices:
+    title: Practice Areas
+    output: true
+    permalink: "/our-practices/:title"
+    Headline: Headline would go here
+    Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+      urna diam, facilisis eu ante nec, mattis aliquam nulla. Orci varius natoque
+      penatibus et.
+  procurements:
+    title: Procurements
+    output: false
+  projects:
+    title: Projects
+    output: true
+  publications:
+    title: Publications
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    Title: 
+    Highlight: 
+    Banner Image: 
+    SEO Excerpt Overwrite: 
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/insights/:year/:month/:day/:title/"
+    Practice Area:
+    - 
+    Teaser Image: 
+    Banner Image: 
+    Highlight: 
+    SEO Excerpt Overwrite: 
+    Category: 
+    Author: 
+    Is Featured: 
+    layout: post
+- scope:
+    path: ''
+    type: news
+  values:
+    permalink: "/news/:year/:month/:day/:title/"
+    Banner Image: 
+    Highlight: 
+    SEO Excerpt Overwrite: 
+    Category: 
+    layout: news
+- scope:
+    path: ''
+    type: authors
+  values:
+    Author Image: 
+    Author Title: 
+    layout: page
+- scope:
+    path: ''
+    type: contracting-vehicles
+  values:
+    Full Title: 
+    Agency: 
+    Is Prime Contract: 
+    layout: page
+- scope:
+    path: ''
+    type: procurements
+  values:
+    Full Title: 
+    Description: 
+    File URL: 
+    Email Address: 
+    Is Open: 
+    layout: page
+- scope:
+    path: ''
+    type: our-team
+  values:
+    Title: 
+    Highlight: 
+    SEO Excerpt Overwrite: 
+    Headshot Image: 
+    Job Title: 
+    navigation_group: Our Team
+    layout: page
+- scope:
+    path: ''
+    type: practice-areas
+  values:
+    Highlight: 
+    SEO Excerpt Overwrite: 
+    Preview/Teaser Image: 
+    Detail Page Image: 
+    Light Icon Image: 
+    Dark Icon Image: 
+    layout: practice-areas
+- scope:
+    path: ''
+    type: publications
+  values:
+    SEO Excerpt Overwrite: 
+    Document URL: 
+    Practice Area:
+    - 
+    Project:
+    - 
+    layout: page
+- scope:
+    path: ''
+    type: reports-and-publications
+  values:
+    SEO Excerpt Overwrite: 
+    Document Link Title: 
+    Document Region: 
+    Year Published: 
+    Mission Title: 
+    Document URL: 
+    Practice Area:
+    - 
+    layout: page
+- scope:
+    path: ''
+    type: projects
+  values:
+    Highlight: 
+    SEO Excerpt Overwrite: 
+    Project Title: 
+    Start Year: 
+    End Year: 
+    ISO3 Code:
+    - 
+    Region: 
+    Country: 
+    Client/ Donor: 
+    Is Current Project? (true/false): false
+    Practice Area:
+    - 
+    Contract Value USD: 
+    Is Featured: 
+    layout: project
+- scope:
+    path: ''
+    type: office-locations
+  values:
+    Address Text: ''
+    Location Image: 
+    Phone Number: 
+    layout: page
+- scope:
+    path: ''
+    type: footer-links
+  values:
+    Title: 
+    Link Url: 
+    Is Icon Link (true/false): true
+    FontAwesome Class: 
+    FontAwesome Instructions: 'All FontAwesome Class: text should be picked from the
+      list of icons at https://fontawesome.com/v4.7.0/icons/#brand which is used when
+      Is Icon Link is set to true'
+    layout: page
+email: 
+description: 'We are dedicated to data-driven solutions that build capacity,  strengthen
+  partnerships, and address complex policy challenges.
+
+'
+baseurl: 
+url: 
+permalink: pretty
+google_analytics: UA-106154880-1

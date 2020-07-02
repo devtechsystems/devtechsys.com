@@ -1,0 +1,59 @@
+---
+title: Insights and News
+layout: default
+---
+
+{% include header.html subtitle="Insights and News" %}
+<div class="site-content" id="site_content" aria-label="Content">
+	<div class="page">
+
+
+		<div class="dropdown-container show-for-small-only">
+			<div class="row row--gutters column">
+        <button class="button button-dropdown" type="button" data-toggle="insights-dropdown">
+        	<span class="text">News</span>
+        	<span class="fa fa-chevron-down" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown-pane sync-with-tabs" id="insights-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="insights-tabs">
+          <ul>
+          	<li><a href="/insights/">Insights</a></li>
+          	<li><a href="/news/">News</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+		<div class="tabs-container show-for-medium">
+			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="insights-tabs"  data-deep-link="true" data-update-history="true">
+		    <li class="tabs-title">
+		      <a href="/insights/"><span class="tabs-title-text">Insights</span></a>
+		    </li>
+		    <li class="tabs-title is-active">
+		      <a href="/news/" aria-selected="true"><span class="tabs-title-text">News</span></a>
+		    </li>
+			</ul>
+		</div>
+	  <div class="content">
+	  	<div class="tabs-content" data-tabs-content="insights-tabs">
+			  <div class="tabs-panel is-active" id="news">
+			  	<div class="row row--gutters column">
+				  	<ul class="posts">
+					    {%assign sorted = site.news | sort:"date" | reverse   %}
+					    {% for news in sorted %}
+					      <li class="post">
+					    		{% if news['Category'].size > 0 %}
+					    			<div class="post-category">{{ news['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ news.url | relative_url }}" class="post-title">{{ news.title }}</a>
+					    		<div class="post-details">
+					    			<div class="post-detail">{{ news.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+					    {% endfor %}
+				    </ul>
+				  </div>
+			  </div>
+			</div>
+	  </div>
+	</div>
+</div>

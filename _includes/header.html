@@ -1,0 +1,13 @@
+<div class="site-header page" id="site_header" role="banner">
+
+  {% include header_navigation.html %}
+
+  <div class="row column">
+    {% if include.title.size > 0 %}
+    	<h1 class="banner-section-title">{{include.title}}</h1>
+    	<h2 class="banner-page-title">{{include.subtitle}}</h2>
+    {% else %}
+    	<h2 class="banner-page-title no-section-title">{{include.subtitle}}</h2>
+    {% endif %}
+  </div>
+</div>

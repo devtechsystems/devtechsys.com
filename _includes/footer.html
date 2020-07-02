@@ -1,0 +1,17 @@
+<div class="site-footer" id="site_footer">
+  <div class="row">
+    <div class="small-16 column">
+      <ul class="link-list">
+      {% assign footerNav_links = site.footer-links | sort: 'position' %}
+      {% for p in footerNav_links %}
+        {% if p['Is Icon Link (true/false)'] %}
+          <li class="social-media-link"><a href="{{ p['Link Url'] }}" title="{{ p.title }}"><span class="fa {{ p['FontAwesome Class'] }}" aria-hidden="true"></span><span class="sr-only">{{ p.title }}</span></a></li>
+        {% else %}
+          <li><a href="{{ p['Link Url'] }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <p>&#169; {{site.time | date: '%Y' }} {{ site.title | escape }} All Rights Reserved.</p>
+    </div>
+  </div>
+</div>

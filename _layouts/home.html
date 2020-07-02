@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+  {% include header_home.html %}
+
+  <div class="site-content home" id="site_content" aria-label="Content">
+    <div class="row insights">
+      <div class="column small-16">
+        <h2 class="insights--title">{{page['Insights Section']['Title']}}</h2>
+        <ul class="clearfix">
+          {% assign featured_insights = site.posts | limit:3 | where:'Is Featured',true %}
+          {% assign featured_insight_count = featured_insights | size %}
+          {% assign insights_to_show = 3 | minus:featured_insight_count %}
+
+          {% for featured in featured_insights limit:3 %}
+            <li>
+              <span class="post-label">{{ featured['Practice Area'] | first | default: "Corporate Update" }}</span>
+              {% if featured['Teaser Image'].size > 0 %}
+                <img src="{{ featured['Teaser Image'] | relative_url }}" alt="Teaser Image" />
+              {% else %}
+                <span class="post-missing-teaser"></span>
+              {% endif %}
+              <a class="post-link" href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a>
+              <span class="post-meta">{{ featured['Author'] }}</span>
+            </li>
+          {% endfor %}
+
+          {% for post in site.posts limit:insights_to_show %}
+            <li>
+              <span class="post-label">{{ post['Practice Area'] | first }}</span>
+              {% if post['Teaser Image'].size > 0 %}
+                <img src="{{ post['Teaser Image'] | relative_url }}" alt="Teaser Image" />
+              {% else %}
+                <span class="post-missing-teaser"></span>
+              {% endif %}
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <span class="post-meta">{{ post['Author'] }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="/insights/" class="button">{{page['Insights Section']['Button Label']}}</a>
+      </div>
+      <div class="column small-16 news--container">
+        <h2 class="news--title">{{page['News Section']['Title']}}</h2>
+        <ul class="news--list clearfix">
+          {% assign sorted_news = site.news | sort:"date" | reverse %}
+
+          {% for news in sorted_news limit:3 %}
+            <li>
+              {% if news['Category'].size > 0 %}
+                <div class="post-category">{{ news['Category'] }}</div>
+              {% endif %}
+              <a class="post-link" href="{{ news.url | relative_url }}">{{ news.title | escape }}</a>
+              <span class="post-meta">{{ news.date | date: "%B %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+
+        </ul>
+        <a href="/news/" class="button">{{page['News Section']['Button Label']}}</a>
+      </div>
+    </div>
+    <div class="row promotional">
+        <div class="column small-16 large-expand anniversary-container">
+          <video controls muted poster="/assets/images/transparent.png">
+            <source src="/assets/videos/35anniversary.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column small-16 shrink twitter-container">
+          <a class="twitter-timeline" data-height="450" data-theme="light" data-link-color="#007cb7" href="https://twitter.com/DevTechSys?ref_src=twsrc%5Etfw">Tweets by DevTechSys</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    <div class="practice-areas">
+      <div class="row">
+        <div class="column small-16 medium-6 large-4 PA--content">
+          <h2 class="PA--title">{{page['Practice Areas Section']['Title']}}</h2>
+          <h3 class="PA--subtitle">{{page['Practice Areas Section']['Subtitle']}}</h3>
+          <p>{{page['Practice Areas Section']['Brief Description']}}</p>
+          <a href="/our-practices/" class="button button-inverse">{{page['Practice Areas Section']['Button Label']}}</a>
+        </div>
+        <div class="column small-16 medium-10 large-12">
+          <ul class="row small-up-2 large-up-3 PA--icon-list">
+            {% assign sorted_practices = site.our-practices | sort: 'position'  %}
+            {% for practices in sorted_practices %}
+              <li class="column">
+                <a href="{{ practices.url | relative_url }}"><img src="{{ practices['Dark Icon Image'] | relative_url }}"/><span class="PA--icon-title">{{ practices.title | escape }}</span></a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row projects">
+      <div class="column small-16 medium-10 large-8">
+        <h2 class="projects--title">{{page['Projects Section']['Title']}}</h2>
+        <h3 class="projects--title-allcaps">{{page['Projects Section']['Subtitle']}}</h3>
+        <p>{{page['Projects Section']['Brief Description']}}</p>
+        <a href="/projects/" class="button">{{page['Projects Section']['Button Label']}}</a>
+      </div>
+    </div>
+  </div>

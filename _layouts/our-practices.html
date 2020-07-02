@@ -1,0 +1,294 @@
+---
+layout: default
+---
+
+{% if page['Title'] %}
+	{% assign header_title = page['Title'] %}
+{% else %}
+	{% assign header_title = page.title %}
+{% endif %}
+{% include header.html title="Our Practices" subtitle=header_title %}
+
+<div class="site-content" id="site_content" aria-label="Content">
+	<div class="page">
+
+		<div class="dropdown-container show-for-small-only">
+			<div class="row row--gutters column">
+        <button class="button button-dropdown" type="button" data-toggle="practices-dropdown">
+        	<span class="text">Overview</span>
+        	<span class="fa fa-chevron-down" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown-pane sync-with-tabs" id="practices-dropdown" data-position="bottom" data-alignment="left" data-dropdown data-close-on-click="true" data-sync-target="practices-tabs">
+          <ul>
+          	<li><a href="#overview">Overview</a></li>
+          	<li><a href="#projects">Projects</a></li>
+          	<li><a href="#publications">Publications</a></li>
+          	<li><a href="#insights">Insights</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+		<div class="tabs-container show-for-medium">
+			<ul class="tabs tabs-gutter tabs-4-up" data-tabs id="practices-tabs"  data-deep-link="true" data-update-history="true">
+		    <li class="tabs-title is-active">
+		      <a href="#overview" aria-selected="true"><span class="tabs-title-text">Overview</span></a>
+		    </li>
+		    <li class="tabs-title">
+		      <a href="#projects"><span class="tabs-title-text">Projects</span></a>
+		    </li>
+		    <li class="tabs-title">
+		      <a href="#publications"><span class="tabs-title-text">Publications</span></a>
+		    </li>
+		    <li class="tabs-title">
+		      <a href="#insights"><span class="tabs-title-text">Insights</span></a>
+		    </li>
+			</ul>
+		</div>
+	  <div class="content content-noBottomPadding">
+	  	{% assign current_practice_area = page.title %}
+	  	{% assign linked_projects = site.projects | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+	  	<div class="tabs-content" data-tabs-content="practices-tabs">
+			  <div class="tabs-panel content-bottomPadding is-active" id="overview">
+			    <div class="row row--gutters column">
+
+				    {% if page['Title'] %}
+							<h1 class="page-title">{{ page['Title']}}</h1>
+						{% else %}
+							<h1 class="page-title">{{ page.title }}</h1>
+						{% endif %}
+
+						{% if page['Highlight'].size > 0 %}
+							<h2  class="page-highlight">{{ page['Highlight'] }}</h2>
+						{% endif %}
+
+						{% if page['Detail Page Image'].size > 0 %}
+							<div class="page-banner practice-area">
+								<div class="icon-wDarkEllipse">
+									<img class="icon" src="{{ page['Light Icon Image'] }}"/>
+								</div>
+								<img src="{{ page['Detail Page Image'] }}"/>
+							</div>
+						{% endif %}
+
+						{{ content }}
+
+						<a href="/our-practices/" class="back-link"><span class="fa fa-long-arrow-left" aria-hidden="true"></span>See all of Our Practices</a>
+					</div>
+			  </div>
+			  <div class="tabs-panel" id="projects">
+			    <div class="row row--gutters column current-projects-list">
+				    <h3 class="CPL--title">Current and Recent Projects</h3>
+						<ul class="posts">
+			    	{% assign linked_current_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] != false" %}
+				    {% for p in linked_current_projects %}
+				      <li class="post">
+				    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p['Project Title'] }}</a>
+				    		<div class="post-details">
+				    			{% if p['Region'].size > 0 %}
+				    				<span class="post-detail">{{ p['Region'] }}</span>
+				    			{% endif %}
+				    			{% if p['Client/ Donor'].size > 0 %}
+				    				<span class="post-detail">{{ p['Client/ Donor'] }}</span>
+				    			{% endif %}
+				    			{% if p['Start Year'].size > 0 %}
+				  					<span class="post-detail">{{ p['Start Year'] }}</span>
+				  				{% endif %}
+				  				{% if p['End Year'].size > 0 %}
+				  					<span class="post-detail post-detail-dashed">{{ p['End Year'] }}</span>
+				  				{% endif %}
+				    		</div>
+				    	</li>
+				    {% endfor %}
+				    {% if linked_current_projects.size == 0 %}
+			    		<li>No current projects found.</li>
+			    	{% endif %}
+				  	</ul>
+				  </div>
+
+			  	<div class="background-lightBlue content-bottomPadding">
+						<div class="row row--gutters column past-projects-list clearfix">
+							<h3 class="BLB--title">Past Projects</h3>
+					    {% assign linked_past_projects = linked_projects | where_exp: "item", "item['Is Current Project? (true/false)'] == false" | sort %}
+
+
+					    {% assign africa_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Africa'" %}
+					    {% if africa_past_projects.size > 0 %}
+					    	<h3>Africa</h3>
+					    	<ul>
+						    {% for p in africa_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign asia_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Asia'" %}
+					    {% if asia_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Asia</h3>
+					    	<ul>
+						    {% for p in asia_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign ee_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Europe and Eurasia'" %}
+					    {% if ee_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Europe and Eurasia</h3>
+					    	<ul>
+						    {% for p in ee_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign global_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Global'" %}
+					    {% if global_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Global</h3>
+					    	<ul>
+						    {% for p in global_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign laatc_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Latin America and the Caribbean'" %}
+					    {% if laatc_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Latin America and the Caribbean</h3>
+					    	<ul>
+						    {% for p in laatc_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign middle_east_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'Middle East'" %}
+					    {% if middle_east_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">Middle East</h3>
+					    	<ul>
+						    {% for p in middle_east_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+
+					    {% assign north_america_past_projects = linked_past_projects | where_exp: "item", "item['Region'] == 'North America'" %}
+					    {% if north_america_past_projects.size > 0 %}
+					    	<h3 class="marginT-medium">North America</h3>
+					    	<ul>
+						    {% for p in north_america_past_projects %}
+						    	<li>
+						    		<a href="{{ p.url | relative_url }}" class="PPL--project">{{ p['Project Title'] }}</a>
+						    	</li>
+						    {% endfor %}
+						   	</ul>
+					    {% endif %}
+					  </div>
+				  </div>
+			  </div>
+			  <div class="tabs-panel content-bottomPadding" id="publications">
+			  	<div class="row row--gutters column">
+				    <ul class="posts">
+				    	{% assign linked_reports = site.publications | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+					    {% for p in linked_reports %}
+					      <li class="post">
+					      	{% if p['Region'].size > 0 %}
+					      		<div class="post-category">{{ p['Region'] }}</div>
+					      	{% endif %}
+					    		<a href="{{ p['Document URL'] | escape }}" class="post-title">{{ p.title }}</a>
+				    			{% if p['Year Published'].size > 0 %}
+				    			<div class="post-details">
+					      		<span class="post-detail">{{ p['Year Published'] }}</span>
+					      	</div>
+					      	{% endif %}
+					    		{% if p.content.size > 0 %}
+					      		<div class="post-description">{{ p.content }}</div>
+					      	{% endif %}
+
+					      	{% assign this_pubs_projects = p['Project'] %}
+					      	{% if this_pubs_projects.size > 0 %}
+						      	<div class="post-details linked-projects">
+							      	<p>This publication was linked from the following projects;</p>
+							      	<ul>
+							      	{% for item in this_pubs_projects %}
+							      		{% assign selected_item = item %}
+							      		{% assign selected_project = site.projects | where_exp: "item", "item['Project Title'] == selected_item" %}
+							      		{% for item in selected_project %}
+							      			<li>
+							      				<a class="post-detail" href="{{item.url | relative }}">{{ item.title }}</a>
+							      				<span class="nowrap">
+							      				{% if item['Start Year'].size > 0 %}
+									  					<span> {{ item['Start Year'] }}</span>
+									  				{% endif %}
+							      				{% if item['End Year'].size > 0 %}
+									  					<span>- {{ item['End Year'] }}</span>
+									  				{% endif %}
+									  				</span>
+							      			</li>
+							      		{% endfor %}
+							      	{% endfor %}
+							      	</ul>
+							      </div>
+						      {% endif %}
+
+					    	</li>
+					    {% endfor %}
+				    </ul>
+				  </div>
+			  </div>
+			  <div class="tabs-panel content-bottomPadding" id="insights">
+			  	<div class="row row--gutters column">
+				    {% assign linked_insights = site.posts | where_exp: "item", "item['Practice Area'] contains current_practice_area" %}
+				    {% if linked_insights.size > 0 %}
+				    <ul class="posts">
+					    {% for p in linked_insights %}
+					      <li class="post">
+					      	{% if p['Category'].size > 0 %}
+					    			<div class="post-category">{{ p['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					    		<div class="post-details">
+					    			{% if p['Author'].size > 0 %}<div class="post-detail">By {{ p['Author'] }}</div>{% endif %}
+					    			<div class="post-detail">{{ p.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+					    {% endfor %}
+				    </ul>
+				    {% else %}
+				    	<p class="marginB-medium">No insight posts have been tagged with {{ current_practice_area }}, below are the most recent insight posts.</p>
+				    	<ul class="posts">
+				    	{% assign recent_insights = site.posts %}
+					    {% for p in recent_insights limit: 3 %}
+					      <li class="post">
+					      	{% if p['Category'].size > 0 %}
+					    			<div class="post-category">{{ p['Category'] }}</div>
+					    		{% endif %}
+					    		<a href="{{ p.url | relative_url }}" class="post-title">{{ p.title }}</a>
+					    		<div class="post-details">
+					    			{% if p['Author'].size > 0 %}<div class="post-detail">By {{ p['Author'] }}</div>{% endif %}
+					    			<div class="post-detail">{{ p.date | date: "%B %d, %Y" }}</div>
+					    		</div>
+					    	</li>
+						  {% endfor %}
+					    </ul>
+				    {% endif %}
+				  </div>
+			  </div>
+			</div>
+	  </div>
+	</div>
+</div>
+

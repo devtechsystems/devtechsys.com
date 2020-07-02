@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <div class="site">
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    
+    <script src="{{ "/assets/js/vendor/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/vendor/what-input.js" | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js" integrity="sha256-ssuvZ7clQBE8C6fdKygrQfRqIx5bFb/F/Abeqq1dr/w=" crossorigin="anonymous"></script>
+    <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
+  </body>
+
+</html>
