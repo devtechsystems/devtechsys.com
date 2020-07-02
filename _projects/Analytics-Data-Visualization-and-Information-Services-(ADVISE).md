@@ -20,4 +20,3 @@ projects_slug: Analytics-Data-Visualization-and-Information-Services-(ADVISE)
 ---
 
 USAID Data Services (also known as ADVISE - Analytics, Data, Visualization, and Information Services) is the follow-on contract to the Economic Analysis and Data Services (EADS) project, which DevTech has managed for over 20 years. DevTech is tasked with integrating all of USAID’s data products and services working directly for and with USAID’s Bureau for Management and the Chief Information Officer (M/CIO).
-
