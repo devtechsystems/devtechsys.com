@@ -22,8 +22,8 @@ For the month of April 1810, before the disappearance of the Governing Board of 
 
 From the hand of Juan Germán Roscio and Francisco Inardi, the Venezuelan Act of Independence was drafted, being signed on July 5, 1811, and approved by the elected deputies of the seven provinces of Venezuela. However, this milestone would not be well seen by some sectors of the population that still supported the Spanish Crown, generating a series of internal uprisings, as well as resistance from the Spanish Regency Council(7). In June 1821, in the town of Carabobo (currently one of the 24 states of Venezuela, located in the central-western region) a battle was carried out in which the patriot side defeated the Spanish side(8). Although this was not the last battle for the full independence of Venezuela, its weight was fundamental to bend the efforts of the Spanish cause, as well as that it was the last battle in which the Venezuelan patriot leader Simón Bolívar was present(9). By the end of 1823, the Spanish capitulation finally took place after the capture of Puerto Cabello (located in the current Carabobo state) by the patriot general, José Antonio Páez. Finally, the Republic of Venezuela would not exist as such until January 1830, after its separation from Greater Colombia, to which it had been a part since 1825, was consummated.
 
-**Current panorama: between optimism and despair
-**
+**Current panorama: between optimism and despair**
+
 Today, many Venezuelans have very little to celebrate. On the one hand, the country is currently in the phase of exponential growth of the curve of infections by the COVID-19 virus, where 6,062 cases have been officially reported, with a balance of 54 deaths and 1,649 recovered(10). On the other hand, Venezuela has already accumulated six consecutive years of economic depression, experiencing a decrease of 67.1% of its GDP since 2014(11); and cumulative inflation as of May 2020 of 3,674.9%(12), still maintaining the hyperinflationary spiral that began in November 2017. On the political side, the outlook for the Nicolás Maduro regime appears ambiguous. While internally the socialist leader remains in power and has recently ordered the legislative elections to be held on December 6 under an electoral body under his control, the situation has been more hectic abroad, further increasing the regime’s isolation. At the end of last June, the European Union sanctioned 13 officials related to the Maduro regime (of which 10 work directly with the regime, while the remaining three belong to the questioned board of directors of the National Assembly, irregularly elected in January 2020), thus generating more pressure to force democratic change in Venezuela(13). 
 
 Despite this scenario, experts assure that it is unlikely that a change in the political status quo will be generated in the short term, because the Maduro regime has given up Venezuelan sovereignty to remain in power by the external support from Russia (military services), Cuba (intelligence services), and continued but limited trade with China and Iran, allowing it to continue to keep afloat its bureaucratic, oppressive and propaganda apparatus(14). 
@@ -32,7 +32,7 @@ Learning from history would be key to achieving Venezuela’s emancipation in th
 
 Sources:
 1. Leal, C. (ND). “La primera revolución de Caracas, 1808-1812: Juntismo, elecciones e independencia absoluta”. Instituto de Investigaciones Históricas-Bolivarium. Universidad Simón Bolivar. Caracas, Venezuela.
-2.Idem.
+2. Idem.
 3. Arráiz Lucca, R. (2015). “Venezuela: 1728-1830. Guipuzcoana e Independencia”. Editorial Alfa. Caracas, Venezuela.
 4. Idem.
 5. Leal, C. (ND). “La primera revolución de Caracas, 1808-1812: Juntismo, elecciones e independencia absoluta”. Instituto de Investigaciones Históricas-Bolivarium. Universidad Simón Bolivar. Caracas, Venezuela.
