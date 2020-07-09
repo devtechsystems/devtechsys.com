@@ -1,5 +1,5 @@
 ---
-title: 'Going Remote: Adapting the Rapid Education and Risk Analysis in Columbia'
+title: 'Going Remote: Adapting the Rapid Education and Risk Analysis in Colombia'
 date: 2020-07-09 18:46:00 Z
 Practice Area:
 - Education, Gender and Youth
