@@ -9,8 +9,8 @@ Hero Section:
   Button Label: What Makes Us Different
   Button Link: "/about/history/"
 Announcements Section:
-  Intro Text:
-  Intro Link Text:
+  Intro Text: 
+  Intro Link Text: 
 Insights Section:
   Title: Our Latest Insights
   Button Label: Read More
