@@ -5,11 +5,11 @@ layout: default
   {% include header_home.html %}
 
   <div class="site-content home" id="site_content" aria-label="Content">
-    {% if page['Announcements Section']['Intro Text'].size > 0 %}
+    {% if page['Announcements Section']['Intro Content'].size > 0 %}
     <div class="row announcements">
       <div class="column small-16">
-        {{page['Announcements Section']['Intro Text']}}
-        <a class="announcements__link" href="/announcements/">{{ page['Announcements Section']['Intro Link Text'] | escape | default: "Learn More" }}</a>
+        {{page['Announcements Section']['Intro Content']}}
+        <a class="announcements__link" href="/announcements/">{{ page['Announcements Section']['Intro Content Link'] | escape | default: "Learn More" }}</a>
       </div>
     </div>
     {% endif %}
