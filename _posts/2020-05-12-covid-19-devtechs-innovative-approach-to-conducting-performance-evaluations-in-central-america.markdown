@@ -2,6 +2,8 @@
 title: 'COVID-19: DevTech''s innovative approach to conducting performance evaluations
   in Central America'
 date: 2020-05-12 15:06:00 Z
+tags:
+- COVID-19
 Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/YCPA%20Teaser.png"
