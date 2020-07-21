@@ -1,6 +1,8 @@
 ---
 title: 'Looking Back, Looking Ahead: An Update on DevTech''s 3 IMF Evaluations'
 date: 2020-06-15 17:38:00 Z
+tags:
+- COVID-19
 Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/IMF%20Teaser-bde9b6.png"

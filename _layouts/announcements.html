@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+{% include header.html subtitle="Announcements" %}
+
+<div class="site-content announcements" id="site_content" aria-label="Content">
+  <div class="page">
+    <div class="content">
+      <div class="row row--gutters announcements-page">
+        <div class="column small-16 marginT-large">
+          {% if page['Title'] %}
+          <div class="post-header no-margin-top">
+            <h1 class="post-title page-title">{{page["Title"]}}</h1>
+            {% if page['Announcement Date'] %}
+            <div class="post-details">
+              <span class="post-detail"><time datetime="{{ page['Announcement Date'] | date_to_xmlschema }}" itemprop="datePublished">
+                  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                  {{ page['Announcement Date'] | date: date_format }}
+                </time></span>
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+          {{content}}
+        </div>
+      </div>
+      <div class="row row--gutters insights marginT-small">
+        <div class="column small-16">
+            {% assign featured_insights = site.posts | where_exp: "post", "post.tags contains page['Linked Insight Tag']"%}
+
+            <ul class="featured-insights clearfix">
+              {% for featured in featured_insights limit:2 %}
+              <li>
+                <span class="post-label">{{ featured['Practice Area'] | first | default: "Corporate Update" }}</span>
+                {% if featured['Teaser Image'].size > 0 %}
+                <img src="{{ featured['Teaser Image'] | relative_url }}" alt="" />
+                {% else %}
+                <span class="post-missing-teaser"></span>
+                {% endif %}
+                <a class="post-link" href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a>
+                <span class="post-meta">{{ featured['Author'] }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+
+
+            <ul class="posts posts-border-top">
+              {% for featured in featured_insights offset:2 %}
+              <li class="post">
+                {% if featured['Category'].size > 0 %}
+                <div class="post-category">{{ featured['Category'] }}</div>
+                {% endif %}
+                <a href="{{ featured.url | relative_url }}" class="post-title">{{ featured.title }}</a>
+                <div class="post-details">
+                  {% if featured['Author'].size > 0 %}
+                  <div class="post-detail">By {{ featured['Author'] }}</div>
+                  {% endif %}
+                  <div class="post-detail">{{ featured.date | date: "%B %d, %Y" }}</div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+
+          </ul>
+          <a href="/insights/" class="button">See All Posts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
