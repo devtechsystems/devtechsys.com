@@ -1,6 +1,11 @@
 ---
 title: Approaching Security Cooperation through a Monitoring and Evaluation Lens
 date: 2020-07-21 18:11:00 Z
+Practice Area:
+- Monitoring and Evaluation
+Teaser Image: "/uploads/DCSA%20Teaser.png"
+Author: Rebecca Zimmerman, Senior Evaluator
+Is Featured: true
 ---
 
 When most Americans picture a U.S. service member abroad, they very likely imagine a soldier fighting in Afghanistan, Iraq, or Syria. But while combat operations are the most visible sign of military presence, the U.S. military also carries out security cooperation programs nearly all over the globe. Security cooperation activities [are defined as efforts,](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp3_20_20172305.pdf) “to build relationships that help promote US interests; enable partner nations (PNs) to provide the US access to territory, infrastructure, information, and resources; and/or to build and apply their capacity and capabilities consistent with US defense objectives.” 
@@ -20,6 +25,8 @@ To link objective setting to program design, the development world utilizes the 
 Each piece of the program cycle is understood by DOD, and to some degree has been tried already. But the Department has struggled to reach full implementation. The difficulty in translating lessons from the program cycle to defense security cooperation is at root a cultural one of this concept. Where USAID comfortably sees itself as managing programs and initiatives, military forces are more apt to view their work as conducting operations — the former are continuous but the latter are finite missions. So where USAID thinks in terms of a program cycle, the Army, for example, uses the linear [military decision-making process (MDMP)](https://usacac.army.mil/sites/default/files/publications/15-06_0.pdf), in which the final step is to give the order to execute and move on(2). 
 
 This isn’t an indictment of the military’s leadership style.  That style is purpose-built to make the best decisions in an environment of chaos and limited information, and while security cooperation may be the military’s ubiquitous mission, combat is its existential one. But as it does in so many other ways, the security cooperation enterprise must learn to adapt and overcome, to build a mindset of continuity and a programmatic approach to this global mission. 
+
+![DSCA Image.png](/uploads/DSCA%20Image.png)
 
 Notes
 1. The total figure for security cooperation is actually $3.4b, including base and overseas contingency operations (OCO) funding, but the $1.2b figure excludes OCO because it is already counted in the larger pool of OCO and emergency funds. 
