@@ -1,6 +1,8 @@
 ---
 title: 'COVID-19: Budgeting for Gender Needs'
 date: 2020-04-22 15:12:00 Z
+tags:
+- COVID-19
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/COVID%20Gender%20Teaser.png"
