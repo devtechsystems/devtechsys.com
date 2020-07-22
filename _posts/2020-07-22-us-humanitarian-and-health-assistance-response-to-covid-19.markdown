@@ -5,6 +5,7 @@ tags:
 - COVID-19
 Practice Area:
 - Knowledge Management and Data Analytics
+Is Featured: true
 ---
 
 Check out the our Tableau Dashboard [here](https://public.tableau.com/profile/devtech.systems#!/vizhome/COVIDmap/Dashboard1?publish=yes).
