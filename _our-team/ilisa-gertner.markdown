@@ -1,7 +1,7 @@
 ---
 title: Ilisa Gertner
 date: 2019-12-19 16:09:00 Z
-position: 8
+position: 7
 Title: Ilisa Gertner
 Headshot Image: "/uploads/IGertner-circle.png"
 Job Title: Director of Monitoring and Evaluation

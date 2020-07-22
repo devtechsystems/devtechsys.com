@@ -1,6 +1,7 @@
 ---
 title: Jordan Raupp
 date: 2020-07-22 14:50:00 Z
+position: 10
 Title: Jordan Raupp
 Headshot Image: "/uploads/JRaupp%20Head%20shot.png"
 Job Title: Associate Director of Business Development
