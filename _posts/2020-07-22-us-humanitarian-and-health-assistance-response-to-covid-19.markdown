@@ -5,6 +5,7 @@ tags:
 - COVID-19
 Practice Area:
 - Knowledge Management and Data Analytics
+Teaser Image: "/uploads/Tableau%20teaser.png"
 Is Featured: true
 ---
 
