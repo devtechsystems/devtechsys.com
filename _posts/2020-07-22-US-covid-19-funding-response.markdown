@@ -9,4 +9,4 @@ Teaser Image: "/uploads/Tableau%20teaser.png"
 Is Featured: true
 ---
 
-Check out the our Tableau Dashboard [here.](https://public.tableau.com/profile/devtech.systems#!/vizhome/COVIDmapupdateJuly2020/Dashboard1)
+Check out the our Tableau Dashboard [here](https://public.tableau.com/profile/devtech.systems#!/vizhome/Covidmapupdate_7_24_2020/USGlobalCovid-19Funding).
