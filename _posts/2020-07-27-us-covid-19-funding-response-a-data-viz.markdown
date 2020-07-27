@@ -6,6 +6,7 @@ tags:
 Practice Area:
 - Knowledge Management and Data Analytics
 Teaser Image: "/uploads/Tableau%20teaser.png"
+Is Featured: true
 ---
 
 Check out the Tableau Dashboard [here](https://public.tableau.com/profile/devtech.systems#!/vizhome/Covidmapupdate_7_24_2020/USGlobalCovid-19Funding)
