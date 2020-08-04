@@ -3,6 +3,9 @@ title: SIMS Assessments in the time of COVID-19
 date: 2020-08-04 19:36:00 Z
 tags:
 - COVID-19
+Practice Area:
+- Monitoring and Evaluation
+Author: Oludare Onimode, Chief of Party, Nigeria S4SIPMS
 ---
 
 Following the announcement from the Government of Nigeria that the country would enter into Phase II of reopening, the S4SIPMS project Nigeria management team contacted all USAID HIV/TB implementing partners on the possibility of conducting in person SIMS assessments in the fourth quarter of FY 20. All partners agreed to this proposal. Although the country moved forward with its gradual reopening, the priority for DevTech has always been to ensure the safety of all project technical staff.  The following measures have been put into place and are observed by all S4SIPMS technical staff during SIMS assessment visits: 
