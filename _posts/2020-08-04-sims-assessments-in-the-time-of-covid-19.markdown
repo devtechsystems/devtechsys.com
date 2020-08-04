@@ -5,6 +5,7 @@ tags:
 - COVID-19
 Practice Area:
 - Monitoring and Evaluation
+Teaser Image: "/uploads/SIMS%20Teaser.png"
 Author: Oludare Onimode, Chief of Party, Nigeria S4SIPMS
 ---
 
