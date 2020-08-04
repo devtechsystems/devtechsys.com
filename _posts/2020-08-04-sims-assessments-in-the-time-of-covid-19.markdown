@@ -28,4 +28,4 @@ The Implementing Partners also adopted precautionary measures for their staff an
 
 S4SIPMS will continue to collaborate with the implementing partners and facility staff as this remains the bedrock of our success. The S4SIMPS project has also been very careful when selecting sites to assess, paying close attention to the epidemiological evidence to determine whether a state or region is recording a high number of cases. We are doing our best to mitigate all the risks associated with the virus and to keep our staff safe. Based on the existing data, DevTech is continuing to keep assessments in Lagos State on hold until the first quarter of 2021, as Lagos is currently the epicenter of the pandemic in Nigeria. The S4SIPMS staff will continue be vigilant and pay close attention to the health data in order to make safe and informed decision.
 
-To read more about the Nigeria S4SIPMS Project and SIMS Assessments please visit the project page: 
+To read more about the Nigeria S4SIPMS Project and SIMS Assessments please visit the project page [here](https://devtechsys.com/projects/Nigeria-Support-for-Strategic-Information-and-Project-Management-Services-(S4SIPMS)/).
