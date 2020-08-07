@@ -1,6 +1,13 @@
 ---
 title: Visualizing the Economic Implications of COVID-19
 date: 2020-08-07 19:06:00 Z
+tags:
+- COVID-19
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/FAST%20Teaser.png"
+Author: Welmar Rosado, PhD, FAST Deputy Chief of Party
+Is Featured: true
 ---
 
 Most governments around the world agree that the best way to mitigate the crisis is to stop the disease in its tracks, and this implies implementing lockdowns and social distancing measures. Although it is premature to understand the long-term implications of the crisis, there is a sizable amount of information that allows us to understand the immediate impact of the disease in the economy, the government responses, and the vulnerability of the economy to macroeconomic shocks and the measures taken to stop the disease. Nearly as important as generating the information itself, is the ability to transmit it to inform the development of policies, from governmental to businesses and educational institutions, to the behavior of the people whether and how to return to their daily life.
