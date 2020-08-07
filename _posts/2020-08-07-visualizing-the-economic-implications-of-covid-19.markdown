@@ -5,7 +5,7 @@ tags:
 - COVID-19
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
-Teaser Image: "/uploads/FAST%20Teaser.png"
+Teaser Image: "/uploads/FAST%20Teaser-2a231e.png"
 Author: Welmar Rosado, PhD, FAST Deputy Chief of Party
 Is Featured: true
 ---
