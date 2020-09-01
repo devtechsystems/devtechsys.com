@@ -57,7 +57,7 @@ These typologies impact so much of how we unknowingly communicate in a conversat
 
 While there is still plenty to be understood about cross-cultural communication, these typologies serve as a good starting point and an opportunity to reflect on what subconscious assumptions we bring to a conversation. In order to better understand these typologies, check out this [tableau dashboard](https://public.tableau.com/profile/glorianna.flanagan#!/vizhome/TypologyMapsFinal/CCCTypologies). It not only breaks down what countries fall into each typology, but also maps out the rankings that individual countries fall into along each typology dichotomy. It is important to keep in mind that this is not an exact science, nor is it binary, like most things in cross-cultural understanding, this is only a starting point.  
 
-**Sources: **
+**Sources:**
 1. E. Hall, Beyond Culture, Garden City, NY: Doubleday, 1976. 
 2. G. Hofstede, Culture's Consequences: Comparing Values, Behaviors, Institutions, and Organizations Across Nations, Thousand Oaks, CA: Sage Publications, 2001. 
 3. M. Minkov, Cultural Differences in a Globalized World, United Kingdom: Emerald, 2011.
