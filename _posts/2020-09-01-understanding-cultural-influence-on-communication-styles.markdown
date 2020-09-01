@@ -1,6 +1,8 @@
 ---
 title: Understanding Cultural Influence on Communication Styles
 date: 2020-09-01 17:37:00 Z
+Practice Area:
+- Monitoring and Evaluation
 Teaser Image: "/uploads/Cultural%20communication%20style%20teaser.png"
 Author: Glorianna Flanagan, Research Fellow
 Is Featured: true
