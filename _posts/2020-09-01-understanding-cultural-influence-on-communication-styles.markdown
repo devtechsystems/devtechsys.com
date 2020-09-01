@@ -13,27 +13,27 @@ COVID-19 has forced the international development world to quickly re-evaluate h
 What are cross cultural communication typologies? They are the underlying cultural values and assumptions that show up in how we communicate with others. These values are so deeply engrained in us that we are often unaware of them, and this can lead to dangerous assumptions that whomever we are communicating with shares the same underlying values that I do. Below is a breakdown of eight communication typologies that are important to understand when engaging in cross-cultural communication: 
 
 1. **Individualism vs Collectivism** 
-*Individualism: *In an individualistic culture, the individual is the most important unit in society and a person’s right to privacy prevails over group consideration. 
+*Individualism:* In an individualistic culture, the individual is the most important unit in society and a person’s right to privacy prevails over group consideration. 
 *Collectivism:* In a collective culture, the group interest takes precedence over the individual, and people rely on their groups (family/work/religious, etc.) for all matter of support.  
-**2. Exclusionism vs Universalism **
+2. **Exclusionism vs Universalism**
 *Exclusionism:* In an exclusionism culture, relationships are based on group membership, which means that agreements (both professional & personal) are often flexible. 
 *Universalism:* In a universalism culture, there is a common belief that everyone should be treated equally, meaning that agreements are normally adhered too. 
-**3. High vs Low Context **
+3. **High vs Low Context**
 *High Context:* In a high context culture, the majority of communication is non-verbal and there are well-defined social protocols. 
-*Low Context: *In a low context culture, the verbal messaging contains most of the information. There is an admiration for people that can speak up and express themselves. 
-**4. High vs Low Power Distant **	
+*Low Context:* In a low context culture, the verbal messaging contains most of the information. There is an admiration for people that can speak up and express themselves. 
+4. **High vs Low Power Distant**	
 *High Power Distant:* A high power distant culture, accepts power as a part of society, so much so, that superiors consider their subordinated to be different from themselves and vice versa.  
 *Low Power Distant:* A low power distant culture, believes that inequality in society should be minimized and there are numerous laws and regulations that tend to minimize power differentials. 
-**5. High vs Low Uncertainty Avoidance **
+5. **High vs Low Uncertainty Avoidance**
 *High Uncertainty Avoidance:* High uncertainty avoidance cultures, reduce unpredictability and ambiguity through intolerance of deviant ideas and behavior- the culture emphasizes consensus. 
 *Low Uncertainty Avoidance:* Low uncertainty avoidance cultures, accept the uncertainty inherent in life, tolerate the unusual, and are not threatened by different ideas. 
-**6. Industry vs Indulgence **
-*Industry: *In an industry culture, hard work is valued over leisure, and unhappiness and dissatisfaction are an accepted part of life. 
-*Indulgence: *In an indulgence culture, leisure is valued over hard work, and happiness and satisfaction with life is an underlying expectation. 
-**7. Masculinity vs Femininity ** 
+6. **Industry vs Indulgence**
+*Industry:* In an industry culture, hard work is valued over leisure, and unhappiness and dissatisfaction are an accepted part of life. 
+*Indulgence:* In an indulgence culture, leisure is valued over hard work, and happiness and satisfaction with life is an underlying expectation. 
+7. **Masculinity vs Femininity** 
 *Masculinity:* In a masculine culture, dominant values in society are male oriented, and emotional and gender rules are clearly defined. 
-*Femininity: *In a feminine culture, emotional gender roles overlap, and both men and women are meant to be modest, tender, and concerned with quality of life. 
-**8. Polychronic vs Monochronic **
+*Femininity:* In a feminine culture, emotional gender roles overlap, and both men and women are meant to be modest, tender, and concerned with quality of life. 
+8. **Polychronic vs Monochronic**
 *Polychronic:* In a polychronic culture, time is flexible, and it is appropriate to focus on multiple tasks at one time.
 *Monochronic:* In a monochronic culture, time is linear, segmented and the culture tend to be single task oriented. 
 
