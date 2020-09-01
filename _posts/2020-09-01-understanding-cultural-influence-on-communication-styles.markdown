@@ -40,6 +40,7 @@ What are cross cultural communication typologies? They are the underlying cultur
 6. **Industry vs Indulgence**
 
 *Industry:* In an industry culture, hard work is valued over leisure, and unhappiness and dissatisfaction are an accepted part of life. 
+
 *Indulgence:* In an indulgence culture, leisure is valued over hard work, and happiness and satisfaction with life is an underlying expectation. 
 7. **Masculinity vs Femininity** 
 
