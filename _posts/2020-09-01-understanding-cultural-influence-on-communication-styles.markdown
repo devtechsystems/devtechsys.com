@@ -16,8 +16,7 @@ What are cross cultural communication typologies? They are the underlying cultur
 
 *Individualism:* In an individualistic culture, the individual is the most important unit in society and a person’s right to privacy prevails over group consideration. 
 
-*Collectivism:* In a collective culture, the group interest takes precedence over the individual, and people rely on their groups (family/work/religious, etc.) for all matter of support.  
-2. **Exclusionism vs Universalism**
+*Collectivism:* In a collective culture, the group interest takes precedence over the individual, and people rely on their groups (family/work/religious, etc.) for all matter of support.  2. **Exclusionism vs Universalism**
 
 *Exclusionism:* In an exclusionism culture, relationships are based on group membership, which means that agreements (both professional & personal) are often flexible. 
 
