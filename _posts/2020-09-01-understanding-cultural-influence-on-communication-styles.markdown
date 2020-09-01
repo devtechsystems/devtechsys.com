@@ -19,6 +19,7 @@ What are cross cultural communication typologies? They are the underlying cultur
 **Exclusionism vs Universalism**
 * *Exclusionism:* In an exclusionism culture, relationships are based on group membership, which means that agreements (both professional & personal) are often flexible. 
 * *Universalism:* In a universalism culture, there is a common belief that everyone should be treated equally, meaning that agreements are normally adhered too. 
+
 **High vs Low Context**
 * *High Context:* In a high context culture, the majority of communication is non-verbal and there are well-defined social protocols. 
 * *Low Context:* In a low context culture, the verbal messaging contains most of the information. There is an admiration for people that can speak up and express themselves. 
