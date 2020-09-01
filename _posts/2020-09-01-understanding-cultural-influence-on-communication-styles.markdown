@@ -1,6 +1,7 @@
 ---
 title: Understanding Cultural Influence on Communication Styles
 date: 2020-09-01 17:37:00 Z
+Author: Glorianna Flanagan, Research Fellow
 ---
 
 COVID-19 has forced the international development world to quickly re-evaluate how all forms of communication take place. As offices continue to work online, all matters of transnational communication have also moved virtual. So, while everyone is trying to adjust to this new normal, it is important to pause and reflect on the concept that everyone brings different assumptions into a conversation. The assumptions we bring to a conversation are formed from our world view, which in turn is shaped by the culture we were raised in. To better understand these assumptions, anthropologists and psychologists have studied the breakdown of these assumptions and created categories known as cross-cultural communication typologies. 
