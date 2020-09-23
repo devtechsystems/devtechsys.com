@@ -1,6 +1,8 @@
 ---
 title: DevTech leads Cost Benefit Analysis Training for Indonesian Ministry of Finance
 date: 2020-09-23 19:54:00 Z
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 ---
 
 On Tuesday, September 1, 2020, the United States Agency for International Development (USAID), in cooperation with the Ministry of Finance of the Republic of Indonesia launched a training on Cost Benefit Analysis (CBA). Over the course of four days, the training introduced staff of the Directorate General (DG) Budget to international best practices for applying CBA to support the implementation of the government’s priority programs. 
@@ -22,5 +24,13 @@ This is the first training conducted with face-to-face arrangement for DG Budget
 EGSA took measures to ensure participants, trainers, and organizers’ safety and health by observing Government’s guidance on COVID-19 health protocol. Face masks were mandatory for all participants, trainers, and organizers at training venue and public spaces.   
 
 This training was made possible through the generous support of the American people through the United State Agency for International Development (USAID) and is organized as part of USAID’s general support and partnership with the Ministry of Finance.
+
+![CBA 2.jpg](/uploads/CBA%202.jpg)
+
+[CBA 5.JPG](/uploads/CBA%205.JPG)
+
+[CBA 4.JPG](/uploads/CBA%204.JPG)
+
+[CBA 3.JPG](/uploads/CBA%203.JPG)
 
 To learn more about the Indonesia Economic Growth Support Activity (EGSA) visit the project page [here.](https://devtechsys.com/projects/Economic-Growth-Support-Activity-(EGSA)-in-Indonesia/)
