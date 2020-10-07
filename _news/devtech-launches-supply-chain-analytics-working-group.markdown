@@ -12,5 +12,5 @@ The Working Group is led by John Yates, a former CIO, IT Advisor, and USAID Chie
 
 DevTech looks forward engaging clients and partners to bring expert data analytics and IT services to forward looking public and private sector supply chain actors like we do on the Nigeria Support for Strategic Information and Project Management Services (SIMS) project where we support data collection, analysis, quality improvement through the Office of Global AIDS Coordinator in Nigeria. DevTech’s data analytics capabilities can be further demonstrated under the ADVISE contract, where DevTech supports USAID’s [Foreign Aid Explorer](https://explorer.usaid.gov/) and [IDEA](https://idea.usaid.gov/) platforms to report on PEPFAR spending to the U.S. Congress.
 
-DevTech is excited to bring these tools and analytical services to the supply chain sector. Anyone wishing to contact DevTech about supply chain services can email scs@devtechsys.com and a member of our team will be in touch with you as soon as possible!
+DevTech is excited to bring these tools and analytical services to the supply chain sector. Anyone wishing to contact DevTech about supply chain services can email *scs@devtechsys.com* and a member of our team will be in touch with you as soon as possible!
 
