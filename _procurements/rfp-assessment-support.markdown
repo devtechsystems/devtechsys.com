@@ -1,5 +1,5 @@
 ---
-title: 'RFP: Assessment Support'
+title: 'RFP: Kenya Assessment Support'
 date: 2020-10-09 19:45:00 Z
 Description: "The purpose of this Request for Proposals (RFP) is to invite prospective
   service providers to submit a proposal for an upcoming opportunity requiring facilitation
