@@ -9,6 +9,7 @@ Description: "The purpose of this Request for Proposals (RFP) is to invite prosp
   should be sent to DevTech by 5 pm Eastern Standard Time on October 14, 2020 to wrosado@devtechsys.com.
   Technical and Cost proposals should be submitted in one email as attachments to
   wrosado@devtechsys.com by 5 pm Easter Standard  "
+File URL: "/uploads/Request%20for%20Proposals_TCB_Kenya_10.9.2020.docx"
 Email Address: wrosado@devtechsys.com
 Is Open: true
 ---
