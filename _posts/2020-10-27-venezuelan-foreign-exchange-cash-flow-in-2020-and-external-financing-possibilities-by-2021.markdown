@@ -48,5 +48,9 @@ The opacity of fiscal figures (among others) remains an important feature of the
 * There is an opportunity in the capital market through stock issues. It is a good option to remunerate bolivars (Venezuelan currency) and obtain financing, given the high bank reserve requirements.
 * The expectation of the Maduro regimen to attract foreign direct investment is severely compromise by the Anti-economic blockade law, given the negative initial assessment made by foreign investors from the US, Western Europe, and Japan. 
 
+
+**Dr. Jose Pineda is a Venezuelan economist who has served as the Deputy Director of Research at CAF and as a senior advisor to multiple UN programs. He has also served as Chief Economist of VENAMCHAM, and as consultant for the Venezuelan Ministry of Finance and the Venezuelan Central Bank. He is currently a Senior Technical Advisor at DevTech Systems, Inc.**
+
+
 Sources:
 1. For a more detailed discussion, see Devtech's special note on this law. [https://devtechsys.com/insights/2020/10/21/anti-economic-blockade-law-the-most-recent-desperate-measure-of-nicolas-maduro-in-the-venezuelan-crisis/](For a more detailed discussion, see Devtech's special note on this law. https://devtechsys.com/insights/2020/10/21/anti-economic-blockade-law-the-most-recent-desperate-measure-of-nicolas-maduro-in-the-venezuelan-crisis/) 
