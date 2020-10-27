@@ -2,6 +2,8 @@
 title: '"Anti-economic blockade law": the most recent desperate measure of Nicolás
   Maduro in the Venezuelan crisis'
 date: 2020-10-21 18:20:00 Z
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Venezuela%202%20teaser.png"
 Author: Dr. Jose Pineda and Gerardo Milano
 Is Featured: true
