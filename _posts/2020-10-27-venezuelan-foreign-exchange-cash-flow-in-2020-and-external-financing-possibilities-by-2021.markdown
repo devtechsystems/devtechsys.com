@@ -11,7 +11,7 @@ Is Featured: true
 
 The opacity of fiscal figures (among others) remains an important feature of the Venezuelan economy. This blog discusses potential sources of funding for Venezuela for 2020 and 2021 and their main implications.
 
-1. By 2020, an estimate of that cash flow would be like the one shown in the table below.
+By 2020, an estimate of that cash flow would be like the one shown in the table below.
 
 ![Venezuela Table.png](/uploads/Venezuela%20Table.png)
 
