@@ -4,6 +4,9 @@ title: Venezuelan Foreign Exchange Cash Flow in 2020 and External Financing Poss
 date: 2020-10-27 19:39:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Venezuela%203%20teaser.png"
+Author: Dr. Jose Pineda
+Is Featured: true
 ---
 
 The opacity of fiscal figures (among others) remains an important feature of the Venezuelan economy. This blog discusses potential sources of funding for Venezuela for 2020 and 2021 and their main implications.
