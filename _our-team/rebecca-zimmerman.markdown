@@ -2,7 +2,7 @@
 title: Rebecca Zimmerman
 date: 2020-10-29 12:25:00 Z
 position: 7
-Title: Director of Monitoring, Evaluation, and Learning
+Title: Director of Monitoring, Evaluation, Research, and  Learning
 Headshot Image: "/uploads/Zimmerman_R.jpg"
 Job Title: Director of Monitoring, Evaluation, and Learning
 ---
