@@ -1,6 +1,11 @@
 ---
 title: Advancing the the US Fight Against Human Trafficking
 date: 2020-11-04 18:48:00 Z
+Practice Area:
+- Monitoring and Evaluation
+Teaser Image: "/uploads/NAP%20Combat%20Human%20trafficking.png"
+Author: Meredith Kerrigan, Sr. M&E Associate
+Is Featured: true
 ---
 
 In October, the White House released the [National Action Plan to Combat Human Trafficking](https://www.whitehouse.gov/wp-content/uploads/2020/10/NAP-to-Combat-Human-Trafficking.pdf). This Plan further details America’s commitment to fighting human trafficking as first laid out in the 2000 Trafficking Victims Protection Act (TVPA). The Plan was developed with support from multiple inter-agencies including the Department of State Office to Combat Trafficking in Persons (J/TIP). This Plan builds on the three pillars to fight trafficking: Prevention, Protection and Prosecution and adds a fourth pillar to include crosscutting approaches to enable prevention, protection, and prosecution collaboration. 
@@ -15,4 +20,4 @@ Cross-Cutting: Under this new pillar, the U.S. will develop a more comprehensive
 
 DevTech supports the Department of State by conducting evaluations of J/TIP programs and providing recommendations for improving program impacts in combating trafficking. The National Action Plan is a positive step towards renewing the U.S. commitment to fighting human trafficking. 
 
-You can read more about DevTech's evaluation work with the J/TIP office here: 
+You can read more about DevTech's evaluation work with the J/TIP office [here](https://devtechsys.com/projects/DoS-TIP-Office-BPA/), [here](https://devtechsys.com/projects/Midline-and-Endline-Evaluations-of-the-U.S.-Ghana-Child-Protection-Compact-Partnership-through-the-D/), and [here](https://devtechsys.com/projects/Performance-Evaluation-of-Trafficking-in-Persons-Projects-in-Sri-Lanka-DoS-TIP-Office-BPA/)here. 
