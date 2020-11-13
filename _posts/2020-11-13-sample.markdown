@@ -1,6 +1,10 @@
 ---
 title: sample
 date: 2020-11-13 13:56:00 Z
+Practice Area:
+- Monitoring and Evaluation
+Author: Gaby Larkin
+Is Featured: true
 ---
 
 Sample Text
