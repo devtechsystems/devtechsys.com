@@ -1,6 +1,8 @@
 ---
 title: sample
 date: 2020-11-13 13:56:00 Z
+tags:
+- COVID-19
 Practice Area:
 - Monitoring and Evaluation
 Author: Gaby Larkin
