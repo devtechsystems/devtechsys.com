@@ -1,6 +1,6 @@
 ---
 title: Venezuela's Fiscal Situation and Institutional Weakness
-date: 2020-11-18 19:13:00 Z
+date: 2020-11-19 19:13:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Teaser%20Venezuela%20Fiscal%20Situation%2011.18.2020.png"
@@ -9,6 +9,7 @@ Is Featured: true
 ---
 
 The Covid19 crisis has further deteriorated the precarious Venezuelan fiscal situation since oil prices and oil exports have registered a steep decline. Indeed, the price of the Venezuelan oil basket, which in December 2019 stood at US $49.94 per barrel and at the end of October 2020 it reached the figure of US $ 26.23 per barrel, without deducting the discounts at which they sell Venezuelan crude. In addition, oil exports decreased from 600,000 barrels per day in 2019 to an estimated 300,000 so far in 2020.
+
 **Panel 1**
 
 ![Venezuela Oil Production Panel 1.jpg](/uploads/Venezuela%20Oil%20Production%20Panel%201.jpg)
