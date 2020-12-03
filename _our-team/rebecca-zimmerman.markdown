@@ -3,7 +3,7 @@ title: Rebecca Zimmerman
 date: 2020-10-29 12:25:00 Z
 position: 8
 Title: Rebecca Zimmerman
-Headshot Image: "/uploads/Zimmerman_R.jpg"
+Headshot Image: "/uploads/RZimmerman%20headshot-circle.png"
 Job Title: Director of Monitoring, Evaluation, and Learning
 ---
 
