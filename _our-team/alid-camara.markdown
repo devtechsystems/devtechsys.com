@@ -3,6 +3,7 @@ title: Alid Camara
 date: 2020-11-04 19:22:00 Z
 position: 10
 Title: Alid Camara
+Headshot Image: "/uploads/DevTech%20circle%20headshot%20placeholder.png"
 Job Title: Senior Director of Business Development
 ---
 
