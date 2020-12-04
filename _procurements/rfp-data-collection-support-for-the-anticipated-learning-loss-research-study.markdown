@@ -19,13 +19,13 @@ Description: "The 3.5 year USAID Education Data activity implemented by DevTech 
   local survey firm or institution to provide logistical and administrative support
   to USAID Education Data activity in collaboration with ECZ and USAID/Zambia to carry
   out the data collection in early 2021 among approximately 182 GRZ and community
-  schools drawn from the five target provinces. \n[Learning Loss_ToR_FINAL.pdf](/uploads/Learning%20Loss_ToR_FINAL.pdf)\n
-  \nInterested applicants should send an email to **Ed-data@devtechsys.com ** expressing
-  intent to submit a proposal and carefully read the Terms of Reference and the Cost
-  Proposal template.[Cost Proposal Template_December 2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx)
-  \n\nQuestions should be submitted to the aforementioned email no later than December
-  11th, 2020, and full submissions to the RFP should be submitted by December 27th,
-  2020. "
+  schools drawn from the five target provinces. \nMore information here:[Learning
+  Loss_ToR_FINAL.pdf](/uploads/Learning%20Loss_ToR_FINAL.pdf)\n \nInterested applicants
+  should send an email to Ed-data@devtechsys.com expressing intent to submit a proposal
+  and carefully read the Terms of Reference and the [Cost Proposal Template_December
+  2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx) \n\nQuestions
+  should be submitted to the aforementioned email no later than December 11th, 2020,
+  and full submissions to the RFP should be submitted by December 27th, 2020. "
 Email Address: Ed-data@devtechsys.com
 Is Open: true
 ---
@@ -35,6 +35,6 @@ The 3.5 year USAID Education Data activity implemented by DevTech Systems, Inc. 
 The Terms of Reference outline a solicitation to recruit an interested local survey firm or institution to provide logistical and administrative support to USAID Education Data activity in collaboration with ECZ and USAID/Zambia to carry out the data collection in early 2021 among approximately 182 GRZ and community schools drawn from the five target provinces. 
 More information here:[Learning Loss_ToR_FINAL.pdf](/uploads/Learning%20Loss_ToR_FINAL.pdf)
  
-Interested applicants should send an email to **Ed-data@devtechsys.com ** expressing intent to submit a proposal and carefully read the Terms of Reference and the [Cost Proposal Template_December 2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx) 
+Interested applicants should send an email to Ed-data@devtechsys.com expressing intent to submit a proposal and carefully read the Terms of Reference and the [Cost Proposal Template_December 2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx) 
 
 Questions should be submitted to the aforementioned email no later than December 11th, 2020, and full submissions to the RFP should be submitted by December 27th, 2020. 
