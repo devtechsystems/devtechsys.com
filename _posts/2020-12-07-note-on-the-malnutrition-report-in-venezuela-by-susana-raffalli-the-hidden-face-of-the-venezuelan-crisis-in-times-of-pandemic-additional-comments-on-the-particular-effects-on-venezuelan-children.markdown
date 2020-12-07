@@ -5,6 +5,7 @@ title: 'Note on the Malnutrition report in Venezuela by Susana Raffalli: The hid
 date: 2020-12-07 20:39:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/DevTech%20Teaser%20Image-Venezuela%20Malnutrition.png"
 Author: Dr. Jose Pineda and Gerardo Milano
 Is Featured: true
 ---
