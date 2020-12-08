@@ -1,7 +1,7 @@
 ---
 title: 'Note on the Malnutrition report in Venezuela by Susana Raffalli: The hidden
   face of the Venezuelan crisis in times of pandemic. Additional comments on the particular
-  effects on Venezuelan children'
+  effects on Venezuelan children.'
 date: 2020-12-07 20:39:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
