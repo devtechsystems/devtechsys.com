@@ -48,7 +48,7 @@ Indicators usually included in a 30,000ft report are the following (1):
 
 For each indicator, the 30,000ft report shows the latest value for the country of interest, the average for the region and the world. Other information included are the standard deviations, minimums, maximums, and number of observations. This information is usually shown in a table format. The report also includes a histogram per indicator, showing where the country is compared to its peers or the world, and a line chart showing how the indicator has evolved in recent years.
 
-For example, for PIT Productivity for **Cambodia **(2017), the report would contain the following table and graphs:
+For example, for PIT Productivity for **Cambodia** (2017), the report would contain the following table and graphs:
 
 ![WRosado- Cambodia Graph.png](/uploads/WRosado-%20Cambodia%20Graph.png)
 
