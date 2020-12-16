@@ -25,7 +25,10 @@ Description: "The 3.5 year USAID Education Data activity implemented by DevTech 
   and carefully read the Terms of Reference and the [Cost Proposal Template_December
   2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx) \n\nQuestions
   should be submitted to the aforementioned email no later than December 11th, 2020,
-  and full submissions to the RFP should be submitted by December 27th, 2020. "
+  and full submissions to the RFP should be submitted by December 27th, 2020. \n\n**UPDATE**
+  Answers to Questions submitted by Interested Firms:[ToR Learning Loss Research Study_Q
+  and A_16.12.20.pdf](/uploads/ToR%20Learning%20Loss%20Research%20Study_Q%20and%20A_16.12.20.pdf)
+  \ "
 Email Address: Ed-data@devtechsys.com
 Is Open: true
 ---
@@ -38,3 +41,5 @@ More information here:[Learning Loss_ToR_FINAL.pdf](/uploads/Learning%20Loss_ToR
 Interested applicants should send an email to Ed-data@devtechsys.com expressing intent to submit a proposal and carefully read the Terms of Reference and the [Cost Proposal Template_December 2020.xlsx](/uploads/Cost%20Proposal%20Template_December%202020.xlsx) 
 
 Questions should be submitted to the aforementioned email no later than December 11th, 2020, and full submissions to the RFP should be submitted by December 27th, 2020. 
+
+**UPDATE** Answers to Questions submitted by Interested Firms:[ToR Learning Loss Research Study_Q and A_16.12.20.pdf](/uploads/ToR%20Learning%20Loss%20Research%20Study_Q%20and%20A_16.12.20.pdf)  
