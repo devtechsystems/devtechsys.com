@@ -11,7 +11,7 @@ Is Featured: true
 
 Since November 2017, Venezuela is going through a hyperinflationary cycle in which prices have suffered a cumulative growth of 7,391,434,575.3% (1). This was due to a continuous monetary expansion because of the financing of the recurring deficits for which the public sector (especially the state oil company PDVSA) has been registering, since operating expenses have grown faster compared to income, as a consequence of the latter being anchored to the value of the preferential exchange rate under a regime of exchange rate controls that had been in force in Venezuela since 2003 (Guerra & Vera, 2019). 
 
-The hyperinflationary outbreak has led to the fiscal accounts being adjusted. According to UCAB’s (Universidad Católica Andrés Bello, in Caracas-Venezuela) the Situation Report for the third quarter of 2020, public sector revenues in the third quarter of 2020 decreased by 1.2% of GDP compared to the previous year as a result of a sharp fall in tax revenues from oil due to the decline in prices, which are closer to the production costs of a barrel of oil in Venezuela, and also due to the fall in tax collection via Value Added Tax (VAT) as a result of the fall in domestic consumption and the declining purchasing power of tax collections due to lags and the hyperinflation (the Olvera-Tanzi effect)(2). At the same time, sector expenditures also suffered reductions compared to 2019, falling by 2% as part of GDP, due to reductions in the payment of wages and salaries to public administration workers and also in the payment of pensions, obtaining a deficit balance of 8.4% as part of GDP.
+The hyperinflationary outbreak has led to the fiscal accounts being adjusted. According to UCAB’s (Universidad Católica Andrés Bello, in Caracas-Venezuela) the Situation Report for the third quarter of 2020, public sector revenues in the third quarter of 2020 decreased by 1.2% of GDP compared to the previous year as a result of a sharp fall in tax revenues from oil due to the decline in prices, which are closer to the production costs of a barrel of oil in Venezuela, and also due to the fall in tax collection via Value Added Tax (VAT) as a result of the fall in domestic consumption and the declining purchasing power of tax collections due to lags and the hyperinflation (the Olvera-Tanzi effect) (2). At the same time, sector expenditures also suffered reductions compared to 2019, falling by 2% as part of GDP, due to reductions in the payment of wages and salaries to public administration workers and also in the payment of pensions, obtaining a deficit balance of 8.4% as part of GDP.
 
 Venezuela has experienced negative economic growth since 2013 with an accumulated drop of 67.1% (3) motivated by the fall in domestic aggregate demand (depression in private consumption, dismantling of investment private sector, the collapse of public investment, and the low impact of public operating expenses on the revitalization of the economy), the collapse of oil activity, and the drop in imports of both raw materials and spare parts and goods and services for final consumption. The forecasts for the year 2021 are still pessimistic for the country as it is expected a decline of 7% (4) as the economy will continue in recessionary phase with inflation of at least four digits (5), and there are no clear signs of a change of direction in the economic policies of the Nicolás Maduro regime, but rather it is expected that there will be greater opacity in the management of public finances and the external financial assets of Venezuela, as well as the pressure of the international community on the Maduro regime given the results of the questioned and "illegitimate" parliamentary elections of December 6th, which ranges from restrictions on access to external financing and oil-free marketing (6).  
 
@@ -21,12 +21,14 @@ As Reinhart and Savastano (2003) (7) indicate, fiscal factors are behind all mod
 
 At the end of the Second World War in June 1945, Germany was destroyed, and its territory divided into four zones occupied by the victors: the USA, the Soviet Union, France, and England. Because of the economic chaos, the United States proposed to launch a plan to recover the area under its control and that later spread to the rest of the country, except for the part dominated by the Soviets, who always opposed the plan, called the Plan for Liquidation of the Finances of the War and for the Economic Recovery. With the participation of American technicians from the Treasury Department, the plan was coordinated by Ludwing Erhard, in what was called the German miracle. From there the social market economy was born.
 
-Plan elements
+**Plan elements**
+
 - **Prohibition of the fiscal deficit**: The government could not run a fiscal deficit. All expenses had to have a genuine source of financing. The debt would be issued only based on certain future income.
 - **Spending reduction**: The government was empowered to terminate contracts that it could not pay and apply all measures conducive to monetary stability.
 - **Creation of a new currency**: The German mark was instituted to replace the real mark, June 21, 1948, in a fixed relationship with the dollar.
 - Establishment of a strict limit on the issuance of money.
 - **Elimination of exchange and price control**: Control over a group of assets was only maintained for a short time. Private sector wages were released. All Nazi laws on price agreements and against hoarding were repealed.
+
 
 
 **Israel Stabilization Plan**
@@ -38,6 +40,7 @@ The program had the following objectives (Bruno and Piterman, 1998): to quickly 
 The multiple anchors were intended to lower inflation quickly. After the plan, inflation fell to less than 30% in 1986 and unemployment increased slightly. The program was supported with a US $ 7 billion loan. With the stabilization plan, a new currency was established, the new shekel.
 
 
+
 **Bolivia Stabilization Plan**
 
 Bolivia began to register high inflation rates since the beginning of the eighties and the situation became unmanageable between April 1984 and mid-1985 when the average inflation was 46%. The peak was observed in February 1985 when the inflation rate reached 182%. The central bank acted as a financier of the government in the face of the fall in the collection and the lack of income.
@@ -47,11 +50,13 @@ The lack of control was such that between 1978 and 1982 there were at least five
 Upon assuming a new government, the need to end hyperinflation and the instability that it caused became urgent (Morales, 1988). Thus, on July 29, 1985, Supreme Decree 21,060 was approved, which contained the essential guidelines of the economic plan, which was based on drastic measures to correct the fiscal deficit by raising the price of gasoline to bring the deficit to zero, the freezing of wages and public investment. Also, exchange rates were unified, and currency convertibility was established, they were liberated from the exchange and goods markets. The instrumental basis of the program was the stabilization of the exchange rate, for which a new currency was adopted: the boliviano. The government managed to postpone the payments of foreign debt, which meant relief for public finances. Hyperinflation ended in September 1985 after the implementation of the economic program.
 
 
+
 **The Plan Real of Brazil**
 
 After the failed attempts to stabilize the economy with the Cruzado Plan and the Cruzeiro Plan, inflation in Brazil increased, reaching 3,000% in 1993. The Itamar Franco government appointed Fernando Henrique Cardozo as Minister of Finance, who with a team of economists designed and applied the Plan Real.
 
 The fundamental elements of the real plan (Cardozo, 2006) were the following: A significant fiscal adjustment when the Social Emergency Fund was created, through which the government-controlled 25% of the national budget without the approval of Congress, a new currency, the real, based on a stable exchange rate in relation to the dollar, which worked similar to a currency board. To give it credibility, the real was conceived as a strong currency and would gradually adjust against the dollar. When the plan was applied, inflation fell rapidly, the economy grew, and Brazil successfully withstood the Mexican crisis of 1996 and the Asian crisis of 1998.
+
 
 **Peru Stabilization Plan**
 
@@ -65,15 +70,19 @@ As these experiences illustrate stopping hyperinflation is not only a difficult 
 
 
 
+
+
+
+
 **Sources**:
 
 1. Source: Permanent Commission of Finance and Economic Development of National Assembly of Venezuela, own calculations.
 2. Olivera, J. 1964. “On Structural Inflation and Latin America’s Structuralism.” Oxford Economic Papers.
 Tanzi, V. 1977. “Inflation, Lags, in Collection and the Real Value of Tax Revenue.” International Monetary Fund Staff Papers.
 3. Source: Central Bank of Venezuela, own calculations.
-4. See: Balance Preliminar de las Economías de América Latina y el Caribe 2020.[](https://www.cepal.org/es/publicaciones/46501-balance-preliminar-economias-america-latina-caribe-2020)
+4. See: Balance Preliminar de las Economías de América Latina y el Caribe 2020. https://www.cepal.org/es/publicaciones/46501-balance-preliminar-economias-america-latina-caribe-2020
 5. See: IMF World Economic Outlook, October 2020.
-6. See: [](https://www.bbc.com/mundo/noticias-america-latina-55202886)
+6. See: https://www.bbc.com/mundo/noticias-america-latina-55202886
 7. See Reinhart, C., and M. A. Savastano. 2003. “The Realities of Modern Hyperinflation: Despite Falling Inflation Rates Worldwide, Hyperinflation Could Happen Again.” Finance & Development,
 International Monetary Fund, 20–23
  
