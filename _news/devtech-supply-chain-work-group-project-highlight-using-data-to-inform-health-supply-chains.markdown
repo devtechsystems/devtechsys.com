@@ -13,7 +13,7 @@ The S4SIPMS project has achieved notable success by identifying areas that requi
 
 The data is made to be useful and digestible so it can be used upstream by national and international stakeholders, such as the President’s Emergency Plan for AIDS Relief (PEPFAR) and the Ministry of Health so they can make informed strategic decisions about the type of health commodities and supply chain strategies they are using. The data is also detailed and actionable so it can be used by downstream stakeholders, such as hospitals, who can make immediate corrective actions that avoid stockouts, improve service delivery, and improve health outcomes, as we can see from Table 1 below.
 
-[Table 1 CEE Actions Made Possible by S4SIPMS Site Improvement Plans.PNG](/uploads/Table%201%20CEE%20Actions%20Made%20Possible%20by%20S4SIPMS%20Site%20Improvement%20Plans.PNG)
+![Table 1 CEE Actions Made Possible by S4SIPMS Site Improvement Plans.PNG](/uploads/Table%201%20CEE%20Actions%20Made%20Possible%20by%20S4SIPMS%20Site%20Improvement%20Plans.PNG)
 
 In addition to site visits, S4SIPMS has achieved notable success in the adoption and delivery of technology solutions which have increased implementing partner and the Mission’s capacity to use data, enable continuous quality improvement, and increase documentation, recording, and data demand and use.
 
