@@ -1,9 +1,8 @@
 ---
-title: Project Highlight – Using Data to Inform Health Supply Chains!
-date: 2021-01-07 19:28:00 Z
-Practice Area:
-- Knowledge Management and Data Analytics
-Is Featured: true
+title: DevTech Supply Chain Work Group Project Highlight – Using Data to Inform Health
+  Supply Chains!
+date: 2021-01-07 20:10:00 Z
+Banner Image: "/uploads/Supply%20Chain%20Blog%202.png"
 ---
 
 DevTech implements the Nigeria Support for Strategic Information and Project Management Services ([S4SIPMS](https://devtechsys.com/projects/Nigeria-Support-for-Strategic-Information-and-Project-Management-Services-(S4SIPMS)/)) project where we support data collection, analysis, and quality improvement through the Office of Global AIDS Coordinator in Nigeria. The S4SIPMS project has conducted 635 Site Improvement through Monitoring System (SIMS) assessments to date, increases the capacity of USAID/Nigeria and implementing partners capacity to use data for quality improvement, synthesizes lessons learned, and evaluates the demand and use of data so it can be used to improve hospital-level supply chain optimization and healthcare delivery. 
@@ -14,7 +13,7 @@ The S4SIPMS project has achieved notable success by identifying areas that requi
 
 The data is made to be useful and digestible so it can be used upstream by national and international stakeholders, such as the President’s Emergency Plan for AIDS Relief (PEPFAR) and the Ministry of Health so they can make informed strategic decisions about the type of health commodities and supply chain strategies they are using. The data is also detailed and actionable so it can be used by downstream stakeholders, such as hospitals, who can make immediate corrective actions that avoid stockouts, improve service delivery, and improve health outcomes, as we can see from Table 1 below.
 
-[CEE Actions Made Possible by S4SIPMS.JPG](/uploads/CEE%20Actions%20Made%20Possible%20by%20S4SIPMS.JPG)
+[Table 1 CEE Actions Made Possible by S4SIPMS Site Improvement Plans.PNG](/uploads/Table%201%20CEE%20Actions%20Made%20Possible%20by%20S4SIPMS%20Site%20Improvement%20Plans.PNG)
 
 In addition to site visits, S4SIPMS has achieved notable success in the adoption and delivery of technology solutions which have increased implementing partner and the Mission’s capacity to use data, enable continuous quality improvement, and increase documentation, recording, and data demand and use.
 
@@ -26,5 +25,7 @@ In addition to site visits, S4SIPMS has achieved notable success in the adoption
 
 Each of these efforts fosters country ownership and sustainability for program improvement and commodity and service delivery through data use. DevTech looks forward to leveraging these insights and lessons learned on future programs to improve the delivery of health services and commodities.
 
+
+DevTech is excited to bring these tools and analytical services to the supply chain sector. Anyone wishing to contact DevTech about supply chain services can email Mr. Jordan Raupp at jraupp@devtechsys.com.
 
 
