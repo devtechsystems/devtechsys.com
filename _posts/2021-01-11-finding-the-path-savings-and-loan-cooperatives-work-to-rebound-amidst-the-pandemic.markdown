@@ -9,7 +9,7 @@ Author: Renata Simatupang (EGSA COP) and Rully Prayoga (EGSA Communication Consu
 Is Featured: true
 ---
 
-![EGSA Workshop Photo by Robert P..png](/uploads/EGSA%20Workshop%20Photo%20by%20Robert%20P/png)
+![EGSA Workshop Photo 1.png](/uploads/EGSA%20Workshop%20Photo%201.png)
 Photo: Robert Pramudarto, USAID-EGSA
 
 There are approximately 123,048 cooperatives in Indonesia, 13 percent of which are savings and loan cooperatives. These cooperatives play an important role in providing credit to micro, small, and medium enterprises—especially those with limited access to banking services. The COVID-19 pandemic has disrupted cooperatives’ liquidity, as the economic crisis affected their members’ ability to repay their loans and social distancing orders limited their ability to collect payments.
