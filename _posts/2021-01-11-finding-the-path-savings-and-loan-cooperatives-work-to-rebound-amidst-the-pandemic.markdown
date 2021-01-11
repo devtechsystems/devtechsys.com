@@ -5,6 +5,7 @@ date: 2021-01-11 17:08:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Finding%20The%20Path_Savings%20and%20Loan%20Cooperatives.png"
+Author: Renata Simatupang (EGSA COP) and Rully Prayoga (EGSA Communication Consultant)
 Is Featured: true
 ---
 
