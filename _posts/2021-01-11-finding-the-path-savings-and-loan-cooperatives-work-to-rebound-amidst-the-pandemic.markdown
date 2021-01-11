@@ -19,7 +19,9 @@ To help alleviate some of these concerns, the U.S. Agency for International Deve
 Twenty-three attendees from the Department of Cooperatives and Micro, Small, and Medium Enterprises (MSMEs) (Dinas Koperasi) of the East Java and South Sulawesi provinces and Pacitan and Bulukumba districts attended the workshop. Panelists included Andy Arslan Junaid, Chairman of Kospin Jasa Cooperative, Ema Rachmati, head of the Department of Cooperatives and MSMEs of Central Java Province, and Meliadi Sembiring and I Wayan Dipta— experts in cooperative evaluation and modernization— shared insights and experiences on the development of cooperatives in Indonesia.
 
 ![EGSA Workshop Photo 2.png.jpg](/uploads/EGSA%20Workshop%20Photo%202.png.jpg)
+
 Christina Agustin from Ministry of Cooperative and SMEs opened the workshop. Photo: USAID-EGSA
+
 
 As a result of the pandemic and social distancing restrictions issued by the Government of Indonesia (GOI), many businesses have shuttered and unemployment has increased. In response to these challenges, the GOI launched the PEN (National Economic Recovery), which includes a fiscal stimulus for MSMEs of IDR 123.4 trillion (USD 8.75 billion). As part of its support to MSMEs, the GOI allocated IDR 1.85 trillion (USD 131.2 million) to the Revolving Fund Guarantee Agency (Lembaga Penjamin Dana Bergulir, or LPDB) to help cooperatives through loans or other financing schemes. LPDB’s funds are not sufficient to help all cooperatives, however, and the government is discussing further solutions to assist additional cooperatives. 
 
@@ -28,6 +30,7 @@ As a result of the pandemic and social distancing restrictions issued by the Gov
 Christina Agustin, Assistant Deputy for Cooperative Organization and Legal Entity, Ministry of Cooperatives and MSMEs, and Renata Simatupang, EGSA Chief of Party, opened the workshop. In her opening speech, Ms. Agustin thanked participants for their collaboration during the study and commended USAID/Indonesia for its attention and support to the sustainability of cooperatives in Indonesia, noting that there is less support from donors to cooperatives.   
 
 ![EGSA Workshop Photo 3.jpg](/uploads/EGSA%20Workshop%20Photo%203.jpg)
+
 Panelists answered questions from workshop participants. Photo: USAID EGSA
 
 “I hope EGSA USAID will continue to collaborate with the Ministry of Cooperatives and SMEs after the completion of the study,” she added.
