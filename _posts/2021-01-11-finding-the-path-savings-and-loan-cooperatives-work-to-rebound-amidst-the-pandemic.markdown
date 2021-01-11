@@ -8,7 +8,7 @@ Teaser Image: "/uploads/Finding%20The%20Path_Savings%20and%20Loan%20Cooperatives
 Is Featured: true
 ---
 
-![EGSA Workshop Photo by Robert P..png] (/uploads/EGSA%20Workshop%20Photo%20by%20Robert%20P/png)
+![EGSA Workshop Photo by Robert P..png](/uploads/EGSA%20Workshop%20Photo%20by%20Robert%20P/png)
 Photo: Robert Pramudarto, USAID-EGSA
 
 There are approximately 123,048 cooperatives in Indonesia, 13 percent of which are savings and loan cooperatives. These cooperatives play an important role in providing credit to micro, small, and medium enterprises—especially those with limited access to banking services. The COVID-19 pandemic has disrupted cooperatives’ liquidity, as the economic crisis affected their members’ ability to repay their loans and social distancing orders limited their ability to collect payments.
@@ -18,6 +18,7 @@ To help alleviate some of these concerns, the U.S. Agency for International Deve
 Twenty-three attendees from the Department of Cooperatives and Micro, Small, and Medium Enterprises (MSMEs) (Dinas Koperasi) of the East Java and South Sulawesi provinces and Pacitan and Bulukumba districts attended the workshop. Panelists included Andy Arslan Junaid, Chairman of Kospin Jasa Cooperative, Ema Rachmati, head of the Department of Cooperatives and MSMEs of Central Java Province, and Meliadi Sembiring and I Wayan Dipta— experts in cooperative evaluation and modernization— shared insights and experiences on the development of cooperatives in Indonesia.
 
 ![EGSA Workshop Photo 2.png.jpg](/uploads/EGSA%20Workshop%20Photo%202.png.jpg)
+
 Christina Agustin from Ministry of Cooperative and SMEs opened the workshop. Photo: USAID-EGSA
 
 
