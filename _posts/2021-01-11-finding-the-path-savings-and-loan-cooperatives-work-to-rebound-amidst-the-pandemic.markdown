@@ -9,7 +9,7 @@ Is Featured: true
 ---
 
 ![EGSA Workshop Photo 1.png](/uploads/EGSA%20Workshop%20Photo%201.png)
-`PHOTO: ROBERT PRAMUDARTO, USAID-EGSA`
+Photo: Robert Pramudarto, USAID-EGSA
 
 \*\*There are approximately 123,048 cooperatives in Indonesia,
 13 percent of which are savings and loan cooperatives. These cooperatives play an important role in providing credit to micro, small, and medium enterprises—especially those with limited access to banking services. The COVID-19 pandemic has disrupted cooperatives’ liquidity, as the economic crisis affected their members’ ability to repay their loans and social distancing orders limited their ability to collect payments. \*\*
@@ -19,7 +19,7 @@ To help alleviate some of these concerns, the U.S. Agency for International Deve
 Twenty-three attendees from the Department of Cooperatives and Micro, Small, and Medium Enterprises (MSMEs) (Dinas Koperasi) of the East Java and South Sulawesi provinces and Pacitan and Bulukumba districts attended the workshop. Panelists included Andy Arslan Junaid, Chairman of Kospin Jasa Cooperative, Ema Rachmati, head of the Department of Cooperatives and MSMEs of Central Java Province, and Meliadi Sembiring and I Wayan Dipta— experts in cooperative evaluation and modernization— shared insights and experiences on the development of cooperatives in Indonesia.
 
 ![EGSA Workshop Photo 2.png.jpg](/uploads/EGSA%20Workshop%20Photo%202.png.jpg)
-`Christina Agustin from Ministry of Cooperative and SMEs opened the workshop. PHOTO: USAID - EGSA`
+Christina Agustin from Ministry of Cooperative and SMEs opened the workshop. Photo: USAID-EGSA
 
 As a result of the pandemic and social distancing restrictions issued by the Government of Indonesia (GOI), many businesses have shuttered and unemployment has increased. In response to these challenges, the GOI launched the PEN (National Economic Recovery), which includes a fiscal stimulus for MSMEs of IDR 123.4 trillion (USD 8.75 billion). As part of its support to MSMEs, the GOI allocated IDR 1.85 trillion (USD 131.2 million) to the Revolving Fund Guarantee Agency (Lembaga Penjamin Dana Bergulir, or LPDB) to help cooperatives through loans or other financing schemes. LPDB’s funds are not sufficient to help all cooperatives, however, and the government is discussing further solutions to assist additional cooperatives. 
 
@@ -28,19 +28,17 @@ As a result of the pandemic and social distancing restrictions issued by the Gov
 Christina Agustin, Assistant Deputy for Cooperative Organization and Legal Entity, Ministry of Cooperatives and MSMEs, and Renata Simatupang, EGSA Chief of Party, opened the workshop. In her opening speech, Ms. Agustin thanked participants for their collaboration during the study and commended USAID/Indonesia for its attention and support to the sustainability of cooperatives in Indonesia, noting that there is less support from donors to cooperatives.   
 
 ![EGSA Workshop Photo 3.jpg](/uploads/EGSA%20Workshop%20Photo%203.jpg)
-`Panelists answered questions from workshop participants. PHOTO: USAID EGSA`
+Panelists answered questions from workshop participants. Photo: USAID EGSA
 
 “I hope EGSA USAID will continue to collaborate with the Ministry of Cooperatives and SMEs after the completion of the study,” she added.
 The workshop helped to identify several key recommendations for the Ministry, including the need for a revolving fund mechanism at the province/district level to support cooperatives’ liquidity in times of crisis; capacity building for cooperatives’ staff and management in financial planning and reporting; a rating system to categorize cooperatives based on their financial and management health; and modernization in some aspects of operations such as financial reporting, payment systems, and membership assembly. By implementing such policies, cooperatives could maintain sufficient liquidity to support credit distribution to their members, increase their capability to adapt to digital technology, and innovate daily business operations to continue operating during the pandemic.
 
-“Strengthening the local government to build a strong commitment to cooperatives’ empowerment, and possibly have a certification to make cooperatives more credible, are important,” Panelist 
-I Wayan Dipta noted during the discussion. 
+“Strengthening the local government to build a strong commitment to cooperatives’ empowerment, and possibly have a certification to make cooperatives more credible, are important,” Panelist I Wayan Dipta noted during the discussion. 
 
 USAID EGSA will share key findings and recommendations with the Ministry of Cooperatives and SMEs as inputs to policy formulation to help savings and loan cooperatives survive the impact of the pandemic. EGSA USAID will follow up with the Ministry of Cooperatives and SMEs to discuss future engagements to support cooperatives in Indonesia. 
 
 ![EGSA Workshop photo 4.jpg](/uploads/EGSA%20Workshop%20photo%204.jpg)
-`The workshop was attended by representatives from Dinas Koperasi of East Java and South Sulawesi provinces, and the Pacitan and Bulukumba districts.
-PHOTO: USAID EGSA`
+The workshop was attended by representatives from Dinas Koperasi of East Java and South Sulawesi provinces, and the Pacitan and Bulukumba districts. Photo: USAID EGSA
 
 
 
