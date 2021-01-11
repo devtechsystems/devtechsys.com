@@ -8,18 +8,16 @@ Teaser Image: "/uploads/Finding%20The%20Path_Savings%20and%20Loan%20Cooperatives
 Is Featured: true
 ---
 
-![EGSA Workshop Photo 1.png](/uploads/EGSA%20Workshop%20Photo%201.png)
+[EGSA Workshop Photo by Robert P..png](/uploads/EGSA%20Workshop%20Photo%20by%20Robert%20P/png)
 Photo: Robert Pramudarto, USAID-EGSA
 
-\*\*There are approximately 123,048 cooperatives in Indonesia,
-13 percent of which are savings and loan cooperatives. These cooperatives play an important role in providing credit to micro, small, and medium enterprises—especially those with limited access to banking services. The COVID-19 pandemic has disrupted cooperatives’ liquidity, as the economic crisis affected their members’ ability to repay their loans and social distancing orders limited their ability to collect payments. \*\*
+There are approximately 123,048 cooperatives in Indonesia, 13 percent of which are savings and loan cooperatives. These cooperatives play an important role in providing credit to micro, small, and medium enterprises—especially those with limited access to banking services. The COVID-19 pandemic has disrupted cooperatives’ liquidity, as the economic crisis affected their members’ ability to repay their loans and social distancing orders limited their ability to collect payments.
 
 To help alleviate some of these concerns, the U.S. Agency for International Development (USAID) Economic Growth Support Activity ([EGSA](https://devtechsys.com/projects/Economic-Growth-Support-Activity-(EGSA)-in-Indonesia/)) supported the Ministry of Cooperatives and Small and Medium Enterprises (SMEs) with an analysis of liquidity of savings and loan cooperatives during the pandemic. As part of the study, EGSA held a workshop, “Analysis of Savings and Loan Cooperative Liquidity,” on November 17, 2020 in Semarang, Central Java. The workshop disseminated relevant information collected by EGSA pertaining to the operation of savings and loan cooperatives during the pandemic. Workshop participants discussed findings from the study and gathered inputs which will contribute to the formulation of policy recommendations.
 
 Twenty-three attendees from the Department of Cooperatives and Micro, Small, and Medium Enterprises (MSMEs) (Dinas Koperasi) of the East Java and South Sulawesi provinces and Pacitan and Bulukumba districts attended the workshop. Panelists included Andy Arslan Junaid, Chairman of Kospin Jasa Cooperative, Ema Rachmati, head of the Department of Cooperatives and MSMEs of Central Java Province, and Meliadi Sembiring and I Wayan Dipta— experts in cooperative evaluation and modernization— shared insights and experiences on the development of cooperatives in Indonesia.
 
-![EGSA Workshop Photo 2.png.jpg](/uploads/EGSA%20Workshop%20Photo%202.png.jpg)
-
+[EGSA Workshop Photo 2.png.jpg](/uploads/EGSA%20Workshop%20Photo%202.png.jpg)
 Christina Agustin from Ministry of Cooperative and SMEs opened the workshop. Photo: USAID-EGSA
 
 
