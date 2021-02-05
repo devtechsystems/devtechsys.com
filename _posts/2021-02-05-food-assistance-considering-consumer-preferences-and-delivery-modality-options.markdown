@@ -4,6 +4,8 @@ date: 2021-02-05 18:43:00 Z
 Practice Area:
 - Monitoring and Evaluation
 Teaser Image: "/uploads/Teaser%20for%20Food%20Assistance%20blog.png"
+Author: Thomas Johnson, Senior Technical Advisor
+Is Featured: false
 ---
 
 In 2019 DevTech undertook research for USAID concerning food assistance in the Somali region of Ethiopia. The study had three objectives: (1) to assess whether the variety of Food for Peace commodities was appropriate, based in part on recipient food preferences; (2) to evaluate the potential interest and ability of food processors in transforming in-kind staple food commodities to meet large scale humanitarian assistance; and (3) to suggest the way forward for humanitarian assistance based on the study results and in light of political and security developments in the region which borders Somalia to the north and east and Kenya to the south. Background research revealed that USAID had not previously investigated recipient commodity preference, despite decades of humanitarian food assistance across the globe. DevTech, therefore, engaged several academic experts, who had been involved in related research, to serve as part of the study team. 
