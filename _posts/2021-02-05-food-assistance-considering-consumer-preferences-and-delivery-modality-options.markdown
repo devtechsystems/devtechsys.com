@@ -24,7 +24,10 @@ Recent studies of all types of cash transfer programs have been largely positive
 Despite the possibility of any such negative spillover, the DevTech study concluded that in much of the Somali region cash was the best food assistance modality and thus the way forward for humanitarian assistance in the region. Exceptions to this modality were dependent on the availability of food in local markets (and thus price sensitivity), as well as other factors such as the type of household (e.g., pastoral vs. semi-urban) and seasonality. In short, no food assistance modality solution fits all. This study concluded that consumer preferences are important to consider, as is careful, geographically specific investigation to discern local market conditions in advance of selecting food assistance modalities in the Somali region of Ethiopia. This conclusion appears to be relevant elsewhere in the world where the U.S. Government and others provide this form of humanitarian assistance. 
   
 
- **References:  **
+
+
+
+**References:**
 
 1. USAID/Ethiopia. Somali Regional Consumer Commodity Preference Study. DevTech, February 2020.
 
