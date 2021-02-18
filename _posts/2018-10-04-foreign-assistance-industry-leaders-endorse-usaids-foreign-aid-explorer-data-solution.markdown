@@ -26,6 +26,6 @@ MFAN and PWYF’s analysis recommends that USAID’s Foreign Aid Explorer (FAE) 
 
 DevTech’s work with USAID over the past 25+ years demonstrates our commitment to providing the U.S. Government and the public with transparent, accurate, and compelling data on foreign assistance. We are constantly seeking to improve this important service and consolidate data not just across USAID Offices and Bureaus but across USG Agencies and Departments as a whole. MFAN and PWYF’s analysis highlights the need for collaborative work across the USG to identify best practices in data management and implement a consolidated data solution.  DevTech stands ready to be part of this solution.
 
-For more information about DevTech’s ADVISE work please click [here](/uploads/DevTech%20Knowledge%20Management%20and%20Data%20Analytics.pdf)
+For more information about DevTech’s ADVISE work please click [here](/uploads/DevTech%20Knowledge%20Management%20and%20Data%20Analytics.pdf).
 
 *The full MFAN-Publish What You Fund analysis can be found [here](http://modernizeaid.net/wp-content/uploads/2018/10/Improving-Aid-Data.pdf), and a more detailed analysis [here](http://www.modernizeaid.net/wp-content/uploads/2018/10/Dashboards.pdf).
