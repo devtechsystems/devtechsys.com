@@ -1,7 +1,7 @@
 ---
 title: Rebecca Zimmerman Appointed Deputy Assistant Secretary of Defense
 date: 2021-02-19 16:25:00 Z
-Banner Image: "/uploads/Rebecca%20Zimmerman%20Announcement.png"
+Banner Image: "/uploads/Rebecca%20Zimmerman%20Announcement-396264.png"
 ---
 
 DevTech Systems is very proud to announce that our Practice Director for Monitoring, Evaluation, Research, and Learning, Ms. Rebecca Zimmerman, has been [appointed ](https://www.defense.gov/Newsroom/Releases/Release/Article/2504860/new-officials-sworn-in-at-the-department-of-defense/source/GovDelivery/)Deputy Assistant Secretary of Defense for Afghanistan, Pakistan, and Central Asia.  
