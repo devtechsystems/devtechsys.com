@@ -1,6 +1,11 @@
 ---
 title: "Racial Integration of Schools in the \nUnited States"
 date: 2021-02-26 21:27:00 Z
+Practice Area:
+- Knowledge Management and Data Analytics
+Teaser Image: "/uploads/Black%20History%20Month%20Teaser.png"
+Author: Dr. Rafael Romeu and Dr. Jose Pineda
+Is Featured: true
 ---
 
 February is African American History Month, a time when the United States pays tribute to generations of African Americans who struggled with adversity to achieve full citizenship in American society. In this context, this blog concentrates on one key lever for achieving social equality, educational opportunity, which has been a traditional path to social mobility for marginalized groups. In the US, unequal educational opportunities in the form of school segregation can be a strong impediment to progress in this area. We take a brief look at the racial integration of schools in the United States. We recognize at the outset that this is a deep area of study that goes well beyond the scope of a blog entry. Hence, we limit ourselves to presenting evidence of de facto school segregation continuing, and in some cases getting worse, relative to school segregation in 1968. Giving space and scope constraints implied, we do not discuss the vibrant and important ongoing debates on [school](https://www.heritage.org/education/report/the-myth-racial-disparities-public-school-funding), [funding](https://edbuild.org/content/23-billion), [academic](https://nces.ed.gov/pubs2019/2019038.pdf) achievements, and other numerous and deeply compelling issues of this critical policy area. 
