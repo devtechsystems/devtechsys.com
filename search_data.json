@@ -1,16 +1,16 @@
 ---
-layout: 
+layout:
 ---
 
 {
   {% for post in site.posts %}
 
     "{{ post.url | slugify }}": {
-      "title": "{{ post.title | xml_escape }}",
+      "title": "{{ post.title | xml_escape | strip_newlines }}",
       "type": "Insight Posting",
       "content"	 : "{{post.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\"}}",
       "url": " {{ post.url | xml_escape }}",
-      "author": "{{ post['Author'] | xml_escape }}",
+      "author": "{{ post['Author'] | xml_escape | strip_newlines }}",
       "date": "{{ post.date | date: "%B %d, %Y" }}",
       "categories": "{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}"
     }
