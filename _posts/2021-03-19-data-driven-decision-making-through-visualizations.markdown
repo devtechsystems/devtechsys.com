@@ -11,7 +11,7 @@ Is Featured: true
 You have collected your evaluation data, now what? 
 
 
-Sometimes piecing together, the most compelling story for your readers can be difficult. There are so many interesting findings and so many ways to present the data, but how do you ensure your readers will remember your findings? Presenting data in the form of data visualizations can be more palatable and memorable to your readers than dense text. However, starting that process can be overwhelming. 
+Sometimes piecing together the most compelling story for your readers can be difficult. There are so many interesting findings and so many ways to present the data, but how do you ensure your readers will remember your findings? Presenting data in the form of data visualizations can be more palatable and memorable to your readers than dense text. However, starting that process can be overwhelming. 
 
 ![Data Driven Visualization.png](/uploads/Data%20Driven%20Visualization.png)
 
