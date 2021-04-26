@@ -4,6 +4,7 @@ date: 2021-04-26 17:38:00 Z
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/Expansion%20of%20the%20monetary%20cone%20a%20cash%20crisis%20in%20a%20Venezuela-Teaser.png"
+Author: Dr. Jose Pineda and Gerardo Milano
 Is Featured: true
 ---
 
