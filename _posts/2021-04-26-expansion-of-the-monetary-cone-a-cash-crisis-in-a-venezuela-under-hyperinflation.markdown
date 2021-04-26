@@ -21,7 +21,7 @@ In June 2019, the Central Bank of Venezuela announced the expansion of the count
 
  **Chart 1**
 ![Venezuela Percentage of banknotes Year 2019.png](/uploads/Venezuela%20Percentage%20of%20banknotes%20Year%202019.png)
-Source: Central Bank of Venezuela, own calculations
+**Source**: Central Bank of Venezuela, own calculations
 
 By early March 2021, on the eve of the first year of the pandemic in Venezuela, the Central Bank of Venezuela (which is controlled by the Maduro regime) announced that it would introduce three new higher face value pieces in the Monetary cone, with the largest of these having a value of Bs.1,000,000 (the equivalent of about US $ 0.54(8)). These changes were like those introduced in Zimbabwe during the Mugabe regime when in 2008 the Central Bank of Zimbabwe issued a bill whose face value was ZW $ 100,000,000,000 in the context of an aggressive hyperinflationary process(9), where prices reached an average growth of 156.964%(10) at the end of that year compared to the previous year.
 
@@ -44,6 +44,8 @@ To conclude, the changes in the monetary cone will not contribute to the deceler
 9. See: https://www.theguardian.com/money/2016/may/14/zimbabwe-trillion-dollar-note-hyerinflation-investment.
 10. Source: International Monetary Fund database.
 11. Source: Venezuelan Observatory of Finance.
+12. In this case, the payments of Income Taxes in Venezuela, which are made during the same month.
+13. For example, in the same year as the introduction of the new monetary cone, inflation recovered its growth path until reaching a maximum of 65.2% inflation in August (source: Permanent Finance Commission of the National Assembly of Venezuela, own calculations). 
 
         
 
