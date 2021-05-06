@@ -38,10 +38,10 @@ Use cases that DevTech has outlined and that could potentially have biases assoc
 
 3. **Survey Improvement:** Employ AI tools to streamline field surveys by identifying questions or wording of questions in subsequent analysis and eliminating those that are not useful.
 
-**Potential Bias:***  A key bias to consider in this application would be the language of the survey. Many linguistic studies argue that words hold biases. To apply AI in this scenario properly, the researchers would need to consider gender bias in the wording or selection of questions.
+**Potential Bias:**  A key bias to consider in this application would be the language of the survey. Many linguistic studies argue that words hold biases. To apply AI in this scenario properly, the researchers would need to consider gender bias in the wording or selection of questions.
 
 
-**Conclusions and Recommendations:**
+**Conclusions and Recommendations**
 
 These suggested use cases could benefit USAID programming in terms of effectiveness and cost savings. However, without ethical guidelines, policies and bias testing set in place to mitigate biases towards gender or other marginalized groups, then the cost of potentially increasing inequality would severely limit the impact of AI on USAID programming. This is a conversation DevTech welcomes, and priority needs to be given to establish policies that consider gender equality at every stage of the AI life cycle, from process development and data collection to creating and testing algorithms.
 
