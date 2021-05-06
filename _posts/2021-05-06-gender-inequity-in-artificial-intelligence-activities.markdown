@@ -23,17 +23,21 @@ As with any new technological advancement, there is a residual inequality that t
 
 3. **Manual testing**. Another contributor to AI bias is during manual testing, where a human approves or rejects the AI output to refine the algorithm to improve its accuracy. This point allows the AI to learn and reflect the architects own personal biases when there is no bias testing. These biases are only heightened as a result of AI architects being overwhelmingly male, according to the World Economic Forum 2018 Global Gender Gap Report only 22% of AI professionals globally are female [6].
 
+
 **Potential Use Cases for Artificial Intelligence**
 
 Use cases that DevTech has outlined and that could potentially have biases associated with them include:
 
 1. **Onsite Quality Assurance:** Apply AI techniques to cross-reference data collected at health service facilities with that submitted by implementing partners, to identify patterns in service quality.
+
 **Potential bias:** The dataset used to test quality of service might be biased towards one gender and the test data could inadvertently result in a lower quality of service for women’s health issues or female patients. There may also be bias in model testing as the human architect’s bias could come out if not properly controlled for. There may need to be multiple individuals with diverse backgrounds to test the algorithm.
 
 2. **Optimize Household Cash Allocation:** AI technology could be used to create a household economic analysis that would determine the impact of allocated resources within households. The value of this would be that the algorithm would then be able to determine an optimal household resource allocation that takes into account contextual conditions.
+
 **Potential Bias:** The test datasets used may be bias towards men depending on how the data was extracted, i.e., surveys. Women’s spending patterns also differ from that of men, including higher consumption of education and health services, which may impact household economic and social improvement differently.
 
 3. **Survey Improvement:** Employ AI tools to streamline field surveys by identifying questions or wording of questions in subsequent analysis and eliminating those that are not useful.
+
 **Potential Bias:***  A key bias to consider in this application would be the language of the survey. Many linguistic studies argue that words hold biases. To apply AI in this scenario properly, the researchers would need to consider gender bias in the wording or selection of questions.
 
 
@@ -42,12 +46,21 @@ Use cases that DevTech has outlined and that could potentially have biases assoc
 These suggested use cases could benefit USAID programming in terms of effectiveness and cost savings. However, without ethical guidelines, policies and bias testing set in place to mitigate biases towards gender or other marginalized groups, then the cost of potentially increasing inequality would severely limit the impact of AI on USAID programming. This is a conversation DevTech welcomes, and priority needs to be given to establish policies that consider gender equality at every stage of the AI life cycle, from process development and data collection to creating and testing algorithms.
 
 
+
+
 **References**
+
+
 [1] https://blogs.worldbank.org/digital-development/how-ai-can-help-developing-countries-rebuild-after-pandemic
+
 [2]“Mrazek, Monique; O'Neill, Felicity. 2020. Artificial Intelligence and Healthcare in Emerging Markets. EMCompass; Note 91. International Finance Corporation, Washington, DC. © International Finance Corporation [](https://openknowledge.worldbank.org/handle/10986/34855)License: CC BY-NC-ND 3.0 IGO.”
+
 [3]Alex- Baldwin book
+
 [4][](https://arxiv.org/pdf/1810.01943.pdf)
+
 [5][](https://www.semanticscholar.org/paper/An-analysis-of-gender-bias-studies-in-natural-Costa-juss%C3%A0/540051a3cf9fa69c26fa9cc612826d513670ad6a)
+
 [6][](http://www3.weforum.org/docs/WEF_GGGR_2018.pdf)
 
 
