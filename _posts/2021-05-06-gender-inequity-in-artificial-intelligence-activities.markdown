@@ -1,6 +1,9 @@
 ---
 title: Gender Inequity in Artificial Intelligence Activities
 date: 2021-05-06 12:06:00 Z
+tags:
+- AI
+- gender inequity
 Practice Area:
 - Knowledge Management and Data Analytics
 Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(10).png"
