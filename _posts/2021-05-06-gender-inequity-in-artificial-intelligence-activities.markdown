@@ -51,17 +51,16 @@ These suggested use cases could benefit USAID programming in terms of effectiven
 **References**
 
 
-[1] https://blogs.worldbank.org/digital-development/how-ai-can-help-developing-countries-rebuild-after-pandemic
+1.  https://blogs.worldbank.org/digital-development/how-ai-can-help-developing-countries-rebuild-after-pandemic
 
-[2]“Mrazek, Monique; O'Neill, Felicity. 2020. Artificial Intelligence and Healthcare in Emerging Markets. EMCompass; Note 91. International Finance Corporation, Washington, DC. © International Finance Corporation https://openknowledge.worldbank.org/handle/10986/34855 License: CC BY-NC-ND 3.0 IGO.”
+2. “Mrazek, Monique; O'Neill, Felicity. 2020. Artificial Intelligence and Healthcare in Emerging Markets. EMCompass; Note 91. International Finance Corporation, Washington, DC. © International Finance Corporation. https://openknowledge.worldbank.org/handle/10986/34855 License: CC BY-NC-ND 3.0 IGO.”
 
-[3]Alex- Baldwin book
+3. Alex- Baldwin book
 
-[4]https://arxiv.org/pdf/1810.01943.pdf
+4. https://arxiv.org/pdf/1810.01943.pdf
 
-[5]https://www.semanticscholar.org/paper/An-analysis-of-gender-bias-studies-in-natural-Costa-juss%C3%A0/540051a3cf9fa69c26fa9cc612826d513670ad6a
+5. https://www.semanticscholar.org/paper/An-analysis-of-gender-bias-studies-in-natural-Costa-juss%C3%A0/540051a3cf9fa69c26fa9cc612826d513670ad6a
 
-[6]http://www3.weforum.org/docs/WEF_GGGR_2018.pdf
-
+6. http://www3.weforum.org/docs/WEF_GGGR_2018.pdf
 
 
