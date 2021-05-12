@@ -12,9 +12,8 @@ This Insight provides an overview of new evidence on the importance of early chi
 
 In 2004, Zambian early childhood education (ECE) programming was transferred from the Ministry of Local Government to the Ministry of General Education. Until 2014, private schools and churches offered ECE to the public at a fee. Following a national decree in 2014, the Government of the Republic of Zambia began enrolling ECE learners in centers annexed from primary schools. Despite directives to create ECE centers within existing school infrastructure, enrollment levels remain low at 26.1 percent and data gaps persist to tell the story of how ECE impacts children’s learning (Ministry of General Education, 2017). Ministry of General Education and local partners in Zambia agree with the global evidence base demonstrating that foundational learning begins in early childhood, and high-quality ECE programming has been found to have positive effects on subsequent learning outcomes (Yoshikawa & Kabay 2015; Weatherholt et al., 2018).
 
-[IMG_7884 Education Blog 2.JPG](/uploads/IMG_7884%20Education%20Blog%202.JPG)
-
-`Community members pump water in front of an ECE Center in Eastern Province. Photo taken with consent and courtesy of Mi-Mi Saunders, Deputy Program Manager, USAID Education Data activity`
+![IMG_7884 Education Blog 2.JPG](/uploads/IMG_7884%20Education%20Blog%202.JPG)
+Community members pump water in front of an ECE Center in Eastern Province. Photo taken with consent and courtesy of Mi-Mi Saunders, Deputy Program Manager, USAID Education Data activity.
 
 In partnership with the Ministry of General Education, DevTech sought to close the data gap on early childhood by conducting an original research study that compares learner performance levels and the ECE environment over time. The Baseline ECE Research Study addressed the following questions: 
 
@@ -33,7 +32,7 @@ In partnership with the Ministry of General Education, DevTech sought to close t
 The sample comprises fifty-two urban and rural Government-run schools from Eastern and Western provinces. DevTech assessed over 1000 learners using the Save the Children International Development and Early Learning Assessment (IDELA) tool and conducted 50 classroom observations using the Early Childhood Development (ECD) Measure Measuring Early Learning Environment (MELE) tool, a module of the Measuring Early Learning Quality and Outcomes (MELQO) These tools have been adapted for use within the Zambian context by various researchers. In this study, researchers received extensive training to use the research tools. DevTech assessed learners in Grade 1 that did and did not access ECE to draw differences between learner groups and observed classrooms to understand teacher pedagogies and the ECE environment according to the Ministry of General Education Standards.  
 Together with the Ministry of General Education, DevTech contributed to the ECE evidence base in Zambia by drawing the below conclusions. 
 
-# Learner Performance
+**Learner Performance**
 
 
 Overall, DevTech measured school readiness as an average of the IDELA assessment domains: emergent numeracy, emergent literacy, social & emotional skills, and motor development. As shown in Figure 1. ECE Entrant School Readiness Scores, learners entering ECE scored 45 percent at baseline with no statistical significance between boys and girls. ECE learners performed best in motor development, suggesting that playing or walking long distances to school may contribute to learners’ development skills. Conversely, entrant ECE learners in emergent literacy, numeracy, and social & emotional skills were lower, suggesting that while learners do possess some skill in these domains, there is significant room for improvement over the course of ECE programming. Generally, the most difficult tasks for learners were puzzle completion and letter identification. This may suggest that learners have difficulty problem-solving how parts contribute to a whole and have had infrequent exposure to written languages. 
@@ -42,16 +41,14 @@ In addition, DevTech researchers compared school readiness skill levels for Grad
 
 ![Fig. 1 and 2 EDU Blog.png](/uploads/Fig.%201%20and%202%20EDU%20Blog.png)
 
-# Teachers & the ECE Environment
+**Teachers & the ECE Environment**
 
 DevTech analyzed teacher pedagogies and the ECE environment through observing learning activities and environmental factors on a one – four scale. One represents the absence of an activity or condition, such as no observation of engaging children in gross motor activities or not having age-appropriate toilets for young learners. Four represents if the activity or condition is high-quality or offered frequently. Examples include a high-quality ECE classroom that has no safety hazards (e.g., broken glass or exposed nails) or learners having multiple opportunities to develop mathematics skills. Overall, most observed teachers did not provide learning opportunities that promote play-based pedagogies. Most teachers, for example, did not tell or read children stories or offer opportunities for children to have music or movement activities. Findings at the teacher-level suggest teachers may benefit from greater support or training to implement the Ministry of General Education’s guidance to utilize play-based teaching methods. In addition to teacher pedagogies, DevTech also observed classroom conditions against Ministry of General Education standards. While most classrooms tended to meet the minimum standard for having a water source and handwashing facilities, researchers noted handwashing practices and having age-appropriate toilet facilities for ECE learners were significantly below standards. Overall, more than half of ECE teachers primarily use repetition to provide instruction to ECE learners. Additionally, there is insufficient reading or classroom materials to support implementation of Ministry of General Education classroom standards. DevTech’s research reveals that there is significant room to provide capacity-building training for teachers and assist school staff by providing sufficient materials. 
 
-[IMG_8934 Zambia Education Blog.JPG](/uploads/IMG_8934%20Zambia%20Education%20Blog.JPG)
+![IMG_8934 Zambia Education Blog.JPG](/uploads/IMG_8934%20Zambia%20Education%20Blog.JPG)
+A Researcher assesses school readiness with a ECE learner in Western province, Zambia. Photo taken with consent and courtesy of Mi-Mi Saunders, Deputy Program Manager, USAID Education Data activity.
 
-`A Researcher assesses school readiness with a ECE learner in Western province, Zambia. Photo taken with consent and courtesy of Mi-Mi Saunders, Deputy Program Manager, USAID Education Data activity.`
-
-
-# Recommendations & Next Steps 
+**Recommendations & Next Steps**
 
 DevTech staff presented research findings and recommendations to the Permanent Secretary, Ministry of General Education to inform policy and ECE programming. Important recommendations arising from this research for the Ministry of General Education include to: 
 1.	Coach and mentor teachers in play-based literacy and numeracy pedagogies;
@@ -67,7 +64,7 @@ Following consultations with the Ministry of General Education at the national-l
 The research findings offer important data for the Ministry of General Education and various education stakeholders in Zambia. While the Ministry of General Education has made great strides in providing access to ECE—such as developing ECE infrastructure, providing in-service training for ECE teachers and introducing ECE teacher training in colleges of education—there is additional work to complete to ensure that learners receive equality ECE that will significantly contribute to school readiness and overall development of ECE learners.
 
 
-Notes: 
+**Notes: **
 
 Ministry of General Education. 2017. Zambia Educational Statistical Bulletin 2016. Lusaka: Ministry of General Education. http://www.moge.gov.zm/?wpfb_dl=50.
 
