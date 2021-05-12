@@ -15,7 +15,6 @@ Practice Area:
 Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(11).png"
 Author: Mi-Mi Saunders, Jacqueline Jere Folotiya, Carla Paredes and Miguel Nunez
 Is Featured: true
-layout: insights
 ---
 
 This Insight provides an overview of new evidence on the importance of early childhood education (ECE) in Zambia. DevTech through the USAID Education Data Activity project in Zambia presented original research on ECE to education stakeholders at the Comparative International Education Symposium on April 26, 2021. Under the USAID Education Data Activity, DevTech Systems, Inc., conducted this research in partnership with the University of Zambia Center for the Promotion of Literacy in Sub-Saharan Africa (CAPOLSA). 
