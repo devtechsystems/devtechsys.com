@@ -1,15 +1,6 @@
 ---
 title: Improving the Early Childhood Education Evidence Base in Zambia
 date: 2021-05-12 09:44:00 Z
-tags:
-- Zambia
-- education
-- local language instruction
-- Youth
-- Development
-- USAID
-- multilingual education
-- teacher language skills
 Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(11).png"
