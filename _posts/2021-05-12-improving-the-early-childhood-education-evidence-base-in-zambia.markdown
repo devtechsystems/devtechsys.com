@@ -64,7 +64,8 @@ Following consultations with the Ministry of General Education at the national-l
 The research findings offer important data for the Ministry of General Education and various education stakeholders in Zambia. While the Ministry of General Education has made great strides in providing access to ECE—such as developing ECE infrastructure, providing in-service training for ECE teachers and introducing ECE teacher training in colleges of education—there is additional work to complete to ensure that learners receive equality ECE that will significantly contribute to school readiness and overall development of ECE learners.
 
 
-**Notes: **
+
+Notes: 
 
 Ministry of General Education. 2017. Zambia Educational Statistical Bulletin 2016. Lusaka: Ministry of General Education. http://www.moge.gov.zm/?wpfb_dl=50.
 
