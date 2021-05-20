@@ -13,7 +13,7 @@ Is Featured: true
 ---
 
 ![EGSA Cost Analysis 1.png](/uploads/EGSA%20Cost%20Analysis%201.png)
-`Photo credit: Robert Pramudarto/USAID EGSA`
+Photo credit: Robert Pramudarto/USAID EGSA
 
 Following a successful delivery of the Cost-Benefit Analysis (CBA) workshop to staff of Directorate General (DG) Budget, Ministry of Finance in September 2020, the Ministry requested follow-up technical assistance to guide Budget Officers to apply CBA principles to government budget evaluation.
  
@@ -25,7 +25,7 @@ The “Technical Guideline for Application of Cost and Benefit Analysis Method f
 
 ![EGSA Cost Analysis 2.jpg](/uploads/EGSA%20Cost%20Analysis%202.jpg)
 
-`Participants discussed the application of CBA method on budget evaluation`
+Participants discussed the application of CBA method on budget evaluation
 
 One of the participants and Budget Analysts at the Indonesian Ministry of Finance, Ms. Riwayati, stated that the workshop gave her a newfound confidence in budget analysis. "The technical guideline will provide us with a step-by-step method of evaluating thematic budget performance. It will help us to scientifically analyze and improve the accountability aspect of our budget management and make informed decisions regarding the use of government budget,” stated Riwayati.
 
