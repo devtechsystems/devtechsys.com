@@ -13,6 +13,7 @@ Is Featured: true
 ---
 
 ![EGSA Promoting Evidence 1.jpg](/uploads/EGSA%20Promoting%20Evidence%201.jpg)
+
 From February 3 - 5, 2021, twenty technical staff from the Office of the Deputy of Micro Enterprises (formerly the Business Restructuring Unit) of the Indonesian Ministry of Cooperatives and Small-Medium Enterprises (SME) participated in a business regulations capacity building program. Facilitated by the USAID funded Economic Growth Support Activity (EGSA) project, this event aimed to promote the use Regulatory Impact Assessment (RIA) tools and frameworks to ensure the quality of regulations. 
 
 RIA provides a systematic approach to assess the effects of regulations before they are passed or promulgated. It is an important element of an evidence-based approach to policy making and can underpin the government’s capacity to ensure proper design and establishment of business-friendly regulations.
@@ -23,5 +24,5 @@ The Office of the Deputy of Micro Enterprises plans to adopt a rapid RIA as part
 
 Furthermore, the Ministry of Cooperatives and SMEs is considering a pilot adoption of the RIA at the subnational level in East Java and South Sulawesi provinces as part of the Integrated Business Service Centers for MSMEs (PLUT-KUMKM). The adoption in other USAID/Indonesia priority provinces such as DKI Jakarta and West Kalimantan are planned in 2022. 
 
-![EGSA Promoting Evidence 1-e92e2c.jpg](/uploads/EGSA%20Promoting%20Evidence%201-e92e2c.jpg)
+![EGSA Promoting Evidence 2.jpg](/uploads/EGSA%20Promoting%20Evidence%202.jpg)
 
