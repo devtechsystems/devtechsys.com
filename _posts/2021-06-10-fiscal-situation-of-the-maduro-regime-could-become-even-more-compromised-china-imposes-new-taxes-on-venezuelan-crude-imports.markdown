@@ -15,8 +15,6 @@ Author: Dr. Jose Pineda and Gerardo Milano
 Is Featured: true
 ---
 
-![DevTech Social Media Slides (12).png](/uploads/DevTech%20Social%20Media%20Slides%20(12).png)
-
 **Introduction**
 
 The Venezuelan oil industry has been part of the economic collapse that country has experienced since 2014 (reinforcing the collapse in other sectors and vice versa). From March 2016 to April 2021, oil production plummeted by 81.7% (1) from 2,430,000 to 445,000 barrels per day, levels similar to (and even lower than) those reached by the country after the oil strike at the end of 2002 (2). This drastic reduction in production has also significantly affected Venezuelan oil exports, which stood at 941,300 barrels per day in 2019, a decrease of 36.9% compared to 2018, as well as a decrease of 55.1% compared to 2016 (3). In 2019, given the political instability and the fraudulent elections that occurred in Venezuela during the previous year, the United States Department of the Treasury ordered the freezing of all the properties and assets of the state oil company PDVSA under US jurisdiction, and forbade  transactions with Venezuelans associated with that company (4); as a mechanism to force the Maduro regime to release political prisoners, hold a free and fair election, and progress toward a democratic transition (5).
@@ -35,6 +33,7 @@ China is currently carrying out an accelerated process of restructuring and adap
 
 As of June 12, 2021, an import tax will come into force in China on heavy and extra-heavy crude from Iran, Canada and Venezuela, whose value ranges between US $30/bl to US $40/bl (14). This will affect about 350,000 barrels. For China, the creation of this tax responds more to the need to control the domestic oil market rather than reinforcing its policy of reducing environmental pollution. In fact, it is estimated that China's demand for crude from the Middle East will increase in the coming months, with the aim of reactivating the economy and internal movement in the country after the crisis caused by the COVID-19 pandemic last year (15). 
  
+
 **Compromise financial stability of the Maduro regime**
  
 This new tax will worsen cash flow problems for Venezuela, given that shipments of Venezuelan crude oil will be subject to heavy discounts as a result of the pressure exerted by the United States government through sanctions on clandestine oil exports, reflecting both the risks of sanctions, as well as the quality of the crude oil itself (16). This will discourage Beijing from continuing to buy Venezuelan crude, and while more revenues may be generated through other clandestine operations (17), these Chinese taxes may compromise the financial stability of the Maduro regime.
