@@ -6,7 +6,7 @@ categories:
 - pfm
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
-Teaser Image: "/uploads/Strengthening%20Sudan%E2%80%99s%20PFM%20Teaser.png"
+Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(16).png"
 Author: "Prepared by Dr. Mark Gallagher.                                         \n
   \                                                                                  *
   This article draws on research carried out for the U.S. Agency for International
