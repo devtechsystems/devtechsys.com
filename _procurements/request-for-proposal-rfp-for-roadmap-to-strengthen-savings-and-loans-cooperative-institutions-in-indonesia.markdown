@@ -3,7 +3,9 @@ title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans
   Institutions in Indonesia”
 date: 2021-06-24 12:11:00 Z
 position: 0
-Description: "[Request for Proposal RFP EGSA (2).JPG](/uploads/Request%20for%20Proposal%20RFP%20EGSA%20(2).JPG)\n\nDevTech
+Full Title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans
+  Cooperative Institutions in Indonesia”
+Description: "![Request for Proposal RFP EGSA (2).JPG](/uploads/Request%20for%20Proposal%20RFP%20EGSA%20(2).JPG)\n\n\nDevTech
   Systems, Inc.(DevTech) is an economic data-driven consulting firm dedicated to development,
   with over 30 years of experience providing advisory services and technical assistance
   to government, private sector, and civil society stakeholders in more than 100 countries.
