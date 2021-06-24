@@ -13,21 +13,21 @@ Description: "![Roadmap to Strengthen Savings and Loans Cooperative Institutions
   DevTech specializes in economics and data-driven insights that inform policy making,
   analytical products and services. DevTech’s four practice areas are Economic and
   Data Sciences; Monitoring and Evaluation, Research and Learning (MERL); Education,
-  Gender, and Youth Development (EGY); and Public Financial Management (PFM).\nDevTech
+  Gender, and Youth Development (EGY); and Public Financial Management (PFM).\n\nDevTech
   is implementing the United States Agency for International Development (USAID) funded
   Economic Growth Support Activity (EGSA). EGSA supports the government of Indonesia
   and other stakeholders with i) evidence-based decision making (ii) technical assistance
   to improve GOI capacity in public financial management and related governance; and
   (iii) capacity building to improve the business enabling environment for foreign
-  and domestic enterprises. \nEGSA is soliciting proposals to create a grand design
+  and domestic enterprises. \n\nEGSA is soliciting proposals to create a grand design
   or roadmap to strengthen the institutional environment for savings and loans (S&L)
   cooperatives. This will involve feasibility review for the establishment of an apex
   body at the provincial level, in particular in South Sulawesi and East Java. EGSA
   is funded by the United States Agency for International Development (USAID) and
   is subject to all applicable Federal Acquisition Regulations (FASR) and AID Acquisition
   Regulations (AIDAR). Awards made in response to this Request for Proposals (RFP)
-  will be subject to these US government procurement regulations.\n\nTo read the complete
-  proposal: [RFP-Creating Roadmap for Apex Institution .docx](/uploads/RFP-Creating%20Roadmap%20for%20Apex%20Institution%20.docx)\n"
+  will be subject to these US government procurement regulations.\n\n\nTo read the
+  complete proposal: [RFP-Creating Roadmap for Apex Institution .docx](/uploads/RFP-Creating%20Roadmap%20for%20Apex%20Institution%20.docx)\n"
 Email Address: EGSA@devtechsys.com
 Is Open: true
 ---
@@ -39,6 +39,7 @@ DevTech Systems, Inc.(DevTech) is an economic data-driven consulting firm dedica
 DevTech is implementing the United States Agency for International Development (USAID) funded Economic Growth Support Activity (EGSA). EGSA supports the government of Indonesia and other stakeholders with i) evidence-based decision making (ii) technical assistance to improve GOI capacity in public financial management and related governance; and (iii) capacity building to improve the business enabling environment for foreign and domestic enterprises. 
 
 EGSA is soliciting proposals to create a grand design or roadmap to strengthen the institutional environment for savings and loans (S&L) cooperatives. This will involve feasibility review for the establishment of an apex body at the provincial level, in particular in South Sulawesi and East Java. EGSA is funded by the United States Agency for International Development (USAID) and is subject to all applicable Federal Acquisition Regulations (FASR) and AID Acquisition Regulations (AIDAR). Awards made in response to this Request for Proposals (RFP) will be subject to these US government procurement regulations.
+
 
 
 To read the complete proposal:[RFP-Creating Roadmap for Apex Institution .docx](/uploads/RFP-Creating%20Roadmap%20for%20Apex%20Institution%20.docx)
