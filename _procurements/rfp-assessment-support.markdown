@@ -1,6 +1,7 @@
 ---
 title: 'RFP: Kenya Assessment Support'
 date: 2020-10-09 19:45:00 Z
+published: false
 position: 3
 Full Title: 'Request for Proposal: Kenya Assessment Support'
 Description: "The purpose of this Request for Proposals (RFP) is to invite prospective
