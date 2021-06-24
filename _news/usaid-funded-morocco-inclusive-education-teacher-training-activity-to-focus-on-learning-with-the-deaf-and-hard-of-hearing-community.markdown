@@ -2,6 +2,7 @@
 title: USAID-Funded Morocco Inclusive Education Teacher Training Activity To Focus
   On Learning With The Deaf And Hard Of Hearing Community
 date: 2021-06-24 16:32:00 Z
+Banner Image: "/uploads/DevTech%20Social%20Media%20Slides%20(15).png"
 ---
 
 A new U.S. government program to strengthen the Government of Morocco’s (GoM) system of teacher preparation in Deaf Education across the country has been awarded to DevTech Systems, Inc. 
@@ -16,4 +17,4 @@ DevTech will implement the program with the [University of Tennessee, Center on 
 
 Together, they will provide technical assistance and collaborate with the GoM in the development, roll-out, and tracking of teacher preparation, institutional strengthening and implementation of policies to incorporate international best practices for inclusive education for the Deaf and Hard of Hearing community in Morocco. 
 
-For further information contact Kaitlin Dominski kdominski@devtechsys.com 
+For further information contact: Kaitlin Dominski kdominski@devtechsys.com 
