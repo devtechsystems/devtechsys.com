@@ -2,11 +2,13 @@
 title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans Cooperative
   Institutions in Indonesia”
 date: 2021-06-24 12:11:00 Z
+tags:
+- rfp
+- indonesia
 position: 0
 Full Title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans
   Cooperative Institutions in Indonesia”
-Description: "![Roadmap to Strengthen Savings and Loans Cooperative Institutions in
-  Indonesia.png](/uploads/Roadmap%20to%20Strengthen%20Savings%20and%20Loans%20Cooperative%20Institutions%20in%20Indonesia.png)\n\nDevTech
+Description: "![EGSA-RFP 6.25.2021.PNG](/uploads/EGSA-RFP%206.25.2021.PNG)\n\nDevTech
   Systems, Inc.(DevTech) is an economic data-driven consulting firm dedicated to development,
   with over 30 years of experience providing advisory services and technical assistance
   to government, private sector, and civil society stakeholders in more than 100 countries.
@@ -27,12 +29,12 @@ Description: "![Roadmap to Strengthen Savings and Loans Cooperative Institutions
   is subject to all applicable Federal Acquisition Regulations (FASR) and AID Acquisition
   Regulations (AIDAR). Awards made in response to this Request for Proposals (RFP)
   will be subject to these US government procurement regulations.\n\n\nTo read the
-  complete proposal: [RFP-Creating Roadmap for Apex Institution .docx](/uploads/RFP-Creating%20Roadmap%20for%20Apex%20Institution%20.docx)\n"
+  complete proposal:[RFP-Creating Roadmap for Apex Institution .docx](/uploads/RFP-Creating%20Roadmap%20for%20Apex%20Institution%20.docx)\n\n"
 Email Address: EGSA@devtechsys.com
 Is Open: true
 ---
 
-[Roadmap to Strengthen Savings and Loans Cooperative Institutions in Indonesia.png](/uploads/Roadmap%20to%20Strengthen%20Savings%20and%20Loans%20Cooperative%20Institutions%20in%20Indonesia.png)
+![EGSA-RFP 6.25.2021.PNG](/uploads/EGSA-RFP%206.25.2021.PNG)
 
 DevTech Systems, Inc.(DevTech) is an economic data-driven consulting firm dedicated to development, with over 30 years of experience providing advisory services and technical assistance to government, private sector, and civil society stakeholders in more than 100 countries. DevTech specializes in economics and data-driven insights that inform policy making, analytical products and services. DevTech’s four practice areas are Economic and Data Sciences; Monitoring and Evaluation, Research and Learning (MERL); Education, Gender, and Youth Development (EGY); and Public Financial Management (PFM).
 
