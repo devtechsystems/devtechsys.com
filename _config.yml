@@ -20,7 +20,7 @@ collections:
     output: true
   news:
     title: News
-    output: false
+    output: true
   office-locations:
     title: Office Locations
     output: false
