@@ -1,6 +1,6 @@
 ---
 title: Home
-date: 2017-05-30 19:05:00 Z
+date: 2017-05-30 15:05:00 -04:00
 position: 0
 Hero Section:
   Tagline: Innovative Solutions for Development
@@ -18,6 +18,7 @@ Insights Section:
 News Section:
   Title: Recent News Stories
   Button Label: View More
+  Key: More
 Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
