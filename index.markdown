@@ -17,7 +17,7 @@ Insights Section:
   Button Label: Read More
 News Section:
   Title: Recent News Stories
-  Button Label: More
+  Button Label: View More
 Practice Areas Section:
   Title: Our Practice Areas
   Subtitle: Thirty Years of Solutions
