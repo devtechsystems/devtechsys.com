@@ -1,7 +1,7 @@
 ---
 title: DevTech Systems has been recognized as the Most Promising Data Visualization
   Company of 2020 by the CIO Review publication.
-date: 2021-01-06 18:40:00 Z
+date: 2021-01-06 13:40:00 -05:00
 Banner Image: "/uploads/DT%20Data%20Visualization%20Consulting%20Company%20of%202020.JPG"
 ---
 

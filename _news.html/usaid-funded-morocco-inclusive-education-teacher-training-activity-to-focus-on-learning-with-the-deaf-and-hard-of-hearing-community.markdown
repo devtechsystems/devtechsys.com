@@ -1,7 +1,7 @@
 ---
 title: USAID-Funded Morocco Inclusive Education Teacher Training Activity To Focus
   On Learning With The Deaf And Hard Of Hearing Community
-date: 2021-06-24 16:32:00 Z
+date: 2021-06-24 12:32:00 -04:00
 Banner Image: "/uploads/DevTech%20Social%20Media%20Slides%20(15).png"
 ---
 

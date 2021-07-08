@@ -18,7 +18,7 @@ collections:
   our-team:
     title: Management Team
     output: true
-  news:
+  news.html:
     title: News
     output: true
   office-locations:

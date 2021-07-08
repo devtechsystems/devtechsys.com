@@ -1,6 +1,6 @@
 ---
 title: DevTech awarded 5 year contract with Visa
-date: 2019-11-11 19:42:00 Z
+date: 2019-11-11 14:42:00 -05:00
 Banner Image: "/uploads/Visa.png"
 ---
 

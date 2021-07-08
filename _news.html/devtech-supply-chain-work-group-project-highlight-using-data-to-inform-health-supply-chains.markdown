@@ -1,7 +1,7 @@
 ---
 title: DevTech Supply Chain Work Group Project Highlight – Using Data to Inform Health
   Supply Chains!
-date: 2021-01-07 20:10:00 Z
+date: 2021-01-07 15:10:00 -05:00
 Banner Image: "/uploads/Supply%20Chain%20Blog%202.png"
 ---
 

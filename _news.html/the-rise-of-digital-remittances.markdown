@@ -1,6 +1,6 @@
 ---
 title: The Rise of Digital Remittances
-date: 2021-04-15 12:47:00 Z
+date: 2021-04-15 08:47:00 -04:00
 Banner Image: "/uploads/Visa-%20Digital%20Remittances%20Front%201.png"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: DevTech awarded Economic Growth Support Activity (EGSA) task order in Indonesia
   under the USAID PFM II IDIQ
-date: 2019-10-16 11:57:00 Z
+date: 2019-10-16 07:57:00 -04:00
 ---
 
 DevTech Systems won the Economic Growth Support Activity (EGSA) task order under the Public Financial Management II (PFM II) Indefinite Delivery, Indefinite Quantity (IDIQ). The two-year project supports USAID/Indonesia’s economic growth efforts.  

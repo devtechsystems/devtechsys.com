@@ -1,7 +1,7 @@
 ---
 title: DevTech to Present at the University of Michigan Sustainability and Development
   Conference.
-date: 2019-10-07 20:00:00 Z
+date: 2019-10-07 16:00:00 -04:00
 Banner Image: "/uploads/UMich%20Banner.png"
 ---
 

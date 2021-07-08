@@ -1,7 +1,7 @@
 ---
 title: DevTech will present at 2019 Comparative and International Education Society
   Conference
-date: 2019-04-03 12:35:00 Z
+date: 2019-04-03 08:35:00 -04:00
 Banner Image: "/uploads/CIES%20Annct%20Banner.png"
 ---
 
