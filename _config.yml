@@ -41,6 +41,9 @@ collections:
   publications:
     title: Publications
     output: false
+  recent-news:
+    title: Recent News
+    output: true
   uploads:
     title: Uploads
     output: true
