@@ -1,7 +1,7 @@
 ---
 title: News
 date: 2021-07-09 15:32:00 -04:00
-Title: Recent News
+Title: News
 News:
 - USAID-Funded Morocco Inclusive Education Teacher Training Activity To Focus On Learning
   With The Deaf And Hard Of Hearing Community
