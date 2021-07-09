@@ -1,6 +1,6 @@
 ---
 title: Rebecca Zimmerman Appointed Deputy Assistant Secretary of Defense
-date: 2021-02-19 16:25:00 Z
+date: 2021-02-19 11:25:00 -05:00
 Banner Image: "/uploads/Rebecca%20Zimmerman%20Announcement-396264.png"
 ---
 

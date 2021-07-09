@@ -2,7 +2,7 @@
 title: DevTech to perform Evaluation of Econ@State Web Portal by the Department of
   State’s (DoS) Office of Economic Policy and Public Diplomacy in the Bureau of Economic
   and Business Affairs (EB/EPPD)
-date: 2019-10-15 17:36:00 Z
+date: 2019-10-15 13:36:00 -04:00
 ---
 
 DevTech has been awarded the Evaluation of Econ@State Web Portal by the Department of State’s (DoS) Office of Economic Policy and Public Diplomacy in the Bureau of Economic and Business Affairs (EB/EPPD). This task order was awarded under the DoS Performance Management and Evaluation Services IDIQ, Functional Area 7. 

@@ -41,8 +41,8 @@ collections:
   publications:
     title: Publications
     output: false
-  supply-chain-working-group:
-    title: Supply Chain Working Group
+  recent-news:
+    title: Recent News
     output: true
   uploads:
     title: Uploads

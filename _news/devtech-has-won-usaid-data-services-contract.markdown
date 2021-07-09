@@ -1,6 +1,6 @@
 ---
 title: DevTech Has Won USAID Data Services Contract
-date: 2018-07-11 09:00:00 Z
+date: 2018-07-11 05:00:00 -04:00
 ---
 
 DevTech Systems is pleased to announce it has won the USAID Data Services contract.  The project, currently known as ADVISE (to be renamed USAID Data Services in 2018), is a follow-on to the Economic Analysis and Data Services (EADS) contract DevTech held from 2007-2018. ADVISE – Analytics, Data, Visualization, and Information Services – merges under one contract four current projects under USAID’s Management Bureau, Chief Information Officer: EADS, USAID’s library (including the Development Experience Clearinghouse – DEC), The Development Data Library (DDL), and the Enterprise Reporting Portal. In addition, ADVISE will work on implementing data governance procedures and standards for the Agency and on unifying database systems and portals.

@@ -1,7 +1,7 @@
 ---
 title: DevTech Systems Hires Leon “Skip” Waskin to Lead Business Development and Program
   Management Operations
-date: 2018-05-22 10:00:00 Z
+date: 2018-05-22 06:00:00 -04:00
 ---
 
 DevTech Systems today announced it has hired Leon “Skip” Waskin as Senior Director of Operations. He brings more than 35 years of international development experience and will be focused on shaping the firm’s strategic business development efforts and helping to manage business expansion and program management operations.

@@ -1,6 +1,6 @@
 ---
 title: DevTech Launches Supply Chain Analytics Working Group
-date: 2020-10-07 13:17:00 Z
+date: 2020-10-07 09:17:00 -04:00
 Banner Image: "/uploads/Working%20Group%20Launch%20Banner.png"
 ---
 

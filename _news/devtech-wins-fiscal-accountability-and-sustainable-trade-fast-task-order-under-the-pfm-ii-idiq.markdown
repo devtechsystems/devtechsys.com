@@ -1,7 +1,7 @@
 ---
 title: DevTech wins Fiscal Accountability and Sustainable Trade (FAST) task order
   under the PFM II IDIQ
-date: 2019-10-07 12:19:00 Z
+date: 2019-10-07 08:19:00 -04:00
 ---
 
 DevTech Systems won the Fiscal Accountability and Sustainable Trade (FAST) task order under the Public Financial Management II (PFM II) Indefinite Delivery, Indefinite Quantity (IDIQ). The five-year project supports the Bureau for Economic Growth, Education, and Environment’s offices of Economic Policy (E3/EP) and Trade and Regulatory Reform (E3/TRR) in providing rapid and on-demand technical assistance to USAID missions. 

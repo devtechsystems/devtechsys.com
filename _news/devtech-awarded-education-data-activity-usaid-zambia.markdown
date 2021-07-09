@@ -1,6 +1,6 @@
 ---
 title: DevTech Awarded Education Data Activity (USAID/Zambia)
-date: 2018-05-16 09:40:00 Z
+date: 2018-05-16 05:40:00 -04:00
 position: 0
 layout: news
 ---

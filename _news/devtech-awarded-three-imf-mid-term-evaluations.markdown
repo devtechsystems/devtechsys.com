@@ -1,6 +1,6 @@
 ---
 title: DevTech awarded three IMF mid-term evaluations
-date: 2019-10-10 15:24:00 Z
+date: 2019-10-10 11:24:00 -04:00
 ---
 
 DevTech was awarded the International Monetary Fund (IMF) External Evaluation Services Provider contract for the External Mid-Term Evaluation of three capacity development subaccounts: the Caribbean Regional Technical Assistance Center (CARTAC), the Middle East Regional Technical Assistance Center (METAC), and the Switzerland Technical Assistance Sub-Account (SECO). 

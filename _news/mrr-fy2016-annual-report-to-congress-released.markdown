@@ -1,7 +1,7 @@
 ---
 title: DevTech is proud to announce the release of its Microenterprise Results Reporting
   (MRR) FY2016 annual report to Congress
-date: 2017-07-31 19:56:00 Z
+date: 2017-07-31 15:56:00 -04:00
 position: 2
 ---
 
