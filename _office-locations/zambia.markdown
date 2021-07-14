@@ -1,7 +1,7 @@
 ---
 title: Zambia
-date: 2018-11-27 19:49:00 Z
+date: 2018-11-27 14:49:00 -05:00
 Address Text: Lusaka, Zambia
-Location Image: "/uploads/lusaka-zambia-70eb1d.jpg"
+Location Image: "/uploads/lusaka-zambia.jpg"
 ---
 
