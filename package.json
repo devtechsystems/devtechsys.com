@@ -41,7 +41,7 @@
     "clean-css-brunch": "^2.10.0",
     "js-yaml": "^3.13.1",
     "uglify-js-brunch": "^2.10.0",
-    "xlsx": "^0.11.3"
+    "xlsx": "^0.17.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
