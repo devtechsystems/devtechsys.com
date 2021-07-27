@@ -1,7 +1,7 @@
 ---
 title: 'Learning within Learning: Picture Books and their effects on children''s cognitive
   development'
-date: 2019-11-18 15:51:00 Z
+date: 2019-11-18 10:51:00 -05:00
 Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/Edu%20Series%20Teaser-cde59f.jpg"
@@ -23,3 +23,5 @@ The baseline EGRA results highlight the on-going need for innovative approaches 
 
 Source:
 1. Gurdon, M.C., (2019). The Secret Power of the Children’s Picture Books. Accessed from: [https://www.wsj.com/articles/the-secret-power-of-the-childrens-picture-book-11547824940?mod=e2fb&fbclid=IwAR3-lPtGtPZDrdBwKbXAQsxf8EgiMtrJSUxXb8tIdf5j9POT5ZxQwnnWjHA ](https://www.wsj.com/articles/the-secret-power-of-the-childrens-picture-book-11547824940?mod=e2fb&fbclid=IwAR3-lPtGtPZDrdBwKbXAQsxf8EgiMtrJSUxXb8tIdf5j9POT5ZxQwnnWjHA)
+
+2. DevTech Systems, Inc. U.S. Agency for International Development (USAID), 2018, USAID/ZAMBIA Education Data Activity: Early-Grade Reading Assessment in Five Target Provinces, 2018 Baseline Report. Accessed from: [https://pdf.usaid.gov/pdf_docs/PA00TZM9.pdf](https://pdf.usaid.gov/pdf_docs/PA00TZM9.pdf)
