@@ -1,8 +1,16 @@
 ---
 title: Public Financial Management, Democracy, and Governance in Turbulent Times
 date: 2021-08-18 08:28:00 -04:00
+tags:
+- pfm
+- Mark Gallagher
+- financial management
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Copy%20of%20Untitled%20(3).png"
+Banner Image: "/uploads/2021%20DRG%20Conference.png"
+Author: Audra Killian
+Is Featured: true
 ---
 
 The COVID-19 pandemic, and the effects of the associated lockdowns and border closures, have caused many to question the ability of governments to manage their public finances, and plan and prepare for fiscal risks. How shocks are handled is often indicative of a country’s larger public financial management system, which is tasked with numerous duties, including domestic revenue mobilization, budget planning and execution, public procurement, and debt management. While seemingly separate from the discussion of democracy, the mismanagement and corruption of public finances negatively affects how citizens view their government and reduces their confidence in their elected officials.  
