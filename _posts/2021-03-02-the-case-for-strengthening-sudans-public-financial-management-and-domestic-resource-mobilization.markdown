@@ -1,7 +1,7 @@
 ---
 title: The Case for Strengthening Sudan’s Public Financial Management and Domestic
   Resource Mobilization
-date: 2021-03-02 19:57:00 Z
+date: 2021-03-02 14:57:00 -05:00
 categories:
 - pfm
 Practice Area:
@@ -10,8 +10,7 @@ Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(16).png"
 Author: "Prepared by Dr. Mark Gallagher.                                         \n
   \                                                                                  *
   This article draws on research carried out for the U.S. Agency for International
-  Development by DevTech experts, Elizabeth Kariuki, Paul Banerjee, Niaz Shinwari,
-  and Mark Gallagher."
+  Development by DevTech experts, Elizabeth Kariuki, Paul Banerjee, and Mark Gallagher."
 Is Featured: true
 ---
 
