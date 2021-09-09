@@ -5,6 +5,6 @@ Document URL: https://pdf.usaid.gov/pdf_docs/PA00WFN8.pdf
 Practice Area:
 - Education, Gender and Youth
 Project:
-- Community Action For Reading And Security (cars) Activity In Nicaragua
+- Community Action For Reading And Security (CARS) Activity In Nicaragua
 ---
 
