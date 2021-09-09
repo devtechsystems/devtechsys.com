@@ -52,3 +52,8 @@ In October 2016, USAID/Nigeria awarded DevTech Systems Inc. the Support for Stra
 * Foster country ownership and sustainability for program improvement and services delivery through data us.
 
 The S4SIPMS Project has a set target of 782 Site Improvement through Monitoring Systems (SIMS) assessments given to the USAID Mission to be conducted in FY17.  This number includes 586 initial SIMS assessments by DEVTECH Systems. The Nigeria S4SIPMS project has met all SIMS Assessment targets during its project history.
+
+
+
+### Related Publications: ###
+  * [USAID/Nigeria midterm evaluation of the promoting the quality of medicines activity](	https://pdf.usaid.gov/pdf_docs/PA00TDS6.pdf)
