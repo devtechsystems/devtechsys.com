@@ -31,5 +31,8 @@ DevTech is tasked with supporting rapid, sustainable, and equitable economic gro
   * [FAST First Quarterly Report](	https://pdf.usaid.gov/pdf_docs/PA00WB8X.pdf)
 * [FAST Second Quarterly Report](	https://pdf.usaid.gov/pdf_docs/PA00WJG1.pdf)
 * [Second Annual Workplan](	https://pdf.usaid.gov/pdf_docs/PA00X6DS.pdf)
+* [FAST Quarterly report April1, 2020through June30, 2020](https://pdf.usaid.gov/pdf_docs/PA00X6DP.pdf)
+* [FAST first Annual Report](	https://pdf.usaid.gov/pdf_docs/PA00X6DR.pdf)
+* [FAST First  Annual Workplan](		https://pdf.usaid.gov/pdf_docs/PA00X6F1.pdf)
 
 
