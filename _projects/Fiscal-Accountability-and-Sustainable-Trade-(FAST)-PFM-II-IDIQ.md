@@ -1,5 +1,5 @@
 ---
-title: Fiscal Accountability And Sustainable Trade (FAST) PFM II IDIQ
+title: Fiscal Accountability And Sustainable Trade (fast) Pfm Ii Idiq
 Project Title: Fiscal Accountability and Sustainable Trade (FAST), PFM II IDIQ
 Start Year: 2019
 End Year: 2024
