@@ -6,7 +6,7 @@ Document URL: https://dec.usaid.gov/dec/content/Detail.aspx?q=KERvY3VtZW50cy5Jbn
 Practice Area:
 - Education, Gender and Youth
 Project:
-- Community Action for Reading and Security (CARS) Activity in Nicaragua
+- Community Action For Reading And Security (cars) Activity In Nicaragua
 Publications_slug: Community-Action-for-Reading-and-Security-(CARS)-Activity-in-Nicaragua
 ---
 
