@@ -6,5 +6,6 @@ Practice Area:
 - Education, Gender and Youth
 Project:
 - Community Action For Reading And Security (CARS) Activity In Nicaragua
+Publications_slug: Community-Action-for-Reading-and-Security-(CARS)-Activity-in-Nicaragua
 ---
 
