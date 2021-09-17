@@ -1,12 +1,21 @@
 ---
 title: Gender Inequity in Artificial Intelligence Activities
-date: 2021-05-06 12:06:00 Z
+date: 2021-05-06 08:06:00 -04:00
+categories:
+- Data Solutions
 tags:
 - AI
 - gender inequity
 Practice Area:
 - Knowledge Management and Data Analytics
 Teaser Image: "/uploads/DevTech%20Teaser%20Image%20for%20Siteleaf%20(10).png"
+SEO Excerpt Overwrite: How can gender inequity be addressed with Artificial Intelligence?
+  While AI holds the potential for emerging economies to reinvent their economic infrastructure
+  to accommodate and overcome development challenges and build dynamic economies,
+  there is the inherent risk of algorithmic discrimination and bias (i.e. systematic
+  and repeatable error within the program that creates unfair outcomes). At DevTech
+  we have outlined use cases in international development that could potentially have
+  biases associated with them.
 Author: Facundo Alberdi, Jordan Raupp and Alex Cortez
 Is Featured: true
 ---
