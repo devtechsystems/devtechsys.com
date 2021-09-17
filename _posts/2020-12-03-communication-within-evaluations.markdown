@@ -16,7 +16,6 @@ Although each evaluation is different, often times most operate from a similar t
 
 Similarly, it is important to pre-plan quality assurance checks. Because evaluations involve so many stakeholders there are several layers of quality assurance that should be baked into each evaluation. Establishing checklists and rubrics for each stage of the evaluation and distributing them ahead of time automatically assures that all parties understand how deliverables will be assessed before submission to the client. 
 
-
 Depending on the phase in the evaluation, these checklists should then be reviewed by different layers of stakeholders. For example, internal deliverables should be reviewed and assessed by the evaluation team lead, and field office counterpart, while Mission deliverables mandated in the scope of work should have another layer of review and additionally be examined by the home office. These practices are particularly important during COVID-19 since previously stakeholders were working side by side in the field, which allowed for on-the-fly quality assurance; unfortunately, this is not currently possible. Once again pre-planning for how deliverables will be reviewed and when stakeholders should provide quality assurance eliminates this pitfall of failing to plan quality assurance checks, and instead sets the evaluation team up for success. 
  
 
