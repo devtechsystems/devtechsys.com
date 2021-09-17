@@ -31,3 +31,11 @@ DevTech is tasked with providing rapid access to expert technical assistance and
 ### Related Publications: ###
   * [Rapid education and risk analysis Colombia](	https://pdf.usaid.gov/pdf_docs/PA00X363.pdf)
 * [Midterm performance evaluation : the Latin America and Caribbean reads capacity program](		https://pdf.usaid.gov/pdf_docs/PA00W5R8.pdf)
+* [Colombia RERA Report (Spanish)](		https://dec.usaid.gov/dec/GetDoc.axd?ctID=ODVhZjk4NWQtM2YyMi00YjRmLTkxNjktZTcxMjM2NDBmY2Uy&rID=NTc3Mzc4)
+* [Colombia RERA Report (English)](		https://pdf.usaid.gov/pdf_docs/PA00X363.pdf)
+* [Colombia RERA Companion Brief (English)](		https://dec.usaid.gov/dec/GetDoc.axd?ctID=ODVhZjk4NWQtM2YyMi00YjRmLTkxNjktZTcxMjM2NDBmY2Uy&amp;rID=NTc4MjI3)
+* [Dominican Republic RERA Report (English)](https://dec.usaid.gov/dec/GetDoc.axd?ctID=ODVhZjk4NWQtM2YyMi00YjRmLTkxNjktZTcxMjM2NDBmY2Uy&amp;rID=NTc3Mzc5&amp;pID=NTYw&amp;attchmnt=True&amp;uSesDM=False&amp;rIdx=MzAxODYz&amp;rCFU=)
+* [Dominican Republic RERA Report (Spanish)](https://pdf.usaid.gov/pdf_docs/PA00WNWJ.pdf)
+* [Peru Legacy book](https://dec.usaid.gov/dec/GetDoc.axd?ctID=ODVhZjk4NWQtM2YyMi00YjRmLTkxNjktZTcxMjM2NDBmY2Uy&amp;rID=NTc3Mzc1)
+* [LAC Reads Performance Evaluation Report](hhttps://pdf.usaid.gov/pdf_docs/PA00W5R8.pdf)
+
