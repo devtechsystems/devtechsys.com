@@ -1,7 +1,8 @@
 ---
 title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans Cooperative
   Institutions in Indonesia”
-date: 2021-06-24 12:11:00 Z
+date: 2021-06-24 08:11:00 -04:00
+published: false
 tags:
 - rfp
 - indonesia
