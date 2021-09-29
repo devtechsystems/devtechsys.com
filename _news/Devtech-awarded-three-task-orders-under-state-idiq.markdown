@@ -12,6 +12,7 @@ tags:
 - internet freedom
 - State Department
 - EUR/ACE
+Banner Image: "/uploads/dashboard.jpg"
 ---
 
 DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Internet Freedom Portfolio Activities (IFPA)**, the **Reform Analytics Project (RAP)**, and the **Evaluation of the Fiscal Transparency Innovation Fund (FTIF)**. 
@@ -23,5 +24,3 @@ DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Int
 > Finally, the FTIF task order will support the Bureau of Economic and Business Affairs to improve processes for selecting, monitoring, and measuring technical assistance efforts that are designed and implemented--primarily by U.S. diplomatic missions abroad--to build public and institutional support for strong fiscal transparency regimes and reinforce U.S. Government foreign assistance policy priorities.
 
 The total period of performance for each task order is one year.
-
-![dashboard.jpg](/uploads/dashboard.jpg)
