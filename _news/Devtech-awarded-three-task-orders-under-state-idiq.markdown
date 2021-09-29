@@ -13,6 +13,10 @@ tags:
 - State Department
 - EUR/ACE
 Banner Image: "/uploads/dashboard.jpg"
+SEO Excerpt Overwrite: DevTech wins three task orders under the Department of State's
+  Performance Management and Evaluation Services (PM&ES) Indefinite Delivery Indefinite
+  Quantity (IDIQ) to provide monitoring and evaluation (M&E), analytical, and technical
+  assistance.
 ---
 
 DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Internet Freedom Portfolio Activities (IFPA)**, the **Reform Analytics Project (RAP)**, and the **Evaluation of the Fiscal Transparency Innovation Fund (FTIF)**. 
