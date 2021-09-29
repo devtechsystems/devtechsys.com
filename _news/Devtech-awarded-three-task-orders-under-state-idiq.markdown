@@ -12,6 +12,7 @@ tags:
 - internet freedom
 - State Department
 - EUR/ACE
+Banner Image: "/uploads/dashboard.jpg"
 ---
 
 DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Internet Freedom Portfolio Activities (IFPA)**, the **Reform Analytics Project (RAP)**, and the **Evaluation of the Fiscal Transparency Innovation Fund (FTIF)**. 
