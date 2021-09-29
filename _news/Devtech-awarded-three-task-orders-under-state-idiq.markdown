@@ -1,6 +1,6 @@
 ---
-title: DevTech Awarded Task Orders under the Department of State's Performance Management
-  and Evaluation Services (PM&ES) IDIQ
+title: DevTech Awarded Three Task Orders under the Department of State's Performance
+  Management and Evaluation Services (PM&ES) IDIQ
 date: 2021-09-29 16:50:00 -04:00
 categories:
 - news
