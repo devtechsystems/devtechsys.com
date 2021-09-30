@@ -12,6 +12,7 @@ tags:
 - internet freedom
 - State Department
 - EUR/ACE
+- foreign assistance policy
 Banner Image: "/uploads/dashboard.jpg"
 SEO Excerpt Overwrite: DevTech wins three task orders under the Department of State's
   Performance Management and Evaluation Services (PM&ES) Indefinite Delivery Indefinite
