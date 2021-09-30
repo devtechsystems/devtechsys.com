@@ -20,7 +20,7 @@ SEO Excerpt Overwrite: DevTech wins three task orders under the Department of St
   assistance.
 ---
 
-DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Internet Freedom Portfolio Activities (IFPA)**, the **Reform Analytics Project (RAP)**, and the **Evaluation of the Fiscal Transparency Innovation Fund (FTIF)**. 
+DevTech Systems, Inc. continues to outperform by winning the **Evaluation of Internet Freedom Portfolio Activities (IFPA)**, the **Reform Analytics Project (RAP)**, and the **Evaluation of the Fiscal Transparency Innovation Fund (FTIF)** task orders. 
 
 The IFPA task order will provide the Internet Freedom team at State with data on which strategies should be continued, discontinued or adapted in future programming to facilitate success in meeting objectives, minimize risk of unintended outcomes, and develop publicly available information on the program and the extent of its effectiveness.  
 
