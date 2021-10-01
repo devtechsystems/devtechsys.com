@@ -1,7 +1,8 @@
 ---
 title: Announcements
+published: false
 Title: COVID-19 Announcement
-Announcement Date: 2020-07-20 00:00:00 Z
+Announcement Date: 2020-07-19 20:00:00 -04:00
 Linked Insight Tag: COVID-19
 layout: announcements
 ---
