@@ -8,10 +8,6 @@ Hero Section:
     strengthen partnerships, and address complex policy challenges.
   Button Label: What Makes Us Different
   Button Link: "/about/history/"
-Announcements Section:
-  Intro Content: See how DevTech is responding to COVID-19 and how it is impacting
-    our global work.
-  Intro Content Link: Learn More
 Insights Section:
   Title: Our Latest Insights
   Button Label: Read More
