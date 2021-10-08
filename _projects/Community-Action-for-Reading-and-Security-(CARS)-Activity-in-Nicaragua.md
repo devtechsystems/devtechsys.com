@@ -23,7 +23,7 @@ Brief Description: DevTech is currently implementing the four-year USAID-funded 
 projects_slug: Community-Action-for-Reading-and-Security-(CARS)-Activity-in-Nicaragua
 ---
 
-DevTech is currently implementing the four-year USAID-funded Community Action for Reading and Security (CARS) Activity in Nicaragua. The purpose of CARS is to improve early grade reading outcomes and contribute to reducing citizen insecurity in five municipalities of the Region Autonoma Atlantica Sur in Nicaragua, where both education and crime statistics lag behind the national averages. DevTech is working in close partnership with local organizations to implement an evidence-based approach to conduct activities at the municipal, community, and school level to transition to a local-led model to educational development and citizen security.
+DevTech implemented the four-year USAID-funded Community Action for Reading and Security (CARS) Activity in Nicaragua. The purpose of CARS was to improve early grade reading outcomes and contribute to reducing citizen insecurity in five municipalities of the Region Autonoma Atlantica Sur in Nicaragua, where both education and crime statistics lagged behind the national averages. DevTech worked in close partnership with local organizations to implement an evidence-based approach to conduct activities at the municipal, community, and school level to transition to a local-led model to educational development and citizen security.
 
 
 ### Related Publications: ###
