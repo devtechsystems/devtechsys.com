@@ -7,6 +7,8 @@ categories:
 tags:
 - State Department
 - Internet Freedom
+- monitoring and evaluation
+- M&E
 Project Title: Evaluation of Internet Freedom Portfolio Activities (IFPA)
 Start Year: 2021
 End Year: 2022
