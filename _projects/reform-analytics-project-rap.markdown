@@ -17,6 +17,8 @@ Region: Europe, Eurasia, and Central Asia
 Country: Europe, Eurasia, and Central Asia
 Client/ Donor: U.S. Department of State
 Is Current Project? (true/false): true
+Practice Area:
+- Monitoring and Evaluation
 ---
 
 The Reform Analytics Project (RAP) tasks DevTech to develop and pilot a foreign assistance analytical framework for Europe, Eurasia, and Central Asia that the U.S. Department of State's Office of the Assistance Coordinator for Europe, Eurasia and Central Asia (EUR/ACE) uses to assess the progress of partners towards achieving reform, sustainability, and resilience benchmarks.
