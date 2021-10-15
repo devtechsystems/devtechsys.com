@@ -16,7 +16,7 @@ Client/ Donor: USAID
 Is Current Project? (true/false): true
 Practice Area:
 - Monitoring and Evaluation
-Is Featured: true
+Is Featured: false
 ---
 
 The Swift Expertise and Grounded Analytics (SEGA) Task Order provides USAID’s Democracy, Human Rights and Governance (DRG) Center, USAID regional bureaus, and USAID field missions with a mechanism to rapidly assess needs and opportunities in the context of a democratic transition, and to implement short-term advisory services where they are needed most in response to an unforeseen political transition.
