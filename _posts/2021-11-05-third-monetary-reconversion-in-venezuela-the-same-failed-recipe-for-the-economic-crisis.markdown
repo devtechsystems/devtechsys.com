@@ -72,23 +72,23 @@ The outlook regarding the COVID-19 pandemic is not very encouraging either. At l
 3. The inflation tax refers to the action of the public sector in indirectly extracting resources from other economic agents as money loses purchasing power due to inflation. However, this tax is not regulated by legislation, nor is it formally collected by any public entity, but rather consists of the erosion of the purchasing power of the currency (see: Manzano, O, R. Mendez, J. Pineda, and G. Rios (2021). Macroeconomics and Natural resources. Kendall Hunt).
 4. Source: Source: Central Bank of Venezuela; Venezuelan Finance Observatory; own calculations.
 5. See: Abadi, A. & García Soto, C. (2016). El control de precios en Venezuela (1939-2015): de la Segunda Guerra Mundial a la “guerra económica”. CEDICE Libertad.
-6. See:https://www.efe.com/efe/america/economia/claves-de-la-ineficacia-del-control-precios-frente-a-inflacion-venezolana/20000011-4252176; ECLAC Economic Study of Latin America and the Caribbean (2016).
-7. See: [](https://www.bbc.com/mundo/noticias-america-latina-45229828); [](http://www.minec.gob.ve/presidente-maduro-anuncia-nuevo-sistema-salarial-y-reconversion-monetaria/).
-8. See: [](https://devtechsys.com/insights/2018/11/12/the-failing-economic-recovery-program-of-president-nicolas-maduro/).  
+6. See: https://www.efe.com/efe/america/economia/claves-de-la-ineficacia-del-control-precios-frente-a-inflacion-venezolana/20000011-4252176; ECLAC Economic Study of Latin America and the Caribbean (2016).
+7. See: https://www.bbc.com/mundo/noticias-america-latina-45229828; http://www.minec.gob.ve/presidente-maduro-anuncia-nuevo-sistema-salarial-y-reconversion-monetaria/.
+8. See: https://devtechsys.com/insights/2018/11/12/the-failing-economic-recovery-program-of-president-nicolas-maduro/.  
 9. Source: Central Bank of Venezuela; Venezuelan Finance Observatory; own calculations. 
 10. Source: Central Bank of Venezuela; own calculations.
-11. See: [](http://www.bcv.org.ve/billetes-y-monedas/ampliacion-del-cono-monetario-2021).
-12. See: [](https://cedice.org.ve/observatoriogp/portfolio-items/la-inflacion-se-desacelero-en-marzo-2021/). 
-13. See:[](http://www.bcv.org.ve/billetes-y-monedas/nueva-expresion-monetaria).
-14. See:[](https://www.elnacional.com/economia/la-banca-privada-capta-8612-de-las-operaciones-en-divisas-en-venezuela/).
-15. See:[](https://cronica.uno/avanzan-las-transacciones-en-divisas-67-paga-con-dolares-y-otras-monedas/). 
+11. See: http://www.bcv.org.ve/billetes-y-monedas/ampliacion-del-cono-monetario-2021.
+12. See: https://cedice.org.ve/observatoriogp/portfolio-items/la-inflacion-se-desacelero-en-marzo-2021/. 
+13. See: http://www.bcv.org.ve/billetes-y-monedas/nueva-expresion-monetaria.
+14. See: https://www.elnacional.com/economia/la-banca-privada-capta-8612-de-las-operaciones-en-divisas-en-venezuela/.
+15. See: https://cronica.uno/avanzan-las-transacciones-en-divisas-67-paga-con-dolares-y-otras-monedas/. 
 16. Source: Encuesta Nacional de las Condiciones de Vida 2021.  
 17. According to the information provided in the results of the National Survey of Living Conditions (ENCOVI) for the year 2021, the richest stratum are the deciles 9 and 10 of the population.
 18. Source: International Monetary Fund World Economic Outlook, October 2021.
-19. Source: [](https://cronica.uno/78-millones-de-personas-presentaron-desnutricion-en-venezuela-entre-2018-y-2020/)
-20. See:[](https://eldiario.com/2021/10/16/inseguridad-alimentaria-pobreza-venezuela/) 
-21. As of October 25, 2021, the Nicolás Maduro regime reported that 748 new infections and 12 new deaths were registered in Venezuela, reaching the figure of 401.259 infected people and 4.822deaths (source: [](https://covid19.patria.org.ve/estadisticas-venezuela/))
-22. See:[](https://eldiario.com/2021/09/29/sistema-salud-venezolano-urgencias-cardiovasculares/; https://eldiario.com/2021/10/08/venezuela-tercera-ola-contagios-covid-9/).      
+19. Source: https://cronica.uno/78-millones-de-personas-presentaron-desnutricion-en-venezuela-entre-2018-y-2020/.
+20. See:https://eldiario.com/2021/10/16/inseguridad-alimentaria-pobreza-venezuela/ 
+21. As of October 25, 2021, the Nicolás Maduro regime reported that 748 new infections and 12 new deaths were registered in Venezuela, reaching the figure of 401.259 infected people and 4.822deaths (source: https://covid19.patria.org.ve/estadisticas-venezuela/)
+22. See:https://eldiario.com/2021/09/29/sistema-salud-venezolano-urgencias-cardiovasculares/; https://eldiario.com/2021/10/08/venezuela-tercera-ola-contagios-covid-9/.      
 
 
 
