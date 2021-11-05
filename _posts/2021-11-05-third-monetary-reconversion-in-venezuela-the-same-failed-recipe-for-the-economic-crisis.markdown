@@ -2,6 +2,15 @@
 title: 'Third monetary reconversion in Venezuela: the same (failed) recipe for the
   economic crisis'
 date: 2021-11-05 15:12:00 -04:00
+tags:
+- devtech
+- public finance
+- Venezuela
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf.png"
+Author: Dr. Jose Pineda and Gerardo Milano
+Is Featured: true
 ---
 
 **Introduction**
