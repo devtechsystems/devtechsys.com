@@ -72,7 +72,7 @@ The outlook regarding the COVID-19 pandemic is not very encouraging either. At l
 3. The inflation tax refers to the action of the public sector in indirectly extracting resources from other economic agents as money loses purchasing power due to inflation. However, this tax is not regulated by legislation, nor is it formally collected by any public entity, but rather consists of the erosion of the purchasing power of the currency (see: Manzano, O, R. Mendez, J. Pineda, and G. Rios (2021). Macroeconomics and Natural resources. Kendall Hunt).
 4. Source: Source: Central Bank of Venezuela; Venezuelan Finance Observatory; own calculations.
 5. See: Abadi, A. & García Soto, C. (2016). El control de precios en Venezuela (1939-2015): de la Segunda Guerra Mundial a la “guerra económica”. CEDICE Libertad.
-6. See:[](https://www.efe.com/efe/america/economia/claves-de-la-ineficacia-del-control-precios-frente-a-inflacion-venezolana/20000011-4252176); ECLAC Economic Study of Latin America and the Caribbean (2016).
+6. See:https://www.efe.com/efe/america/economia/claves-de-la-ineficacia-del-control-precios-frente-a-inflacion-venezolana/20000011-4252176; ECLAC Economic Study of Latin America and the Caribbean (2016).
 7. See: [](https://www.bbc.com/mundo/noticias-america-latina-45229828); [](http://www.minec.gob.ve/presidente-maduro-anuncia-nuevo-sistema-salarial-y-reconversion-monetaria/).
 8. See: [](https://devtechsys.com/insights/2018/11/12/the-failing-economic-recovery-program-of-president-nicolas-maduro/).  
 9. Source: Central Bank of Venezuela; Venezuelan Finance Observatory; own calculations. 
