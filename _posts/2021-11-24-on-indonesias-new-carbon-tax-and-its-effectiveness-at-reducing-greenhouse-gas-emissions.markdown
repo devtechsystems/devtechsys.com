@@ -26,7 +26,7 @@ The carbon tax follows a cap and tax scheme, which imposes a tax for carbon emis
 
 **Tax object:** Individual or entity that purchases carbon-containing goods and/or engages in activities that produce carbon emissions.
 
-**Tax rate: **
+**Tax rate:**
 
 * By Law, the carbon tax rate is set to be higher than or at market price, with a minimum rate of Indonesian Rupiah (IDR) 30 (US$ 0.002) per kilogram of CO2 equivalent (CO2e), or US$ 2.13 per ton of CO2e emission above the stipulated cap (cap and tax). CO2e is a representation of greenhouse gas emissions that includes CO2, nitrous oxide (N2O) and, methane (CH4) compounds. 
 
@@ -61,7 +61,6 @@ The conflict among the GOI’s competing objectives related to the carbon tax is
 The tax rate set by the GOI at IDR 30 per kg CO2e or US$ 2.13 per ton CO2e is one of the lowest carbon tax rates in the world. (3) At this rate, the Indonesian Taxation Analysis (CITA) estimated a potential revenue of IDR 6.5 trillion (US$ 462 million) from the power plant sector alone. The possibility for revenue generation does not seem to be substantial in the early stages of the implementation plan as the rate imposed is very low. This is consistent with the GOI’s statement that revenue generation is not the main purpose of the carbon tax.
 
 ![Tax Rate per ton CO2.png](/uploads/Tax%20Rate%20per%20ton%20CO2.png)
-
 On the other hand, the GOI continues to provide subsidies for the use of fossil fuels for power generation. Indonesia argues that the fossil fuel subsidies are meant to preserve electricity supply despite cost fluctuations to protect consumers from electricity disruption and tariff increases. Without proper measures, a carbon tax could inflate fossil fuel subsidies as the GOI may be tempted to increase subsidies to offset the increasing cost of coal for power generation to prevent a significant effect on electricity affordability without adding substantial revenue, therefore putting more pressure on the state budget.
 
 **Administrative ease:** critics have argued that the GOI’s plan to begin implementing the carbon tax in April 2022 may be rushed, as the GOI only has limited time to prepare the infrastructure, regulations, and enabling environment to support the pilot carbon market and carbon tax itself. 
@@ -81,7 +80,9 @@ Indonesia’s initiative to introduce a carbon tax is commendable and shows its 
 **About the authors:**
 
 Dr. Renata Simatupang – DevTech Systems Chief of Party for USAID Economic Growth Support Activity (USAID EGSA) Chief of Party 
+
 Dr. Jose Pineda -  Devtech Systems Senior Advisor and USAID Economic Growth Support Activity (USAID EGSA) Project Director
+
 Teguh Murdjijanto - USAID Economic Growth Support Activity (USAID EGSA) PFM Expert
 
 
@@ -89,7 +90,7 @@ Teguh Murdjijanto - USAID Economic Growth Support Activity (USAID EGSA) PFM Expe
 **Footnotes:**
 
 1. See https://www.esdm.go.id/en/media-center/news-archives/energy-minister-explains-carbon-tax-schemes 
-2. It is advisible to have a carbon tax with a broader scope, covering a wide range of emissions that are subject to the tax because it increases the number of GHG abatement opportunities covered by the policy, as well as the higher tax collection potential of the policy. However, in many cases some sources of emissions are not included as part of the carbon tax mainly due to difficulties in monitoring such emissions. See https://www.energypolicy.columbia.edu/what-you-need-know-about-federal-carbon-tax-united-states#:~:text=A%20carbon%20tax%20will%20not,Additional%20climate%20policies%20are%20needed.
+2. It is advisible to have a carbon tax with a broader scope, covering a wide range of emissions that are subject to the tax because it increases the number of GHG abatement opportunities covered by the policy, as well as the higher tax collection potential of the policy. However, in many cases some sources of emissions are not included as part of the carbon tax mainly due to difficulties in monitoring such emissions. See https://www.energypolicy.columbia.edu/what-you-need-know-about-federal-carbon-tax-unitedstates#:~:text=A%20carbon%20tax%20will%20not,Additional%20climate%20policies%20are%20needed.
 3. See https://klikpajak.id/blog/pajak-karbon-dan-tarif-pajak-karbon-indonesia/
 
 
