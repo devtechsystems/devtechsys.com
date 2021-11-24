@@ -10,7 +10,7 @@ tags:
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(1).png"
-Author: By Dr. Renata Simatupang, Dr. Jose Pineda, and Teguh Murdjijanto
+Author: Dr. Renata Simatupang, Dr. Jose Pineda, and Teguh Murdjijanto
 Is Featured: true
 ---
 
