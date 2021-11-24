@@ -2,6 +2,16 @@
 title: On Indonesia’s new carbon tax and its effectiveness at reducing greenhouse
   gas emissions
 date: 2021-11-24 13:32:00 -05:00
+tags:
+- Indonesia
+- taxes
+- carbon emmision
+- COVID-19
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(1).png"
+Author: By Dr. Renata Simatupang, Dr. Jose Pineda, and Teguh Murdjijanto
+Is Featured: true
 ---
 
 **Background**
