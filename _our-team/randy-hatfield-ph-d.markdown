@@ -1,7 +1,7 @@
 ---
 title: Randy Hatfield, Ph. D
 date: 2019-12-19 11:08:00 -05:00
-position: 7
+position: 6
 Title: Randy Hatfield, Ph. D
 Headshot Image: "/uploads/RHatfield-circle.png"
 Job Title: Director of Education
