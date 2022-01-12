@@ -1,7 +1,7 @@
 ---
 title: John Yates
 date: 2020-02-12 15:52:00 -05:00
-position: 7
+position: 8
 Title: John Yates
 Headshot Image: "/uploads/JYates-circle.png"
 Job Title: Advisor to Data Services
