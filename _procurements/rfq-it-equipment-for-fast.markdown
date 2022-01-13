@@ -14,14 +14,14 @@ Description: "DevTech Systems, Inc.(DevTech) is an economic data-driven consulti
   four practice areas are Economic and Data Sciences; Monitoring and Evaluation, Research
   and Learning (MERL); Education, Gender, and Youth Development (EGY); and Public
   Financial Management (PFM).\n\nDevTech Systems Inc. wishes to purchase the items/services
-  detailed in Annex A of the RFQ terms of reference and hereby requests product and
-  price quotes from qualified vendors. \n\nDevTech intends to select a supplier on
-  the basis of the lowest priced technically acceptable quotation received for the
-  award of a purchase order on or before February 15, 2022.  Lowest Price Technically
-  Acceptable is defined as the lowest-priced offer which meets or exceeds the minimum
-  stated required technical specifications.\n \nQuestions should be submitted no later
-  than January 27, 2022 and full submissions to the RFQ should be submitted by February
-  10, 2020.  "
+  detailed in Annex A of the RFQ [Terms of Reference](/uploads/EGSA-RFP%206.25.2021.PNG)
+  and hereby requests product and price quotes from qualified vendors. \n\nDevTech
+  intends to select a supplier on the basis of the lowest priced technically acceptable
+  quotation received for the award of a purchase order on or before February 15, 2022.
+  \ Lowest Price Technically Acceptable is defined as the lowest-priced offer which
+  meets or exceeds the minimum stated required technical specifications.\n \nQuestions
+  should be submitted no later than January 27, 2022, and full submissions to the
+  RFQ should be submitted by February 10, 2022.  "
 File URL: "/uploads/FAST_IT%20Equipment%20Request%20RFQ__v201.11.22.pdf"
 Email Address: EGraff@devtechsys.com
 Is Open: true
