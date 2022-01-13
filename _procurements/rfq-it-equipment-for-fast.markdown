@@ -1,11 +1,15 @@
 ---
 title: 'RFQ: IT Equipment for FAST'
 date: 2022-01-13 14:58:00 -05:00
+tags:
+- RFQ
+- IT Equipment
 Full Title: 'RFQ: Information Technology Equipment for Fiscal Accountability and Sustainable
   Trade (FAST) '
 Description: 'IT Equipment RFQ forFiscal Accountability and Sustainable Trade (FAST) '
 File URL: "/uploads/FAST_IT%20Equipment%20Request%20RFQ__v201.11.22.pdf"
 Email Address: EGraff@devtechsys.com
+Is Open: true
 ---
 
 [RFQ_FAST-0ca141.PNG](/uploads/RFQ_FAST-0ca141.PNG)
