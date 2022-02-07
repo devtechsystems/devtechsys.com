@@ -10,6 +10,8 @@ Author: Dr. Mark Gallagher
 Is Featured: true
 ---
 
+![a2i.png](/uploads/a2i.png)
+
 Aspire to Innovate (a2i), a massive program in Bangladesh, that has been at the forefront of modernizing, simplifying, and digitizing myriad government functions, processes, and services. A2i has been a hub in Government of Bangladesh helping hundreds of ministries, agencies, and government offices to improve how they work with their customers, namely business and citizens. Most services and products created with a2i expertise are available on the various government websites, though all can be reached through two national portals: Bangladesh.gov.bd or mygov.bd.
 
 To reach people in poor or rural districts who may not have access to internet or technology, a2i has helped establish more than 8,363 digital centers around the country. Last year alone, the digital centers provided 619 million services to citizens and 16,110 entrepreneurs (mainly small and medium enterprises of whom 50% women). Clients can go to these digital centers, sit down with customer service staff and gain immediate access to more than 1,600 government services . If they are unhappy with the services they get, if they suspect fraud or simply poor service, citizens can register a complaint at the mygov.bd-accessible complaint line or directly to grs.gov.bd. Bangladeshis outside of the country can also access this special phone service by dialing 0966678333. All complaints are supposed to be satisfied by the respective office within 30 days or the customer has the right to claim a penalty from the offending office.  I do note however, the day I tried to access the complaint site it was not accessible.  
