@@ -3,9 +3,11 @@ title: Bangladesh Aspires to Innovate
 date: 2022-02-07 08:59:00 -05:00
 tags:
 - Bangladesh
+- a2i
+- digital transformation in government
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
-Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf-2cf996.png"
+Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(1)-a8412a.png"
 Author: Dr. Mark Gallagher
 Is Featured: true
 ---
