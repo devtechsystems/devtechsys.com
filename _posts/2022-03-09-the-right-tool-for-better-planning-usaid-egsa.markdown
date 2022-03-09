@@ -27,4 +27,4 @@ Bappenas, through the Director of Macroeconomic and Statistical Analysis Mr. Eka
 
 The model can also be used by Indonesia’s government agencies, sub-national governments, the Central Bank, universities, and the public to run simulations to formulate strategic planning or impact analyses of economic development.
 
-The Economic Growth Support Activity (EGSA, or the Project), implemented by DevTech Systems, Inc., aims to assist the U.S. Agency for International Development (USAID) to re-engage in economic growth (EG) programming in Indonesia. To learn more about EGSA and its year two results, read the [EGSA Annual Report for Fiscal Year 2021.](https://pdf.usaid.gov/pdf_docs/PA00Z6M4.pdf)
+*The Economic Growth Support Activity (EGSA, or the Project), implemented by DevTech Systems, Inc., aims to assist the U.S. Agency for International Development (USAID) to re-engage in economic growth (EG) programming in Indonesia. To learn more about EGSA and its year two results, read the [EGSA Annual Report for Fiscal Year 2021.](https://pdf.usaid.gov/pdf_docs/PA00Z6M4.pdf)*
