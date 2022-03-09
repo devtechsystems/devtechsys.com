@@ -5,11 +5,11 @@ date: 2022-03-09 09:14:00 -05:00
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(2).png"
-Author: Dr. Renata Simatupang
+Author: 'Dr. Renata Simatupang and Nia Firtica '
 Is Featured: true
 ---
 
-![DevTech Social Media Slides (7).png](/uploads/DevTech%20Social%20Media%20Slides%20(7).png)
+![DevTech Social Media Slides (8).png](/uploads/DevTech%20Social%20Media%20Slides%20(8).png)
 
 The economic and social disruption caused by the COVID-19 pandemic has been dramatic and far reaching. Though the rapidly evolving nature of the COVID-19 pandemic in Indonesia has proven to be challenging, it has also presented the country with an opportunity to review how future plans and roadmaps for the economy and other social reforms should be implemented. Indeed, the Government of Indonesia (GOI) immediately responded to the pandemic by refocusing its development programs on health system reforms, social system reforms, disaster resilience reforms, and economic recovery.
 
