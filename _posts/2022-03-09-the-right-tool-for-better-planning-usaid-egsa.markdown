@@ -2,6 +2,8 @@
 title: 'The Right Tool for Better Planning: USAID EGSA Strengthens the Government
   of Indonesia''s Capacity in Formulating Effective Development Plans'
 date: 2022-03-09 09:14:00 -05:00
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(2).png"
 Author: Dr. Renata Simatupang
 Is Featured: true
