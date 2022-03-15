@@ -17,6 +17,6 @@ Questions should be submitted no later than March 24, 2022, and full submissions
 
 Please download the Terms of Reference to learn more about this procurement opportunity, including instructions on how to submit a response.
 
-Please submit any questions directly to: nhousekeeper@devtechsys.com.
+Please submit any questions directly to: [Nicole Housekeeper](mailto:nhousekeeper@devtechsys.com).
 
-Final proposals should be submitted to: shaqnoor@devtechsys.com
+Final proposals should be submitted to: [Shamsul Haq Noor ](mailto:shaqnoor@devtechsys.com)
