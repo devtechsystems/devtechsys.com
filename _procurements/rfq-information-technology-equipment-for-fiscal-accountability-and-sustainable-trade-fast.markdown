@@ -5,6 +5,7 @@ date: 2022-03-15 09:56:00 -04:00
 Full Title: 'RFQ: Information Technology Equipment for Fiscal Accountability and Sustainable
   Trade (FAST)'
 File URL: "/uploads/FAST_IT%20Equipment%20Request%20RFQ__March%2011%202022%20for%20publication%20in%20the%20USA.pdf"
+Is Open: true
 ---
 
 DevTech Systems, Inc.(DevTech) is an economic data-driven consulting firm dedicated to development, with over 30 years of experience providing advisory services and technical assistance to government, private sector, and civil society stakeholders in more than 100 countries. DevTech specializes in economics and data-driven insights that inform policy making, analytical products and services. DevTech’s four practice areas are Economic and Data Sciences; Monitoring and Evaluation, Research and Learning (MERL); Education, Gender, and Youth Development (EGY); and Public Financial Management (PFM).
