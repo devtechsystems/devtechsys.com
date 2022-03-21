@@ -18,5 +18,4 @@ DevTech has implemented long- and short-term projects in over 100 different coun
 
 DevTech’s headquarters is located in Rosslyn, VA, with offices in Nigeria, Zambia, and Indonesia.
 
-![MicrosoftTeams-image (7).png](/uploads/MicrosoftTeams-image%20(7).png)
-
+![iso.png](/uploads/iso.png)
