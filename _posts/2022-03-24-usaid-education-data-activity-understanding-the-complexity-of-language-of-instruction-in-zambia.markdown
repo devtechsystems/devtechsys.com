@@ -22,7 +22,7 @@ As part of the five-year [USAID Education Data (EDA) activity](https://devtechsy
 
 Phase one of the language mapping exercise was undertaken in 2018 in the [USAID Let’s Read project](https://www.usaid.gov/zambia/documents/lets-read) intervention provinces of Muchinga, Eastern, Western, North-Western, and Southern. Phase two of the language mapping exercise was conducted in 2020 and focused on the five non-Let’s Read provinces of Luapula, Lusaka, Central, Northern and Copperbelt. Data collected during the 2020 language mapping was verified in 2021 using a multi-step, mixed-methods approach involving desk review and quantitative and qualitative field data collection and verification at headquarter (MoE Directorate of Information and Planning), provincial, district and school levels. This article focuses on the language mapping exercise conducted in 2020 and verified in 2021.
 
-![DevTech Teaser Images for Siteleaf (5).png](/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(5).png)
+![DevTech Teaser Images for Siteleaf (6).png](/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(6).png)
 
 
 ### **Findings**
