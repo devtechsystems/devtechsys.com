@@ -1,0 +1,32 @@
+---
+title: Formalizing and strengthening micro, small, and medium enterprises in Indonesia
+date: 2022-03-25 17:09:00 -04:00
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(7).png"
+Author: Dr. Renata Simatupang and Nia Firtica
+Is Featured: true
+---
+
+![Picture3.jpg](/uploads/Picture3.jpg)
+*In December 2021, USAID EGSA and the Ministry of Cooperatives and SMEs held a national workshop to present findings and recommendations from USAID EGSA’s MSME study. Photo by Renata Simatupang.*
+
+Micro, small, and medium enterprises (MSMEs) are an integral part of Indonesia’s economy, accounting for 98.68 percent of total businesses in Indonesia. Approximately 64 million MSMEs in Indonesia absorb a whopping 97 percent of the workforce, equivalent to approximately 116.9 million people. However, most MSMEs do not operate as legal entities. They operate informally as they face many constraints that inhibit formalization, such as difficulties in registering their businesses or obtaining construction permits. The COVID-19 pandemic has affirmed the importance of transitioning these MSMEs into formal, legal entities as a formal status would allow them to have greater access to government assistance and financing. 
+
+Indonesia’s Ministry of Cooperatives and SMEs is responsible for overseeing MSMEs. In recent years, it has implemented several programs to facilitate the success of this sector of the economy. In 2013, it established the Integrated Small Business Service Center (PLUT-UMKM) initiative to help MSMEs develop their businesses. There are now an estimated 75 PLUT-UMKMs across Indonesia’s 34 provinces. More recently, the Ministry of Cooperatives and SMEs has sought to prioritize the formalization of MSMEs. In July 2018, it launched the online single submission (OSS) platform that aims to integrate business registration and licensing both at the central and regional levels.  
+
+In 2020, the GOI issued a new law focused on job creation (Law No. 11 of 2020). The law aims to bolster investment and create employment by streamlining the regulatory landscape and simplifying overlapping regulations and has paved the way for an increase in synchronization and coordination across government levels to improve business licensing services. However, coordination is lacking between the central and regional governments, which has caused inconsistency in implementing the OSS system. Nonetheless, the system itself is an important step in making business registration more efficient and advancing the formalization of enterprises, particularly micro and small enterprises in Indonesia. 
+
+The most recent regulation issued by the GOI is the Government Regulation (GR) No. 5 of 2021 on the Implementation of Risk-Based Business Licensing. This new regulation is a transformative step to create a more conducive business climate for MSMEs—especially micro and small businesses—by simplifying the licensing procedures. The regulation is expected to create momentum to boost the scale of micro-enterprises and to encourage further improvements to the structure of Indonesia’s MSMEs.  
+
+To support the Ministry of Cooperatives and SMEs’ efforts to formalize MSMEs, USAID’s Economic Growth Support Activity (EGSA) conducted a review of public service practices related to doing business in the South Sulawesi and East Java provinces. Using data from this study, EGSA developed a database designed to ease registration for MSMEs. EGSA also provided trainings aimed at supporting PLUT-UMKM facilitators in East Java and South Sulawesi with mentoring MSMEs and assisting them in the registration process. 
+
+In December 17, 2021, USAID EGSA and the Ministry of Cooperatives and SMEs held a national workshop to present findings and recommendations from USAID EGSA’s study. The workshop was attended by staff from sub-national governments (SNGs) and relevant ministries, namely the Ministry of Finance, the Ministry of Tourism and Creative Economy, the Ministry of Investment, and the Coordinating Ministry for Economic Affairs, who were invited to provide their feedback in response to EGSA’s recommendations. 
+
+USAID EGSA presented three key recommendations during the workshop. First, based on its diagnostic of doing business services at the SNG-level, USAID EGSA highlighted the importance of synchronizing spatial planning between different levels of government to expedite the building license process. Second, USAID EGSA recommended a MSME database design that complements the OSS platform to accelerate the issuance of business licenses and provide the government with sufficient information to target SMEs for various support and stimulus programs. Lastly, based on USAID EGSA’s support to the PLUT-UMKM in South Sulawesi and East Java, the team presented recommendations related to maintaining a capacity-building program for PLUT-UMKM facilitators to respond to the growth and development needs of MSMEs, especially to take advantage of the digital economy. Responding to this recommendation, the Ministry intends to use training modules and a partnership model developed by USAID EGSA and replicate them in other regions of Indonesia.  
+
+The Ministry of Cooperatives and SMEs, through the Assistant Deputy on Micro-enterprise Protection and Ease of Business, has stated that the Ministry, with assistance from USAID EGSA, is fully committed to supporting the transformation of informal SMEs to formal entities to increase their competitiveness.  
+
+Through EGSA’s partnership with the GOI, USAID has proven its strategic positioning and capability to deliver invaluable contributions toward Indonesia’s sustainable development efforts. In addition to the GOI’s acceptance of USAID EGSA’s recommendations, the team’s evidence-based assessments on MSMEs’ business registration have enabled policymakers to make more effective regulations to improve the business climate and strengthen inclusive economic growth in Indonesia. 
+
+*The Economic Growth Support Activity (EGSA, or the Project), implemented by DevTech Systems, Inc., aims to assist the U.S. Agency for International Development (USAID) to re-engage in economic growth (EG) programming in Indonesia. To learn more about EGSA and its year two results, read the [EGSA Annual Report for Fiscal Year 2021](https://pdf.usaid.gov/pdf_docs/PA00Z6M4.pdf).*
