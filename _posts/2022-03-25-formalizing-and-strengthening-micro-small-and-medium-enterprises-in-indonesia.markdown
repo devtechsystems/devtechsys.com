@@ -8,8 +8,7 @@ Author: Dr. Renata Simatupang and Nia Firtica
 Is Featured: true
 ---
 
-![Picture3.jpg](/uploads/Picture3.jpg)
-*In December 2021, USAID EGSA and the Ministry of Cooperatives and SMEs held a national workshop to present findings and recommendations from USAID EGSA’s MSME study. Photo by Renata Simatupang.*
+![egsa.png](/uploads/egsa.png)
 
 Micro, small, and medium enterprises (MSMEs) are an integral part of Indonesia’s economy, accounting for 98.68 percent of total businesses in Indonesia. Approximately 64 million MSMEs in Indonesia absorb a whopping 97 percent of the workforce, equivalent to approximately 116.9 million people. However, most MSMEs do not operate as legal entities. They operate informally as they face many constraints that inhibit formalization, such as difficulties in registering their businesses or obtaining construction permits. The COVID-19 pandemic has affirmed the importance of transitioning these MSMEs into formal, legal entities as a formal status would allow them to have greater access to government assistance and financing. 
 
