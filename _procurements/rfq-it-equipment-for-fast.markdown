@@ -25,6 +25,6 @@ Description: "DevTech Systems, Inc.(DevTech) is an economic data-driven consulti
   RFQ should be submitted by February 10, 2022.  "
 File URL: "/uploads/FAST_IT%20Equipment%20Request%20RFQ__v201.11.22.pdf"
 Email Address: EGraff@devtechsys.com
-Is Open: true
+Is Open: false
 ---
 

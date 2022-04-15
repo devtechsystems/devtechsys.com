@@ -1,6 +1,7 @@
 ---
 title: 'RFQ: IT Equipment for Fiscal Accountability and Sustainable Trade (FAST)'
 date: 2022-03-15 09:56:00 -04:00
+published: false
 Full Title: 'RFQ: Information Technology Equipment for Fiscal Accountability and Sustainable
   Trade (FAST)'
 Description: |-
