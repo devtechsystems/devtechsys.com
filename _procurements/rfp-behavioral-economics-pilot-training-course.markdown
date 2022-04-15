@@ -21,7 +21,7 @@ Description: "DevTech Systems, Inc. (DevTech) is an international consulting fir
   host-country’s ability to recover from, prevent, and/or mitigate the impact of conflict,
   natural disasters, or fiscal crises; and 4) the host-country’s institutional capacity
   to identify, design, advocate, and implement better economic policies to enhance
-  inclusive growth and gender equity.  \n\nThe attached [Terms of Reference](/uploads/Final%20Draft%20RFP%20for%20Behavioral%20Economics%20Course.pdf)
+  inclusive growth and gender equity.  \n\nThe attached [Terms of Reference](https://devtechsys.com/uploads/Final%20Draft%20RFP%20for%20Behavioral%20Economics%20Course%20with%20Template.pdf)
   outline a solicitation to recruit an interested organization to create a pilot training
   course on behavioral economics in development in both theory and practice.  \n\nThe
   purpose of the project is three-fold:\n\n1.\tProvide a primer in behavioral science
@@ -38,7 +38,7 @@ Description: "DevTech Systems, Inc. (DevTech) is an international consulting fir
   by the following dates:\n\n* Notification of interest and questions: April 15, 2022
   at 6PM Eastern Standard Time (EST) \n* Final proposal: April 29, 2022 6PM Eastern
   Standard Time (EST)\n\nTo read the complete proposal - [RFP: Behavioral Economics
-  Pilot Training Course](/uploads/Final%20Draft%20RFP%20for%20Behavioral%20Economics%20Course.pdf)\n\n**No
+  Pilot Training Course](https://devtechsys.com/uploads/Final%20Draft%20RFP%20for%20Behavioral%20Economics%20Course%20with%20Template.pdf)\n\n**No
   late submissions will be accepted.**\n\n\n "
 Is Open: true
 ---
