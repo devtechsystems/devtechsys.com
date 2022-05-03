@@ -7,7 +7,11 @@ tags:
 - gender mainstreaming
 - Gender responsive budgeting
 - public financial management
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(8).png"
+Author: Dr. Renata Simatupang
+Is Featured: true
 ---
 
 As the world’s fourth most populous country, with over 230 million people, Indonesia also has one of the world’s largest economies. While Indonesia’s dynamic economy has allowed it to reach middle-income status, economic growth has been uneven throughout the country, both geographically, and demographically. Indonesia’s women are among those to have not benefited equally from the country’s economic expansion. Indeed, Indonesian women face unequal employment opportunities, receive unequal pay—the average wage for female workers is only about 79 percent of the average wage for male workers—and have more restricted access to financial services. Beyond economic disadvantages, Indonesian women are also confronted with a host of social constraints, such as patriarchal practices, including early, child, or forced marriage, and forced divorce. Given the many barriers faced by Indonesia’s women, the country ranks poorly on the [Gender Inequality Index](https://hdr.undp.org/en/content/gender-inequality-index-gii), placing 121 out of 162. Although Indonesia’s Constitution guarantees gender equality and the Government of Indonesia (GOI) has enacted a strong legal and regulatory framework to support gender equality, it is clear that there is still much work to be done to overcome the country’s persistent gender inequality.
