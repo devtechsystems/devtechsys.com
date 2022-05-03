@@ -2,6 +2,11 @@
 title: Improving National Gender Responsive Planning and Budgeting for a Better Tomorrow
   for Indonesian Women
 date: 2022-05-03 09:05:00 -04:00
+tags:
+- Indonesia
+- gender mainstreaming
+- Gender responsive budgeting
+- public financial management
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(8).png"
 ---
 
