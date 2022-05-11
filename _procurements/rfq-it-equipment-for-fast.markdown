@@ -1,7 +1,6 @@
 ---
 title: 'RFQ: IT Equipment for FAST'
 date: 2022-01-13 14:58:00 -05:00
-published: false
 tags:
 - RFQ
 - IT Equipment
