@@ -18,6 +18,4 @@ DevTech has implemented long- and short-term projects in over 100 different coun
 
 DevTech’s headquarters is located in Rosslyn, VA, with offices in Nigeria, Zambia, and Indonesia.
 
-![sri_ISO.png](/uploads/sri_ISO.png)
-
-![59159-Operations - CMMI Development V2.0 (CMMI-DEV) with SAM - Maturity Level 3-Color.png](/uploads/59159-Operations%20-%20CMMI%20Development%20V2.0%20(CMMI-DEV)%20with%20SAM%20-%20Maturity%20Level%203-Color.png)
+[CMMI SRI.PNG](/uploads/CMMI%20SRI.PNG)
