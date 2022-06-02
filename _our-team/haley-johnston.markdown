@@ -1,7 +1,7 @@
 ---
 title: Haley Johnston
 date: 2017-08-28 13:25:00 -04:00
-position: 10
+position: 9
 Title: Haley Johnston
 Headshot Image: "/uploads/Haley%20headshot%20circle.png"
 Job Title: Talent Acquisition and Human Capital Manager

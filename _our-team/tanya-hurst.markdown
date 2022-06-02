@@ -1,7 +1,7 @@
 ---
 title: Tanya Hurst
 date: 2022-03-17 16:07:00 -04:00
-position: 9
+position: 8
 Title: Tanya Hurst
 Headshot Image: "/uploads/TanyaHurst_1.png"
 Job Title: Director of Monitoring, Evaluation, Research, and Learning
