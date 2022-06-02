@@ -1,6 +1,6 @@
 ---
 title: Mercy Sanguinetty
-date: 2017-05-30 19:02:00 Z
+date: 2017-05-30 15:02:00 -04:00
 position: 1
 Title: Mercy Sanguinetty
 Headshot Image: "/uploads/Mercy%20circle-8fc67b.png"

@@ -1,7 +1,7 @@
 ---
 title: Sherry Khan
 date: 2022-01-12 09:20:00 -05:00
-position: 7
+position: 6
 Title: Sherry Khan
 Headshot Image: "/uploads/SherryKhan_1.png"
 Job Title: Director of Public Financial Management
