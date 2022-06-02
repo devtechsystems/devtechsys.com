@@ -1,7 +1,7 @@
 ---
 title: Kimberley Ready
-date: 2020-12-02 13:50:00 Z
-position: 5
+date: 2020-12-02 08:50:00 -05:00
+position: 6
 Title: Kimberley Ready
 Headshot Image: "/uploads/KReady%20Headshot-circle.png"
 Job Title: 'Director of Grants and Contracts Administration '
