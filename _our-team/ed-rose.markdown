@@ -1,7 +1,7 @@
 ---
 title: Ed Rose
 date: 2017-05-30 15:04:00 -04:00
-position: 4
+position: 3
 Title: Ed Rose
 Headshot Image: "/uploads/Ed%20headshot%20circle.png"
 Job Title: Controller

@@ -1,7 +1,7 @@
 ---
 title: Jose Pineda, Ph. D
 date: 2022-06-02 15:19:00 -04:00
-position: 0
+position: 7
 Title: Director of Education, Gender, and Youth; Deputy Director Public Financial
   Management
 Headshot Image: "/uploads/Jose%20Pineda-75f24a.png"
