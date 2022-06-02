@@ -1,7 +1,7 @@
 ---
 title: Mark Gallagher, Ph. D
 date: 2019-12-19 11:06:00 -05:00
-position: 11
+position: 10
 Title: Mark Gallagher, Ph. D
 Headshot Image: "/uploads/MGallagher-circle.png"
 Job Title: Senior Advisor, Public Financial Management
