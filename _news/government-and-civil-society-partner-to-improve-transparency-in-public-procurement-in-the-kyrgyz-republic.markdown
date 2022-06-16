@@ -4,6 +4,8 @@ title: Government and Civil Society Partner to Improve Transparency in Public Pr
 date: 2022-06-16 14:28:00 -04:00
 ---
 
+# Government and Civil Society Partner to Improve Transparency in Public Procurement in the Kyrgyz Republic
+
 ![FVRHCjWWQAA_KwC.jpg](/uploads/FVRHCjWWQAA_KwC.jpg)
 
 **Bishkek, Kyrgyz Republic **– On June 14, 2022, the Ministry of Finance and USAID launched the Public Procurement Transparency and Accountability Forum in the Kyrgyz Republic. The Forum serves as a platform for civil society to come together and connect with the Government organizations of Kyrgyz Republic, exchange information, share citizens’ concerns and ensure accountability and transparency in contract implementation and management of public funds.  
