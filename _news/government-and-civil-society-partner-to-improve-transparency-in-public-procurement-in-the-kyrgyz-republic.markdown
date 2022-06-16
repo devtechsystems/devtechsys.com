@@ -22,7 +22,7 @@ FAST worked with 25 prominent Kyrgyz NGOs and Public Associations including Sots
 
 Members of Forum will meet regularly on a quarterly basis and will share results of the ongoing public procurement monitoring efforts. The Forum will identify potential avenues of corruption and work with government agencies to improve transparency and service delivery for the people of Kyrgyz Republic.
 
-> 
+![Capture.PNG](/uploads/Capture.PNG)
 
 **Правительство и гражданское общество сотрудничают для улучшения прозрачности государственных закупок**
 
@@ -46,7 +46,7 @@ Members of Forum will meet regularly on a quarterly basis and will share results
 
 Члены Форума будут проводить регулярные встречи на ежеквартальной основе и обмениваться результатами текущей работы по мониторингу государственных закупок. Форум будет выявлять потенциальные пути коррупции и работать с государственными органами для улучшения прозрачности и предоставления услуг населению  Кыргызской Республики.
 
-> 
+![Capture-052c98.PNG](/uploads/Capture-052c98.PNG)
 
 **Өкмөт менен жарандык коом мамлекеттик сатып алуулардагы
 ачык-айрымдуулукту жогорулатуу үчүн кызматташат**
