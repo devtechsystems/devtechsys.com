@@ -1,8 +1,8 @@
 ---
 title: 'RFP: Data Collection Support for the Anticipated Learning Loss Research Study'
-date: 2020-12-04 19:20:00 Z
+date: 2020-12-04 14:20:00 -05:00
 published: false
-position: 2
+position: 6
 Full Title: 'RFP: Data Collection Support for the Anticipated Learning Loss Research
   Study'
 Description: "The 3.5 year USAID Education Data activity implemented by DevTech Systems,

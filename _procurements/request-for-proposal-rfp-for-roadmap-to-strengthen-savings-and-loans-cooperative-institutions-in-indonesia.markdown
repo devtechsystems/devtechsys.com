@@ -6,7 +6,7 @@ published: false
 tags:
 - rfp
 - indonesia
-position: 0
+position: 4
 Full Title: Request for Proposal (RFP) for “Roadmap to Strengthen Savings and Loans
   Cooperative Institutions in Indonesia”
 Description: "![EGSA-RFP 6.25.2021.PNG](/uploads/EGSA-RFP%206.25.2021.PNG)\n\nDevTech

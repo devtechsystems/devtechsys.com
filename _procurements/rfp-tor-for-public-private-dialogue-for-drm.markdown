@@ -1,8 +1,8 @@
 ---
 title: RFP - TOR for Public-Private Dialogue for DRM
-date: 2021-03-09 16:59:00 Z
+date: 2021-03-09 11:59:00 -05:00
 published: false
-position: 1
+position: 5
 Full Title: RFP - TOR for Public-Private Dialogue for DRM
 Description: "![Request for Proposal RFP EGSA 2021-001.JPG](/uploads/Request%20for%20Proposal%20RFP%20EGSA%202021-001.JPG)\n\nDevTech
   Systems, Inc. (DevTech) is an international consulting firm dedicated to development,
