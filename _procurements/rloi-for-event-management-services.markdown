@@ -25,5 +25,6 @@ Description: "Dear Potential Bidders,\n\nDevTech Systems, Inc (DevTech) requests
   and document the planning, implementation, and result of the summit. \n\nFor more
   details about this request for LOIs, please refer to the [terms of reference.](/uploads/RLOI%20final%20clean.pdf)
   \n"
+Is Open: true
 ---
 
