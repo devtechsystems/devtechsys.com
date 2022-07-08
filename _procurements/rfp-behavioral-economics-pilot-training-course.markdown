@@ -2,6 +2,7 @@
 title: 'RFP: Behavioral Economics Pilot Training Course'
 date: 2022-04-08 18:00:00 -04:00
 published: false
+position: 2
 Full Title: 'Request for Proposal: Behavioral Economics Pilot Training Course'
 Description: "DevTech Systems, Inc. (DevTech) is an international consulting firm
   dedicated to development, with over 37 years of experience providing advisory services
