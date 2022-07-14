@@ -23,4 +23,4 @@ To answer these questions, the primer provides a framework linking the key relev
 
 The primer equips the reader with concrete tools to (i) understand the importance of a sound public debt policy for economic and financial development, (ii) assess when the government’s approach to public debt is problematic (poor management, wrong prioritization and sustainability at elevated risk), (iii) understand preventive strategies to mitigate the risk of debt problems and how development partners can help in developing such strategies and putting them in place, and (iv) in case of failure, have a good grasp of productive approaches to debt restructuring or default.
 
-[snip.PNG](/uploads/snip.PNG)
+![snip.jpeg](/uploads/snip.jpeg)
