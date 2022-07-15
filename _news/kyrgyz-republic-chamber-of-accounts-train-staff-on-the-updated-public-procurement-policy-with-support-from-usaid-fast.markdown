@@ -10,7 +10,7 @@ tags:
 Banner Image: "/uploads/kr1.jpg"
 ---
 
-From July 12 to 15, USAID, in collaboration with the Chamber of Accounts of the Kyrgyz Republic, held trainings on the application of the updated Public Procurement Audit Manual for staff of the Chamber of Accounts. The training were led by the Fiscal Accountability and Sustainable Trade (FAST) project, funded by the United States Agency for International Development (USAID) and implemented by DevTech Systems Inc.
+From July 12 to 15, USAID, in collaboration with the Chamber of Accounts of the Kyrgyz Republic, held trainings on the application of the updated Public Procurement Audit Manual for staff of the Chamber of Accounts. The trainings were led by the Fiscal Accountability and Sustainable Trade (FAST) project, funded by the United States Agency for International Development (USAID) and implemented by DevTech Systems Inc.
 
 The purpose of the updated Public Procurement Audit Manual is to establish common rules and procedures for conducting public audits in the public procurement area in accordance with the newly adopted Law of the Kyrgyz Republic on Public Procurement. Heads and representatives of the Central Office and territorial offices of the Chamber of Accounts of the Kyrgyz Republic participated in the event.
 
