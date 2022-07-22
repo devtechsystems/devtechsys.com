@@ -23,7 +23,7 @@ Description: "DevTech Systems, Inc. (DevTech) is an international consulting fir
   event organizer is expected to provide all summit services before, during and after
   the event for successful implementation of the summit. Detail services are outlined
   in the scope of work enclosed."
-File URL: "/uploads/Annex%20F_investment_summit.pdf"
+File URL: "/uploads/RFP_investment_summit.docx"
 Email Address: egsa@devtechsys.com
 Is Open: true
 ---
