@@ -1,6 +1,10 @@
 ---
 title: 'RFP: Investment Summit'
 date: 2022-07-22 13:50:00 -04:00
+tags:
+- RFP
+- EGSA
+- indonesia
 Full Title: 'RFP: Investment Summit'
 Description: "DevTech Systems, Inc. (DevTech) is an international consulting firm
   dedicated to development, with 35 years of experience providing advisory services
