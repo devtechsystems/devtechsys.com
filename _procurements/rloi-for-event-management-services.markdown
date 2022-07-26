@@ -1,6 +1,7 @@
 ---
 title: RLOI for Event Management Services
 date: 2022-07-08 16:25:00 -04:00
+published: false
 position: 0
 Full Title: RLOI for Event Management Services for EGSA Project
 Description: "Dear Potential Bidders,\n\nDevTech Systems, Inc (DevTech) requests a
