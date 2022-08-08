@@ -15,8 +15,7 @@ Description: |-
 
   *Regards,*
 
-  *
-  EGSA*
+  *EGSA*
 
   ![Capture9.PNG](/uploads/Capture9.PNG)
 
