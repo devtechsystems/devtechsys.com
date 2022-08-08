@@ -6,10 +6,10 @@ tags:
 - EGSA
 - indonesia
 Full Title: 'RFP: Investment Summit'
-Description: "*Dear Interested Bidders, \nDevTech regretfully informs interested bidders
-  that the planned \"Investment Summit - Bali/Indonesia - November 30th-December 2nd,
-  2022” is postponed until further notice. Therefore, in accordance to section 20
-  of RFP No. EGSA-2022-01- Event Organizer Services for an International Investment
+Description: "*Dear Interested Bidders,* \nDevTech regretfully informs interested
+  bidders that the planned \"Investment Summit - Bali/Indonesia - November 30th-December
+  2nd, 2022” is postponed until further notice. Therefore, in accordance to section
+  20 of RFP No. EGSA-2022-01- Event Organizer Services for an International Investment
   Summit,  we are cancelling this RFP. \n \nWe request interested bidders to discontinue
   their proposal development. DevTech appreciates bidders’ interest and responses
   to the RFI and will notify bidders who submitted their letter of interest once/if
