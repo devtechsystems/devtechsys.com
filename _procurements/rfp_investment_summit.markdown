@@ -13,7 +13,9 @@ Description: |-
 
   *We request interested bidders to discontinue their proposal development. DevTech appreciates bidders’ interest and responses to the RFI and will notify bidders who submitted their letter of interest once/if EGSA determines a new date for the "Investment Summit."*
 
-  *Regards,
+  *Regards,*
+
+  *
   EGSA*
 
   ![Capture9.PNG](/uploads/Capture9.PNG)
