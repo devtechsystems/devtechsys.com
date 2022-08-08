@@ -16,7 +16,7 @@ Description: |-
   *Regards,
   EGSA*
 
-  [Capture9.PNG](/uploads/Capture9.PNG)
+  ![Capture9.PNG](/uploads/Capture9.PNG)
 
   DevTech Systems, Inc. (DevTech) is an international consulting firm dedicated to development, with 35 years of experience providing advisory services and technical assistance to government, private sector, and civil society stakeholders in more than 100 countries. DevTech core practice areas include: Monitoring and Evaluation; Knowledge Management and Data Analytics; Public Financial Management and Fiscal Sustainability; and Education, Gender, and Youth.
 
