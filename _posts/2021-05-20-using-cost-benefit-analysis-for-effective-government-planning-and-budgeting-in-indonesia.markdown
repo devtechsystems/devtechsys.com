@@ -31,4 +31,4 @@ One of the participants and Budget Analysts at the Indonesian Ministry of Financ
 
 The distribution of limited fiscal resources to contending public expenditure is a crucial challenge to the Government of Indonesia. Therefore, strategic planning and budgeting are prominent factors to economic stability and growth. In order to support these processes, conducting post-evaluation and utilizing the results will help make informed decisions in subsequent planning and budgeting periods. The USAID-EGSA stands deeply committed to working with the Government of Indonesia in strengthening the planning, budgeting, and evaluation processes.
 
-*EGSA's "Technical Guideline for Application of Cost and Benefit Analysis Method for Budget Performance Evaluation” is available in [Bahasa Indonesian](https://pdf.usaid.gov/pdf_docs/PA00Z79K.pdf) on USAID's Development Experience Clearinghouse.*
+*EGSA's "Technical Guideline for Application of Cost and Benefit Analysis Method for Budget Performance Evaluation” is available in [Bahasa Indonesia](https://pdf.usaid.gov/pdf_docs/PA00Z79K.pdf) on USAID's Development Experience Clearinghouse.*
