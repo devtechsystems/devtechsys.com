@@ -42,4 +42,4 @@ USAID EGSA will share key findings and recommendations with the Ministry of Coop
 ![EGSA Workshop photo 4.jpg](/uploads/EGSA%20Workshop%20photo%204.jpg)
 The workshop was attended by representatives from Dinas Koperasi of East Java and South Sulawesi provinces, and the Pacitan and Bulukumba districts. Photo: USAID EGSA
 
-*EGSA's Analysis of Savings and Loan Cooperative Liquidity Report is available in [Bahasa Indonesian](https://devtechsys.com/insights/2021/01/11/finding-the-path-savings-and-loan-cooperatives-work-to-rebound-amidst-the-pandemic/) on USAID's Development Experience Clearinghouse.*
+*EGSA's Analysis of Savings and Loan Cooperative Liquidity Report is available in [Bahasa Indonesia](https://devtechsys.com/insights/2021/01/11/finding-the-path-savings-and-loan-cooperatives-work-to-rebound-amidst-the-pandemic/) on USAID's Development Experience Clearinghouse.*
