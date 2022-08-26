@@ -35,10 +35,10 @@ Under the USAID PFM II IDIQ, DevTech is currently implementing the Economic Grow
 \
 [Annual Report FY 2021](https://pdf.usaid.gov/pdf_docs/PA00Z6M4.pdf)
 
-[Improving Gender Budgeting in Indonesia](https://pdf.usaid.gov/pdf_docs/PA00ZJ2P.pdf)
+Improving Gender Budgeting in Indonesia  (English | Bahasa Indonesia)
 
-[Ease of Starting a Business and Building Construction, A Case Study of East Java and South Sulawesi](https://pdf.usaid.gov/pdf_docs/PA00ZJ2M.pdf)
+[Ease of Starting a Business and Building Construction, A Case Study of East Java and South Sulawesi ](https://pdf.usaid.gov/pdf_docs/PA00ZJ2M.pdf)(Bahasa Indonesia)
 
-[Technical Guidelines on Using Cost and Benefit Analysis to Evaluate the Performance of Non-Regular Budget Program](https://pdf.usaid.gov/pdf_docs/PA00Z79K.pdf)
+[Technical Guidelines on Using Cost and Benefit Analysis to Evaluate the Performance of Non-Regular Budget Program](https://pdf.usaid.gov/pdf_docs/PA00Z79K.pdf) (Bahasa Indonesia)
 
-[Analysis of the Impact of Covid-19 Pandemic on the Liquidity of Savings and Loan Cooperatives in Indonesia](https://pdf.usaid.gov/pdf_docs/PA00Z79J.pdf)
+[Analysis of the Impact of Covid-19 Pandemic on the Liquidity of Savings and Loan Cooperatives in Indonesia](https://pdf.usaid.gov/pdf_docs/PA00Z79J.pdf) (Bahasa Indonesia)
