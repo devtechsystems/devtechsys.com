@@ -18,7 +18,7 @@ As organizations collect increasingly high volumes of data, the need for sophist
 
 Since 2018, DevTech has been supporting USAID Data Services using its Data Librarianship, Curation, and Repository Management Framework, which is designed to help ensure that project deliverables submitted to the Agency are properly processed and made ready for publication through the implementation of stringent data quality and risk assessment procedures. The framework centers on three steps: ingest, management and preservation. 
 
-![DataCurationFramework.png](/uploads/DataCurationFramework.png)
+![Untitled-2.jpg](/uploads/Untitled-2.jpg)
 
 ## DevTech’s Data Librarianship, Curation, and Repository Management Framework at work
 
