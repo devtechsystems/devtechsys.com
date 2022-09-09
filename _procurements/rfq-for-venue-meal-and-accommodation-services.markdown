@@ -1,6 +1,7 @@
 ---
 title: RFQ for venue, meal, and accommodation services
 date: 2022-09-09 16:20:00 -04:00
+Full Title: Request for Quotes for venue, meal, and accommodation services
 Description: |-
   ## Background
 
