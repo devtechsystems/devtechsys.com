@@ -13,7 +13,7 @@ Description: |-
 
   For more details about this request for quotes, please refer to the [terms of reference](https://devtechsys.com/uploads/Annex%20A-Purchase%20requisition.xlsx).
 
-  Please share your quote in the excel template attached to this RFP ([Annex A, purchase requisition](https://devtechsys.com/uploads/Annex%20A-Purchase%20requisition.xlsx)) to [CParedes@devtechsys.com](mailto:CParedes@devtechsys.com) no later than **September 23, 2022.**\
+  Please share your quote in the excel template attached to this RFP ([Annex A, purchase requisition](https://devtechsys.com/uploads/Annex%20A-Purchase%20requisition.xlsx)) to [CParedes@devtechsys.com](mailto:CParedes@devtechsys.com) no later than **September 23, 2022.**
 
   Evaluation criteria:\
   · Cost\
