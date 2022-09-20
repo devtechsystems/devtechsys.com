@@ -9,7 +9,7 @@ tags:
 Practice Area:
 - Public Financial Management and Fiscal Sustainability
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(11).png"
-Author: Renata Simatupang
+Author: Nia Firtica and Renata Simatupang
 Is Featured: true
 ---
 
