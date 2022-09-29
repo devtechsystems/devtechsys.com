@@ -54,7 +54,7 @@
     "react-countup": "^2.1.1",
     "react-dom": "^15.6.1",
     "react-sizebox": "github:bi/react-sizebox",
-    "recharts": "^1.0.0-alpha.2",
+    "recharts": "^2.1.14",
     "slugify": "^1.2.1",
     "topojson": "^3.0.0"
   }
