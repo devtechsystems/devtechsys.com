@@ -11,7 +11,7 @@ tags:
 Banner Image: "/uploads/TenderFest1.JPG"
 ---
 
-For Immediate Release
+**For Immediate Release**
 
 Friday, September 30, 2022
 
