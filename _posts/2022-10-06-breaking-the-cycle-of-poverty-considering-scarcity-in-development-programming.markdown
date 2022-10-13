@@ -1,15 +1,21 @@
 ---
 title: 'Breaking the Cycle of Poverty: Considering Scarcity in Development Programming'
 date: 2022-10-06 14:48:00 -04:00
+tags:
+- behavior economics
+- international development
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Scarcity%20in%20Development.png"
+Author: Audra Killian
+Is Featured: true
 ---
-
-Breaking the Cycle of Poverty: Considering Scarcity in Development Programming
 
 Behavior has always been a part of the field of economics. One simply needs to look at Adam Smith’s The Theory of Moral Sentiments (1759) to see how the “impartial spectator” is remarkably similar to the dual system theory of behavioral economics and psychology (Ashraf et al., 2005). Indeed, the impartial spectator is essentially the psychological manifestation of the judgmental friend, looking over the shoulder of the homo economicus, who uses the spectator’s criticisms to guide their decisions (Smith, 1759). Meanwhile, the dual system theory consists of two sets of decision-making processes: the first is impulsive, reactive, and fast, often relying on heuristics (learned rules of thumb), while the second is more discerning and deliberate, taking in a greater range of information beyond one’s own (Kahneman, 2003).
 
 The connections between behavior and economics go beyond the academic field of economics to everyday terms people use related to the economy. The term panic refers to a wide range of acute financial disturbances, such as bank failures, stock speculation, or a climate of fear following the popping of a financial bubble. And while all of these differ in their details, from the tulip bubble in 1637 (a personal favorite) to the 2008 Financial Crisis, there is one thing they have in common: people’s behavior exacerbating the economic fallout.
 
-The relationship between behavior and economics is important to emphasize as there tends to be some pushback from traditional economists (macro, micro, Keynesian, Classical, labor, etc.) when behavioral economics comes up.  There is a fear that all established models will be thrown out in favor of newer, shinier behavioral economics models. However, it’s quite the opposite. Behavioral economics helps unblur the edges of the economic agent and makes them more reflective of the people they are actually meant to represent. It puts real people at the center of economics.
+The relationship between behavior and economics is important to emphasize as there tends to be some pushback from traditional economists (macro, micro, Keynesian, Classical, labor, etc.) when behavioral economics comes up.\[1\]  There is a fear that all established models will be thrown out in favor of newer, shinier behavioral economics models. However, it’s quite the opposite. Behavioral economics helps unblur the edges of the economic agent and makes them more reflective of the people they are actually meant to represent. It puts real people at the center of economics.
 
 This centering of people is why the inclusion of behavioral economics’ tools and concepts is so important in international development: it’s all about people, and people mean behavior. A program can be perfectly designed with the ideal experts, technology, and timing, however if participants are uninterested, then the program will fail.
 
@@ -17,7 +23,7 @@ It isn’t that there is no inclusion of behavior in international development. 
 
 While this question has many different answers, the inclusion of scarcity in the design, implementation, and marketing of development programs is a clear starting point. The concept of scarcity is foundational to economics—it’s even in its definition; a commonly accepted definition of economics is from Lionel Robbins, who defined the field as the study of how people allocate scarce resources for production, distribution, and consumption, both individually and collectively. However, scarcity is often viewed with a narrow lens, focusing on the absence of inputs, labor, and demand, while ignoring its cognitive impacts and how scarcity perpetuates poverty.
 
-When the concept of scarcity is applied to the Global South, issues such as poverty, conflict, and poor governance, all of which create a lack of stability, money, and time, have permanent impacts on development. Mullainathan and Shafir’s 2013 book Scarcity: Why Having Too Little Means So Much lays out its vicious cycle. The lack of a particular resource, whether its money, food, safety, or time, causes individuals or households to focus solely on its absence, reducing the attention paid to other issues or topics. Mullainathan and Shafir refer to this as tunneling where people neglect all other matters. This causes individuals to miss out on important opportunities or investments, and exacerbates other cognitive biases, such as present bias—overweighing of the present relative to the future (O’Donoghue & Rabin, 2015)—or loss aversion—feeling loss more acutely than gains of similar sizes (Kahneman & Tversky, 1979). Families can then engage in behavior that is not only irrational but also counter to their best interests.
+When the concept of scarcity is applied to the Global South, issues such as poverty, conflict, and poor governance, all of which create a lack of stability, money, and time, have permanent impacts on development. Mullainathan and Shafir’s 2013 book Scarcity: Why Having Too Little Means So Much lays out its vicious cycle. The lack of a particular resource, whether its money, food, safety, or time, causes individuals or households to focus solely on its absence, reducing the attention paid to other issues or topics. Mullainathan and Shafir refer to this as tunneling where people neglect all other matters. This causes individuals to miss out on important opportunities or investments, and exacerbates other cognitive biases, such as present bias—overweighing of the present relative to the future (O’Donoghue & Rabin, 2015)—or loss aversion—feeling loss more acutely than gains of similar sizes (Kahneman & Tversky, 1979). Families can then engage in behavior that is not only irrational but also counter to their best interests.\[2\]
 
 ![scarcity.png](/uploads/scarcity.png)
 
@@ -27,7 +33,7 @@ Households are constantly juggling—shifting resources from one problem to anot
 
 Scarcity also reduces the available bandwidth people have to focus on other issues. Children who are experiencing problems at home that result in poor sleep or eating are unable to fully focus on learning. Similarly, for adults, the constant burden of worrying about money can create a feeling of treading water. Other tasks, such as preventative health measures, long-term investments, or education, become less important but also more difficult to process.
 
-Juggling and bandwidth issues can make program requirements that are implemented for reasons related to cost-effectiveness or efficiency significant barriers to participation. Thus, a major way to design for scarcity is the loosening of these requirements.  A clear opportunity for this can be found in the targeting and conditionalities of social protection programs, particularly cash transfers.
+Juggling and bandwidth issues can make program requirements that are implemented for reasons related to cost-effectiveness or efficiency significant barriers to participation. Thus, a major way to design for scarcity is the loosening of these requirements.\[3\]  A clear opportunity for this can be found in the targeting and conditionalities of social protection programs, particularly cash transfers.
 
 Many social protection programs use proxy-means testing (PMT) and self-targeting, both of which can exclude households with scarce resources. For example, PMT, which estimates households’ income by associating “proxies”—e.g., household assets like refrigerators and TVs—with household consumption of expenditure, can seriously overlook the lack of resilience many poor households have against shocks. For a person with a scarce mindset who is already juggling resources, minor shocks can be impossible to overcome. However, since these shocks may not impact household assets, PMT would deem them ineligible for social protection (Kidd et al., 2011).
 
@@ -46,6 +52,14 @@ Designing for scarcity though does not begin and end with conditionality and tar
 * Frame your program. Framing refers to how information and options are presented. How a question is framed can have a huge impact on the choices people make. Since people with a scarce mindset already have diminished bandwidth to process new tasks, copious amounts of information on a project won’t make them more incentivized to enroll or continue participating. Instead, a program should know their environment and population and then market their intervention to align with the needs of these communities. Less information can be more.
 
 There will of course be tradeoffs when implementing any interventions that design for scarcity. Loosened requirements and alternative options are more expensive, not only because more people will utilize a program, but also because some who shouldn’t participate (e.g. people who do not require assistance), do. Donors, particularly bilateral donors like USAID, have constituents and legislatures to answer to, and they may not appreciate such a broad, accessible program. However, if donors are interested in breaking the cycle of poverty, scarcity cannot be ignored.
+
+—
+
+\[1\] Gigerenzer (2008) rejects the idea that people are irrational. Binmore & Shaked (2010) criticize the use of “theory-supportingdata sets” while ignoring other data. Fudenberg (2006) criticizes behavioral economics for a lack of unified explanations for more general phenomena.
+
+\[2\] Additional research on this topic includes Tomm & Zhao (2017)
+
+\[3\] While the selectivity of programs is meant to increase efficiency and decrease costs, it also coincides with the occasional claims that assistance, particularly financial assistance, leads to people working less. This assumption relies on the stereotype of individuals in the Global South as lazy and disincentivized. Banerjee et al, debunk this myth in a 2017 paper, where they re-analyze data from randomized controlled trials of cash-transfer programs in six developing countries. The authors find no systematic evidence of transfer programs discouraging work.\
 
 ### References
 
