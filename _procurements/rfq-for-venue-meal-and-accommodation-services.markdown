@@ -11,7 +11,7 @@ Description: |-
 
   Provide meeting venue, meal, and accommodation services for participants of the USAID LAC Regional Education Workshop that will be held in Washington, DC downtown area. First option date is from April 30 to May 5, 2023. Other close dates to this week may also be considered.
 
-  For more details about this request for quotes, please refer to the [terms of reference](https://devtechsys.com/uploads/RFQ-DevTech_LACREW_rev2.pdf).
+  For more details about this request for quotes, please refer to the [terms of reference](https://devtechsys.com/uploads/RFQ-DevTech_LACREW_rev3.pdf).
 
   Please share your quote in the excel template attached to this RFP ([Annex A, purchase requisition](https://devtechsys.com/uploads/Annex%20A-Purchase%20requisition.xlsx)) to [CParedes@devtechsys.com](mailto:CParedes@devtechsys.com) no later than **October 24, 2022.**
 
