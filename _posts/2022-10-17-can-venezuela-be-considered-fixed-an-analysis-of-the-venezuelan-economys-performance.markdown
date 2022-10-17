@@ -21,9 +21,10 @@ Since the onset of the COVID-19 pandemic, however, the Venezuelan economy has sh
 
 In this article, we will present data that aims to capture the reality of Venezuela’s economic performance considering an external context characterized by significant uncertainty as a result of high levels of inflation in the United States and an increase in raw materials (especially oil) due to the Russian invasion in Ukraine.
 
-## 
+
 
 ## Venezuela’s 2021 performance: the end of the country’s economic free fall, increasing levels of inequality, and no foundation for a long-lasting recovery
+
 
 While the Maduro regime indicated that private consumption grew by 4.9 percent in 2021, the National Survey on Living Conditions (ENCOVI) found that food consumption by Venezuelans in real terms per capita decreased in that same year by between 2 percent and 13 percent depending on household income group.
 
@@ -34,13 +35,16 @@ As shown in Graph 1, according to the 2021 ENCOVI study, 94.3 percent of househo
 
 Similarly, as shown in Graph 2, all income groups reported having to reduce their food consumption, with households in the extreme poverty category reporting the greatest decrease in food consumption at 13.3 percent. In addition, it is worth noting that non-extreme poor households spent 137 percent more on food than those from the extreme poverty category, while those from the non-poverty strata spent 214 percent more compared to the non-extreme poverty strata reflecting important inequalities in consumption.
 
+
 **Graph 2. Food consumption (US$ per capita)**\
 ![graph2.png](/uploads/graph2.png)*Source: National Survey on Living Conditions (ENCOVI) 2021.*
 
 As can be seen in Graph 3, regarding the re-distribution of income, Venezuela’s 2021 Gini index was 0.567, with 0 representing perfect equality, and 1 representing maximal inequality. While 2021’s Gini coefficient is lower than the country’s coefficient in 2017—the year that hyperinflation started in Venezuela—it is still above 50 percent, meaning that the country’s richest stratum kept approximately 60 percent of the population’s total income.\[9\]  Additionally, between 2020 and 2021, there is an upward trend in inequality levels with the Gini index increasing by 14.55 percent.
 
+
 **Graph 3. Gini index for Venezuela**\
 ![graph3.png](/uploads/graph3.png)*Source: National Survey on Living Conditions (ENCOVI) 2021.*
+
 
 In addition to increasing rates of informality, the labor situation in Venezuela can be summarized as follows:\[10\]
 
@@ -56,7 +60,6 @@ Regarding investment, the socialist regime announced that in 2021, investment in
 
 In terms of investments, 41 percent of the companies surveyed by CONDINDUSTRIA responded that most of the investments made were related to inventory replenishment. At 37 percent, the second most frequently cited type of investments made by companies were those required for the operation of the companies. However, 42 percent of the companies surveyed indicated that they do not plan to make investments in any other category due to limited sources of financing, low sales levels as a result of low consumer demand, and high labor costs.
 
-## 
 
 ## Venezuela’s 2022 performance: "recovery" in a very uncertain environment
 
@@ -69,6 +72,7 @@ Regarding inflation, since 2019, Venezuela has seen slowing price growth rates, 
 The reason behind the reduction in the supply of foreign currency by the Central Bank of Venezuela is likely that last month’s oil production decreased; this is significant given that oil represents more than two thirds of the country’s exports.\[25\]\[26\]   In July 2022, Venezuelan oil production amounted to 629,000 barrels per day, which translates to a reduction of 13.5 percent from the previous month. While August production levels have bounced back to June levels, production is still just a fraction of what it was in 2013, during which time it was closer to 3 million barrels per day.\[27\]
 
 In summary, unfortunately the Venezuelan economy is far from being “fixed” as claimed by a number of government officials. None of the observed economic improvements seem to be based on long-term solutions that could induce the sustained period of economic growth that the country needs to restore its potential. Today’s improvements are not only driven by external factors, they also come at the expense of further increasing inequalities.
+
 
 ### Endnotes
 
