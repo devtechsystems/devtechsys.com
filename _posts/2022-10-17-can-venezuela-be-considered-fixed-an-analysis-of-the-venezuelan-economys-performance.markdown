@@ -2,6 +2,15 @@
 title: Can Venezuela be considered “fixed”? An analysis of the Venezuelan economy’s
   performance
 date: 2022-10-17 09:36:00 -04:00
+tags:
+- Venzeula
+- Venezuelan Economy
+- Maduro
+Practice Area:
+- Public Financial Management and Fiscal Sustainability
+Teaser Image: "/uploads/Venezuela_economy.png"
+Author: Dr. Jose Pineda and Gerardo Milano
+Is Featured: true
 ---
 
 ## Introduction
