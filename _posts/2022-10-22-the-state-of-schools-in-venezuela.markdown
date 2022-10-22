@@ -2,6 +2,11 @@
 title: What is the state of schools in Venezuela? National Survey of Educational Establishments
   2021 (ENEED 2021)
 date: 2022-10-22 13:38:00 -04:00
+tags:
+- Venezuela
+- Education
+- Schools
+- Teachers
 Practice Area:
 - Education, Gender and Youth
 Teaser Image: "/uploads/DevTech%20Teaser%20Images%20for%20Siteleaf%20(14).png"
